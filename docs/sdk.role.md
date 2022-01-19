@@ -11,5 +11,5 @@ Roles are used to handle permissions on modules that extend [ModuleWithRoles](./
 ```typescript
 export declare type Role = keyof IRoles;
 ```
-<b>References:</b> [IRoles](./sdk.iroles.md)
 
+<b>References:</b> [IRoles](./sdk.iroles.md)

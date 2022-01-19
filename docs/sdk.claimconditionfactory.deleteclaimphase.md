@@ -14,11 +14,10 @@ deleteClaimPhase(index: number): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  index | number |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| index     | number |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

@@ -12,11 +12,10 @@ unlistAll(listingId: string): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| listingId | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

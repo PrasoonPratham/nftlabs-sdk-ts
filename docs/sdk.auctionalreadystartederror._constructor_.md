@@ -14,7 +14,6 @@ constructor(id?: string);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  id | string |  |
-
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| id        | string |             |

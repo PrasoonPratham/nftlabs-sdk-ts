@@ -14,13 +14,12 @@ get(tokenId: string): Promise<NFTMetadata>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | string | The id of the token to fetch. |
+| Parameter | Type   | Description                   |
+| --------- | ------ | ----------------------------- |
+| tokenId   | string | The id of the token to fetch. |
 
 <b>Returns:</b>
 
 Promise&lt;[NFTMetadata](./sdk.nftmetadata.md)<!-- -->&gt;
 
 - The NFT metadata.
-

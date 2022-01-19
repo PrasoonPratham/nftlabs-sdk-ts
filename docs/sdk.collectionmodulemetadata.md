@@ -9,5 +9,5 @@
 ```typescript
 export declare type CollectionModuleMetadata = BundleModuleMetadata;
 ```
-<b>References:</b> [BundleModuleMetadata](./sdk.bundlemodulemetadata.md)
 
+<b>References:</b> [BundleModuleMetadata](./sdk.bundlemodulemetadata.md)

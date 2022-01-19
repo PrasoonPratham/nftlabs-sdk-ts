@@ -7,14 +7,13 @@
 <b>Signature:</b>
 
 ```typescript
-export interface SnapshotInfo 
+export interface SnapshotInfo
 ```
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [merkleRoot](./sdk.snapshotinfo.merkleroot.md) | string |  |
-|  [snapshot](./sdk.snapshotinfo.snapshot.md) | [Snapshot](./sdk.snapshot.md) |  |
-|  [snapshotUri](./sdk.snapshotinfo.snapshoturi.md) | string |  |
-
+| Property                                         | Type                          | Description |
+| ------------------------------------------------ | ----------------------------- | ----------- |
+| [merkleRoot](./sdk.snapshotinfo.merkleroot.md)   | string                        |             |
+| [snapshot](./sdk.snapshotinfo.snapshot.md)       | [Snapshot](./sdk.snapshot.md) |             |
+| [snapshotUri](./sdk.snapshotinfo.snapshoturi.md) | string                        |             |

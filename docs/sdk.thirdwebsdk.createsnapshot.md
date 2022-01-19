@@ -12,11 +12,10 @@ createSnapshot(leafs: string[]): Promise<SnapshotInfo>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  leafs | string\[\] |  |
+| Parameter | Type       | Description |
+| --------- | ---------- | ----------- |
+| leafs     | string\[\] |             |
 
 <b>Returns:</b>
 
 Promise&lt;[SnapshotInfo](./sdk.snapshotinfo.md)<!-- -->&gt;
-

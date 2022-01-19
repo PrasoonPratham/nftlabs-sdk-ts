@@ -4,18 +4,16 @@
 
 ## IAppModule interface
 
-
 <b>Signature:</b>
 
 ```typescript
-export interface IAppModule 
+export interface IAppModule
 ```
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [address](./sdk.iappmodule.address.md) | string |  |
-|  [metadata?](./sdk.iappmodule.metadata.md) | [ContractMetadata](./sdk.contractmetadata.md) | <i>(Optional)</i> |
-|  [version](./sdk.iappmodule.version.md) | number |  |
-
+| Property                                  | Type                                          | Description       |
+| ----------------------------------------- | --------------------------------------------- | ----------------- |
+| [address](./sdk.iappmodule.address.md)    | string                                        |                   |
+| [metadata?](./sdk.iappmodule.metadata.md) | [ContractMetadata](./sdk.contractmetadata.md) | <i>(Optional)</i> |
+| [version](./sdk.iappmodule.version.md)    | number                                        |                   |

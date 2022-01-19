@@ -9,13 +9,13 @@ Thrown when attempting to transfer an asset that has restricted transferability
 <b>Signature:</b>
 
 ```typescript
-export declare class RestrictedTransferError extends Error 
+export declare class RestrictedTransferError extends Error
 ```
+
 <b>Extends:</b> Error
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(assetAddress)](./sdk.restrictedtransfererror._constructor_.md) |  | Constructs a new instance of the <code>RestrictedTransferError</code> class |
-
+| Constructor                                                                   | Modifiers | Description                                                                 |
+| ----------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------- |
+| [(constructor)(assetAddress)](./sdk.restrictedtransfererror._constructor_.md) |           | Constructs a new instance of the <code>RestrictedTransferError</code> class |

@@ -12,11 +12,10 @@ balance(tokenId: string): Promise<BigNumber>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| tokenId   | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;BigNumber&gt;
-

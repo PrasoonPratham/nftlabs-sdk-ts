@@ -14,9 +14,9 @@ burn(args: INFTBundleBatchArgs): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  args | [INFTBundleBatchArgs](./sdk.inftbundlebatchargs.md) |  |
+| Parameter | Type                                                | Description |
+| --------- | --------------------------------------------------- | ----------- |
+| args      | [INFTBundleBatchArgs](./sdk.inftbundlebatchargs.md) |             |
 
 <b>Returns:</b>
 
@@ -28,13 +28,11 @@ Burn an NFT, permanently taking it out of circulation and reducing the supply.
 
 ## Example
 
-
 ```javascript
 // The token ID of the NFT you want to burn
 const tokenId = 0;
 // The number of specified NFTs you want to burn
-const amount = 1
+const amount = 1;
 
 await module.burn({ tokenId, amount });
 ```
-

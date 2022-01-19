@@ -12,13 +12,12 @@ getPackModule(address: string): PackModule;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string | The contract address of the given Pack module. |
+| Parameter | Type   | Description                                    |
+| --------- | ------ | ---------------------------------------------- |
+| address   | string | The contract address of the given Pack module. |
 
 <b>Returns:</b>
 
 [PackModule](./sdk.packmodule.md)
 
 The Pack Module.
-

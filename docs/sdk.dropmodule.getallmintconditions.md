@@ -5,16 +5,15 @@
 ## DropModule.getAllMintConditions() method
 
 > Warning: This API is now obsolete.
-> 
+>
 > - Use [DropModule.getAllClaimConditions()](./sdk.dropmodule.getallclaimconditions.md) instead
-> 
 
 <b>Signature:</b>
 
 ```typescript
 getAllMintConditions(): Promise<PublicMintCondition[]>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;[PublicMintCondition](./sdk.publicmintcondition.md)<!-- -->\[\]&gt;
-

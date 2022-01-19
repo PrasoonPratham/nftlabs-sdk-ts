@@ -14,9 +14,9 @@ distributeToken(tokenAddress: string): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenAddress | string |  |
+| Parameter    | Type   | Description |
+| ------------ | ------ | ----------- |
+| tokenAddress | string |             |
 
 <b>Returns:</b>
 
@@ -28,10 +28,8 @@ Distribute funds held by the contract in the native currency to all recipients.
 
 ## Example
 
-
 ```javascript
 // The address of the currency to distribute funds
-const tokenAddress = "0x..."
+const tokenAddress = "0x...";
 await module.distributeToken(tokenAddress);
 ```
-

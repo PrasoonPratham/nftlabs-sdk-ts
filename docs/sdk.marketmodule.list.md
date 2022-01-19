@@ -12,18 +12,17 @@ list(assetContract: string, tokenId: string, currencyContract: string, price: Bi
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  assetContract | string |  |
-|  tokenId | string |  |
-|  currencyContract | string |  |
-|  price | BigNumberish |  |
-|  quantity | BigNumberish |  |
-|  tokensPerBuyer | BigNumberish |  |
-|  secondsUntilStart | BigNumberish |  |
-|  secondsUntilEnd | BigNumberish |  |
+| Parameter         | Type         | Description |
+| ----------------- | ------------ | ----------- |
+| assetContract     | string       |             |
+| tokenId           | string       |             |
+| currencyContract  | string       |             |
+| price             | BigNumberish |             |
+| quantity          | BigNumberish |             |
+| tokensPerBuyer    | BigNumberish |             |
+| secondsUntilStart | BigNumberish |             |
+| secondsUntilEnd   | BigNumberish |             |
 
 <b>Returns:</b>
 
 Promise&lt;[ListingMetadata](./sdk.listingmetadata.md)<!-- -->&gt;
-

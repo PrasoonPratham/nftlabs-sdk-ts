@@ -12,12 +12,11 @@ setModuleRoyaltyTreasury(moduleAddress: string, treasury: string): Promise<Trans
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  moduleAddress | string |  |
-|  treasury | string |  |
+| Parameter     | Type   | Description |
+| ------------- | ------ | ----------- |
+| moduleAddress | string |             |
+| treasury      | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

@@ -14,13 +14,12 @@ deployCurrencyModule(metadata: CurrencyModuleMetadata): Promise<CurrencyModule>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadata | [CurrencyModuleMetadata](./sdk.currencymodulemetadata.md) | The module metadata |
+| Parameter | Type                                                      | Description         |
+| --------- | --------------------------------------------------------- | ------------------- |
+| metadata  | [CurrencyModuleMetadata](./sdk.currencymodulemetadata.md) | The module metadata |
 
 <b>Returns:</b>
 
 Promise&lt;[CurrencyModule](./sdk.currencymodule.md)<!-- -->&gt;
 
 - The deployed currency module
-

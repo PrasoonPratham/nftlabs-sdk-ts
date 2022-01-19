@@ -26,12 +26,12 @@ describe("Pack Module", async () => {
     packModule = await appModule.deployPackModule({
       name: "Pack Module",
       sellerFeeBasisPoints: 1000,
-      feeRecipient: samWallet.address,
+      feeRecipient: samWallet.address
     });
 
     bundleModule = await appModule.deployBundleModule({
       name: "NFT Module",
-      sellerFeeBasisPoints: 1000,
+      sellerFeeBasisPoints: 1000
     });
   });
 
@@ -40,9 +40,9 @@ describe("Pack Module", async () => {
     for (let i = 0; i < 5; i++) {
       batch.push({
         metadata: {
-          name: `NFT ${i}`,
+          name: `NFT ${i}`
         },
-        supply: 1000,
+        supply: 1000
       });
     }
 
@@ -55,20 +55,20 @@ describe("Pack Module", async () => {
       assets: [
         {
           tokenId: "0",
-          amount: BigNumber.from(50),
+          amount: BigNumber.from(50)
         },
         {
           tokenId: "1",
-          amount: BigNumber.from(50),
+          amount: BigNumber.from(50)
         },
         {
           tokenId: "2",
-          amount: BigNumber.from(50),
-        },
+          amount: BigNumber.from(50)
+        }
       ],
       metadata: {
-        name: "Pack",
-      },
+        name: "Pack"
+      }
     });
 
     const packTwo = await packModule.create({
@@ -76,21 +76,21 @@ describe("Pack Module", async () => {
       assets: [
         {
           tokenId: "0",
-          amount: BigNumber.from(50),
+          amount: BigNumber.from(50)
         },
         {
           tokenId: "1",
-          amount: BigNumber.from(50),
+          amount: BigNumber.from(50)
         },
         {
           tokenId: "2",
-          amount: BigNumber.from(50),
-        },
+          amount: BigNumber.from(50)
+        }
       ],
       metadata: {
-        name: "Pack",
+        name: "Pack"
       },
-      rewardsPerOpen: BigNumber.from(2),
+      rewardsPerOpen: BigNumber.from(2)
     });
 
     return [packOne, packTwo];
@@ -114,24 +114,24 @@ describe("Pack Module", async () => {
       const rewards = await packModule.getNFTs(pack.id);
 
       const first = rewards.find(
-        (reward) =>
+        reward =>
           reward.metadata.id === "0" &&
           reward.supply.toNumber() === 50 &&
-          reward.metadata.name === "NFT 0",
+          reward.metadata.name === "NFT 0"
       );
 
       const second = rewards.find(
-        (reward) =>
+        reward =>
           reward.metadata.id === "1" &&
           reward.supply.toNumber() === 50 &&
-          reward.metadata.name === "NFT 1",
+          reward.metadata.name === "NFT 1"
       );
 
       const third = rewards.find(
-        (reward) =>
+        reward =>
           reward.metadata.id === "2" &&
           reward.supply.toNumber() === 50 &&
-          reward.metadata.name === "NFT 2",
+          reward.metadata.name === "NFT 2"
       );
 
       assert.isDefined(first, "First NFT not found");

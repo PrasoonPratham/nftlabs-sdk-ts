@@ -7,13 +7,12 @@
 <b>Signature:</b>
 
 ```typescript
-export declare class Snapshot 
+export declare class Snapshot
 ```
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [claims](./sdk.snapshot.claims.md) |  | [ClaimProof](./sdk.claimproof.md)<!-- -->\[\] |  |
-|  [merkleRoot](./sdk.snapshot.merkleroot.md) |  | string |  |
-
+| Property                                   | Modifiers | Type                                          | Description |
+| ------------------------------------------ | --------- | --------------------------------------------- | ----------- |
+| [claims](./sdk.snapshot.claims.md)         |           | [ClaimProof](./sdk.claimproof.md)<!-- -->\[\] |             |
+| [merkleRoot](./sdk.snapshot.merkleroot.md) |           | string                                        |             |

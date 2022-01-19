@@ -14,12 +14,11 @@ balanceOfToken(walletAddress: string, tokenAddress: string): Promise<CurrencyVal
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  walletAddress | string | The address of the recipient to check the balance of. |
-|  tokenAddress | string | The address of the currency to check the balance in. |
+| Parameter     | Type   | Description                                           |
+| ------------- | ------ | ----------------------------------------------------- |
+| walletAddress | string | The address of the recipient to check the balance of. |
+| tokenAddress  | string | The address of the currency to check the balance in.  |
 
 <b>Returns:</b>
 
 Promise&lt;[CurrencyValue](./sdk.currencyvalue.md)<!-- -->&gt;
-

@@ -12,11 +12,10 @@ upgradeModuleList(moduleAddresses: string[]): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  moduleAddresses | string\[\] |  |
+| Parameter       | Type       | Description |
+| --------------- | ---------- | ----------- |
+| moduleAddresses | string\[\] |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

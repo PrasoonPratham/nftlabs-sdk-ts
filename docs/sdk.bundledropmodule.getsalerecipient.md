@@ -12,11 +12,10 @@ getSaleRecipient(tokenId: BigNumberish): Promise<string>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| tokenId   | BigNumberish |             |
 
 <b>Returns:</b>
 
 Promise&lt;string&gt;
-

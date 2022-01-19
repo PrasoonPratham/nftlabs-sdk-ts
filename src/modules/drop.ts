@@ -3,7 +3,7 @@ import {
   LazyMintERC721 as DropV2,
   LazyMintERC721__factory as DropV2__factory,
   LazyNFT as Drop,
-  LazyNFT__factory as Drop__factory,
+  LazyNFT__factory as Drop__factory
 } from "@3rdweb/contracts";
 import { ClaimConditionStructOutput } from "@3rdweb/contracts/dist/LazyMintERC721";
 import { PublicMintConditionStruct } from "@3rdweb/contracts/dist/LazyNFT";
@@ -18,7 +18,7 @@ import {
   ModuleType,
   NATIVE_TOKEN_ADDRESS,
   Role,
-  RolesMap,
+  RolesMap
 } from "../common";
 import { invariant } from "../common/invariant";
 import { isMetadataEqual } from "../common/isMetadataEqual";
@@ -32,7 +32,7 @@ import { ITransferable } from "../interfaces/contracts/ITransferable";
 import { ISDKOptions } from "../interfaces/ISdkOptions";
 import {
   ClaimCondition,
-  PublicMintCondition,
+  PublicMintCondition
 } from "../types/claim-conditions/PublicMintCondition";
 import { DEFAULT_QUERY_ALL_COUNT, QueryAllParams } from "../types/QueryParams";
 import { Snapshot } from "../types/snapshots/Snapshot";
@@ -79,7 +79,7 @@ export class DropModule
   public static roles = [
     RolesMap.admin,
     RolesMap.minter,
-    RolesMap.transfer,
+    RolesMap.transfer
   ] as const;
 
   /**
@@ -89,7 +89,7 @@ export class DropModule
     providerOrSigner: ProviderOrSigner,
     address: string,
     options: ISDKOptions,
-    sdk: ThirdwebSDK,
+    sdk: ThirdwebSDK
   ) {
     super(providerOrSigner, address, options, sdk);
     this.v1Module = new DropV1Module(providerOrSigner, address, options, sdk);
@@ -129,14 +129,14 @@ export class DropModule
     return await getTokenMetadata(
       this.readOnlyContract,
       tokenId,
-      this.ipfsGatewayUrl,
+      this.ipfsGatewayUrl
     );
   }
 
   public async get(tokenId: string): Promise<NFTMetadataOwner> {
     const [owner, metadata] = await Promise.all([
       this.ownerOf(tokenId).catch(() => AddressZero),
-      this.getTokenMetadata(tokenId),
+      this.getTokenMetadata(tokenId)
     ]);
 
     return { owner, metadata };
@@ -156,7 +156,7 @@ export class DropModule
    * @returns The NFT metadata for all NFTs in the module.
    */
   public async getAll(
-    queryParams?: QueryAllParams,
+    queryParams?: QueryAllParams
   ): Promise<NFTMetadataOwner[]> {
     // if v1 module then use v1
     if (await this.isV1()) {
@@ -164,61 +164,61 @@ export class DropModule
     }
     const start = BigNumber.from(queryParams?.start || 0).toNumber();
     const count = BigNumber.from(
-      queryParams?.count || DEFAULT_QUERY_ALL_COUNT,
+      queryParams?.count || DEFAULT_QUERY_ALL_COUNT
     ).toNumber();
     const maxId = Math.min(
       (await this.readOnlyContract.nextTokenIdToMint()).toNumber(),
-      start + count,
+      start + count
     );
     return await Promise.all(
-      Array.from(Array(maxId - start).keys()).map((i) =>
-        this.get((start + i).toString()),
-      ),
+      Array.from(Array(maxId - start).keys()).map(i =>
+        this.get((start + i).toString())
+      )
     );
   }
 
   public async getAllUnclaimed(
-    queryParams?: QueryAllParams,
+    queryParams?: QueryAllParams
   ): Promise<NFTMetadataOwner[]> {
     if (await this.isV1()) {
       return this.v1Module.getAllUnclaimed();
     }
     const start = BigNumber.from(queryParams?.start || 0).toNumber();
     const count = BigNumber.from(
-      queryParams?.count || DEFAULT_QUERY_ALL_COUNT,
+      queryParams?.count || DEFAULT_QUERY_ALL_COUNT
     ).toNumber();
     const maxId = BigNumber.from(
       Math.min(
         (await this.readOnlyContract.nextTokenIdToMint()).toNumber(),
-        start + count,
-      ),
+        start + count
+      )
     );
     const unmintedId = await this.readOnlyContract.nextTokenIdToClaim();
     return (
       await Promise.all(
-        Array.from(Array(maxId.sub(unmintedId).toNumber()).keys()).map((i) =>
-          this.getTokenMetadata(unmintedId.add(i).toString()),
-        ),
+        Array.from(Array(maxId.sub(unmintedId).toNumber()).keys()).map(i =>
+          this.getTokenMetadata(unmintedId.add(i).toString())
+        )
       )
-    ).map((metadata) => ({ owner: AddressZero, metadata }));
+    ).map(metadata => ({ owner: AddressZero, metadata }));
   }
 
   public async getAllClaimed(
-    queryParams?: QueryAllParams,
+    queryParams?: QueryAllParams
   ): Promise<NFTMetadataOwner[]> {
     if (await this.isV1()) {
       return this.v1Module.getAllClaimed();
     }
     const start = BigNumber.from(queryParams?.start || 0).toNumber();
     const count = BigNumber.from(
-      queryParams?.count || DEFAULT_QUERY_ALL_COUNT,
+      queryParams?.count || DEFAULT_QUERY_ALL_COUNT
     ).toNumber();
     const maxId = Math.min(
       (await this.readOnlyContract.nextTokenIdToClaim()).toNumber(),
-      start + count,
+      start + count
     );
     return await Promise.all(
-      Array.from(Array(maxId).keys()).map((i) => this.get(i.toString())),
+      Array.from(Array(maxId).keys()).map(i => this.get(i.toString()))
     );
   }
 
@@ -231,7 +231,7 @@ export class DropModule
   }
 
   public async setDefaultSaleRecipient(
-    recipient: string,
+    recipient: string
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("setDefaultSaleRecipient", [recipient]);
   }
@@ -256,10 +256,10 @@ export class DropModule
     const balance = await this.readOnlyContract.balanceOf(address);
     const indices = Array.from(Array(balance.toNumber()).keys());
     const tokenIds = await Promise.all(
-      indices.map((i) => this.readOnlyContract.tokenOfOwnerByIndex(address, i)),
+      indices.map(i => this.readOnlyContract.tokenOfOwnerByIndex(address, i))
     );
     return await Promise.all(
-      tokenIds.map((tokenId) => this.get(tokenId.toString())),
+      tokenIds.map(tokenId => this.get(tokenId.toString()))
     );
   }
 
@@ -267,7 +267,7 @@ export class DropModule
    * @deprecated - For backward compatibility reason
    */
   private transformResultToMintCondition(
-    pm: ClaimConditionStructOutput,
+    pm: ClaimConditionStructOutput
   ): PublicMintCondition {
     return {
       startTimestamp: pm.startTimestamp,
@@ -277,21 +277,21 @@ export class DropModule
       waitTimeSecondsLimitPerTransaction: pm.waitTimeInSecondsBetweenClaims,
       pricePerToken: pm.pricePerToken,
       currency: pm.currency,
-      merkleRoot: pm.merkleRoot,
+      merkleRoot: pm.merkleRoot
     };
   }
 
   private async transformResultToClaimCondition(
-    pm: ClaimConditionStructOutput,
+    pm: ClaimConditionStructOutput
   ): Promise<ClaimCondition> {
     const cv = await getCurrencyValue(
       this.providerOrSigner,
       pm.currency,
-      pm.pricePerToken,
+      pm.pricePerToken
     );
     return {
       startTimestamp: new Date(
-        BigNumber.from(pm.startTimestamp).toNumber() * 1000,
+        BigNumber.from(pm.startTimestamp).toNumber() * 1000
       ),
       maxMintSupply: pm.maxClaimableSupply.toString(),
       currentMintSupply: pm.supplyClaimed.toString(),
@@ -306,7 +306,7 @@ export class DropModule
       currency: pm.currency,
       currencyContract: pm.currency,
       currencyMetadata: cv,
-      merkleRoot: pm.merkleRoot,
+      merkleRoot: pm.merkleRoot
     };
   }
 
@@ -319,7 +319,7 @@ export class DropModule
     }
     const index = await this.readOnlyContract.getIndexOfActiveCondition();
     return this.transformResultToMintCondition(
-      await this.readOnlyContract.getClaimConditionAtIndex(index),
+      await this.readOnlyContract.getClaimConditionAtIndex(index)
     );
   }
 
@@ -347,8 +347,8 @@ export class DropModule
     for (let i = 0; i < count; i++) {
       conditions.push(
         this.transformResultToMintCondition(
-          await this.readOnlyContract.getClaimConditionAtIndex(i),
-        ),
+          await this.readOnlyContract.getClaimConditionAtIndex(i)
+        )
       );
     }
 
@@ -366,7 +366,7 @@ export class DropModule
       conditions.push(await this.readOnlyContract.getClaimConditionAtIndex(i));
     }
     return Promise.all(
-      conditions.map((c) => this.transformResultToClaimCondition(c)),
+      conditions.map(c => this.transformResultToClaimCondition(c))
     );
   }
 
@@ -392,7 +392,7 @@ export class DropModule
       return this.v1Module.totalUnclaimedSupply();
     }
     return (await this.readOnlyContract.nextTokenIdToMint()).sub(
-      await this.totalClaimedSupply(),
+      await this.totalClaimedSupply()
     );
   }
 
@@ -432,11 +432,11 @@ export class DropModule
   // write functions
   public async setApproval(
     operator: string,
-    approved = true,
+    approved = true
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("setApprovalForAll", [
       operator,
-      approved,
+      approved
     ]);
   }
 
@@ -458,12 +458,12 @@ export class DropModule
    */
   public async transfer(
     to: string,
-    tokenId: string,
+    tokenId: string
   ): Promise<TransactionReceipt> {
     const from = await this.getSignerAddress();
     return await this.sendTransaction(
       "safeTransferFrom(address,address,uint256)",
-      [from, to, tokenId],
+      [from, to, tokenId]
     );
   }
 
@@ -509,7 +509,7 @@ export class DropModule
     if (await this.isV1()) {
       return this.v1Module.setClaimConditions(factory);
     }
-    const conditions = (await factory.buildConditions()).map((c) => ({
+    const conditions = (await factory.buildConditions()).map(c => ({
       startTimestamp: c.startTimestamp,
       maxClaimableSupply: c.maxMintSupply,
       supplyClaimed: 0,
@@ -517,11 +517,11 @@ export class DropModule
       waitTimeInSecondsBetweenClaims: c.waitTimeSecondsLimitPerTransaction,
       pricePerToken: c.pricePerToken,
       currency: c.currency === AddressZero ? NATIVE_TOKEN_ADDRESS : c.currency,
-      merkleRoot: c.merkleRoot,
+      merkleRoot: c.merkleRoot
     }));
 
     const merkleInfo: { [key: string]: string } = {};
-    factory.allSnapshots().forEach((s) => {
+    factory.allSnapshots().forEach(s => {
       merkleInfo[s.merkleRoot] = s.snapshotUri;
     });
     const { metadata } = await this.getMetadata(false);
@@ -540,14 +540,14 @@ export class DropModule
         .upload(JSON.stringify(metadata));
       encoded.push(
         this.contract.interface.encodeFunctionData("setContractURI", [
-          metadataUri,
-        ]),
+          metadataUri
+        ])
       );
     }
     encoded.push(
       this.contract.interface.encodeFunctionData("setClaimConditions", [
-        conditions,
-      ]),
+        conditions
+      ])
     );
 
     return await this.sendTransaction("multicall", [encoded]);
@@ -557,7 +557,7 @@ export class DropModule
     if (await this.isV1()) {
       return this.v1Module.setClaimConditions(factory);
     }
-    const conditions = (await factory.buildConditions()).map((c) => ({
+    const conditions = (await factory.buildConditions()).map(c => ({
       startTimestamp: c.startTimestamp,
       maxClaimableSupply: c.maxMintSupply,
       supplyClaimed: 0,
@@ -565,11 +565,11 @@ export class DropModule
       waitTimeInSecondsBetweenClaims: c.waitTimeSecondsLimitPerTransaction,
       pricePerToken: c.pricePerToken,
       currency: c.currency === AddressZero ? NATIVE_TOKEN_ADDRESS : c.currency,
-      merkleRoot: c.merkleRoot,
+      merkleRoot: c.merkleRoot
     }));
 
     const merkleInfo: { [key: string]: string } = {};
-    factory.allSnapshots().forEach((s) => {
+    factory.allSnapshots().forEach(s => {
       merkleInfo[s.merkleRoot] = s.snapshotUri;
     });
     const encoded = [];
@@ -589,15 +589,15 @@ export class DropModule
         .upload(JSON.stringify(metadata));
       encoded.push(
         this.contract.interface.encodeFunctionData("setContractURI", [
-          metadataUri,
-        ]),
+          metadataUri
+        ])
       );
     }
 
     encoded.push(
       this.contract.interface.encodeFunctionData("updateClaimConditions", [
-        conditions,
-      ]),
+        conditions
+      ])
     );
     return await this.sendTransaction("multicall", [encoded]);
   }
@@ -623,13 +623,13 @@ export class DropModule
    * @deprecated - Use the {@link DropModule.setClaimConditions} instead.
    */
   public async setPublicMintConditions(
-    conditions: CreatePublicMintCondition[],
+    conditions: CreatePublicMintCondition[]
   ) {
     if (await this.isV1()) {
       return this.v1Module.setPublicMintConditions(conditions);
     }
     const now = BigNumber.from(Date.now()).div(1000);
-    const _conditions = conditions.map((c) => ({
+    const _conditions = conditions.map(c => ({
       startTimestamp: now.add(c.startTimestampInSeconds || 0),
       maxClaimableSupply: c.maxMintSupply,
       supplyClaimed: 0,
@@ -638,7 +638,7 @@ export class DropModule
       waitTimeInSecondsBetweenClaims: c.waitTimeSecondsLimitPerTransaction || 0,
       pricePerToken: c.pricePerToken || 0,
       currency: c.currency || AddressZero,
-      merkleRoot: c.merkleRoot || hexZeroPad([0], 32),
+      merkleRoot: c.merkleRoot || hexZeroPad([0], 32)
     }));
     await this.sendTransaction("setClaimConditions", [_conditions]);
   }
@@ -653,7 +653,7 @@ export class DropModule
    */
   public async getClaimIneligibilityReasons(
     quantity: BigNumberish,
-    addressToCheck?: string,
+    addressToCheck?: string
   ): Promise<ClaimEligibility[]> {
     const reasons: ClaimEligibility[] = [];
     let activeConditionIndex: BigNumber;
@@ -666,7 +666,7 @@ export class DropModule
     try {
       [activeConditionIndex, claimCondition] = await Promise.all([
         this.readOnlyContract.getIndexOfActiveCondition(),
-        this.getActiveClaimCondition(),
+        this.getActiveClaimCondition()
       ]);
     } catch (err: any) {
       if ((err.message as string).includes("no public mint condition.")) {
@@ -701,7 +701,7 @@ export class DropModule
     const timestampForNextClaim =
       await this.readOnlyContract.getTimestampForNextValidClaim(
         activeConditionIndex,
-        addressToCheck,
+        addressToCheck
       );
 
     const now = BigNumber.from(Date.now()).div(1000);
@@ -709,7 +709,7 @@ export class DropModule
       // if waitTimeSecondsLimitPerTransaction equals to timestampForNextClaim, that means that this is the first time this address claims this token
       if (
         BigNumber.from(claimCondition.waitTimeSecondsLimitPerTransaction).eq(
-          timestampForNextClaim,
+          timestampForNextClaim
         )
       ) {
         const balance = await this.readOnlyContract.balanceOf(addressToCheck);
@@ -734,7 +734,7 @@ export class DropModule
         const provider = await this.getProvider();
         const balance = await ERC20__factory.connect(
           claimCondition.currency,
-          provider,
+          provider
         ).balanceOf(addressToCheck);
         if (balance.lt(totalPrice)) {
           reasons.push(ClaimEligibility.NotEnoughTokens);
@@ -760,7 +760,7 @@ export class DropModule
    */
   public async canClaim(
     quantity: BigNumberish,
-    addressToCheck?: string,
+    addressToCheck?: string
   ): Promise<boolean> {
     if (addressToCheck === undefined) {
       addressToCheck = await this.getSignerAddress();
@@ -782,7 +782,7 @@ export class DropModule
 
   private async prepareClaim(
     quantity: BigNumberish,
-    proofs: BytesLike[] = [hexZeroPad([0], 32)],
+    proofs: BytesLike[] = [hexZeroPad([0], 32)]
   ): Promise<{
     overrides: ethers.CallOverrides;
     proofs: BytesLike[];
@@ -799,10 +799,10 @@ export class DropModule
       const jsonConvert = new JsonConvert();
       const snapshotData = jsonConvert.deserializeObject(
         JSON.parse(snapshot),
-        Snapshot,
+        Snapshot
       );
       const item = snapshotData.claims.find(
-        (c) => c.address.toLowerCase() === addressToClaim.toLowerCase(),
+        c => c.address.toLowerCase() === addressToClaim.toLowerCase()
       );
       if (item === undefined) {
         throw new Error("No claim found for this address");
@@ -814,31 +814,31 @@ export class DropModule
     if (mintCondition.pricePerToken.gt(0)) {
       if (isNativeToken(mintCondition.currency)) {
         overrides["value"] = BigNumber.from(mintCondition.pricePerToken).mul(
-          quantity,
+          quantity
         );
       } else {
         const erc20 = ERC20__factory.connect(
           mintCondition.currency,
-          this.providerOrSigner,
+          this.providerOrSigner
         );
         const owner = await this.getSignerAddress();
         const spender = this.address;
         const allowance = await erc20.allowance(owner, spender);
         const totalPrice = BigNumber.from(mintCondition.pricePerToken).mul(
-          BigNumber.from(quantity),
+          BigNumber.from(quantity)
         );
 
         if (allowance.lt(totalPrice)) {
           await this.sendContractTransaction(erc20, "approve", [
             spender,
-            allowance.add(totalPrice),
+            allowance.add(totalPrice)
           ]);
         }
       }
     }
     return {
       overrides,
-      proofs,
+      proofs
     };
   }
 
@@ -867,27 +867,27 @@ export class DropModule
   public async claimTo(
     quantity: BigNumberish,
     addressToClaim: string,
-    proofs: BytesLike[] = [hexZeroPad([0], 32)],
+    proofs: BytesLike[] = [hexZeroPad([0], 32)]
   ): Promise<TransactionReceipt> {
     const claimData = await this.prepareClaim(quantity, proofs);
     const encoded = [];
     encoded.push(
       this.contract.interface.encodeFunctionData("claim", [
         quantity,
-        claimData.proofs,
-      ]),
+        claimData.proofs
+      ])
     );
     encoded.push(
       this.contract.interface.encodeFunctionData("transferFrom", [
         await this.getSignerAddress(),
         addressToClaim,
-        (await this.readOnlyContract.nextTokenIdToMint()).sub(1),
-      ]),
+        (await this.readOnlyContract.nextTokenIdToMint()).sub(1)
+      ])
     );
     return await this.sendTransaction(
       "multicall",
       [encoded],
-      claimData.overrides,
+      claimData.overrides
     );
   }
 
@@ -900,7 +900,7 @@ export class DropModule
    */
   public async claim(
     quantity: BigNumberish,
-    proofs: BytesLike[] = [hexZeroPad([0], 32)],
+    proofs: BytesLike[] = [hexZeroPad([0], 32)]
   ): Promise<NFTMetadataOwner[]> {
     if (await this.isV1()) {
       return this.v1Module.claim(quantity, proofs);
@@ -909,7 +909,7 @@ export class DropModule
     const receipt = await this.sendTransaction(
       "claim",
       [quantity, claimData.proofs],
-      claimData.overrides,
+      claimData.overrides
     );
     const event = this.parseEventLogs("ClaimedTokens", receipt?.logs);
     const startingIndex: BigNumber = event.startTokenId;
@@ -919,7 +919,7 @@ export class DropModule
       tokenIds.push(BigNumber.from(i.toString()));
     }
     return await Promise.all(
-      tokenIds.map(async (t) => await this.get(t.toString())),
+      tokenIds.map(async t => await this.get(t.toString()))
     );
   }
   public async burn(tokenId: BigNumberish): Promise<TransactionReceipt> {
@@ -929,14 +929,14 @@ export class DropModule
   public async transferFrom(
     from: string,
     to: string,
-    tokenId: BigNumberish,
+    tokenId: BigNumberish
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("transferFrom", [from, to, tokenId]);
   }
 
   // owner functions
   public async setModuleMetadata(
-    metadata: MetadataURIOrObject,
+    metadata: MetadataURIOrObject
   ): Promise<TransactionReceipt> {
     const uri = await this.sdk.getStorage().uploadMetadata(metadata);
     return await this.sendTransaction("setContractURI", [uri]);
@@ -955,16 +955,16 @@ export class DropModule
     metadata.seller_fee_basis_points = amount;
     const uri = await this.sdk.getStorage().uploadMetadata(
       {
-        ...metadata,
+        ...metadata
       },
       this.address,
-      await this.getSignerAddress(),
+      await this.getSignerAddress()
     );
     encoded.push(
-      this.contract.interface.encodeFunctionData("setRoyaltyBps", [amount]),
+      this.contract.interface.encodeFunctionData("setRoyaltyBps", [amount])
     );
     encoded.push(
-      this.contract.interface.encodeFunctionData("setContractURI", [uri]),
+      this.contract.interface.encodeFunctionData("setContractURI", [uri])
     );
     return await this.sendTransaction("multicall", [encoded]);
   }
@@ -1001,7 +1001,7 @@ export class DropModule
    * @param metadatas - The metadata to include in the batch.
    */
   public async createBatch(
-    metadatas: MetadataURIOrObject[],
+    metadatas: MetadataURIOrObject[]
   ): Promise<string[]> {
     if (await this.isV1()) {
       return this.v1Module.createBatch(metadatas);
@@ -1012,7 +1012,7 @@ export class DropModule
       .uploadMetadataBatch(metadatas, this.address, startFileNumber.toNumber());
     const receipt = await this.sendTransaction("lazyMint", [
       metadatas.length,
-      baseUri,
+      baseUri
     ]);
     const event = this.parseEventLogs("LazyMintedTokens", receipt?.logs);
     const [startingIndex, endingIndex]: BigNumber[] = event;
@@ -1059,7 +1059,7 @@ export class DropModule
    */
   private async getClaimerProofs(
     merkleRoot: string,
-    addressToClaim?: string,
+    addressToClaim?: string
   ): Promise<string[]> {
     if (!addressToClaim) {
       addressToClaim = await this.getSignerAddress();
@@ -1071,10 +1071,10 @@ export class DropModule
     const jsonConvert = new JsonConvert();
     const snapshotData = jsonConvert.deserializeObject(
       JSON.parse(snapshot),
-      Snapshot,
+      Snapshot
     );
     const item = snapshotData.claims.find(
-      (c) => c.address.toLowerCase() === addressToClaim?.toLowerCase(),
+      c => c.address.toLowerCase() === addressToClaim?.toLowerCase()
     );
 
     if (item === undefined) {
@@ -1088,7 +1088,7 @@ export class DropModule
   }
 
   public async setRestrictedTransfer(
-    restricted = false,
+    restricted = false
   ): Promise<TransactionReceipt> {
     await this.onlyRoles(["admin"], await this.getSignerAddress());
     return await this.sendTransaction("setRestrictedTransfer", [restricted]);
@@ -1106,7 +1106,7 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
   public static roles = [
     RolesMap.admin,
     RolesMap.minter,
-    RolesMap.transfer,
+    RolesMap.transfer
   ] as const;
 
   /**
@@ -1135,73 +1135,73 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
     return await getTokenMetadata(
       this.readOnlyContract,
       tokenId,
-      this.ipfsGatewayUrl,
+      this.ipfsGatewayUrl
     );
   }
 
   public async get(tokenId: string): Promise<NFTMetadataOwner> {
     const [owner, metadata] = await Promise.all([
       this.ownerOf(tokenId).catch(() => AddressZero),
-      this.getTokenMetadata(tokenId),
+      this.getTokenMetadata(tokenId)
     ]);
 
     return { owner, metadata };
   }
 
   public async getAll(
-    queryParams?: QueryAllParams,
+    queryParams?: QueryAllParams
   ): Promise<NFTMetadataOwner[]> {
     const start = BigNumber.from(queryParams?.start || 0).toNumber();
     const count = BigNumber.from(
-      queryParams?.count || DEFAULT_QUERY_ALL_COUNT,
+      queryParams?.count || DEFAULT_QUERY_ALL_COUNT
     ).toNumber();
     const maxId = Math.min(
       (await this.readOnlyContract.nextTokenId()).toNumber(),
-      start + count,
+      start + count
     );
     return await Promise.all(
-      Array.from(Array(maxId - start).keys()).map((i) =>
-        this.get((start + i).toString()),
-      ),
+      Array.from(Array(maxId - start).keys()).map(i =>
+        this.get((start + i).toString())
+      )
     );
   }
 
   public async getAllUnclaimed(
-    queryParams?: QueryAllParams,
+    queryParams?: QueryAllParams
   ): Promise<NFTMetadataOwner[]> {
     const start = BigNumber.from(queryParams?.start || 0).toNumber();
     const count = BigNumber.from(
-      queryParams?.count || DEFAULT_QUERY_ALL_COUNT,
+      queryParams?.count || DEFAULT_QUERY_ALL_COUNT
     ).toNumber();
     const maxId = BigNumber.from(
       Math.min(
         (await this.readOnlyContract.nextTokenId()).toNumber(),
-        start + count,
-      ),
+        start + count
+      )
     );
     const unmintedId = await this.readOnlyContract.nextMintTokenId();
     return (
       await Promise.all(
-        Array.from(Array(maxId.sub(unmintedId).toNumber()).keys()).map((i) =>
-          this.getTokenMetadata(unmintedId.add(i).toString()),
-        ),
+        Array.from(Array(maxId.sub(unmintedId).toNumber()).keys()).map(i =>
+          this.getTokenMetadata(unmintedId.add(i).toString())
+        )
       )
-    ).map((metadata) => ({ owner: AddressZero, metadata }));
+    ).map(metadata => ({ owner: AddressZero, metadata }));
   }
 
   public async getAllClaimed(
-    queryParams?: QueryAllParams,
+    queryParams?: QueryAllParams
   ): Promise<NFTMetadataOwner[]> {
     const start = BigNumber.from(queryParams?.start || 0).toNumber();
     const count = BigNumber.from(
-      queryParams?.count || DEFAULT_QUERY_ALL_COUNT,
+      queryParams?.count || DEFAULT_QUERY_ALL_COUNT
     ).toNumber();
     const maxId = Math.min(
       (await this.readOnlyContract.nextMintTokenId()).toNumber(),
-      start + count,
+      start + count
     );
     return await Promise.all(
-      Array.from(Array(maxId).keys()).map((i) => this.get(i.toString())),
+      Array.from(Array(maxId).keys()).map(i => this.get(i.toString()))
     );
   }
 
@@ -1214,24 +1214,24 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
     const balance = await this.readOnlyContract.balanceOf(address);
     const indices = Array.from(Array(balance.toNumber()).keys());
     const tokenIds = await Promise.all(
-      indices.map((i) => this.readOnlyContract.tokenOfOwnerByIndex(address, i)),
+      indices.map(i => this.readOnlyContract.tokenOfOwnerByIndex(address, i))
     );
     return await Promise.all(
-      tokenIds.map((tokenId) => this.get(tokenId.toString())),
+      tokenIds.map(tokenId => this.get(tokenId.toString()))
     );
   }
 
   private async transformResultToClaimCondition(
-    pm: PublicMintConditionStruct,
+    pm: PublicMintConditionStruct
   ): Promise<ClaimCondition> {
     const cv = await getCurrencyValue(
       this.providerOrSigner,
       pm.currency,
-      pm.pricePerToken,
+      pm.pricePerToken
     );
     return {
       startTimestamp: new Date(
-        BigNumber.from(pm.startTimestamp).toNumber() * 1000,
+        BigNumber.from(pm.startTimestamp).toNumber() * 1000
       ),
       maxMintSupply: pm.maxMintSupply.toString(),
       currentMintSupply: pm.currentMintSupply.toString(),
@@ -1246,7 +1246,7 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
       currency: pm.currency,
       currencyContract: pm.currency,
       currencyMetadata: cv,
-      merkleRoot: pm.merkleRoot,
+      merkleRoot: pm.merkleRoot
     };
   }
 
@@ -1304,7 +1304,7 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
 
   public async totalUnclaimedSupply(): Promise<BigNumber> {
     return (await this.readOnlyContract.nextTokenId()).sub(
-      await this.totalClaimedSupply(),
+      await this.totalClaimedSupply()
     );
   }
 
@@ -1326,22 +1326,22 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
   // write functions
   public async setApproval(
     operator: string,
-    approved = true,
+    approved = true
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("setApprovalForAll", [
       operator,
-      approved,
+      approved
     ]);
   }
 
   public async transfer(
     to: string,
-    tokenId: string,
+    tokenId: string
   ): Promise<TransactionReceipt> {
     const from = await this.getSignerAddress();
     return await this.sendTransaction(
       "safeTransferFrom(address,address,uint256)",
-      [from, to, tokenId],
+      [from, to, tokenId]
     );
   }
 
@@ -1364,7 +1364,7 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
       .getStorage()
       .uploadMetadataBatch(metadatas);
     const uris = Array.from(Array(metadatas.length).keys()).map(
-      (i) => `${baseUri}${i}/`,
+      i => `${baseUri}${i}/`
     );
     await this.sendTransaction("lazyMintBatch", [uris]);
   }
@@ -1393,7 +1393,7 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
     const conditions = await factory.buildConditionsForDropV1();
 
     const merkleInfo: { [key: string]: string } = {};
-    factory.allSnapshots().forEach((s) => {
+    factory.allSnapshots().forEach(s => {
       merkleInfo[s.merkleRoot] = s.snapshotUri;
     });
     const { metadata } = await this.getMetadata(false);
@@ -1408,11 +1408,11 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
 
     const encoded = [
       this.contract.interface.encodeFunctionData("setContractURI", [
-        metatdataUri,
+        metatdataUri
       ]),
       this.contract.interface.encodeFunctionData("setPublicMintConditions", [
-        conditions,
-      ]),
+        conditions
+      ])
     ];
     return await this.sendTransaction("multicall", [encoded]);
   }
@@ -1439,9 +1439,9 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
    * @deprecated - Use the {@link DropModule.setClaimConditions} instead.
    */
   public async setPublicMintConditions(
-    conditions: CreatePublicMintCondition[],
+    conditions: CreatePublicMintCondition[]
   ) {
-    const _conditions = conditions.map((c) => ({
+    const _conditions = conditions.map(c => ({
       startTimestamp: c.startTimestampInSeconds || 0,
       maxMintSupply: c.maxMintSupply,
       currentMintSupply: 0,
@@ -1451,14 +1451,14 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
         c.waitTimeSecondsLimitPerTransaction || 0,
       pricePerToken: c.pricePerToken || 0,
       currency: c.currency || AddressZero,
-      merkleRoot: c.merkleRoot || hexZeroPad([0], 32),
+      merkleRoot: c.merkleRoot || hexZeroPad([0], 32)
     }));
     await this.sendTransaction("setPublicMintConditions", [_conditions]);
   }
 
   public async canClaim(
     quantity: BigNumberish,
-    proofs: BytesLike[] = [hexZeroPad([0], 32)],
+    proofs: BytesLike[] = [hexZeroPad([0], 32)]
   ): Promise<boolean> {
     try {
       const mintCondition = await this.getActiveClaimCondition();
@@ -1468,24 +1468,24 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
       if (mintCondition.merkleRoot) {
         proofs = await this.getClaimerProofs(
           mintCondition?.merkleRoot as string,
-          owner,
+          owner
         );
       }
 
       if (mintCondition.pricePerToken.gt(0)) {
         if (mintCondition.currency === AddressZero) {
           overrides["value"] = BigNumber.from(mintCondition.pricePerToken).mul(
-            quantity,
+            quantity
           );
         } else {
           const erc20 = ERC20__factory.connect(
             mintCondition.currency,
-            this.providerOrSigner,
+            this.providerOrSigner
           );
           const spender = this.address;
           const allowance = await erc20.allowance(owner, spender);
           const totalPrice = BigNumber.from(mintCondition.pricePerToken).mul(
-            BigNumber.from(quantity),
+            BigNumber.from(quantity)
           );
 
           if (allowance.lt(totalPrice)) {
@@ -1508,7 +1508,7 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
    */
   private async getClaimerProofs(
     merkleRoot: string,
-    addressToClaim?: string,
+    addressToClaim?: string
   ): Promise<string[]> {
     if (!addressToClaim) {
       addressToClaim = await this.getSignerAddress();
@@ -1518,10 +1518,10 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
     const jsonConvert = new JsonConvert();
     const snapshotData = jsonConvert.deserializeObject(
       JSON.parse(snapshot),
-      Snapshot,
+      Snapshot
     );
     const item = snapshotData.claims.find(
-      (c) => c.address.toLowerCase() === addressToClaim?.toLowerCase(),
+      c => c.address.toLowerCase() === addressToClaim?.toLowerCase()
     );
     if (item === undefined) {
       return [];
@@ -1531,7 +1531,7 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
 
   public async claim(
     quantity: BigNumberish,
-    proofs: BytesLike[] = [hexZeroPad([0], 32)],
+    proofs: BytesLike[] = [hexZeroPad([0], 32)]
   ): Promise<NFTMetadataOwner[]> {
     const mintCondition = await this.getActiveClaimCondition();
     const { metadata } = await this.getMetadata();
@@ -1540,15 +1540,15 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
 
     if (!mintCondition.merkleRoot.toString().startsWith(AddressZero)) {
       const snapshot = await this.storage.get(
-        metadata?.merkle[mintCondition.merkleRoot.toString()],
+        metadata?.merkle[mintCondition.merkleRoot.toString()]
       );
       const jsonConvert = new JsonConvert();
       const snapshotData = jsonConvert.deserializeObject(
         JSON.parse(snapshot),
-        Snapshot,
+        Snapshot
       );
       const item = snapshotData.claims.find(
-        (c) => c.address.toLowerCase() === addressToClaim.toLowerCase(),
+        c => c.address.toLowerCase() === addressToClaim.toLowerCase()
       );
       if (item === undefined) {
         throw new Error("No claim found for this address");
@@ -1560,24 +1560,24 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
     if (mintCondition.pricePerToken.gt(0)) {
       if (mintCondition.currency === AddressZero) {
         overrides["value"] = BigNumber.from(mintCondition.pricePerToken).mul(
-          quantity,
+          quantity
         );
       } else {
         const erc20 = ERC20__factory.connect(
           mintCondition.currency,
-          this.providerOrSigner,
+          this.providerOrSigner
         );
         const owner = await this.getSignerAddress();
         const spender = this.address;
         const allowance = await erc20.allowance(owner, spender);
         const totalPrice = BigNumber.from(mintCondition.pricePerToken).mul(
-          BigNumber.from(quantity),
+          BigNumber.from(quantity)
         );
 
         if (allowance.lt(totalPrice)) {
           await this.sendContractTransaction(erc20, "approve", [
             spender,
-            allowance.add(totalPrice),
+            allowance.add(totalPrice)
           ]);
         }
       }
@@ -1586,7 +1586,7 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
     const receipt = await this.sendTransaction(
       "claim",
       [quantity, proofs],
-      overrides,
+      overrides
     );
     const event = this.parseEventLogs("Claimed", receipt?.logs);
     const startingIndex: BigNumber = event.startTokenId;
@@ -1596,7 +1596,7 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
       tokenIds.push(BigNumber.from(i.toString()));
     }
     return await Promise.all(
-      tokenIds.map(async (t) => await this.get(t.toString())),
+      tokenIds.map(async t => await this.get(t.toString()))
     );
   }
 
@@ -1607,14 +1607,14 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
   public async transferFrom(
     from: string,
     to: string,
-    tokenId: BigNumberish,
+    tokenId: BigNumberish
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("transferFrom", [from, to, tokenId]);
   }
 
   // owner functions
   public async setModuleMetadata(
-    metadata: MetadataURIOrObject,
+    metadata: MetadataURIOrObject
   ): Promise<TransactionReceipt> {
     const uri = await this.storage.uploadMetadata(metadata);
     return await this.sendTransaction("setContractURI", [uri]);
@@ -1633,16 +1633,16 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
     metadata.seller_fee_basis_points = amount;
     const uri = await this.storage.uploadMetadata(
       {
-        ...metadata,
+        ...metadata
       },
       this.address,
-      await this.getSignerAddress(),
+      await this.getSignerAddress()
     );
     encoded.push(
-      this.contract.interface.encodeFunctionData("setRoyaltyBps", [amount]),
+      this.contract.interface.encodeFunctionData("setRoyaltyBps", [amount])
     );
     encoded.push(
-      this.contract.interface.encodeFunctionData("setContractURI", [uri]),
+      this.contract.interface.encodeFunctionData("setContractURI", [uri])
     );
     return await this.sendTransaction("multicall", [encoded]);
   }
@@ -1652,7 +1652,7 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
   }
 
   public async setMaxTotalSupply(
-    amount: BigNumberish,
+    amount: BigNumberish
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("setMaxTotalSupply", [amount]);
   }
@@ -1689,7 +1689,7 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
    * @param metadatas - The metadata to include in the batch.
    */
   public async createBatch(
-    metadatas: MetadataURIOrObject[],
+    metadatas: MetadataURIOrObject[]
   ): Promise<string[]> {
     if (!(await this.canCreateBatch())) {
       throw new Error("Batch already created!");
@@ -1699,13 +1699,13 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
     const { baseUri } = await this.storage.uploadMetadataBatch(
       metadatas,
       this.address,
-      startFileNumber.toNumber(),
+      startFileNumber.toNumber()
     );
     const encoded = [
       this.contract.interface.encodeFunctionData("setBaseTokenURI", [baseUri]),
       this.contract.interface.encodeFunctionData("lazyMintAmount", [
-        metadatas.length,
-      ]),
+        metadatas.length
+      ])
     ];
     await this.sendTransaction("multicall", [encoded]);
     return [];
@@ -1725,7 +1725,7 @@ class DropV1Module extends ModuleWithRoles<Drop> implements ITransferable {
   }
 
   public async setRestrictedTransfer(
-    restricted = false,
+    restricted = false
   ): Promise<TransactionReceipt> {
     await this.onlyRoles(["admin"], await this.getSignerAddress());
     return await this.sendTransaction("setRestrictedTransfer", [restricted]);

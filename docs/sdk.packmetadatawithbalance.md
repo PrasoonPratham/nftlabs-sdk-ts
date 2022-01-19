@@ -4,17 +4,16 @@
 
 ## PackMetadataWithBalance interface
 
-
 <b>Signature:</b>
 
 ```typescript
-export interface PackMetadataWithBalance extends PackMetadata 
+export interface PackMetadataWithBalance extends PackMetadata
 ```
+
 <b>Extends:</b> [PackMetadata](./sdk.packmetadata.md)
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [ownedByAddress](./sdk.packmetadatawithbalance.ownedbyaddress.md) | BigNumber |  |
-
+| Property                                                          | Type      | Description |
+| ----------------------------------------------------------------- | --------- | ----------- |
+| [ownedByAddress](./sdk.packmetadatawithbalance.ownedbyaddress.md) | BigNumber |             |

@@ -14,11 +14,10 @@ setSnapshot(addresses: string[]): ClaimConditionPhase;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  addresses | string\[\] |  |
+| Parameter | Type       | Description |
+| --------- | ---------- | ----------- |
+| addresses | string\[\] |             |
 
 <b>Returns:</b>
 
 ClaimConditionPhase
-

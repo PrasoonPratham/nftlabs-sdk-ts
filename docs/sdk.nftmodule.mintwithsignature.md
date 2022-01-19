@@ -12,12 +12,11 @@ mintWithSignature(req: SignaturePayload, signature: string): Promise<BigNumber>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  req | [SignaturePayload](./sdk.signaturepayload.md) |  |
-|  signature | string |  |
+| Parameter | Type                                          | Description |
+| --------- | --------------------------------------------- | ----------- |
+| req       | [SignaturePayload](./sdk.signaturepayload.md) |             |
+| signature | string                                        |             |
 
 <b>Returns:</b>
 
 Promise&lt;BigNumber&gt;
-

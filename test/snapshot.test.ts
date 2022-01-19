@@ -24,7 +24,7 @@ describe("Snapshots", async () => {
     "0xE79ee09bD47F4F5381dbbACaCff2040f2FbC5803",
     "0x99703159fbE079e1a48B53039a5e52e7b2d9E559",
     "0x38641f11406E513A187d40600a13C9F921db23c2",
-    "0x14fb3a9B317612ddc6d6Cc3c907CD9F2Aa091eE7",
+    "0x14fb3a9B317612ddc6d6Cc3c907CD9F2Aa091eE7"
   ];
 
   let adminWallet: SignerWithAddress,
@@ -45,7 +45,7 @@ describe("Snapshots", async () => {
   it("should generate a valid merkle root from a list of addresses", async () => {
     assert.equal(
       merkleRoot,
-      "0xed194a7138dce33f7dfbcfa95492f4eb414fae6cf51e8994ad70d209579a609d",
+      "0xed194a7138dce33f7dfbcfa95492f4eb414fae6cf51e8994ad70d209579a609d"
     );
   });
 
@@ -60,7 +60,7 @@ describe("Snapshots", async () => {
     }
 
     assert.fail(
-      "should not reach this point, exception should have been thrown",
+      "should not reach this point, exception should have been thrown"
     );
   });
 
@@ -77,10 +77,10 @@ describe("Snapshots", async () => {
   });
 
   it("should contain a claim for each leaf", () => {
-    leafs.forEach((leaf) => {
+    leafs.forEach(leaf => {
       assert.notEqual(
         snapshot.claims.find((c: ClaimProof) => c.address === leaf),
-        undefined,
+        undefined
       );
     });
   });

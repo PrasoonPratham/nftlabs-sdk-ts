@@ -14,13 +14,12 @@ ownerOf(tokenId: string): Promise<string>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | string | ID of the NFT to get the owner of |
+| Parameter | Type   | Description                       |
+| --------- | ------ | --------------------------------- |
+| tokenId   | string | ID of the NFT to get the owner of |
 
 <b>Returns:</b>
 
 Promise&lt;string&gt;
 
 the owner of the token, or a zero address if the token has been burned
-

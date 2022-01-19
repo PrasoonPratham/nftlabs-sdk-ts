@@ -14,9 +14,9 @@ createBatch(metadatas: MetadataURIOrObject[]): Promise<string[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadatas | [MetadataURIOrObject](./sdk.metadatauriorobject.md)<!-- -->\[\] |  |
+| Parameter | Type                                                            | Description |
+| --------- | --------------------------------------------------------------- | ----------- |
+| metadatas | [MetadataURIOrObject](./sdk.metadatauriorobject.md)<!-- -->\[\] |             |
 
 <b>Returns:</b>
 
@@ -28,19 +28,20 @@ Create and mint NFTs.
 
 ## Example
 
-
 ```javascript
 // Custom metadata of the NFTs to create
-const metadatas = [{
-  name: "Cool NFT",
-  description: "This is a cool NFT",
-  image: fs.readFileSync("path/to/image.png"), // This can be an image url or file
-}, {
-  name: "Cool NFT",
-  description: "This is a cool NFT",
-  image: fs.readFileSync("path/to/image.png"), // This can be an image url or file
-}];
+const metadatas = [
+  {
+    name: "Cool NFT",
+    description: "This is a cool NFT",
+    image: fs.readFileSync("path/to/image.png") // This can be an image url or file
+  },
+  {
+    name: "Cool NFT",
+    description: "This is a cool NFT",
+    image: fs.readFileSync("path/to/image.png") // This can be an image url or file
+  }
+];
 
 await module.createBatch(metadatas);
 ```
-

@@ -12,12 +12,11 @@ setApproval(operator: string, approved?: boolean): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  operator | string |  |
-|  approved | boolean |  |
+| Parameter | Type    | Description |
+| --------- | ------- | ----------- |
+| operator  | string  |             |
+| approved  | boolean |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

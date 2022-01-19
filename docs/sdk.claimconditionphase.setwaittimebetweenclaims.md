@@ -14,11 +14,10 @@ setWaitTimeBetweenClaims(waitInSeconds: BigNumberish): ClaimConditionPhase;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  waitInSeconds | BigNumberish | The wait time in seconds. |
+| Parameter     | Type         | Description               |
+| ------------- | ------------ | ------------------------- |
+| waitInSeconds | BigNumberish | The wait time in seconds. |
 
 <b>Returns:</b>
 
 ClaimConditionPhase
-

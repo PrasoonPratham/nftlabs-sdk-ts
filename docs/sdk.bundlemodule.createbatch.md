@@ -12,11 +12,10 @@ createBatch(metadatas: MetadataURIOrObject[]): Promise<BundleMetadata[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadatas | [MetadataURIOrObject](./sdk.metadatauriorobject.md)<!-- -->\[\] |  |
+| Parameter | Type                                                            | Description |
+| --------- | --------------------------------------------------------------- | ----------- |
+| metadatas | [MetadataURIOrObject](./sdk.metadatauriorobject.md)<!-- -->\[\] |             |
 
 <b>Returns:</b>
 
 Promise&lt;[BundleMetadata](./sdk.bundlemetadata.md)<!-- -->\[\]&gt;
-

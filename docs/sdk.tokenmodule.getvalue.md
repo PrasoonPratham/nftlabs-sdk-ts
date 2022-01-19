@@ -12,11 +12,10 @@ getValue(value: BigNumberish): Promise<CurrencyValue>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  value | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| value     | BigNumberish |             |
 
 <b>Returns:</b>
 
 Promise&lt;[CurrencyValue](./sdk.currencyvalue.md)<!-- -->&gt;
-

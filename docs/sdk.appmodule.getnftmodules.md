@@ -5,9 +5,8 @@
 ## AppModule.getNFTModules() method
 
 > Warning: This API is now obsolete.
-> 
+>
 > - Use [AppModule.getAllModuleMetadata()](./sdk.appmodule.getallmodulemetadata.md) instead
-> 
 
 Method to get a list of NFT module metadata.
 
@@ -16,9 +15,9 @@ Method to get a list of NFT module metadata.
 ```typescript
 getNFTModules(): Promise<ModuleMetadata[]>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;[ModuleMetadata](./sdk.modulemetadata.md)<!-- -->\[\]&gt;
 
 A promise of an array of NFT modules.
-

@@ -12,12 +12,11 @@ setApproval(operator: string, approved?: boolean): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  operator | string |  |
-|  approved | boolean |  |
+| Parameter | Type    | Description |
+| --------- | ------- | ----------- |
+| operator  | string  |             |
+| approved  | boolean |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

@@ -12,11 +12,10 @@ depositLink(amount: BigNumberish): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  amount | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| amount    | BigNumberish |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

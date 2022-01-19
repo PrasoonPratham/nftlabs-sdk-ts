@@ -4,7 +4,7 @@ import { BigNumber, ethers } from "ethers";
 import {
   BundleDropModule,
   ClaimEligibility,
-  NATIVE_TOKEN_ADDRESS,
+  NATIVE_TOKEN_ADDRESS
 } from "../src/index";
 import { appModule, sdk, signers } from "./before.test";
 
@@ -37,7 +37,7 @@ describe("Bundle Drop Module", async () => {
     bdModule = await appModule.deployBundleDropModule({
       name: "Bunlde Drop Module",
       sellerFeeBasisPoints: 1000,
-      primarySaleRecipientAddress: adminWallet.address,
+      primarySaleRecipientAddress: adminWallet.address
     });
   });
 
@@ -45,13 +45,13 @@ describe("Bundle Drop Module", async () => {
   it("should allow you to set claim conditions", async () => {
     await bdModule.lazyMintBatch([
       { name: "test", description: "test" },
-      { name: "test", description: "test" },
+      { name: "test", description: "test" }
     ]);
 
     const factory = bdModule.getClaimConditionsFactory();
 
     const phase = factory.newClaimPhase({
-      startTime: new Date(),
+      startTime: new Date()
     });
 
     await bdModule.setClaimCondition(BigNumber.from("0"), factory);
@@ -66,14 +66,14 @@ describe("Bundle Drop Module", async () => {
     await bdModule.lazyMintBatch([
       {
         name: "test",
-        description: "test",
-      },
+        description: "test"
+      }
     ]);
 
     const factory = bdModule.getClaimConditionFactory();
     const phase = factory.newClaimPhase({
       startTime: new Date(),
-      maxQuantity: 1000,
+      maxQuantity: 1000
     });
     const testWallets: SignerWithAddress[] = [
       bobWallet,
@@ -82,9 +82,9 @@ describe("Bundle Drop Module", async () => {
       w1,
       w2,
       w3,
-      w4,
+      w4
     ];
-    const members = testWallets.map((w) => w.address);
+    const members = testWallets.map(w => w.address);
     await phase.setSnapshot(members);
 
     console.log("Setting claim condition");
@@ -103,14 +103,14 @@ describe("Bundle Drop Module", async () => {
     await bdModule.lazyMintBatch([
       {
         name: "test",
-        description: "test",
-      },
+        description: "test"
+      }
     ]);
 
     const factory = bdModule.getClaimConditionFactory();
     const phase = factory.newClaimPhase({
       startTime: new Date(),
-      maxQuantity: 1000,
+      maxQuantity: 1000
     });
     const testWallets: SignerWithAddress[] = [
       bobWallet,
@@ -118,9 +118,9 @@ describe("Bundle Drop Module", async () => {
       abbyWallet,
       w1,
       w2,
-      w3,
+      w3
     ];
-    const members = testWallets.map((w) => w.address);
+    const members = testWallets.map(w => w.address);
     phase.setSnapshot(members);
     console.log("Setting claim condition");
     await bdModule.setClaimCondition("0", factory);
@@ -142,40 +142,40 @@ describe("Bundle Drop Module", async () => {
   it("should return the newly minted tokens", async () => {
     const tokens = [
       {
-        name: "test 0",
+        name: "test 0"
       },
       {
-        name: "test 1",
+        name: "test 1"
       },
       {
-        name: "test 2",
+        name: "test 2"
       },
       {
-        name: "test 3",
+        name: "test 3"
       },
       {
-        name: "test 4",
-      },
+        name: "test 4"
+      }
     ];
     const result = await bdModule.lazyMintBatch(tokens);
     assert.lengthOf(result, tokens.length);
     for (const token of tokens) {
-      const found = result.find((t) => t.metadata.name === token.name);
+      const found = result.find(t => t.metadata.name === token.name);
       assert.isDefined(found);
     }
 
     const moreTokens = [
       {
-        name: "test 5",
+        name: "test 5"
       },
       {
-        name: "test 6",
-      },
+        name: "test 6"
+      }
     ];
     const moreResult = await bdModule.lazyMintBatch(moreTokens);
     assert.lengthOf(moreResult, moreTokens.length);
     for (const token of moreTokens) {
-      const found = moreResult.find((t) => t.metadata.name === token.name);
+      const found = moreResult.find(t => t.metadata.name === token.name);
       assert.isDefined(found);
     }
   });
@@ -183,19 +183,19 @@ describe("Bundle Drop Module", async () => {
   it("should allow a default claim condition to be used to claim", async () => {
     await bdModule.lazyMintBatch([
       {
-        name: "test 0",
+        name: "test 0"
       },
       {
-        name: "test 1",
+        name: "test 1"
       },
       {
-        name: "test 2",
-      },
+        name: "test 2"
+      }
     ]);
 
     const factory = bdModule.getClaimConditionFactory();
     factory.newClaimPhase({
-      startTime: new Date(),
+      startTime: new Date()
     });
     await bdModule.setClaimCondition("0", factory);
     await bdModule.claim("0", 1);
@@ -204,16 +204,16 @@ describe("Bundle Drop Module", async () => {
   it("should return addresses of all the claimers", async () => {
     await bdModule.lazyMintBatch([
       {
-        name: "test 0",
+        name: "test 0"
       },
       {
-        name: "test 1",
-      },
+        name: "test 1"
+      }
     ]);
 
     const factory = bdModule.getClaimConditionFactory();
     factory.newClaimPhase({
-      startTime: new Date(),
+      startTime: new Date()
     });
     await bdModule.setClaimCondition("0", factory);
     await bdModule.setClaimCondition("1", factory);
@@ -225,7 +225,7 @@ describe("Bundle Drop Module", async () => {
     const claimers = await bdModule.getAllClaimerAddresses("0");
     expect(claimers).to.deep.equalInAnyOrder([
       samWallet.address,
-      adminWallet.address,
+      adminWallet.address
     ]);
 
     await sdk.setProviderOrSigner(w1);
@@ -240,7 +240,7 @@ describe("Bundle Drop Module", async () => {
   it("should return the correct status if a token can be claimed", async () => {
     const factory = bdModule.getClaimConditionFactory();
     const phase = factory.newClaimPhase({
-      startTime: new Date(),
+      startTime: new Date()
     });
     await phase.setSnapshot([w1.address]);
     await bdModule.setClaimCondition("0", factory);
@@ -258,7 +258,7 @@ describe("Bundle Drop Module", async () => {
   it("canClaim: 1 address", async () => {
     const factory = bdModule.getClaimConditionsFactory();
     const phase = factory.newClaimPhase({
-      startTime: new Date(),
+      startTime: new Date()
     });
     await phase.setSnapshot([w1.address]);
     await bdModule.setClaimCondition("0", factory);
@@ -270,12 +270,12 @@ describe("Bundle Drop Module", async () => {
   it("canClaim: 3 address", async () => {
     const factory = bdModule.getClaimConditionsFactory();
     const phase = factory.newClaimPhase({
-      startTime: new Date(),
+      startTime: new Date()
     });
     await phase.setSnapshot([
       w1.address.toUpperCase().replace("0X", "0x"),
       w2.address.toLowerCase(),
-      w3.address,
+      w3.address
     ]);
     await bdModule.setClaimCondition("0", factory);
 
@@ -284,7 +284,7 @@ describe("Bundle Drop Module", async () => {
     assert.isTrue(await bdModule.canClaim("0", 1, w3.address), "can claim");
     assert.isFalse(
       await bdModule.canClaim("0", 1, bobWallet.address),
-      "!can claim",
+      "!can claim"
     );
   });
 
@@ -292,13 +292,13 @@ describe("Bundle Drop Module", async () => {
     await bdModule.lazyMintBatch([
       {
         name: "test",
-        description: "test",
-      },
+        description: "test"
+      }
     ]);
     const factory = bdModule.getClaimConditionFactory();
     factory
       .newClaimPhase({
-        startTime: new Date(),
+        startTime: new Date()
       })
       .setPrice(1);
     await bdModule.setClaimCondition("0", factory);
@@ -310,8 +310,8 @@ describe("Bundle Drop Module", async () => {
       await bdModule.lazyMintBatch([
         {
           name: "test",
-          description: "test",
-        },
+          description: "test"
+        }
       ]);
     });
 
@@ -319,7 +319,7 @@ describe("Bundle Drop Module", async () => {
       const reasons = await bdModule.getClaimIneligibilityReasons(
         "0",
         "0",
-        bobWallet.address,
+        bobWallet.address
       );
 
       expect(reasons).to.include(ClaimEligibility.NoActiveClaimPhase);
@@ -332,14 +332,14 @@ describe("Bundle Drop Module", async () => {
       const factory = bdModule.getClaimConditionFactory();
       factory.newClaimPhase({
         startTime: new Date(),
-        maxQuantity: 1,
+        maxQuantity: 1
       });
       await bdModule.setClaimCondition("0", factory);
 
       const reasons = await bdModule.getClaimIneligibilityReasons(
         "0",
         "2",
-        w1.address,
+        w1.address
       );
       expect(reasons).to.include(ClaimEligibility.NotEnoughSupply);
       const canClaim = await bdModule.canClaim("0", "2", w1.address);
@@ -350,7 +350,7 @@ describe("Bundle Drop Module", async () => {
       const factory = bdModule.getClaimConditionFactory();
       const phase = factory.newClaimPhase({
         startTime: new Date(),
-        maxQuantity: 1,
+        maxQuantity: 1
       });
       await phase.setSnapshot([w2.address, adminWallet.address]);
       await bdModule.setClaimCondition("0", factory);
@@ -358,7 +358,7 @@ describe("Bundle Drop Module", async () => {
       const reasons = await bdModule.getClaimIneligibilityReasons(
         "0",
         "1",
-        w1.address,
+        w1.address
       );
       expect(reasons).to.include(ClaimEligibility.AddressNotAllowed);
       const canClaim = await bdModule.canClaim("0", "1", w1.address);
@@ -370,7 +370,7 @@ describe("Bundle Drop Module", async () => {
       factory
         .newClaimPhase({
           startTime: new Date(),
-          maxQuantity: 10,
+          maxQuantity: 10
         })
         .setWaitTimeBetweenClaims(24 * 60 * 60);
       await bdModule.setClaimCondition("0", factory);
@@ -380,11 +380,11 @@ describe("Bundle Drop Module", async () => {
       const reasons = await bdModule.getClaimIneligibilityReasons(
         "0",
         "1",
-        bobWallet.address,
+        bobWallet.address
       );
 
       expect(reasons).to.include(
-        ClaimEligibility.WaitBeforeNextClaimTransaction,
+        ClaimEligibility.WaitBeforeNextClaimTransaction
       );
       const canClaim = await bdModule.canClaim("0", "1", bobWallet.address);
       assert.isFalse(canClaim);
@@ -395,11 +395,11 @@ describe("Bundle Drop Module", async () => {
       factory
         .newClaimPhase({
           startTime: new Date(),
-          maxQuantity: 10,
+          maxQuantity: 10
         })
         .setPrice(
           ethers.utils.parseUnits("1000000000000000"),
-          NATIVE_TOKEN_ADDRESS,
+          NATIVE_TOKEN_ADDRESS
         );
       await bdModule.setClaimCondition("0", factory);
       await sdk.setProviderOrSigner(bobWallet);
@@ -407,7 +407,7 @@ describe("Bundle Drop Module", async () => {
       const reasons = await bdModule.getClaimIneligibilityReasons(
         "0",
         "1",
-        bobWallet.address,
+        bobWallet.address
       );
 
       expect(reasons).to.include(ClaimEligibility.NotEnoughTokens);
@@ -418,18 +418,18 @@ describe("Bundle Drop Module", async () => {
     it("should check if an address has enough erc20 currency", async () => {
       const currency = await appModule.deployCurrencyModule({
         name: "test",
-        symbol: "test",
+        symbol: "test"
       });
 
       const factory = bdModule.getClaimConditionFactory();
       factory
         .newClaimPhase({
           startTime: new Date(),
-          maxQuantity: 10,
+          maxQuantity: 10
         })
         .setPrice(
           ethers.utils.parseUnits("1000000000000000"),
-          currency.address,
+          currency.address
         );
       await bdModule.setClaimCondition("0", factory);
       await sdk.setProviderOrSigner(bobWallet);
@@ -437,7 +437,7 @@ describe("Bundle Drop Module", async () => {
       const reasons = await bdModule.getClaimIneligibilityReasons(
         "0",
         "1",
-        bobWallet.address,
+        bobWallet.address
       );
 
       expect(reasons).to.include(ClaimEligibility.NotEnoughTokens);
@@ -450,7 +450,7 @@ describe("Bundle Drop Module", async () => {
       const phase = factory
         .newClaimPhase({
           startTime: new Date(),
-          maxQuantity: 10,
+          maxQuantity: 10
         })
         .setPrice(ethers.utils.parseUnits("100"), NATIVE_TOKEN_ADDRESS);
       await phase.setSnapshot([w1.address, w2.address, w3.address]);
@@ -459,7 +459,7 @@ describe("Bundle Drop Module", async () => {
       const reasons = await bdModule.getClaimIneligibilityReasons(
         "0",
         "1",
-        w1.address,
+        w1.address
       );
       assert.lengthOf(reasons, 0);
 
@@ -470,13 +470,13 @@ describe("Bundle Drop Module", async () => {
   it("should allow you to update claim conditions", async () => {
     await bdModule.lazyMintBatch([
       { name: "test", description: "test" },
-      { name: "test", description: "test" },
+      { name: "test", description: "test" }
     ]);
 
     let factory = bdModule.getClaimConditionsFactory();
 
     factory.newClaimPhase({
-      startTime: new Date(),
+      startTime: new Date()
     });
 
     await bdModule.setClaimCondition(BigNumber.from("0"), factory);
@@ -484,7 +484,7 @@ describe("Bundle Drop Module", async () => {
     const conditions = await bdModule.getAllClaimConditions(0);
     factory = bdModule.getClaimConditionsFactory();
     factory.newClaimPhase({
-      startTime: new Date(),
+      startTime: new Date()
     });
     await bdModule.updateClaimConditions(BigNumber.from("0"), factory);
     assert.lengthOf(conditions, 1);
@@ -493,12 +493,12 @@ describe("Bundle Drop Module", async () => {
   it("should be able to use claim as function expected", async () => {
     await bdModule.lazyMintBatch([
       {
-        name: "test",
-      },
+        name: "test"
+      }
     ]);
     const factory = bdModule.getClaimConditionFactory();
     factory.newClaimPhase({
-      startTime: new Date(),
+      startTime: new Date()
     });
     await bdModule.setClaimCondition("0", factory);
     await bdModule.claim("0", 1);
@@ -508,12 +508,12 @@ describe("Bundle Drop Module", async () => {
   it("should be able to use claimTo function as expected", async () => {
     await bdModule.lazyMintBatch([
       {
-        name: "test",
-      },
+        name: "test"
+      }
     ]);
     const factory = bdModule.getClaimConditionFactory();
     factory.newClaimPhase({
-      startTime: new Date(),
+      startTime: new Date()
     });
     await bdModule.setClaimCondition("0", factory);
     await bdModule.claimTo("0", 1, samWallet.address);
@@ -524,25 +524,25 @@ describe("Bundle Drop Module", async () => {
     it("should not overwrite existing merkle keys in the metadata", async () => {
       await bdModule.lazyMintBatch([
         { name: "test", description: "test" },
-        { name: "test", description: "test" },
+        { name: "test", description: "test" }
       ]);
 
       const factory = bdModule.getClaimConditionFactory();
       const phase = factory.newClaimPhase({
-        startTime: new Date(),
+        startTime: new Date()
       });
       await phase.setSnapshot([w1.address, w2.address, bobWallet.address]);
       await bdModule.setClaimCondition("1", factory);
 
       const factory2 = bdModule.getClaimConditionFactory();
       const phase2 = factory2.newClaimPhase({
-        startTime: new Date(),
+        startTime: new Date()
       });
       await phase2.setSnapshot([
         w3.address,
         w1.address,
         w2.address,
-        adminWallet.address,
+        adminWallet.address
       ]);
       await bdModule.setClaimCondition("2", factory2);
 

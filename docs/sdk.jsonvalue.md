@@ -9,9 +9,15 @@ A JSON value
 <b>Signature:</b>
 
 ```typescript
-export declare type JSONValue = string | number | null | boolean | JSONValue[] | {
-    [key: string]: JSONValue;
-};
+export declare type JSONValue =
+  | string
+  | number
+  | null
+  | boolean
+  | JSONValue[]
+  | {
+      [key: string]: JSONValue;
+    };
 ```
-<b>References:</b> [JSONValue](./sdk.jsonvalue.md)
 
+<b>References:</b> [JSONValue](./sdk.jsonvalue.md)

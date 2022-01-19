@@ -7,13 +7,12 @@
 <b>Signature:</b>
 
 ```typescript
-export interface INFTBundleBatchArgs 
+export interface INFTBundleBatchArgs
 ```
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [amount](./sdk.inftbundlebatchargs.amount.md) | BigNumberish |  |
-|  [tokenId](./sdk.inftbundlebatchargs.tokenid.md) | BigNumberish |  |
-
+| Property                                        | Type         | Description |
+| ----------------------------------------------- | ------------ | ----------- |
+| [amount](./sdk.inftbundlebatchargs.amount.md)   | BigNumberish |             |
+| [tokenId](./sdk.inftbundlebatchargs.tokenid.md) | BigNumberish |             |

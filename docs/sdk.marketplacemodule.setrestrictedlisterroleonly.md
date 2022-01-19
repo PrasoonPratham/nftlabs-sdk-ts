@@ -12,11 +12,10 @@ setRestrictedListerRoleOnly(isRestricted: boolean): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  isRestricted | boolean |  |
+| Parameter    | Type    | Description |
+| ------------ | ------- | ----------- |
+| isRestricted | boolean |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

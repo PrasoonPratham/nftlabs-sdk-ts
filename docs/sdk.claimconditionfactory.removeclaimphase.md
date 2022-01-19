@@ -5,9 +5,8 @@
 ## ClaimConditionFactory.removeClaimPhase() method
 
 > Warning: This API is now obsolete.
-> 
+>
 > - Use [ClaimConditionFactory.deleteClaimPhase()](./sdk.claimconditionfactory.deleteclaimphase.md) instead.
-> 
 
 <b>Signature:</b>
 
@@ -17,11 +16,10 @@ removeClaimPhase(_index: number): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  \_index | number |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| \_index   | number |             |
 
 <b>Returns:</b>
 
 void
-

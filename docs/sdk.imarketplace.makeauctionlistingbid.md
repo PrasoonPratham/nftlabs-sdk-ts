@@ -23,11 +23,10 @@ makeAuctionListingBid(bid: {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  bid | { listingId: BigNumberish; pricePerToken: BigNumberish; } |  |
+| Parameter | Type                                                      | Description |
+| --------- | --------------------------------------------------------- | ----------- |
+| bid       | { listingId: BigNumberish; pricePerToken: BigNumberish; } |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

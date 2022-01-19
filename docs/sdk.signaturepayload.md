@@ -9,13 +9,13 @@ Represents a prepared `SignaturePayload` object, which will be signed by a walle
 <b>Signature:</b>
 
 ```typescript
-export interface SignaturePayload extends NewSignaturePayload 
+export interface SignaturePayload extends NewSignaturePayload
 ```
+
 <b>Extends:</b> [NewSignaturePayload](./sdk.newsignaturepayload.md)
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [uri](./sdk.signaturepayload.uri.md) | string | The URI of the token metadata corresponding to this signature |
-
+| Property                             | Type   | Description                                                   |
+| ------------------------------------ | ------ | ------------------------------------------------------------- |
+| [uri](./sdk.signaturepayload.uri.md) | string | The URI of the token metadata corresponding to this signature |

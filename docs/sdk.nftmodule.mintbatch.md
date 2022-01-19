@@ -12,11 +12,10 @@ mintBatch(metadatas: MetadataURIOrObject[]): Promise<NFTMetadata[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadatas | [MetadataURIOrObject](./sdk.metadatauriorobject.md)<!-- -->\[\] |  |
+| Parameter | Type                                                            | Description |
+| --------- | --------------------------------------------------------------- | ----------- |
+| metadatas | [MetadataURIOrObject](./sdk.metadatauriorobject.md)<!-- -->\[\] |             |
 
 <b>Returns:</b>
 
 Promise&lt;[NFTMetadata](./sdk.nftmetadata.md)<!-- -->\[\]&gt;
-

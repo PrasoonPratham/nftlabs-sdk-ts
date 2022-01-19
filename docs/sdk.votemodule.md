@@ -9,12 +9,12 @@ Create a decentralized organization for token holders to vote on proposals.
 <b>Signature:</b>
 
 ```typescript
-export declare class VoteModule extends Module<VotingGovernor> 
+export declare class VoteModule extends Module<VotingGovernor>
 ```
+
 <b>Extends:</b> [Module](./sdk.module.md)<!-- -->&lt;VotingGovernor&gt;
 
 ## Example
-
 
 ```javascript
 import { ThirdwebSDK } from "@3rdweb/sdk";
@@ -27,23 +27,22 @@ const module = sdk.getVoteModule("{{module_address}}");
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [moduleType](./sdk.votemodule.moduletype.md) | <code>static</code> | [ModuleType](./sdk.moduletype.md) |  |
+| Property                                     | Modifiers           | Type                              | Description |
+| -------------------------------------------- | ------------------- | --------------------------------- | ----------- |
+| [moduleType](./sdk.votemodule.moduletype.md) | <code>static</code> | [ModuleType](./sdk.moduletype.md) |             |
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [balance()](./sdk.votemodule.balance.md) |  | Check the balance of the project wallet in the native token of the chain |
-|  [balanceOfToken(tokenAddress)](./sdk.votemodule.balanceoftoken.md) |  | Check the balance of the project wallet in a particular ERC20 token contract |
-|  [canExecute(proposalId)](./sdk.votemodule.canexecute.md) |  | Can Execute |
-|  [execute(proposalId)](./sdk.votemodule.execute.md) |  | Execute Proposal |
-|  [get(proposalId)](./sdk.votemodule.get.md) |  | Get a proposal by id. |
-|  [getAll()](./sdk.votemodule.getall.md) |  | Get All Proposals |
-|  [hasVoted(proposalId, account)](./sdk.votemodule.hasvoted.md) |  | Check If Wallet Voted |
-|  [propose(description, executions)](./sdk.votemodule.propose.md) |  | Create Proposal |
-|  [setModuleMetadata(metadata)](./sdk.votemodule.setmodulemetadata.md) |  |  |
-|  [settings()](./sdk.votemodule.settings.md) |  |  |
-|  [vote(proposalId, voteType, reason)](./sdk.votemodule.vote.md) |  | Vote |
-
+| Method                                                               | Modifiers | Description                                                                  |
+| -------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------- |
+| [balance()](./sdk.votemodule.balance.md)                             |           | Check the balance of the project wallet in the native token of the chain     |
+| [balanceOfToken(tokenAddress)](./sdk.votemodule.balanceoftoken.md)   |           | Check the balance of the project wallet in a particular ERC20 token contract |
+| [canExecute(proposalId)](./sdk.votemodule.canexecute.md)             |           | Can Execute                                                                  |
+| [execute(proposalId)](./sdk.votemodule.execute.md)                   |           | Execute Proposal                                                             |
+| [get(proposalId)](./sdk.votemodule.get.md)                           |           | Get a proposal by id.                                                        |
+| [getAll()](./sdk.votemodule.getall.md)                               |           | Get All Proposals                                                            |
+| [hasVoted(proposalId, account)](./sdk.votemodule.hasvoted.md)        |           | Check If Wallet Voted                                                        |
+| [propose(description, executions)](./sdk.votemodule.propose.md)      |           | Create Proposal                                                              |
+| [setModuleMetadata(metadata)](./sdk.votemodule.setmodulemetadata.md) |           |                                                                              |
+| [settings()](./sdk.votemodule.settings.md)                           |           |                                                                              |
+| [vote(proposalId, voteType, reason)](./sdk.votemodule.vote.md)       |           | Vote                                                                         |

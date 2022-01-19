@@ -14,10 +14,10 @@ mintTo(to: string, metadata: MetadataURIOrObject): Promise<NFTMetadata>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  to | string |  |
-|  metadata | [MetadataURIOrObject](./sdk.metadatauriorobject.md) |  |
+| Parameter | Type                                                | Description |
+| --------- | --------------------------------------------------- | ----------- |
+| to        | string                                              |             |
+| metadata  | [MetadataURIOrObject](./sdk.metadatauriorobject.md) |             |
 
 <b>Returns:</b>
 
@@ -29,18 +29,16 @@ Mint an NFT to a specified wallet.
 
 ## Example
 
-
 ```javascript
 // Address of the wallet you want to mint the NFT to
-const toAddress = "{{wallet_address}}"
+const toAddress = "{{wallet_address}}";
 
 // Custom metadata of the NFT, note that you can fully customize this metadata with other properties.
 const metadata = {
   name: "Cool NFT",
   description: "This is a cool NFT",
-  image: fs.readFileSync("path/to/image.png"), // This can be an image url or file
-}
+  image: fs.readFileSync("path/to/image.png") // This can be an image url or file
+};
 
 await module.mintTo(toAddress, metadata);
 ```
-

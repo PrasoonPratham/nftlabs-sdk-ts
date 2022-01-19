@@ -14,13 +14,12 @@ deploySplitsModule(metadata: SplitsModuleMetadata): Promise<SplitsModule>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadata | [SplitsModuleMetadata](./sdk.splitsmodulemetadata.md) | The module metadata |
+| Parameter | Type                                                  | Description         |
+| --------- | ----------------------------------------------------- | ------------------- |
+| metadata  | [SplitsModuleMetadata](./sdk.splitsmodulemetadata.md) | The module metadata |
 
 <b>Returns:</b>
 
 Promise&lt;[SplitsModule](./sdk.splitsmodule.md)<!-- -->&gt;
 
 - The deployed splits module
-

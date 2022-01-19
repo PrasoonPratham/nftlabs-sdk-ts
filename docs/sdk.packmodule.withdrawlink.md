@@ -12,12 +12,11 @@ withdrawLink(to: string, amount: BigNumberish): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  to | string |  |
-|  amount | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| to        | string       |             |
+| amount    | BigNumberish |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

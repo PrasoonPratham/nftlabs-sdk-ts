@@ -10,7 +10,7 @@ https://nftlabs.github.io/nftlabs-sdk-ts/sdk.html
 
 ### Testing
 
-Tests require a hardhat node to be running. One can be started by running `npx hardhat node` in a hardhat project. A hardhat project can be initialized using `npx hardhat init -y`. 
+Tests require a hardhat node to be running. One can be started by running `npx hardhat node` in a hardhat project. A hardhat project can be initialized using `npx hardhat init -y`.
 
 #### Running all tests
 

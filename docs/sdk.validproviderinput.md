@@ -11,5 +11,5 @@ A valid "ethers" Provider, Signer or a Network object or url address to create a
 ```typescript
 export declare type ValidProviderInput = ProviderOrSigner | Network | string;
 ```
-<b>References:</b> [ProviderOrSigner](./sdk.providerorsigner.md)
 
+<b>References:</b> [ProviderOrSigner](./sdk.providerorsigner.md)

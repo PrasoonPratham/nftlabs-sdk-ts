@@ -14,11 +14,10 @@ cancelAuctionListing(listingId: BigNumberish): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | BigNumberish | Id of the listing to remove. |
+| Parameter | Type         | Description                  |
+| --------- | ------------ | ---------------------------- |
+| listingId | BigNumberish | Id of the listing to remove. |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

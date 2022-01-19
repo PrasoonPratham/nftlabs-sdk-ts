@@ -14,11 +14,10 @@ setClaimConditions(factory: ClaimConditionFactory): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  factory | ClaimConditionFactory | The claim condition factory. |
+| Parameter | Type                  | Description                  |
+| --------- | --------------------- | ---------------------------- |
+| factory   | ClaimConditionFactory | The claim condition factory. |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

@@ -14,9 +14,8 @@ constructor(address?: string, contractAddress?: string, message?: string);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string |  |
-|  contractAddress | string |  |
-|  message | string |  |
-
+| Parameter       | Type   | Description |
+| --------------- | ------ | ----------- |
+| address         | string |             |
+| contractAddress | string |             |
+| message         | string |             |

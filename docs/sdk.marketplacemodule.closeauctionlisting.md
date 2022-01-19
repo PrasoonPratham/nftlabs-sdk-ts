@@ -12,12 +12,11 @@ closeAuctionListing(listingId: BigNumberish, closeFor?: string): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | BigNumberish |  |
-|  closeFor | string |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| listingId | BigNumberish |             |
+| closeFor  | string       |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

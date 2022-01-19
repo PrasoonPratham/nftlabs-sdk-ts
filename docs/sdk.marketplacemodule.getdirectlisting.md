@@ -12,11 +12,10 @@ getDirectListing(listingId: BigNumberish): Promise<DirectListing>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| listingId | BigNumberish |             |
 
 <b>Returns:</b>
 
 Promise&lt;[DirectListing](./sdk.directlisting.md)<!-- -->&gt;
-

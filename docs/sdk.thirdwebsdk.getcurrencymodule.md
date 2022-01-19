@@ -5,9 +5,8 @@
 ## ThirdwebSDK.getCurrencyModule() method
 
 > Warning: This API is now obsolete.
-> 
+>
 > - see [TokenModule](./sdk.tokenmodule.md)
-> 
 
 <b>Signature:</b>
 
@@ -17,13 +16,12 @@ getCurrencyModule(address: string): CurrencyModule;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string | The contract address of the given Currency module. |
+| Parameter | Type   | Description                                        |
+| --------- | ------ | -------------------------------------------------- |
+| address   | string | The contract address of the given Currency module. |
 
 <b>Returns:</b>
 
 [CurrencyModule](./sdk.currencymodule.md)
 
 The Currency Module.
-

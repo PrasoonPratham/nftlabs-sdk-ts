@@ -30,7 +30,7 @@ before(async () => {
 
   const wTokenDeployer = await new ethers.ContractFactory(
     WETH9__factory.abi,
-    WETH9__factory.bytecode,
+    WETH9__factory.bytecode
   )
     .connect(signer)
     .deploy();
@@ -46,14 +46,14 @@ before(async () => {
   sdk = new ThirdwebSDK(signer, {
     ipfsGatewayUrl,
     registryContractAddress: registryAddress,
-    maxGasPriceInGwei: 10000,
+    maxGasPriceInGwei: 10000
   });
 
   const receipt = await sdk.createApp({
-    name: "test",
+    name: "test"
   });
   const event = receipt?.events?.find(
-    (e: any) => e.event === "NewProtocolControl",
+    (e: any) => e.event === "NewProtocolControl"
   );
   const address = event?.args?.controlAddress as string;
   console.log("Created app at address: ", address);
@@ -68,5 +68,5 @@ export {
   wrappedNativeTokenAddress,
   jsonProvider,
   defaultProvider,
-  fastForwardTime,
+  fastForwardTime
 };

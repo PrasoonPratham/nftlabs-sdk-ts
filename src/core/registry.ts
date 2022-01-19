@@ -29,28 +29,28 @@ export class RegistryModule extends Module<Registry> {
   public async getProtocolContracts(address?: string): Promise<IAppModule[]> {
     const deployer = address || (await this.getSignerAddress());
     const maxVersion = await this.readOnlyContract.getProtocolControlCount(
-      deployer,
+      deployer
     );
     const versions = Array.from(Array(maxVersion.toNumber()).keys()).reverse();
     const addresses = await Promise.all(
-      versions.map((v) =>
-        this.readOnlyContract.getProtocolControl(deployer, (v + 1).toString()),
-      ),
+      versions.map(v =>
+        this.readOnlyContract.getProtocolControl(deployer, (v + 1).toString())
+      )
     );
     const metadatas = await Promise.all(
-      addresses.map((addr) =>
+      addresses.map(addr =>
         getContractMetadata(
           this.providerOrSigner,
           addr,
-          this.ipfsGatewayUrl,
-        ).catch(() => undefined),
-      ),
+          this.ipfsGatewayUrl
+        ).catch(() => undefined)
+      )
     );
     return versions.map((v, i) => {
       return {
         address: addresses[i],
         version: v,
-        metadata: metadatas[i],
+        metadata: metadatas[i]
       };
     });
   }

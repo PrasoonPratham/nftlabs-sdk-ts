@@ -14,15 +14,14 @@ uploadBatch(files: Buffer[] | string[] | FileOrBuffer[] | File[] | BufferOrStrin
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  files | Buffer\[\] \| string\[\] \| FileOrBuffer\[\] \| File\[\] \| BufferOrStringWithName\[\] |  |
-|  contractAddress | string | Optional. The contract address the data belongs to. |
-|  uploadFileStartNumber | number | Optional. The first file file name begins with. |
+| Parameter             | Type                                                                                   | Description                                         |
+| --------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| files                 | Buffer\[\] \| string\[\] \| FileOrBuffer\[\] \| File\[\] \| BufferOrStringWithName\[\] |                                                     |
+| contractAddress       | string                                                                                 | Optional. The contract address the data belongs to. |
+| uploadFileStartNumber | number                                                                                 | Optional. The first file file name begins with.     |
 
 <b>Returns:</b>
 
 Promise&lt;string&gt;
 
 - The CID of the uploaded folder.
-

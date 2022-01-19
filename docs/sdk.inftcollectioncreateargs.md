@@ -7,13 +7,12 @@
 <b>Signature:</b>
 
 ```typescript
-export interface INFTCollectionCreateArgs 
+export interface INFTCollectionCreateArgs
 ```
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [metadata](./sdk.inftcollectioncreateargs.metadata.md) | [MetadataURIOrObject](./sdk.metadatauriorobject.md) |  |
-|  [supply](./sdk.inftcollectioncreateargs.supply.md) | BigNumberish |  |
-
+| Property                                               | Type                                                | Description |
+| ------------------------------------------------------ | --------------------------------------------------- | ----------- |
+| [metadata](./sdk.inftcollectioncreateargs.metadata.md) | [MetadataURIOrObject](./sdk.metadatauriorobject.md) |             |
+| [supply](./sdk.inftcollectioncreateargs.supply.md)     | BigNumberish                                        |             |

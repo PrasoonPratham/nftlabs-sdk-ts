@@ -9,7 +9,7 @@
 ```typescript
 getBidBufferBps(): Promise<BigNumber>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;BigNumber&gt;
-

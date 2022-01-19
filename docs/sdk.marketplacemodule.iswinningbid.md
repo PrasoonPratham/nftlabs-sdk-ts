@@ -12,13 +12,12 @@ isWinningBid(winningPrice: BigNumberish, newBidPrice: BigNumberish, bidBuffer: B
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  winningPrice | BigNumberish |  |
-|  newBidPrice | BigNumberish |  |
-|  bidBuffer | BigNumberish |  |
+| Parameter    | Type         | Description |
+| ------------ | ------------ | ----------- |
+| winningPrice | BigNumberish |             |
+| newBidPrice  | BigNumberish |             |
+| bidBuffer    | BigNumberish |             |
 
 <b>Returns:</b>
 
 Promise&lt;boolean&gt;
-

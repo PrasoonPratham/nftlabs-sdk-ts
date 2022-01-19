@@ -14,13 +14,12 @@ fromPublicClaimConditions(conditions: PublicClaimCondition[]): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  conditions | [PublicClaimCondition](./sdk.publicclaimcondition.md)<!-- -->\[\] | The conditions to load, should be returned directly from the contract. |
+| Parameter  | Type                                                              | Description                                                            |
+| ---------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| conditions | [PublicClaimCondition](./sdk.publicclaimcondition.md)<!-- -->\[\] | The conditions to load, should be returned directly from the contract. |
 
 <b>Returns:</b>
 
 this
 
 - The loaded claim condition factory.
-

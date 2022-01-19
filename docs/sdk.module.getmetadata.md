@@ -14,11 +14,10 @@ getMetadata(resolveUrls?: boolean): Promise<ModuleMetadata>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  resolveUrls | boolean | Whether to resolve the urls in the metadata to a gateway. |
+| Parameter   | Type    | Description                                               |
+| ----------- | ------- | --------------------------------------------------------- |
+| resolveUrls | boolean | Whether to resolve the urls in the metadata to a gateway. |
 
 <b>Returns:</b>
 
 Promise&lt;[ModuleMetadata](./sdk.modulemetadata.md)<!-- -->&gt;
-

@@ -17,9 +17,9 @@ makeAuctionListingBid(bid: {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  bid | { listingId: BigNumberish; pricePerToken: BigNumberish; } |  |
+| Parameter | Type                                                      | Description |
+| --------- | --------------------------------------------------------- | ----------- |
+| bid       | { listingId: BigNumberish; pricePerToken: BigNumberish; } |             |
 
 <b>Returns:</b>
 
@@ -31,7 +31,6 @@ Make a bid on an auction listings
 
 ## Example
 
-
 ```javascript
 // The listing ID of the asset you want to bid on
 const listingId = 0;
@@ -40,4 +39,3 @@ const bidPricePerToken = 1;
 
 await module.buyoutDirectListing(listingId, bidPricePerToken);
 ```
-

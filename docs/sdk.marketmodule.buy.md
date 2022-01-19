@@ -12,12 +12,11 @@ buy(listingId: string, quantity: BigNumberish): Promise<ListingMetadata>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | string |  |
-|  quantity | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| listingId | string       |             |
+| quantity  | BigNumberish |             |
 
 <b>Returns:</b>
 
 Promise&lt;[ListingMetadata](./sdk.listingmetadata.md)<!-- -->&gt;
-

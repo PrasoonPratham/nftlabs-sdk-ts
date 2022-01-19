@@ -11,9 +11,9 @@ Gets the address of the royalty recipient
 ```typescript
 getRoyaltyRecipientAddress(): Promise<string>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;string&gt;
 
 - The royalty BPS
-

@@ -14,9 +14,9 @@ getAll(queryParams?: QueryAllParams): Promise<NFTMetadataOwner[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  queryParams | QueryAllParams |  |
+| Parameter   | Type           | Description |
+| ----------- | -------------- | ----------- |
+| queryParams | QueryAllParams |             |
 
 <b>Returns:</b>
 
@@ -30,9 +30,7 @@ Get all the data associated with every NFT in this module.
 
 ## Example
 
-
 ```javascript
 const nfts = await module.getAll();
 console.log(nfts);
 ```
-

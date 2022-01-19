@@ -12,12 +12,11 @@ updateClaimConditions(tokenId: BigNumberish, factory: ClaimConditionFactory): Pr
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | BigNumberish |  |
-|  factory | ClaimConditionFactory |  |
+| Parameter | Type                  | Description |
+| --------- | --------------------- | ----------- |
+| tokenId   | BigNumberish          |             |
+| factory   | ClaimConditionFactory |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

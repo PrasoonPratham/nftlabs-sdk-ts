@@ -7,11 +7,11 @@
 <b>Signature:</b>
 
 ```typescript
-export declare class QuantityAboveLimitError extends Error 
+export declare class QuantityAboveLimitError extends Error
 ```
+
 <b>Extends:</b> Error
 
 ## Remarks
 
 The constructor for this class is marked as internal. Third-party code should not call the constructor directly or create subclasses that extend the `QuantityAboveLimitError` class.
-

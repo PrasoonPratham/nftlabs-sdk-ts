@@ -12,11 +12,10 @@ setRoyaltyBps(amount: number): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  amount | number |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| amount    | number |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

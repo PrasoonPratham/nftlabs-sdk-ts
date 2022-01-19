@@ -11,9 +11,9 @@ Fetch all the listings in the marketplace.
 ```typescript
 getAllListings(): Promise<(AuctionListing | DirectListing)[]>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;([AuctionListing](./sdk.auctionlisting.md) \| [DirectListing](./sdk.directlisting.md)<!-- -->)\[\]&gt;
 
 - An array of listings.
-

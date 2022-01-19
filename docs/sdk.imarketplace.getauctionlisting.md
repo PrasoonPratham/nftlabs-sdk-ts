@@ -14,11 +14,10 @@ getAuctionListing(listingId: BigNumberish): Promise<AuctionListing>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | BigNumberish | Id of the listing to fetch. |
+| Parameter | Type         | Description                 |
+| --------- | ------------ | --------------------------- |
+| listingId | BigNumberish | Id of the listing to fetch. |
 
 <b>Returns:</b>
 
 Promise&lt;[AuctionListing](./sdk.auctionlisting.md)<!-- -->&gt;
-

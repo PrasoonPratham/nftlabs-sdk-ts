@@ -2,7 +2,7 @@ import { BaseContract, BytesLike } from "ethers";
 import {
   ForwardRequestMessage,
   GaslessTransaction,
-  PermitRequestMessage,
+  PermitRequestMessage
 } from "../core/types";
 
 /**
@@ -43,7 +43,7 @@ export interface ISDKOptions {
    */
   transactionRelayerSendFunction: (
     message: ForwardRequestMessage | PermitRequestMessage,
-    signature: BytesLike,
+    signature: BytesLike
   ) => Promise<string>;
 
   /**
@@ -57,7 +57,7 @@ export interface ISDKOptions {
    */
   gaslessSendFunction: (
     contract: BaseContract,
-    transaction: GaslessTransaction,
+    transaction: GaslessTransaction
   ) => Promise<string>;
 
   /**

@@ -14,13 +14,12 @@ deployTokenModule(metadata: TokenModuleMetadata): Promise<TokenModule>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadata | [TokenModuleMetadata](./sdk.tokenmodulemetadata.md) | The module metadata |
+| Parameter | Type                                                | Description         |
+| --------- | --------------------------------------------------- | ------------------- |
+| metadata  | [TokenModuleMetadata](./sdk.tokenmodulemetadata.md) | The module metadata |
 
 <b>Returns:</b>
 
 Promise&lt;[TokenModule](./sdk.tokenmodule.md)<!-- -->&gt;
 
 - The deployed currency module
-

@@ -7,5 +7,5 @@ export enum EventType {
    * status: "submitted" | "completed"
    * transactionHash: string of the transaction hash
    */
-  Transaction = "transaction",
+  Transaction = "transaction"
 }

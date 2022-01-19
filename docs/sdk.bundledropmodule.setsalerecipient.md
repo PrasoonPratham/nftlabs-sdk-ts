@@ -12,12 +12,11 @@ setSaleRecipient(tokenId: BigNumberish, recipient: string): Promise<TransactionR
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | BigNumberish |  |
-|  recipient | string |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| tokenId   | BigNumberish |             |
+| recipient | string       |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

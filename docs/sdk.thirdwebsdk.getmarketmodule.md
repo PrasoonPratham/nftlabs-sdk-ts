@@ -12,13 +12,12 @@ getMarketModule(address: string): MarketModule;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string | The contract address of the given Market module. |
+| Parameter | Type   | Description                                      |
+| --------- | ------ | ------------------------------------------------ |
+| address   | string | The contract address of the given Market module. |
 
 <b>Returns:</b>
 
 [MarketModule](./sdk.marketmodule.md)
 
 The Market Module.
-

@@ -17,9 +17,9 @@ buyoutDirectListing(_buyout: {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  \_buyout | { listingId: BigNumberish; quantityDesired: BigNumberish; } |  |
+| Parameter | Type                                                        | Description |
+| --------- | ----------------------------------------------------------- | ----------- |
+| \_buyout  | { listingId: BigNumberish; quantityDesired: BigNumberish; } |             |
 
 <b>Returns:</b>
 
@@ -31,7 +31,6 @@ Buy a specific direct listing from the marketplace.
 
 ## Example
 
-
 ```javascript
 // The listing ID of the asset you want to buy
 const listingId = 0;
@@ -40,4 +39,3 @@ const quantityDesired = 1;
 
 await module.buyoutDirectListing({ listingId, quantityDesired });
 ```
-

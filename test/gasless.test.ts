@@ -18,9 +18,9 @@ describe("Gasless Forwarder", async () => {
       gasless: {
         biconomy: {
           apiKey: process.env.BICONOMY_API_KEY,
-          apiId: process.env.BICONOMY_API_ID,
-        },
-      },
+          apiId: process.env.BICONOMY_API_ID
+        }
+      }
     });
     const bundleDrop = sdk.getBundleDropModule(BUNDLE_DROP_ADDRESS);
     await bundleDrop.claim("0", 1, []);
@@ -32,7 +32,7 @@ describe("Gasless Forwarder", async () => {
     const wallet = Wallet.createRandom().connect(provider);
     console.log("Testing with wallet: ", wallet.address);
     const sdk = new ThirdwebSDK(wallet, {
-      transactionRelayerUrl: process.env.OZ_DEFENDER_RELAYER_URL,
+      transactionRelayerUrl: process.env.OZ_DEFENDER_RELAYER_URL
     });
     const bundleDrop = sdk.getBundleDropModule(BUNDLE_DROP_ADDRESS);
     await bundleDrop.claim("0", 1, []);

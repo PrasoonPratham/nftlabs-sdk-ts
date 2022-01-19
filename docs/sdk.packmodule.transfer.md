@@ -14,11 +14,11 @@ transfer(to: string, tokenId: string, amount: BigNumber): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  to | string |  |
-|  tokenId | string |  |
-|  amount | BigNumber |  |
+| Parameter | Type      | Description |
+| --------- | --------- | ----------- |
+| to        | string    |             |
+| tokenId   | string    |             |
+| amount    | BigNumber |             |
 
 <b>Returns:</b>
 
@@ -29,7 +29,6 @@ Promise&lt;void&gt;
 Transfer a pack from the connected wallet to another wallet.
 
 ## Example
-
 
 ```javascript
 // Address of the wallet you want to send the pack to
@@ -43,4 +42,3 @@ const amount = 1;
 
 await module.transfer(toAddress, tokenId, amount);
 ```
-

@@ -5,9 +5,8 @@
 ## BundleDropModule.setPublicClaimConditions() method
 
 > Warning: This API is now obsolete.
-> 
+>
 > - Use the ClaimConditionFactory instead.
-> 
 
 <b>Signature:</b>
 
@@ -17,12 +16,11 @@ setPublicClaimConditions(tokenId: BigNumberish, conditions: BundleDropCreateClai
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | BigNumberish |  |
-|  conditions | [BundleDropCreateClaimCondition](./sdk.bundledropcreateclaimcondition.md)<!-- -->\[\] |  |
+| Parameter  | Type                                                                                  | Description |
+| ---------- | ------------------------------------------------------------------------------------- | ----------- |
+| tokenId    | BigNumberish                                                                          |             |
+| conditions | [BundleDropCreateClaimCondition](./sdk.bundledropcreateclaimcondition.md)<!-- -->\[\] |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

@@ -12,11 +12,10 @@ allowance(spender: string): Promise<BigNumber>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  spender | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| spender   | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;BigNumber&gt;
-

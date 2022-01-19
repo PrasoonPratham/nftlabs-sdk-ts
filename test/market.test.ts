@@ -4,7 +4,7 @@ import {
   NFTModule,
   QuantityAboveLimitError,
   MissingOwnerRoleError,
-  MissingRoleError,
+  MissingRoleError
 } from "../src";
 import { appModule, sdk, signers } from "./before.test";
 
@@ -28,12 +28,12 @@ describe("Market Module", async () => {
     sdk.setProviderOrSigner(adminWallet);
     marketModule = await appModule.deployMarketModule({
       name: "Currency Module",
-      marketFeeBasisPoints: 10000,
+      marketFeeBasisPoints: 10000
     });
     nftModule = await appModule.deployNftModule({
       name: "NFT Module",
       symbol: "NFT",
-      sellerFeeBasisPoints: 10000,
+      sellerFeeBasisPoints: 10000
     });
   });
 
@@ -41,7 +41,7 @@ describe("Market Module", async () => {
     sdk.setProviderOrSigner(adminWallet);
     await nftModule.mintTo(bobWallet.address, {
       name: "Test",
-      description: "Test",
+      description: "Test"
     });
     marketModule.setRestrictedListerRoleOnly(true);
 
@@ -53,7 +53,7 @@ describe("Market Module", async () => {
         "0x0000000000000000000000000000000000000000",
         0,
         1,
-        1,
+        1
       );
     } catch (e) {
       if (!(e instanceof MissingRoleError)) {
@@ -65,7 +65,7 @@ describe("Market Module", async () => {
     sdk.setProviderOrSigner(adminWallet);
     await nftModule.mintTo(bobWallet.address, {
       name: "Test",
-      description: "Test",
+      description: "Test"
     });
 
     sdk.setProviderOrSigner(bobWallet);
@@ -75,7 +75,7 @@ describe("Market Module", async () => {
       "0x0000000000000000000000000000000000000000",
       0,
       1,
-      1,
+      1
     );
     try {
       await marketModule.buy((await marketModule.getAll())[0].id, 2);
@@ -90,11 +90,11 @@ describe("Market Module", async () => {
     sdk.setProviderOrSigner(adminWallet);
     await nftModule.mintTo(bobWallet.address, {
       name: "Test",
-      description: "Test",
+      description: "Test"
     });
     await nftModule.mintTo(samWallet.address, {
       name: "Test",
-      description: "Test",
+      description: "Test"
     });
     sdk.setProviderOrSigner(bobWallet);
     try {
@@ -104,7 +104,7 @@ describe("Market Module", async () => {
         "0x0000000000000000000000000000000000000000",
         0,
         1,
-        1,
+        1
       );
     } catch (e) {
       if (!(e instanceof MissingOwnerRoleError)) {

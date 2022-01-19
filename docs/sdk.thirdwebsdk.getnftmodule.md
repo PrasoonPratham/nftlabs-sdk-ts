@@ -12,13 +12,12 @@ getNFTModule(address: string): NFTModule;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string | The contract address of the given NFT module. |
+| Parameter | Type   | Description                                   |
+| --------- | ------ | --------------------------------------------- |
+| address   | string | The contract address of the given NFT module. |
 
 <b>Returns:</b>
 
 [NFTModule](./sdk.nftmodule.md)
 
 The NFT Module.
-

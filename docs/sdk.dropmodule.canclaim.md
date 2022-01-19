@@ -14,10 +14,10 @@ canClaim(quantity: BigNumberish, addressToCheck?: string): Promise<boolean>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  quantity | BigNumberish |  |
-|  addressToCheck | string |  |
+| Parameter      | Type         | Description |
+| -------------- | ------------ | ----------- |
+| quantity       | BigNumberish |             |
+| addressToCheck | string       |             |
 
 <b>Returns:</b>
 
@@ -29,11 +29,9 @@ Check if the drop can currently be claimed.
 
 ## Example
 
-
 ```javascript
 // Quantity of tokens to check if they are claimable
 const quantity = 1;
 
 await module.canClaim(quantity);
 ```
-

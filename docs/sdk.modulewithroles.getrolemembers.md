@@ -14,9 +14,9 @@ getRoleMembers(role: Role): Promise<string[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  role | [Role](./sdk.role.md) | The [role](./sdk.iroles.md) to to get a memberlist for. |
+| Parameter | Type                  | Description                                             |
+| --------- | --------------------- | ------------------------------------------------------- |
+| role      | [Role](./sdk.role.md) | The [role](./sdk.iroles.md) to to get a memberlist for. |
 
 <b>Returns:</b>
 
@@ -35,4 +35,3 @@ Say you want to get the list of addresses that are members of the [minter](./sdk
 ```typescript
 const minterAddresses: string[] = await module.getRoleMemberList("minter");
 ```
-

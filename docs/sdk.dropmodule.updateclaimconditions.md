@@ -12,11 +12,10 @@ updateClaimConditions(factory: ClaimConditionFactory): Promise<TransactionReceip
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  factory | ClaimConditionFactory |  |
+| Parameter | Type                  | Description |
+| --------- | --------------------- | ----------- |
+| factory   | ClaimConditionFactory |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

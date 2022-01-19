@@ -11,6 +11,7 @@ Get Pack Data
 ```typescript
 getAll(): Promise<PackMetadata[]>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;[PackMetadata](./sdk.packmetadata.md)<!-- -->\[\]&gt;
@@ -23,9 +24,7 @@ Get data associated with every pack in this module.
 
 ## Example
 
-
 ```javascript
 const packs = await module.getAll();
 console.log(packs);
 ```
-

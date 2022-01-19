@@ -5,17 +5,15 @@
 ## PublicMintCondition interface
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
 
 > Warning: This API is now obsolete.
-> 
+>
 > - use [PublicClaimCondition](./sdk.publicclaimcondition.md)
-> 
 
 <b>Signature:</b>
 
 ```typescript
-export interface PublicMintCondition extends PublicClaimCondition 
+export interface PublicMintCondition extends PublicClaimCondition
 ```
-<b>Extends:</b> [PublicClaimCondition](./sdk.publicclaimcondition.md)
 
+<b>Extends:</b> [PublicClaimCondition](./sdk.publicclaimcondition.md)

@@ -9,7 +9,7 @@
 ```typescript
 getLinkBalance(): Promise<CurrencyValue>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;[CurrencyValue](./sdk.currencyvalue.md)<!-- -->&gt;
-

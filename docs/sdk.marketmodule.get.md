@@ -12,11 +12,10 @@ get(listingId: string): Promise<ListingMetadata>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| listingId | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;[ListingMetadata](./sdk.listingmetadata.md)<!-- -->&gt;
-

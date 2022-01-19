@@ -12,11 +12,10 @@ get(hash: string): Promise<string>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  hash | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| hash      | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;string&gt;
-

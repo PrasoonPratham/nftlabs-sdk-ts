@@ -20,12 +20,11 @@ closeAuctionListing(listingId: BigNumberish, closeFor?: string): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | BigNumberish | Id of the listing to remove. |
-|  closeFor | string | The address of the wallet to close the sale for (buyer or seller). |
+| Parameter | Type         | Description                                                        |
+| --------- | ------------ | ------------------------------------------------------------------ |
+| listingId | BigNumberish | Id of the listing to remove.                                       |
+| closeFor  | string       | The address of the wallet to close the sale for (buyer or seller). |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

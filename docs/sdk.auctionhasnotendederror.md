@@ -9,13 +9,13 @@ Thrown when attempting to close an auction that has not ended
 <b>Signature:</b>
 
 ```typescript
-export declare class AuctionHasNotEndedError extends Error 
+export declare class AuctionHasNotEndedError extends Error
 ```
+
 <b>Extends:</b> Error
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(id, endTime)](./sdk.auctionhasnotendederror._constructor_.md) |  | Constructs a new instance of the <code>AuctionHasNotEndedError</code> class |
-
+| Constructor                                                                  | Modifiers | Description                                                                 |
+| ---------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------- |
+| [(constructor)(id, endTime)](./sdk.auctionhasnotendederror._constructor_.md) |           | Constructs a new instance of the <code>AuctionHasNotEndedError</code> class |

@@ -23,7 +23,7 @@ function getGasStationUrl(chainId?: number): string | null {
 export async function getGasPriceForChain(
   chainId: number,
   speed: string,
-  maxGasPrice: number,
+  maxGasPrice: number
 ): Promise<number | null> {
   const gasStationUrl = getGasStationUrl(chainId);
   if (!gasStationUrl) {

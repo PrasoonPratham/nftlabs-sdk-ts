@@ -6,5 +6,5 @@ export enum ProposalState {
   Succeeded,
   Queued,
   Expired,
-  Executed,
+  Executed
 }

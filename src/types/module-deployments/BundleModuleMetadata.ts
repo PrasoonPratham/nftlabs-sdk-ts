@@ -1,7 +1,7 @@
 import {
   JsonObject,
   JsonProperty,
-  PropertyConvertingMode,
+  PropertyConvertingMode
 } from "json2typescript";
 import CommonModuleMetadata from "./CommonModuleMetadata";
 
@@ -18,7 +18,7 @@ export class BundleModuleMetadata extends CommonModuleMetadata {
   @JsonProperty(
     "seller_fee_basis_points",
     Number,
-    PropertyConvertingMode.IGNORE_NULLABLE,
+    PropertyConvertingMode.IGNORE_NULLABLE
   )
   sellerFeeBasisPoints = 0;
 

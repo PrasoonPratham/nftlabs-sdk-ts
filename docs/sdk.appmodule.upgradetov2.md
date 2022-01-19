@@ -17,11 +17,10 @@ upgradeToV2(upgradeOptions?: {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  upgradeOptions | { splitsModuleAddress?: string; splitsRecipients?: [NewSplitRecipient](./sdk.newsplitrecipient.md)<!-- -->\[\]; } |  |
+| Parameter      | Type                                                                                                              | Description |
+| -------------- | ----------------------------------------------------------------------------------------------------------------- | ----------- |
+| upgradeOptions | { splitsModuleAddress?: string; splitsRecipients?: [NewSplitRecipient](./sdk.newsplitrecipient.md)<!-- -->\[\]; } |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

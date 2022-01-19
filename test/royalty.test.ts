@@ -28,15 +28,15 @@ describe("Splits Module", async () => {
       recipientSplits: [
         {
           address: bobWallet.address,
-          shares: 1,
-        },
-      ],
+          shares: 1
+        }
+      ]
     });
 
     packModule = await appModule.deployPackModule({
       name: "Pack Module",
       sellerFeeBasisPoints: 1000,
-      feeRecipient: samWallet.address,
+      feeRecipient: samWallet.address
     });
   });
 
@@ -46,7 +46,7 @@ describe("Splits Module", async () => {
     assert.lengthOf(
       recipients,
       2,
-      "There should be 3 split recipients on this contract",
+      "There should be 3 split recipients on this contract"
     );
   });
 
@@ -55,7 +55,7 @@ describe("Splits Module", async () => {
       (await splitsModule.getRecipientSplitPercentage(adminWallet.address))
         .splitPercentage,
       5,
-      "The Thirdweb wallet should have 5% share of all royalties",
+      "The Thirdweb wallet should have 5% share of all royalties"
     );
   });
 
@@ -64,7 +64,7 @@ describe("Splits Module", async () => {
     assert.equal(
       Object.keys(balances).length,
       2,
-      "There should be 3 recipients",
+      "There should be 3 recipients"
     );
   });
   it("should return all the recipients along with their token balances", async () => {
@@ -72,14 +72,14 @@ describe("Splits Module", async () => {
       await appModule
         .deployTokenModule({
           name: "Test Token",
-          symbol: "TST",
+          symbol: "TST"
         })
-        .then((tokenModule) => tokenModule.address),
+        .then(tokenModule => tokenModule.address)
     );
     assert.equal(
       Object.keys(balances).length,
       2,
-      "There should be 3 recipients",
+      "There should be 3 recipients"
     );
   });
 
@@ -97,7 +97,7 @@ describe("Splits Module", async () => {
     assert.equal(
       recipient,
       samWallet.address,
-      "The default royalty recipient should be the project address",
+      "The default royalty recipient should be the project address"
     );
   });
 
@@ -107,7 +107,7 @@ describe("Splits Module", async () => {
     assert.equal(
       "1000",
       bps.toString(),
-      "The royalty BPS should be 10000 (10%)",
+      "The royalty BPS should be 10000 (10%)"
     );
   });
 });

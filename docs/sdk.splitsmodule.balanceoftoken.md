@@ -14,10 +14,10 @@ balanceOfToken(walletAddress: string, tokenAddress: string): Promise<CurrencyVal
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  walletAddress | string |  |
-|  tokenAddress | string |  |
+| Parameter     | Type   | Description |
+| ------------- | ------ | ----------- |
+| walletAddress | string |             |
+| tokenAddress  | string |             |
 
 <b>Returns:</b>
 
@@ -29,13 +29,11 @@ Get the amount of funds in the non-native tokens held by the module thats owed t
 
 ## Example
 
-
 ```javascript
 // The address to check the funds of
 const address = "{{wallet_address}}";
 // The address of the currency to check the contracts funds of
-const tokenAddress = "0x..."
+const tokenAddress = "0x...";
 const funds = await module.balanceOfToken(address, tokenAddress);
 console.log(funds);
 ```
-

@@ -7,7 +7,7 @@
 <b>Signature:</b>
 
 ```typescript
-export declare class DatastoreModuleMetadata extends CommonModuleMetadata 
+export declare class DatastoreModuleMetadata extends CommonModuleMetadata
 ```
-<b>Extends:</b> [CommonModuleMetadata](./sdk.commonmodulemetadata.md)
 
+<b>Extends:</b> [CommonModuleMetadata](./sdk.commonmodulemetadata.md)

@@ -14,9 +14,9 @@ getWinningBid(listingId: BigNumberish): Promise<Offer | undefined>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| listingId | BigNumberish |             |
 
 <b>Returns:</b>
 
@@ -28,14 +28,12 @@ Get the current highest bid of an active auction.
 
 ## Example
 
-
 ```javascript
 // The listing ID of the auction that closed
 const listingId = 0;
 
 module
   .getWinningBid(listingId)
-  .then((offer) => console.log(offer))
-  .catch((err) => console.error(err));
+  .then(offer => console.log(offer))
+  .catch(err => console.error(err));
 ```
-

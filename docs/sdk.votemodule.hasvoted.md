@@ -14,10 +14,10 @@ hasVoted(proposalId: string, account?: string): Promise<boolean>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  proposalId | string | The unique identifier of a proposal . |
-|  account | string | (optional) wallet account address. Defaults to connected signer. |
+| Parameter  | Type   | Description                                                      |
+| ---------- | ------ | ---------------------------------------------------------------- |
+| proposalId | string | The unique identifier of a proposal .                            |
+| account    | string | (optional) wallet account address. Defaults to connected signer. |
 
 <b>Returns:</b>
 
@@ -31,7 +31,6 @@ Check if a specified wallet has voted a specific proposal
 
 ## Example
 
-
 ```javascript
 // The proposal ID of the proposal you want to check
 const proposalId = "0";
@@ -40,4 +39,3 @@ const address = "{{wallet_address}}";
 
 await module.hasVoted(proposalId, address);
 ```
-

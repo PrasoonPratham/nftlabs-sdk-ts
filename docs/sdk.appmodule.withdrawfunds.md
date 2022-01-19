@@ -12,12 +12,11 @@ withdrawFunds(to: string, currency: string): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  to | string |  |
-|  currency | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| to        | string |             |
+| currency  | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

@@ -27,7 +27,7 @@ export interface IStorage {
   upload(
     data: string | File | FileOrBuffer | Buffer,
     contractAddress?: string,
-    signerAddress?: string,
+    signerAddress?: string
   ): Promise<string>;
 
   /**
@@ -48,7 +48,7 @@ export interface IStorage {
       | File[]
       | BufferOrStringWithName[],
     contractAddress?: string,
-    uploadFileStartNumber?: number,
+    uploadFileStartNumber?: number
   ): Promise<string>;
 
   /**
@@ -91,7 +91,7 @@ export interface IStorage {
   uploadMetadata(
     metadata: MetadataURIOrObject,
     contractAddress?: string,
-    signerAddress?: string,
+    signerAddress?: string
   ): Promise<string>;
 
   /**
@@ -105,6 +105,6 @@ export interface IStorage {
   uploadMetadataBatch(
     metadatas: MetadataURIOrObject[],
     contractAddress?: string,
-    fileStartNumber?: number,
+    fileStartNumber?: number
   ): Promise<UploadMetadataBatchResult>;
 }

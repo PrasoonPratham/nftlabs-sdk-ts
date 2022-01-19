@@ -1,7 +1,7 @@
 export {
   ClaimCondition,
   PublicClaimCondition,
-  PublicMintCondition,
+  PublicMintCondition
 } from "./claim-conditions/PublicMintCondition";
 export * from "./FileOrBuffer";
 export * from "./marketplace";

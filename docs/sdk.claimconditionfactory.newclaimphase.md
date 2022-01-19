@@ -18,13 +18,12 @@ newClaimPhase({ startTime, maxQuantity, maxQuantityPerTransaction, }: {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  { startTime, maxQuantity, maxQuantityPerTransaction, } | { startTime: Date \| number; maxQuantity?: BigNumberish; maxQuantityPerTransaction?: BigNumberish; } |  |
+| Parameter                                              | Type                                                                                                 | Description |
+| ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- | ----------- |
+| { startTime, maxQuantity, maxQuantityPerTransaction, } | { startTime: Date \| number; maxQuantity?: BigNumberish; maxQuantityPerTransaction?: BigNumberish; } |             |
 
 <b>Returns:</b>
 
 ClaimConditionPhase
 
 - The claim condition builder.
-

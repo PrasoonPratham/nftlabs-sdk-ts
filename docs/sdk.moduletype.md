@@ -9,26 +9,25 @@ The type of Modules that are available.
 <b>Signature:</b>
 
 ```typescript
-export declare enum ModuleType 
+export declare enum ModuleType
 ```
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  ACCESS\_NFT | <code>4</code> |  |
-|  BUNDLE | <code>1</code> |  |
-|  BUNDLE\_DROP | <code>11</code> |  |
-|  COLLECTION | <code>1</code> |  |
-|  CURRENCY | <code>0</code> |  |
-|  DATASTORE | <code>8</code> |  |
-|  DROP | <code>7</code> |  |
-|  DYNAMIC\_NFT | <code>3</code> |  |
-|  MARKET | <code>6</code> |  |
-|  MARKETPLACE | <code>12</code> |  |
-|  NFT | <code>2</code> |  |
-|  PACK | <code>5</code> |  |
-|  SPLITS | <code>9</code> |  |
-|  TOKEN | <code>0</code> |  |
-|  VOTE | <code>10</code> |  |
-
+| Member      | Value           | Description |
+| ----------- | --------------- | ----------- |
+| ACCESS_NFT  | <code>4</code>  |             |
+| BUNDLE      | <code>1</code>  |             |
+| BUNDLE_DROP | <code>11</code> |             |
+| COLLECTION  | <code>1</code>  |             |
+| CURRENCY    | <code>0</code>  |             |
+| DATASTORE   | <code>8</code>  |             |
+| DROP        | <code>7</code>  |             |
+| DYNAMIC_NFT | <code>3</code>  |             |
+| MARKET      | <code>6</code>  |             |
+| MARKETPLACE | <code>12</code> |             |
+| NFT         | <code>2</code>  |             |
+| PACK        | <code>5</code>  |             |
+| SPLITS      | <code>9</code>  |             |
+| TOKEN       | <code>0</code>  |             |
+| VOTE        | <code>10</code> |             |

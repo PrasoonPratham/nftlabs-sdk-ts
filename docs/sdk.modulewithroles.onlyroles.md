@@ -14,12 +14,11 @@ protected onlyRoles(roles: Role[], address: string): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  roles | [Role](./sdk.role.md)<!-- -->\[\] | The roles to check |
-|  address | string | The address to check |
+| Parameter | Type                              | Description          |
+| --------- | --------------------------------- | -------------------- |
+| roles     | [Role](./sdk.role.md)<!-- -->\[\] | The roles to check   |
+| address   | string                            | The address to check |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

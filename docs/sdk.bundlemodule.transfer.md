@@ -14,11 +14,11 @@ transfer(to: string, tokenId: string, amount: BigNumberish): Promise<Transaction
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  to | string |  |
-|  tokenId | string |  |
-|  amount | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| to        | string       |             |
+| tokenId   | string       |             |
+| amount    | BigNumberish |             |
 
 <b>Returns:</b>
 
@@ -29,7 +29,6 @@ Promise&lt;TransactionReceipt&gt;
 Transfer an NFT from the connected wallet to another wallet.
 
 ## Example
-
 
 ```javascript
 // Address of the wallet you want to send the NFT to
@@ -43,4 +42,3 @@ const amount = 1;
 
 await module.transfer(toAddress, tokenId, amount);
 ```
-

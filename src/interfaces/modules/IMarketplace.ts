@@ -4,7 +4,7 @@ import {
   DirectListing,
   NewAuctionListing,
   NewDirectListing,
-  Offer,
+  Offer
 } from "../../types/marketplace";
 
 export interface IMarketplace {
@@ -106,7 +106,7 @@ export interface IMarketplace {
    */
   closeAuctionListing(
     listingId: BigNumberish,
-    closeFor?: string,
+    closeFor?: string
   ): Promise<void>;
 
   /**
@@ -155,7 +155,7 @@ export interface IMarketplace {
    */
   buyoutListing(
     listingId: BigNumberish,
-    quantityDesired?: BigNumberish,
+    quantityDesired?: BigNumberish
   ): Promise<void>;
 
   // TODO: Implement these with subgraph
@@ -183,7 +183,7 @@ export interface IMarketplace {
    */
   getActiveOffer(
     listingId: BigNumberish,
-    address: string,
+    address: string
   ): Promise<Offer | undefined>;
 
   /**
@@ -202,7 +202,7 @@ export interface IMarketplace {
    */
   acceptDirectListingOffer(
     listingId: BigNumberish,
-    addressOfOfferor: string,
+    addressOfOfferor: string
   ): Promise<void>;
 
   /**

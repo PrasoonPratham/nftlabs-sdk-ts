@@ -14,11 +14,11 @@ vote(proposalId: string, voteType: VoteType, reason?: string): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  proposalId | string | The proposal to cast a vote on. |
-|  voteType | [VoteType](./sdk.votetype.md) | The position the voter is taking on their vote. |
-|  reason | string | (optional) The reason for the vote. |
+| Parameter  | Type                          | Description                                     |
+| ---------- | ----------------------------- | ----------------------------------------------- |
+| proposalId | string                        | The proposal to cast a vote on.                 |
+| voteType   | [VoteType](./sdk.votetype.md) | The position the voter is taking on their vote. |
+| reason     | string                        | (optional) The reason for the vote.             |
 
 <b>Returns:</b>
 
@@ -30,7 +30,6 @@ Vote on an active proposal
 
 ## Example
 
-
 ```javascript
 // The proposal ID of the proposal you want to vote on
 const proposalId = "0";
@@ -41,4 +40,3 @@ const reason = "I like this proposal!";
 
 await module.vote(proposalId, voteType, reason);
 ```
-

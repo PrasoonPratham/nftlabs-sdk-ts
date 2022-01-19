@@ -14,11 +14,10 @@ setMerkleRoot(root: string): ClaimConditionPhase;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  root | string | The merkle root hash |
+| Parameter | Type   | Description          |
+| --------- | ------ | -------------------- |
+| root      | string | The merkle root hash |
 
 <b>Returns:</b>
 
 ClaimConditionPhase
-

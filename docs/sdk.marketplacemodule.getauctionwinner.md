@@ -14,9 +14,9 @@ getAuctionWinner(listingId: BigNumberish): Promise<string>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| listingId | BigNumberish |             |
 
 <b>Returns:</b>
 
@@ -28,14 +28,12 @@ Get the winner of the auction after an auction ends.
 
 ## Example
 
-
 ```javascript
 // The listing ID of the auction that closed
 const listingId = 0;
 
 module
   .getAuctionWinner(listingId)
-  .then((auctionWinner) => console.log(auctionWinner))
-  .catch((err) => console.error(err));
+  .then(auctionWinner => console.log(auctionWinner))
+  .catch(err => console.error(err));
 ```
-

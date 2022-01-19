@@ -12,13 +12,12 @@ createWithNFT(tokenContract: string, tokenId: BigNumberish, metadata: MetadataUR
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenContract | string |  |
-|  tokenId | BigNumberish |  |
-|  metadata | [MetadataURIOrObject](./sdk.metadatauriorobject.md) |  |
+| Parameter     | Type                                                | Description |
+| ------------- | --------------------------------------------------- | ----------- |
+| tokenContract | string                                              |             |
+| tokenId       | BigNumberish                                        |             |
+| metadata      | [MetadataURIOrObject](./sdk.metadatauriorobject.md) |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

@@ -12,11 +12,10 @@ setDefaultSaleRecipient(recipient: string): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  recipient | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| recipient | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

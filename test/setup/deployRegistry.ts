@@ -1,7 +1,7 @@
 import {
   ControlDeployer__factory,
   Forwarder__factory,
-  Registry__factory,
+  Registry__factory
 } from "@3rdweb/contracts";
 import { ethers, Signer } from "ethers";
 
@@ -9,7 +9,7 @@ export async function deployRegistry(signer: Signer): Promise<string> {
   // Deploy Forwarder
   const forwarder = await new ethers.ContractFactory(
     Forwarder__factory.abi,
-    Forwarder__factory.bytecode,
+    Forwarder__factory.bytecode
   )
     .connect(signer)
     .deploy();
@@ -20,7 +20,7 @@ export async function deployRegistry(signer: Signer): Promise<string> {
   // Deploy ControlDeployer
   const controlDeployer = await new ethers.ContractFactory(
     ControlDeployer__factory.abi,
-    ControlDeployer__factory.bytecode,
+    ControlDeployer__factory.bytecode
   )
     .connect(signer)
     .deploy();
@@ -30,13 +30,13 @@ export async function deployRegistry(signer: Signer): Promise<string> {
 
   const registry = await new ethers.ContractFactory(
     Registry__factory.abi,
-    Registry__factory.bytecode,
+    Registry__factory.bytecode
   )
     .connect(signer)
     .deploy(
       await signer.getAddress(),
       forwarderAddress,
-      controlDeployerAddress,
+      controlDeployerAddress
     );
   await registry.deployed();
   const registryAddress = registry.address;

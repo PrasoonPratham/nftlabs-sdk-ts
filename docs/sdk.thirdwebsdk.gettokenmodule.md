@@ -12,13 +12,12 @@ getTokenModule(address: string): TokenModule;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string | The contract address of the given Token module. |
+| Parameter | Type   | Description                                     |
+| --------- | ------ | ----------------------------------------------- |
+| address   | string | The contract address of the given Token module. |
 
 <b>Returns:</b>
 
 [TokenModule](./sdk.tokenmodule.md)
 
 The Token Module.
-

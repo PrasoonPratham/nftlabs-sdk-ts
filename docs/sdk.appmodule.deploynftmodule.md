@@ -14,13 +14,12 @@ deployNftModule(metadata: NftModuleMetadata): Promise<NFTModule>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadata | [NftModuleMetadata](./sdk.nftmodulemetadata.md) | The module metadata |
+| Parameter | Type                                            | Description         |
+| --------- | ----------------------------------------------- | ------------------- |
+| metadata  | [NftModuleMetadata](./sdk.nftmodulemetadata.md) | The module metadata |
 
 <b>Returns:</b>
 
 Promise&lt;[NFTModule](./sdk.nftmodule.md)<!-- -->&gt;
 
 - The deployed NFT module
-

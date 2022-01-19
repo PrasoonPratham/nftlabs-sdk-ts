@@ -12,12 +12,11 @@ isApproved(address: string, operator: string): Promise<boolean>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string |  |
-|  operator | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| address   | string |             |
+| operator  | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;boolean&gt;
-

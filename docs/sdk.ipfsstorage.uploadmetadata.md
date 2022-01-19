@@ -12,13 +12,12 @@ uploadMetadata(metadata: MetadataURIOrObject, contractAddress?: string, _signerA
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadata | [MetadataURIOrObject](./sdk.metadatauriorobject.md) |  |
-|  contractAddress | string |  |
-|  \_signerAddress | string |  |
+| Parameter       | Type                                                | Description |
+| --------------- | --------------------------------------------------- | ----------- |
+| metadata        | [MetadataURIOrObject](./sdk.metadatauriorobject.md) |             |
+| contractAddress | string                                              |             |
+| \_signerAddress | string                                              |             |
 
 <b>Returns:</b>
 
 Promise&lt;string&gt;
-

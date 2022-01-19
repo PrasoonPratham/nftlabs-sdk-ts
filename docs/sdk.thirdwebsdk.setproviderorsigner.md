@@ -12,13 +12,12 @@ setProviderOrSigner(providerOrSignerOrNetwork: ValidProviderInput): ProviderOrSi
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  providerOrSignerOrNetwork | [ValidProviderInput](./sdk.validproviderinput.md) | A valid "ethers" Provider, Signer or a Network address to create a Provider with. |
+| Parameter                 | Type                                              | Description                                                                       |
+| ------------------------- | ------------------------------------------------- | --------------------------------------------------------------------------------- |
+| providerOrSignerOrNetwork | [ValidProviderInput](./sdk.validproviderinput.md) | A valid "ethers" Provider, Signer or a Network address to create a Provider with. |
 
 <b>Returns:</b>
 
 [ProviderOrSigner](./sdk.providerorsigner.md)
 
 The Provider / Signer that was passed in, or a default ethers provider constructed with the passed Network.
-

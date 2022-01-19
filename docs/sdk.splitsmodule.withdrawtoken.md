@@ -12,12 +12,11 @@ withdrawToken(walletAddress: string, tokenAddress: string): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  walletAddress | string |  |
-|  tokenAddress | string |  |
+| Parameter     | Type   | Description |
+| ------------- | ------ | ----------- |
+| walletAddress | string |             |
+| tokenAddress  | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

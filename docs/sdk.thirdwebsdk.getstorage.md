@@ -11,9 +11,9 @@ Accessor for the storage instance used by the SDK
 ```typescript
 getStorage(): IStorage;
 ```
+
 <b>Returns:</b>
 
 [IStorage](./sdk.istorage.md)
 
 - The Storage instance.
-

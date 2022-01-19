@@ -12,13 +12,12 @@ getContractMetadata(address: string): Promise<ModuleMetadataNoType>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| address   | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;[ModuleMetadataNoType](./sdk.modulemetadatanotype.md)<!-- -->&gt;
 
 The contract metadata for the given contract address.
-

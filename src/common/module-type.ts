@@ -19,7 +19,7 @@ export enum ModuleType {
   SPLITS = 9,
   VOTE = 10,
   BUNDLE_DROP = 11,
-  MARKETPLACE = 12,
+  MARKETPLACE = 12
 }
 /**
  *
@@ -29,11 +29,11 @@ export enum ModuleType {
  */
 
 export function convertNameToModuleType(
-  moduleName?: string,
+  moduleName?: string
 ): ModuleType | undefined {
   return $enum(ModuleType).getValueOrDefault(
     moduleName?.toUpperCase(),
-    undefined,
+    undefined
   );
 }
 
@@ -44,7 +44,7 @@ export function convertNameToModuleType(
  * @public
  */
 export function convertModuleTypeToName(
-  moduleType: ModuleType,
+  moduleType: ModuleType
 ): keyof typeof ModuleType | undefined {
   return $enum(ModuleType).getKeyOrDefault(moduleType, undefined);
 }

@@ -14,8 +14,7 @@ constructor(id?: string, endTime?: BigNumberish);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  id | string |  |
-|  endTime | BigNumberish |  |
-
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| id        | string       |             |
+| endTime   | BigNumberish |             |

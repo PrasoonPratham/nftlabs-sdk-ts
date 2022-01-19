@@ -15,13 +15,12 @@ I.e. the total number of shares is used to calculate the percentage of the total
 <b>Signature:</b>
 
 ```typescript
-export interface NewSplitRecipient 
+export interface NewSplitRecipient
 ```
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [address](./sdk.newsplitrecipient.address.md) | string | The address of the recipient |
-|  [shares](./sdk.newsplitrecipient.shares.md) | BigNumberish | The number of shares for the recipient |
-
+| Property                                      | Type         | Description                            |
+| --------------------------------------------- | ------------ | -------------------------------------- |
+| [address](./sdk.newsplitrecipient.address.md) | string       | The address of the recipient           |
+| [shares](./sdk.newsplitrecipient.shares.md)   | BigNumberish | The number of shares for the recipient |

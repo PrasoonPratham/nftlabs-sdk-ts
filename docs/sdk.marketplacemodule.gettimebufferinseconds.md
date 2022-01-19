@@ -9,7 +9,7 @@
 ```typescript
 getTimeBufferInSeconds(): Promise<BigNumber>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;BigNumber&gt;
-

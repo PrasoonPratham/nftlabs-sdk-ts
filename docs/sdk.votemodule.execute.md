@@ -14,9 +14,9 @@ execute(proposalId: string): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  proposalId | string | The proposal id to execute. |
+| Parameter  | Type   | Description                 |
+| ---------- | ------ | --------------------------- |
+| proposalId | string | The proposal id to execute. |
 
 <b>Returns:</b>
 
@@ -28,10 +28,8 @@ Execute the related transactions for a proposal if the proposal succeeded.
 
 ## Example
 
-
 ```javascript
 // The proposal ID ofthe proposal you want to execute
-const proposalId = "0"
+const proposalId = "0";
 await module.execute(proposalId);
 ```
-

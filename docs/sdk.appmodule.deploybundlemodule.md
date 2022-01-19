@@ -14,13 +14,12 @@ deployBundleModule(metadata: BundleModuleMetadata): Promise<CollectionModule>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadata | [BundleModuleMetadata](./sdk.bundlemodulemetadata.md) | Metadata about the module. |
+| Parameter | Type                                                  | Description                |
+| --------- | ----------------------------------------------------- | -------------------------- |
+| metadata  | [BundleModuleMetadata](./sdk.bundlemodulemetadata.md) | Metadata about the module. |
 
 <b>Returns:</b>
 
 Promise&lt;[CollectionModule](./sdk.collectionmodule.md)<!-- -->&gt;
 
 A promise with the newly created module.
-

@@ -14,11 +14,10 @@ balanceOf(address: string): Promise<BigNumber>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string | The address of the recipient to check the balance of. |
+| Parameter | Type   | Description                                           |
+| --------- | ------ | ----------------------------------------------------- |
+| address   | string | The address of the recipient to check the balance of. |
 
 <b>Returns:</b>
 
 Promise&lt;BigNumber&gt;
-

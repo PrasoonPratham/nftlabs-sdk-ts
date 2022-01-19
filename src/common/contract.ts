@@ -37,12 +37,12 @@ const contractUriABI = [
       {
         internalType: "string",
         name: "",
-        type: "string",
-      },
+        type: "string"
+      }
     ],
     stateMutability: "view",
-    type: "function",
-  },
+    type: "function"
+  }
 ];
 
 /**
@@ -52,7 +52,7 @@ export async function getContractMetadata(
   provider: ProviderOrSigner,
   address: string,
   ipfsGatewayUrl: string,
-  resolveGateway = false,
+  resolveGateway = false
 ): Promise<ContractMetadata> {
   const contract = new Contract(address, contractUriABI, provider);
   const uri = await contract.contractURI();
@@ -61,7 +61,7 @@ export async function getContractMetadata(
 
   if (!meta.ok) {
     throw new Error(
-      `Gateway did not return metadata, instead returned:\n ${meta.status} - ${meta.statusText}`,
+      `Gateway did not return metadata, instead returned:\n ${meta.status} - ${meta.statusText}`
     );
   }
 
@@ -71,12 +71,12 @@ export async function getContractMetadata(
       json = recursiveResolveGatewayUrl(json, ipfsGatewayUrl);
     }
     const entity: ContractMetadata = {
-      ...json,
+      ...json
     };
     return entity;
   } catch (e) {
     throw new Error(
-      `Gateway did not return metadata, instead returned:\n ${meta.status} - ${meta.statusText}`,
+      `Gateway did not return metadata, instead returned:\n ${meta.status} - ${meta.statusText}`
     );
   }
 }
@@ -86,7 +86,7 @@ export async function getContractMetadata(
  */
 export async function isContract(
   provider: Provider,
-  address: string,
+  address: string
 ): Promise<boolean> {
   return (await provider.getCode(address)) !== "0x";
 }

@@ -19,11 +19,10 @@ makeDirectListingOffer(offer: {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  offer | { listingId: BigNumberish; quantityDesired: BigNumberish; currencyContractAddress: string; pricePerToken: BigNumberish; } |  |
+| Parameter | Type                                                                                                                      | Description |
+| --------- | ------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| offer     | { listingId: BigNumberish; quantityDesired: BigNumberish; currencyContractAddress: string; pricePerToken: BigNumberish; } |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

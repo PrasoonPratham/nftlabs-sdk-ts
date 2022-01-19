@@ -20,11 +20,10 @@ buyoutAuctionListing(listingId: BigNumberish): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | BigNumberish | Id of the listing to buyout. |
+| Parameter | Type         | Description                  |
+| --------- | ------------ | ---------------------------- |
+| listingId | BigNumberish | Id of the listing to buyout. |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

@@ -16,12 +16,11 @@ withdrawToken(walletAddress: string, tokenAddress: string): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  walletAddress | string | The address to withdraw royalties for. |
-|  tokenAddress | string |  |
+| Parameter     | Type   | Description                            |
+| ------------- | ------ | -------------------------------------- |
+| walletAddress | string | The address to withdraw royalties for. |
+| tokenAddress  | string |                                        |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

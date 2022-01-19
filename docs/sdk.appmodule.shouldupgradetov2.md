@@ -9,7 +9,7 @@
 ```typescript
 shouldUpgradeToV2(): Promise<boolean>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;boolean&gt;
-

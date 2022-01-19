@@ -14,9 +14,9 @@ describe("Recursive Testing", async () => {
         test2: "ipfs://QmTJyQwBhbELaceUScbM29G3HRpk4GdKXMuVxAxGCGtXME",
         test3: {
           test: "test",
-          test2: "ipfs://QmTJyQwBhbELaceUScbM29G3HRpk4GdKXMuVxAxGCGtXME",
-        },
-      },
+          test2: "ipfs://QmTJyQwBhbELaceUScbM29G3HRpk4GdKXMuVxAxGCGtXME"
+        }
+      }
     };
   });
   it("should resolve all URLs when resolveGateway is set to true", async () => {
@@ -34,9 +34,9 @@ describe("Recursive Testing", async () => {
         test3: {
           test: "test",
           test2:
-            "https://ipfs.thirdweb.com/ipfs/QmTJyQwBhbELaceUScbM29G3HRpk4GdKXMuVxAxGCGtXME",
-        },
-      },
+            "https://ipfs.thirdweb.com/ipfs/QmTJyQwBhbELaceUScbM29G3HRpk4GdKXMuVxAxGCGtXME"
+        }
+      }
     });
   });
   it("should resolve all URLs when resolveGateway is set to true", async () => {
@@ -52,9 +52,9 @@ describe("Recursive Testing", async () => {
         test2: "ipfs://QmTJyQwBhbELaceUScbM29G3HRpk4GdKXMuVxAxGCGtXME",
         test3: {
           test: "test",
-          test2: "ipfs://QmTJyQwBhbELaceUScbM29G3HRpk4GdKXMuVxAxGCGtXME",
-        },
-      },
+          test2: "ipfs://QmTJyQwBhbELaceUScbM29G3HRpk4GdKXMuVxAxGCGtXME"
+        }
+      }
     });
   });
 });

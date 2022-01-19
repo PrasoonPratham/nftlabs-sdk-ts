@@ -7,15 +7,14 @@
 <b>Signature:</b>
 
 ```typescript
-export interface CollectionMetadata 
+export interface CollectionMetadata
 ```
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [creator](./sdk.collectionmetadata.creator.md) | string |  |
-|  [metadata](./sdk.collectionmetadata.metadata.md) | [NFTMetadata](./sdk.nftmetadata.md) |  |
-|  [ownedByAddress](./sdk.collectionmetadata.ownedbyaddress.md) | BigNumber |  |
-|  [supply](./sdk.collectionmetadata.supply.md) | BigNumber |  |
-
+| Property                                                     | Type                                | Description |
+| ------------------------------------------------------------ | ----------------------------------- | ----------- |
+| [creator](./sdk.collectionmetadata.creator.md)               | string                              |             |
+| [metadata](./sdk.collectionmetadata.metadata.md)             | [NFTMetadata](./sdk.nftmetadata.md) |             |
+| [ownedByAddress](./sdk.collectionmetadata.ownedbyaddress.md) | BigNumber                           |             |
+| [supply](./sdk.collectionmetadata.supply.md)                 | BigNumber                           |             |

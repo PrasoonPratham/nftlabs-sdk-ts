@@ -5,9 +5,8 @@
 ## DropModule.lazyMint() method
 
 > Warning: This API is now obsolete.
-> 
+>
 > - The function has been deprecated. Use `createBatch` instead.
-> 
 
 <b>Signature:</b>
 
@@ -17,11 +16,10 @@ lazyMint(metadata: MetadataURIOrObject): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadata | [MetadataURIOrObject](./sdk.metadatauriorobject.md) |  |
+| Parameter | Type                                                | Description |
+| --------- | --------------------------------------------------- | ----------- |
+| metadata  | [MetadataURIOrObject](./sdk.metadatauriorobject.md) |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

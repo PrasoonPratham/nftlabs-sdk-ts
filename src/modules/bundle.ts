@@ -2,7 +2,7 @@ import {
   ERC20__factory,
   ERC721__factory,
   NFTCollection as NFTBundleContract,
-  NFTCollection__factory,
+  NFTCollection__factory
 } from "@3rdweb/contracts";
 import { BigNumber, BigNumberish } from "@ethersproject/bignumber";
 import { TransactionReceipt } from "@ethersproject/providers";
@@ -86,7 +86,7 @@ export class BundleModule
     RolesMap.admin,
     RolesMap.minter,
     RolesMap.pauser,
-    RolesMap.transfer,
+    RolesMap.transfer
   ] as const;
 
   /**
@@ -124,14 +124,14 @@ export class BundleModule
         .totalSupply(tokenId)
         .catch(() => BigNumber.from("0")),
       address ? (await this.balanceOf(address, tokenId)).toNumber() : 0,
-      this.readOnlyContract.tokenState(tokenId),
+      this.readOnlyContract.tokenState(tokenId)
     ]);
     return {
       creator: state.creator,
       supply,
       metadata,
       ownedByAddress: BigNumber.from(ownedByAddress),
-      underlyingType: state.underlyingType,
+      underlyingType: state.underlyingType
     };
   }
 
@@ -157,9 +157,7 @@ export class BundleModule
   public async getAll(address?: string): Promise<BundleMetadata[]> {
     const maxId = (await this.readOnlyContract.nextTokenId()).toNumber();
     return await Promise.all(
-      Array.from(Array(maxId).keys()).map((i) =>
-        this.get(i.toString(), address),
-      ),
+      Array.from(Array(maxId).keys()).map(i => this.get(i.toString(), address))
     );
   }
 
@@ -186,7 +184,7 @@ export class BundleModule
   public async balance(tokenId: string): Promise<BigNumber> {
     return await this.readOnlyContract.balanceOf(
       await this.getSignerAddress(),
-      tokenId,
+      tokenId
     );
   }
 
@@ -194,7 +192,7 @@ export class BundleModule
     address: string,
     operator: string,
     assetContract?: string,
-    assetId?: BigNumberish,
+    assetId?: BigNumberish
   ): Promise<boolean> {
     if (!assetContract) {
       return await this.readOnlyContract.isApprovedForAll(address, operator);
@@ -204,11 +202,11 @@ export class BundleModule
     }
     const contract = ERC721__factory.connect(
       assetContract,
-      this.providerOrSigner,
+      this.providerOrSigner
     );
     const approved = await contract.isApprovedForAll(
       await this.getSignerAddress(),
-      this.address,
+      this.address
     );
     const isTokenApproved =
       (await contract.getApproved(assetId)).toLowerCase() ===
@@ -219,11 +217,11 @@ export class BundleModule
   // write functions
   public async setApproval(
     operator: string,
-    approved = true,
+    approved = true
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("setApprovalForAll", [
       operator,
-      approved,
+      approved
     ]);
   }
 
@@ -249,13 +247,13 @@ export class BundleModule
   public async transfer(
     to: string,
     tokenId: string,
-    amount: BigNumberish,
+    amount: BigNumberish
   ): Promise<TransactionReceipt> {
     return await this.transferFrom(
       await this.getSignerAddress(),
       to,
       { tokenId, amount },
-      [0],
+      [0]
     );
   }
 
@@ -265,11 +263,11 @@ export class BundleModule
   }
 
   public async createBatch(
-    metadatas: MetadataURIOrObject[],
+    metadatas: MetadataURIOrObject[]
   ): Promise<BundleMetadata[]> {
-    const metadataWithSupply = metadatas.map((m) => ({
+    const metadataWithSupply = metadatas.map(m => ({
       metadata: m,
-      supply: 0,
+      supply: 0
     }));
     return this.createAndMintBatch(metadataWithSupply);
   }
@@ -297,7 +295,7 @@ export class BundleModule
    * ```
    */
   public async createAndMint(
-    metadataWithSupply: INFTBundleCreateArgs,
+    metadataWithSupply: INFTBundleCreateArgs
   ): Promise<BundleMetadata> {
     return (await this.createAndMintBatch([metadataWithSupply]))[0];
   }
@@ -330,36 +328,36 @@ export class BundleModule
    * ```
    */
   public async createAndMintBatch(
-    metadataWithSupply: INFTBundleCreateArgs[],
+    metadataWithSupply: INFTBundleCreateArgs[]
   ): Promise<BundleMetadata[]> {
-    const metadatas = metadataWithSupply.map((a) => a.metadata);
+    const metadatas = metadataWithSupply.map(a => a.metadata);
     const { metadataUris: uris } = await this.sdk
       .getStorage()
       .uploadMetadataBatch(metadatas);
-    const supplies = metadataWithSupply.map((a) => a.supply);
+    const supplies = metadataWithSupply.map(a => a.supply);
     const to = await this.getSignerAddress();
     const receipt = await this.sendTransaction("createNativeTokens", [
       to,
       uris,
       supplies,
-      [0],
+      [0]
     ]);
     const event = this.parseEventLogs("NativeTokens", receipt?.logs);
     const tokenIds = event?.tokenIds;
     return await Promise.all(
-      tokenIds.map((tokenId: BigNumber) => this.get(tokenId.toString())),
+      tokenIds.map((tokenId: BigNumber) => this.get(tokenId.toString()))
     );
   }
 
   public async createWithToken(
     tokenContract: string,
     tokenAmount: BigNumberish,
-    args: INFTBundleCreateArgs,
+    args: INFTBundleCreateArgs
   ) {
     const token = ERC20__factory.connect(tokenContract, this.providerOrSigner);
     const allowance = await token.allowance(
       await this.getSignerAddress(),
-      this.address,
+      this.address
     );
     if (allowance < tokenAmount) {
       await token.increaseAllowance(this.address, tokenAmount);
@@ -369,13 +367,13 @@ export class BundleModule
       tokenContract,
       tokenAmount,
       args.supply,
-      uri,
+      uri
     ]);
   }
   public async createWithErc20(
     tokenContract: string,
     tokenAmount: BigNumberish,
-    args: INFTBundleCreateArgs,
+    args: INFTBundleCreateArgs
   ) {
     return this.createWithToken(tokenContract, tokenAmount, args);
   }
@@ -383,14 +381,14 @@ export class BundleModule
   public async createWithNFT(
     tokenContract: string,
     tokenId: BigNumberish,
-    metadata: MetadataURIOrObject,
+    metadata: MetadataURIOrObject
   ) {
     const asset = ERC721__factory.connect(tokenContract, this.providerOrSigner);
 
     if (
       !(await asset.isApprovedForAll(
         await this.getSignerAddress(),
-        this.address,
+        this.address
       ))
     ) {
       const isTokenApproved =
@@ -398,7 +396,7 @@ export class BundleModule
         this.address.toLowerCase();
       if (!isTokenApproved) {
         await this.sendContractTransaction(asset, "setApprovalForAll", [
-          this.address,
+          this.address
         ]);
       }
     }
@@ -410,7 +408,7 @@ export class BundleModule
   }
   public async unwrapToken(
     tokenId: BigNumberish,
-    amount: BigNumberish,
+    amount: BigNumberish
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("redeemERC20", [tokenId, amount]);
   }
@@ -418,7 +416,7 @@ export class BundleModule
   public async createWithERC721(
     tokenContract: string,
     tokenId: BigNumberish,
-    metadata: MetadataURIOrObject,
+    metadata: MetadataURIOrObject
   ) {
     return this.createWithNFT(tokenContract, tokenId, metadata);
   }
@@ -430,7 +428,7 @@ export class BundleModule
   public async mintTo(
     to: string,
     args: INFTBundleBatchArgs,
-    data: BytesLike = [0],
+    data: BytesLike = [0]
   ) {
     await this.sendTransaction("mint", [to, args.tokenId, args.amount, data]);
   }
@@ -442,10 +440,10 @@ export class BundleModule
   public async mintBatchTo(
     to: string,
     args: INFTBundleBatchArgs[],
-    data: BytesLike = [0],
+    data: BytesLike = [0]
   ) {
-    const ids = args.map((a) => a.tokenId);
-    const amounts = args.map((a) => a.amount);
+    const ids = args.map(a => a.tokenId);
+    const amounts = args.map(a => a.amount);
     await this.sendTransaction("mintBatch", [to, ids, amounts, data]);
   }
 
@@ -469,28 +467,28 @@ export class BundleModule
   }
 
   public async burnBatch(
-    args: INFTBundleBatchArgs[],
+    args: INFTBundleBatchArgs[]
   ): Promise<TransactionReceipt> {
     return await this.burnBatchFrom(await this.getSignerAddress(), args);
   }
 
   public async burnFrom(
     account: string,
-    args: INFTBundleBatchArgs,
+    args: INFTBundleBatchArgs
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("burn", [
       account,
       args.tokenId,
-      args.amount,
+      args.amount
     ]);
   }
 
   public async burnBatchFrom(
     account: string,
-    args: INFTBundleBatchArgs[],
+    args: INFTBundleBatchArgs[]
   ): Promise<TransactionReceipt> {
-    const ids = args.map((a) => a.tokenId);
-    const amounts = args.map((a) => a.amount);
+    const ids = args.map(a => a.tokenId);
+    const amounts = args.map(a => a.amount);
     return await this.sendTransaction("burnBatch", [account, ids, amounts]);
   }
 
@@ -498,14 +496,14 @@ export class BundleModule
     from: string,
     to: string,
     args: INFTBundleBatchArgs,
-    data: BytesLike = [0],
+    data: BytesLike = [0]
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("safeTransferFrom", [
       from,
       to,
       args.tokenId,
       args.amount,
-      data,
+      data
     ]);
   }
 
@@ -539,16 +537,16 @@ export class BundleModule
     from: string,
     to: string,
     args: INFTBundleBatchArgs[],
-    data: BytesLike = [0],
+    data: BytesLike = [0]
   ): Promise<TransactionReceipt> {
-    const ids = args.map((a) => a.tokenId);
-    const amounts = args.map((a) => a.amount);
+    const ids = args.map(a => a.tokenId);
+    const amounts = args.map(a => a.amount);
     return await this.sendTransaction("safeBatchTransferFrom", [
       from,
       to,
       ids,
       amounts,
-      data,
+      data
     ]);
   }
 
@@ -565,22 +563,22 @@ export class BundleModule
     metadata.seller_fee_basis_points = amount;
     const uri = await this.sdk.getStorage().uploadMetadata(
       {
-        ...metadata,
+        ...metadata
       },
       this.address,
-      await this.getSignerAddress(),
+      await this.getSignerAddress()
     );
     encoded.push(
-      this.contract.interface.encodeFunctionData("setRoyaltyBps", [amount]),
+      this.contract.interface.encodeFunctionData("setRoyaltyBps", [amount])
     );
     encoded.push(
-      this.contract.interface.encodeFunctionData("setContractURI", [uri]),
+      this.contract.interface.encodeFunctionData("setContractURI", [uri])
     );
     return await this.sendTransaction("multicall", [encoded]);
   }
 
   public async setModuleMetadata(
-    metadata: MetadataURIOrObject,
+    metadata: MetadataURIOrObject
   ): Promise<TransactionReceipt> {
     const uri = await this.sdk.getStorage().uploadMetadata(metadata);
     return await this.sendTransaction("setContractURI", [uri]);
@@ -598,22 +596,22 @@ export class BundleModule
     const maxId = await this.readOnlyContract.nextTokenId();
     const balances = await this.readOnlyContract.balanceOfBatch(
       Array(maxId.toNumber()).fill(address),
-      Array.from(Array(maxId.toNumber()).keys()),
+      Array.from(Array(maxId.toNumber()).keys())
     );
 
     const ownedBalances = balances
       .map((b, i) => {
         return {
           tokenId: i,
-          balance: b,
+          balance: b
         };
       })
-      .filter((b) => b.balance.gt(0));
+      .filter(b => b.balance.gt(0));
     return await Promise.all(
       ownedBalances.map(async ({ tokenId, balance }) => {
         const token = await this.get(tokenId.toString());
         return { ...token, ownedByAddress: balance };
-      }),
+      })
     );
   }
 
@@ -644,7 +642,7 @@ export class BundleModule
   }
 
   public async setRestrictedTransfer(
-    restricted = false,
+    restricted = false
   ): Promise<TransactionReceipt> {
     await this.onlyRoles(["admin"], await this.getSignerAddress());
     return await this.sendTransaction("setRestrictedTransfer", [restricted]);

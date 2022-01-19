@@ -2,12 +2,12 @@ import {
   ERC1155__factory,
   ERC20__factory,
   Pack as PackContract,
-  Pack__factory,
+  Pack__factory
 } from "@3rdweb/contracts";
 
 import {
   PackCreatedEvent,
-  PackOpenRequestEvent,
+  PackOpenRequestEvent
 } from "@3rdweb/contracts/dist/Pack";
 import { TransactionReceipt } from "@ethersproject/providers";
 import { BigNumber, BigNumberish, BytesLike, Contract, ethers } from "ethers";
@@ -16,7 +16,7 @@ import {
   getCurrencyValue,
   ModuleType,
   Role,
-  RolesMap,
+  RolesMap
 } from "../common";
 import { ChainlinkVrf } from "../common/chainlink";
 import { NotFoundError } from "../common/error";
@@ -54,7 +54,7 @@ export interface PackMetadataWithBalance extends PackMetadata {
 export enum UnderlyingType {
   None = 0,
   ERC20 = 1,
-  ERC721 = 2,
+  ERC721 = 2
 }
 /**
  * @beta
@@ -104,7 +104,7 @@ export class PackModule
     RolesMap.admin,
     RolesMap.minter,
     RolesMap.pauser,
-    RolesMap.transfer,
+    RolesMap.transfer
   ] as const;
 
   /**
@@ -146,7 +146,7 @@ export class PackModule
     const receipt = await this.sendTransaction("openPack", [packId]);
     const logs = this.parseLogs<PackOpenRequestEvent>(
       "PackOpenRequest",
-      receipt?.logs,
+      receipt?.logs
     );
     if (logs.length === 0) {
       throw new Error("Failed to open pack");
@@ -156,7 +156,7 @@ export class PackModule
     const requestId = event.args.requestId;
     const opener = event.args.opener;
 
-    const fulfillEvent: any = await new Promise((resolve) => {
+    const fulfillEvent: any = await new Promise(resolve => {
       this.readOnlyContract.once(
         // eslint-disable-next-line new-cap
         this.readOnlyContract.filters.PackOpenFulfilled(null, opener),
@@ -167,10 +167,10 @@ export class PackModule
               opener: _opener,
               requestId,
               rewardContract,
-              rewardIds,
+              rewardIds
             });
           }
-        },
+        }
       );
     });
 
@@ -181,9 +181,9 @@ export class PackModule
           this.providerOrSigner,
           rewardContract,
           rewardId.toString(),
-          this.ipfsGatewayUrl,
-        ),
-      ),
+          this.ipfsGatewayUrl
+        )
+      )
     );
   }
 
@@ -193,12 +193,10 @@ export class PackModule
         this.providerOrSigner,
         this.address,
         packId,
-        this.ipfsGatewayUrl,
+        this.ipfsGatewayUrl
       ),
       this.readOnlyContract.getPack(packId),
-      this.readOnlyContract
-        .totalSupply(packId)
-        .catch(() => BigNumber.from("0")),
+      this.readOnlyContract.totalSupply(packId).catch(() => BigNumber.from("0"))
     ]);
     const entity: PackMetadata = {
       id: packId,
@@ -207,7 +205,7 @@ export class PackModule
       currentSupply: supply,
       openStart: state.openStart.gt(0)
         ? new Date(state.openStart.toNumber() * 1000)
-        : null,
+        : null
     };
     return entity;
   }
@@ -228,7 +226,7 @@ export class PackModule
   public async getAll(): Promise<PackMetadata[]> {
     const maxId = (await this.readOnlyContract.nextTokenId()).toNumber();
     return await Promise.all(
-      Array.from(Array(maxId).keys()).map((i) => this.get(i.toString())),
+      Array.from(Array(maxId).keys()).map(i => this.get(i.toString()))
     );
   }
 
@@ -254,18 +252,18 @@ export class PackModule
       throw new NotFoundError();
     }
     const rewards = await Promise.all(
-      packReward.tokenIds.map((tokenId) =>
+      packReward.tokenIds.map(tokenId =>
         getMetadataWithoutContract(
           this.providerOrSigner,
           packReward.source,
           tokenId.toString(),
-          this.ipfsGatewayUrl,
-        ),
-      ),
+          this.ipfsGatewayUrl
+        )
+      )
     );
     return rewards.map((reward, i) => ({
       supply: packReward.amountsPacked[i],
-      metadata: reward,
+      metadata: reward
     }));
   }
 
@@ -326,7 +324,7 @@ export class PackModule
       to,
       tokenId,
       amount,
-      [0],
+      [0]
     ]);
   }
 
@@ -370,17 +368,17 @@ export class PackModule
   public async create(args: IPackCreateArgs): Promise<PackMetadata> {
     const asset = ERC1155__factory.connect(
       args.assetContract,
-      this.providerOrSigner,
+      this.providerOrSigner
     );
 
     const from = await this.getSignerAddress();
-    const ids = args.assets.map((a) => a.tokenId);
-    const amounts = args.assets.map((a) => a.amount);
+    const ids = args.assets.map(a => a.tokenId);
+    const amounts = args.assets.map(a => a.amount);
     const uri = await this.sdk.getStorage().uploadMetadata(args.metadata);
 
     const packParams = ethers.utils.defaultAbiCoder.encode(
       ["string", "uint256", "uint256"],
-      [uri, args.secondsUntilOpenStart || 0, args.rewardsPerOpen || 1],
+      [uri, args.secondsUntilOpenStart || 0, args.rewardsPerOpen || 1]
     );
 
     // TODO: make it gasless
@@ -390,7 +388,7 @@ export class PackModule
       ids,
       amounts,
       packParams,
-      await this.getCallOverrides(),
+      await this.getCallOverrides()
     );
 
     const receipt = await tx.wait();
@@ -406,14 +404,14 @@ export class PackModule
     from: string,
     to: string,
     args: IPackBatchArgs,
-    data: BytesLike = [0],
+    data: BytesLike = [0]
   ) {
     await this.sendTransaction("safeTransferFrom", [
       from,
       to,
       args.tokenId,
       args.amount,
-      data,
+      data
     ]);
   }
 
@@ -421,16 +419,16 @@ export class PackModule
     from: string,
     to: string,
     args: IPackBatchArgs[],
-    data: BytesLike = [0],
+    data: BytesLike = [0]
   ) {
-    const ids = args.map((a) => a.tokenId);
-    const amounts = args.map((a) => a.amount);
+    const ids = args.map(a => a.tokenId);
+    const amounts = args.map(a => a.amount);
     await this.sendTransaction("safeBatchTransferFrom", [
       from,
       to,
       ids,
       amounts,
-      data,
+      data
     ]);
   }
 
@@ -439,12 +437,12 @@ export class PackModule
     const chainlink = ChainlinkVrf[chainId];
     const erc20 = ERC20__factory.connect(
       chainlink.linkTokenAddress,
-      this.providerOrSigner,
+      this.providerOrSigner
     );
     return await getCurrencyValue(
       this.providerOrSigner,
       chainlink.linkTokenAddress,
-      await erc20.balanceOf(this.address),
+      await erc20.balanceOf(this.address)
     );
   }
 
@@ -453,13 +451,13 @@ export class PackModule
     const chainlink = ChainlinkVrf[chainId];
     const erc20 = ERC20__factory.connect(
       chainlink.linkTokenAddress,
-      this.providerOrSigner,
+      this.providerOrSigner
     );
     // TODO: make it gasless
     const tx = await erc20.transfer(
       this.address,
       amount,
-      await this.getCallOverrides(),
+      await this.getCallOverrides()
     );
     await tx.wait();
   }
@@ -475,25 +473,25 @@ export class PackModule
               {
                 internalType: "address",
                 name: "_to",
-                type: "address",
+                type: "address"
               },
               {
                 internalType: "uint256",
                 name: "_amount",
-                type: "uint256",
-              },
+                type: "uint256"
+              }
             ],
             name: "transferLink",
             outputs: [],
             stateMutability: "nonpayable",
-            type: "function",
-          },
+            type: "function"
+          }
         ],
-        this.providerOrSigner,
+        this.providerOrSigner
       );
       await this.sendContractTransaction(_contract, "transferLink", [
         to,
-        amount,
+        amount
       ]);
     } catch (e) {
       // new version of the contract
@@ -502,7 +500,7 @@ export class PackModule
       await this.sendTransaction("transferERC20", [
         chainlink.linkTokenAddress,
         to,
-        amount,
+        amount
       ]);
     }
   }
@@ -520,16 +518,16 @@ export class PackModule
     metadata.seller_fee_basis_points = amount;
     const uri = await this.sdk.getStorage().uploadMetadata(
       {
-        ...metadata,
+        ...metadata
       },
       this.address,
-      await this.getSignerAddress(),
+      await this.getSignerAddress()
     );
     encoded.push(
-      this.contract.interface.encodeFunctionData("setRoyaltyBps", [amount]),
+      this.contract.interface.encodeFunctionData("setRoyaltyBps", [amount])
     );
     encoded.push(
-      this.contract.interface.encodeFunctionData("setContractURI", [uri]),
+      this.contract.interface.encodeFunctionData("setContractURI", [uri])
     );
     return await this.sendTransaction("multicall", [encoded]);
   }
@@ -566,7 +564,7 @@ export class PackModule
   }
 
   public async setRestrictedTransfer(
-    restricted = false,
+    restricted = false
   ): Promise<TransactionReceipt> {
     await this.onlyRoles(["admin"], await this.getSignerAddress());
     return await this.sendTransaction("setRestrictedTransfer", [restricted]);
@@ -584,22 +582,22 @@ export class PackModule
     const maxId = await this.readOnlyContract.nextTokenId();
     const balances = await this.readOnlyContract.balanceOfBatch(
       Array(maxId.toNumber()).fill(address),
-      Array.from(Array(maxId.toNumber()).keys()),
+      Array.from(Array(maxId.toNumber()).keys())
     );
 
     const ownedBalances = balances
       .map((b, i) => {
         return {
           tokenId: i,
-          balance: b,
+          balance: b
         };
       })
-      .filter((b) => b.balance.gt(0));
+      .filter(b => b.balance.gt(0));
     return await Promise.all(
       ownedBalances.map(async ({ tokenId, balance }) => {
         const token = await this.get(tokenId.toString());
         return { ...token, ownedByAddress: balance };
-      }),
+      })
     );
   }
 }

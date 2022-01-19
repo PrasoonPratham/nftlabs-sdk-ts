@@ -14,11 +14,10 @@ distributeToken(tokenAddress: string): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenAddress | string | The address of the currency to distribute the funds in. |
+| Parameter    | Type   | Description                                             |
+| ------------ | ------ | ------------------------------------------------------- |
+| tokenAddress | string | The address of the currency to distribute the funds in. |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

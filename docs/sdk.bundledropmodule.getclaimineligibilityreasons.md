@@ -14,13 +14,12 @@ getClaimIneligibilityReasons(tokenId: BigNumberish, quantity: BigNumberish, addr
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | BigNumberish | The token id that would be claimed. |
-|  quantity | BigNumberish | The desired quantity that would be claimed. |
-|  addressToCheck | string | The address that would be claiming the token. |
+| Parameter      | Type         | Description                                   |
+| -------------- | ------------ | --------------------------------------------- |
+| tokenId        | BigNumberish | The token id that would be claimed.           |
+| quantity       | BigNumberish | The desired quantity that would be claimed.   |
+| addressToCheck | string       | The address that would be claiming the token. |
 
 <b>Returns:</b>
 
 Promise&lt;[ClaimEligibility](./sdk.claimeligibility.md)<!-- -->\[\]&gt;
-

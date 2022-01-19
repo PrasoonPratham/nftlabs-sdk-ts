@@ -12,13 +12,12 @@ uploadBatch(files: Buffer[] | string[] | FileOrBuffer[] | File[] | BufferOrStrin
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  files | Buffer\[\] \| string\[\] \| FileOrBuffer\[\] \| File\[\] \| BufferOrStringWithName\[\] |  |
-|  contractAddress | string |  |
-|  fileStartNumber | number |  |
+| Parameter       | Type                                                                                   | Description |
+| --------------- | -------------------------------------------------------------------------------------- | ----------- |
+| files           | Buffer\[\] \| string\[\] \| FileOrBuffer\[\] \| File\[\] \| BufferOrStringWithName\[\] |             |
+| contractAddress | string                                                                                 |             |
+| fileStartNumber | number                                                                                 |             |
 
 <b>Returns:</b>
 
 Promise&lt;string&gt;
-

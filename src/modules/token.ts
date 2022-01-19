@@ -7,7 +7,7 @@ import {
   Currency,
   CurrencyValue,
   getCurrencyMetadata,
-  getCurrencyValue,
+  getCurrencyValue
 } from "../common/currency";
 import { RestrictedTransferError } from "../common/error";
 import { ModuleWithRoles } from "../core/module";
@@ -49,7 +49,7 @@ export class TokenModule
     RolesMap.admin,
     RolesMap.minter,
     RolesMap.pauser,
-    RolesMap.transfer,
+    RolesMap.transfer
   ] as const;
 
   /**
@@ -82,7 +82,7 @@ export class TokenModule
     return await getCurrencyValue(
       this.providerOrSigner,
       this.address,
-      BigNumber.from(value),
+      BigNumber.from(value)
     );
   }
 
@@ -174,7 +174,7 @@ export class TokenModule
    * @alpha
    */
   public async delegateTo(
-    delegateeAddress: string,
+    delegateeAddress: string
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("delegate", [delegateeAddress]);
   }
@@ -197,7 +197,7 @@ export class TokenModule
    */
   public async transfer(
     to: string,
-    amount: BigNumberish,
+    amount: BigNumberish
   ): Promise<TransactionReceipt> {
     if (await this.isTransferRestricted()) {
       throw new RestrictedTransferError(this.address);
@@ -208,7 +208,7 @@ export class TokenModule
 
   public async setAllowance(
     spender: string,
-    amount: BigNumber,
+    amount: BigNumber
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("approve", [spender, amount]);
   }
@@ -266,8 +266,8 @@ export class TokenModule
       encoded.push(
         this.contract.interface.encodeFunctionData("mint", [
           arg.address,
-          arg.amount,
-        ]),
+          arg.amount
+        ])
       );
     }
     await this.sendTransaction("multicall", [encoded]);
@@ -281,11 +281,11 @@ export class TokenModule
    */
   public async getAllHolderBalances(): Promise<Record<string, BigNumber>> {
     const a = await this.contract.queryFilter(this.contract.filters.Transfer());
-    const txns = a.map((b) => b.args);
+    const txns = a.map(b => b.args);
     const balances: {
       [key: string]: BigNumber;
     } = {};
-    txns.forEach((item) => {
+    txns.forEach(item => {
       const from = item.from;
       const to = item.to;
       const amount = item.value;
@@ -325,7 +325,7 @@ export class TokenModule
 
   public async burnFrom(
     from: string,
-    amount: BigNumberish,
+    amount: BigNumberish
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("burnFrom", [from, amount]);
   }
@@ -351,35 +351,35 @@ export class TokenModule
   public async transferFrom(
     from: string,
     to: string,
-    amount: BigNumberish,
+    amount: BigNumberish
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("transferFrom", [from, to, amount]);
   }
 
   public async setModuleMetadata(
-    metadata: MetadataURIOrObject,
+    metadata: MetadataURIOrObject
   ): Promise<TransactionReceipt> {
     const uri = await this.sdk.getStorage().uploadMetadata(metadata);
     return await this.sendTransaction("setContractURI", [uri]);
   }
 
   public async transferBatch(args: ITokenMintArgs[]) {
-    const encoded = args.map((arg) =>
+    const encoded = args.map(arg =>
       this.contract.interface.encodeFunctionData("transfer", [
         arg.address,
-        arg.amount,
-      ]),
+        arg.amount
+      ])
     );
     await this.sendTransaction("multicall", [encoded]);
   }
 
   public async transferFromBatch(args: ITokenMintFromArgs[]) {
-    const encoded = args.map((arg) =>
+    const encoded = args.map(arg =>
       this.contract.interface.encodeFunctionData("transferFrom", [
         arg.fromAddress,
         arg.address,
-        arg.amount,
-      ]),
+        arg.amount
+      ])
     );
     await this.sendTransaction("multicall", [encoded]);
   }
@@ -389,7 +389,7 @@ export class TokenModule
   }
 
   public async setRestrictedTransfer(
-    restricted = false,
+    restricted = false
   ): Promise<TransactionReceipt> {
     await this.onlyRoles(["admin"], await this.getSignerAddress());
     return await this.sendTransaction("setRestrictedTransfer", [restricted]);

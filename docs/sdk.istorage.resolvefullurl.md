@@ -16,11 +16,10 @@ resolveFullUrl(hash: string): string;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  hash | string | The hash of a file. |
+| Parameter | Type   | Description         |
+| --------- | ------ | ------------------- |
+| hash      | string | The hash of a file. |
 
 <b>Returns:</b>
 
 string
-

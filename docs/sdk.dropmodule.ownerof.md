@@ -12,11 +12,10 @@ ownerOf(tokenId: string): Promise<string>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| tokenId   | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;string&gt;
-

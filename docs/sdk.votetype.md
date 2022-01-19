@@ -7,14 +7,13 @@
 <b>Signature:</b>
 
 ```typescript
-export declare enum VoteType 
+export declare enum VoteType
 ```
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  Abstain | <code>2</code> |  |
-|  Against | <code>0</code> |  |
-|  For | <code>1</code> |  |
-
+| Member  | Value          | Description |
+| ------- | -------------- | ----------- |
+| Abstain | <code>2</code> |             |
+| Against | <code>0</code> |             |
+| For     | <code>1</code> |             |

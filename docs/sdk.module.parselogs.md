@@ -12,13 +12,12 @@ protected parseLogs<T = any>(eventName: string, logs?: Log[], contract?: BaseCon
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  eventName | string |  |
-|  logs | Log\[\] |  |
-|  contract | BaseContract |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| eventName | string       |             |
+| logs      | Log\[\]      |             |
+| contract  | BaseContract |             |
 
 <b>Returns:</b>
 
 T\[\]
-

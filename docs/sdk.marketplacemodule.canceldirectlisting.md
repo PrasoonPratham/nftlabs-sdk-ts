@@ -14,9 +14,9 @@ cancelDirectListing(listingId: BigNumberish): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| listingId | BigNumberish |             |
 
 <b>Returns:</b>
 
@@ -28,11 +28,9 @@ Cancel a direct listing on the marketplace
 
 ## Example
 
-
 ```javascript
 // The listing ID of the direct listing you want to cancel
-const listingId = "0"
+const listingId = "0";
 
 await module.cancelDirectListing(listingId);
 ```
-

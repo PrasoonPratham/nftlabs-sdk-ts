@@ -7,13 +7,12 @@
 <b>Signature:</b>
 
 ```typescript
-export interface ITransferable 
+export interface ITransferable
 ```
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [isTransferRestricted()](./sdk.itransferable.istransferrestricted.md) | Returns true if transfers are restricted. Otherwise returns false. |
-|  [setRestrictedTransfer(restrict)](./sdk.itransferable.setrestrictedtransfer.md) | Setter for transfer restriction. |
-
+| Method                                                                          | Description                                                        |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| [isTransferRestricted()](./sdk.itransferable.istransferrestricted.md)           | Returns true if transfers are restricted. Otherwise returns false. |
+| [setRestrictedTransfer(restrict)](./sdk.itransferable.setrestrictedtransfer.md) | Setter for transfer restriction.                                   |

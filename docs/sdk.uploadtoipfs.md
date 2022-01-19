@@ -9,20 +9,23 @@ A helper function to upload arbitrary data to IPFS and return the resulting IPFS
 <b>Signature:</b>
 
 ```typescript
-export declare function uploadToIPFS(data: string | File | FileOrBuffer, contractAddress?: string, signerAddress?: string): Promise<string>;
+export declare function uploadToIPFS(
+  data: string | File | FileOrBuffer,
+  contractAddress?: string,
+  signerAddress?: string
+): Promise<string>;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  data | string \| File \| FileOrBuffer | stringified JSON \|\| File |
-|  contractAddress | string | (Optional) the contract address to associate the data with |
-|  signerAddress | string | (Optional) the wallet address of the actor that is uploading the file |
+| Parameter       | Type                           | Description                                                           |
+| --------------- | ------------------------------ | --------------------------------------------------------------------- |
+| data            | string \| File \| FileOrBuffer | stringified JSON \|\| File                                            |
+| contractAddress | string                         | (Optional) the contract address to associate the data with            |
+| signerAddress   | string                         | (Optional) the wallet address of the actor that is uploading the file |
 
 <b>Returns:</b>
 
 Promise&lt;string&gt;
 
 The `ipfs://<hash>` uri of the uploaded file
-

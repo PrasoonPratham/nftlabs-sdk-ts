@@ -12,11 +12,10 @@ setRestrictedTransfer(restricted?: boolean): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  restricted | boolean |  |
+| Parameter  | Type    | Description |
+| ---------- | ------- | ----------- |
+| restricted | boolean |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

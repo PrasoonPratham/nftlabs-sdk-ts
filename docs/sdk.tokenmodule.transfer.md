@@ -14,10 +14,10 @@ transfer(to: string, amount: BigNumberish): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  to | string |  |
-|  amount | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| to        | string       |             |
+| amount    | BigNumberish |             |
 
 <b>Returns:</b>
 
@@ -29,7 +29,6 @@ Transfer tokens from the connected wallet to another wallet.
 
 ## Example
 
-
 ```javascript
 // Address of the wallet you want to send the tokens to
 const toAddress = "0x...";
@@ -39,4 +38,3 @@ const amount = 0;
 
 await module.transfer(toAddress, amount);
 ```
-

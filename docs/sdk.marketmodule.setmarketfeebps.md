@@ -12,11 +12,10 @@ setMarketFeeBps(fee: number): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  fee | number |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| fee       | number |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

@@ -47,7 +47,7 @@ describe("ClaimConditionFactory", async () => {
     factory
       .newClaimPhase({
         startTime: phaseTwoStartTimeInSeconds,
-        maxQuantityPerTransaction: phaseTwoMaxQuantityPerTransaction,
+        maxQuantityPerTransaction: phaseTwoMaxQuantityPerTransaction
       })
       .setPrice(phaseTwoPrice, phaseTwoCurrency)
       .setWaitTimeBetweenClaims(phaseTwoWaitTime);
@@ -58,7 +58,7 @@ describe("ClaimConditionFactory", async () => {
     factory
       .newClaimPhase({
         startTime: phaseOneStartDate,
-        maxQuantity: phaseOneMaxQuantity,
+        maxQuantity: phaseOneMaxQuantity
       })
       .setPrice(phaseOnePrice)
       .setMerkleRoot(phaseOneMerkleRoot);
@@ -70,7 +70,7 @@ describe("ClaimConditionFactory", async () => {
     chai.assert.equal(
       conditions.length,
       2,
-      "There should be two claim conditions",
+      "There should be two claim conditions"
     );
   });
 
@@ -78,7 +78,7 @@ describe("ClaimConditionFactory", async () => {
     chai.assert.equal(
       conditions[0].maxMintSupply.toString(),
       phaseOneMaxQuantity.toString(),
-      "Max supply should be 10 which is the supply of phase 1",
+      "Max supply should be 10 which is the supply of phase 1"
     );
   });
 
@@ -88,7 +88,7 @@ describe("ClaimConditionFactory", async () => {
     chai.assert.equal(
       secondClaim.startTimestamp.toNumber(),
       phaseTwoStartTimeInSeconds,
-      "The second condition should have the start time of the second phase",
+      "The second condition should have the start time of the second phase"
     );
   });
 
@@ -98,7 +98,7 @@ describe("ClaimConditionFactory", async () => {
     chai.assert.equal(
       firstClaim.currency,
       AddressZero,
-      "The first claim currency should be 0x000... (native currency)",
+      "The first claim currency should be 0x000... (native currency)"
     );
   });
 
@@ -107,7 +107,7 @@ describe("ClaimConditionFactory", async () => {
     chai.assert.equal(
       secondClaim.maxMintSupply,
       ethers.constants.MaxUint256,
-      "Default max mint supply MAX Uint 256",
+      "Default max mint supply MAX Uint 256"
     );
   });
 
@@ -119,13 +119,13 @@ describe("ClaimConditionFactory", async () => {
     chai.assert.lengthOf(
       newConditions,
       1,
-      "Only one phase should remain after removing another one",
+      "Only one phase should remain after removing another one"
     );
 
     chai.assert.equal(
       newConditions[0].currency,
       phaseTwoCurrency,
-      "The currency of the remaining phase should be equal to the second phase",
+      "The currency of the remaining phase should be equal to the second phase"
     );
   });
 
@@ -133,13 +133,13 @@ describe("ClaimConditionFactory", async () => {
     chai.assert.equal(
       conditions[0].pricePerToken,
       phaseOnePrice,
-      "Phase one price should be set correctly",
+      "Phase one price should be set correctly"
     );
 
     chai.assert.equal(
       conditions[1].pricePerToken,
       phaseTwoPrice,
-      "Phase two price should be set correctly",
+      "Phase two price should be set correctly"
     );
   });
 
@@ -147,13 +147,13 @@ describe("ClaimConditionFactory", async () => {
     chai.assert.equal(
       conditions[0].currency,
       phaseOneCurency,
-      "Phase one price should be set correctly",
+      "Phase one price should be set correctly"
     );
 
     chai.assert.equal(
       conditions[1].currency,
       phaseTwoCurrency,
-      "Phase two price should be set correctly",
+      "Phase two price should be set correctly"
     );
   });
 
@@ -161,7 +161,7 @@ describe("ClaimConditionFactory", async () => {
     chai.assert.equal(
       conditions[1].quantityLimitPerTransaction.toString(),
       phaseTwoMaxQuantityPerTransaction.toString(),
-      "Phase two `maxQuantityPerTransaction` should be set correctly",
+      "Phase two `maxQuantityPerTransaction` should be set correctly"
     );
   });
 
@@ -169,7 +169,7 @@ describe("ClaimConditionFactory", async () => {
     chai.assert.equal(
       conditions[0].quantityLimitPerTransaction.toString(),
       ethers.constants.MaxUint256.toString(),
-      "Phase one `maxQuantityPerTransaction` should be set to Max Uint 256",
+      "Phase one `maxQuantityPerTransaction` should be set to Max Uint 256"
     );
   });
 
@@ -177,7 +177,7 @@ describe("ClaimConditionFactory", async () => {
     chai.assert.equal(
       conditions[1].merkleRoot.toString(),
       hexZeroPad([0], 32).toString(),
-      "Phase two `merkleRoot` should be set to 0x00...",
+      "Phase two `merkleRoot` should be set to 0x00..."
     );
   });
 
@@ -185,7 +185,7 @@ describe("ClaimConditionFactory", async () => {
     chai.assert.equal(
       conditions[0].merkleRoot.toString(),
       phaseOneMerkleRoot,
-      "Phase one `merkleRoot` should be set ",
+      "Phase one `merkleRoot` should be set "
     );
   });
 
@@ -193,7 +193,7 @@ describe("ClaimConditionFactory", async () => {
     chai.assert.equal(
       conditions[1].waitTimeSecondsLimitPerTransaction.toString(),
       phaseTwoWaitTime.toString(),
-      "Phase two `waitTime` should be set ",
+      "Phase two `waitTime` should be set "
     );
   });
 
@@ -201,7 +201,7 @@ describe("ClaimConditionFactory", async () => {
     chai.assert.equal(
       conditions[0].waitTimeSecondsLimitPerTransaction.toString(),
       "0",
-      "Phase two `waitTime` should be set ",
+      "Phase two `waitTime` should be set "
     );
   });
 });

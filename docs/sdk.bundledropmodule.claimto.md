@@ -14,12 +14,12 @@ claimTo(tokenId: BigNumberish, quantity: BigNumberish, addressToClaim: string, p
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | BigNumberish | Id of the token you want to claim |
-|  quantity | BigNumberish | Quantity of the tokens you want to claim |
-|  addressToClaim | string | Address you want to send the token to |
-|  proofs | BytesLike\[\] | Array of proofs |
+| Parameter      | Type          | Description                              |
+| -------------- | ------------- | ---------------------------------------- |
+| tokenId        | BigNumberish  | Id of the token you want to claim        |
+| quantity       | BigNumberish  | Quantity of the tokens you want to claim |
+| addressToClaim | string        | Address you want to send the token to    |
+| proofs         | BytesLike\[\] | Array of proofs                          |
 
 <b>Returns:</b>
 
@@ -33,7 +33,6 @@ Let the a specified wallet claim NFTs.
 
 ## Example
 
-
 ```javascript
 // Address of the wallet you want to claim the NFTs
 const address = "{{wallet_address}}";
@@ -42,8 +41,7 @@ const address = "{{wallet_address}}";
 const quantity = 1;
 
 // The token ID of the NFT you want to claim
-const tokenId = "0"
+const tokenId = "0";
 
 await module.claimTo(tokenId, quantity, address);
 ```
-

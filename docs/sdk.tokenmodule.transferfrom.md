@@ -14,11 +14,11 @@ transferFrom(from: string, to: string, amount: BigNumberish): Promise<Transactio
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  from | string |  |
-|  to | string |  |
-|  amount | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| from      | string       |             |
+| to        | string       |             |
+| amount    | BigNumberish |             |
 
 <b>Returns:</b>
 
@@ -30,16 +30,14 @@ Transfer tokens from one wallet to another
 
 ## Example
 
-
 ```javascript
 // Address of the wallet sending the tokens
 const fromAddress = "{{wallet_address}}";
 // Address of the wallet you want to send the tokens to
 const toAddress = "0x...";
 // The number of tokens you want to send
-const amount = 100
+const amount = 100;
 
 // Note that the connected wallet must have approval to transfer the tokens of the fromAddress
 await module.transferFrom(fromAddress, toAddress, amount);
 ```
-

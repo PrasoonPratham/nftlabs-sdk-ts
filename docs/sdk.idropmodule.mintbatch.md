@@ -16,11 +16,10 @@ mintBatch(tokenMetadata: MetadataURIOrObject[]): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenMetadata | [MetadataURIOrObject](./sdk.metadatauriorobject.md)<!-- -->\[\] | All token metadata objects to be minted. |
+| Parameter     | Type                                                            | Description                              |
+| ------------- | --------------------------------------------------------------- | ---------------------------------------- |
+| tokenMetadata | [MetadataURIOrObject](./sdk.metadatauriorobject.md)<!-- -->\[\] | All token metadata objects to be minted. |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

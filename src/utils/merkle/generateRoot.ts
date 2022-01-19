@@ -10,7 +10,7 @@ import { SHA256 } from "crypto-js";
 export function generateRoot(items: string[]): string {
   const tree = new MerkleTree(items, SHA256, {
     hashLeaves: true,
-    sortLeaves: true,
+    sortLeaves: true
   });
   return tree.getRoot().toString("hex");
 }

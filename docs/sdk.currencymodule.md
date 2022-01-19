@@ -5,14 +5,13 @@
 ## CurrencyModule class
 
 > Warning: This API is now obsolete.
-> 
+>
 > - see [TokenModule](./sdk.tokenmodule.md)
-> 
 
 <b>Signature:</b>
 
 ```typescript
-export declare class CurrencyModule extends TokenModule 
+export declare class CurrencyModule extends TokenModule
 ```
-<b>Extends:</b> [TokenModule](./sdk.tokenmodule.md)
 
+<b>Extends:</b> [TokenModule](./sdk.tokenmodule.md)

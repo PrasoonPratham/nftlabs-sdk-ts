@@ -14,10 +14,10 @@ mintTo(to: string, amount: BigNumberish): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  to | string |  |
-|  amount | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| to        | string       |             |
+| amount    | BigNumberish |             |
 
 <b>Returns:</b>
 
@@ -29,7 +29,6 @@ Mint tokens to a specified address
 
 ## Example
 
-
 ```javascript
 // Address of the wallet you want to mint the tokens to
 const toAddress = "{{wallet_address}}";
@@ -39,4 +38,3 @@ const amount = 100;
 
 await module.transfer(toAddress, amount);
 ```
-

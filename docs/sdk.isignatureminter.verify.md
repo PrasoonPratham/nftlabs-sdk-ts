@@ -14,14 +14,13 @@ verify(mintRequest: SignaturePayload, signature: string): Promise<boolean>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  mintRequest | [SignaturePayload](./sdk.signaturepayload.md) | The signature of the pyaload to verify. |
-|  signature | string |  |
+| Parameter   | Type                                          | Description                             |
+| ----------- | --------------------------------------------- | --------------------------------------- |
+| mintRequest | [SignaturePayload](./sdk.signaturepayload.md) | The signature of the pyaload to verify. |
+| signature   | string                                        |                                         |
 
 <b>Returns:</b>
 
 Promise&lt;boolean&gt;
 
 - True if the signature is valid, false otherwise.
-

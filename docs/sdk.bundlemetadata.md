@@ -5,22 +5,19 @@
 ## BundleMetadata interface
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 
 <b>Signature:</b>
 
 ```typescript
-export interface BundleMetadata 
+export interface BundleMetadata
 ```
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [creator](./sdk.bundlemetadata.creator.md) | string | <b><i>(BETA)</i></b> |
-|  [metadata](./sdk.bundlemetadata.metadata.md) | [NFTMetadata](./sdk.nftmetadata.md) | <b><i>(BETA)</i></b> |
-|  [ownedByAddress](./sdk.bundlemetadata.ownedbyaddress.md) | BigNumber | <b><i>(BETA)</i></b> |
-|  [supply](./sdk.bundlemetadata.supply.md) | BigNumber | <b><i>(BETA)</i></b> |
-|  [underlyingType](./sdk.bundlemetadata.underlyingtype.md) | [UnderlyingType](./sdk.underlyingtype.md) | <b><i>(BETA)</i></b> |
-
+| Property                                                 | Type                                      | Description          |
+| -------------------------------------------------------- | ----------------------------------------- | -------------------- |
+| [creator](./sdk.bundlemetadata.creator.md)               | string                                    | <b><i>(BETA)</i></b> |
+| [metadata](./sdk.bundlemetadata.metadata.md)             | [NFTMetadata](./sdk.nftmetadata.md)       | <b><i>(BETA)</i></b> |
+| [ownedByAddress](./sdk.bundlemetadata.ownedbyaddress.md) | BigNumber                                 | <b><i>(BETA)</i></b> |
+| [supply](./sdk.bundlemetadata.supply.md)                 | BigNumber                                 | <b><i>(BETA)</i></b> |
+| [underlyingType](./sdk.bundlemetadata.underlyingtype.md) | [UnderlyingType](./sdk.underlyingtype.md) | <b><i>(BETA)</i></b> |

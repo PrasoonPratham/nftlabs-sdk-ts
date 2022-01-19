@@ -12,11 +12,10 @@ updateDirectListing(listing: DirectListing): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listing | [DirectListing](./sdk.directlisting.md) |  |
+| Parameter | Type                                    | Description |
+| --------- | --------------------------------------- | ----------- |
+| listing   | [DirectListing](./sdk.directlisting.md) |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

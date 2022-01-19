@@ -5,19 +5,16 @@
 ## INFTBundleCreateArgs interface
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 
 <b>Signature:</b>
 
 ```typescript
-export interface INFTBundleCreateArgs 
+export interface INFTBundleCreateArgs
 ```
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [metadata](./sdk.inftbundlecreateargs.metadata.md) | [MetadataURIOrObject](./sdk.metadatauriorobject.md) | <b><i>(BETA)</i></b> |
-|  [supply](./sdk.inftbundlecreateargs.supply.md) | BigNumberish | <b><i>(BETA)</i></b> |
-
+| Property                                           | Type                                                | Description          |
+| -------------------------------------------------- | --------------------------------------------------- | -------------------- |
+| [metadata](./sdk.inftbundlecreateargs.metadata.md) | [MetadataURIOrObject](./sdk.metadatauriorobject.md) | <b><i>(BETA)</i></b> |
+| [supply](./sdk.inftbundlecreateargs.supply.md)     | BigNumberish                                        | <b><i>(BETA)</i></b> |

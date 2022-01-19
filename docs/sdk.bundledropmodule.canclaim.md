@@ -12,13 +12,12 @@ canClaim(tokenId: BigNumberish, quantity: BigNumberish, addressToCheck?: string)
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | BigNumberish |  |
-|  quantity | BigNumberish |  |
-|  addressToCheck | string |  |
+| Parameter      | Type         | Description |
+| -------------- | ------------ | ----------- |
+| tokenId        | BigNumberish |             |
+| quantity       | BigNumberish |             |
+| addressToCheck | string       |             |
 
 <b>Returns:</b>
 
 Promise&lt;boolean&gt;
-

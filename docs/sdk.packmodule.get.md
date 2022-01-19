@@ -12,11 +12,10 @@ get(packId: string): Promise<PackMetadata>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  packId | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| packId    | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;[PackMetadata](./sdk.packmetadata.md)<!-- -->&gt;
-

@@ -12,11 +12,10 @@ getVoteBalanceOf(account: string): Promise<BigNumber>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  account | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| account   | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;BigNumber&gt;
-

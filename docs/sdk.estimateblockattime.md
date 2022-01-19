@@ -9,19 +9,21 @@ Given a time in second, return the block number that the time is in.
 <b>Signature:</b>
 
 ```typescript
-export declare function estimateBlockAtTime(timeInEpochSeconds: number, provider: Provider): Promise<number>;
+export declare function estimateBlockAtTime(
+  timeInEpochSeconds: number,
+  provider: Provider
+): Promise<number>;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  timeInEpochSeconds | number | The time in seconds. |
-|  provider | Provider |  |
+| Parameter          | Type     | Description          |
+| ------------------ | -------- | -------------------- |
+| timeInEpochSeconds | number   | The time in seconds. |
+| provider           | Provider |                      |
 
 <b>Returns:</b>
 
 Promise&lt;number&gt;
 
 - The block number.
-

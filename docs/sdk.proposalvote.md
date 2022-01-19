@@ -7,14 +7,13 @@
 <b>Signature:</b>
 
 ```typescript
-export interface ProposalVote 
+export interface ProposalVote
 ```
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [count](./sdk.proposalvote.count.md) | BigNumber |  |
-|  [label](./sdk.proposalvote.label.md) | string |  |
-|  [type](./sdk.proposalvote.type.md) | [VoteType](./sdk.votetype.md) |  |
-
+| Property                             | Type                          | Description |
+| ------------------------------------ | ----------------------------- | ----------- |
+| [count](./sdk.proposalvote.count.md) | BigNumber                     |             |
+| [label](./sdk.proposalvote.label.md) | string                        |             |
+| [type](./sdk.proposalvote.type.md)   | [VoteType](./sdk.votetype.md) |             |

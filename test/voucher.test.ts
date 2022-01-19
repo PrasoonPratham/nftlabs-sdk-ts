@@ -28,13 +28,13 @@ describe("Voucher Module", async () => {
     nftModule = await appModule.deployNftModule({
       name: "OUCH VOUCH",
       symbol: "VOUCH",
-      sellerFeeBasisPoints: 0,
+      sellerFeeBasisPoints: 0
     });
 
     meta = {
       currencyAddress: NATIVE_TOKEN_ADDRESS,
       metadata: {
-        name: "OUCH VOUCH",
+        name: "OUCH VOUCH"
       },
       price: ethers.utils.parseUnits("1", 18),
       to: samWallet.address,
@@ -42,10 +42,10 @@ describe("Voucher Module", async () => {
       // Claimable for "24 hours"
       // Math.floor(Date.now() / 1000) + 60 * 60 * 24,
       mintEndTimeEpochSeconds: ethers.BigNumber.from(
-        "0xffffffffffffffffffffffffffffffff",
+        "0xffffffffffffffffffffffffffffffff"
       ),
       // Math.floor(Date.now() / 1000),
-      mintStartTimeEpochSeconds: 0,
+      mintStartTimeEpochSeconds: 0
     };
   });
 
@@ -55,11 +55,11 @@ describe("Voucher Module", async () => {
 
     beforeEach(async () => {
       const { payload: v, signature: s } = await nftModule.generateSignature(
-        meta,
+        meta
       );
       const { signature: bS } = await nftModule.generateSignature({
         ...meta,
-        price: 0,
+        price: 0
       });
       voucher = v;
       signature = s;
@@ -75,7 +75,7 @@ describe("Voucher Module", async () => {
       const invalid = await nftModule.verify(voucher, badSignature);
       assert.isFalse(
         invalid,
-        "This voucher should be invalid because the signature is invalid",
+        "This voucher should be invalid because the signature is invalid"
       );
     });
 
@@ -84,7 +84,7 @@ describe("Voucher Module", async () => {
       const invalidModified = await nftModule.verify(voucher, signature);
       assert.isFalse(
         invalidModified,
-        "This voucher should be invalid because the price was changed",
+        "This voucher should be invalid because the price was changed"
       );
     });
 
@@ -93,28 +93,28 @@ describe("Voucher Module", async () => {
         {
           ...meta,
           metadata: {
-            name: "OUCH VOUCH 0",
-          },
+            name: "OUCH VOUCH 0"
+          }
         },
         {
           ...meta,
           metadata: {
-            name: "OUCH VOUCH 1",
-          },
+            name: "OUCH VOUCH 1"
+          }
         },
         {
           ...meta,
           metadata: {
-            name: "OUCH VOUCH 2",
-          },
-        },
+            name: "OUCH VOUCH 2"
+          }
+        }
       ];
       const batch = await nftModule.generateSignatureBatch(input);
 
       for (const [i, v] of batch.entries()) {
         const mintedId = await nftModule.mintWithSignature(
           v.payload,
-          v.signature,
+          v.signature
         );
         const nft = await nftModule.get(mintedId.toString());
         assert.equal(input[i].metadata.name, nft.name);
@@ -138,7 +138,7 @@ describe("Voucher Module", async () => {
       await sdk.setProviderOrSigner(samWallet);
       const newId2 = await nftModule.mintWithSignature(
         v2.payload,
-        v2.signature,
+        v2.signature
       );
       assert.equal(newId2.toString(), "1");
     });

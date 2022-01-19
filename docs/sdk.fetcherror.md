@@ -9,8 +9,9 @@ Thrown when data fails to fetch from storage.
 <b>Signature:</b>
 
 ```typescript
-export declare class FetchError extends Error 
+export declare class FetchError extends Error
 ```
+
 <b>Extends:</b> Error
 
 ## Remarks
@@ -19,7 +20,6 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [innerError?](./sdk.fetcherror.innererror.md) |  | Error | <i>(Optional)</i> |
-
+| Property                                      | Modifiers | Type  | Description       |
+| --------------------------------------------- | --------- | ----- | ----------------- |
+| [innerError?](./sdk.fetcherror.innererror.md) |           | Error | <i>(Optional)</i> |

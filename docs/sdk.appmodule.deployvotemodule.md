@@ -14,13 +14,12 @@ deployVoteModule(metadata: VoteModuleMetadata): Promise<VoteModule>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadata | [VoteModuleMetadata](./sdk.votemodulemetadata.md) | The module metadata |
+| Parameter | Type                                              | Description         |
+| --------- | ------------------------------------------------- | ------------------- |
+| metadata  | [VoteModuleMetadata](./sdk.votemodulemetadata.md) | The module metadata |
 
 <b>Returns:</b>
 
 Promise&lt;[VoteModule](./sdk.votemodule.md)<!-- -->&gt;
 
 - The deployed vote module
-

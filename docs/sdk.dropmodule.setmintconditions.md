@@ -5,9 +5,8 @@
 ## DropModule.setMintConditions() method
 
 > Warning: This API is now obsolete.
-> 
+>
 > - Use [DropModule.setClaimConditions()](./sdk.dropmodule.setclaimconditions.md) instead
-> 
 
 <b>Signature:</b>
 
@@ -17,11 +16,10 @@ setMintConditions(factory: ClaimConditionFactory): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  factory | ClaimConditionFactory |  |
+| Parameter | Type                  | Description |
+| --------- | --------------------- | ----------- |
+| factory   | ClaimConditionFactory |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

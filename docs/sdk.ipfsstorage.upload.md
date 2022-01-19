@@ -12,13 +12,12 @@ upload(data: string | FileOrBuffer, contractAddress?: string, signerAddress?: st
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  data | string \| FileOrBuffer |  |
-|  contractAddress | string |  |
-|  signerAddress | string |  |
+| Parameter       | Type                   | Description |
+| --------------- | ---------------------- | ----------- |
+| data            | string \| FileOrBuffer |             |
+| contractAddress | string                 |             |
+| signerAddress   | string                 |             |
 
 <b>Returns:</b>
 
 Promise&lt;string&gt;
-

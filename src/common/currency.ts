@@ -48,8 +48,8 @@ const NATIVE_TOKENS: Record<SUPPORTED_CHAIN_ID | ChainId.Hardhat, NativeToken> =
       wrapped: {
         address: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
         name: "Wrapped Ether",
-        symbol: "WETH",
-      },
+        symbol: "WETH"
+      }
     },
     [ChainId.Rinkeby]: {
       name: "Ether",
@@ -58,8 +58,8 @@ const NATIVE_TOKENS: Record<SUPPORTED_CHAIN_ID | ChainId.Hardhat, NativeToken> =
       wrapped: {
         address: "0xc778417E063141139Fce010982780140Aa0cD5Ab",
         name: "Wrapped Ether",
-        symbol: "WETH",
-      },
+        symbol: "WETH"
+      }
     },
     [ChainId.Polygon]: {
       name: "Matic",
@@ -68,8 +68,8 @@ const NATIVE_TOKENS: Record<SUPPORTED_CHAIN_ID | ChainId.Hardhat, NativeToken> =
       wrapped: {
         address: "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
         name: "Wrapped Matic",
-        symbol: "WMATIC",
-      },
+        symbol: "WMATIC"
+      }
     },
     [ChainId.Mumbai]: {
       name: "Matic",
@@ -78,8 +78,8 @@ const NATIVE_TOKENS: Record<SUPPORTED_CHAIN_ID | ChainId.Hardhat, NativeToken> =
       wrapped: {
         address: "0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889",
         name: "Wrapped Matic",
-        symbol: "WMATIC",
-      },
+        symbol: "WMATIC"
+      }
     },
     [ChainId.Avalanche]: {
       name: "Avalanche",
@@ -88,8 +88,8 @@ const NATIVE_TOKENS: Record<SUPPORTED_CHAIN_ID | ChainId.Hardhat, NativeToken> =
       wrapped: {
         address: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
         name: "Wrapped AVAX",
-        symbol: "WAVAX",
-      },
+        symbol: "WAVAX"
+      }
     },
     [ChainId.AvalancheFujiTestnet]: {
       name: "Avalanche",
@@ -98,8 +98,8 @@ const NATIVE_TOKENS: Record<SUPPORTED_CHAIN_ID | ChainId.Hardhat, NativeToken> =
       wrapped: {
         address: "0xd00ae08403B9bbb9124bB305C09058E32C39A48c",
         name: "Wrapped AVAX",
-        symbol: "WAVAX",
-      },
+        symbol: "WAVAX"
+      }
     },
     [ChainId.Fantom]: {
       name: "Fantom",
@@ -108,8 +108,8 @@ const NATIVE_TOKENS: Record<SUPPORTED_CHAIN_ID | ChainId.Hardhat, NativeToken> =
       wrapped: {
         address: "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
         name: "Wrapped Fantom",
-        symbol: "WFTM",
-      },
+        symbol: "WFTM"
+      }
     },
     [ChainId.FantomTestnet]: {
       name: "Fantom",
@@ -118,8 +118,8 @@ const NATIVE_TOKENS: Record<SUPPORTED_CHAIN_ID | ChainId.Hardhat, NativeToken> =
       wrapped: {
         address: "0xf1277d1Ed8AD466beddF92ef448A132661956621",
         name: "Wrapped Fantom",
-        symbol: "WFTM",
-      },
+        symbol: "WFTM"
+      }
     },
     [ChainId.Hardhat]: {
       name: "Ether",
@@ -128,9 +128,9 @@ const NATIVE_TOKENS: Record<SUPPORTED_CHAIN_ID | ChainId.Hardhat, NativeToken> =
       wrapped: {
         address: "0x5FbDB2315678afecb367f032d93F642f64180aa3",
         name: "Wrapped Ether",
-        symbol: "WETH",
-      },
-    },
+        symbol: "WETH"
+      }
+    }
   };
 
 /**
@@ -138,7 +138,7 @@ const NATIVE_TOKENS: Record<SUPPORTED_CHAIN_ID | ChainId.Hardhat, NativeToken> =
  */
 export async function getCurrencyMetadata(
   providerOrSigner: ProviderOrSigner,
-  asset: string,
+  asset: string
 ): Promise<Currency> {
   try {
     if (isNativeToken(asset)) {
@@ -153,19 +153,19 @@ export async function getCurrencyMetadata(
       return {
         name: nativeToken.name,
         symbol: nativeToken.symbol,
-        decimals: nativeToken.decimals,
+        decimals: nativeToken.decimals
       };
     } else {
       const erc20 = ERC20__factory.connect(asset, providerOrSigner);
       const [name, symbol, decimals] = await Promise.all([
         erc20.name(),
         erc20.symbol(),
-        erc20.decimals(),
+        erc20.decimals()
       ]);
       return {
         name,
         symbol,
-        decimals,
+        decimals
       };
     }
     // eslint-disable-next-line no-empty
@@ -173,7 +173,7 @@ export async function getCurrencyMetadata(
   return {
     name: "",
     symbol: "",
-    decimals: 0,
+    decimals: 0
   };
 }
 
@@ -183,13 +183,13 @@ export async function getCurrencyMetadata(
 export async function getCurrencyValue(
   providerOrSigner: ProviderOrSigner,
   asset: string,
-  price: BigNumberish,
+  price: BigNumberish
 ): Promise<CurrencyValue> {
   const metadata = await getCurrencyMetadata(providerOrSigner, asset);
   return {
     ...metadata,
     value: price.toString(),
-    displayValue: formatUnits(price, metadata.decimals),
+    displayValue: formatUnits(price, metadata.decimals)
   };
 }
 
@@ -209,7 +209,7 @@ export function isNativeToken(tokenAddress: string): boolean {
 export async function getCurrencyBalance(
   providerOrSigner: ProviderOrSigner,
   tokenAddress: string,
-  walletAddress: string,
+  walletAddress: string
 ): Promise<CurrencyValue> {
   const provider = getProvider(providerOrSigner);
   let balance;

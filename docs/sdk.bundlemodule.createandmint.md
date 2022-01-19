@@ -14,9 +14,9 @@ createAndMint(metadataWithSupply: INFTBundleCreateArgs): Promise<BundleMetadata>
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadataWithSupply | [INFTBundleCreateArgs](./sdk.inftbundlecreateargs.md) |  |
+| Parameter          | Type                                                  | Description |
+| ------------------ | ----------------------------------------------------- | ----------- |
+| metadataWithSupply | [INFTBundleCreateArgs](./sdk.inftbundlecreateargs.md) |             |
 
 <b>Returns:</b>
 
@@ -28,20 +28,18 @@ Mint an NFT with a specified supply.
 
 ## Example
 
-
 ```javascript
 // Custom metadata of the NFT, note that you can fully customize this metadata with other properties.
 const metadata = {
   name: "Cool NFT",
   description: "This is a cool NFT",
-  image: fs.readFileSync("path/to/image.png"), // This can be an image url or file
-}
+  image: fs.readFileSync("path/to/image.png") // This can be an image url or file
+};
 
 const metadataWithSupply = {
   metadata,
-  supply: 1, // The number of this NFT you want to mint
-}
+  supply: 1 // The number of this NFT you want to mint
+};
 
 await module.createAndMint(metadataWithSupply);
 ```
-

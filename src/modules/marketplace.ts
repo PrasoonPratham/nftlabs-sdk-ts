@@ -4,11 +4,11 @@ import {
   ERC20__factory,
   ERC721__factory,
   Marketplace,
-  Marketplace__factory,
+  Marketplace__factory
 } from "@3rdweb/contracts";
 import {
   ListingParametersStruct,
-  ListingStruct,
+  ListingStruct
 } from "@3rdweb/contracts/dist/IMarketplace";
 import { AddressZero } from "@ethersproject/constants";
 import { BigNumber, BigNumberish } from "ethers";
@@ -19,14 +19,14 @@ import {
   InterfaceId_IERC721,
   ModuleType,
   Role,
-  RolesMap,
+  RolesMap
 } from "../common";
 import { isNativeToken } from "../common/currency";
 import {
   AuctionAlreadyStartedError,
   AuctionHasNotEndedError,
   ListingNotFoundError,
-  WrongListingTypeError,
+  WrongListingTypeError
 } from "../common/error";
 import { invariant } from "../common/invariant";
 import { ModuleWithRoles } from "../core/module";
@@ -36,7 +36,7 @@ import {
   AuctionListing,
   NewAuctionListing,
   NewDirectListing,
-  Offer,
+  Offer
 } from "../types";
 import { DirectListing } from "../types/marketplace/DirectListing";
 
@@ -117,14 +117,14 @@ export class MarketplaceModule
    * ```
    */
   public async createDirectListing(
-    listing: NewDirectListing,
+    listing: NewDirectListing
   ): Promise<BigNumber> {
     this.validateNewListingParam(listing);
 
     await this.handleTokenApproval(
       listing.assetContractAddress,
       listing.tokenId,
-      await this.getSignerAddress(),
+      await this.getSignerAddress()
     );
 
     const receipt = await this.sendTransaction("createListing", [
@@ -137,8 +137,8 @@ export class MarketplaceModule
         quantityToList: listing.quantity,
         reservePricePerToken: listing.buyoutPricePerToken,
         secondsUntilEndTime: listing.listingDurationInSeconds,
-        startTime: listing.startTimeInSeconds,
-      } as ListingParametersStruct,
+        startTime: listing.startTimeInSeconds
+      } as ListingParametersStruct
     ]);
 
     const event = this.parseEventLogs("NewListing", receipt?.logs);
@@ -176,14 +176,14 @@ export class MarketplaceModule
    * ```
    */
   public async createAuctionListing(
-    listing: NewAuctionListing,
+    listing: NewAuctionListing
   ): Promise<BigNumber> {
     this.validateNewListingParam(listing);
 
     await this.handleTokenApproval(
       listing.assetContractAddress,
       listing.tokenId,
-      await this.getSignerAddress(),
+      await this.getSignerAddress()
     );
 
     const receipt = await this.sendTransaction("createListing", [
@@ -196,8 +196,8 @@ export class MarketplaceModule
         quantityToList: listing.quantity,
         reservePricePerToken: listing.reservePricePerToken,
         secondsUntilEndTime: listing.listingDurationInSeconds,
-        startTime: listing.startTimeInSeconds,
-      } as ListingParametersStruct,
+        startTime: listing.startTimeInSeconds
+      } as ListingParametersStruct
     ]);
 
     const event = this.parseEventLogs("NewListing", receipt?.logs);
@@ -212,7 +212,7 @@ export class MarketplaceModule
   }): Promise<void> {
     if (isNativeToken(offer.currencyContractAddress)) {
       throw new Error(
-        "You must use the wrapped native token address when making an offer with a native token",
+        "You must use the wrapped native token address when making an offer with a native token"
       );
     }
 
@@ -234,23 +234,23 @@ export class MarketplaceModule
         offer.listingId,
         offer.quantityDesired,
         offer.currencyContractAddress,
-        offer.pricePerToken,
+        offer.pricePerToken
       ],
-      overrides,
+      overrides
     );
   }
 
   private async setAllowance(
     value: BigNumber,
     currencyAddress: string,
-    overrides: any,
+    overrides: any
   ): Promise<any> {
     if (isNativeToken(currencyAddress)) {
       overrides["value"] = value;
     } else {
       const erc20 = ERC20__factory.connect(
         currencyAddress,
-        this.providerOrSigner,
+        this.providerOrSigner
       );
       const owner = await this.getSignerAddress();
       const spender = this.address;
@@ -259,7 +259,7 @@ export class MarketplaceModule
       if (allowance.lt(value)) {
         await this.sendContractTransaction(erc20, "increaseAllowance", [
           spender,
-          value.sub(allowance),
+          value.sub(allowance)
         ]);
       }
     }
@@ -286,7 +286,7 @@ export class MarketplaceModule
     pricePerToken: BigNumberish;
   }): Promise<void> {
     const listing = await this.validateAuctionListing(
-      BigNumber.from(bid.listingId),
+      BigNumber.from(bid.listingId)
     );
 
     const bidBuffer = await this.getBidBufferBps();
@@ -295,19 +295,19 @@ export class MarketplaceModule
       const isWinningBid = await this.isWinningBid(
         winningBid.pricePerToken,
         bid.pricePerToken,
-        bidBuffer,
+        bidBuffer
       );
 
       invariant(
         isWinningBid,
-        "Bid price is too low based on the current winning bid and the bid buffer",
+        "Bid price is too low based on the current winning bid and the bid buffer"
       );
     } else {
       const pricePerToken = BigNumber.from(bid.pricePerToken);
       const reservePrice = BigNumber.from(listing.reservePrice);
       invariant(
         pricePerToken.gte(reservePrice),
-        "Bid price is too low based on reserve price",
+        "Bid price is too low based on reserve price"
       );
     }
 
@@ -323,16 +323,16 @@ export class MarketplaceModule
         bid.listingId,
         listing.quantity,
         listing.currencyContractAddress,
-        bid.pricePerToken,
+        bid.pricePerToken
       ],
-      overrides,
+      overrides
     );
   }
 
   public async isWinningBid(
     winningPrice: BigNumberish,
     newBidPrice: BigNumberish,
-    bidBuffer: BigNumberish,
+    bidBuffer: BigNumberish
   ): Promise<boolean> {
     bidBuffer = BigNumber.from(bidBuffer);
     winningPrice = BigNumber.from(winningPrice);
@@ -359,16 +359,16 @@ export class MarketplaceModule
    */
   public async getAuctionWinner(listingId: BigNumberish): Promise<string> {
     const closedAuctions = await this.readOnlyContract.queryFilter(
-      this.contract.filters.AuctionClosed(),
+      this.contract.filters.AuctionClosed()
     );
 
-    const auction = closedAuctions.find((a) =>
-      a.args.listingId.eq(BigNumber.from(listingId)),
+    const auction = closedAuctions.find(a =>
+      a.args.listingId.eq(BigNumber.from(listingId))
     );
 
     if (!auction) {
       throw new Error(
-        `Could not find auction with listingId ${listingId} in closed auctions`,
+        `Could not find auction with listingId ${listingId} in closed auctions`
       );
     }
 
@@ -376,7 +376,7 @@ export class MarketplaceModule
   }
 
   public async getDirectListing(
-    listingId: BigNumberish,
+    listingId: BigNumberish
   ): Promise<DirectListing> {
     const listing = await this.readOnlyContract.listings(listingId);
 
@@ -389,7 +389,7 @@ export class MarketplaceModule
         this.address,
         listingId.toString(),
         "Auction",
-        "Direct",
+        "Direct"
       );
     }
 
@@ -397,7 +397,7 @@ export class MarketplaceModule
   }
 
   public async getAuctionListing(
-    listingId: BigNumberish,
+    listingId: BigNumberish
   ): Promise<AuctionListing> {
     const listing = await this.readOnlyContract.listings(listingId);
 
@@ -410,7 +410,7 @@ export class MarketplaceModule
         this.address,
         listingId.toString(),
         "Direct",
-        "Auction",
+        "Auction"
       );
     }
     return await this.mapAuctionListing(listing);
@@ -424,7 +424,7 @@ export class MarketplaceModule
    * @returns - The mapped interface.
    */
   private async mapDirectListing(
-    listing: ListingStruct,
+    listing: ListingStruct
   ): Promise<DirectListing> {
     return {
       assetContractAddress: listing.assetContract,
@@ -433,7 +433,7 @@ export class MarketplaceModule
       buyoutCurrencyValuePerToken: await getCurrencyValue(
         this.providerOrSigner,
         listing.currency,
-        listing.buyoutPricePerToken,
+        listing.buyoutPricePerToken
       ),
       id: listing.listingId.toString(),
       tokenId: listing.tokenId,
@@ -444,11 +444,11 @@ export class MarketplaceModule
         listing.assetContract,
         this.providerOrSigner,
         listing.tokenId.toString(),
-        this.sdk.getStorage(),
+        this.sdk.getStorage()
       ),
       secondsUntilEnd: listing.endTime,
       sellerAddress: listing.tokenOwner,
-      type: ListingType.Direct,
+      type: ListingType.Direct
     };
   }
 
@@ -460,7 +460,7 @@ export class MarketplaceModule
    * @returns - The mapped interface.
    */
   private async mapAuctionListing(
-    listing: ListingStruct,
+    listing: ListingStruct
   ): Promise<AuctionListing> {
     return {
       assetContractAddress: listing.assetContract,
@@ -469,7 +469,7 @@ export class MarketplaceModule
       buyoutCurrencyValuePerToken: await getCurrencyValue(
         this.providerOrSigner,
         listing.currency,
-        listing.buyoutPricePerToken,
+        listing.buyoutPricePerToken
       ),
       id: listing.listingId.toString(),
       tokenId: listing.tokenId,
@@ -479,28 +479,28 @@ export class MarketplaceModule
         listing.assetContract,
         this.providerOrSigner,
         listing.tokenId.toString(),
-        this.sdk.getStorage(),
+        this.sdk.getStorage()
       ),
       reservePriceCurrencyValuePerToken: await getCurrencyValue(
         this.providerOrSigner,
         listing.currency,
-        listing.reservePricePerToken,
+        listing.reservePricePerToken
       ),
       reservePrice: listing.reservePricePerToken,
       endTimeInEpochSeconds: listing.endTime,
       sellerAddress: listing.tokenOwner,
-      type: ListingType.Auction,
+      type: ListingType.Auction
     };
   }
 
   private async handleTokenApproval(
     assetContract: string,
     tokenId: BigNumberish,
-    from: string,
+    from: string
   ): Promise<void> {
     const erc165 = ERC165__factory.connect(
       assetContract,
-      this.providerOrSigner,
+      this.providerOrSigner
     );
 
     // check for token approval
@@ -508,7 +508,7 @@ export class MarketplaceModule
     if (isERC721) {
       const asset = ERC721__factory.connect(
         assetContract,
-        this.providerOrSigner,
+        this.providerOrSigner
       );
 
       const approved = await asset.isApprovedForAll(from, this.address);
@@ -520,21 +520,21 @@ export class MarketplaceModule
         if (!isTokenApproved) {
           await this.sendContractTransaction(asset, "setApprovalForAll", [
             this.address,
-            true,
+            true
           ]);
         }
       }
     } else {
       const asset = ERC1155__factory.connect(
         assetContract,
-        this.providerOrSigner,
+        this.providerOrSigner
       );
 
       const approved = await asset.isApprovedForAll(from, this.address);
       if (!approved) {
         await this.sendContractTransaction(asset, "setApprovalForAll", [
           this.address,
-          true,
+          true
         ]);
       }
     }
@@ -558,12 +558,12 @@ export class MarketplaceModule
   private async isTokenApprovedForMarketplace(
     assetContract: string,
     tokenId: BigNumberish,
-    from: string,
+    from: string
   ): Promise<boolean> {
     try {
       const erc165 = ERC165__factory.connect(
         assetContract,
-        this.providerOrSigner,
+        this.providerOrSigner
       );
 
       // check for token approval
@@ -571,7 +571,7 @@ export class MarketplaceModule
       if (isERC721) {
         const asset = ERC721__factory.connect(
           assetContract,
-          this.providerOrSigner,
+          this.providerOrSigner
         );
 
         const approved = await asset.isApprovedForAll(from, this.address);
@@ -586,7 +586,7 @@ export class MarketplaceModule
       } else {
         const asset = ERC1155__factory.connect(
           assetContract,
-          this.providerOrSigner,
+          this.providerOrSigner
         );
 
         return await asset.isApprovedForAll(from, this.address);
@@ -611,12 +611,12 @@ export class MarketplaceModule
    */
   private async isStillValidDirectListing(
     listing: DirectListing,
-    quantity?: BigNumberish,
+    quantity?: BigNumberish
   ): Promise<boolean> {
     const approved = await this.isTokenApprovedForMarketplace(
       listing.assetContractAddress,
       listing.tokenId,
-      listing.sellerAddress,
+      listing.sellerAddress
     );
 
     if (!approved) {
@@ -625,7 +625,7 @@ export class MarketplaceModule
 
     const erc165 = ERC165__factory.connect(
       listing.assetContractAddress,
-      this.providerOrSigner,
+      this.providerOrSigner
     );
 
     // check for token approval
@@ -633,7 +633,7 @@ export class MarketplaceModule
     if (isERC721) {
       const asset = ERC721__factory.connect(
         listing.assetContractAddress,
-        this.providerOrSigner,
+        this.providerOrSigner
       );
       return (
         (await asset.ownerOf(listing.tokenId)).toLowerCase() ===
@@ -642,11 +642,11 @@ export class MarketplaceModule
     } else {
       const asset = ERC1155__factory.connect(
         listing.assetContractAddress,
-        this.providerOrSigner,
+        this.providerOrSigner
       );
       const balance = await asset.balanceOf(
         listing.sellerAddress,
-        listing.tokenId,
+        listing.tokenId
       );
       return balance.gte(quantity || listing.quantity);
     }
@@ -679,30 +679,30 @@ export class MarketplaceModule
     invariant(
       param.assetContractAddress !== undefined &&
         param.assetContractAddress !== null,
-      "Asset contract address is required",
+      "Asset contract address is required"
     );
     invariant(
       param.buyoutPricePerToken !== undefined &&
         param.buyoutPricePerToken !== null,
-      "Buyout price is required",
+      "Buyout price is required"
     );
     invariant(
       param.listingDurationInSeconds !== undefined &&
         param.listingDurationInSeconds !== null,
-      "Listing duration is required",
+      "Listing duration is required"
     );
     invariant(
       param.startTimeInSeconds !== undefined &&
         param.startTimeInSeconds !== null,
-      "Start time is required",
+      "Start time is required"
     );
     invariant(
       param.tokenId !== undefined && param.tokenId !== null,
-      "Token ID is required",
+      "Token ID is required"
     );
     invariant(
       param.quantity !== undefined && param.quantity !== null,
-      "Quantity is required",
+      "Quantity is required"
     );
 
     switch (param.type) {
@@ -710,7 +710,7 @@ export class MarketplaceModule
         invariant(
           param.reservePricePerToken !== undefined &&
             param.reservePricePerToken !== null,
-          "Reserve price is required",
+          "Reserve price is required"
         );
       }
     }
@@ -722,7 +722,7 @@ export class MarketplaceModule
    * @param listingId - Listing to check for
    */
   private async validateDirectListing(
-    listingId: BigNumber,
+    listingId: BigNumber
   ): Promise<DirectListing> {
     try {
       return await this.getDirectListing(listingId);
@@ -738,7 +738,7 @@ export class MarketplaceModule
    * @param listingId - Listing to check for
    */
   private async validateAuctionListing(
-    listingId: BigNumber,
+    listingId: BigNumber
   ): Promise<AuctionListing> {
     try {
       return await this.getAuctionListing(listingId);
@@ -766,16 +766,16 @@ export class MarketplaceModule
         this.providerOrSigner,
         offer.currency,
         (offer.quantityWanted as BigNumber).mul(
-          offer.pricePerToken as BigNumber,
-        ),
+          offer.pricePerToken as BigNumber
+        )
       ),
-      listingId,
+      listingId
     } as Offer;
   }
 
   public async getActiveOffer(
     listingId: BigNumberish,
-    address: string,
+    address: string
   ): Promise<Offer | undefined> {
     this.validateDirectListing(BigNumber.from(listingId));
     invariant(isAddress(address), "Address must be a valid address");
@@ -803,7 +803,7 @@ export class MarketplaceModule
    * ```
    */
   public async getWinningBid(
-    listingId: BigNumberish,
+    listingId: BigNumberish
   ): Promise<Offer | undefined> {
     this.validateAuctionListing(BigNumber.from(listingId));
     const offers = await this.readOnlyContract.winningBid(listingId);
@@ -823,7 +823,7 @@ export class MarketplaceModule
 
   public async acceptDirectListingOffer(
     listingId: BigNumberish,
-    addressOfOfferor: string,
+    addressOfOfferor: string
   ): Promise<void> {
     /**
      * TODO:
@@ -850,12 +850,12 @@ export class MarketplaceModule
    */
   public async buyoutAuctionListing(listingId: BigNumberish): Promise<void> {
     const listing = await this.validateAuctionListing(
-      BigNumber.from(listingId),
+      BigNumber.from(listingId)
     );
 
     await this.makeAuctionListingBid({
       listingId,
-      pricePerToken: listing.buyoutPrice,
+      pricePerToken: listing.buyoutPrice
     });
   }
 
@@ -879,16 +879,16 @@ export class MarketplaceModule
     quantityDesired: BigNumberish;
   }): Promise<void> {
     const listing = await this.validateDirectListing(
-      BigNumber.from(_buyout.listingId),
+      BigNumber.from(_buyout.listingId)
     );
 
     const valid = await this.isStillValidDirectListing(
       listing,
-      _buyout.quantityDesired,
+      _buyout.quantityDesired
     );
     if (!valid) {
       throw new Error(
-        "The asset on this listing has been moved from the listers wallet, this listing is now invalid",
+        "The asset on this listing has been moved from the listers wallet, this listing is now invalid"
       );
     }
 
@@ -919,7 +919,7 @@ export class MarketplaceModule
       listing.buyoutPrice,
       listing.currencyContractAddress,
       listing.startTimeInSeconds,
-      listing.secondsUntilEnd,
+      listing.secondsUntilEnd
     ]);
   }
 
@@ -931,7 +931,7 @@ export class MarketplaceModule
       listing.buyoutPrice,
       listing.currencyContractAddress,
       listing.startTimeInEpochSeconds,
-      listing.endTimeInEpochSeconds,
+      listing.endTimeInEpochSeconds
     ]);
   }
 
@@ -969,7 +969,7 @@ export class MarketplaceModule
    */
   public async cancelAuctionListing(listingId: BigNumberish): Promise<void> {
     const listing = await this.validateAuctionListing(
-      BigNumber.from(listingId),
+      BigNumber.from(listingId)
     );
 
     const now = BigNumber.from(Math.floor(Date.now() / 1000));
@@ -982,32 +982,32 @@ export class MarketplaceModule
 
     await this.sendTransaction("closeAuction", [
       BigNumber.from(listingId),
-      await this.getSignerAddress(),
+      await this.getSignerAddress()
     ]);
   }
 
   public async closeAuctionListing(
     listingId: BigNumberish,
-    closeFor?: string,
+    closeFor?: string
   ): Promise<void> {
     if (!closeFor) {
       closeFor = await this.getSignerAddress();
     }
 
     const listing = await this.validateAuctionListing(
-      BigNumber.from(listingId),
+      BigNumber.from(listingId)
     );
 
     try {
       await this.sendTransaction("closeAuction", [
         BigNumber.from(listingId),
-        closeFor,
+        closeFor
       ]);
     } catch (err: any) {
       if (err.message.includes("cannot close auction before it has ended")) {
         throw new AuctionHasNotEndedError(
           listingId.toString(),
-          listing.endTimeInEpochSeconds.toString(),
+          listing.endTimeInEpochSeconds.toString()
         );
       } else {
         throw err;
@@ -1021,7 +1021,7 @@ export class MarketplaceModule
     const timeBuffer = await this.getTimeBufferInSeconds();
     await this.sendTransaction("setAuctionBuffers", [
       timeBuffer,
-      BigNumber.from(buffer),
+      BigNumber.from(buffer)
     ]);
   }
 
@@ -1031,13 +1031,13 @@ export class MarketplaceModule
     const bidBuffer = await this.getBidBufferBps();
     await this.sendTransaction("setAuctionBuffers", [
       BigNumber.from(buffer),
-      bidBuffer,
+      bidBuffer
     ]);
   }
 
   public async buyoutListing(
     listingId: BigNumberish,
-    quantityDesired?: BigNumberish,
+    quantityDesired?: BigNumberish
   ): Promise<void> {
     const listing = await this.readOnlyContract.listings(listingId);
     if (listing.listingId.toString() !== listingId.toString()) {
@@ -1048,7 +1048,7 @@ export class MarketplaceModule
       case ListingType.Direct: {
         invariant(
           quantityDesired !== undefined,
-          "quantityDesired is required when buying out a direct listing",
+          "quantityDesired is required when buying out a direct listing"
         );
         return await this.buyoutDirectListing({ listingId, quantityDesired });
       }
@@ -1059,7 +1059,7 @@ export class MarketplaceModule
   }
 
   public async getListing(
-    listingId: BigNumberish,
+    listingId: BigNumberish
   ): Promise<AuctionListing | DirectListing> {
     const listing = await this.readOnlyContract.listings(listingId);
     if (listing.listingId.toString() !== listingId.toString()) {
@@ -1097,8 +1097,8 @@ export class MarketplaceModule
   public async getAllListings(): Promise<(AuctionListing | DirectListing)[]> {
     const listings = await Promise.all(
       Array.from(
-        Array((await this.readOnlyContract.totalListings()).toNumber()).keys(),
-      ).map(async (i) => {
+        Array((await this.readOnlyContract.totalListings()).toNumber()).keys()
+      ).map(async i => {
         let listing;
 
         try {
@@ -1117,9 +1117,9 @@ export class MarketplaceModule
         }
 
         return listing;
-      }),
+      })
     );
-    return listings.filter((l) => l !== undefined) as (
+    return listings.filter(l => l !== undefined) as (
       | AuctionListing
       | DirectListing
     )[];
@@ -1130,7 +1130,7 @@ export class MarketplaceModule
   }
 
   public async setRestrictedListerRoleOnly(
-    isRestricted: boolean,
+    isRestricted: boolean
   ): Promise<void> {
     await this.sendTransaction("setRestrictedListerRoleOnly", [isRestricted]);
   }

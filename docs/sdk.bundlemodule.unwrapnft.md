@@ -12,11 +12,10 @@ unwrapNFT(tokenId: BigNumberish): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| tokenId   | BigNumberish |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

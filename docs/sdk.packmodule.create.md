@@ -14,9 +14,9 @@ create(args: IPackCreateArgs): Promise<PackMetadata>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  args | [IPackCreateArgs](./sdk.ipackcreateargs.md) | Args for the pack creation |
+| Parameter | Type                                        | Description                |
+| --------- | ------------------------------------------- | -------------------------- |
+| args      | [IPackCreateArgs](./sdk.ipackcreateargs.md) | Args for the pack creation |
 
 <b>Returns:</b>
 
@@ -30,7 +30,6 @@ Create a new pack with its own rewards.
 
 ## Example
 
-
 ```javascript
 // Data to create the pack
 const pack = {
@@ -41,20 +40,20 @@ const pack = {
     name: "Cool Pack",
     description: "This is a cool pack",
     // This can be an image url or image file
-    image: readFileSync("path/to/image.png"),
+    image: readFileSync("path/to/image.png")
   },
   // The NFTs you want to include in the pack
   assets: [
     {
       tokenId: 0, // The token ID of the asset you want to add
-      amount: 1, // The amount of the asset you want to add
-    }, {
+      amount: 1 // The amount of the asset you want to add
+    },
+    {
       tokenId: 1,
-      amount: 1,
+      amount: 1
     }
-  ],
+  ]
 };
 
 await module.create(pack);
 ```
-

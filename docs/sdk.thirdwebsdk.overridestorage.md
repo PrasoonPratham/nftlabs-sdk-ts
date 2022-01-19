@@ -14,11 +14,10 @@ overrideStorage(storage: IStorage): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  storage | [IStorage](./sdk.istorage.md) | The Storage instance to use. |
+| Parameter | Type                          | Description                  |
+| --------- | ----------------------------- | ---------------------------- |
+| storage   | [IStorage](./sdk.istorage.md) | The Storage instance to use. |
 
 <b>Returns:</b>
 
 void
-

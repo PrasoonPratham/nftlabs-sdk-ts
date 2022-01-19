@@ -12,12 +12,11 @@ buyoutListing(listingId: BigNumberish, quantityDesired?: BigNumberish): Promise<
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | BigNumberish |  |
-|  quantityDesired | BigNumberish |  |
+| Parameter       | Type         | Description |
+| --------------- | ------------ | ----------- |
+| listingId       | BigNumberish |             |
+| quantityDesired | BigNumberish |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

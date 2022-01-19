@@ -12,14 +12,13 @@ isApproved(address: string, operator: string, assetContract?: string, assetId?: 
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string |  |
-|  operator | string |  |
-|  assetContract | string |  |
-|  assetId | BigNumberish |  |
+| Parameter     | Type         | Description |
+| ------------- | ------------ | ----------- |
+| address       | string       |             |
+| operator      | string       |             |
+| assetContract | string       |             |
+| assetId       | BigNumberish |             |
 
 <b>Returns:</b>
 
 Promise&lt;boolean&gt;
-

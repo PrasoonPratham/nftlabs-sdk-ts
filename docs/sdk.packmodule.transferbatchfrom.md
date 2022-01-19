@@ -12,14 +12,13 @@ transferBatchFrom(from: string, to: string, args: IPackBatchArgs[], data?: Bytes
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  from | string |  |
-|  to | string |  |
-|  args | [IPackBatchArgs](./sdk.ipackbatchargs.md)<!-- -->\[\] |  |
-|  data | BytesLike |  |
+| Parameter | Type                                                  | Description |
+| --------- | ----------------------------------------------------- | ----------- |
+| from      | string                                                |             |
+| to        | string                                                |             |
+| args      | [IPackBatchArgs](./sdk.ipackbatchargs.md)<!-- -->\[\] |             |
+| data      | BytesLike                                             |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

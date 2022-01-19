@@ -14,9 +14,9 @@ open(packId: string): Promise<NFTMetadata[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  packId | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| packId    | string |             |
 
 <b>Returns:</b>
 
@@ -28,11 +28,9 @@ Open a pack to burn it and obtain the reward asset inside.
 
 ## Example
 
-
 ```javascript
 // The pack ID of the asset you want to buy
 const packId = "0";
 const rewards = await module.open(packId);
 console.log(rewards);
 ```
-

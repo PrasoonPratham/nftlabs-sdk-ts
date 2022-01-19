@@ -43,7 +43,7 @@ export class DatastoreModule extends ModuleWithRoles<DataStore> {
   // write functions
   public async setUint(
     key: string,
-    value: BigNumberish,
+    value: BigNumberish
   ): Promise<TransactionReceipt> {
     const keyHash = ethers.utils.id(key.toString());
     return await this.sendTransaction("setUint", [keyHash, value]);

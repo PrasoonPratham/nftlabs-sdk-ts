@@ -14,11 +14,10 @@ setMaxQuantityPerTransaction(max: BigNumberish): ClaimConditionPhase;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  max | BigNumberish | The max quantity NFTs that can be claimed in a single transaction. |
+| Parameter | Type         | Description                                                        |
+| --------- | ------------ | ------------------------------------------------------------------ |
+| max       | BigNumberish | The max quantity NFTs that can be claimed in a single transaction. |
 
 <b>Returns:</b>
 
 ClaimConditionPhase
-

@@ -14,13 +14,12 @@ revokeAllRolesFromAddress(address: string): Promise<Role[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string | The address to revoke all roles for. |
+| Parameter | Type   | Description                          |
+| --------- | ------ | ------------------------------------ |
+| address   | string | The address to revoke all roles for. |
 
 <b>Returns:</b>
 
 Promise&lt;[Role](./sdk.role.md)<!-- -->\[\]&gt;
 
 A list of roles that were revoked.
-

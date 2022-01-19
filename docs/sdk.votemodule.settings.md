@@ -9,7 +9,7 @@
 ```typescript
 settings(): Promise<VoteSettings>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;[VoteSettings](./sdk.votesettings.md)<!-- -->&gt;
-

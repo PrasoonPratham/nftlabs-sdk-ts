@@ -14,10 +14,10 @@ propose(description: string, executions?: ProposalExecutable[]): Promise<BigNumb
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  description | string | The description of the proposal. |
-|  executions | [ProposalExecutable](./sdk.proposalexecutable.md)<!-- -->\[\] | A set of executable transactions that will be run if the proposal is passed and executed. |
+| Parameter   | Type                                                          | Description                                                                               |
+| ----------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| description | string                                                        | The description of the proposal.                                                          |
+| executions  | [ProposalExecutable](./sdk.proposalexecutable.md)<!-- -->\[\] | A set of executable transactions that will be run if the proposal is passed and executed. |
 
 <b>Returns:</b>
 
@@ -31,10 +31,9 @@ Create a new proposal for token holders to vote on.
 
 ## Example
 
-
 ```javascript
 // The description of the proposal you want to pass
-const description = "This is a great proposal - vote for it!"
+const description = "This is a great proposal - vote for it!";
 // You can (optionally) pass in contract calls that will executed when the proposal is executed.
 const executions = [
   {
@@ -45,14 +44,11 @@ const executions = [
     // Transaction data that will be executed when the proposal is executed
     // This is an example transfer transaction with a token module (which you would need to setup in code)
     transactionData: tokenModule.contract.interface.encodeFunctionData(
-      "transfer", [
-        fromAddress,
-        amount,
-      ]
-    ),
+      "transfer",
+      [fromAddress, amount]
+    )
   }
-]
+];
 
 const proposal = await module.propose(description, executions);
 ```
-

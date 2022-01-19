@@ -28,15 +28,15 @@ describe("App Module", async () => {
           name: "Testing",
           description: "Test description",
           external_link: "https://google.com",
-          seller_fee_basis_points: 100,
+          seller_fee_basis_points: 100
         },
         test: {
           name: "Testing",
           description: "Test description",
           externalLink: "https://google.com",
-          sellerFeeBasisPoints: 100,
+          sellerFeeBasisPoints: 100
         },
-        type: BundleModuleMetadata,
+        type: BundleModuleMetadata
       },
       {
         expected: {
@@ -45,7 +45,7 @@ describe("App Module", async () => {
           external_link: "https://google.com",
           seller_fee_basis_points: 100,
           fee_recipient: "0x0",
-          image: "test",
+          image: "test"
         },
         test: {
           name: "Testing",
@@ -53,19 +53,19 @@ describe("App Module", async () => {
           externalLink: "https://google.com",
           sellerFeeBasisPoints: 100,
           feeRecipient: "0x0",
-          image: "test",
+          image: "test"
         } as BundleModuleMetadata,
-        type: BundleModuleMetadata,
+        type: BundleModuleMetadata
       },
       {
         expected: {
-          name: "Testing",
+          name: "Testing"
         },
         test: {
-          name: "Testing",
+          name: "Testing"
         } as BundleModuleMetadata,
-        type: BundleModuleMetadata,
-      },
+        type: BundleModuleMetadata
+      }
     ];
 
     const jsonConvert = new JsonConvert();
@@ -80,7 +80,7 @@ describe("App Module", async () => {
       name: "Testing module from SDK",
       sellerFeeBasisPoints: 1000,
       image:
-        "https://pbs.twimg.com/profile_images/1433508973215367176/XBCfBn3g_400x400.jpg",
+        "https://pbs.twimg.com/profile_images/1433508973215367176/XBCfBn3g_400x400.jpg"
     });
   });
 
@@ -93,19 +93,19 @@ describe("App Module", async () => {
       recipientSplits: [
         {
           address: "0xE79ee09bD47F4F5381dbbACaCff2040f2FbC5803",
-          shares: BigNumber.from(100),
+          shares: BigNumber.from(100)
         },
         {
           address: "0x4d36d531D9cB40b8694763123D52170FAE5e1195",
-          shares: BigNumber.from(100),
-        },
-      ],
+          shares: BigNumber.from(100)
+        }
+      ]
     });
   });
 
   it("Should return a valid splits module", async () => {
     const module = await sdk.getSplitsModule(
-      "0x255d57Be74C055Bdd29Dfb7c714EEfFdd2492163",
+      "0x255d57Be74C055Bdd29Dfb7c714EEfFdd2492163"
     );
   });
 
@@ -116,18 +116,18 @@ describe("App Module", async () => {
       name: "Testing module from SDK",
       sellerFeeBasisPoints: 0,
       image,
-      feeRecipient: samWallet.address,
+      feeRecipient: samWallet.address
     });
 
     const metadata = await module.getMetadata();
     assert.isTrue(
       metadata.metadata.image.includes("ipfs/"),
-      `Image property = ${metadata.metadata.image}, should include ipfs/`,
+      `Image property = ${metadata.metadata.image}, should include ipfs/`
     );
     assert.equal(
       await module.getRoyaltyRecipientAddress(),
       samWallet.address,
-      "Royalty recipient address was not updated",
+      "Royalty recipient address was not updated"
     );
   });
 
@@ -137,14 +137,14 @@ describe("App Module", async () => {
     const module = await appModule.deployCurrencyModule({
       name: "Testing currency from SDK",
       image,
-      symbol: "TEST",
+      symbol: "TEST"
     });
 
     const metadata = await module.getMetadata();
     assert.equal(
       metadata.metadata.image,
       image,
-      `Image property = ${metadata.metadata.image}, should include ipfs/`,
+      `Image property = ${metadata.metadata.image}, should include ipfs/`
     );
   });
 
@@ -153,7 +153,7 @@ describe("App Module", async () => {
       name: `Testing market from SDK`,
       image:
         "https://pbs.twimg.com/profile_images/1433508973215367176/XBCfBn3g_400x400.jpg",
-      marketFeeBasisPoints: 100,
+      marketFeeBasisPoints: 100
     });
     await sdk.getMarketModule(result.address);
   });
@@ -164,13 +164,13 @@ describe("App Module", async () => {
       image:
         "https://pbs.twimg.com/profile_images/1433508973215367176/XBCfBn3g_400x400.jpg",
       sellerFeeBasisPoints: 100,
-      feeRecipient: samWallet.address,
+      feeRecipient: samWallet.address
     });
     const contract = await sdk.getPackModule(result.address);
     assert.equal(
       await contract.getRoyaltyRecipientAddress(),
       samWallet.address,
-      "Royalty recipient address was not updated",
+      "Royalty recipient address was not updated"
     );
   });
 
@@ -183,7 +183,7 @@ describe("App Module", async () => {
       maxSupply: 10,
       baseTokenUri: "/test",
       primarySaleRecipientAddress: AddressZero,
-      feeRecipient: samWallet.address,
+      feeRecipient: samWallet.address
     });
 
     const module = sdk.getDropModule(result.address);
@@ -191,7 +191,7 @@ describe("App Module", async () => {
     assert.equal(
       await module.getRoyaltyRecipientAddress(),
       samWallet.address,
-      "Royalty recipient address was not updated",
+      "Royalty recipient address was not updated"
     );
   });
 
@@ -199,7 +199,7 @@ describe("App Module", async () => {
     const result = await appModule.deployDatastoreModule({
       name: `Testing drop from SDK`,
       image:
-        "https://pbs.twimg.com/profile_images/1433508973215367176/XBCfBn3g_400x400.jpg",
+        "https://pbs.twimg.com/profile_images/1433508973215367176/XBCfBn3g_400x400.jpg"
     });
 
     await sdk.getDatastoreModule(result.address);
@@ -213,19 +213,19 @@ describe("App Module", async () => {
         "ipfs://bafkreiax7og4coq7z4w4mfsos6mbbit3qpzg4pa4viqhmed5dkyfbnp6ku",
       sellerFeeBasisPoints: 0,
       feeRecipient: samWallet.address,
-      symbol: "",
+      symbol: ""
     };
     const contract = await appModule.deployBundleModule(metadata);
     const module = sdk.getBundleModule(contract.address);
     const result = await module.getMetadata();
     assert.equal(
       result.metadata.image,
-      "https://ipfs.thirdweb.com/ipfs/bafkreiax7og4coq7z4w4mfsos6mbbit3qpzg4pa4viqhmed5dkyfbnp6ku",
+      "https://ipfs.thirdweb.com/ipfs/bafkreiax7og4coq7z4w4mfsos6mbbit3qpzg4pa4viqhmed5dkyfbnp6ku"
     );
     assert.equal(
       await contract.getRoyaltyRecipientAddress(),
       samWallet.address,
-      "Royalty recipient address was not updated",
+      "Royalty recipient address was not updated"
     );
   });
   it("should deploy a bundle drop module correctly", async () => {
@@ -235,13 +235,13 @@ describe("App Module", async () => {
         "https://pbs.twimg.com/profile_images/1433508973215367176/XBCfBn3g_400x400.jpg",
       sellerFeeBasisPoints: 100,
       feeRecipient: samWallet.address,
-      primarySaleRecipientAddress: AddressZero,
+      primarySaleRecipientAddress: AddressZero
     });
     const module = sdk.getBundleDropModule(contract.address);
     assert.equal(
       await module.getRoyaltyRecipientAddress(),
       samWallet.address,
-      "Royalty recipient address was not updated",
+      "Royalty recipient address was not updated"
     );
   });
   it("should upload to ipfs image is file", async () => {
@@ -251,13 +251,13 @@ describe("App Module", async () => {
       image: readFileSync(`${__dirname}/3510820011_4f558b6dea_b.jpg`),
       sellerFeeBasisPoints: 0,
       fee_recipient: "0xabE01399799888819f5dCE731F8C22f8E7e6AD26",
-      symbol: "",
+      symbol: ""
     };
     const contract = await appModule.deployBundleModule(metadata);
     const module = sdk.getBundleModule(contract.address);
     const result = await module.getMetadata();
     const regex = new RegExp(
-      /Qm[1-9A-HJ-NP-Za-km-z]{44,}|b[A-Za-z2-7]{58,}|B[A-Z2-7]{58,}|z[1-9A-HJ-NP-Za-km-z]{48,}|F[0-9A-F]{50,}/,
+      /Qm[1-9A-HJ-NP-Za-km-z]{44,}|b[A-Za-z2-7]{58,}|B[A-Z2-7]{58,}|z[1-9A-HJ-NP-Za-km-z]{48,}|F[0-9A-F]{50,}/
     );
     assert.match(result.metadata.image, regex);
   });

@@ -14,14 +14,13 @@ buildFilePropertiesMap(object: Record<string, any>, files: (File | Buffer)[]): (
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  object | Record&lt;string, any&gt; | The object to recurse over |
-|  files | (File \| Buffer)\[\] | The running array of files or buffer to upload |
+| Parameter | Type                      | Description                                    |
+| --------- | ------------------------- | ---------------------------------------------- |
+| object    | Record&lt;string, any&gt; | The object to recurse over                     |
+| files     | (File \| Buffer)\[\]      | The running array of files or buffer to upload |
 
 <b>Returns:</b>
 
 (File \| Buffer)\[\]
 
 - The final map of all hashes to files
-

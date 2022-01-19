@@ -5,9 +5,8 @@
 ## ThirdwebSDK.getCollectionModule() method
 
 > Warning: This API is now obsolete.
-> 
+>
 > Use the new [ThirdwebSDK.getBundleModule()](./sdk.thirdwebsdk.getbundlemodule.md) function instead.
-> 
 
 <b>Signature:</b>
 
@@ -17,13 +16,12 @@ getCollectionModule(address: string): CollectionModule;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string | The contract address of the given Collection module. |
+| Parameter | Type   | Description                                          |
+| --------- | ------ | ---------------------------------------------------- |
+| address   | string | The contract address of the given Collection module. |
 
 <b>Returns:</b>
 
 [CollectionModule](./sdk.collectionmodule.md)
 
 The Bundle Module.
-

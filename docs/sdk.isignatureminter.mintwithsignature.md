@@ -14,14 +14,13 @@ mintWithSignature(req: SignaturePayload, signature: string): Promise<BigNumber>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  req | [SignaturePayload](./sdk.signaturepayload.md) | The payload of the signature that will be minted. |
-|  signature | string | The signature of the payload. |
+| Parameter | Type                                          | Description                                       |
+| --------- | --------------------------------------------- | ------------------------------------------------- |
+| req       | [SignaturePayload](./sdk.signaturepayload.md) | The payload of the signature that will be minted. |
+| signature | string                                        | The signature of the payload.                     |
 
 <b>Returns:</b>
 
 Promise&lt;BigNumber&gt;
 
 - The ID of the minted token.
-

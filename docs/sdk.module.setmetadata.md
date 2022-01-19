@@ -14,11 +14,10 @@ setMetadata(metadata: MetadataURIOrObject): Promise<ModuleMetadata>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadata | [MetadataURIOrObject](./sdk.metadatauriorobject.md) | The metadata to set. |
+| Parameter | Type                                                | Description          |
+| --------- | --------------------------------------------------- | -------------------- |
+| metadata  | [MetadataURIOrObject](./sdk.metadatauriorobject.md) | The metadata to set. |
 
 <b>Returns:</b>
 
 Promise&lt;[ModuleMetadata](./sdk.modulemetadata.md)<!-- -->&gt;
-

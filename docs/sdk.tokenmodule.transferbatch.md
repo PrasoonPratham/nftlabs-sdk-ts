@@ -12,11 +12,10 @@ transferBatch(args: ITokenMintArgs[]): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  args | [ITokenMintArgs](./sdk.itokenmintargs.md)<!-- -->\[\] |  |
+| Parameter | Type                                                  | Description |
+| --------- | ----------------------------------------------------- | ----------- |
+| args      | [ITokenMintArgs](./sdk.itokenmintargs.md)<!-- -->\[\] |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

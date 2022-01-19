@@ -12,12 +12,11 @@ burnFrom(account: string, args: INFTBundleBatchArgs): Promise<TransactionReceipt
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  account | string |  |
-|  args | [INFTBundleBatchArgs](./sdk.inftbundlebatchargs.md) |  |
+| Parameter | Type                                                | Description |
+| --------- | --------------------------------------------------- | ----------- |
+| account   | string                                              |             |
+| args      | [INFTBundleBatchArgs](./sdk.inftbundlebatchargs.md) |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

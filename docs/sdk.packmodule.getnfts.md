@@ -14,9 +14,9 @@ getNFTs(packId: string): Promise<PackNFTMetadata[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  packId | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| packId    | string |             |
 
 <b>Returns:</b>
 
@@ -30,7 +30,6 @@ Get data associated with the rewards inside a specified pack
 
 ## Example
 
-
 ```javascript
 // The pack ID of the pack whos rewards you want to get
 const packId = 0;
@@ -38,4 +37,3 @@ const packId = 0;
 const nfts = await module.getNFTs(packId);
 console.log(nfts);
 ```
-

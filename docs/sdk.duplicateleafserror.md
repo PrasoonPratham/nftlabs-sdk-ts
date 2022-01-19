@@ -9,13 +9,13 @@ Thrown when attempting to create a snapshot with duplicate leafs
 <b>Signature:</b>
 
 ```typescript
-export declare class DuplicateLeafsError extends Error 
+export declare class DuplicateLeafsError extends Error
 ```
+
 <b>Extends:</b> Error
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(message)](./sdk.duplicateleafserror._constructor_.md) |  | Constructs a new instance of the <code>DuplicateLeafsError</code> class |
-
+| Constructor                                                          | Modifiers | Description                                                             |
+| -------------------------------------------------------------------- | --------- | ----------------------------------------------------------------------- |
+| [(constructor)(message)](./sdk.duplicateleafserror._constructor_.md) |           | Constructs a new instance of the <code>DuplicateLeafsError</code> class |

@@ -14,9 +14,9 @@ balanceOf(address: string): Promise<BigNumber>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| address   | string |             |
 
 <b>Returns:</b>
 
@@ -30,7 +30,6 @@ Get a wallets NFT balance (number of NFTs in this module owned by the wallet).
 
 ## Example
 
-
 ```javascript
 // Address of the wallet to check NFT balance
 const address = "{{wallet_address}}";
@@ -38,4 +37,3 @@ const address = "{{wallet_address}}";
 const balance = await module.balanceOf(address);
 console.log(balance);
 ```
-

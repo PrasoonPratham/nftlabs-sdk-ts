@@ -13,9 +13,9 @@ balanceOfAllRecipients(): Promise<{
         [key: string]: BigNumber;
     }>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;{ \[key: string\]: BigNumber; }&gt;
 
 A map of recipient addresses to their balances in the native currency.
-

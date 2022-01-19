@@ -14,13 +14,12 @@ deployPackModule(metadata: PackModuleMetadata): Promise<PackModule>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadata | [PackModuleMetadata](./sdk.packmodulemetadata.md) | The module metadata |
+| Parameter | Type                                              | Description         |
+| --------- | ------------------------------------------------- | ------------------- |
+| metadata  | [PackModuleMetadata](./sdk.packmodulemetadata.md) | The module metadata |
 
 <b>Returns:</b>
 
 Promise&lt;[PackModule](./sdk.packmodule.md)<!-- -->&gt;
 
 - The deployed Pack module
-

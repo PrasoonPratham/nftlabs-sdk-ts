@@ -5,7 +5,6 @@
 ## TokenModule.getAllHolderBalances() method
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
 
 Lets you get a all token holders and their corresponding balances - This can be very slow for large numbers of token holders
 
@@ -14,9 +13,9 @@ Lets you get a all token holders and their corresponding balances - This can be 
 ```typescript
 getAllHolderBalances(): Promise<Record<string, BigNumber>>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;Record&lt;string, BigNumber&gt;&gt;
 
 - A JSON object of all token holders and their corresponding balances
-

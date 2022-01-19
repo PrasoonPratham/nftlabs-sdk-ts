@@ -12,12 +12,11 @@ unlist(listingId: string, quantity: BigNumberish): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | string |  |
-|  quantity | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| listingId | string       |             |
+| quantity  | BigNumberish |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

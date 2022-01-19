@@ -12,11 +12,10 @@ getRecipientSplitPercentage(address: string): Promise<SplitRecipient>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| address   | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;[SplitRecipient](./sdk.splitrecipient.md)<!-- -->&gt;
-

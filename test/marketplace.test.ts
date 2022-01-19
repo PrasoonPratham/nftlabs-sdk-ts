@@ -5,14 +5,14 @@ import { NATIVE_TOKEN_ADDRESS } from "../src/common/currency";
 import {
   AuctionAlreadyStartedError,
   ListingNotFoundError,
-  WrongListingTypeError,
+  WrongListingTypeError
 } from "../src/common/error";
 import { ListingType } from "../src/enums/marketplace";
 import {
   BundleModule,
   MarketplaceModule,
   NFTModule,
-  TokenModule,
+  TokenModule
 } from "../src/modules";
 import { AuctionListing, DirectListing } from "../src/types/marketplace";
 import {
@@ -20,7 +20,7 @@ import {
   fastForwardTime,
   jsonProvider,
   sdk,
-  signers,
+  signers
 } from "./before.test";
 
 global.fetch = require("node-fetch");
@@ -56,62 +56,62 @@ describe("Marketplace Module", async () => {
     await sdk.setProviderOrSigner(adminWallet);
     marketplaceModule = await appModule.deployMarketplaceModule({
       name: "Test Marketplace",
-      marketFeeBasisPoints: 0,
+      marketFeeBasisPoints: 0
     });
     dummyNftModule = await appModule.deployNftModule({
       name: "TEST NFT",
-      sellerFeeBasisPoints: 100,
+      sellerFeeBasisPoints: 100
     });
     await dummyNftModule.mintBatch([
       {
-        name: "Test 0",
+        name: "Test 0"
       },
       {
-        name: "Test 2",
+        name: "Test 2"
       },
       {
-        name: "Test 3",
+        name: "Test 3"
       },
       {
-        name: "Test 4",
-      },
+        name: "Test 4"
+      }
     ]);
     dummyBundleModule = await appModule.deployBundleModule({
       name: "TEST BUNDLE",
-      sellerFeeBasisPoints: 100,
+      sellerFeeBasisPoints: 100
     });
     await dummyBundleModule.createAndMintBatch([
       {
         metadata: {
-          name: "Test 0",
+          name: "Test 0"
         },
-        supply: 100000,
+        supply: 100000
       },
       {
         metadata: {
-          name: "Test 1",
+          name: "Test 1"
         },
-        supply: 100000,
-      },
+        supply: 100000
+      }
     ]);
 
     customTokenModule = await appModule.deployCurrencyModule({
       name: "Test",
-      symbol: "TEST",
+      symbol: "TEST"
     });
     await customTokenModule.mintBatchTo([
       {
         address: bobWallet.address,
-        amount: ethers.utils.parseUnits("1000000000000000000000"),
+        amount: ethers.utils.parseUnits("1000000000000000000000")
       },
       {
         address: samWallet.address,
-        amount: ethers.utils.parseUnits("100000000000000000000"),
+        amount: ethers.utils.parseUnits("100000000000000000000")
       },
       {
         address: adminWallet.address,
-        amount: ethers.utils.parseUnits("100000000000000000000"),
-      },
+        amount: ethers.utils.parseUnits("100000000000000000000")
+      }
     ]);
     tokenAddress = customTokenModule.address;
     startingBalance = BigNumber.from("100000000000000000000");
@@ -120,7 +120,7 @@ describe("Marketplace Module", async () => {
   const createDirectListing = async (
     contractAddress: string,
     tokenId: BigNumberish,
-    quantity: BigNumberish = 1,
+    quantity: BigNumberish = 1
   ): Promise<BigNumber> => {
     return await marketplaceModule.createDirectListing({
       assetContractAddress: contractAddress,
@@ -129,7 +129,7 @@ describe("Marketplace Module", async () => {
       startTimeInSeconds: Math.floor(Date.now() / 1000),
       listingDurationInSeconds: 60 * 60 * 24,
       tokenId,
-      quantity,
+      quantity
     });
   };
 
@@ -137,7 +137,7 @@ describe("Marketplace Module", async () => {
     contractAddress: string,
     tokenId: BigNumberish,
     quantity: BigNumberish = 1,
-    startTime: number = Math.floor(Date.now() / 1000),
+    startTime: number = Math.floor(Date.now() / 1000)
   ): Promise<BigNumber> => {
     return await marketplaceModule.createAuctionListing({
       assetContractAddress: contractAddress,
@@ -147,7 +147,7 @@ describe("Marketplace Module", async () => {
       listingDurationInSeconds: 60 * 60 * 24,
       tokenId,
       quantity,
-      reservePricePerToken: ethers.utils.parseUnits("1"),
+      reservePricePerToken: ethers.utils.parseUnits("1")
     });
   };
 
@@ -171,7 +171,7 @@ describe("Marketplace Module", async () => {
       const listingId = await createDirectListing(
         dummyBundleModule.address,
         0,
-        10,
+        10
       );
       assert.isDefined(listingId);
     });
@@ -185,7 +185,7 @@ describe("Marketplace Module", async () => {
       const listingId = await createAuctionListing(
         dummyNftModule.address,
         0,
-        10,
+        10
       );
       assert.isDefined(listingId);
     });
@@ -203,7 +203,7 @@ describe("Marketplace Module", async () => {
 
     it("should return an auction listing", async () => {
       const listing = (await marketplaceModule.getListing(
-        auctionListingId,
+        auctionListingId
       )) as AuctionListing;
       assert.equal(listing.type.toString(), ListingType.Auction.toString());
       assert.equal(listing.tokenId.toString(), "1");
@@ -219,7 +219,7 @@ describe("Marketplace Module", async () => {
 
     it("should return a direct listing", async () => {
       const listing = (await marketplaceModule.getListing(
-        directListingId,
+        directListingId
       )) as DirectListing;
       assert.equal(listing.type.toString(), ListingType.Direct.toString());
       assert.equal(listing.tokenId.toString(), "0");
@@ -236,7 +236,7 @@ describe("Marketplace Module", async () => {
 
     it("should return a direct listing using getAuctionListing", async () => {
       const listing = await marketplaceModule.getAuctionListing(
-        auctionListingId,
+        auctionListingId
       );
       assert.equal(listing.type.toString(), ListingType.Auction.toString());
       assert.equal(listing.tokenId.toString(), "1");
@@ -258,12 +258,12 @@ describe("Marketplace Module", async () => {
       directListingIdMultiple = await createDirectListing(
         dummyBundleModule.address,
         0,
-        10,
+        10
       );
       auctionListingIdMultiple = await createAuctionListing(
         dummyBundleModule.address,
         0,
-        10,
+        10
       );
     });
 
@@ -274,14 +274,14 @@ describe("Marketplace Module", async () => {
       assert.equal(
         currentBalance.toString(),
         "0",
-        "The buyer should start with no tokens",
+        "The buyer should start with no tokens"
       );
 
       await marketplaceModule.makeDirectListingOffer({
         currencyContractAddress: tokenAddress,
         listingId: directListingId,
         quantityDesired: 1,
-        pricePerToken: ethers.utils.parseUnits("8"),
+        pricePerToken: ethers.utils.parseUnits("8")
       });
 
       console.log("Offer made");
@@ -289,14 +289,14 @@ describe("Marketplace Module", async () => {
       await sdk.setProviderOrSigner(adminWallet);
       await marketplaceModule.acceptDirectListingOffer(
         directListingId,
-        bobWallet.address,
+        bobWallet.address
       );
 
       const balance = await dummyNftModule.balanceOf(bobWallet.address);
       assert.equal(
         balance.toString(),
         "1",
-        "The buyer should have been awarded token",
+        "The buyer should have been awarded token"
       );
     });
 
@@ -307,17 +307,17 @@ describe("Marketplace Module", async () => {
       assert.equal(
         currentBalance.toString(),
         "0",
-        "The buyer should start with no tokens",
+        "The buyer should start with no tokens"
       );
       await marketplaceModule.buyoutDirectListing({
         listingId: directListingId,
-        quantityDesired: 1,
+        quantityDesired: 1
       });
       const balance = await dummyNftModule.balanceOf(bobWallet.address);
       assert.equal(
         balance.toString(),
         "1",
-        "The buyer should have been awarded token",
+        "The buyer should have been awarded token"
       );
     });
 
@@ -327,18 +327,18 @@ describe("Marketplace Module", async () => {
         currencyContractAddress: tokenAddress,
         listingId: directListingId,
         quantityDesired: 1,
-        pricePerToken: ethers.utils.parseUnits("1"),
+        pricePerToken: ethers.utils.parseUnits("1")
       });
 
       const offer = await marketplaceModule.getActiveOffer(
         directListingId,
-        bobWallet.address,
+        bobWallet.address
       );
 
       assert.equal(offer.buyerAddress, bobWallet.address);
       assert.equal(
         offer.pricePerToken.toString(),
-        ethers.utils.parseUnits("1").toString(),
+        ethers.utils.parseUnits("1").toString()
       );
       assert.equal(offer.listingId.toString(), directListingId.toString());
 
@@ -347,18 +347,18 @@ describe("Marketplace Module", async () => {
         currencyContractAddress: tokenAddress,
         listingId: directListingId,
         quantityDesired: 1,
-        pricePerToken: ethers.utils.parseUnits("1"),
+        pricePerToken: ethers.utils.parseUnits("1")
       });
 
       const secondOffer = await marketplaceModule.getActiveOffer(
         directListingId,
-        samWallet.address,
+        samWallet.address
       );
 
       assert.equal(secondOffer.buyerAddress, samWallet.address);
       assert.equal(
         offer.pricePerToken.toString(),
-        ethers.utils.parseUnits("1").toString(),
+        ethers.utils.parseUnits("1").toString()
       );
       assert.equal(offer.listingId.toString(), directListingId.toString());
     });
@@ -366,7 +366,7 @@ describe("Marketplace Module", async () => {
     it("should return undefined when checking offers on an address that hasn't made any", async () => {
       const offer = await marketplaceModule.getActiveOffer(
         directListingId,
-        adminWallet.address,
+        adminWallet.address
       );
       assert.isUndefined(offer);
     });
@@ -375,7 +375,7 @@ describe("Marketplace Module", async () => {
       await sdk.setProviderOrSigner(bobWallet);
       await marketplaceModule.makeAuctionListingBid({
         listingId: auctionListingId,
-        pricePerToken: ethers.utils.parseUnits("1"),
+        pricePerToken: ethers.utils.parseUnits("1")
       });
 
       let winningBid = await marketplaceModule.getWinningBid(auctionListingId);
@@ -383,29 +383,29 @@ describe("Marketplace Module", async () => {
       assert.equal(winningBid.buyerAddress, bobWallet.address);
       assert.equal(
         winningBid.pricePerToken.toString(),
-        ethers.utils.parseUnits("1").toString(),
+        ethers.utils.parseUnits("1").toString()
       );
       assert.equal(
         winningBid.listingId.toString(),
-        auctionListingId.toString(),
+        auctionListingId.toString()
       );
 
       // Make a higher winning bid
       await sdk.setProviderOrSigner(samWallet);
       await marketplaceModule.makeAuctionListingBid({
         listingId: auctionListingId,
-        pricePerToken: ethers.utils.parseUnits("2"),
+        pricePerToken: ethers.utils.parseUnits("2")
       });
 
       winningBid = await marketplaceModule.getWinningBid(auctionListingId);
       assert.equal(winningBid.buyerAddress, samWallet.address);
       assert.equal(
         winningBid.pricePerToken.toString(),
-        ethers.utils.parseUnits("2").toString(),
+        ethers.utils.parseUnits("2").toString()
       );
       assert.equal(
         winningBid.listingId.toString(),
-        auctionListingId.toString(),
+        auctionListingId.toString()
       );
     });
   });
@@ -457,18 +457,18 @@ describe("Marketplace Module", async () => {
       assert.equal(
         currentBalance.toString(),
         "0",
-        "The buyer should start with no tokens",
+        "The buyer should start with no tokens"
       );
       await marketplaceModule.makeAuctionListingBid({
         listingId: auctionListingId,
-        pricePerToken: ethers.utils.parseUnits("20"),
+        pricePerToken: ethers.utils.parseUnits("20")
       });
 
       const balance = await dummyNftModule.balanceOf(bobWallet.address);
       assert.equal(
         balance.toString(),
         "1",
-        "The buyer should have been awarded token",
+        "The buyer should have been awarded token"
       );
     });
 
@@ -481,21 +481,21 @@ describe("Marketplace Module", async () => {
       assert.equal(
         currentBalance.toString(),
         "0",
-        "The buyer should start with no tokens",
+        "The buyer should start with no tokens"
       );
       await marketplaceModule.makeAuctionListingBid({
         listingId: auctionListingId,
-        pricePerToken: ethers.utils.parseUnits("2"),
+        pricePerToken: ethers.utils.parseUnits("2")
       });
 
       const winningBid = await marketplaceModule.getWinningBid(
-        auctionListingId,
+        auctionListingId
       );
 
       assert.equal(
         winningBid.buyerAddress,
         bobWallet.address,
-        "Bob should be the winning bidder",
+        "Bob should be the winning bidder"
       );
 
       await sdk.setProviderOrSigner(bobWallet);
@@ -504,7 +504,7 @@ describe("Marketplace Module", async () => {
       assert.equal(
         balance.toString(),
         "1",
-        "The buyer should have been awarded token",
+        "The buyer should have been awarded token"
       );
 
       // TODO: write test for calling closeAuctionListing with sellers wallet
@@ -516,16 +516,16 @@ describe("Marketplace Module", async () => {
       assert.equal(
         currentBalance.toString(),
         "0",
-        "The buyer should start with no tokens",
+        "The buyer should start with no tokens"
       );
       await marketplaceModule.makeAuctionListingBid({
         listingId: auctionListingId,
-        pricePerToken: ethers.utils.parseUnits("2"),
+        pricePerToken: ethers.utils.parseUnits("2")
       });
       try {
         await marketplaceModule.makeAuctionListingBid({
           listingId: auctionListingId,
-          pricePerToken: ethers.utils.parseUnits("2.01"),
+          pricePerToken: ethers.utils.parseUnits("2.01")
         });
         // eslint-disable-next-line no-empty
       } catch (err) {}
@@ -541,7 +541,7 @@ describe("Marketplace Module", async () => {
         listingDurationInSeconds: 60 * 60 * 24,
         tokenId: "1",
         quantity: 2,
-        reservePricePerToken: ethers.utils.parseUnits("1"),
+        reservePricePerToken: ethers.utils.parseUnits("1")
       });
       await sdk.setProviderOrSigner(bobWallet);
       await marketplaceModule.buyoutAuctionListing(id);
@@ -550,7 +550,7 @@ describe("Marketplace Module", async () => {
       assert.equal(
         balance.toString(),
         "2",
-        "The buyer should have no tokens to start",
+        "The buyer should have no tokens to start"
       );
     });
   });
@@ -575,7 +575,7 @@ describe("Marketplace Module", async () => {
         listingDurationInSeconds: 60 * 60 * 24,
         tokenId: "0",
         quantity: 1,
-        reservePricePerToken: ethers.utils.parseUnits("1"),
+        reservePricePerToken: ethers.utils.parseUnits("1")
       });
       await marketplaceModule.cancelAuctionListing(id);
 
@@ -595,7 +595,7 @@ describe("Marketplace Module", async () => {
     it("should throw an error when trying to close an auction that already started (with bids)", async () => {
       await marketplaceModule.makeAuctionListingBid({
         listingId: auctionListingId,
-        pricePerToken: ethers.utils.parseUnits("2"),
+        pricePerToken: ethers.utils.parseUnits("2")
       });
       try {
         await marketplaceModule.cancelAuctionListing(auctionListingId);
@@ -604,7 +604,7 @@ describe("Marketplace Module", async () => {
         if (
           !(err instanceof AuctionAlreadyStartedError) &&
           !(err.message as string).includes(
-            "cannot close auction before it has ended",
+            "cannot close auction before it has ended"
           )
         ) {
           throw err;
@@ -628,7 +628,7 @@ describe("Marketplace Module", async () => {
         dummyNftModule.address,
         2,
         1,
-        startTime,
+        startTime
       );
 
       const listing = await marketplaceModule.getAuctionListing(listingId);
@@ -641,7 +641,7 @@ describe("Marketplace Module", async () => {
       } catch (err) {
         console.error("failed to cancel listing", err);
         assert.fail(
-          "The seller should be able to cancel the auction if there are no active bids",
+          "The seller should be able to cancel the auction if there are no active bids"
         );
       }
     });
@@ -657,14 +657,14 @@ describe("Marketplace Module", async () => {
         listingDurationInSeconds: 60 * 60,
         tokenId: "2",
         quantity: "1",
-        reservePricePerToken: ethers.utils.parseUnits("1"),
+        reservePricePerToken: ethers.utils.parseUnits("1")
       });
 
       await sdk.setProviderOrSigner(bobWallet);
 
       await marketplaceModule.makeAuctionListingBid({
         listingId,
-        pricePerToken: ethers.utils.parseUnits("2"),
+        pricePerToken: ethers.utils.parseUnits("2")
       });
 
       await fastForwardTime(60 * 60 * 24);
@@ -676,7 +676,7 @@ describe("Marketplace Module", async () => {
       assert.equal(
         oldBalance.toString(),
         "0",
-        "The buyer should have no tokens to start",
+        "The buyer should have no tokens to start"
       );
       await marketplaceModule.closeAuctionListing(listingId);
 
@@ -684,7 +684,7 @@ describe("Marketplace Module", async () => {
       assert.equal(
         balance.toString(),
         "1",
-        "The buyer should have been awarded token",
+        "The buyer should have been awarded token"
       );
 
       /**
@@ -692,18 +692,18 @@ describe("Marketplace Module", async () => {
        */
       await sdk.setProviderOrSigner(adminWallet);
       const oldTokenBalance = await customTokenModule.balanceOf(
-        adminWallet.address,
+        adminWallet.address
       );
       assert.equal(
         oldTokenBalance.value,
         ethers.utils.parseUnits("100000000000000000000").toString(),
-        "The buyer should have 100000000000000000000 tokens to start",
+        "The buyer should have 100000000000000000000 tokens to start"
       );
 
       await marketplaceModule.closeAuctionListing(listingId);
 
       const newTokenBalance = await customTokenModule.balanceOf(
-        adminWallet.address,
+        adminWallet.address
       );
       assert.equal(
         newTokenBalance.value,
@@ -712,7 +712,7 @@ describe("Marketplace Module", async () => {
           // eslint-disable-next-line line-comment-position
           .add(ethers.utils.parseUnits("1.98")) // 2% taken out for royalties
           .toString(),
-        "The buyer should have two additional tokens after the listing closes",
+        "The buyer should have two additional tokens after the listing closes"
       );
     });
   });
@@ -729,11 +729,11 @@ describe("Marketplace Module", async () => {
       const buyoutPrice = ethers.utils.parseUnits("10");
 
       const directListing = await marketplaceModule.getDirectListing(
-        directListingId,
+        directListingId
       );
       assert.equal(
         directListing.buyoutPrice.toString(),
-        buyoutPrice.toString(),
+        buyoutPrice.toString()
       );
 
       directListing.buyoutPrice = ethers.utils.parseUnits("20");
@@ -741,11 +741,11 @@ describe("Marketplace Module", async () => {
       await marketplaceModule.updateDirectListing(directListing);
 
       const updatedListing = await marketplaceModule.getDirectListing(
-        directListingId,
+        directListingId
       );
       assert.equal(
         updatedListing.buyoutPrice.toString(),
-        ethers.utils.parseUnits("20").toString(),
+        ethers.utils.parseUnits("20").toString()
       );
     });
 
@@ -761,13 +761,13 @@ describe("Marketplace Module", async () => {
         listingDurationInSeconds: 60 * 60 * 24,
         tokenId: "0",
         quantity: 1,
-        reservePricePerToken: ethers.utils.parseUnits("1"),
+        reservePricePerToken: ethers.utils.parseUnits("1")
       });
 
       const auctionListing = await marketplaceModule.getAuctionListing(id);
       assert.equal(
         auctionListing.buyoutPrice.toString(),
-        buyoutPrice.toString(),
+        buyoutPrice.toString()
       );
 
       auctionListing.buyoutPrice = ethers.utils.parseUnits("9");
@@ -777,7 +777,7 @@ describe("Marketplace Module", async () => {
       const updatedListing = await marketplaceModule.getAuctionListing(id);
       assert.equal(
         updatedListing.buyoutPrice.toString(),
-        ethers.utils.parseUnits("9").toString(),
+        ethers.utils.parseUnits("9").toString()
       );
     });
   });
@@ -794,50 +794,50 @@ describe("Marketplace Module", async () => {
           winningBid: 10,
           newBid: 12,
           buffer: 500,
-          valid: true,
+          valid: true
         },
         {
           winningBid: 100,
           newBid: 101,
           buffer: 500,
-          valid: false,
+          valid: false
         },
         {
           winningBid: 10,
           newBid: 12,
           buffer: 1000,
-          valid: true,
+          valid: true
         },
         {
           winningBid: 10,
           newBid: 15,
           buffer: 5001,
-          valid: false,
+          valid: false
         },
         {
           winningBid: 10,
           newBid: 15,
           buffer: 4999,
-          valid: true,
+          valid: true
         },
         {
           winningBid: 10,
           newBid: 9,
           buffer: 1000,
-          valid: false,
-        },
+          valid: false
+        }
       ];
 
       for (const testCase of testCases) {
         const result = await marketplaceModule.isWinningBid(
           testCase.winningBid,
           testCase.newBid,
-          testCase.buffer,
+          testCase.buffer
         );
         assert.equal(
           result,
           testCase.valid,
-          `should be valid: ${JSON.stringify(testCase)}`,
+          `should be valid: ${JSON.stringify(testCase)}`
         );
       }
     });
@@ -890,7 +890,7 @@ describe("Marketplace Module", async () => {
       try {
         await marketplaceModule.buyoutDirectListing({
           listingId: directListingId,
-          quantityDesired: 1,
+          quantityDesired: 1
         });
         assert.fail("should have thrown");
       } catch (err: any) {
@@ -904,11 +904,11 @@ describe("Marketplace Module", async () => {
 
       const allListings = await marketplaceModule.getAllListings();
       const found = allListings.find(
-        (l) => l.id.toString() === directListingId.toString(),
+        l => l.id.toString() === directListingId.toString()
       );
       assert.isUndefined(
         found,
-        "should not have found the listing becuase it is invalid",
+        "should not have found the listing becuase it is invalid"
       );
     });
   });

@@ -14,11 +14,10 @@ setBidBufferBps(buffer: BigNumberish): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  buffer | BigNumberish | The bid buffer in basis points. |
+| Parameter | Type         | Description                     |
+| --------- | ------------ | ------------------------------- |
+| buffer    | BigNumberish | The bid buffer in basis points. |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

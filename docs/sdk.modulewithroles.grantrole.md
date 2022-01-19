@@ -14,10 +14,10 @@ grantRole(role: Role, address: string): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  role | [Role](./sdk.role.md) | The [role](./sdk.iroles.md) to grant to the address |
-|  address | string | The address to grant the role to |
+| Parameter | Type                  | Description                                         |
+| --------- | --------------------- | --------------------------------------------------- |
+| role      | [Role](./sdk.role.md) | The [role](./sdk.iroles.md) to grant to the address |
+| address   | string                | The address to grant the role to                    |
 
 <b>Returns:</b>
 
@@ -32,4 +32,3 @@ If you are trying to grant does not exist on the module this will throw an [Inva
 ## Remarks
 
 Make sure you are sure you want to grant the role to the address.
-

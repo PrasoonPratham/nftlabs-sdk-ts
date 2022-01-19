@@ -59,7 +59,7 @@ export const RolesMap: IRoles = {
   pauser: "pauser",
   transfer: "transfer",
   editor: "editor",
-  lister: "lister",
+  lister: "lister"
 } as const;
 
 /**
@@ -72,7 +72,7 @@ const _role: Record<Role, string> = {
   minter: "MINTER_ROLE",
   pauser: "PAUSER_ROLE",
   editor: "EDITOR_ROLE",
-  lister: "LISTER_ROLE",
+  lister: "LISTER_ROLE"
 };
 
 /**

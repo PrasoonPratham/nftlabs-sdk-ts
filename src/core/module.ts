@@ -5,7 +5,7 @@ import {
   JsonRpcSigner,
   Log,
   TransactionReceipt,
-  Web3Provider,
+  Web3Provider
 } from "@ethersproject/providers";
 import {
   BaseContract,
@@ -14,7 +14,7 @@ import {
   CallOverrides,
   ContractTransaction,
   ethers,
-  Signer,
+  Signer
 } from "ethers";
 import { getContractMetadata, isContract } from "../common/contract";
 import { MissingRoleError } from "../common/error";
@@ -30,7 +30,7 @@ import { ThirdwebSDK } from "./index";
 import type {
   GaslessTransaction,
   MetadataURIOrObject,
-  ProviderOrSigner,
+  ProviderOrSigner
 } from "./types";
 
 /**
@@ -104,7 +104,7 @@ export class Module<TContract extends BaseContract = BaseContract> {
     providerOrSigner: ProviderOrSigner,
     address: string,
     options: ISDKOptions,
-    sdk: ThirdwebSDK,
+    sdk: ThirdwebSDK
   ) {
     this.address = address;
     this.options = options;
@@ -113,7 +113,7 @@ export class Module<TContract extends BaseContract = BaseContract> {
     this.contract = this.connectContract();
     this.readOnlyContract = this.options.readOnlyRpcUrl
       ? (this.contract.connect(
-          ethers.getDefaultProvider(this.options.readOnlyRpcUrl),
+          ethers.getDefaultProvider(this.options.readOnlyRpcUrl)
         ) as TContract)
       : this.contract;
     this.sdk = sdk;
@@ -145,10 +145,10 @@ export class Module<TContract extends BaseContract = BaseContract> {
         await this.getProvider(),
         contract.address,
         this.options.ipfsGatewayUrl,
-        resolveUrls,
+        resolveUrls
       ),
       address: contract.address,
-      type,
+      type
     };
   }
 
@@ -158,7 +158,7 @@ export class Module<TContract extends BaseContract = BaseContract> {
    * @param metadata - The metadata to set.
    */
   public async setMetadata(
-    metadata: MetadataURIOrObject,
+    metadata: MetadataURIOrObject
   ): Promise<ModuleMetadata> {
     invariant(await this.exists(), "contract does not exist");
     const uri = await uploadMetadata(metadata);
@@ -177,7 +177,7 @@ export class Module<TContract extends BaseContract = BaseContract> {
     this.contract = this.connectContract();
     this.readOnlyContract = this.options.readOnlyRpcUrl
       ? (this.contract.connect(
-          ethers.getDefaultProvider(this.options.readOnlyRpcUrl),
+          ethers.getDefaultProvider(this.options.readOnlyRpcUrl)
         ) as TContract)
       : this.contract;
   }
@@ -265,14 +265,14 @@ export class Module<TContract extends BaseContract = BaseContract> {
     const gasPriceChain = await getGasPriceForChain(
       chainId,
       speed,
-      maxGasPrice,
+      maxGasPrice
     );
     if (!gasPriceChain) {
       return {};
     }
     // TODO: support EIP-1559 by try-catch, provider.getFeeData();
     return {
-      gasPrice: ethers.utils.parseUnits(gasPriceChain.toString(), "gwei"),
+      gasPrice: ethers.utils.parseUnits(gasPriceChain.toString(), "gwei")
     };
   }
 
@@ -281,11 +281,11 @@ export class Module<TContract extends BaseContract = BaseContract> {
    */
   private async emitTransactionEvent(
     status: "submitted" | "completed",
-    transactionHash: string,
+    transactionHash: string
   ) {
     this.sdk.event.emit(EventType.Transaction, {
       status,
-      transactionHash,
+      transactionHash
     });
   }
 
@@ -295,7 +295,7 @@ export class Module<TContract extends BaseContract = BaseContract> {
   protected async sendTransaction(
     fn: string,
     args: any[],
-    callOverrides?: CallOverrides,
+    callOverrides?: CallOverrides
   ): Promise<TransactionReceipt> {
     return this.sendContractTransaction(this.contract, fn, args, callOverrides);
   }
@@ -307,7 +307,7 @@ export class Module<TContract extends BaseContract = BaseContract> {
     contract: BaseContract,
     fn: string,
     args: any[],
-    callOverrides?: CallOverrides,
+    callOverrides?: CallOverrides
   ): Promise<TransactionReceipt> {
     if (!callOverrides) {
       callOverrides = await this.getCallOverrides();
@@ -322,7 +322,7 @@ export class Module<TContract extends BaseContract = BaseContract> {
         contract,
         fn,
         args,
-        callOverrides,
+        callOverrides
       );
       this.emitTransactionEvent("submitted", txHash);
       const receipt = await provider.waitForTransaction(txHash);
@@ -333,7 +333,7 @@ export class Module<TContract extends BaseContract = BaseContract> {
         contract,
         fn,
         args,
-        callOverrides,
+        callOverrides
       );
       this.emitTransactionEvent("submitted", tx.hash);
       const receipt = tx.wait();
@@ -349,7 +349,7 @@ export class Module<TContract extends BaseContract = BaseContract> {
     contract: BaseContract,
     fn: string,
     args: any[],
-    callOverrides: CallOverrides,
+    callOverrides: CallOverrides
   ): Promise<ContractTransaction> {
     const func: ethers.ContractFunction = contract.functions[fn];
     if (!func) {
@@ -365,12 +365,12 @@ export class Module<TContract extends BaseContract = BaseContract> {
     contract: BaseContract,
     fn: string,
     args: any[],
-    callOverrides: CallOverrides,
+    callOverrides: CallOverrides
   ): Promise<string> {
     const signer = this.getSigner();
     invariant(
       signer,
-      "Cannot execute gasless transaction without valid signer",
+      "Cannot execute gasless transaction without valid signer"
     );
     const provider = await this.getProvider();
     invariant(provider, "no provider to execute transaction");
@@ -381,7 +381,7 @@ export class Module<TContract extends BaseContract = BaseContract> {
 
     if (BigNumber.from(value).gt(0)) {
       throw new Error(
-        "Cannot send native token value with gasless transaction",
+        "Cannot send native token value with gasless transaction"
       );
     }
 
@@ -405,7 +405,7 @@ export class Module<TContract extends BaseContract = BaseContract> {
       gasLimit: gas,
       functionName: fn,
       functionArgs: args,
-      callOverrides,
+      callOverrides
     };
 
     const txHash = await this.options.gaslessSendFunction(contract, tx);
@@ -422,7 +422,7 @@ export class Module<TContract extends BaseContract = BaseContract> {
       verifyingContract: string;
     },
     types: any,
-    message: any,
+    message: any
   ): Promise<BytesLike> {
     if (
       (
@@ -434,17 +434,17 @@ export class Module<TContract extends BaseContract = BaseContract> {
       const payload = ethers.utils._TypedDataEncoder.getPayload(
         domain,
         types,
-        message,
+        message
       );
       return await (signer?.provider as JsonRpcProvider).send(
         "eth_signTypedData",
-        [from.toLowerCase(), JSON.stringify(payload)],
+        [from.toLowerCase(), JSON.stringify(payload)]
       );
     } else {
       return await (signer as JsonRpcSigner)._signTypedData(
         domain,
         types,
-        message,
+        message
       );
     }
   }
@@ -459,7 +459,7 @@ export class Module<TContract extends BaseContract = BaseContract> {
         const event = contract.interface.decodeEventLog(
           eventName,
           log.data,
-          log.topics,
+          log.topics
         );
         return event;
         // eslint-disable-next-line no-empty
@@ -471,16 +471,14 @@ export class Module<TContract extends BaseContract = BaseContract> {
   protected parseLogs<T = any>(
     eventName: string,
     logs?: Log[],
-    contract: BaseContract = this.contract,
+    contract: BaseContract = this.contract
   ): T[] {
     if (!logs || logs.length === 0) {
       return [];
     }
     const topic = contract.interface.getEventTopic(eventName);
-    const parsedLogs = logs.filter((x) => x.topics.indexOf(topic) >= 0);
-    return parsedLogs.map(
-      (l) => contract.interface.parseLog(l) as unknown as T,
-    );
+    const parsedLogs = logs.filter(x => x.topics.indexOf(topic) >= 0);
+    return parsedLogs.map(l => contract.interface.parseLog(l) as unknown as T);
   }
 }
 
@@ -490,7 +488,7 @@ export class Module<TContract extends BaseContract = BaseContract> {
  * @public
  */
 export class ModuleWithRoles<
-  TContract extends AccessControlEnumerable = AccessControlEnumerable,
+  TContract extends AccessControlEnumerable = AccessControlEnumerable
 > extends Module<TContract> {
   /**
    * @virtual
@@ -512,7 +510,7 @@ export class ModuleWithRoles<
     providerOrSigner: ProviderOrSigner,
     address: string,
     options: ISDKOptions,
-    sdk: ThirdwebSDK,
+    sdk: ThirdwebSDK
   ) {
     super(providerOrSigner, address, options, sdk);
   }
@@ -534,15 +532,15 @@ export class ModuleWithRoles<
   public async getRoleMembers(role: Role): Promise<string[]> {
     invariant(
       this.roles.includes(role),
-      `this module does not support the "${role}" role`,
+      `this module does not support the "${role}" role`
     );
     const contract = this.contract;
     const roleHash = getRoleHash(role);
     const count = (await contract.getRoleMemberCount(roleHash)).toNumber();
     return await Promise.all(
-      Array.from(Array(count).keys()).map((i) =>
-        contract.getRoleMember(roleHash, i),
-      ),
+      Array.from(Array(count).keys()).map(i =>
+        contract.getRoleMember(roleHash, i)
+      )
     );
   }
 
@@ -582,48 +580,48 @@ export class ModuleWithRoles<
    *
    * */
   public async setAllRoleMembers(
-    rolesWithAddresses: SetAllRoles,
+    rolesWithAddresses: SetAllRoles
   ): Promise<any> {
     const roles = Object.keys(rolesWithAddresses);
     invariant(roles.length, "you must provide at least one role to set");
     invariant(
-      roles.every((role) => this.roles.includes(role as Role)),
-      "this module does not support the given role",
+      roles.every(role => this.roles.includes(role as Role)),
+      "this module does not support the given role"
     );
     const currentRoles = await this.getAllRoleMembers();
     const encoded: string[] = [];
     // add / rmove admin role at the end so we don't revoke admin then grant
     roles
-      .sort((role) => (role === "admin" ? 1 : -1))
-      .forEach(async (role) => {
+      .sort(role => (role === "admin" ? 1 : -1))
+      .forEach(async role => {
         const addresses = rolesWithAddresses[role as Role] || [];
         const currentAddresses = currentRoles[role as Role] || [];
         const toAdd = addresses.filter(
-          (address) => !currentAddresses.includes(address),
+          address => !currentAddresses.includes(address)
         );
         const toRemove = currentAddresses.filter(
-          (address) => !addresses.includes(address),
+          address => !addresses.includes(address)
         );
         if (toAdd.length) {
-          toAdd.forEach((address) => {
+          toAdd.forEach(address => {
             encoded.push(
               this.contract.interface.encodeFunctionData("grantRole", [
                 getRoleHash(role as Role),
-                address,
-              ]),
+                address
+              ])
             );
           });
         }
         if (toRemove.length) {
-          toRemove.forEach(async (address) => {
+          toRemove.forEach(async address => {
             const revokeFunctionName = (await this.getRevokeRoleFunctionName(
-              address,
+              address
             )) as any;
             encoded.push(
               this.contract.interface.encodeFunctionData(revokeFunctionName, [
                 getRoleHash(role as Role),
-                address,
-              ]),
+                address
+              ])
             );
           });
         }
@@ -646,17 +644,17 @@ export class ModuleWithRoles<
     const rolesRemoved: Role[] = [];
     // revoke / renounce admin role at the end
     Object.keys(currentRoles)
-      .sort((role) => (role === "admin" ? 1 : -1))
-      .forEach(async (role) => {
+      .sort(role => (role === "admin" ? 1 : -1))
+      .forEach(async role => {
         if (currentRoles[role as Role]?.includes(address)) {
           const revokeFunctionName = (await this.getRevokeRoleFunctionName(
-            address,
+            address
           )) as any;
           encoded.push(
             this.contract.interface.encodeFunctionData(revokeFunctionName, [
               getRoleHash(role as Role),
-              address,
-            ]),
+              address
+            ])
           );
           rolesRemoved.push(role as Role);
         }
@@ -681,15 +679,15 @@ export class ModuleWithRoles<
    */
   public async grantRole(
     role: Role,
-    address: string,
+    address: string
   ): Promise<TransactionReceipt> {
     invariant(
       this.roles.includes(role),
-      `this module does not support the "${role}" role`,
+      `this module does not support the "${role}" role`
     );
     return await this.sendTransaction("grantRole", [
       getRoleHash(role),
-      address,
+      address
     ]);
   }
 
@@ -713,16 +711,16 @@ export class ModuleWithRoles<
    */
   public async revokeRole(
     role: Role,
-    address: string,
+    address: string
   ): Promise<TransactionReceipt> {
     invariant(
       this.roles.includes(role),
-      `this module does not support the "${role}" role`,
+      `this module does not support the "${role}" role`
     );
     const revokeFunctionName = await this.getRevokeRoleFunctionName(address);
     return await this.sendTransaction(revokeFunctionName, [
       getRoleHash(role),
-      address,
+      address
     ]);
   }
 
@@ -779,10 +777,10 @@ export class ModuleWithRoles<
    * @returns - List of metadata prepared for upload.
    */
   public async prepareBatchMetadata(
-    metadata: MetadataURIOrObject[],
+    metadata: MetadataURIOrObject[]
   ): Promise<string[]> {
     return await Promise.all(
-      metadata.map(async (m) => await this.prepareMetadata(m)),
+      metadata.map(async m => await this.prepareMetadata(m))
     );
   }
 
@@ -794,14 +792,14 @@ export class ModuleWithRoles<
    */
   protected async onlyRoles(roles: Role[], address: string): Promise<void> {
     await Promise.all(
-      roles.map(async (role) => {
+      roles.map(async role => {
         const members = await this.getRoleMembers(role);
         if (
-          !members.map((a) => a.toLowerCase()).includes(address.toLowerCase())
+          !members.map(a => a.toLowerCase()).includes(address.toLowerCase())
         ) {
           throw new MissingRoleError(address, role);
         }
-      }),
+      })
     );
   }
 }

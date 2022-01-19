@@ -16,13 +16,12 @@ balanceOfTokenAllRecipients(tokenAddress: string): Promise<{
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenAddress | string | The address of the currency to check the balances in. |
+| Parameter    | Type   | Description                                           |
+| ------------ | ------ | ----------------------------------------------------- |
+| tokenAddress | string | The address of the currency to check the balances in. |
 
 <b>Returns:</b>
 
 Promise&lt;{ \[key: string\]: [CurrencyValue](./sdk.currencyvalue.md)<!-- -->; }&gt;
 
 A map of recipient addresses to their balances in the specified currency.
-

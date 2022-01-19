@@ -2,7 +2,7 @@ import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
 import {
   BundleDropModule,
   NATIVE_TOKEN_ADDRESS,
-  ThirdwebSDK,
+  ThirdwebSDK
 } from "../src/index";
 import { appModule, registryAddress, signers } from "./before.test";
 import { ethers } from "hardhat";
@@ -29,12 +29,12 @@ describe("Bundle Module (aka Collection Module)", async () => {
     console.timeEnd("wallet");
     const token = await appModule.deployCurrencyModule({
       name: "Test Token",
-      symbol: "TST",
+      symbol: "TST"
     });
 
     console.log("testSigners", testSigners.length);
     const allowList = [];
-    testSigners.forEach((signer) => {
+    testSigners.forEach(signer => {
       try {
         allowList.push(signer.address);
       } catch (e) {
@@ -44,7 +44,7 @@ describe("Bundle Module (aka Collection Module)", async () => {
     bundleDropModule = await appModule.deployBundleDropModule({
       name: "test",
       description: "test",
-      primarySaleRecipientAddress: "0x0000000000000000000000000000000000000000",
+      primarySaleRecipientAddress: "0x0000000000000000000000000000000000000000"
     });
     await bundleDropModule.lazyMintBatch([{ name: "test" }]);
 
@@ -54,7 +54,7 @@ describe("Bundle Module (aka Collection Module)", async () => {
     const claimPhase = factory.newClaimPhase({
       startTime: new Date(),
       maxQuantity: 30000,
-      maxQuantityPerTransaction: 1,
+      maxQuantityPerTransaction: 1
     });
     claimPhase.setPrice(ethers.utils.parseEther("0.01"), NATIVE_TOKEN_ADDRESS);
     await claimPhase.setSnapshot(allowList);
@@ -63,13 +63,13 @@ describe("Bundle Module (aka Collection Module)", async () => {
     const sdk = new ThirdwebSDK(adminWallet, {
       ipfsGatewayUrl: "https://ipfs.thirdweb.com/ipfs/",
       registryContractAddress: registryAddress,
-      maxGasPriceInGwei: 10000,
+      maxGasPriceInGwei: 10000
     });
     let error = false;
     await sdk
       .getBundleDropModule(bundleDropModule.address)
       .claim(0, 1)
-      .catch((e) => {
+      .catch(e => {
         error = true;
       });
     assert.equal(error, true);
@@ -79,13 +79,13 @@ describe("Bundle Module (aka Collection Module)", async () => {
       await adminWallet.sendTransaction({
         from: adminWallet.address,
         to: signer.address,
-        value: ethers.utils.parseEther("0.02"),
+        value: ethers.utils.parseEther("0.02")
       });
       assert((await signer.getBalance()).gt(0));
       const testSdk = new ThirdwebSDK(signer, {
         ipfsGatewayUrl: "https://ipfs.thirdweb.com/ipfs/",
         registryContractAddress: registryAddress,
-        maxGasPriceInGwei: 10000,
+        maxGasPriceInGwei: 10000
       });
       await testSdk.getBundleDropModule(bundleDropModule.address).claim(0, 1);
       console.log("claimed", i);

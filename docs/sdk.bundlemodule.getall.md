@@ -14,9 +14,9 @@ getAll(address?: string): Promise<BundleMetadata[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| address   | string |             |
 
 <b>Returns:</b>
 
@@ -30,7 +30,6 @@ Get data associated with NFTs in this module.
 
 ## Example
 
-
 ```javascript
 // You can get every NFT in the module
 const nfts = await module.getAll();
@@ -41,4 +40,3 @@ const address = "{{wallet_address}}"; // The address you want to get the NFTs fo
 const ownedNfts = await module.getAll(address);
 console.log(ownedNfts);
 ```
-

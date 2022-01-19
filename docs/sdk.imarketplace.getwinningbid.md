@@ -14,11 +14,10 @@ getWinningBid(listingId: BigNumberish): Promise<Offer | undefined>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | BigNumberish | Id of the listing to get the bid for. |
+| Parameter | Type         | Description                           |
+| --------- | ------------ | ------------------------------------- |
+| listingId | BigNumberish | Id of the listing to get the bid for. |
 
 <b>Returns:</b>
 
 Promise&lt;[Offer](./sdk.offer.md) \| undefined&gt;
-

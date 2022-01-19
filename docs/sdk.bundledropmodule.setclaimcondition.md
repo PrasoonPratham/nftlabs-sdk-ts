@@ -14,12 +14,11 @@ setClaimCondition(tokenId: BigNumberish, factory: ClaimConditionFactory): Promis
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | BigNumberish |  |
-|  factory | ClaimConditionFactory | The claim condition factory. |
+| Parameter | Type                  | Description                  |
+| --------- | --------------------- | ---------------------------- |
+| tokenId   | BigNumberish          |                              |
+| factory   | ClaimConditionFactory | The claim condition factory. |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

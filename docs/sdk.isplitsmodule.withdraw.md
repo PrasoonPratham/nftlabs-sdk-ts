@@ -14,11 +14,10 @@ withdraw(address: string): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string | The address to withdraw royalties for. |
+| Parameter | Type   | Description                            |
+| --------- | ------ | -------------------------------------- |
+| address   | string | The address to withdraw royalties for. |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

@@ -43,7 +43,7 @@ export default class ClaimConditionPhase {
    */
   public setPrice(
     price: BigNumberish,
-    tokenAddress: string = AddressZero,
+    tokenAddress: string = AddressZero
   ): ClaimConditionPhase {
     if (!isAddress(tokenAddress)) {
       throw new InvalidAddressError(tokenAddress);
@@ -139,7 +139,7 @@ export default class ClaimConditionPhase {
       currentMintSupply: 0,
       merkleRoot: this._merkleCondition?.merkleRoot
         ? this._merkleCondition.merkleRoot
-        : this._merkleRootHash,
+        : this._merkleRootHash
     };
   }
 
@@ -149,7 +149,7 @@ export default class ClaimConditionPhase {
    * @param waitInSeconds - The wait time in seconds.
    */
   public setWaitTimeBetweenClaims(
-    waitInSeconds: BigNumberish,
+    waitInSeconds: BigNumberish
   ): ClaimConditionPhase {
     this._waitInSeconds = waitInSeconds;
     return this;

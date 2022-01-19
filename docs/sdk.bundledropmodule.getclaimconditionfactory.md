@@ -11,9 +11,9 @@ Creates a claim condition factory
 ```typescript
 getClaimConditionFactory(): ClaimConditionFactory;
 ```
+
 <b>Returns:</b>
 
 ClaimConditionFactory
 
 - A new claim condition factory
-

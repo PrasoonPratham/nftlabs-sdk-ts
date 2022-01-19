@@ -5,16 +5,15 @@
 ## DropModule.getMintConditionsFactory() method
 
 > Warning: This API is now obsolete.
-> 
+>
 > - Use the [DropModule.getClaimConditionsFactory()](./sdk.dropmodule.getclaimconditionsfactory.md) instead.
-> 
 
 <b>Signature:</b>
 
 ```typescript
 getMintConditionsFactory(): ClaimConditionFactory;
 ```
+
 <b>Returns:</b>
 
 ClaimConditionFactory
-

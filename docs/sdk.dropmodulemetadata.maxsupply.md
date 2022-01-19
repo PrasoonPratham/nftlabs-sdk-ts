@@ -5,9 +5,8 @@
 ## DropModuleMetadata.maxSupply property
 
 > Warning: This API is now obsolete.
-> 
+>
 > - No longer applicable. This value is ignored.
-> 
 
 The max supply
 

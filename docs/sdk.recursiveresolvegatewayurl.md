@@ -7,17 +7,19 @@
 <b>Signature:</b>
 
 ```typescript
-export declare function recursiveResolveGatewayUrl(json: any, ipfsGatewayUrl: string): any;
+export declare function recursiveResolveGatewayUrl(
+  json: any,
+  ipfsGatewayUrl: string
+): any;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  json | any |  |
-|  ipfsGatewayUrl | string |  |
+| Parameter      | Type   | Description |
+| -------------- | ------ | ----------- |
+| json           | any    |             |
+| ipfsGatewayUrl | string |             |
 
 <b>Returns:</b>
 
 any
-

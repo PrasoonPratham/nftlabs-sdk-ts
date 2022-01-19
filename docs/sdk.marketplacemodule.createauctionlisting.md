@@ -14,9 +14,9 @@ createAuctionListing(listing: NewAuctionListing): Promise<BigNumber>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listing | [NewAuctionListing](./sdk.newauctionlisting.md) |  |
+| Parameter | Type                                            | Description |
+| --------- | ----------------------------------------------- | ----------- |
+| listing   | [NewAuctionListing](./sdk.newauctionlisting.md) |             |
 
 <b>Returns:</b>
 
@@ -27,7 +27,6 @@ Promise&lt;BigNumber&gt;
 Create a new auction where people can bid on an asset.
 
 ## Example
-
 
 ```javascript
 // Data of the auction you want to create
@@ -47,9 +46,8 @@ const auction = {
   // how much people would have to bid to instantly buy the asset
   buyoutPricePerToken: "10",
   // the minimum bid that will be accepted for the token
-  reservePricePerToken: "1",
-}
+  reservePricePerToken: "1"
+};
 
 await module.createAuctionListing(auction);
 ```
-

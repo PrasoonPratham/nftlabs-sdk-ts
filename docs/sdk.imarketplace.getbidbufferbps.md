@@ -13,9 +13,9 @@ This is a percentage (e.g. 5%). A new bid is considered to be a winning bid only
 ```typescript
 getBidBufferBps(): Promise<BigNumber>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;BigNumber&gt;
 
 - The bid buffer in basis points.
-

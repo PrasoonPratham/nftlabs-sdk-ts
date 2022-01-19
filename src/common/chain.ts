@@ -15,7 +15,7 @@ export enum ChainId {
   Fantom = 250,
   FantomTestnet = 4002,
   Avalanche = 43114,
-  AvalancheFujiTestnet = 43113,
+  AvalancheFujiTestnet = 43113
 }
 
 export type SUPPORTED_CHAIN_ID =
@@ -36,5 +36,5 @@ export const SUPPORTED_CHAIN_IDS: SUPPORTED_CHAIN_ID[] = [
   ChainId.Fantom,
   ChainId.FantomTestnet,
   ChainId.Avalanche,
-  ChainId.AvalancheFujiTestnet,
+  ChainId.AvalancheFujiTestnet
 ];

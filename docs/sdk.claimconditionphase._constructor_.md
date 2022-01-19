@@ -14,7 +14,6 @@ constructor(createSnapshotFunc: (leafs: string[]) => Promise<SnapshotInfo>);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  createSnapshotFunc | (leafs: string\[\]) =&gt; Promise&lt;[SnapshotInfo](./sdk.snapshotinfo.md)<!-- -->&gt; |  |
-
+| Parameter          | Type                                                                                   | Description |
+| ------------------ | -------------------------------------------------------------------------------------- | ----------- |
+| createSnapshotFunc | (leafs: string\[\]) =&gt; Promise&lt;[SnapshotInfo](./sdk.snapshotinfo.md)<!-- -->&gt; |             |

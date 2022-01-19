@@ -14,13 +14,12 @@ getAllModuleMetadata(filterByModuleType?: ModuleType[]): Promise<ModuleMetadata[
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  filterByModuleType | [ModuleType](./sdk.moduletype.md)<!-- -->\[\] | Optional array of [ModuleType](./sdk.moduletype.md) to filter by. |
+| Parameter          | Type                                          | Description                                                       |
+| ------------------ | --------------------------------------------- | ----------------------------------------------------------------- |
+| filterByModuleType | [ModuleType](./sdk.moduletype.md)<!-- -->\[\] | Optional array of [ModuleType](./sdk.moduletype.md) to filter by. |
 
 <b>Returns:</b>
 
 Promise&lt;[ModuleMetadata](./sdk.modulemetadata.md)<!-- -->\[\]&gt;
 
 Array of module metadata
-

@@ -8,17 +8,17 @@
 
 ```typescript
 export declare type ModuleMetadataMap = {
-    [ModuleType.COLLECTION]: CollectionModuleMetadata;
-    [ModuleType.ACCESS_NFT]: CommonModuleMetadata;
-    [ModuleType.CURRENCY]: CommonModuleMetadata;
-    [ModuleType.DATASTORE]: CommonModuleMetadata;
-    [ModuleType.DROP]: CommonModuleMetadata;
-    [ModuleType.DYNAMIC_NFT]: CommonModuleMetadata;
-    [ModuleType.MARKET]: CommonModuleMetadata;
-    [ModuleType.NFT]: CommonModuleMetadata;
-    [ModuleType.PACK]: CommonModuleMetadata;
-    [ModuleType.SPLITS]: CommonModuleMetadata;
+  [ModuleType.COLLECTION]: CollectionModuleMetadata;
+  [ModuleType.ACCESS_NFT]: CommonModuleMetadata;
+  [ModuleType.CURRENCY]: CommonModuleMetadata;
+  [ModuleType.DATASTORE]: CommonModuleMetadata;
+  [ModuleType.DROP]: CommonModuleMetadata;
+  [ModuleType.DYNAMIC_NFT]: CommonModuleMetadata;
+  [ModuleType.MARKET]: CommonModuleMetadata;
+  [ModuleType.NFT]: CommonModuleMetadata;
+  [ModuleType.PACK]: CommonModuleMetadata;
+  [ModuleType.SPLITS]: CommonModuleMetadata;
 };
 ```
-<b>References:</b> [ModuleType.COLLECTION](./sdk.moduletype.md)<!-- -->, [CollectionModuleMetadata](./sdk.collectionmodulemetadata.md)<!-- -->, [ModuleType.ACCESS\_NFT](./sdk.moduletype.md)<!-- -->, [CommonModuleMetadata](./sdk.commonmodulemetadata.md)<!-- -->, [ModuleType.CURRENCY](./sdk.moduletype.md)<!-- -->, [ModuleType.DATASTORE](./sdk.moduletype.md)<!-- -->, [ModuleType.DROP](./sdk.moduletype.md)<!-- -->, [ModuleType.DYNAMIC\_NFT](./sdk.moduletype.md)<!-- -->, [ModuleType.MARKET](./sdk.moduletype.md)<!-- -->, [ModuleType.NFT](./sdk.moduletype.md)<!-- -->, [ModuleType.PACK](./sdk.moduletype.md)<!-- -->, [ModuleType.SPLITS](./sdk.moduletype.md)
 
+<b>References:</b> [ModuleType.COLLECTION](./sdk.moduletype.md)<!-- -->, [CollectionModuleMetadata](./sdk.collectionmodulemetadata.md)<!-- -->, [ModuleType.ACCESS_NFT](./sdk.moduletype.md)<!-- -->, [CommonModuleMetadata](./sdk.commonmodulemetadata.md)<!-- -->, [ModuleType.CURRENCY](./sdk.moduletype.md)<!-- -->, [ModuleType.DATASTORE](./sdk.moduletype.md)<!-- -->, [ModuleType.DROP](./sdk.moduletype.md)<!-- -->, [ModuleType.DYNAMIC_NFT](./sdk.moduletype.md)<!-- -->, [ModuleType.MARKET](./sdk.moduletype.md)<!-- -->, [ModuleType.NFT](./sdk.moduletype.md)<!-- -->, [ModuleType.PACK](./sdk.moduletype.md)<!-- -->, [ModuleType.SPLITS](./sdk.moduletype.md)

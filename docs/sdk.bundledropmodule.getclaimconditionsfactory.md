@@ -9,7 +9,7 @@
 ```typescript
 getClaimConditionsFactory(): ClaimConditionFactory;
 ```
+
 <b>Returns:</b>
 
 ClaimConditionFactory
-

@@ -24,9 +24,9 @@ describe("Roles Module", async () => {
       await appModule
         .deployBundleModule({
           name: "NFT Module",
-          sellerFeeBasisPoints: 1000,
+          sellerFeeBasisPoints: 1000
         })
-        .then((m) => m.address),
+        .then(m => m.address)
     );
   });
 
@@ -38,7 +38,7 @@ describe("Roles Module", async () => {
     assert.include(
       roles,
       adminWallet.address,
-      "The app module should have a default admin",
+      "The app module should have a default admin"
     );
   });
 
@@ -56,33 +56,31 @@ describe("Roles Module", async () => {
       admin: [adminWallet.address],
       minter: [
         "0x553C5E856801b5876e80D32a192086b2035286C1",
-        "0xf16851cb58F3b3881e6bdAD21f57144E9aCf602E",
+        "0xf16851cb58F3b3881e6bdAD21f57144E9aCf602E"
       ],
       pauser: ["0x553C5E856801b5876e80D32a192086b2035286C1"],
-      transfer: ["0x553C5E856801b5876e80D32a192086b2035286C1"],
+      transfer: ["0x553C5E856801b5876e80D32a192086b2035286C1"]
     });
 
     const newRoles = await nftModule.getAllRoleMembers();
     assert.isTrue(
       newRoles.admin.length === 1 &&
-        newRoles.admin.includes(adminWallet.address),
+        newRoles.admin.includes(adminWallet.address)
     );
     assert.isTrue(
       newRoles.minter.length === 2 &&
         newRoles.minter.includes(
-          "0x553C5E856801b5876e80D32a192086b2035286C1",
+          "0x553C5E856801b5876e80D32a192086b2035286C1"
         ) &&
-        newRoles.minter.includes("0xf16851cb58F3b3881e6bdAD21f57144E9aCf602E"),
+        newRoles.minter.includes("0xf16851cb58F3b3881e6bdAD21f57144E9aCf602E")
     );
     assert.isTrue(
       newRoles.pauser.length === 1 &&
-        newRoles.pauser.includes("0x553C5E856801b5876e80D32a192086b2035286C1"),
+        newRoles.pauser.includes("0x553C5E856801b5876e80D32a192086b2035286C1")
     );
     assert.isTrue(
       newRoles.transfer.length === 1 &&
-        newRoles.transfer.includes(
-          "0x553C5E856801b5876e80D32a192086b2035286C1",
-        ),
+        newRoles.transfer.includes("0x553C5E856801b5876e80D32a192086b2035286C1")
     );
   });
 
@@ -90,37 +88,35 @@ describe("Roles Module", async () => {
     await nftModule.setAllRoleMembers({
       admin: [
         adminWallet.address,
-        "0x553C5E856801b5876e80D32a192086b2035286C1",
+        "0x553C5E856801b5876e80D32a192086b2035286C1"
       ],
       minter: [
         "0xf16851cb58F3b3881e6bdAD21f57144E9aCf602E",
-        "0xE79ee09bD47F4F5381dbbACaCff2040f2FbC5803",
+        "0xE79ee09bD47F4F5381dbbACaCff2040f2FbC5803"
       ],
       pauser: ["0xf16851cb58F3b3881e6bdAD21f57144E9aCf602E"],
-      transfer: ["0xf16851cb58F3b3881e6bdAD21f57144E9aCf602E"],
+      transfer: ["0xf16851cb58F3b3881e6bdAD21f57144E9aCf602E"]
     });
     const newRoles = await nftModule.getAllRoleMembers();
     assert.isTrue(
       newRoles.admin.length === 2 &&
         newRoles.admin.includes(adminWallet.address) &&
-        newRoles.admin.includes("0x553C5E856801b5876e80D32a192086b2035286C1"),
+        newRoles.admin.includes("0x553C5E856801b5876e80D32a192086b2035286C1")
     );
     assert.isTrue(
       newRoles.minter.length === 2 &&
         newRoles.minter.includes(
-          "0xf16851cb58F3b3881e6bdAD21f57144E9aCf602E",
+          "0xf16851cb58F3b3881e6bdAD21f57144E9aCf602E"
         ) &&
-        newRoles.minter.includes("0xE79ee09bD47F4F5381dbbACaCff2040f2FbC5803"),
+        newRoles.minter.includes("0xE79ee09bD47F4F5381dbbACaCff2040f2FbC5803")
     );
     assert.isTrue(
       newRoles.pauser.length === 1 &&
-        newRoles.pauser.includes("0xf16851cb58F3b3881e6bdAD21f57144E9aCf602E"),
+        newRoles.pauser.includes("0xf16851cb58F3b3881e6bdAD21f57144E9aCf602E")
     );
     assert.isTrue(
       newRoles.transfer.length === 1 &&
-        newRoles.transfer.includes(
-          "0xf16851cb58F3b3881e6bdAD21f57144E9aCf602E",
-        ),
+        newRoles.transfer.includes("0xf16851cb58F3b3881e6bdAD21f57144E9aCf602E")
     );
   });
 });

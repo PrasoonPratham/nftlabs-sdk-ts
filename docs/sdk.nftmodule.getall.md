@@ -11,6 +11,7 @@ Get All NFTs
 ```typescript
 getAll(): Promise<NFTMetadata[]>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;[NFTMetadata](./sdk.nftmetadata.md)<!-- -->\[\]&gt;
@@ -23,9 +24,7 @@ Get all the data associated with every NFT in this module.
 
 ## Example
 
-
 ```javascript
 const nfts = await module.getAll();
 console.log(nfts);
 ```
-

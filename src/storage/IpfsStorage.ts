@@ -1,7 +1,7 @@
 import {
   DuplicateFileNameError,
   FetchError,
-  UploadError,
+  UploadError
 } from "../common/error";
 import { MetadataURIOrObject } from "../core/types";
 import { IStorage, UploadMetadataBatchResult } from "../interfaces/IStorage";
@@ -38,7 +38,7 @@ export class IpfsStorage implements IStorage {
   public async upload(
     data: string | FileOrBuffer,
     contractAddress?: string,
-    signerAddress?: string,
+    signerAddress?: string
   ): Promise<string> {
     if (typeof data === "string") {
       // always 0 indexed because there's only 1 file
@@ -54,7 +54,7 @@ export class IpfsStorage implements IStorage {
 
     const headers = {
       "X-App-Name": `CONSOLE-TS-SDK-${contractAddress}`,
-      "X-Public-Address": signerAddress || "",
+      "X-Public-Address": signerAddress || ""
     };
     const formData = new FormData();
     formData.append("file", data as any);
@@ -62,11 +62,11 @@ export class IpfsStorage implements IStorage {
       const res = await fetch(`${thirdwebIpfsServerUrl}/upload`, {
         method: "POST",
         body: formData as any,
-        headers,
+        headers
       });
       if (res.status !== 200) {
         throw new Error(
-          `Failed to upload to IPFS [status code = ${res.status}]`,
+          `Failed to upload to IPFS [status code = ${res.status}]`
         );
       }
 
@@ -85,12 +85,12 @@ export class IpfsStorage implements IStorage {
       | File[]
       | BufferOrStringWithName[],
     contractAddress?: string,
-    fileStartNumber = 0,
+    fileStartNumber = 0
   ): Promise<string> {
     const { cid } = await this.uploadBatchWithCid(
       files,
       contractAddress,
-      fileStartNumber,
+      fileStartNumber
     );
 
     return `ipfs://${cid}/`;
@@ -104,11 +104,11 @@ export class IpfsStorage implements IStorage {
       | File[]
       | BufferOrStringWithName[],
     contractAddress?: string,
-    fileStartNumber = 0,
+    fileStartNumber = 0
   ): Promise<CidWithFileName> {
     const token = await this.getUploadToken(contractAddress || "");
     const metadata = {
-      name: `CONSOLE-TS-SDK-${contractAddress}`,
+      name: `CONSOLE-TS-SDK-${contractAddress}`
     };
     const data = new FormData();
     const fileNames: string[] = [];
@@ -155,9 +155,9 @@ export class IpfsStorage implements IStorage {
     const res = await fetch(pinataIpfsUrl, {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${token}`
       },
-      body: data as any,
+      body: data as any
     });
     const body = await res.json();
     if (!res.ok) {
@@ -166,17 +166,17 @@ export class IpfsStorage implements IStorage {
     }
     return {
       cid: body.IpfsHash,
-      fileNames,
+      fileNames
     };
   }
 
   public async getUploadToken(contractAddress: string): Promise<string> {
     const headers = {
-      "X-App-Name": `CONSOLE-TS-SDK-${contractAddress}`,
+      "X-App-Name": `CONSOLE-TS-SDK-${contractAddress}`
     };
     const res = await fetch(`${thirdwebIpfsServerUrl}/grant`, {
       method: "GET",
-      headers,
+      headers
     });
     if (!res.ok) {
       throw new FetchError(`Failed to get upload token`);
@@ -208,7 +208,7 @@ export class IpfsStorage implements IStorage {
    */
   public buildFilePropertiesMap(
     object: Record<string, any>,
-    files: (File | Buffer)[],
+    files: (File | Buffer)[]
   ): (File | Buffer)[] {
     const keys = Object.keys(object).sort();
     for (const key in keys) {
@@ -237,7 +237,7 @@ export class IpfsStorage implements IStorage {
    * @returns - The processed metadata with properties pointing at ipfs in place of `File | Buffer`
    */
   public async batchUploadProperties(
-    metadatas: MetadataURIOrObject[],
+    metadatas: MetadataURIOrObject[]
   ): Promise<any> {
     if (typeof metadatas === "string") {
       return metadatas;
@@ -249,7 +249,7 @@ export class IpfsStorage implements IStorage {
     const { cid, fileNames } = await this.uploadBatchWithCid(
       filesToUpload,
       "",
-      0,
+      0
     );
 
     const cids = [];
@@ -260,7 +260,7 @@ export class IpfsStorage implements IStorage {
 
     const finalMetadata = await this.replaceFilePropertiesWithHashes(
       metadatas,
-      cids,
+      cids
     );
     return finalMetadata;
   }
@@ -279,7 +279,7 @@ export class IpfsStorage implements IStorage {
    */
   private async replaceFilePropertiesWithHashes(
     object: Record<string, any>,
-    cids: string[],
+    cids: string[]
   ) {
     const keys = Object.keys(object).sort();
     for (const key in keys) {
@@ -302,7 +302,7 @@ export class IpfsStorage implements IStorage {
   public async uploadMetadata(
     metadata: MetadataURIOrObject,
     contractAddress?: string,
-    _signerAddress?: string,
+    _signerAddress?: string
   ): Promise<string> {
     if (typeof metadata === "string") {
       return metadata;
@@ -312,7 +312,7 @@ export class IpfsStorage implements IStorage {
     const { metadataUris } = await this.uploadMetadataBatch(
       [metadata],
       contractAddress,
-      0,
+      0
     );
     return metadataUris[0];
   }
@@ -323,10 +323,10 @@ export class IpfsStorage implements IStorage {
   public async uploadMetadataBatch(
     metadatas: MetadataURIOrObject[],
     contractAddress?: string,
-    startFileNumber?: number,
+    startFileNumber?: number
   ): Promise<UploadMetadataBatchResult> {
     // we only want to upload if the metadata object is not a string
-    const metadataObjects = metadatas.filter((m) => typeof m !== "string");
+    const metadataObjects = metadatas.filter(m => typeof m !== "string");
     const metadataToUpload: string[] = (
       await this.batchUploadProperties(metadataObjects)
     ).map((m: any) => JSON.stringify(m));
@@ -335,16 +335,14 @@ export class IpfsStorage implements IStorage {
     if (metadataToUpload.length === 0) {
       return {
         baseUri: "",
-        metadataUris: metadatas.filter(
-          (m) => typeof m === "string",
-        ) as string[],
+        metadataUris: metadatas.filter(m => typeof m === "string") as string[]
       };
     }
 
     const { cid, fileNames } = await this.uploadBatchWithCid(
       metadataToUpload,
       contractAddress,
-      startFileNumber,
+      startFileNumber
     );
 
     const baseUri = `ipfs://${cid}/`;
@@ -359,7 +357,7 @@ export class IpfsStorage implements IStorage {
 
     return {
       baseUri,
-      metadataUris: uris,
+      metadataUris: uris
     };
   }
 

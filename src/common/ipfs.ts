@@ -56,18 +56,18 @@ export function recursiveResolveGatewayUrl(json: any, ipfsGatewayUrl: string) {
 export async function uploadToIPFS(
   data: string | File | FileOrBuffer,
   contractAddress?: string,
-  signerAddress?: string,
+  signerAddress?: string
 ): Promise<string> {
   const headers = {
     "X-App-Name": `CONSOLE-TS-SDK-${contractAddress}`,
-    "X-Public-Address": signerAddress || "",
+    "X-Public-Address": signerAddress || ""
   };
   const formData = new FormData();
   formData.append("file", data as any);
   const res = await fetch("https://upload.nftlabs.co/upload", {
     method: "POST",
     body: formData as any,
-    headers,
+    headers
   });
   try {
     const body = await res.json();
@@ -83,7 +83,7 @@ export async function uploadToIPFS(
 export async function uploadMetadata(
   metadata: MetadataURIOrObject,
   contractAddress?: string,
-  signerAddress?: string,
+  signerAddress?: string
 ): Promise<string> {
   if (typeof metadata === "string") {
     return metadata;
@@ -98,7 +98,7 @@ export async function uploadMetadata(
         object[keys[key]] = await uploadToIPFS(
           object[keys[key]],
           contractAddress,
-          signerAddress,
+          signerAddress
         );
       }
       if (shouldUpload && typeof object[keys[key]] !== "string") {
@@ -116,6 +116,6 @@ export async function uploadMetadata(
   return await uploadToIPFS(
     JSON.stringify(metadata),
     contractAddress,
-    signerAddress,
+    signerAddress
   );
 }

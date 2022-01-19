@@ -9,14 +9,14 @@ Currency metadata &amp; value.
 <b>Signature:</b>
 
 ```typescript
-export interface CurrencyValue extends Currency 
+export interface CurrencyValue extends Currency
 ```
+
 <b>Extends:</b> [Currency](./sdk.currency.md)
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [displayValue](./sdk.currencyvalue.displayvalue.md) | string |  |
-|  [value](./sdk.currencyvalue.value.md) | string |  |
-
+| Property                                            | Type   | Description |
+| --------------------------------------------------- | ------ | ----------- |
+| [displayValue](./sdk.currencyvalue.displayvalue.md) | string |             |
+| [value](./sdk.currencyvalue.value.md)               | string |             |

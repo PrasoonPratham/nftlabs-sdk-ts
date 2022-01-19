@@ -14,13 +14,12 @@ uploadMetadata(metadata: MetadataURIOrObject, contractAddress?: string, signerAd
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadata | [MetadataURIOrObject](./sdk.metadatauriorobject.md) | The metadata to be uploaded. |
-|  contractAddress | string | Optional. The contract address the data belongs to. |
-|  signerAddress | string | Optional. The address of the signer. |
+| Parameter       | Type                                                | Description                                         |
+| --------------- | --------------------------------------------------- | --------------------------------------------------- |
+| metadata        | [MetadataURIOrObject](./sdk.metadatauriorobject.md) | The metadata to be uploaded.                        |
+| contractAddress | string                                              | Optional. The contract address the data belongs to. |
+| signerAddress   | string                                              | Optional. The address of the signer.                |
 
 <b>Returns:</b>
 
 Promise&lt;string&gt;
-

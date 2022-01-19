@@ -12,12 +12,11 @@ setAllowance(spender: string, amount: BigNumber): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  spender | string |  |
-|  amount | BigNumber |  |
+| Parameter | Type      | Description |
+| --------- | --------- | ----------- |
+| spender   | string    |             |
+| amount    | BigNumber |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

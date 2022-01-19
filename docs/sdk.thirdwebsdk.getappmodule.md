@@ -12,13 +12,12 @@ getAppModule(address: string): AppModule;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string | The contract address of the given App module. |
+| Parameter | Type   | Description                                   |
+| --------- | ------ | --------------------------------------------- |
+| address   | string | The contract address of the given App module. |
 
 <b>Returns:</b>
 
 [AppModule](./sdk.appmodule.md)
 
 The App Module.
-

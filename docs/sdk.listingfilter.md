@@ -9,14 +9,13 @@ Filter options for the Market module.
 <b>Signature:</b>
 
 ```typescript
-export interface ListingFilter 
+export interface ListingFilter
 ```
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [seller?](./sdk.listingfilter.seller.md) | string | <i>(Optional)</i> |
-|  [tokenContract?](./sdk.listingfilter.tokencontract.md) | string | <i>(Optional)</i> |
-|  [tokenId?](./sdk.listingfilter.tokenid.md) | string | <i>(Optional)</i> |
-
+| Property                                               | Type   | Description       |
+| ------------------------------------------------------ | ------ | ----------------- |
+| [seller?](./sdk.listingfilter.seller.md)               | string | <i>(Optional)</i> |
+| [tokenContract?](./sdk.listingfilter.tokencontract.md) | string | <i>(Optional)</i> |
+| [tokenId?](./sdk.listingfilter.tokenid.md)             | string | <i>(Optional)</i> |

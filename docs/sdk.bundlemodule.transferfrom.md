@@ -12,14 +12,13 @@ transferFrom(from: string, to: string, args: INFTBundleBatchArgs, data?: BytesLi
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  from | string |  |
-|  to | string |  |
-|  args | [INFTBundleBatchArgs](./sdk.inftbundlebatchargs.md) |  |
-|  data | BytesLike |  |
+| Parameter | Type                                                | Description |
+| --------- | --------------------------------------------------- | ----------- |
+| from      | string                                              |             |
+| to        | string                                              |             |
+| args      | [INFTBundleBatchArgs](./sdk.inftbundlebatchargs.md) |             |
+| data      | BytesLike                                           |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

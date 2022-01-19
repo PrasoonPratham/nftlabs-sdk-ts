@@ -9,7 +9,7 @@
 ```typescript
 getAllWithOwner(): Promise<NFTMetadataOwner[]>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;[NFTMetadataOwner](./sdk.nftmetadataowner.md)<!-- -->\[\]&gt;
-

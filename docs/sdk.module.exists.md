@@ -9,9 +9,9 @@
 ```typescript
 exists(): Promise<boolean>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;boolean&gt;
 
 whether the given contract exists on-chain
-

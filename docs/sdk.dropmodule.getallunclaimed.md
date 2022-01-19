@@ -12,11 +12,10 @@ getAllUnclaimed(queryParams?: QueryAllParams): Promise<NFTMetadataOwner[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  queryParams | QueryAllParams |  |
+| Parameter   | Type           | Description |
+| ----------- | -------------- | ----------- |
+| queryParams | QueryAllParams |             |
 
 <b>Returns:</b>
 
 Promise&lt;[NFTMetadataOwner](./sdk.nftmetadataowner.md)<!-- -->\[\]&gt;
-

@@ -9,19 +9,18 @@ The shared NFT metadata.
 <b>Signature:</b>
 
 ```typescript
-export interface NFTMetadata 
+export interface NFTMetadata
 ```
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [animation\_url?](./sdk.nftmetadata.animation_url.md) | string | <i>(Optional)</i> |
-|  [description?](./sdk.nftmetadata.description.md) | string | <i>(Optional)</i> |
-|  [external\_url?](./sdk.nftmetadata.external_url.md) | string | <i>(Optional)</i> |
-|  [id](./sdk.nftmetadata.id.md) | string |  |
-|  [image?](./sdk.nftmetadata.image.md) | string | <i>(Optional)</i> |
-|  [name?](./sdk.nftmetadata.name.md) | string | <i>(Optional)</i> |
-|  [properties?](./sdk.nftmetadata.properties.md) | Record&lt;string, [JSONValue](./sdk.jsonvalue.md)<!-- -->&gt; | <i>(Optional)</i> |
-|  [uri](./sdk.nftmetadata.uri.md) | string |  |
-
+| Property                                             | Type                                                          | Description       |
+| ---------------------------------------------------- | ------------------------------------------------------------- | ----------------- |
+| [animation_url?](./sdk.nftmetadata.animation_url.md) | string                                                        | <i>(Optional)</i> |
+| [description?](./sdk.nftmetadata.description.md)     | string                                                        | <i>(Optional)</i> |
+| [external_url?](./sdk.nftmetadata.external_url.md)   | string                                                        | <i>(Optional)</i> |
+| [id](./sdk.nftmetadata.id.md)                        | string                                                        |                   |
+| [image?](./sdk.nftmetadata.image.md)                 | string                                                        | <i>(Optional)</i> |
+| [name?](./sdk.nftmetadata.name.md)                   | string                                                        | <i>(Optional)</i> |
+| [properties?](./sdk.nftmetadata.properties.md)       | Record&lt;string, [JSONValue](./sdk.jsonvalue.md)<!-- -->&gt; | <i>(Optional)</i> |
+| [uri](./sdk.nftmetadata.uri.md)                      | string                                                        |                   |

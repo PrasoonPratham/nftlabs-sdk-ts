@@ -12,13 +12,12 @@ getDropModule(address: string): DropModule;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string | The contract address of the given Drop module. |
+| Parameter | Type   | Description                                    |
+| --------- | ------ | ---------------------------------------------- |
+| address   | string | The contract address of the given Drop module. |
 
 <b>Returns:</b>
 
 [DropModule](./sdk.dropmodule.md)
 
 The Drop Module.
-

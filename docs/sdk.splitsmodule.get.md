@@ -9,7 +9,7 @@
 ```typescript
 get(): Promise<Currency>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;[Currency](./sdk.currency.md)<!-- -->&gt;
-

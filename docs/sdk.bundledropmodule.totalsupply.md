@@ -14,11 +14,10 @@ totalSupply(tokenId: BigNumberish): Promise<BigNumber>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | BigNumberish | The token ID to get the total supply of |
+| Parameter | Type         | Description                             |
+| --------- | ------------ | --------------------------------------- |
+| tokenId   | BigNumberish | The token ID to get the total supply of |
 
 <b>Returns:</b>
 
 Promise&lt;BigNumber&gt;
-

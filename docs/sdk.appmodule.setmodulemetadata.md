@@ -5,9 +5,8 @@
 ## AppModule.setModuleMetadata() method
 
 > Warning: This API is now obsolete.
-> 
+>
 > - Use setMetadata() instead
-> 
 
 <b>Signature:</b>
 
@@ -17,11 +16,10 @@ setModuleMetadata(metadata: MetadataURIOrObject): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadata | [MetadataURIOrObject](./sdk.metadatauriorobject.md) |  |
+| Parameter | Type                                                | Description |
+| --------- | --------------------------------------------------- | ----------- |
+| metadata  | [MetadataURIOrObject](./sdk.metadatauriorobject.md) |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

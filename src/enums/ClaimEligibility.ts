@@ -9,5 +9,5 @@ export enum ClaimEligibility {
 
   NotEnoughTokens = "There are not enough tokens in the wallet to pay for the claim.",
 
-  NoActiveClaimPhase = "There is no active claim phase at the moment. Please check back in later.",
+  NoActiveClaimPhase = "There is no active claim phase at the moment. Please check back in later."
 }

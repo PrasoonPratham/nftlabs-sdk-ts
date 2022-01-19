@@ -1,7 +1,7 @@
 import {
   ERC20__factory,
   VotingGovernor,
-  VotingGovernor__factory,
+  VotingGovernor__factory
 } from "@3rdweb/contracts";
 import { TransactionReceipt } from "@ethersproject/providers";
 import { BigNumber, ethers } from "ethers";
@@ -10,7 +10,7 @@ import {
   CurrencyValue,
   getCurrencyMetadata,
   getCurrencyValue,
-  ModuleType,
+  ModuleType
 } from "../common";
 import { Module } from "../core/module";
 import { MetadataURIOrObject } from "../core/types";
@@ -65,17 +65,17 @@ export class VoteModule extends Module<VotingGovernor> {
       votingPeriod,
       votingTokenAddress,
       votingQuorumFraction,
-      proposalTokenThreshold,
+      proposalTokenThreshold
     ] = await Promise.all([
       this.readOnlyContract.votingDelay(),
       this.readOnlyContract.votingPeriod(),
       this.readOnlyContract.token(),
       this.readOnlyContract.quorumNumerator(),
-      this.readOnlyContract.proposalThreshold(),
+      this.readOnlyContract.proposalThreshold()
     ]);
     const votingTokenMetadata = await getCurrencyMetadata(
       this.providerOrSigner,
-      votingTokenAddress,
+      votingTokenAddress
     );
     return {
       votingDelay: votingDelay.toString(),
@@ -83,7 +83,7 @@ export class VoteModule extends Module<VotingGovernor> {
       votingTokenAddress,
       votingTokenMetadata,
       votingQuorumFraction: votingQuorumFraction.toString(),
-      proposalTokenThreshold: proposalTokenThreshold.toString(),
+      proposalTokenThreshold: proposalTokenThreshold.toString()
     };
   }
 
@@ -98,7 +98,7 @@ export class VoteModule extends Module<VotingGovernor> {
 
     const all = await this.getAll();
     const proposals = all.filter(
-      (p) => p.proposalId.toLowerCase() === proposalId.toLowerCase(),
+      p => p.proposalId.toLowerCase() === proposalId.toLowerCase()
     );
     if (proposals.length === 0) {
       throw new Error("proposal not found");
@@ -121,17 +121,15 @@ export class VoteModule extends Module<VotingGovernor> {
    */
   public async getAll(): Promise<Proposal[]> {
     const proposals = await this.readOnlyContract.queryFilter(
-      this.contract.filters.ProposalCreated(),
+      this.contract.filters.ProposalCreated()
     );
 
     const results: Proposal[] = [];
     const states = await Promise.all(
-      proposals.map((p) => this.readOnlyContract.state(p.args.proposalId)),
+      proposals.map(p => this.readOnlyContract.state(p.args.proposalId))
     );
     const votes = await Promise.all(
-      proposals.map((p) =>
-        this.readOnlyContract.proposalVotes(p.args.proposalId),
-      ),
+      proposals.map(p => this.readOnlyContract.proposalVotes(p.args.proposalId))
     );
 
     for (let i = 0; i < proposals.length; i++) {
@@ -141,25 +139,25 @@ export class VoteModule extends Module<VotingGovernor> {
         {
           type: VoteType.Against,
           label: "Against",
-          count: votes[i].againstVotes,
+          count: votes[i].againstVotes
         },
         {
           type: VoteType.For,
           label: "For",
-          count: votes[i].forVotes,
+          count: votes[i].forVotes
         },
         {
           type: VoteType.Abstain,
           label: "Abstain",
-          count: votes[i].abstainVotes,
-        },
+          count: votes[i].abstainVotes
+        }
       ];
       const e = [];
       for (let j = 0; j < p.targets.length; j++) {
         e.push({
           to: p.targets[j],
           value: p[3][j] || 0,
-          data: p.calldatas[j],
+          data: p.calldatas[j]
         });
       }
       results.push({
@@ -170,11 +168,11 @@ export class VoteModule extends Module<VotingGovernor> {
         endBlock: p.endBlock,
         state: s,
         votes: v,
-        executions: e.map((exec) => ({
+        executions: e.map(exec => ({
           toAddress: exec.to,
           nativeTokenValue: exec.value,
-          transactionData: exec.data,
-        })),
+          transactionData: exec.data
+        }))
       });
     }
 
@@ -217,21 +215,21 @@ export class VoteModule extends Module<VotingGovernor> {
    */
   public async propose(
     description: string,
-    executions?: ProposalExecutable[],
+    executions?: ProposalExecutable[]
   ): Promise<BigNumber> {
     if (!executions) {
       executions = [
-        { toAddress: this.address, nativeTokenValue: 0, transactionData: "0x" },
+        { toAddress: this.address, nativeTokenValue: 0, transactionData: "0x" }
       ];
     }
-    const tos = executions.map((p) => p.toAddress);
-    const values = executions.map((p) => p.nativeTokenValue);
-    const datas = executions.map((p) => p.transactionData);
+    const tos = executions.map(p => p.toAddress);
+    const values = executions.map(p => p.nativeTokenValue);
+    const datas = executions.map(p => p.transactionData);
     const receipt = await this.sendTransaction("propose", [
       tos,
       values,
       datas,
-      description,
+      description
     ]);
 
     const event = this.parseEventLogs("ProposalCreated", receipt?.logs);
@@ -264,7 +262,7 @@ export class VoteModule extends Module<VotingGovernor> {
     await this.sendTransaction("castVoteWithReason", [
       proposalId,
       voteType,
-      reason,
+      reason
     ]);
   }
 
@@ -289,7 +287,7 @@ export class VoteModule extends Module<VotingGovernor> {
    */
   public async hasVoted(
     proposalId: string,
-    account?: string,
+    account?: string
   ): Promise<boolean> {
     if (!account) {
       account = await this.getSignerAddress();
@@ -315,15 +313,15 @@ export class VoteModule extends Module<VotingGovernor> {
     await this.ensureExists(proposalId);
 
     const proposal = await this.get(proposalId);
-    const tos = proposal.executions.map((p) => p.toAddress);
-    const values = proposal.executions.map((p) => p.nativeTokenValue);
-    const datas = proposal.executions.map((p) => p.transactionData);
+    const tos = proposal.executions.map(p => p.toAddress);
+    const values = proposal.executions.map(p => p.nativeTokenValue);
+    const datas = proposal.executions.map(p => p.transactionData);
     const descriptionHash = ethers.utils.id(proposal.description);
     await this.sendTransaction("execute", [
       tos,
       values,
       datas,
-      descriptionHash,
+      descriptionHash
     ]);
   }
 
@@ -347,16 +345,16 @@ export class VoteModule extends Module<VotingGovernor> {
     await this.ensureExists(proposalId);
 
     const proposal = await this.get(proposalId);
-    const tos = proposal.executions.map((p) => p.toAddress);
-    const values = proposal.executions.map((p) => p.nativeTokenValue);
-    const datas = proposal.executions.map((p) => p.transactionData);
+    const tos = proposal.executions.map(p => p.toAddress);
+    const values = proposal.executions.map(p => p.nativeTokenValue);
+    const datas = proposal.executions.map(p => p.transactionData);
     const descriptionHash = ethers.utils.id(proposal.description);
     try {
       await this.readOnlyContract.callStatic.execute(
         tos,
         values,
         datas,
-        descriptionHash,
+        descriptionHash
       );
       return true;
     } catch (e) {
@@ -371,14 +369,14 @@ export class VoteModule extends Module<VotingGovernor> {
    */
   public async balance(): Promise<CurrencyValue> {
     const balance = await this.readOnlyContract.provider.getBalance(
-      this.address,
+      this.address
     );
     return {
       name: "",
       symbol: "",
       decimals: 18,
       value: balance.toString(),
-      displayValue: ethers.utils.formatUnits(balance, 18),
+      displayValue: ethers.utils.formatUnits(balance, 18)
     };
   }
 
@@ -391,17 +389,17 @@ export class VoteModule extends Module<VotingGovernor> {
   public async balanceOfToken(tokenAddress: string): Promise<CurrencyValue> {
     const erc20 = ERC20__factory.connect(
       tokenAddress,
-      this.readOnlyContract.provider,
+      this.readOnlyContract.provider
     );
     return await getCurrencyValue(
       this.providerOrSigner,
       tokenAddress,
-      await erc20.balanceOf(this.address),
+      await erc20.balanceOf(this.address)
     );
   }
 
   public async setModuleMetadata(
-    metadata: MetadataURIOrObject,
+    metadata: MetadataURIOrObject
   ): Promise<TransactionReceipt> {
     const uri = await this.sdk.getStorage().uploadMetadata(metadata);
     return await this.sendTransaction("setContractURI", [uri]);

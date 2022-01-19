@@ -12,15 +12,14 @@ transferFrom(from: string, to: string, tokenId: BigNumberish, amount: BigNumberi
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  from | string |  |
-|  to | string |  |
-|  tokenId | BigNumberish |  |
-|  amount | BigNumberish |  |
-|  data | BytesLike |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| from      | string       |             |
+| to        | string       |             |
+| tokenId   | BigNumberish |             |
+| amount    | BigNumberish |             |
+| data      | BytesLike    |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

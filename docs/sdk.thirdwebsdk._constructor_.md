@@ -14,8 +14,7 @@ constructor(providerOrNetwork: ValidProviderInput, opts?: Partial<ISDKOptions>);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  providerOrNetwork | [ValidProviderInput](./sdk.validproviderinput.md) |  |
-|  opts | Partial&lt;[ISDKOptions](./sdk.isdkoptions.md)<!-- -->&gt; |  |
-
+| Parameter         | Type                                                       | Description |
+| ----------------- | ---------------------------------------------------------- | ----------- |
+| providerOrNetwork | [ValidProviderInput](./sdk.validproviderinput.md)          |             |
+| opts              | Partial&lt;[ISDKOptions](./sdk.isdkoptions.md)<!-- -->&gt; |             |

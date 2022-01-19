@@ -8,8 +8,8 @@
 
 ```typescript
 export declare type SetAllRoles = {
-    [key in keyof IRoles]?: string[];
+  [key in keyof IRoles]?: string[];
 };
 ```
-<b>References:</b> [IRoles](./sdk.iroles.md)
 
+<b>References:</b> [IRoles](./sdk.iroles.md)

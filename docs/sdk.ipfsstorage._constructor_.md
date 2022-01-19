@@ -14,7 +14,6 @@ constructor(gatewayUrl: string);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  gatewayUrl | string |  |
-
+| Parameter  | Type   | Description |
+| ---------- | ------ | ----------- |
+| gatewayUrl | string |             |

@@ -14,12 +14,11 @@ getClaimIneligibilityReasons(quantity: BigNumberish, addressToCheck?: string): P
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  quantity | BigNumberish | The desired quantity that would be claimed. |
-|  addressToCheck | string |  |
+| Parameter      | Type         | Description                                 |
+| -------------- | ------------ | ------------------------------------------- |
+| quantity       | BigNumberish | The desired quantity that would be claimed. |
+| addressToCheck | string       |                                             |
 
 <b>Returns:</b>
 
 Promise&lt;[ClaimEligibility](./sdk.claimeligibility.md)<!-- -->\[\]&gt;
-

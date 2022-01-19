@@ -12,11 +12,10 @@ get(tokenId: string): Promise<BundleDropMetadata>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| tokenId   | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;[BundleDropMetadata](./sdk.bundledropmetadata.md)<!-- -->&gt;
-

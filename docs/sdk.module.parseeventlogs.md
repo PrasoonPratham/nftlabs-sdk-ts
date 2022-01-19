@@ -12,12 +12,11 @@ protected parseEventLogs(eventName: string, logs?: Log[]): any;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  eventName | string |  |
-|  logs | Log\[\] |  |
+| Parameter | Type    | Description |
+| --------- | ------- | ----------- |
+| eventName | string  |             |
+| logs      | Log\[\] |             |
 
 <b>Returns:</b>
 
 any
-

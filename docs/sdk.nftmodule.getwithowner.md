@@ -12,11 +12,10 @@ getWithOwner(tokenId: string): Promise<NFTMetadataOwner>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| tokenId   | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;[NFTMetadataOwner](./sdk.nftmetadataowner.md)<!-- -->&gt;
-

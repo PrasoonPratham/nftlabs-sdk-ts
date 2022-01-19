@@ -14,13 +14,12 @@ createApp(metadata: MetadataURIOrObject): Promise<ContractReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadata | [MetadataURIOrObject](./sdk.metadatauriorobject.md) | metadata URI or a JSON object |
+| Parameter | Type                                                | Description                   |
+| --------- | --------------------------------------------------- | ----------------------------- |
+| metadata  | [MetadataURIOrObject](./sdk.metadatauriorobject.md) | metadata URI or a JSON object |
 
 <b>Returns:</b>
 
 Promise&lt;ContractReceipt&gt;
 
 The transaction receipt
-

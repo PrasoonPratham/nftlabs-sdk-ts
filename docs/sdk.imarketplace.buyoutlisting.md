@@ -16,12 +16,11 @@ buyoutListing(listingId: BigNumberish, quantityDesired?: BigNumberish): Promise<
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | BigNumberish | Id of the listing to buyout. |
-|  quantityDesired | BigNumberish | The quantity of tokens to buyout. Required if listing is a direct listing. |
+| Parameter       | Type         | Description                                                                |
+| --------------- | ------------ | -------------------------------------------------------------------------- |
+| listingId       | BigNumberish | Id of the listing to buyout.                                               |
+| quantityDesired | BigNumberish | The quantity of tokens to buyout. Required if listing is a direct listing. |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

@@ -12,11 +12,10 @@ setRoyaltyTreasury(treasury: string): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  treasury | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| treasury  | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

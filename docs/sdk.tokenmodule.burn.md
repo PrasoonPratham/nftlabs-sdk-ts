@@ -14,9 +14,9 @@ burn(amount: BigNumberish): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  amount | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| amount    | BigNumberish |             |
 
 <b>Returns:</b>
 
@@ -28,11 +28,9 @@ Burn tokens held by the connected wallet
 
 ## Example
 
-
 ```javascript
 // The amount of this token you want to burn
 const amount = 100;
 
 await module.burn(amount);
 ```
-

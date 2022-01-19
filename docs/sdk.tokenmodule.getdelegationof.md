@@ -12,11 +12,10 @@ getDelegationOf(account: string): Promise<string>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  account | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| account   | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;string&gt;
-

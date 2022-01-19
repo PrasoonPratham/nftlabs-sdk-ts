@@ -5,14 +5,13 @@
 ## NFTLabsSDK variable
 
 > Warning: This API is now obsolete.
-> 
+>
 > use ThirdwebSDK instead
-> 
 
 Deprecated, please use ThirdwebSDK instead.
 
 <b>Signature:</b>
 
 ```typescript
-NFTLabsSDK: typeof ThirdwebSDK
+NFTLabsSDK: typeof ThirdwebSDK;
 ```

@@ -10,11 +10,11 @@ EIP-2612 token permit message for gasless transaction
 
 ```typescript
 export declare type PermitRequestMessage = {
-    to: string;
-    owner: string;
-    spender: string;
-    value: number | string;
-    nonce: number | string;
-    deadline: number | string;
+  to: string;
+  owner: string;
+  spender: string;
+  value: number | string;
+  nonce: number | string;
+  deadline: number | string;
 };
 ```

@@ -14,13 +14,12 @@ get(proposalId: string): Promise<Proposal>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  proposalId | string | The proposal id to get. |
+| Parameter  | Type   | Description             |
+| ---------- | ------ | ----------------------- |
+| proposalId | string | The proposal id to get. |
 
 <b>Returns:</b>
 
 Promise&lt;[Proposal](./sdk.proposal.md)<!-- -->&gt;
 
 - The proposal.
-

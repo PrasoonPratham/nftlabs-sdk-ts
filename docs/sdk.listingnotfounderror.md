@@ -9,13 +9,13 @@ Thrown when trying to retrieve a listing from a marketplace that doesn't exist
 <b>Signature:</b>
 
 ```typescript
-export declare class ListingNotFoundError extends Error 
+export declare class ListingNotFoundError extends Error
 ```
+
 <b>Extends:</b> Error
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(marketplaceContractAddress, listingId)](./sdk.listingnotfounderror._constructor_.md) |  | Constructs a new instance of the <code>ListingNotFoundError</code> class |
-
+| Constructor                                                                                         | Modifiers | Description                                                              |
+| --------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------ |
+| [(constructor)(marketplaceContractAddress, listingId)](./sdk.listingnotfounderror._constructor_.md) |           | Constructs a new instance of the <code>ListingNotFoundError</code> class |

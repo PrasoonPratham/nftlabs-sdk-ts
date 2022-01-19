@@ -5,9 +5,8 @@
 ## DropModule.setPublicMintConditions() method
 
 > Warning: This API is now obsolete.
-> 
+>
 > - Use the [DropModule.setClaimConditions()](./sdk.dropmodule.setclaimconditions.md) instead.
-> 
 
 <b>Signature:</b>
 
@@ -17,11 +16,10 @@ setPublicMintConditions(conditions: CreatePublicMintCondition[]): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  conditions | [CreatePublicMintCondition](./sdk.createpublicmintcondition.md)<!-- -->\[\] |  |
+| Parameter  | Type                                                                        | Description |
+| ---------- | --------------------------------------------------------------------------- | ----------- |
+| conditions | [CreatePublicMintCondition](./sdk.createpublicmintcondition.md)<!-- -->\[\] |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

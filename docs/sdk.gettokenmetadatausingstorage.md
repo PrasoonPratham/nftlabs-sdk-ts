@@ -7,19 +7,23 @@
 <b>Signature:</b>
 
 ```typescript
-export declare function getTokenMetadataUsingStorage(contractAddress: string, provider: ProviderOrSigner, tokenId: string, storage: IStorage): Promise<NFTMetadata>;
+export declare function getTokenMetadataUsingStorage(
+  contractAddress: string,
+  provider: ProviderOrSigner,
+  tokenId: string,
+  storage: IStorage
+): Promise<NFTMetadata>;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  contractAddress | string |  |
-|  provider | [ProviderOrSigner](./sdk.providerorsigner.md) |  |
-|  tokenId | string |  |
-|  storage | [IStorage](./sdk.istorage.md) |  |
+| Parameter       | Type                                          | Description |
+| --------------- | --------------------------------------------- | ----------- |
+| contractAddress | string                                        |             |
+| provider        | [ProviderOrSigner](./sdk.providerorsigner.md) |             |
+| tokenId         | string                                        |             |
+| storage         | [IStorage](./sdk.istorage.md)                 |             |
 
 <b>Returns:</b>
 
 Promise&lt;[NFTMetadata](./sdk.nftmetadata.md)<!-- -->&gt;
-

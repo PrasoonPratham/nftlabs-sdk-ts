@@ -11,9 +11,9 @@ Gets the royalty BPS (basis points) of the contract
 ```typescript
 getRoyaltyBps(): Promise<BigNumberish>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;BigNumberish&gt;
 
 - The royalty BPS
-

@@ -9,7 +9,7 @@
 ```typescript
 getActiveClaimCondition(): Promise<ClaimCondition>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;[ClaimCondition](./sdk.claimcondition.md)<!-- -->&gt;
-

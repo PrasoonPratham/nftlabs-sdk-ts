@@ -14,11 +14,10 @@ setConditionStartTime(when: Date | number): ClaimConditionPhase;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  when | Date \| number |  |
+| Parameter | Type           | Description |
+| --------- | -------------- | ----------- |
+| when      | Date \| number |             |
 
 <b>Returns:</b>
 
 ClaimConditionPhase
-

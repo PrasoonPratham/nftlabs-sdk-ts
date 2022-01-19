@@ -25,15 +25,15 @@ describe("Bundle Module (aka Collection Module)", async () => {
 
     nftModule = await appModule.deployNftModule({
       name: "NFT Module",
-      sellerFeeBasisPoints: 1000,
+      sellerFeeBasisPoints: 1000
     });
     bundleModule = await appModule.deployBundleModule({
       name: "Bundle Module",
-      sellerFeeBasisPoints: 1000,
+      sellerFeeBasisPoints: 1000
     });
     currencyModule = await appModule.deployCurrencyModule({
       name: "Currency Module",
-      symbol: "TEST",
+      symbol: "TEST"
     });
 
     /**
@@ -47,9 +47,9 @@ describe("Bundle Module (aka Collection Module)", async () => {
       metadata: {
         name: "Bundle 1",
         description: "Bundle 1",
-        image: "fake://myownfakeipfs",
+        image: "fake://myownfakeipfs"
       },
-      supply: 100,
+      supply: 100
     });
     const nfts = await bundleModule.getOwned(adminWallet.address);
     expect(nfts).to.be.an("array").length(1);
@@ -63,12 +63,12 @@ describe("Bundle Module (aka Collection Module)", async () => {
 
   it("should return non-zero balance of owned collection tokens", async () => {
     const token = await nftModule.mint({
-      name: "test",
+      name: "test"
     });
 
     try {
       await collectionModule.createWithERC721(nftModule.address, token.id, {
-        name: "TEST NFT",
+        name: "TEST NFT"
       });
     } catch (err) {
       assert.fail(err);
@@ -85,9 +85,9 @@ describe("Bundle Module (aka Collection Module)", async () => {
     try {
       await collectionModule.createWithToken(currencyModule.address, 1, {
         metadata: {
-          name: "test",
+          name: "test"
         },
-        supply: 1,
+        supply: 1
       });
     } catch (err) {
       assert.fail(err);
@@ -98,12 +98,12 @@ describe("Bundle Module (aka Collection Module)", async () => {
 
   it("should create a new collection using NFT", async () => {
     const token = await nftModule.mint({
-      name: "test",
+      name: "test"
     });
 
     try {
       await collectionModule.createWithERC721(nftModule.address, token.id, {
-        name: "TEST NFT",
+        name: "TEST NFT"
       });
     } catch (err) {
       assert.fail(err);
@@ -115,12 +115,12 @@ describe("Bundle Module (aka Collection Module)", async () => {
 
   it("should properly unwrap ERC721 token", async () => {
     const token = await nftModule.mint({
-      name: "test",
+      name: "test"
     });
 
     try {
       await collectionModule.createWithERC721(nftModule.address, token.id, {
-        name: "TEST NFT",
+        name: "TEST NFT"
       });
     } catch (err) {
       assert.fail(err);
@@ -134,9 +134,9 @@ describe("Bundle Module (aka Collection Module)", async () => {
     try {
       await collectionModule.createWithToken(currencyModule.address, 100, {
         metadata: {
-          name: "test",
+          name: "test"
         },
-        supply: 1,
+        supply: 1
       });
     } catch (err) {
       assert.fail(err);
@@ -159,12 +159,12 @@ describe("Bundle Module (aka Collection Module)", async () => {
     assert.equal(
       newMetadata.seller_fee_basis_points,
       testBPS,
-      "Fetching the BPS from the metadata should return 100",
+      "Fetching the BPS from the metadata should return 100"
     );
     assert.equal(
       await bundleModule.getRoyaltyBps(),
       testBPS,
-      "Fetching the BPS with the tx should return 100",
+      "Fetching the BPS with the tx should return 100"
     );
   });
   it("should correctly upload nft metadata", async () => {
@@ -172,22 +172,22 @@ describe("Bundle Module (aka Collection Module)", async () => {
       {
         metadata: {
           name: "Test1",
-          image: "ipfs://myownipfs1",
+          image: "ipfs://myownipfs1"
         },
-        supply: 5,
+        supply: 5
       },
       {
         metadata: {
           name: "Test2",
-          image: "ipfs://myownipfs2",
+          image: "ipfs://myownipfs2"
         },
-        supply: 5,
-      },
+        supply: 5
+      }
     ]);
     const nfts = await bundleModule.getAll();
     expect(nfts).to.be.an("array").length(2);
     let i = 0;
-    nfts.forEach(async (nft) => {
+    nfts.forEach(async nft => {
       expect(nft.metadata.name).to.be.equal(`Test${i}`);
       expect(nft.metadata.image).to.be.equal(`ipfs://myownipfs${i}`);
       i++;
@@ -196,9 +196,9 @@ describe("Bundle Module (aka Collection Module)", async () => {
   it("should return underlying type", async () => {
     await bundleModule.createAndMint({
       metadata: {
-        name: "Test1",
+        name: "Test1"
       },
-      supply: 5,
+      supply: 5
     });
     const nft = await bundleModule.get("0");
     expect(typeof nft.underlyingType).to.be.equal("number");

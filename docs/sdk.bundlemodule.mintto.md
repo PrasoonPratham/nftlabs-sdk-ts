@@ -12,13 +12,12 @@ mintTo(to: string, args: INFTBundleBatchArgs, data?: BytesLike): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  to | string |  |
-|  args | [INFTBundleBatchArgs](./sdk.inftbundlebatchargs.md) |  |
-|  data | BytesLike |  |
+| Parameter | Type                                                | Description |
+| --------- | --------------------------------------------------- | ----------- |
+| to        | string                                              |             |
+| args      | [INFTBundleBatchArgs](./sdk.inftbundlebatchargs.md) |             |
+| data      | BytesLike                                           |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

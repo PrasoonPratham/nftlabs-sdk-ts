@@ -11,9 +11,9 @@ Helper method fetches all snapshots from a factory.
 ```typescript
 allSnapshots(): SnapshotInfo[];
 ```
+
 <b>Returns:</b>
 
 [SnapshotInfo](./sdk.snapshotinfo.md)<!-- -->\[\]
 
 - All snapshots in the condition factory.
-

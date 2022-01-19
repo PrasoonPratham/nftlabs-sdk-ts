@@ -9,7 +9,7 @@ export const ForwardRequest = [
   { name: "value", type: "uint256" },
   { name: "gas", type: "uint256" },
   { name: "nonce", type: "uint256" },
-  { name: "data", type: "bytes" },
+  { name: "data", type: "bytes" }
 ];
 
 /**
@@ -19,13 +19,13 @@ export const BiconomyForwarderAbi = [
   {
     inputs: [
       { internalType: "address", name: "from", type: "address" },
-      { internalType: "uint256", name: "batchId", type: "uint256" },
+      { internalType: "uint256", name: "batchId", type: "uint256" }
     ],
     name: "getNonce",
     outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
     stateMutability: "view",
-    type: "function",
-  },
+    type: "function"
+  }
 ];
 
 const _nonces: Record<string, BigNumber> = {};
@@ -37,7 +37,7 @@ const _noncesSyncTimestamp: Record<string, number> = {};
 export async function getAndIncrementNonce(
   forwarder: BaseContract,
   forwarderFunction: string,
-  forwarderArgs: any[],
+  forwarderArgs: any[]
 ): Promise<BigNumber> {
   // address is only used for internal caching :)
   const address = forwarderArgs.join("|");
@@ -49,7 +49,7 @@ export async function getAndIncrementNonce(
 
   if (!(address in _nonces) || shouldSync) {
     const nonceResult = await forwarder.functions[forwarderFunction](
-      ...forwarderArgs,
+      ...forwarderArgs
     );
     if (Array.isArray(nonceResult) && nonceResult.length > 0) {
       _nonces[address] = BigNumber.from(nonceResult[0]);

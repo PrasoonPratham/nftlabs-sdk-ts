@@ -6,7 +6,7 @@ import { ethers as hardhatEthers } from "hardhat";
 import {
   CurrencyModule,
   DEFAULT_BLOCK_TIMES_FALLBACK,
-  VoteModule,
+  VoteModule
 } from "../src";
 import { appModule, sdk, signers } from "./before.test";
 
@@ -32,7 +32,7 @@ describe("Vote Module", async () => {
 
     currencyModule = await appModule.deployCurrencyModule({
       name: "DAOToken #1",
-      symbol: "DAO1",
+      symbol: "DAO1"
     });
 
     voteModule = await appModule.deployVoteModule({
@@ -46,13 +46,13 @@ describe("Vote Module", async () => {
 
       minimumNumberOfTokensNeededToPropose: ethers.utils
         .parseUnits("1", 18)
-        .toString(),
+        .toString()
     });
 
     // step 1: mint 1000 governance tokens to my wallet
     await currencyModule.mintTo(
       samWallet.address,
-      ethers.utils.parseUnits("100", 18),
+      ethers.utils.parseUnits("100", 18)
     );
 
     // step 35: later grant role to the vote contract, so the contract can mint more tokens
@@ -75,9 +75,9 @@ describe("Vote Module", async () => {
         nativeTokenValue: 0,
         transactionData: currencyModule.contract.interface.encodeFunctionData(
           "mint",
-          [bobWallet.address, ethers.utils.parseUnits("1", 18)],
-        ),
-      },
+          [bobWallet.address, ethers.utils.parseUnits("1", 18)]
+        )
+      }
     ]);
 
     await voteModule.vote(
@@ -87,7 +87,7 @@ describe("Vote Module", async () => {
       1,
 
       // optional reason, be mindful more character count = more gas.
-      "Reason + Gas :)",
+      "Reason + Gas :)"
     );
 
     // increment 10 blocks
@@ -99,7 +99,7 @@ describe("Vote Module", async () => {
     await voteModule.execute(proposalId.toString());
 
     const balanceOfBobsWallet = await currencyModule.balanceOf(
-      bobWallet.address,
+      bobWallet.address
     );
 
     assert.equal(balanceOfBobsWallet.displayValue, "1.0");
@@ -145,9 +145,9 @@ describe("Vote Module", async () => {
         nativeTokenValue: 0,
         transactionData: currencyModule.contract.interface.encodeFunctionData(
           "mint",
-          [bobWallet.address, ethers.utils.parseUnits("1", 18)],
-        ),
-      },
+          [bobWallet.address, ethers.utils.parseUnits("1", 18)]
+        )
+      }
     ]);
 
     const proposal = await voteModule.get(proposalId.toString());
@@ -160,20 +160,20 @@ describe("Vote Module", async () => {
 
     await samWallet.sendTransaction({
       to: voteModule.address,
-      value: ethers.utils.parseUnits("2", 18),
+      value: ethers.utils.parseUnits("2", 18)
     });
 
     assert.equal(
       (await samWallet.provider.getBalance(voteModule.address)).toString(),
-      ethers.utils.parseUnits("2", 18).toString(),
+      ethers.utils.parseUnits("2", 18).toString()
     );
 
     const proposalId = await voteModule.propose("Transfer 1 ETH", [
       {
         toAddress: bobWallet.address,
         nativeTokenValue: ethers.utils.parseUnits("1", 18),
-        transactionData: "0x",
-      },
+        transactionData: "0x"
+      }
     ]);
 
     await voteModule.vote(
@@ -183,7 +183,7 @@ describe("Vote Module", async () => {
       1,
 
       // optional reason, be mindful more character count = more gas.
-      "Reason + Gas :)",
+      "Reason + Gas :)"
     );
 
     // increment 10 blocks
@@ -200,7 +200,7 @@ describe("Vote Module", async () => {
 
     assert.equal(
       balanceOfBobsWallet.sub(balanceOfBobsWalletBefore).toString(),
-      ethers.utils.parseUnits("1", 18).toString(),
+      ethers.utils.parseUnits("1", 18).toString()
     );
   });
 });

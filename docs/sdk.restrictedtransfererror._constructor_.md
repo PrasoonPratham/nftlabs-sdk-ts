@@ -14,7 +14,6 @@ constructor(assetAddress?: string);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  assetAddress | string |  |
-
+| Parameter    | Type   | Description |
+| ------------ | ------ | ----------- |
+| assetAddress | string |             |

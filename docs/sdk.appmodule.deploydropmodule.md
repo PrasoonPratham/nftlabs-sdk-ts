@@ -14,13 +14,12 @@ deployDropModule(metadata: DropModuleMetadata): Promise<DropModule>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadata | [DropModuleMetadata](./sdk.dropmodulemetadata.md) | The module metadata |
+| Parameter | Type                                              | Description         |
+| --------- | ------------------------------------------------- | ------------------- |
+| metadata  | [DropModuleMetadata](./sdk.dropmodulemetadata.md) | The module metadata |
 
 <b>Returns:</b>
 
 Promise&lt;[DropModule](./sdk.dropmodule.md)<!-- -->&gt;
 
 - The deployed Drop module
-

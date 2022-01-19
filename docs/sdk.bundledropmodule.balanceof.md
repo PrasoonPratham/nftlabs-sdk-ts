@@ -14,10 +14,10 @@ balanceOf(address: string, tokenId: BigNumberish): Promise<BigNumber>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string |  |
-|  tokenId | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| address   | string       |             |
+| tokenId   | BigNumberish |             |
 
 <b>Returns:</b>
 
@@ -29,14 +29,12 @@ Get a wallets NFT balance (number of a specific NFT in this module owned by the 
 
 ## Example
 
-
 ```javascript
 // Address of the wallet to check NFT balance
 const address = "{{wallet_address}}";
 // The token ID of the NFT you want to check the wallets balance of
-const tokenId = "0"
+const tokenId = "0";
 
 const balance = await module.balanceOf(address, tokenId);
 console.log(balance);
 ```
-

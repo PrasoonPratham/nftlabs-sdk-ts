@@ -9,13 +9,12 @@ The shared NFT metadata, including the current owner address.
 <b>Signature:</b>
 
 ```typescript
-export interface NFTMetadataOwner 
+export interface NFTMetadataOwner
 ```
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [metadata](./sdk.nftmetadataowner.metadata.md) | [NFTMetadata](./sdk.nftmetadata.md) |  |
-|  [owner](./sdk.nftmetadataowner.owner.md) | string |  |
-
+| Property                                       | Type                                | Description |
+| ---------------------------------------------- | ----------------------------------- | ----------- |
+| [metadata](./sdk.nftmetadataowner.metadata.md) | [NFTMetadata](./sdk.nftmetadata.md) |             |
+| [owner](./sdk.nftmetadataowner.owner.md)       | string                              |             |

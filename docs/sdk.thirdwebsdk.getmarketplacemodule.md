@@ -5,7 +5,6 @@
 ## ThirdwebSDK.getMarketplaceModule() method
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
 
 <b>Signature:</b>
 
@@ -15,13 +14,12 @@ getMarketplaceModule(address: string): MarketplaceModule;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string | The contract address of the given Marketplace module. |
+| Parameter | Type   | Description                                           |
+| --------- | ------ | ----------------------------------------------------- |
+| address   | string | The contract address of the given Marketplace module. |
 
 <b>Returns:</b>
 
 [MarketplaceModule](./sdk.marketplacemodule.md)
 
 The Marketplace Module.
-

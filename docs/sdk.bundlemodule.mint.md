@@ -12,11 +12,10 @@ mint(args: INFTBundleBatchArgs): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  args | [INFTBundleBatchArgs](./sdk.inftbundlebatchargs.md) |  |
+| Parameter | Type                                                | Description |
+| --------- | --------------------------------------------------- | ----------- |
+| args      | [INFTBundleBatchArgs](./sdk.inftbundlebatchargs.md) |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

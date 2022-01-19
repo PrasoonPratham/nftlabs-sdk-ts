@@ -40,7 +40,7 @@ function languageNameToKey(languageName) {
       return "javascript";
     case "ts":
     case "tsx":
-      return "tyepscript";
+      return "typescript";
     default:
       return languageName;
   }

@@ -14,11 +14,10 @@ setTimeBufferInSeconds(buffer: BigNumberish): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  buffer | BigNumberish | The time buffer in seconds. |
+| Parameter | Type         | Description                 |
+| --------- | ------------ | --------------------------- |
+| buffer    | BigNumberish | The time buffer in seconds. |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

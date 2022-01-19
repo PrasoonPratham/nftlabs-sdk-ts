@@ -12,11 +12,10 @@ getUploadToken(contractAddress: string): Promise<string>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  contractAddress | string |  |
+| Parameter       | Type   | Description |
+| --------------- | ------ | ----------- |
+| contractAddress | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;string&gt;
-

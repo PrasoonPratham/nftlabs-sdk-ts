@@ -12,11 +12,10 @@ getAll(filter?: ListingFilter): Promise<ListingMetadata[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  filter | [ListingFilter](./sdk.listingfilter.md) |  |
+| Parameter | Type                                    | Description |
+| --------- | --------------------------------------- | ----------- |
+| filter    | [ListingFilter](./sdk.listingfilter.md) |             |
 
 <b>Returns:</b>
 
 Promise&lt;[ListingMetadata](./sdk.listingmetadata.md)<!-- -->\[\]&gt;
-

@@ -12,14 +12,13 @@ getGasPrice(speed?: string, maxGasGwei?: number): Promise<number | null>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  speed | string | what speed to prefer, default: "fastest" |
-|  maxGasGwei | number |  |
+| Parameter  | Type   | Description                              |
+| ---------- | ------ | ---------------------------------------- |
+| speed      | string | what speed to prefer, default: "fastest" |
+| maxGasGwei | number |                                          |
 
 <b>Returns:</b>
 
 Promise&lt;number \| null&gt;
 
 the optiomal gas price
-

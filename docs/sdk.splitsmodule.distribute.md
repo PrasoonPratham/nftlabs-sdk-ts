@@ -11,6 +11,7 @@ Distribute Funds
 ```typescript
 distribute(): Promise<void>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;void&gt;
@@ -21,8 +22,6 @@ Distribute funds held by the contract in the native currency to all recipients.
 
 ## Example
 
-
 ```javascript
 await module.distribute();
 ```
-

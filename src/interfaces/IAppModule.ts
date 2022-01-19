@@ -31,7 +31,7 @@ export default interface IAppModule {
   deployNftModule(metadata: NftModuleMetadata): Promise<NFTModule>;
 
   deployCurrencyModule(
-    metadata: CurrencyModuleMetadata,
+    metadata: CurrencyModuleMetadata
   ): Promise<CurrencyModule>;
 
   deployTokenModule(metadata: TokenModuleMetadata): Promise<TokenModule>;
@@ -43,15 +43,15 @@ export default interface IAppModule {
   deployDropModule(metadata: DropModuleMetadata): Promise<DropModule>;
 
   deployBundleDropModule(
-    metadata: BundleDropModuleMetadata,
+    metadata: BundleDropModuleMetadata
   ): Promise<BundleDropModule>;
 
   deployDatastoreModule(
-    metadata: DatastoreModuleMetadata,
+    metadata: DatastoreModuleMetadata
   ): Promise<DatastoreModule>;
 
   deployMarketplaceModule(
-    metadata: MarketplaceModuleMetadata,
+    metadata: MarketplaceModuleMetadata
   ): Promise<MarketplaceModule>;
 
   deployVoteModule(metadata: VoteModuleMetadata): Promise<VoteModule>;

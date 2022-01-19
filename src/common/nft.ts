@@ -3,7 +3,7 @@ import {
   LazyMintERC721,
   LazyNFT,
   NFT,
-  NFTCollection,
+  NFTCollection
 } from "@3rdweb/contracts";
 import { Contract } from "@ethersproject/contracts";
 import { JSONValue, ProviderOrSigner } from "../core/types";
@@ -18,39 +18,39 @@ const tokenUriABI = [
       {
         internalType: "uint256",
         name: "tokenId",
-        type: "uint256",
-      },
+        type: "uint256"
+      }
     ],
     name: "tokenURI",
     outputs: [
       {
         internalType: "string",
         name: "",
-        type: "string",
-      },
+        type: "string"
+      }
     ],
     stateMutability: "view",
-    type: "function",
+    type: "function"
   },
   {
     inputs: [
       {
         internalType: "uint256",
         name: "",
-        type: "uint256",
-      },
+        type: "uint256"
+      }
     ],
     name: "uri",
     outputs: [
       {
         internalType: "string",
         name: "",
-        type: "string",
-      },
+        type: "string"
+      }
     ],
     stateMutability: "view",
-    type: "function",
-  },
+    type: "function"
+  }
 ];
 
 /**
@@ -94,7 +94,7 @@ export async function getMetadataWithoutContract(
   provider: ProviderOrSigner,
   contractAddress: string,
   tokenId: string,
-  ipfsGatewayUrl: string,
+  ipfsGatewayUrl: string
 ): Promise<NFTMetadata> {
   const contract = new Contract(contractAddress, tokenUriABI, provider) as NFT;
   return getTokenMetadata(contract, tokenId, ipfsGatewayUrl);
@@ -106,7 +106,7 @@ export async function getMetadataWithoutContract(
 export async function getTokenMetadata(
   contract: NFTContractTypes,
   tokenId: string,
-  ipfsGatewayUrl: string,
+  ipfsGatewayUrl: string
 ): Promise<NFTMetadata> {
   const uri = await getTokenUri(contract, tokenId);
   if (!uri) {
@@ -120,14 +120,14 @@ export async function getTokenMetadata(
     const entity: NFTMetadata = {
       ...json,
       id: tokenId,
-      uri,
+      uri
     };
     return entity;
   } catch (e) {
     console.error("failed to fetch nft", e);
     return {
       id: tokenId,
-      uri,
+      uri
     };
   }
 }
@@ -136,7 +136,7 @@ export async function getTokenMetadataUsingStorage(
   contractAddress: string,
   provider: ProviderOrSigner,
   tokenId: string,
-  storage: IStorage,
+  storage: IStorage
 ): Promise<NFTMetadata> {
   const contract = new Contract(contractAddress, tokenUriABI, provider) as NFT;
 
@@ -148,14 +148,14 @@ export async function getTokenMetadataUsingStorage(
     const json = JSON.parse(await storage.get(uri));
     const entity: NFTMetadata = {
       ...json,
-      id: tokenId,
+      id: tokenId
     };
     return entity;
   } catch (e) {
     console.error("failed to fetch nft", e);
     return {
       id: tokenId,
-      uri,
+      uri
     };
   }
 }
@@ -165,7 +165,7 @@ export async function getTokenMetadataUsingStorage(
  */
 export async function getTokenUri(
   contract: NFTContractTypes,
-  tokenId: string,
+  tokenId: string
 ): Promise<string> {
   let uri = "";
   try {

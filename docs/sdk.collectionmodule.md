@@ -9,5 +9,5 @@
 ```typescript
 export declare type CollectionModule = BundleModule;
 ```
-<b>References:</b> [BundleModule](./sdk.bundlemodule.md)
 
+<b>References:</b> [BundleModule](./sdk.bundlemodule.md)

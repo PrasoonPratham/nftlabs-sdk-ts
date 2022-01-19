@@ -12,7 +12,7 @@ import {
   ProtocolControl__factory,
   Royalty__factory,
   SignatureMint721__factory,
-  VotingGovernor__factory,
+  VotingGovernor__factory
 } from "@3rdweb/contracts";
 import { AddressZero } from "@ethersproject/constants";
 import { TransactionReceipt } from "@ethersproject/providers";
@@ -25,13 +25,13 @@ import {
   getCurrencyValue,
   isNativeToken,
   Role,
-  RolesMap,
+  RolesMap
 } from "../common";
 import { SUPPORTED_CHAIN_ID } from "../common/chain";
 import { getContractMetadata } from "../common/contract";
 import {
   getCurrencyBalance,
-  getNativeTokenByChainId,
+  getNativeTokenByChainId
 } from "../common/currency";
 import { invariant } from "../common/invariant";
 import { ModuleType } from "../common/module-type";
@@ -52,7 +52,7 @@ import {
   PackModuleMetadata,
   SplitsModuleMetadata,
   TokenModuleMetadata,
-  VoteModuleMetadata,
+  VoteModuleMetadata
 } from "../types/module-deployments";
 import MarketplaceModuleMetadata from "../types/module-deployments/MarketplaceModuleMetadata";
 import { ModuleMetadata, ModuleMetadataNoType } from "../types/ModuleMetadata";
@@ -105,7 +105,7 @@ export class AppModule
   protected connectContract(): ProtocolControl {
     return ProtocolControl__factory.connect(
       this.address,
-      this.providerOrSigner,
+      this.providerOrSigner
     );
   }
 
@@ -154,7 +154,7 @@ export class AppModule
 
   public async getRoyaltyTreasury(address?: string): Promise<string> {
     return await this.readOnlyContract.getRoyaltyTreasury(
-      address || AddressZero,
+      address || AddressZero
     );
   }
 
@@ -163,24 +163,24 @@ export class AppModule
    * @param addresses - The addresses of the modules to get metadata for.
    */
   public async getAllContractMetadata(
-    addresses: string[],
+    addresses: string[]
   ): Promise<ModuleMetadataNoType[]> {
     const metadatas = await Promise.all(
-      addresses.map((address) =>
+      addresses.map(address =>
         getContractMetadata(
           this.providerOrSigner,
           address,
           this.ipfsGatewayUrl,
-          true,
-        ),
-      ),
+          true
+        )
+      )
     );
     return addresses
-      .filter((d) => d)
+      .filter(d => d)
       .map((address, i) => {
         return {
           address,
-          metadata: metadatas[i],
+          metadata: metadatas[i]
         };
       });
   }
@@ -192,10 +192,10 @@ export class AppModule
    */
   public async getPackModules(): Promise<ModuleMetadata[]> {
     return (await this.getAllContractMetadata(await this.getPackAddress())).map(
-      (m) => ({
+      m => ({
         ...m,
-        type: ModuleType.PACK,
-      }),
+        type: ModuleType.PACK
+      })
     );
   }
 
@@ -206,10 +206,10 @@ export class AppModule
    */
   public async getNFTModules(): Promise<ModuleMetadata[]> {
     return (await this.getAllContractMetadata(await this.getNFTAddress())).map(
-      (m) => ({
+      m => ({
         ...m,
-        type: ModuleType.NFT,
-      }),
+        type: ModuleType.NFT
+      })
     );
   }
 
@@ -225,9 +225,9 @@ export class AppModule
   public async getBundleModules(): Promise<ModuleMetadata[]> {
     return (
       await this.getAllContractMetadata(await this.getBundleAddress())
-    ).map((m) => ({
+    ).map(m => ({
       ...m,
-      type: ModuleType.BUNDLE,
+      type: ModuleType.BUNDLE
     }));
   }
 
@@ -239,9 +239,9 @@ export class AppModule
   public async getCurrencyModules(): Promise<ModuleMetadata[]> {
     return (
       await this.getAllContractMetadata(await this.getCurrencyAddress())
-    ).map((m) => ({
+    ).map(m => ({
       ...m,
-      type: ModuleType.CURRENCY,
+      type: ModuleType.CURRENCY
     }));
   }
 
@@ -254,9 +254,9 @@ export class AppModule
   public async getDatastoreModules(): Promise<ModuleMetadata[]> {
     return (
       await this.getAllContractMetadata(await this.getDatastoreAddress())
-    ).map((m) => ({
+    ).map(m => ({
       ...m,
-      type: ModuleType.DATASTORE,
+      type: ModuleType.DATASTORE
     }));
   }
 
@@ -268,9 +268,9 @@ export class AppModule
   public async getMarketModules(): Promise<ModuleMetadata[]> {
     return (
       await this.getAllContractMetadata(await this.getMarketAddress())
-    ).map((m) => ({
+    ).map(m => ({
       ...m,
-      type: ModuleType.MARKET,
+      type: ModuleType.MARKET
     }));
   }
 
@@ -281,10 +281,10 @@ export class AppModule
    */
   public async getDropModules(): Promise<ModuleMetadata[]> {
     return (await this.getAllContractMetadata(await this.getDropAddress())).map(
-      (m) => ({
+      m => ({
         ...m,
-        type: ModuleType.DROP,
-      }),
+        type: ModuleType.DROP
+      })
     );
   }
 
@@ -295,7 +295,7 @@ export class AppModule
    * @returns Array of module metadata
    */
   public async getAllModuleMetadata(
-    filterByModuleType?: ModuleType[],
+    filterByModuleType?: ModuleType[]
   ): Promise<ModuleMetadata[]> {
     const moduleTypesToGet = filterByModuleType || [
       ModuleType.NFT,
@@ -306,19 +306,19 @@ export class AppModule
       ModuleType.DATASTORE,
       ModuleType.DROP,
       ModuleType.BUNDLE_DROP,
-      ModuleType.VOTE,
+      ModuleType.VOTE
     ];
     return (
       await Promise.all(
-        moduleTypesToGet.map(async (moduleType) => {
+        moduleTypesToGet.map(async moduleType => {
           const moduleAddresses = await this.getModuleAddress(moduleType);
           return (await this.getAllContractMetadata(moduleAddresses)).map(
-            (m) => ({
+            m => ({
               ...m,
-              type: moduleType,
-            }),
+              type: moduleType
+            })
           );
-        }),
+        })
       )
     ).reduce((acc, curr) => acc.concat(curr), []);
   }
@@ -347,31 +347,31 @@ export class AppModule
    * @deprecated - Use setMetadata() instead
    */
   public async setModuleMetadata(
-    metadata: MetadataURIOrObject,
+    metadata: MetadataURIOrObject
   ): Promise<TransactionReceipt> {
     const uri = await this.sdk.getStorage().uploadMetadata(metadata);
     return await this.sendTransaction("setContractURI", [uri]);
   }
 
   public async setRoyaltyTreasury(
-    treasury: string,
+    treasury: string
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("setRoyaltyTreasury", [treasury]);
   }
 
   public async setModuleRoyaltyTreasury(
     moduleAddress: string,
-    treasury: string,
+    treasury: string
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("setModuleRoyaltyTreasury", [
       moduleAddress,
-      treasury,
+      treasury
     ]);
   }
 
   public async withdrawFunds(
     to: string,
-    currency: string,
+    currency: string
   ): Promise<TransactionReceipt> {
     const provider = this.readOnlyContract.provider;
     let lastTransaction: TransactionReceipt | null = null;
@@ -391,7 +391,7 @@ export class AppModule
       if (isV2 || isNative) {
         lastTransaction = await this.sendTransaction("withdrawFunds", [
           to,
-          currency,
+          currency
         ]);
       }
     }
@@ -402,24 +402,24 @@ export class AppModule
       const treasuryBalance = await getCurrencyBalance(
         provider,
         currency,
-        treasury,
+        treasury
       );
       if (BigNumber.from(treasuryBalance.value).gt(0)) {
         const royalty = Royalty__factory.connect(
           treasury,
-          this.readOnlyContract.provider,
+          this.readOnlyContract.provider
         );
         if (isNative) {
           lastTransaction = await this.sendContractTransaction(
             royalty,
             "distribute()",
-            [],
+            []
           );
         } else {
           lastTransaction = await this.sendContractTransaction(
             royalty,
             "distribute(address)",
-            [currency],
+            [currency]
           );
         }
       }
@@ -451,7 +451,7 @@ export class AppModule
       .upload(
         metadata.image as FileOrBuffer,
         this.address,
-        await this.getSignerAddress(),
+        await this.getSignerAddress()
       );
     return Promise.resolve(metadata);
   }
@@ -469,7 +469,7 @@ export class AppModule
   private async _deployModule<T extends ModuleType>(
     moduleType: T,
     args: any[],
-    factory: any,
+    factory: any
   ): Promise<string> {
     await this.onlyRoles(["admin"], await this.getSignerAddress());
     const gasPrice = await this.sdk.getGasPrice();
@@ -487,7 +487,7 @@ export class AppModule
     const addModuleTx = await this.contract.addModule(
       contractAddress,
       moduleType,
-      txOpts,
+      txOpts
     );
     await addModuleTx.wait();
     return contractAddress;
@@ -500,11 +500,11 @@ export class AppModule
    * @returns A promise with the newly created module.
    */
   public async deployBundleModule(
-    metadata: BundleModuleMetadata,
+    metadata: BundleModuleMetadata
   ): Promise<CollectionModule> {
     const serializedMetadata = this.jsonConvert.serializeObject(
       await this._prepareMetadata(metadata),
-      BundleModuleMetadata,
+      BundleModuleMetadata
     );
 
     const metadataUri = await this.sdk
@@ -512,7 +512,7 @@ export class AppModule
       .uploadMetadata(
         serializedMetadata,
         this.address,
-        await this.getSignerAddress(),
+        await this.getSignerAddress()
       );
 
     const address = await this._deployModule(
@@ -522,10 +522,10 @@ export class AppModule
         await this.getForwarder(),
         metadataUri,
         BigNumber.from(
-          metadata.sellerFeeBasisPoints ? metadata.sellerFeeBasisPoints : 0,
-        ),
+          metadata.sellerFeeBasisPoints ? metadata.sellerFeeBasisPoints : 0
+        )
       ],
-      NFTCollection__factory,
+      NFTCollection__factory
     );
     if (metadata.feeRecipient && metadata.feeRecipient !== this.address) {
       await this.setModuleRoyaltyTreasury(address, metadata.feeRecipient);
@@ -541,11 +541,11 @@ export class AppModule
    * @returns - The deployed splits module
    */
   public async deploySplitsModule(
-    metadata: SplitsModuleMetadata,
+    metadata: SplitsModuleMetadata
   ): Promise<SplitsModule> {
     const serializedMetadata = this.jsonConvert.serializeObject(
       await this._prepareMetadata(metadata),
-      SplitsModuleMetadata,
+      SplitsModuleMetadata
     );
 
     const metadataUri = await this.sdk
@@ -553,7 +553,7 @@ export class AppModule
       .uploadMetadata(
         serializedMetadata,
         this.address,
-        await this.getSignerAddress(),
+        await this.getSignerAddress()
       );
 
     const address = await this._deployModule(
@@ -562,10 +562,10 @@ export class AppModule
         this.address,
         await this.getForwarder(),
         metadataUri,
-        metadata.recipientSplits.map((s) => s.address),
-        metadata.recipientSplits.map((s) => s.shares),
+        metadata.recipientSplits.map(s => s.address),
+        metadata.recipientSplits.map(s => s.shares)
       ],
-      Royalty__factory,
+      Royalty__factory
     );
 
     return this.sdk.getSplitsModule(address);
@@ -578,11 +578,11 @@ export class AppModule
    * @returns - The deployed NFT module
    */
   public async deployNftModule(
-    metadata: NftModuleMetadata,
+    metadata: NftModuleMetadata
   ): Promise<NFTModule> {
     const serializedMetadata = this.jsonConvert.serializeObject(
       await this._prepareMetadata(metadata),
-      NftModuleMetadata,
+      NftModuleMetadata
     );
 
     const metadataUri = await this.sdk
@@ -590,11 +590,11 @@ export class AppModule
       .uploadMetadata(
         serializedMetadata,
         this.address,
-        await this.getSignerAddress(),
+        await this.getSignerAddress()
       );
 
     const nativeTokenWrapperAddress = getNativeTokenByChainId(
-      await this.getChainID(),
+      await this.getChainID()
     ).wrapped.address;
 
     const address = await this._deployModule(
@@ -612,9 +612,9 @@ export class AppModule
         metadata.sellerFeeBasisPoints,
         metadata.primarySaleFeeBasisPoints
           ? metadata.primarySaleFeeBasisPoints
-          : 0,
+          : 0
       ],
-      SignatureMint721__factory,
+      SignatureMint721__factory
     );
     if (metadata.feeRecipient && metadata.feeRecipient !== this.address) {
       await this.setModuleRoyaltyTreasury(address, metadata.feeRecipient);
@@ -629,11 +629,11 @@ export class AppModule
    * @returns - The deployed currency module
    */
   public async deployCurrencyModule(
-    metadata: CurrencyModuleMetadata,
+    metadata: CurrencyModuleMetadata
   ): Promise<CurrencyModule> {
     const serializedMetadata = this.jsonConvert.serializeObject(
       await this._prepareMetadata(metadata),
-      CurrencyModuleMetadata,
+      CurrencyModuleMetadata
     );
 
     const metadataUri = await this.sdk
@@ -641,7 +641,7 @@ export class AppModule
       .uploadMetadata(
         serializedMetadata,
         this.address,
-        await this.getSignerAddress(),
+        await this.getSignerAddress()
       );
 
     const address = await this._deployModule(
@@ -651,9 +651,9 @@ export class AppModule
         metadata.name,
         metadata.symbol ? metadata.symbol : "",
         await this.getForwarder(),
-        metadataUri,
+        metadataUri
       ],
-      Coin__factory,
+      Coin__factory
     );
 
     return this.sdk.getCurrencyModule(address);
@@ -666,11 +666,11 @@ export class AppModule
    * @returns - The deployed currency module
    */
   public async deployTokenModule(
-    metadata: TokenModuleMetadata,
+    metadata: TokenModuleMetadata
   ): Promise<TokenModule> {
     const serializedMetadata = this.jsonConvert.serializeObject(
       await this._prepareMetadata(metadata),
-      CurrencyModuleMetadata,
+      CurrencyModuleMetadata
     );
 
     const metadataUri = await this.sdk
@@ -678,7 +678,7 @@ export class AppModule
       .uploadMetadata(
         serializedMetadata,
         this.address,
-        await this.getSignerAddress(),
+        await this.getSignerAddress()
       );
 
     const address = await this._deployModule(
@@ -688,9 +688,9 @@ export class AppModule
         metadata.name,
         metadata.symbol ? metadata.symbol : "",
         await this.getForwarder(),
-        metadataUri,
+        metadataUri
       ],
-      Coin__factory,
+      Coin__factory
     );
 
     return this.sdk.getTokenModule(address);
@@ -703,11 +703,11 @@ export class AppModule
    * @returns - The deployed Marketplace module
    */
   public async deployMarketModule(
-    metadata: MarketModuleMetadata,
+    metadata: MarketModuleMetadata
   ): Promise<MarketModule> {
     const serializedMetadata = this.jsonConvert.serializeObject(
       await this._prepareMetadata(metadata),
-      MarketModuleMetadata,
+      MarketModuleMetadata
     );
 
     const metadataUri = await this.sdk
@@ -715,7 +715,7 @@ export class AppModule
       .uploadMetadata(
         serializedMetadata,
         this.address,
-        await this.getSignerAddress(),
+        await this.getSignerAddress()
       );
 
     const address = await this._deployModule(
@@ -724,9 +724,9 @@ export class AppModule
         this.address,
         await this.getForwarder(),
         metadataUri,
-        metadata.marketFeeBasisPoints ? metadata.marketFeeBasisPoints : 0,
+        metadata.marketFeeBasisPoints ? metadata.marketFeeBasisPoints : 0
       ],
-      Market__factory,
+      Market__factory
     );
 
     return this.sdk.getMarketModule(address);
@@ -739,11 +739,11 @@ export class AppModule
    * @returns - The deployed Pack module
    */
   public async deployPackModule(
-    metadata: PackModuleMetadata,
+    metadata: PackModuleMetadata
   ): Promise<PackModule> {
     const serializedMetadata = this.jsonConvert.serializeObject(
       await this._prepareMetadata(metadata),
-      PackModuleMetadata,
+      PackModuleMetadata
     );
 
     const metadataUri = await this.sdk
@@ -751,7 +751,7 @@ export class AppModule
       .uploadMetadata(
         serializedMetadata,
         this.address,
-        await this.getSignerAddress(),
+        await this.getSignerAddress()
       );
 
     const chainId = await this.getChainID();
@@ -768,9 +768,9 @@ export class AppModule
         keyHash,
         fees,
         await this.getForwarder(),
-        metadata.sellerFeeBasisPoints ? metadata.sellerFeeBasisPoints : 0,
+        metadata.sellerFeeBasisPoints ? metadata.sellerFeeBasisPoints : 0
       ],
-      Pack__factory,
+      Pack__factory
     );
     if (metadata.feeRecipient && metadata.feeRecipient !== this.address) {
       await this.setModuleRoyaltyTreasury(address, metadata.feeRecipient);
@@ -785,17 +785,17 @@ export class AppModule
    * @returns - The deployed Drop module
    */
   public async deployDropModule(
-    metadata: DropModuleMetadata,
+    metadata: DropModuleMetadata
   ): Promise<DropModule> {
     invariant(
       metadata.primarySaleRecipientAddress !== "" &&
         isAddress(metadata.primarySaleRecipientAddress),
-      "Primary sale recipient address must be specified and must be a valid address",
+      "Primary sale recipient address must be specified and must be a valid address"
     );
 
     const serializedMetadata = this.jsonConvert.serializeObject(
       await this._prepareMetadata(metadata),
-      DropModuleMetadata,
+      DropModuleMetadata
     );
 
     const metadataUri = await this.sdk
@@ -803,11 +803,11 @@ export class AppModule
       .uploadMetadata(
         serializedMetadata,
         this.address,
-        await this.getSignerAddress(),
+        await this.getSignerAddress()
       );
 
     const nativeTokenWrapperAddress = getNativeTokenByChainId(
-      await this.getChainID(),
+      await this.getChainID()
     ).wrapped.address;
 
     const address = await this._deployModule(
@@ -823,9 +823,9 @@ export class AppModule
         metadata.sellerFeeBasisPoints ? metadata.sellerFeeBasisPoints : 0,
         metadata.primarySaleFeeBasisPoints
           ? metadata.primarySaleFeeBasisPoints
-          : 0,
+          : 0
       ],
-      LazyMintERC721__factory,
+      LazyMintERC721__factory
     );
     if (metadata.feeRecipient && metadata.feeRecipient !== this.address) {
       await this.setModuleRoyaltyTreasury(address, metadata.feeRecipient);
@@ -840,17 +840,17 @@ export class AppModule
    * @returns - The deployed Bundle Drop module
    */
   public async deployBundleDropModule(
-    metadata: BundleDropModuleMetadata,
+    metadata: BundleDropModuleMetadata
   ): Promise<BundleDropModule> {
     invariant(
       metadata.primarySaleRecipientAddress !== "" &&
         isAddress(metadata.primarySaleRecipientAddress),
-      "Primary sale recipient address must be specified and must be a valid address",
+      "Primary sale recipient address must be specified and must be a valid address"
     );
 
     const serializedMetadata = this.jsonConvert.serializeObject(
       await this._prepareMetadata(metadata),
-      DropModuleMetadata,
+      DropModuleMetadata
     );
 
     const metadataUri = await this.sdk
@@ -858,11 +858,11 @@ export class AppModule
       .uploadMetadata(
         serializedMetadata,
         this.address,
-        await this.getSignerAddress(),
+        await this.getSignerAddress()
       );
 
     const nativeTokenWrapperAddress = getNativeTokenByChainId(
-      await this.getChainID(),
+      await this.getChainID()
     ).wrapped.address;
 
     const address = await this._deployModule(
@@ -876,9 +876,9 @@ export class AppModule
         metadata.sellerFeeBasisPoints ? metadata.sellerFeeBasisPoints : 0,
         metadata.primarySaleFeeBasisPoints
           ? metadata.primarySaleFeeBasisPoints
-          : 0,
+          : 0
       ],
-      LazyMintERC1155__factory,
+      LazyMintERC1155__factory
     );
     if (metadata.feeRecipient && metadata.feeRecipient !== this.address) {
       await this.setModuleRoyaltyTreasury(address, metadata.feeRecipient);
@@ -894,11 +894,11 @@ export class AppModule
    * @returns - The deployed Datastore module
    */
   public async deployDatastoreModule(
-    metadata: DatastoreModuleMetadata,
+    metadata: DatastoreModuleMetadata
   ): Promise<DatastoreModule> {
     const serializedMetadata = this.jsonConvert.serializeObject(
       await this._prepareMetadata(metadata),
-      DatastoreModuleMetadata,
+      DatastoreModuleMetadata
     );
 
     const metadataUri = await this.sdk
@@ -906,13 +906,13 @@ export class AppModule
       .uploadMetadata(
         serializedMetadata,
         this.address,
-        await this.getSignerAddress(),
+        await this.getSignerAddress()
       );
 
     const address = await this._deployModule(
       ModuleType.DATASTORE,
       [this.address, await this.getForwarder(), metadataUri],
-      DataStore__factory,
+      DataStore__factory
     );
 
     return this.sdk.getDatastoreModule(address);
@@ -925,17 +925,17 @@ export class AppModule
    * @returns - The deployed vote module
    */
   public async deployVoteModule(
-    metadata: VoteModuleMetadata,
+    metadata: VoteModuleMetadata
   ): Promise<VoteModule> {
     invariant(
       metadata.votingTokenAddress !== "" &&
         isAddress(metadata.votingTokenAddress),
-      "Voting Token Address must be a valid address",
+      "Voting Token Address must be a valid address"
     );
     invariant(
       metadata.votingQuorumFraction >= 0 &&
         metadata.votingQuorumFraction <= 100,
-      "Quofrum Fraction must be in the range of 0-100 representing percentage",
+      "Quofrum Fraction must be in the range of 0-100 representing percentage"
     );
 
     const chainId = await this.getChainID();
@@ -956,7 +956,7 @@ export class AppModule
     try {
       await Coin__factory.connect(
         metadata.votingTokenAddress,
-        this.readOnlyContract.provider,
+        this.readOnlyContract.provider
       ).callStatic.getPastTotalSupply(0);
     } catch (e) {
       invariant(false, "Token is not compatible with the vote module");
@@ -964,7 +964,7 @@ export class AppModule
 
     const serializedMetadata = this.jsonConvert.serializeObject(
       await this._prepareMetadata(metadata),
-      VoteModuleMetadata,
+      VoteModuleMetadata
     );
 
     const metadataUri = await this.sdk
@@ -972,7 +972,7 @@ export class AppModule
       .uploadMetadata(
         serializedMetadata,
         this.address,
-        await this.getSignerAddress(),
+        await this.getSignerAddress()
       );
 
     const address = await this._deployModule(
@@ -985,9 +985,9 @@ export class AppModule
         metadata.minimumNumberOfTokensNeededToPropose,
         metadata.votingQuorumFraction,
         await this.getForwarder(),
-        metadataUri,
+        metadataUri
       ],
-      VotingGovernor__factory,
+      VotingGovernor__factory
     );
 
     return this.sdk.getVoteModule(address);
@@ -997,7 +997,7 @@ export class AppModule
     if (await this.isV1()) {
       const isAdmin = await this.readOnlyContract.hasRole(
         ethers.utils.hexZeroPad([0], 32),
-        await this.getSignerAddress(),
+        await this.getSignerAddress()
       );
       if (isAdmin && (await this.getRoyaltyTreasury()) === this.address) {
         return true;
@@ -1024,11 +1024,11 @@ export class AppModule
       ModuleType.BUNDLE,
       ModuleType.PACK,
       ModuleType.DROP,
-      ModuleType.BUNDLE_DROP,
+      ModuleType.BUNDLE_DROP
     ]);
     return modules.filter(
-      (m) =>
-        m.metadata?.fee_recipient?.toLowerCase() === this.address.toLowerCase(),
+      m =>
+        m.metadata?.fee_recipient?.toLowerCase() === this.address.toLowerCase()
     );
   }
 
@@ -1037,42 +1037,42 @@ export class AppModule
     invariant(signer, "needs a signer");
 
     const allUpgradableModules = await this.shouldUpgradeModuleList();
-    const upgradableModules = allUpgradableModules.filter((m) =>
-      moduleAddresses.includes(m.address),
+    const upgradableModules = allUpgradableModules.filter(m =>
+      moduleAddresses.includes(m.address)
     );
 
     // since all the modules consistent / similar for contractURI (get and set),
     // we just pretend everything is NFT module :)
     const moduleMetadatas = await Promise.all(
-      upgradableModules.map((m) =>
-        this.sdk.getNFTModule(m.address).getMetadata(false),
-      ),
+      upgradableModules.map(m =>
+        this.sdk.getNFTModule(m.address).getMetadata(false)
+      )
     );
 
     const royaltyTreasury = await this.getRoyaltyTreasury();
 
     // map to address, new updated metadata
     const metadataUris = await Promise.all(
-      moduleMetadatas.map((m) => {
+      moduleMetadatas.map(m => {
         return this.sdk.getStorage().uploadMetadata({
           ...m.metadata,
-          fee_recipient: royaltyTreasury,
+          fee_recipient: royaltyTreasury
         });
-      }),
+      })
     );
 
     const nonce = await signer.getTransactionCount("pending");
-    const txData = metadataUris.map((uri) =>
-      this.contract.interface.encodeFunctionData("setContractURI", [uri]),
+    const txData = metadataUris.map(uri =>
+      this.contract.interface.encodeFunctionData("setContractURI", [uri])
     );
     const txs = txData.map((data, i) => ({
       to: moduleMetadatas[i].address,
       nonce: nonce + i,
-      data,
+      data
     }));
 
     // batch send :)
-    await Promise.all(txs.map((tx) => signer.sendTransaction(tx)));
+    await Promise.all(txs.map(tx => signer.sendTransaction(tx)));
   }
 
   /**
@@ -1085,7 +1085,7 @@ export class AppModule
     upgradeOptions: {
       splitsModuleAddress?: string;
       splitsRecipients?: NewSplitRecipient[];
-    } = {},
+    } = {}
   ): Promise<void> {
     if (await this.isV1UpgradedOrV2()) {
       return;
@@ -1099,8 +1099,8 @@ export class AppModule
         upgradeOptions.splitsRecipients = [
           {
             address: await this.getSignerAddress(),
-            shares: 100,
-          },
+            shares: 100
+          }
         ];
       }
 
@@ -1108,7 +1108,7 @@ export class AppModule
       splitsAddress = (
         await this.deploySplitsModule({
           name: `${metadata?.name} Treasury`,
-          recipientSplits: upgradeOptions.splitsRecipients,
+          recipientSplits: upgradeOptions.splitsRecipients
         })
       ).address;
     }
@@ -1123,14 +1123,14 @@ export class AppModule
    */
   public async balance(): Promise<BigNumber> {
     const projectBalance = await this.readOnlyContract.provider.getBalance(
-      this.address,
+      this.address
     );
 
     let treasuryBalance = BigNumber.from(0);
     const treasury = await this.getRoyaltyTreasury();
     if (treasury !== this.address) {
       treasuryBalance = await this.readOnlyContract.provider.getBalance(
-        treasury,
+        treasury
       );
     }
 
@@ -1150,7 +1150,7 @@ export class AppModule
     } else {
       const erc20 = ERC20__factory.connect(
         tokenAddress,
-        this.readOnlyContract.provider,
+        this.readOnlyContract.provider
       );
 
       // TODO: multicall :)
@@ -1199,11 +1199,11 @@ export class AppModule
   }
 
   public async deployMarketplaceModule(
-    metadata: MarketplaceModuleMetadata,
+    metadata: MarketplaceModuleMetadata
   ): Promise<MarketplaceModule> {
     const serializedMetadata = this.jsonConvert.serializeObject(
       await this._prepareMetadata(metadata),
-      MarketplaceModuleMetadata,
+      MarketplaceModuleMetadata
     );
 
     const metadataUri = await this.sdk
@@ -1211,11 +1211,11 @@ export class AppModule
       .uploadMetadata(
         serializedMetadata,
         this.address,
-        await this.getSignerAddress(),
+        await this.getSignerAddress()
       );
 
     const nativeTokenWrapperAddress = getNativeTokenByChainId(
-      await this.getChainID(),
+      await this.getChainID()
     ).wrapped.address;
 
     const address = await this._deployModule(
@@ -1225,9 +1225,9 @@ export class AppModule
         await this.getForwarder(),
         nativeTokenWrapperAddress,
         metadataUri,
-        metadata.marketFeeBasisPoints,
+        metadata.marketFeeBasisPoints
       ],
-      Marketplace__factory,
+      Marketplace__factory
     );
 
     return this.sdk.getMarketplaceModule(address);

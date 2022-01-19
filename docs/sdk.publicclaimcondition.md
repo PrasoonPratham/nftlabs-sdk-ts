@@ -5,25 +5,22 @@
 ## PublicClaimCondition interface
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 
 <b>Signature:</b>
 
 ```typescript
-export interface PublicClaimCondition 
+export interface PublicClaimCondition
 ```
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [currency](./sdk.publicclaimcondition.currency.md) | string | <b><i>(BETA)</i></b> |
-|  [currentMintSupply](./sdk.publicclaimcondition.currentmintsupply.md) | BigNumberish | <b><i>(BETA)</i></b> |
-|  [maxMintSupply](./sdk.publicclaimcondition.maxmintsupply.md) | BigNumberish | <b><i>(BETA)</i></b> |
-|  [merkleRoot](./sdk.publicclaimcondition.merkleroot.md) | BytesLike | <b><i>(BETA)</i></b> |
-|  [pricePerToken](./sdk.publicclaimcondition.pricepertoken.md) | BigNumberish | <b><i>(BETA)</i></b> |
-|  [quantityLimitPerTransaction](./sdk.publicclaimcondition.quantitylimitpertransaction.md) | BigNumberish | <b><i>(BETA)</i></b> |
-|  [startTimestamp](./sdk.publicclaimcondition.starttimestamp.md) | BigNumber | <b><i>(BETA)</i></b> |
-|  [waitTimeSecondsLimitPerTransaction](./sdk.publicclaimcondition.waittimesecondslimitpertransaction.md) | BigNumberish | <b><i>(BETA)</i></b> |
-
+| Property                                                                                               | Type         | Description          |
+| ------------------------------------------------------------------------------------------------------ | ------------ | -------------------- |
+| [currency](./sdk.publicclaimcondition.currency.md)                                                     | string       | <b><i>(BETA)</i></b> |
+| [currentMintSupply](./sdk.publicclaimcondition.currentmintsupply.md)                                   | BigNumberish | <b><i>(BETA)</i></b> |
+| [maxMintSupply](./sdk.publicclaimcondition.maxmintsupply.md)                                           | BigNumberish | <b><i>(BETA)</i></b> |
+| [merkleRoot](./sdk.publicclaimcondition.merkleroot.md)                                                 | BytesLike    | <b><i>(BETA)</i></b> |
+| [pricePerToken](./sdk.publicclaimcondition.pricepertoken.md)                                           | BigNumberish | <b><i>(BETA)</i></b> |
+| [quantityLimitPerTransaction](./sdk.publicclaimcondition.quantitylimitpertransaction.md)               | BigNumberish | <b><i>(BETA)</i></b> |
+| [startTimestamp](./sdk.publicclaimcondition.starttimestamp.md)                                         | BigNumber    | <b><i>(BETA)</i></b> |
+| [waitTimeSecondsLimitPerTransaction](./sdk.publicclaimcondition.waittimesecondslimitpertransaction.md) | BigNumberish | <b><i>(BETA)</i></b> |

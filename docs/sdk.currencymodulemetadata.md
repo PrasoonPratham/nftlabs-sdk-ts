@@ -7,13 +7,13 @@
 <b>Signature:</b>
 
 ```typescript
-export declare class CurrencyModuleMetadata extends CommonModuleMetadata 
+export declare class CurrencyModuleMetadata extends CommonModuleMetadata
 ```
+
 <b>Extends:</b> [CommonModuleMetadata](./sdk.commonmodulemetadata.md)
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [symbol](./sdk.currencymodulemetadata.symbol.md) |  | string | The symbol for the Currency (required) |
-
+| Property                                         | Modifiers | Type   | Description                            |
+| ------------------------------------------------ | --------- | ------ | -------------------------------------- |
+| [symbol](./sdk.currencymodulemetadata.symbol.md) |           | string | The symbol for the Currency (required) |

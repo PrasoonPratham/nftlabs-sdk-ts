@@ -5,7 +5,6 @@
 ## ThirdwebSDK.getBundleDropModule() method
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
 
 <b>Signature:</b>
 
@@ -15,13 +14,12 @@ getBundleDropModule(address: string): BundleDropModule;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string | The contract address of the given BundleDrop module. |
+| Parameter | Type   | Description                                          |
+| --------- | ------ | ---------------------------------------------------- |
+| address   | string | The contract address of the given BundleDrop module. |
 
 <b>Returns:</b>
 
 [BundleDropModule](./sdk.bundledropmodule.md)
 
 The Drop Module.
-

@@ -12,12 +12,11 @@ burnFrom(from: string, amount: BigNumberish): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  from | string |  |
-|  amount | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| from      | string       |             |
+| amount    | BigNumberish |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

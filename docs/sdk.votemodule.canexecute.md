@@ -14,9 +14,9 @@ canExecute(proposalId: string): Promise<boolean>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  proposalId | string | The proposal ID to check. |
+| Parameter  | Type   | Description               |
+| ---------- | ------ | ------------------------- |
+| proposalId | string | The proposal ID to check. |
 
 <b>Returns:</b>
 
@@ -30,11 +30,9 @@ Check if a proposal can be executed (if the proposal has succeeded).
 
 ## Example
 
-
 ```javascript
 // The proposal ID of the proposal you want to check
 const proposalId = "0";
 const canExecute = await module.canExecute(proposalId);
 console.log(canExecute);
 ```
-

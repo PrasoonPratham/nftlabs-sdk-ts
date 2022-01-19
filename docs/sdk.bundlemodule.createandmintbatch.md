@@ -14,9 +14,9 @@ createAndMintBatch(metadataWithSupply: INFTBundleCreateArgs[]): Promise<BundleMe
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadataWithSupply | [INFTBundleCreateArgs](./sdk.inftbundlecreateargs.md)<!-- -->\[\] |  |
+| Parameter          | Type                                                              | Description |
+| ------------------ | ----------------------------------------------------------------- | ----------- |
+| metadataWithSupply | [INFTBundleCreateArgs](./sdk.inftbundlecreateargs.md)<!-- -->\[\] |             |
 
 <b>Returns:</b>
 
@@ -28,25 +28,26 @@ Mint many different NFTs with specified supplies.
 
 ## Example
 
-
 ```javascript
 // Custom metadata and supplies of your NFTs
-const metadataWithSupply = [{
-  supply: 1, // The number of this NFT you want to mint
-  metadata: {
-    name: "Cool NFT #1",
-    description: "This is a cool NFT",
-    image: fs.readFileSync("path/to/image.png"), // This can be an image url or file
+const metadataWithSupply = [
+  {
+    supply: 1, // The number of this NFT you want to mint
+    metadata: {
+      name: "Cool NFT #1",
+      description: "This is a cool NFT",
+      image: fs.readFileSync("path/to/image.png") // This can be an image url or file
+    }
   },
-}, {
-  supply: 1,
-  metadata: {
-    name: "Cool NFT #2",
-    description: "This is a cool NFT",
-    image: fs.readFileSync("path/to/image.png"), // This can be an image url or file
-  },
-}];
+  {
+    supply: 1,
+    metadata: {
+      name: "Cool NFT #2",
+      description: "This is a cool NFT",
+      image: fs.readFileSync("path/to/image.png") // This can be an image url or file
+    }
+  }
+];
 
 await module.createAndMintBatch(metadataWithSupply);
 ```
-

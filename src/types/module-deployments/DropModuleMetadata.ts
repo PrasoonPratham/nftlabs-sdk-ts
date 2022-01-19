@@ -1,7 +1,7 @@
 import {
   JsonObject,
   JsonProperty,
-  PropertyConvertingMode,
+  PropertyConvertingMode
 } from "json2typescript";
 import { CommonModuleMetadata } from "./CommonModuleMetadata";
 
@@ -18,7 +18,7 @@ export class DropModuleMetadata extends CommonModuleMetadata {
   @JsonProperty(
     "seller_fee_basis_points",
     Number,
-    PropertyConvertingMode.IGNORE_NULLABLE,
+    PropertyConvertingMode.IGNORE_NULLABLE
   )
   sellerFeeBasisPoints? = 0;
 
@@ -38,7 +38,7 @@ export class DropModuleMetadata extends CommonModuleMetadata {
   @JsonProperty(
     "primary_sale_fee_basis_points",
     Number,
-    PropertyConvertingMode.IGNORE_NULLABLE,
+    PropertyConvertingMode.IGNORE_NULLABLE
   )
   primarySaleFeeBasisPoints? = 0;
 
@@ -94,7 +94,7 @@ export class DropModuleMetadata extends CommonModuleMetadata {
   @JsonProperty(
     "base_token_uri",
     String,
-    PropertyConvertingMode.IGNORE_NULLABLE,
+    PropertyConvertingMode.IGNORE_NULLABLE
   )
   baseTokenUri? = "";
 }

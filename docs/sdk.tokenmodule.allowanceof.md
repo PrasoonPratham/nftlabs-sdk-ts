@@ -14,10 +14,10 @@ allowanceOf(owner: string, spender: string): Promise<BigNumber>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  owner | string |  |
-|  spender | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| owner     | string |             |
+| spender   | string |             |
 
 <b>Returns:</b>
 
@@ -31,7 +31,6 @@ Get the allowance of one wallet over another's funds - the allowance of a differ
 
 ## Example
 
-
 ```javascript
 // Address of the wallet who owns the funds
 const address = "{{wallet_address}}";
@@ -42,4 +41,3 @@ const otherAddress = "0x...";
 const allowance = await module.allowanceOf(otherAddress);
 console.log(allowance);
 ```
-

@@ -22,7 +22,7 @@ describe("Token Module", async () => {
     sdk.setProviderOrSigner(adminWallet);
     currencyModule = await appModule.deployCurrencyModule({
       name: "Currency Module",
-      symbol: "TEST",
+      symbol: "TEST"
     });
   });
 
@@ -30,21 +30,21 @@ describe("Token Module", async () => {
     const batch = [
       {
         address: bobWallet.address,
-        toMint: 10,
+        toMint: 10
       },
       {
         address: samWallet.address,
-        toMint: 10,
-      },
+        toMint: 10
+      }
     ];
 
     await currencyModule.mintBatchTo(
-      batch.map((x) => {
+      batch.map(x => {
         return {
           address: x.address,
-          amount: x.toMint,
+          amount: x.toMint
         };
-      }),
+      })
     );
 
     for (const b of batch) {
@@ -54,7 +54,7 @@ describe("Token Module", async () => {
       assert.equal(
         actualBalance,
         expectedBalance.toString(),
-        `Wallet balance should increase by ${b.toMint}`,
+        `Wallet balance should increase by ${b.toMint}`
       );
     }
   });
@@ -65,9 +65,9 @@ describe("Token Module", async () => {
       samWallet.address,
       adminWallet.address,
       "0xd8Ceb88D81a30e615024024E3fDeB711690EeD92",
-      "0x59AA5E78bbC415E2e00F78a5E713F0A99C7645af",
+      "0x59AA5E78bbC415E2e00F78a5E713F0A99C7645af"
     ];
-    addresses.forEach(async (address) => {
+    addresses.forEach(async address => {
       await currencyModule.mintTo(address, 10);
       const totest = await currencyModule.balanceOf(address);
       chai.assert.equal(totest.value, "10");

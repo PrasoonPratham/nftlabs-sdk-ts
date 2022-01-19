@@ -7,19 +7,18 @@
 <b>Signature:</b>
 
 ```typescript
-export declare enum ProposalState 
+export declare enum ProposalState
 ```
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  Active | <code>1</code> |  |
-|  Canceled | <code>2</code> |  |
-|  Defeated | <code>3</code> |  |
-|  Executed | <code>7</code> |  |
-|  Expired | <code>6</code> |  |
-|  Pending | <code>0</code> |  |
-|  Queued | <code>5</code> |  |
-|  Succeeded | <code>4</code> |  |
-
+| Member    | Value          | Description |
+| --------- | -------------- | ----------- |
+| Active    | <code>1</code> |             |
+| Canceled  | <code>2</code> |             |
+| Defeated  | <code>3</code> |             |
+| Executed  | <code>7</code> |             |
+| Expired   | <code>6</code> |             |
+| Pending   | <code>0</code> |             |
+| Queued    | <code>5</code> |             |
+| Succeeded | <code>4</code> |             |

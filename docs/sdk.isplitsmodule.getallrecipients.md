@@ -11,7 +11,7 @@ Returns a list of all recipients with their respective split percentages.
 ```typescript
 getAllRecipients(): Promise<SplitRecipient[]>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;[SplitRecipient](./sdk.splitrecipient.md)<!-- -->\[\]&gt;
-

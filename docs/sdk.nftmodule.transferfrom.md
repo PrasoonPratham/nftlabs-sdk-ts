@@ -12,13 +12,12 @@ transferFrom(from: string, to: string, tokenId: BigNumberish): Promise<Transacti
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  from | string |  |
-|  to | string |  |
-|  tokenId | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| from      | string       |             |
+| to        | string       |             |
+| tokenId   | BigNumberish |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

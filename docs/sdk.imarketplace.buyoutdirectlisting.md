@@ -19,11 +19,10 @@ buyoutDirectListing(buyout: {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  buyout | { listingId: BigNumberish; quantityDesired: BigNumberish; } |  |
+| Parameter | Type                                                        | Description |
+| --------- | ----------------------------------------------------------- | ----------- |
+| buyout    | { listingId: BigNumberish; quantityDesired: BigNumberish; } |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

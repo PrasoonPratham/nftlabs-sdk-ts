@@ -11,6 +11,7 @@ Get NFT Data
 ```typescript
 getAll(): Promise<BundleDropMetadata[]>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;[BundleDropMetadata](./sdk.bundledropmetadata.md)<!-- -->\[\]&gt;
@@ -23,10 +24,8 @@ Get data associated with NFTs in this module.
 
 ## Example
 
-
 ```javascript
 // Get data associated with every NFT in the module
 const nfts = await module.getAll();
 console.log(nfts);
 ```
-

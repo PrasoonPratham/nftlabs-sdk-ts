@@ -12,11 +12,10 @@ export declare function getNativeTokenByChainId(chainId: ChainId): NativeToken;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  chainId | ChainId |  |
+| Parameter | Type    | Description |
+| --------- | ------- | ----------- |
+| chainId   | ChainId |             |
 
 <b>Returns:</b>
 
 [NativeToken](./sdk.nativetoken.md)
-

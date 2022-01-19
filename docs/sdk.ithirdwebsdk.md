@@ -7,12 +7,11 @@
 <b>Signature:</b>
 
 ```typescript
-export default interface IThirdwebSdk 
+export default interface IThirdwebSdk
 ```
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [createSnapshot(leafs)](./sdk.ithirdwebsdk.createsnapshot.md) | <b><i>(BETA)</i></b> Creates a snapshot from a list of leafs. The leafs could be addresses, hashes, etc.<!-- -->- This method is still in beta and the API is subject to change. |
-
+| Method                                                        | Description                                                                                                                                                                      |
+| ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [createSnapshot(leafs)](./sdk.ithirdwebsdk.createsnapshot.md) | <b><i>(BETA)</i></b> Creates a snapshot from a list of leafs. The leafs could be addresses, hashes, etc.<!-- -->- This method is still in beta and the API is subject to change. |

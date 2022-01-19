@@ -14,11 +14,10 @@ setForwarder(address: string): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string | The address of the trusted forwarder contract |
+| Parameter | Type   | Description                                   |
+| --------- | ------ | --------------------------------------------- |
+| address   | string | The address of the trusted forwarder contract |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

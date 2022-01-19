@@ -14,13 +14,12 @@ createDirectListing(listing: NewDirectListing): Promise<BigNumber>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listing | [NewDirectListing](./sdk.newdirectlisting.md) | The new direct listing to create. |
+| Parameter | Type                                          | Description                       |
+| --------- | --------------------------------------------- | --------------------------------- |
+| listing   | [NewDirectListing](./sdk.newdirectlisting.md) | The new direct listing to create. |
 
 <b>Returns:</b>
 
 Promise&lt;BigNumber&gt;
 
 - The ID of the newly created listing.
-

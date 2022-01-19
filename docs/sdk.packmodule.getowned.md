@@ -14,13 +14,12 @@ getOwned(_address?: string): Promise<PackMetadataWithBalance[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  \_address | string | The address to check for token ownership |
+| Parameter | Type   | Description                              |
+| --------- | ------ | ---------------------------------------- |
+| \_address | string | The address to check for token ownership |
 
 <b>Returns:</b>
 
 Promise&lt;[PackMetadataWithBalance](./sdk.packmetadatawithbalance.md)<!-- -->\[\]&gt;
 
 An array of PackMetadataWithBalance objects that are owned by the address
-

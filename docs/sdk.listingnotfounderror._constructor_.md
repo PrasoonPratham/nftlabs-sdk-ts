@@ -14,8 +14,7 @@ constructor(marketplaceContractAddress: string, listingId?: string);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  marketplaceContractAddress | string |  |
-|  listingId | string |  |
-
+| Parameter                  | Type   | Description |
+| -------------------------- | ------ | ----------- |
+| marketplaceContractAddress | string |             |
+| listingId                  | string |             |

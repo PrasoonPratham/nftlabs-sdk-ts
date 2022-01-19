@@ -14,10 +14,9 @@ constructor(marketplaceContractAddress: string, listingId?: string, actualType?:
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  marketplaceContractAddress | string |  |
-|  listingId | string |  |
-|  actualType | string |  |
-|  expectedType | string |  |
-
+| Parameter                  | Type   | Description |
+| -------------------------- | ------ | ----------- |
+| marketplaceContractAddress | string |             |
+| listingId                  | string |             |
+| actualType                 | string |             |
+| expectedType               | string |             |

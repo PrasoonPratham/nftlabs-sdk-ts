@@ -12,12 +12,11 @@ verify(mintRequest: SignaturePayload, signature: string): Promise<boolean>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  mintRequest | [SignaturePayload](./sdk.signaturepayload.md) |  |
-|  signature | string |  |
+| Parameter   | Type                                          | Description |
+| ----------- | --------------------------------------------- | ----------- |
+| mintRequest | [SignaturePayload](./sdk.signaturepayload.md) |             |
+| signature   | string                                        |             |
 
 <b>Returns:</b>
 
 Promise&lt;boolean&gt;
-

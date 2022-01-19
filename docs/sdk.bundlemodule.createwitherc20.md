@@ -12,13 +12,12 @@ createWithErc20(tokenContract: string, tokenAmount: BigNumberish, args: INFTBund
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenContract | string |  |
-|  tokenAmount | BigNumberish |  |
-|  args | [INFTBundleCreateArgs](./sdk.inftbundlecreateargs.md) |  |
+| Parameter     | Type                                                  | Description |
+| ------------- | ----------------------------------------------------- | ----------- |
+| tokenContract | string                                                |             |
+| tokenAmount   | BigNumberish                                          |             |
+| args          | [INFTBundleCreateArgs](./sdk.inftbundlecreateargs.md) |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

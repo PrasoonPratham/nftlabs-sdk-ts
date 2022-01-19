@@ -5,7 +5,7 @@ import {
   Currency,
   CurrencyValue,
   getCurrencyMetadata,
-  getCurrencyValue,
+  getCurrencyValue
 } from "../common/currency";
 import { Module } from "../core/module";
 import { SplitRecipient } from "../types/SplitRecipient";
@@ -42,7 +42,7 @@ export interface ISplitsModule {
    */
   balanceOfToken(
     walletAddress: string,
-    tokenAddress: string,
+    tokenAddress: string
   ): Promise<CurrencyValue>;
 
   /**
@@ -137,7 +137,7 @@ export class SplitsModule extends Module<Royalty> implements ISplitsModule {
       try {
         const recipientAddress = await this.readOnlyContract.payee(index);
         recipients.push(
-          await this.getRecipientSplitPercentage(recipientAddress),
+          await this.getRecipientSplitPercentage(recipientAddress)
         );
         index = index.add(1);
       } catch (err: any) {
@@ -183,25 +183,24 @@ export class SplitsModule extends Module<Royalty> implements ISplitsModule {
     for (const recipient of recipients) {
       balances[recipient.address] = await this.balanceOfToken(
         recipient.address,
-        tokenAddress,
+        tokenAddress
       );
     }
     return balances;
   }
   public async getRecipientSplitPercentage(
-    address: string,
+    address: string
   ): Promise<SplitRecipient> {
     const [totalShares, walletsShares] = await Promise.all([
       this.readOnlyContract.totalShares(),
-      this.readOnlyContract.shares(address),
+      this.readOnlyContract.shares(address)
     ]);
 
     // We convert to basis points to avoid floating point loss of precision
     return {
       address,
       splitPercentage:
-        walletsShares.mul(BigNumber.from(1e7)).div(totalShares).toNumber() /
-        1e5,
+        walletsShares.mul(BigNumber.from(1e7)).div(totalShares).toNumber() / 1e5
     };
   }
 
@@ -220,7 +219,7 @@ export class SplitsModule extends Module<Royalty> implements ISplitsModule {
    */
   public async balanceOf(address: string): Promise<BigNumber> {
     const walletBalance = await this.readOnlyContract.provider.getBalance(
-      this.address,
+      this.address
     );
     const totalReleased = await this.readOnlyContract["totalReleased()"]();
     const totalReceived = walletBalance.add(totalReleased);
@@ -228,7 +227,7 @@ export class SplitsModule extends Module<Royalty> implements ISplitsModule {
     return this._pendingPayment(
       address,
       totalReceived,
-      await this.readOnlyContract["released(address)"](address),
+      await this.readOnlyContract["released(address)"](address)
     );
   }
 
@@ -249,12 +248,12 @@ export class SplitsModule extends Module<Royalty> implements ISplitsModule {
    */
   public async balanceOfToken(
     walletAddress: string,
-    tokenAddress: string,
+    tokenAddress: string
   ): Promise<CurrencyValue> {
     const erc20 = ERC20__factory.connect(tokenAddress, this.providerOrSigner);
     const walletBalance = await erc20.balanceOf(this.address);
     const totalReleased = await this.readOnlyContract["totalReleased(address)"](
-      tokenAddress,
+      tokenAddress
     );
     const totalReceived = walletBalance.add(totalReleased);
     const value = await this._pendingPayment(
@@ -262,8 +261,8 @@ export class SplitsModule extends Module<Royalty> implements ISplitsModule {
       totalReceived,
       await this.readOnlyContract["released(address,address)"](
         tokenAddress,
-        walletAddress,
-      ),
+        walletAddress
+      )
     );
     return await getCurrencyValue(this.providerOrSigner, tokenAddress, value);
   }
@@ -275,24 +274,24 @@ export class SplitsModule extends Module<Royalty> implements ISplitsModule {
   private async _pendingPayment(
     address: string,
     totalReceived: BigNumber,
-    alreadyReleased: BigNumber,
+    alreadyReleased: BigNumber
   ): Promise<BigNumber> {
     const addressReceived = totalReceived.mul(
-      await this.readOnlyContract.shares(address),
+      await this.readOnlyContract.shares(address)
     );
     const totalRoyaltyAvailable = addressReceived.div(
-      await this.readOnlyContract.totalShares(),
+      await this.readOnlyContract.totalShares()
     );
     return totalRoyaltyAvailable.sub(alreadyReleased);
   }
 
   public async withdrawToken(
     walletAddress: string,
-    tokenAddress: string,
+    tokenAddress: string
   ): Promise<void> {
     await this.sendTransaction("release(address,address)", [
       tokenAddress,
-      walletAddress,
+      walletAddress
     ]);
   }
 

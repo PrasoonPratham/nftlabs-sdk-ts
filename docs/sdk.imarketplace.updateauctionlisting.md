@@ -14,11 +14,10 @@ updateAuctionListing(listing: AuctionListing): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listing | [AuctionListing](./sdk.auctionlisting.md) | The listing to update. |
+| Parameter | Type                                      | Description            |
+| --------- | ----------------------------------------- | ---------------------- |
+| listing   | [AuctionListing](./sdk.auctionlisting.md) | The listing to update. |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

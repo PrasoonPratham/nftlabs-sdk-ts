@@ -17,15 +17,14 @@ protected signTypedData(signer: ethers.Signer, from: string, domain: {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  signer | ethers.Signer |  |
-|  from | string |  |
-|  domain | { name: string; version: string; chainId: number; verifyingContract: string; } |  |
-|  types | any |  |
-|  message | any |  |
+| Parameter | Type                                                                           | Description |
+| --------- | ------------------------------------------------------------------------------ | ----------- |
+| signer    | ethers.Signer                                                                  |             |
+| from      | string                                                                         |             |
+| domain    | { name: string; version: string; chainId: number; verifyingContract: string; } |             |
+| types     | any                                                                            |             |
+| message   | any                                                                            |             |
 
 <b>Returns:</b>
 
 Promise&lt;BytesLike&gt;
-

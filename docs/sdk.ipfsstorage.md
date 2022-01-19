@@ -7,24 +7,24 @@
 <b>Signature:</b>
 
 ```typescript
-export declare class IpfsStorage implements IStorage 
+export declare class IpfsStorage implements IStorage
 ```
+
 <b>Implements:</b> [IStorage](./sdk.istorage.md)
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(gatewayUrl)](./sdk.ipfsstorage._constructor_.md) |  | Constructs a new instance of the <code>IpfsStorage</code> class |
+| Constructor                                                     | Modifiers | Description                                                     |
+| --------------------------------------------------------------- | --------- | --------------------------------------------------------------- |
+| [(constructor)(gatewayUrl)](./sdk.ipfsstorage._constructor_.md) |           | Constructs a new instance of the <code>IpfsStorage</code> class |
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [buildFilePropertiesMap(object, files)](./sdk.ipfsstorage.buildfilepropertiesmap.md) |  | This function recurisely traverses an object and hashes any <code>Buffer</code> or <code>File</code> objects into the returned map. |
-|  [get(hash)](./sdk.ipfsstorage.get.md) |  |  |
-|  [getUploadToken(contractAddress)](./sdk.ipfsstorage.getuploadtoken.md) |  |  |
-|  [upload(data, contractAddress, signerAddress)](./sdk.ipfsstorage.upload.md) |  |  |
-|  [uploadBatch(files, contractAddress, fileStartNumber)](./sdk.ipfsstorage.uploadbatch.md) |  |  |
-|  [uploadMetadata(metadata, contractAddress, \_signerAddress)](./sdk.ipfsstorage.uploadmetadata.md) |  |  |
-
+| Method                                                                                            | Modifiers | Description                                                                                                                         |
+| ------------------------------------------------------------------------------------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| [buildFilePropertiesMap(object, files)](./sdk.ipfsstorage.buildfilepropertiesmap.md)              |           | This function recurisely traverses an object and hashes any <code>Buffer</code> or <code>File</code> objects into the returned map. |
+| [get(hash)](./sdk.ipfsstorage.get.md)                                                             |           |                                                                                                                                     |
+| [getUploadToken(contractAddress)](./sdk.ipfsstorage.getuploadtoken.md)                            |           |                                                                                                                                     |
+| [upload(data, contractAddress, signerAddress)](./sdk.ipfsstorage.upload.md)                       |           |                                                                                                                                     |
+| [uploadBatch(files, contractAddress, fileStartNumber)](./sdk.ipfsstorage.uploadbatch.md)          |           |                                                                                                                                     |
+| [uploadMetadata(metadata, contractAddress, \_signerAddress)](./sdk.ipfsstorage.uploadmetadata.md) |           |                                                                                                                                     |

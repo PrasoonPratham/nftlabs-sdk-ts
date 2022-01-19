@@ -2,7 +2,7 @@ import { expect } from "chai";
 import { ethers } from "ethers";
 import {
   DEFAULT_BLOCK_TIMES_FALLBACK,
-  estimateBlockAtTime,
+  estimateBlockAtTime
 } from "../src/utils";
 
 global.fetch = require("node-fetch");

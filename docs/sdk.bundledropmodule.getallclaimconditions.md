@@ -12,11 +12,10 @@ getAllClaimConditions(tokenId: BigNumberish): Promise<ClaimCondition[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| tokenId   | BigNumberish |             |
 
 <b>Returns:</b>
 
 Promise&lt;[ClaimCondition](./sdk.claimcondition.md)<!-- -->\[\]&gt;
-

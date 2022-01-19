@@ -14,9 +14,9 @@ buyoutAuctionListing(listingId: BigNumberish): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| listingId | BigNumberish |             |
 
 <b>Returns:</b>
 
@@ -28,7 +28,6 @@ Buy a specific direct listing from the marketplace.
 
 ## Example
 
-
 ```javascript
 // The listing ID of the asset you want to buy
 const listingId = 0;
@@ -36,4 +35,3 @@ const listingId = 0;
 const balance = await module.balanceOf(listingId, quantity);
 console.log(balance);
 ```
-

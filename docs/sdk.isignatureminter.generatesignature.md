@@ -17,13 +17,12 @@ generateSignature(mintRequest: NewSignaturePayload): Promise<{
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  mintRequest | [NewSignaturePayload](./sdk.newsignaturepayload.md) | The request to generate a signature for. |
+| Parameter   | Type                                                | Description                              |
+| ----------- | --------------------------------------------------- | ---------------------------------------- |
+| mintRequest | [NewSignaturePayload](./sdk.newsignaturepayload.md) | The request to generate a signature for. |
 
 <b>Returns:</b>
 
 Promise&lt;{ payload: [SignaturePayload](./sdk.signaturepayload.md)<!-- -->; signature: string; }&gt;
 
 - The payload (with the uri pre-populated) and signature.
-

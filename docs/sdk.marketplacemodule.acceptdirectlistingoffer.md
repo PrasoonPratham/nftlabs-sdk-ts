@@ -12,12 +12,11 @@ acceptDirectListingOffer(listingId: BigNumberish, addressOfOfferor: string): Pro
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | BigNumberish |  |
-|  addressOfOfferor | string |  |
+| Parameter        | Type         | Description |
+| ---------------- | ------------ | ----------- |
+| listingId        | BigNumberish |             |
+| addressOfOfferor | string       |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

@@ -14,13 +14,12 @@ getOwned(_address?: string): Promise<BundleDropMetadata[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  \_address | string | The address to check for token ownership |
+| Parameter | Type   | Description                              |
+| --------- | ------ | ---------------------------------------- |
+| \_address | string | The address to check for token ownership |
 
 <b>Returns:</b>
 
 Promise&lt;[BundleDropMetadata](./sdk.bundledropmetadata.md)<!-- -->\[\]&gt;
 
 An array of BundleMetadata objects that are owned by the address
-

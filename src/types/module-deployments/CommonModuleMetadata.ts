@@ -1,7 +1,7 @@
 import {
   JsonObject,
   JsonProperty,
-  PropertyConvertingMode,
+  PropertyConvertingMode
 } from "json2typescript";
 import FileOrBuffer from "../FileOrBuffer";
 

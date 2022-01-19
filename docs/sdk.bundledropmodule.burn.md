@@ -12,12 +12,11 @@ burn(tokenId: BigNumberish, amount: BigNumberish): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | BigNumberish |  |
-|  amount | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| tokenId   | BigNumberish |             |
+| amount    | BigNumberish |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

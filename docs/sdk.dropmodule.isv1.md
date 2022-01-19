@@ -11,7 +11,7 @@ Check if contract is v1 or v2. If the contract doesn't have nextTokenIdToMint = 
 ```typescript
 isV1(): Promise<boolean>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;boolean&gt;
-

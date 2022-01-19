@@ -7,13 +7,13 @@
 <b>Signature:</b>
 
 ```typescript
-export declare class MarketplaceModuleMetadata extends CommonModuleMetadata 
+export declare class MarketplaceModuleMetadata extends CommonModuleMetadata
 ```
+
 <b>Extends:</b> [CommonModuleMetadata](./sdk.commonmodulemetadata.md)
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [marketFeeBasisPoints](./sdk.marketplacemodulemetadata.marketfeebasispoints.md) |  | number | The fee collected on all sales out of this marketplace. This fee only applies to items sold from the marketplace and does not include any resale royalties that occur outside of this marketplace. The default is 0 (no fees).<!-- -->1 basis point = 0.01%<!-- -->For example: if this value is 100, then the royalty is 1% of the total sales. |
-
+| Property                                                                        | Modifiers | Type   | Description                                                                                                                                                                                                                                                                                                                                      |
+| ------------------------------------------------------------------------------- | --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [marketFeeBasisPoints](./sdk.marketplacemodulemetadata.marketfeebasispoints.md) |           | number | The fee collected on all sales out of this marketplace. This fee only applies to items sold from the marketplace and does not include any resale royalties that occur outside of this marketplace. The default is 0 (no fees).<!-- -->1 basis point = 0.01%<!-- -->For example: if this value is 100, then the royalty is 1% of the total sales. |

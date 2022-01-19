@@ -5,22 +5,20 @@
 ## ModuleMetadataNoType interface
 
 > Warning: This API is now obsolete.
-> 
+>
 > - You should rely on the [ModuleMetadata](./sdk.modulemetadata.md) instead, since it includes the type of the module.
-> 
 
 The module metadata, but missing the ModuleType.
 
 <b>Signature:</b>
 
 ```typescript
-export interface ModuleMetadataNoType 
+export interface ModuleMetadataNoType
 ```
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [address](./sdk.modulemetadatanotype.address.md) | string |  |
-|  [metadata?](./sdk.modulemetadatanotype.metadata.md) | [ContractMetadata](./sdk.contractmetadata.md) | <i>(Optional)</i> |
-
+| Property                                            | Type                                          | Description       |
+| --------------------------------------------------- | --------------------------------------------- | ----------------- |
+| [address](./sdk.modulemetadatanotype.address.md)    | string                                        |                   |
+| [metadata?](./sdk.modulemetadatanotype.metadata.md) | [ContractMetadata](./sdk.contractmetadata.md) | <i>(Optional)</i> |

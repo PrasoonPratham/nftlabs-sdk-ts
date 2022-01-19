@@ -4,7 +4,7 @@ import {
   ERC20__factory,
   ERC721__factory,
   Market,
-  Market__factory,
+  Market__factory
 } from "@3rdweb/contracts";
 import { AddressZero } from "@ethersproject/constants";
 import { TransactionReceipt } from "@ethersproject/providers";
@@ -15,7 +15,7 @@ import {
   MissingOwnerRoleError,
   Role,
   RolesMap,
-  MissingRoleError,
+  MissingRoleError
 } from "../common";
 import { InterfaceId_IERC721 } from "../common/contract";
 import { CurrencyValue, getCurrencyValue } from "../common/currency";
@@ -65,7 +65,7 @@ export class MarketModule extends ModuleWithRoles<Market> {
   public static roles = [
     RolesMap.admin,
     RolesMap.lister,
-    RolesMap.pauser,
+    RolesMap.pauser
   ] as const;
 
   /**
@@ -91,7 +91,7 @@ export class MarketModule extends ModuleWithRoles<Market> {
   }
 
   private async transformResultToListing(
-    listing: any,
+    listing: any
   ): Promise<ListingMetadata> {
     let currency: CurrencyValue | null = null;
 
@@ -99,7 +99,7 @@ export class MarketModule extends ModuleWithRoles<Market> {
       currency = await getCurrencyValue(
         this.providerOrSigner,
         listing.currency,
-        listing.pricePerToken,
+        listing.pricePerToken
       );
       // eslint-disable-next-line no-empty
     } catch (e) {}
@@ -110,7 +110,7 @@ export class MarketModule extends ModuleWithRoles<Market> {
         this.providerOrSigner,
         listing.assetContract,
         listing.tokenId.toString(),
-        this.ipfsGatewayUrl,
+        this.ipfsGatewayUrl
       );
       // eslint-disable-next-line no-empty
     } catch (e) {}
@@ -133,7 +133,7 @@ export class MarketModule extends ModuleWithRoles<Market> {
         listing.saleEnd.gt(0) &&
         listing.saleEnd.lte(Number.MAX_SAFE_INTEGER - 1)
           ? new Date(listing.saleEnd.toNumber() * 1000)
-          : null,
+          : null
     };
   }
 
@@ -148,7 +148,7 @@ export class MarketModule extends ModuleWithRoles<Market> {
    * @deprecated Use {@link MarketModule.getAll} instead.
    */
   public async getAllListings(
-    filter?: ListingFilter,
+    filter?: ListingFilter
   ): Promise<ListingMetadata[]> {
     return await this.getAll(filter);
   }
@@ -168,28 +168,28 @@ export class MarketModule extends ModuleWithRoles<Market> {
         listings = listings.concat(
           await this.readOnlyContract.getListingsByAsset(
             filter.tokenContract,
-            filter.tokenId,
-          ),
+            filter.tokenId
+          )
         );
       } else if (filter.seller) {
         listings = listings.concat(
-          await this.readOnlyContract.getListingsBySeller(filter.seller),
+          await this.readOnlyContract.getListingsBySeller(filter.seller)
         );
       } else if (filter.tokenContract) {
         listings = listings.concat(
           await this.readOnlyContract.getListingsByAssetContract(
-            filter.tokenContract,
-          ),
+            filter.tokenContract
+          )
         );
       } else {
         listings = listings.concat(
-          await this.readOnlyContract.getAllListings(),
+          await this.readOnlyContract.getAllListings()
         );
       }
     }
 
     listings = listings
-      .filter((l) => {
+      .filter(l => {
         if (l.quantity.eq(0)) {
           return false;
         }
@@ -219,7 +219,7 @@ export class MarketModule extends ModuleWithRoles<Market> {
         }
         return true;
       })
-      .map((l) => this.transformResultToListing(l));
+      .map(l => this.transformResultToListing(l));
     return await Promise.all(listings);
   }
 
@@ -236,13 +236,13 @@ export class MarketModule extends ModuleWithRoles<Market> {
     quantity: BigNumberish,
     tokensPerBuyer: BigNumberish = 0,
     secondsUntilStart: BigNumberish = 0,
-    secondsUntilEnd: BigNumberish = 0,
+    secondsUntilEnd: BigNumberish = 0
   ): Promise<ListingMetadata> {
     try {
       const from = await this.getSignerAddress();
       const erc165 = ERC165__factory.connect(
         assetContract,
-        this.providerOrSigner,
+        this.providerOrSigner
       );
       invariant(quantity > 0, "quantity must be greater than 0");
       // check for token approval
@@ -250,7 +250,7 @@ export class MarketModule extends ModuleWithRoles<Market> {
       if (isERC721) {
         const asset = ERC721__factory.connect(
           assetContract,
-          this.providerOrSigner,
+          this.providerOrSigner
         );
 
         const approved = await asset.isApprovedForAll(from, this.address);
@@ -262,21 +262,21 @@ export class MarketModule extends ModuleWithRoles<Market> {
           if (!isTokenApproved) {
             await this.sendContractTransaction(asset, "setApprovalForAll", [
               this.address,
-              true,
+              true
             ]);
           }
         }
       } else {
         const asset = ERC1155__factory.connect(
           assetContract,
-          this.providerOrSigner,
+          this.providerOrSigner
         );
 
         const approved = await asset.isApprovedForAll(from, this.address);
         if (!approved) {
           await this.sendContractTransaction(asset, "setApprovalForAll", [
             this.address,
-            true,
+            true
           ]);
         }
       }
@@ -289,7 +289,7 @@ export class MarketModule extends ModuleWithRoles<Market> {
         quantity,
         tokensPerBuyer,
         secondsUntilStart,
-        secondsUntilEnd,
+        secondsUntilEnd
       ]);
       const event = this.parseEventLogs("NewListing", receipt?.logs);
       const listing = event?.listing;
@@ -326,7 +326,7 @@ export class MarketModule extends ModuleWithRoles<Market> {
 
   public async buy(
     listingId: string,
-    quantity: BigNumberish,
+    quantity: BigNumberish
   ): Promise<ListingMetadata> {
     try {
       const listing = await this.get(listingId);
@@ -339,13 +339,13 @@ export class MarketModule extends ModuleWithRoles<Market> {
       ) {
         const erc20 = ERC20__factory.connect(
           listing.currencyContract,
-          this.providerOrSigner,
+          this.providerOrSigner
         );
         const allowance = await erc20.allowance(owner, spender);
         if (allowance.lt(totalPrice)) {
           await this.sendContractTransaction(erc20, "approve", [
             spender,
-            allowance.add(totalPrice),
+            allowance.add(totalPrice)
           ]);
         }
       }
@@ -366,7 +366,7 @@ export class MarketModule extends ModuleWithRoles<Market> {
 
   // owner functions
   public async setModuleMetadata(
-    metadata: MetadataURIOrObject,
+    metadata: MetadataURIOrObject
   ): Promise<TransactionReceipt> {
     const uri = await this.sdk.getStorage().uploadMetadata(metadata);
     return await this.sendTransaction("setContractURI", [uri]);

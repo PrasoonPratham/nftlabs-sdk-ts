@@ -8,8 +8,8 @@
 
 ```typescript
 wrapped: {
-        address: string;
-        name: string;
-        symbol: string;
-    };
+  address: string;
+  name: string;
+  symbol: string;
+}
 ```

@@ -14,10 +14,10 @@ transfer(to: string, tokenId: string): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  to | string |  |
-|  tokenId | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| to        | string |             |
+| tokenId   | string |             |
 
 <b>Returns:</b>
 
@@ -29,7 +29,6 @@ Transfer an NFT from the connected wallet to another wallet.
 
 ## Example
 
-
 ```javascript
 // Address of the wallet you want to send the NFT to
 const toAddress = "{{wallet_address}}";
@@ -39,4 +38,3 @@ const tokenId = "0";
 
 await module.transfer(toAddress, tokenId);
 ```
-

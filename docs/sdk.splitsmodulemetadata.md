@@ -7,13 +7,13 @@
 <b>Signature:</b>
 
 ```typescript
-export declare class SplitsModuleMetadata extends CommonModuleMetadata 
+export declare class SplitsModuleMetadata extends CommonModuleMetadata
 ```
+
 <b>Extends:</b> [CommonModuleMetadata](./sdk.commonmodulemetadata.md)
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [recipientSplits](./sdk.splitsmodulemetadata.recipientsplits.md) |  | [NewSplitRecipient](./sdk.newsplitrecipient.md)<!-- -->\[\] |  |
-
+| Property                                                         | Modifiers | Type                                                        | Description |
+| ---------------------------------------------------------------- | --------- | ----------------------------------------------------------- | ----------- |
+| [recipientSplits](./sdk.splitsmodulemetadata.recipientsplits.md) |           | [NewSplitRecipient](./sdk.newsplitrecipient.md)<!-- -->\[\] |             |

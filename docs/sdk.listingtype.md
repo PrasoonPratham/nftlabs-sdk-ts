@@ -7,13 +7,12 @@
 <b>Signature:</b>
 
 ```typescript
-export declare enum ListingType 
+export declare enum ListingType
 ```
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  Auction | <code>1</code> |  |
-|  Direct | <code>0</code> |  |
-
+| Member  | Value          | Description |
+| ------- | -------------- | ----------- |
+| Auction | <code>1</code> |             |
+| Direct  | <code>0</code> |             |

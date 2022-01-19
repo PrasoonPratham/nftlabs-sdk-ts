@@ -14,13 +14,12 @@ prepareBatchMetadata(metadata: MetadataURIOrObject[]): Promise<string[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadata | [MetadataURIOrObject](./sdk.metadatauriorobject.md)<!-- -->\[\] | List of metadata to prepare for upload. |
+| Parameter | Type                                                            | Description                             |
+| --------- | --------------------------------------------------------------- | --------------------------------------- |
+| metadata  | [MetadataURIOrObject](./sdk.metadatauriorobject.md)<!-- -->\[\] | List of metadata to prepare for upload. |
 
 <b>Returns:</b>
 
 Promise&lt;string\[\]&gt;
 
 - List of metadata prepared for upload.
-

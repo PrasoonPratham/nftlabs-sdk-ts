@@ -7,13 +7,12 @@
 <b>Signature:</b>
 
 ```typescript
-export interface ITokenMintArgs 
+export interface ITokenMintArgs
 ```
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [address](./sdk.itokenmintargs.address.md) | string |  |
-|  [amount](./sdk.itokenmintargs.amount.md) | BigNumberish |  |
-
+| Property                                   | Type         | Description |
+| ------------------------------------------ | ------------ | ----------- |
+| [address](./sdk.itokenmintargs.address.md) | string       |             |
+| [amount](./sdk.itokenmintargs.amount.md)   | BigNumberish |             |

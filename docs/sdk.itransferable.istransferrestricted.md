@@ -11,9 +11,9 @@ Returns true if transfers are restricted. Otherwise returns false.
 ```typescript
 isTransferRestricted(): Promise<boolean>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;boolean&gt;
 
 - True if transfers are restricted.
-

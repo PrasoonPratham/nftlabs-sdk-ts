@@ -5,7 +5,6 @@
 ## BundleDropModule.getAllClaimerAddresses() method
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
 
 Pulls the list of all addresses that have claimed a particular token
 
@@ -19,13 +18,12 @@ getAllClaimerAddresses(tokenId: BigNumberish): Promise<string[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | BigNumberish | The token id to get the claimers of |
+| Parameter | Type         | Description                         |
+| --------- | ------------ | ----------------------------------- |
+| tokenId   | BigNumberish | The token id to get the claimers of |
 
 <b>Returns:</b>
 
 Promise&lt;string\[\]&gt;
 
 - A unique list of addresses that claimed the token
-

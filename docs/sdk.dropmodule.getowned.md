@@ -14,9 +14,9 @@ getOwned(_address?: string): Promise<NFTMetadataOwner[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  \_address | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| \_address | string |             |
 
 <b>Returns:</b>
 
@@ -30,11 +30,9 @@ Get all the data associated with the NFTs owned by a specific wallet.
 
 ## Example
 
-
 ```javascript
 // Address of the wallet to get the NFTs of
 const address = "{{wallet_address}}";
 const nfts = await module.getOwned(address);
 console.log(nfts);
 ```
-

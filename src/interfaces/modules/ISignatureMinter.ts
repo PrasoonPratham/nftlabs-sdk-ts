@@ -1,7 +1,7 @@
 import { BigNumber } from "ethers";
 import {
   NewSignaturePayload,
-  SignaturePayload,
+  SignaturePayload
 } from "../../types/signature-minting";
 
 export interface ISignatureMinter {
@@ -14,7 +14,7 @@ export interface ISignatureMinter {
    */
   mintWithSignature(
     req: SignaturePayload,
-    signature: string,
+    signature: string
   ): Promise<BigNumber>;
 
   /**
@@ -34,7 +34,7 @@ export interface ISignatureMinter {
    * @returns - The payload (with the uri pre-populated) and signature.
    */
   generateSignature(
-    mintRequest: NewSignaturePayload,
+    mintRequest: NewSignaturePayload
   ): Promise<{ payload: SignaturePayload; signature: string }>;
 
   /**
@@ -44,6 +44,6 @@ export interface ISignatureMinter {
    * @returns - The batch of payloads + signatures.
    */
   generateSignatureBatch(
-    payloads: NewSignaturePayload[],
+    payloads: NewSignaturePayload[]
   ): Promise<{ payload: SignaturePayload; signature: string }[]>;
 }

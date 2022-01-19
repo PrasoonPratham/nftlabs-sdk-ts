@@ -14,13 +14,12 @@ get(hash: string): Promise<string>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  hash | string | The Hash of the file to fetch |
+| Parameter | Type   | Description                   |
+| --------- | ------ | ----------------------------- |
+| hash      | string | The Hash of the file to fetch |
 
 <b>Returns:</b>
 
 Promise&lt;string&gt;
 
 - The data, if found.
-

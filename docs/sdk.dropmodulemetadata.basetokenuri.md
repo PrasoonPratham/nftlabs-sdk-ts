@@ -5,9 +5,8 @@
 ## DropModuleMetadata.baseTokenUri property
 
 > Warning: This API is now obsolete.
-> 
+>
 > - No longer applicable. This value is ignored.
-> 
 
 The IPFS base URI thats prepended to all token URIs. This allows you to batch upload all the metadata for the tokens ahead of time so they can be lazy minted later
 

@@ -14,12 +14,11 @@ setPrice(price: BigNumberish, tokenAddress?: string): ClaimConditionPhase;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  price | BigNumberish | The price of the currency in wei. Must be &gt;<!-- -->= 0. |
-|  tokenAddress | string | The address of an ERC20 contract to use as the currency for the claim. By default this is the native currency address which is 0x0000000000000000000000000000000000000000 address. |
+| Parameter    | Type         | Description                                                                                                                                                                        |
+| ------------ | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| price        | BigNumberish | The price of the currency in wei. Must be &gt;<!-- -->= 0.                                                                                                                         |
+| tokenAddress | string       | The address of an ERC20 contract to use as the currency for the claim. By default this is the native currency address which is 0x0000000000000000000000000000000000000000 address. |
 
 <b>Returns:</b>
 
 ClaimConditionPhase
-

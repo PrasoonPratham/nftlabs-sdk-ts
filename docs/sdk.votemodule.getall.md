@@ -11,6 +11,7 @@ Get All Proposals
 ```typescript
 getAll(): Promise<Proposal[]>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;[Proposal](./sdk.proposal.md)<!-- -->\[\]&gt;
@@ -23,9 +24,7 @@ Get all the proposals in this module.
 
 ## Example
 
-
 ```javascript
 const proposals = await module.getAll();
 console.log(proposals);
 ```
-

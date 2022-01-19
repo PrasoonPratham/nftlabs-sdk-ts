@@ -4,7 +4,6 @@
 
 ## Module.address property
 
-
 <b>Signature:</b>
 
 ```typescript

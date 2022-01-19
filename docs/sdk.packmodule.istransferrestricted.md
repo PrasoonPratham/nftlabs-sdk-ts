@@ -9,7 +9,7 @@
 ```typescript
 isTransferRestricted(): Promise<boolean>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;boolean&gt;
-

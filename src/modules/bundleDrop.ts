@@ -1,7 +1,7 @@
 import {
   ERC20__factory,
   LazyMintERC1155 as BundleDrop,
-  LazyMintERC1155__factory as BundleDrop__factory,
+  LazyMintERC1155__factory as BundleDrop__factory
 } from "@3rdweb/contracts";
 import { ClaimConditionStruct } from "@3rdweb/contracts/dist/LazyMintERC1155";
 import { hexZeroPad } from "@ethersproject/bytes";
@@ -15,7 +15,7 @@ import {
   ModuleType,
   NATIVE_TOKEN_ADDRESS,
   Role,
-  RolesMap,
+  RolesMap
 } from "../common";
 import { invariant } from "../common/invariant";
 import { isMetadataEqual } from "../common/isMetadataEqual";
@@ -74,7 +74,7 @@ export class BundleDropModule
   public static roles = [
     RolesMap.admin,
     RolesMap.minter,
-    RolesMap.transfer,
+    RolesMap.transfer
   ] as const;
 
   /**
@@ -100,16 +100,16 @@ export class BundleDropModule
   }
 
   private async transformResultToClaimCondition(
-    pm: ClaimConditionStruct,
+    pm: ClaimConditionStruct
   ): Promise<ClaimCondition> {
     const cv = await getCurrencyValue(
       this.providerOrSigner,
       pm.currency,
-      pm.pricePerToken,
+      pm.pricePerToken
     );
     return {
       startTimestamp: new Date(
-        BigNumber.from(pm.startTimestamp).toNumber() * 1000,
+        BigNumber.from(pm.startTimestamp).toNumber() * 1000
       ),
       maxMintSupply: pm.maxClaimableSupply.toString(),
       currentMintSupply: pm.supplyClaimed.toString(),
@@ -124,7 +124,7 @@ export class BundleDropModule
       currency: pm.currency,
       currencyContract: pm.currency,
       currencyMetadata: cv,
-      merkleRoot: pm.merkleRoot,
+      merkleRoot: pm.merkleRoot
     };
   }
 
@@ -132,19 +132,19 @@ export class BundleDropModule
     return await getTokenMetadata(
       this.readOnlyContract,
       tokenId,
-      this.ipfsGatewayUrl,
+      this.ipfsGatewayUrl
     );
   }
 
   public async get(tokenId: string): Promise<BundleDropMetadata> {
     const [supply, metadata] = await Promise.all([
       this.readOnlyContract.totalSupply(tokenId).catch(() => BigNumber.from(0)),
-      this.getTokenMetadata(tokenId),
+      this.getTokenMetadata(tokenId)
     ]);
 
     return {
       supply,
-      metadata,
+      metadata
     };
   }
 
@@ -165,7 +165,7 @@ export class BundleDropModule
   public async getAll(): Promise<BundleDropMetadata[]> {
     const maxId = (await this.readOnlyContract.nextTokenIdToMint()).toNumber();
     return await Promise.all(
-      Array.from(Array(maxId).keys()).map((i) => this.get(i.toString())),
+      Array.from(Array(maxId).keys()).map(i => this.get(i.toString()))
     );
   }
 
@@ -181,46 +181,46 @@ export class BundleDropModule
     const maxId = await this.readOnlyContract.nextTokenIdToMint();
     const balances = await this.readOnlyContract.balanceOfBatch(
       Array(maxId.toNumber()).fill(address),
-      Array.from(Array(maxId.toNumber()).keys()),
+      Array.from(Array(maxId.toNumber()).keys())
     );
 
     const ownedBalances = balances
       .map((b, i) => {
         return {
           tokenId: i,
-          balance: b,
+          balance: b
         };
       })
-      .filter((b) => b.balance.gt(0));
+      .filter(b => b.balance.gt(0));
     return await Promise.all(
-      ownedBalances.map(async (b) => await this.get(b.tokenId.toString())),
+      ownedBalances.map(async b => await this.get(b.tokenId.toString()))
     );
   }
 
   public async getActiveClaimCondition(
-    tokenId: BigNumberish,
+    tokenId: BigNumberish
   ): Promise<ClaimCondition> {
     const index = await this.readOnlyContract.getIndexOfActiveCondition(
-      tokenId,
+      tokenId
     );
     return this.transformResultToClaimCondition(
-      await this.readOnlyContract.getClaimConditionAtIndex(tokenId, index),
+      await this.readOnlyContract.getClaimConditionAtIndex(tokenId, index)
     );
   }
 
   public async getAllClaimConditions(
-    tokenId: BigNumberish,
+    tokenId: BigNumberish
   ): Promise<ClaimCondition[]> {
     const claimCondition = await this.readOnlyContract.claimConditions(tokenId);
     const count = claimCondition.totalConditionCount.toNumber();
     const conditions = [];
     for (let i = 0; i < count; i++) {
       conditions.push(
-        await this.readOnlyContract.getClaimConditionAtIndex(tokenId, i),
+        await this.readOnlyContract.getClaimConditionAtIndex(tokenId, i)
       );
     }
     return Promise.all(
-      conditions.map((c) => this.transformResultToClaimCondition(c)),
+      conditions.map(c => this.transformResultToClaimCondition(c))
     );
   }
 
@@ -254,7 +254,7 @@ export class BundleDropModule
    */
   public async balanceOf(
     address: string,
-    tokenId: BigNumberish,
+    tokenId: BigNumberish
   ): Promise<BigNumber> {
     return await this.readOnlyContract.balanceOf(address, tokenId);
   }
@@ -273,10 +273,10 @@ export class BundleDropModule
    * @deprecated - {@link BundleDropModule.mintBatch}
    */
   public async lazyMintBatch(
-    metadatas: MetadataURIOrObject[],
+    metadatas: MetadataURIOrObject[]
   ): Promise<BundleDropMetadata[]> {
     const tokenIds = await this.createBatch(metadatas);
-    return await Promise.all(tokenIds.map((t) => this.get(t.toString())));
+    return await Promise.all(tokenIds.map(t => this.get(t.toString())));
   }
 
   /**
@@ -301,7 +301,7 @@ export class BundleDropModule
    * ```
    */
   public async createBatch(
-    metadatas: MetadataURIOrObject[],
+    metadatas: MetadataURIOrObject[]
   ): Promise<string[]> {
     const startFileNumber = await this.readOnlyContract.nextTokenIdToMint();
     const { baseUri } = await this.sdk
@@ -309,7 +309,7 @@ export class BundleDropModule
       .uploadMetadataBatch(metadatas, this.address, startFileNumber.toNumber());
     const receipt = await this.sendTransaction("lazyMint", [
       metadatas.length,
-      baseUri,
+      baseUri
     ]);
     const event = this.parseEventLogs("LazyMintedTokens", receipt?.logs);
     const [startingIndex, endingIndex]: BigNumber[] = event;
@@ -322,24 +322,24 @@ export class BundleDropModule
 
   public async setSaleRecipient(
     tokenId: BigNumberish,
-    recipient: string,
+    recipient: string
   ): Promise<TransactionReceipt> {
     return this.sendTransaction("setSaleRecipient", [tokenId, recipient]);
   }
 
   public async setDefaultSaleRecipient(
-    recipient: string,
+    recipient: string
   ): Promise<TransactionReceipt> {
     return this.sendTransaction("setDefaultSaleRecipient", [recipient]);
   }
 
   public async setApproval(
     operator: string,
-    approved = true,
+    approved = true
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("setApprovalForAll", [
       operator,
-      approved,
+      approved
     ]);
   }
 
@@ -366,7 +366,7 @@ export class BundleDropModule
     to: string,
     tokenId: BigNumberish,
     amount: BigNumberish,
-    data: BytesLike = [0],
+    data: BytesLike = [0]
   ): Promise<TransactionReceipt> {
     const from = await this.getSignerAddress();
     return await this.sendTransaction("safeTransferFrom", [
@@ -374,7 +374,7 @@ export class BundleDropModule
       to,
       tokenId,
       amount,
-      data,
+      data
     ]);
   }
 
@@ -386,9 +386,9 @@ export class BundleDropModule
    */
   public async setClaimCondition(
     tokenId: BigNumberish,
-    factory: ClaimConditionFactory,
+    factory: ClaimConditionFactory
   ) {
-    const conditions = (await factory.buildConditions()).map((c) => ({
+    const conditions = (await factory.buildConditions()).map(c => ({
       startTimestamp: c.startTimestamp,
       maxClaimableSupply: c.maxMintSupply,
       supplyClaimed: 0,
@@ -396,11 +396,11 @@ export class BundleDropModule
       waitTimeInSecondsBetweenClaims: c.waitTimeSecondsLimitPerTransaction,
       pricePerToken: c.pricePerToken,
       currency: c.currency === AddressZero ? NATIVE_TOKEN_ADDRESS : c.currency,
-      merkleRoot: c.merkleRoot,
+      merkleRoot: c.merkleRoot
     }));
 
     const merkleInfo: { [key: string]: string } = {};
-    factory.allSnapshots().forEach((s) => {
+    factory.allSnapshots().forEach(s => {
       merkleInfo[s.merkleRoot] = s.snapshotUri;
     });
     const { metadata } = await this.getMetadata(false);
@@ -420,25 +420,25 @@ export class BundleDropModule
         .upload(JSON.stringify(metadata));
       encoded.push(
         this.contract.interface.encodeFunctionData("setContractURI", [
-          metadataUri,
-        ]),
+          metadataUri
+        ])
       );
     }
 
     encoded.push(
       this.contract.interface.encodeFunctionData("setClaimConditions", [
         tokenId,
-        conditions,
-      ]),
+        conditions
+      ])
     );
 
     return await this.sendTransaction("multicall", [encoded]);
   }
   public async updateClaimConditions(
     tokenId: BigNumberish,
-    factory: ClaimConditionFactory,
+    factory: ClaimConditionFactory
   ) {
-    const conditions = (await factory.buildConditions()).map((c) => ({
+    const conditions = (await factory.buildConditions()).map(c => ({
       startTimestamp: c.startTimestamp,
       maxClaimableSupply: c.maxMintSupply,
       supplyClaimed: 0,
@@ -446,11 +446,11 @@ export class BundleDropModule
       waitTimeInSecondsBetweenClaims: c.waitTimeSecondsLimitPerTransaction,
       pricePerToken: c.pricePerToken,
       currency: c.currency === AddressZero ? NATIVE_TOKEN_ADDRESS : c.currency,
-      merkleRoot: c.merkleRoot,
+      merkleRoot: c.merkleRoot
     }));
 
     const merkleInfo: { [key: string]: string } = {};
-    factory.allSnapshots().forEach((s) => {
+    factory.allSnapshots().forEach(s => {
       merkleInfo[s.merkleRoot] = s.snapshotUri;
     });
     const { metadata } = await this.getMetadata(false);
@@ -469,15 +469,15 @@ export class BundleDropModule
         .upload(JSON.stringify(metadata));
       encoded.push(
         this.contract.interface.encodeFunctionData("setContractURI", [
-          metadataUri,
-        ]),
+          metadataUri
+        ])
       );
     }
     encoded.push(
       this.contract.interface.encodeFunctionData("updateClaimConditions", [
         tokenId,
-        conditions,
-      ]),
+        conditions
+      ])
     );
     return await this.sendTransaction("multicall", [encoded]);
   }
@@ -498,9 +498,9 @@ export class BundleDropModule
    */
   public async setPublicClaimConditions(
     tokenId: BigNumberish,
-    conditions: BundleDropCreateClaimCondition[],
+    conditions: BundleDropCreateClaimCondition[]
   ) {
-    const _conditions = conditions.map((c) => ({
+    const _conditions = conditions.map(c => ({
       startTimestamp: c.startTimestamp || 0,
       maxClaimableSupply: c.maxClaimableSupply,
       supplyClaimed: 0,
@@ -509,7 +509,7 @@ export class BundleDropModule
       waitTimeInSecondsBetweenClaims: c.waitTimeInSecondsBetweenClaims || 0,
       pricePerToken: c.pricePerToken || 0,
       currency: c.currency || AddressZero,
-      merkleRoot: c.merkleRoot || hexZeroPad([0], 32),
+      merkleRoot: c.merkleRoot || hexZeroPad([0], 32)
     }));
     await this.sendTransaction("setClaimConditions", [tokenId, _conditions]);
   }
@@ -523,7 +523,7 @@ export class BundleDropModule
   private async prepareClaim(
     tokenId: BigNumberish,
     quantity: BigNumberish,
-    proofs: BytesLike[] = [hexZeroPad([0], 32)],
+    proofs: BytesLike[] = [hexZeroPad([0], 32)]
   ) {
     const mintCondition = await this.getActiveClaimCondition(tokenId);
     const overrides = (await this.getCallOverrides()) || {};
@@ -537,10 +537,10 @@ export class BundleDropModule
       const jsonConvert = new JsonConvert();
       const snapshotData = jsonConvert.deserializeObject(
         JSON.parse(snapshot),
-        Snapshot,
+        Snapshot
       );
       const item = snapshotData.claims.find(
-        (c) => c.address.toLowerCase() === addressToClaim?.toLowerCase(),
+        c => c.address.toLowerCase() === addressToClaim?.toLowerCase()
       );
       if (item === undefined) {
         throw new Error("No claim found for this address");
@@ -550,31 +550,31 @@ export class BundleDropModule
     if (mintCondition.pricePerToken.gt(0)) {
       if (isNativeToken(mintCondition.currency)) {
         overrides["value"] = BigNumber.from(mintCondition.pricePerToken).mul(
-          quantity,
+          quantity
         );
       } else {
         const erc20 = ERC20__factory.connect(
           mintCondition.currency,
-          this.providerOrSigner,
+          this.providerOrSigner
         );
         const owner = await this.getSignerAddress();
         const spender = this.address;
         const allowance = await erc20.allowance(owner, spender);
         const totalPrice = BigNumber.from(mintCondition.pricePerToken).mul(
-          BigNumber.from(quantity),
+          BigNumber.from(quantity)
         );
 
         if (allowance.lt(totalPrice)) {
           await this.sendContractTransaction(erc20, "approve", [
             spender,
-            allowance.add(totalPrice),
+            allowance.add(totalPrice)
           ]);
         }
       }
     }
     return {
       overrides,
-      proofs,
+      proofs
     };
   }
 
@@ -591,14 +591,14 @@ export class BundleDropModule
   public async claim(
     tokenId: BigNumberish,
     quantity: BigNumberish,
-    proofs: BytesLike[] = [hexZeroPad([0], 32)],
+    proofs: BytesLike[] = [hexZeroPad([0], 32)]
   ) {
     const claimData = await this.prepareClaim(tokenId, quantity, proofs);
 
     await this.sendTransaction(
       "claim",
       [tokenId, quantity, claimData.proofs],
-      claimData.overrides,
+      claimData.overrides
     );
   }
 
@@ -632,7 +632,7 @@ export class BundleDropModule
     tokenId: BigNumberish,
     quantity: BigNumberish,
     addressToClaim: string,
-    proofs: BytesLike[] = [hexZeroPad([0], 32)],
+    proofs: BytesLike[] = [hexZeroPad([0], 32)]
   ): Promise<TransactionReceipt> {
     const claimData = await this.prepareClaim(tokenId, quantity, proofs);
     const encoded = [];
@@ -640,8 +640,8 @@ export class BundleDropModule
       this.contract.interface.encodeFunctionData("claim", [
         tokenId,
         quantity,
-        proofs,
-      ]),
+        proofs
+      ])
     );
     encoded.push(
       this.contract.interface.encodeFunctionData("safeTransferFrom", [
@@ -649,19 +649,19 @@ export class BundleDropModule
         addressToClaim,
         tokenId,
         quantity,
-        [0],
-      ]),
+        [0]
+      ])
     );
     return await this.sendTransaction(
       "multicall",
       [encoded],
-      claimData.overrides,
+      claimData.overrides
     );
   }
 
   public async burn(
     tokenId: BigNumberish,
-    amount: BigNumberish,
+    amount: BigNumberish
   ): Promise<TransactionReceipt> {
     const account = await this.getSignerAddress();
     return await this.sendTransaction("burn", [account, tokenId, amount]);
@@ -672,20 +672,20 @@ export class BundleDropModule
     to: string,
     tokenId: BigNumberish,
     amount: BigNumberish,
-    data: BytesLike = [0],
+    data: BytesLike = [0]
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("safeTransferFrom", [
       from,
       to,
       tokenId,
       amount,
-      data,
+      data
     ]);
   }
 
   // owner functions
   public async setModuleMetadata(
-    metadata: MetadataURIOrObject,
+    metadata: MetadataURIOrObject
   ): Promise<TransactionReceipt> {
     const uri = await this.sdk.getStorage().uploadMetadata(metadata);
     return await this.sendTransaction("setContractURI", [uri]);
@@ -704,16 +704,16 @@ export class BundleDropModule
     metadata.seller_fee_basis_points = amount;
     const uri = await this.sdk.getStorage().uploadMetadata(
       {
-        ...metadata,
+        ...metadata
       },
       this.address,
-      await this.getSignerAddress(),
+      await this.getSignerAddress()
     );
     encoded.push(
-      this.contract.interface.encodeFunctionData("setRoyaltyBps", [amount]),
+      this.contract.interface.encodeFunctionData("setRoyaltyBps", [amount])
     );
     encoded.push(
-      this.contract.interface.encodeFunctionData("setContractURI", [uri]),
+      this.contract.interface.encodeFunctionData("setContractURI", [uri])
     );
     return await this.sendTransaction("multicall", [encoded]);
   }
@@ -765,12 +765,12 @@ export class BundleDropModule
    * @returns - A unique list of addresses that claimed the token
    */
   public async getAllClaimerAddresses(
-    tokenId: BigNumberish,
+    tokenId: BigNumberish
   ): Promise<string[]> {
     const a = await this.contract.queryFilter(
-      this.contract.filters.ClaimedTokens(null, BigNumber.from(tokenId)),
+      this.contract.filters.ClaimedTokens(null, BigNumber.from(tokenId))
     );
-    return Array.from(new Set(a.map((b) => b.args.claimer)));
+    return Array.from(new Set(a.map(b => b.args.claimer)));
   }
 
   /**
@@ -785,7 +785,7 @@ export class BundleDropModule
   public async getClaimIneligibilityReasons(
     tokenId: BigNumberish,
     quantity: BigNumberish,
-    addressToCheck?: string,
+    addressToCheck?: string
   ): Promise<ClaimEligibility[]> {
     const reasons: ClaimEligibility[] = [];
     let activeConditionIndex: BigNumber;
@@ -798,7 +798,7 @@ export class BundleDropModule
     try {
       [activeConditionIndex, claimCondition] = await Promise.all([
         this.readOnlyContract.getIndexOfActiveCondition(tokenId),
-        this.getActiveClaimCondition(tokenId),
+        this.getActiveClaimCondition(tokenId)
       ]);
     } catch (err: any) {
       if ((err.message as string).includes("no public mint condition.")) {
@@ -834,7 +834,7 @@ export class BundleDropModule
       await this.readOnlyContract.getTimestampForNextValidClaim(
         tokenId,
         activeConditionIndex,
-        addressToCheck,
+        addressToCheck
       );
 
     const now = BigNumber.from(Date.now()).div(1000);
@@ -842,12 +842,12 @@ export class BundleDropModule
       // if waitTimeSecondsLimitPerTransaction equals to timestampForNextClaim, that means that this is the first time this address claims this token
       if (
         BigNumber.from(claimCondition.waitTimeSecondsLimitPerTransaction).eq(
-          timestampForNextClaim,
+          timestampForNextClaim
         )
       ) {
         const balance = await this.readOnlyContract.balanceOf(
           addressToCheck,
-          tokenId,
+          tokenId
         );
 
         if (balance.gte(1)) {
@@ -871,7 +871,7 @@ export class BundleDropModule
         const provider = await this.getProvider();
         const balance = await ERC20__factory.connect(
           claimCondition.currency,
-          provider,
+          provider
         ).balanceOf(addressToCheck);
         if (balance.lt(totalPrice)) {
           reasons.push(ClaimEligibility.NotEnoughTokens);
@@ -893,7 +893,7 @@ export class BundleDropModule
   public async canClaim(
     tokenId: BigNumberish,
     quantity: BigNumberish,
-    addressToCheck?: string,
+    addressToCheck?: string
   ): Promise<boolean> {
     if (!addressToCheck) {
       addressToCheck = await this.getSignerAddress();
@@ -903,7 +903,7 @@ export class BundleDropModule
         await this.getClaimIneligibilityReasons(
           tokenId,
           quantity,
-          addressToCheck,
+          addressToCheck
         )
       ).length === 0
     );
@@ -917,7 +917,7 @@ export class BundleDropModule
    */
   private async getClaimerProofs(
     merkleRoot: string,
-    addressToClaim?: string,
+    addressToClaim?: string
   ): Promise<string[]> {
     if (!addressToClaim) {
       addressToClaim = await this.getSignerAddress();
@@ -929,10 +929,10 @@ export class BundleDropModule
     const jsonConvert = new JsonConvert();
     const snapshotData = jsonConvert.deserializeObject(
       JSON.parse(snapshot),
-      Snapshot,
+      Snapshot
     );
     const item = snapshotData.claims.find(
-      (c) => c.address.toLowerCase() === addressToClaim?.toLowerCase(),
+      c => c.address.toLowerCase() === addressToClaim?.toLowerCase()
     );
     if (item === undefined) {
       return [];
@@ -945,7 +945,7 @@ export class BundleDropModule
   }
 
   public async setRestrictedTransfer(
-    restricted = false,
+    restricted = false
   ): Promise<TransactionReceipt> {
     await this.onlyRoles(["admin"], await this.getSignerAddress());
     return await this.sendTransaction("setRestrictedTransfer", [restricted]);

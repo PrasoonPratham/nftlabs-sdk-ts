@@ -9,18 +9,17 @@ The typical contract metadata found on the modules.
 <b>Signature:</b>
 
 ```typescript
-export interface ContractMetadata 
+export interface ContractMetadata
 ```
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [description?](./sdk.contractmetadata.description.md) | string | <i>(Optional)</i> |
-|  [external\_link?](./sdk.contractmetadata.external_link.md) | string | <i>(Optional)</i> |
-|  [fee\_recipient?](./sdk.contractmetadata.fee_recipient.md) | string | <i>(Optional)</i> |
-|  [image?](./sdk.contractmetadata.image.md) | string | <i>(Optional)</i> |
-|  [name?](./sdk.contractmetadata.name.md) | string | <i>(Optional)</i> |
-|  [seller\_fee\_basis\_points?](./sdk.contractmetadata.seller_fee_basis_points.md) | number | <i>(Optional)</i> |
-|  [uri](./sdk.contractmetadata.uri.md) | string |  |
-
+| Property                                                                      | Type   | Description       |
+| ----------------------------------------------------------------------------- | ------ | ----------------- |
+| [description?](./sdk.contractmetadata.description.md)                         | string | <i>(Optional)</i> |
+| [external_link?](./sdk.contractmetadata.external_link.md)                     | string | <i>(Optional)</i> |
+| [fee_recipient?](./sdk.contractmetadata.fee_recipient.md)                     | string | <i>(Optional)</i> |
+| [image?](./sdk.contractmetadata.image.md)                                     | string | <i>(Optional)</i> |
+| [name?](./sdk.contractmetadata.name.md)                                       | string | <i>(Optional)</i> |
+| [seller_fee_basis_points?](./sdk.contractmetadata.seller_fee_basis_points.md) | number | <i>(Optional)</i> |
+| [uri](./sdk.contractmetadata.uri.md)                                          | string |                   |

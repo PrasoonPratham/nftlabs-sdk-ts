@@ -7,14 +7,13 @@
 <b>Signature:</b>
 
 ```typescript
-export declare enum UnderlyingType 
+export declare enum UnderlyingType
 ```
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  ERC20 | <code>1</code> |  |
-|  ERC721 | <code>2</code> |  |
-|  None | <code>0</code> |  |
-
+| Member | Value          | Description |
+| ------ | -------------- | ----------- |
+| ERC20  | <code>1</code> |             |
+| ERC721 | <code>2</code> |             |
+| None   | <code>0</code> |             |

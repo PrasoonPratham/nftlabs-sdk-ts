@@ -7,7 +7,9 @@
 <b>Signature:</b>
 
 ```typescript
-export declare type AllModuleMetadata = CollectionModuleMetadata | CommonModuleMetadata;
+export declare type AllModuleMetadata =
+  | CollectionModuleMetadata
+  | CommonModuleMetadata;
 ```
-<b>References:</b> [CollectionModuleMetadata](./sdk.collectionmodulemetadata.md)<!-- -->, [CommonModuleMetadata](./sdk.commonmodulemetadata.md)
 
+<b>References:</b> [CollectionModuleMetadata](./sdk.collectionmodulemetadata.md)<!-- -->, [CommonModuleMetadata](./sdk.commonmodulemetadata.md)

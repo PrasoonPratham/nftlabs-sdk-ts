@@ -12,12 +12,11 @@ getActiveOffer(listingId: BigNumberish, address: string): Promise<Offer | undefi
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listingId | BigNumberish |  |
-|  address | string |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| listingId | BigNumberish |             |
+| address   | string       |             |
 
 <b>Returns:</b>
 
 Promise&lt;[Offer](./sdk.offer.md) \| undefined&gt;
-

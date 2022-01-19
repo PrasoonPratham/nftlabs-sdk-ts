@@ -12,11 +12,10 @@ mint(metadata: MetadataURIOrObject): Promise<NFTMetadata>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadata | [MetadataURIOrObject](./sdk.metadatauriorobject.md) |  |
+| Parameter | Type                                                | Description |
+| --------- | --------------------------------------------------- | ----------- |
+| metadata  | [MetadataURIOrObject](./sdk.metadatauriorobject.md) |             |
 
 <b>Returns:</b>
 
 Promise&lt;[NFTMetadata](./sdk.nftmetadata.md)<!-- -->&gt;
-

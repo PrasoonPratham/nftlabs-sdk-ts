@@ -14,15 +14,14 @@ claim(tokenId: BigNumberish, quantity: BigNumberish, proofs?: BytesLike[]): Prom
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | BigNumberish | Id of the token you want to claim |
-|  quantity | BigNumberish | Quantity of the tokens you want to claim |
-|  proofs | BytesLike\[\] | Array of proofs |
+| Parameter | Type          | Description                              |
+| --------- | ------------- | ---------------------------------------- |
+| tokenId   | BigNumberish  | Id of the token you want to claim        |
+| quantity  | BigNumberish  | Quantity of the tokens you want to claim |
+| proofs    | BytesLike\[\] | Array of proofs                          |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
 
 - Receipt for the transaction
-

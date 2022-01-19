@@ -9,13 +9,13 @@ Thrown when attempting to execute an admin-role function.
 <b>Signature:</b>
 
 ```typescript
-export declare class AdminRoleMissingError extends Error 
+export declare class AdminRoleMissingError extends Error
 ```
+
 <b>Extends:</b> Error
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(address, contractAddress, message)](./sdk.adminrolemissingerror._constructor_.md) |  | Constructs a new instance of the <code>AdminRoleMissingError</code> class |
-
+| Constructor                                                                                      | Modifiers | Description                                                               |
+| ------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------------- |
+| [(constructor)(address, contractAddress, message)](./sdk.adminrolemissingerror._constructor_.md) |           | Constructs a new instance of the <code>AdminRoleMissingError</code> class |

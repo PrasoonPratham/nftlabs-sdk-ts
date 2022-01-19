@@ -14,14 +14,13 @@ get(tokenId: string, address?: string): Promise<BundleMetadata>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | string | the unique token id of the nft |
-|  address | string |  |
+| Parameter | Type   | Description                    |
+| --------- | ------ | ------------------------------ |
+| tokenId   | string | the unique token id of the nft |
+| address   | string |                                |
 
 <b>Returns:</b>
 
 Promise&lt;[BundleMetadata](./sdk.bundlemetadata.md)<!-- -->&gt;
 
 A promise that resolves to a `BundleMetadata`<!-- -->.
-

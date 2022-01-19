@@ -9,14 +9,13 @@ Currency metadata.
 <b>Signature:</b>
 
 ```typescript
-export interface Currency 
+export interface Currency
 ```
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [decimals](./sdk.currency.decimals.md) | number |  |
-|  [name](./sdk.currency.name.md) | string |  |
-|  [symbol](./sdk.currency.symbol.md) | string |  |
-
+| Property                               | Type   | Description |
+| -------------------------------------- | ------ | ----------- |
+| [decimals](./sdk.currency.decimals.md) | number |             |
+| [name](./sdk.currency.name.md)         | string |             |
+| [symbol](./sdk.currency.symbol.md)     | string |             |

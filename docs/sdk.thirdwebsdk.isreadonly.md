@@ -9,9 +9,9 @@
 ```typescript
 isReadOnly(): boolean;
 ```
+
 <b>Returns:</b>
 
 boolean
 
 Whether the SDK is in read-only mode. (Meaning it has not been passed a valid "Signer.")
-

@@ -11,9 +11,9 @@ Trusted forwarder is used to forward gasless transactions. Trusted Forwarder of 
 ```typescript
 getForwarder(): Promise<string>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;string&gt;
 
 The address of the trusted forwarder contract
-

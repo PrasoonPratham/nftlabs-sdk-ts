@@ -7,13 +7,13 @@
 <b>Signature:</b>
 
 ```typescript
-export interface NativeToken extends Currency 
+export interface NativeToken extends Currency
 ```
+
 <b>Extends:</b> [Currency](./sdk.currency.md)
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [wrapped](./sdk.nativetoken.wrapped.md) | { address: string; name: string; symbol: string; } |  |
-
+| Property                                | Type                                               | Description |
+| --------------------------------------- | -------------------------------------------------- | ----------- |
+| [wrapped](./sdk.nativetoken.wrapped.md) | { address: string; name: string; symbol: string; } |             |

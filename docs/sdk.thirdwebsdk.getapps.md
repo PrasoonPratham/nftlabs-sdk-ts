@@ -14,13 +14,12 @@ getApps(address?: string): Promise<IAppModule[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| address   | string |             |
 
 <b>Returns:</b>
 
 Promise&lt;[IAppModule](./sdk.iappmodule.md)<!-- -->\[\]&gt;
 
 All currently registered apps for the connected wallet
-

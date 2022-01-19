@@ -15,11 +15,10 @@ generateSignatureBatch(payloads: NewSignaturePayload[]): Promise<{
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  payloads | [NewSignaturePayload](./sdk.newsignaturepayload.md)<!-- -->\[\] |  |
+| Parameter | Type                                                            | Description |
+| --------- | --------------------------------------------------------------- | ----------- |
+| payloads  | [NewSignaturePayload](./sdk.newsignaturepayload.md)<!-- -->\[\] |             |
 
 <b>Returns:</b>
 
 Promise&lt;{ payload: [SignaturePayload](./sdk.signaturepayload.md)<!-- -->; signature: string; }\[\]&gt;
-

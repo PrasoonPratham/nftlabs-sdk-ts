@@ -4,7 +4,7 @@ const {
   setPrototypeOf = function (obj: any, proto: any) {
     obj.__proto__ = proto;
     return obj;
-  },
+  }
 } = Object as any;
 
 /**
@@ -27,7 +27,7 @@ export class InvariantError extends Error {
     super(
       typeof message === "number"
         ? `${genericMessage}: ${message} (see https://github.com/apollographql/invariant-packages)`
-        : message,
+        : message
     );
     setPrototypeOf(this, InvariantError.prototype);
   }

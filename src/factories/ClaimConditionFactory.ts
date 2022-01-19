@@ -23,20 +23,20 @@ class ClaimConditionFactory {
    */
   public async buildConditions(): Promise<PublicClaimCondition[]> {
     let sorted: PublicClaimCondition[] = [];
-    await Promise.all(
-      this.phases.map((c) => c.buildPublicClaimCondition()),
-    ).then((publicClaimConditions) => {
-      // TODO: write test to ensure they're sorted by start time, earliest first
-      sorted = publicClaimConditions.sort((a, b) => {
-        if (a.startTimestamp.eq(b.startTimestamp)) {
-          return 0;
-        } else if (a.startTimestamp.gt(b.startTimestamp)) {
-          return 1;
-        } else {
-          return -1;
-        }
-      });
-    });
+    await Promise.all(this.phases.map(c => c.buildPublicClaimCondition())).then(
+      publicClaimConditions => {
+        // TODO: write test to ensure they're sorted by start time, earliest first
+        sorted = publicClaimConditions.sort((a, b) => {
+          if (a.startTimestamp.eq(b.startTimestamp)) {
+            return 0;
+          } else if (a.startTimestamp.gt(b.startTimestamp)) {
+            return 1;
+          } else {
+            return -1;
+          }
+        });
+      }
+    );
 
     return sorted;
   }
@@ -53,16 +53,16 @@ class ClaimConditionFactory {
     // v1 startTimestamp takes seconds from now.
     // v2 takes unix timestamp in seconds.
     let conditions = await Promise.all(
-      this.phases.map((c) => c.buildPublicClaimCondition()),
+      this.phases.map(c => c.buildPublicClaimCondition())
     );
 
-    conditions = conditions.map((c) => {
+    conditions = conditions.map(c => {
       const now = Math.floor(Date.now() / 1000);
       return {
         ...c,
         startTimestamp: c.startTimestamp.lt(now)
           ? BigNumber.from(0)
-          : c.startTimestamp.sub(now),
+          : c.startTimestamp.sub(now)
       };
     });
 
@@ -101,7 +101,7 @@ class ClaimConditionFactory {
       }
 
       phase.setConditionStartTime(
-        new Date(condition.startTimestamp.toNumber() * 1000),
+        new Date(condition.startTimestamp.toNumber() * 1000)
       );
       phases.push(phase);
     }
@@ -122,7 +122,7 @@ class ClaimConditionFactory {
   public newClaimPhase({
     startTime,
     maxQuantity = ethers.constants.MaxUint256,
-    maxQuantityPerTransaction = ethers.constants.MaxUint256,
+    maxQuantityPerTransaction = ethers.constants.MaxUint256
   }: {
     startTime: Date | number;
     maxQuantity?: BigNumberish;
@@ -133,7 +133,7 @@ class ClaimConditionFactory {
     condition.setConditionStartTime(startTime);
     condition.setMaxQuantity(BigNumber.from(maxQuantity));
     condition.setMaxQuantityPerTransaction(
-      BigNumber.from(maxQuantityPerTransaction),
+      BigNumber.from(maxQuantityPerTransaction)
     );
 
     this.phases.push(condition);
@@ -169,8 +169,8 @@ class ClaimConditionFactory {
    */
   public allSnapshots(): SnapshotInfo[] {
     return this.phases
-      .filter((p) => p.getSnapshot() !== undefined)
-      .map((p) => p.getSnapshot() as SnapshotInfo);
+      .filter(p => p.getSnapshot() !== undefined)
+      .map(p => p.getSnapshot() as SnapshotInfo);
   }
 }
 

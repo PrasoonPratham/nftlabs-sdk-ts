@@ -14,13 +14,12 @@ uploadMetadataBatch(metadatas: MetadataURIOrObject[], contractAddress?: string, 
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadatas | [MetadataURIOrObject](./sdk.metadatauriorobject.md)<!-- -->\[\] |  |
-|  contractAddress | string | Optional. The contract address the data belongs to. |
-|  fileStartNumber | number |  |
+| Parameter       | Type                                                            | Description                                         |
+| --------------- | --------------------------------------------------------------- | --------------------------------------------------- |
+| metadatas       | [MetadataURIOrObject](./sdk.metadatauriorobject.md)<!-- -->\[\] |                                                     |
+| contractAddress | string                                                          | Optional. The contract address the data belongs to. |
+| fileStartNumber | number                                                          |                                                     |
 
 <b>Returns:</b>
 
 Promise&lt;UploadMetadataBatchResult&gt;
-

@@ -12,11 +12,10 @@ setTimeBufferInSeconds(buffer: BigNumberish): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  buffer | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| buffer    | BigNumberish |             |
 
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

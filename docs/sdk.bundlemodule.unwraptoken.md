@@ -12,12 +12,11 @@ unwrapToken(tokenId: BigNumberish, amount: BigNumberish): Promise<TransactionRec
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenId | BigNumberish |  |
-|  amount | BigNumberish |  |
+| Parameter | Type         | Description |
+| --------- | ------------ | ----------- |
+| tokenId   | BigNumberish |             |
+| amount    | BigNumberish |             |
 
 <b>Returns:</b>
 
 Promise&lt;TransactionReceipt&gt;
-

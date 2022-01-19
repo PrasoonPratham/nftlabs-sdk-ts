@@ -3,13 +3,13 @@ import {
   NFT,
   NFT__factory,
   SignatureMint721,
-  SignatureMint721__factory,
+  SignatureMint721__factory
 } from "@3rdweb/contracts";
 import { MintedBatchEvent, MintedEvent } from "@3rdweb/contracts/dist/NFT";
 import {
   MintRequestStructOutput,
   TokenMintedEvent,
-  MintWithSignatureEvent,
+  MintWithSignatureEvent
 } from "@3rdweb/contracts/dist/SignatureMint721";
 import { AddressZero } from "@ethersproject/constants";
 import { TransactionReceipt } from "@ethersproject/providers";
@@ -21,7 +21,7 @@ import {
   NATIVE_TOKEN_ADDRESS,
   RestrictedTransferError,
   Role,
-  RolesMap,
+  RolesMap
 } from "../common";
 import { invariant } from "../common/invariant";
 import { NFTMetadata, NFTMetadataOwner } from "../common/nft";
@@ -39,7 +39,7 @@ const MintRequest = [
   { name: "currency", type: "address" },
   { name: "validityStartTimestamp", type: "uint128" },
   { name: "validityEndTimestamp", type: "uint128" },
-  { name: "uid", type: "bytes32" },
+  { name: "uid", type: "bytes32" }
 ];
 
 /**
@@ -67,7 +67,7 @@ export class NFTModule
   public static roles = [
     RolesMap.admin,
     RolesMap.minter,
-    RolesMap.transfer,
+    RolesMap.transfer
   ] as const;
 
   protected getModuleRoles(): readonly Role[] {
@@ -80,7 +80,7 @@ export class NFTModule
   protected connectContract(): SignatureMint721 {
     return SignatureMint721__factory.connect(
       this.address,
-      this.providerOrSigner,
+      this.providerOrSigner
     );
   }
 
@@ -107,7 +107,7 @@ export class NFTModule
         this._isV1 = true;
         this.v1Contract = NFT__factory.connect(
           this.address,
-          this.providerOrSigner,
+          this.providerOrSigner
         );
       }
       this._shouldCheckVersion = false;
@@ -129,7 +129,7 @@ export class NFTModule
       ...metadata,
       id: tokenId,
       uri,
-      image: storage.resolveFullUrl(metadata.image),
+      image: storage.resolveFullUrl(metadata.image)
     };
   }
 
@@ -154,14 +154,14 @@ export class NFTModule
       maxId = (await this.readOnlyContract.nextTokenIdToMint()).toNumber();
     }
     return await Promise.all(
-      Array.from(Array(maxId).keys()).map((i) => this.get(i.toString())),
+      Array.from(Array(maxId).keys()).map(i => this.get(i.toString()))
     );
   }
 
   public async getWithOwner(tokenId: string): Promise<NFTMetadataOwner> {
     const [owner, metadata] = await Promise.all([
       this.ownerOf(tokenId),
-      this.get(tokenId),
+      this.get(tokenId)
     ]);
 
     return { owner, metadata };
@@ -175,9 +175,7 @@ export class NFTModule
       maxId = (await this.readOnlyContract.nextTokenIdToMint()).toNumber();
     }
     return await Promise.all(
-      Array.from(Array(maxId).keys()).map((i) =>
-        this.getWithOwner(i.toString()),
-      ),
+      Array.from(Array(maxId).keys()).map(i => this.getWithOwner(i.toString()))
     );
   }
 
@@ -214,10 +212,10 @@ export class NFTModule
     const balance = await this.readOnlyContract.balanceOf(address);
     const indices = Array.from(Array(balance.toNumber()).keys());
     const tokenIds = await Promise.all(
-      indices.map((i) => this.readOnlyContract.tokenOfOwnerByIndex(address, i)),
+      indices.map(i => this.readOnlyContract.tokenOfOwnerByIndex(address, i))
     );
     return await Promise.all(
-      tokenIds.map((tokenId) => this.get(tokenId.toString())),
+      tokenIds.map(tokenId => this.get(tokenId.toString()))
     );
   }
 
@@ -255,11 +253,11 @@ export class NFTModule
   // write functions
   public async setApproval(
     operator: string,
-    approved = true,
+    approved = true
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("setApprovalForAll", [
       operator,
-      approved,
+      approved
     ]);
   }
 
@@ -281,7 +279,7 @@ export class NFTModule
    */
   public async transfer(
     to: string,
-    tokenId: string,
+    tokenId: string
   ): Promise<TransactionReceipt> {
     if (await this.isTransferRestricted()) {
       throw new RestrictedTransferError(this.address);
@@ -290,7 +288,7 @@ export class NFTModule
     const from = await this.getSignerAddress();
     return await this.sendTransaction(
       "safeTransferFrom(address,address,uint256)",
-      [from, to, tokenId],
+      [from, to, tokenId]
     );
   }
 
@@ -301,19 +299,19 @@ export class NFTModule
 
   private async _v1MintTo(
     to: string,
-    metadata: MetadataURIOrObject,
+    metadata: MetadataURIOrObject
   ): Promise<NFTMetadata> {
     invariant(this.v1Contract !== undefined, "v1 contract is undefined");
     const uri = await this.sdk.getStorage().uploadMetadata(metadata);
     const receipt = await this.sendContractTransaction(
       this.v1Contract,
       "mintNFT",
-      [to, uri],
+      [to, uri]
     );
     const events = this.parseLogs<MintedEvent>(
       "Minted",
       receipt?.logs,
-      this.v1Contract,
+      this.v1Contract
     );
     if (events.length === 0) {
       throw new Error("No Minted event found, failed to mint");
@@ -343,7 +341,7 @@ export class NFTModule
    */
   public async mintTo(
     to: string,
-    metadata: MetadataURIOrObject,
+    metadata: MetadataURIOrObject
   ): Promise<NFTMetadata> {
     if (await this.isV1()) {
       return await this._v1MintTo(to, metadata);
@@ -353,7 +351,7 @@ export class NFTModule
     const receipt = await this.sendTransaction("mintTo", [to, uri]);
     const event = this.parseLogs<TokenMintedEvent>(
       "TokenMinted",
-      receipt?.logs,
+      receipt?.logs
     );
     if (event.length === 0) {
       throw new Error("TokenMinted event not found");
@@ -364,14 +362,14 @@ export class NFTModule
   }
 
   public async mintBatch(
-    metadatas: MetadataURIOrObject[],
+    metadatas: MetadataURIOrObject[]
   ): Promise<NFTMetadata[]> {
     return await this.mintBatchTo(await this.getSignerAddress(), metadatas);
   }
 
   private async _v1MintBatchTo(
     to: string,
-    metadatas: MetadataURIOrObject[],
+    metadatas: MetadataURIOrObject[]
   ): Promise<NFTMetadata[]> {
     invariant(this.v1Contract !== undefined, "v1 contract is undefined");
 
@@ -381,12 +379,12 @@ export class NFTModule
     const receipt = await this.sendContractTransaction(
       this.v1Contract,
       "mintNFTBatch",
-      [to, uris],
+      [to, uris]
     );
     const events = this.parseLogs<MintedBatchEvent>(
       "MintedBatch",
       receipt?.logs,
-      this.v1Contract,
+      this.v1Contract
     );
     if (events.length === 0) {
       throw new Error("No MintedBatch event found, failed to mint");
@@ -394,7 +392,7 @@ export class NFTModule
 
     const tokenIds = events[0].args.tokenIds;
     return await Promise.all(
-      tokenIds.map((tokenId: BigNumber) => this.get(tokenId.toString())),
+      tokenIds.map((tokenId: BigNumber) => this.get(tokenId.toString()))
     );
   }
 
@@ -424,7 +422,7 @@ export class NFTModule
    */
   public async mintBatchTo(
     to: string,
-    metadatas: MetadataURIOrObject[],
+    metadatas: MetadataURIOrObject[]
   ): Promise<NFTMetadata[]> {
     if (await this.isV1()) {
       return await this._v1MintBatchTo(to, metadatas);
@@ -433,22 +431,22 @@ export class NFTModule
     const { metadataUris: uris } = await this.sdk
       .getStorage()
       .uploadMetadataBatch(metadatas);
-    const multicall = uris.map((uri) =>
-      this.contract.interface.encodeFunctionData("mintTo", [to, uri]),
+    const multicall = uris.map(uri =>
+      this.contract.interface.encodeFunctionData("mintTo", [to, uri])
     );
 
     const receipt = await this.sendTransaction("multicall", [multicall]);
     const events = this.parseLogs<TokenMintedEvent>(
       "TokenMinted",
-      receipt.logs,
+      receipt.logs
     );
     if (events.length === 0 || events.length < metadatas.length) {
       throw new Error("TokenMinted event not found, minting failed");
     }
 
-    const tokenIds = events.map((e) => e.args.tokenIdMinted);
+    const tokenIds = events.map(e => e.args.tokenIdMinted);
     return await Promise.all(
-      tokenIds.map((tokenId: BigNumber) => this.get(tokenId.toString())),
+      tokenIds.map((tokenId: BigNumber) => this.get(tokenId.toString()))
     );
   }
 
@@ -472,7 +470,7 @@ export class NFTModule
   public async transferFrom(
     from: string,
     to: string,
-    tokenId: BigNumberish,
+    tokenId: BigNumberish
   ): Promise<TransactionReceipt> {
     return await this.sendTransaction("transferFrom", [from, to, tokenId]);
   }
@@ -490,22 +488,22 @@ export class NFTModule
     metadata.seller_fee_basis_points = amount;
     const uri = await this.sdk.getStorage().uploadMetadata(
       {
-        ...metadata,
+        ...metadata
       },
       this.address,
-      await this.getSignerAddress(),
+      await this.getSignerAddress()
     );
     encoded.push(
-      this.contract.interface.encodeFunctionData("setRoyaltyBps", [amount]),
+      this.contract.interface.encodeFunctionData("setRoyaltyBps", [amount])
     );
     encoded.push(
-      this.contract.interface.encodeFunctionData("setContractURI", [uri]),
+      this.contract.interface.encodeFunctionData("setContractURI", [uri])
     );
     return await this.sendTransaction("multicall", [encoded]);
   }
 
   public async setModuleMetadata(
-    metadata: MetadataURIOrObject,
+    metadata: MetadataURIOrObject
   ): Promise<TransactionReceipt> {
     const uri = await this.sdk.getStorage().uploadMetadata(metadata);
     return await this.sendTransaction("setContractURI", [uri]);
@@ -538,7 +536,7 @@ export class NFTModule
   }
 
   public async setRestrictedTransfer(
-    restricted = false,
+    restricted = false
   ): Promise<TransactionReceipt> {
     await this.onlyRoles(["admin"], await this.getSignerAddress());
     return await this.sendTransaction("setRestrictedTransfer", [restricted]);
@@ -546,25 +544,25 @@ export class NFTModule
 
   public async mintWithSignature(
     req: SignaturePayload,
-    signature: string,
+    signature: string
   ): Promise<BigNumber> {
     const message = { ...this.mapPayload(req), uri: req.uri };
     const overrides = await this.getCallOverrides();
     await this.setAllowance(
       BigNumber.from(message.price),
       req.currencyAddress,
-      overrides,
+      overrides
     );
 
     const receipt = await this.sendTransaction(
       "mintWithSignature",
       [message, signature],
-      overrides,
+      overrides
     );
 
     const t = await this.parseLogs<MintWithSignatureEvent>(
       "MintWithSignature",
-      receipt.logs,
+      receipt.logs
     );
     if (t.length === 0) {
       throw new Error("No MintWithSignature event found");
@@ -575,18 +573,18 @@ export class NFTModule
 
   public async verify(
     mintRequest: SignaturePayload,
-    signature: string,
+    signature: string
   ): Promise<boolean> {
     const message = this.mapPayload(mintRequest);
     const v = await this.readOnlyContract.verify(
       { ...message, uri: mintRequest.uri },
-      signature,
+      signature
     );
     return v[0];
   }
 
   public async generateSignatureBatch(
-    payloads: NewSignaturePayload[],
+    payloads: NewSignaturePayload[]
   ): Promise<{ payload: SignaturePayload; signature: string }[]> {
     const resolveId = (mintRequest: NewSignaturePayload): string => {
       if (mintRequest.id === undefined) {
@@ -603,7 +601,7 @@ export class NFTModule
 
     const { metadataUris: uris } = await this.sdk
       .getStorage()
-      .uploadMetadataBatch(payloads.map((r) => r.metadata));
+      .uploadMetadataBatch(payloads.map(r => r.metadata));
 
     const chainId = await this.getChainID();
     const from = await this.getSignerAddress();
@@ -617,7 +615,7 @@ export class NFTModule
           payload: {
             ...m,
             id,
-            uri,
+            uri
           },
           signature: (
             await this.signTypedData(
@@ -627,23 +625,23 @@ export class NFTModule
                 name: "SignatureMint721",
                 version: "1",
                 chainId,
-                verifyingContract: this.address,
+                verifyingContract: this.address
               },
               { MintRequest },
               {
                 uri,
                 ...(this.mapPayload(m) as any),
-                uid: id,
-              },
+                uid: id
+              }
             )
-          ).toString(),
+          ).toString()
         };
-      }),
+      })
     );
   }
 
   public async generateSignature(
-    mintRequest: NewSignaturePayload,
+    mintRequest: NewSignaturePayload
   ): Promise<{ payload: SignaturePayload; signature: string }> {
     return (await this.generateSignatureBatch([mintRequest]))[0];
   }
@@ -657,7 +655,7 @@ export class NFTModule
    * @returns - The mapped payload.
    */
   private mapPayload(
-    mintRequest: SignaturePayload | NewSignaturePayload,
+    mintRequest: SignaturePayload | NewSignaturePayload
   ): MintRequestStructOutput {
     return {
       to: mintRequest.to,
@@ -665,7 +663,7 @@ export class NFTModule
       currency: mintRequest.currencyAddress,
       validityEndTimestamp: mintRequest.mintEndTimeEpochSeconds,
       validityStartTimestamp: mintRequest.mintStartTimeEpochSeconds,
-      uid: mintRequest.id,
+      uid: mintRequest.id
     } as MintRequestStructOutput;
   }
 
@@ -673,7 +671,7 @@ export class NFTModule
   private async setAllowance(
     value: BigNumber,
     currencyAddress: string,
-    overrides: any,
+    overrides: any
   ): Promise<any> {
     if (
       currencyAddress === NATIVE_TOKEN_ADDRESS ||
@@ -683,7 +681,7 @@ export class NFTModule
     } else {
       const erc20 = ERC20__factory.connect(
         currencyAddress,
-        this.providerOrSigner,
+        this.providerOrSigner
       );
       const owner = await this.getSignerAddress();
       const spender = this.address;
@@ -692,7 +690,7 @@ export class NFTModule
       if (allowance.lt(value)) {
         await this.sendContractTransaction(erc20, "increaseAllowance", [
           spender,
-          value.sub(allowance),
+          value.sub(allowance)
         ]);
       }
       return overrides;

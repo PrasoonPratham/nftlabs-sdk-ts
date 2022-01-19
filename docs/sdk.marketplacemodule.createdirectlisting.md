@@ -14,9 +14,9 @@ createDirectListing(listing: NewDirectListing): Promise<BigNumber>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listing | [NewDirectListing](./sdk.newdirectlisting.md) |  |
+| Parameter | Type                                          | Description |
+| --------- | --------------------------------------------- | ----------- |
+| listing   | [NewDirectListing](./sdk.newdirectlisting.md) |             |
 
 <b>Returns:</b>
 
@@ -27,7 +27,6 @@ Promise&lt;BigNumber&gt;
 Create a new listing on the marketplace where people can buy an asset directly.
 
 ## Example
-
 
 ```javascript
 // Data of the listing you want to create
@@ -45,9 +44,8 @@ const listing = {
   // address of the currency contract that will be used to pay for the listing
   currencyContractAddress: "0x0000000000000000000000000000000000000000",
   // how much the asset will be sold for
-  buyoutPricePerToken: "1",
-}
+  buyoutPricePerToken: "1"
+};
 
 await module.createDirectListing(listing);
 ```
-

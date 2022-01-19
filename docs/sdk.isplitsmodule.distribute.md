@@ -11,7 +11,7 @@ Distributes all funds to the recipients.
 ```typescript
 distribute(): Promise<void>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;void&gt;
-

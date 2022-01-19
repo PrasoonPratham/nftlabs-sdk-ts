@@ -7,13 +7,13 @@
 <b>Signature:</b>
 
 ```typescript
-export interface ITokenMintFromArgs extends ITokenMintArgs 
+export interface ITokenMintFromArgs extends ITokenMintArgs
 ```
+
 <b>Extends:</b> [ITokenMintArgs](./sdk.itokenmintargs.md)
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [fromAddress](./sdk.itokenmintfromargs.fromaddress.md) | string |  |
-
+| Property                                               | Type   | Description |
+| ------------------------------------------------------ | ------ | ----------- |
+| [fromAddress](./sdk.itokenmintfromargs.fromaddress.md) | string |             |

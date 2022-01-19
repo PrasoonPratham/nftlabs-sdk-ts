@@ -14,9 +14,9 @@ mintBatchTo(args: ITokenMintArgs[]): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  args | [ITokenMintArgs](./sdk.itokenmintargs.md)<!-- -->\[\] |  |
+| Parameter | Type                                                  | Description |
+| --------- | ----------------------------------------------------- | ----------- |
+| args      | [ITokenMintArgs](./sdk.itokenmintargs.md)<!-- -->\[\] |             |
 
 <b>Returns:</b>
 
@@ -28,20 +28,18 @@ Mint tokens to many different wallets
 
 ## Example
 
-
 ```javascript
 // Data of the tokens you want to mint
 const data = [
   {
     address: "{{wallet_address}}", // Address to mint tokens to
-    amount: 100, // How many tokens to mint to specified address
+    amount: 100 // How many tokens to mint to specified address
   },
- {
-   address: "0x...",
-   amount: 100,
- }
-]
+  {
+    address: "0x...",
+    amount: 100
+  }
+];
 
 await module.transfer(toAddress, amount);
 ```
-

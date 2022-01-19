@@ -15,9 +15,9 @@ This value is formatter as basis points (e.g. 5% = 500).
 ```typescript
 getTimeBufferInSeconds(): Promise<BigNumber>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;BigNumber&gt;
 
 - The time buffer in seconds.
-

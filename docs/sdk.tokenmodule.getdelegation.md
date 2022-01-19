@@ -11,9 +11,9 @@ Get your voting delegatee address
 ```typescript
 getDelegation(): Promise<string>;
 ```
+
 <b>Returns:</b>
 
 Promise&lt;string&gt;
 
 the address of your vote delegatee
-

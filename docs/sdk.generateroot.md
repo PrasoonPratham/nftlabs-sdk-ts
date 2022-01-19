@@ -14,13 +14,12 @@ export declare function generateRoot(items: string[]): string;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  items | string\[\] | Any list of strings that will be hashed and added to the tree. |
+| Parameter | Type       | Description                                                    |
+| --------- | ---------- | -------------------------------------------------------------- |
+| items     | string\[\] | Any list of strings that will be hashed and added to the tree. |
 
 <b>Returns:</b>
 
 string
 
 - A merkle root (in hexadecimal).
-

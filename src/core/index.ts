@@ -4,7 +4,7 @@ import {
   JsonRpcProvider,
   JsonRpcSigner,
   Provider,
-  Web3Provider,
+  Web3Provider
 } from "@ethersproject/providers";
 import { parseUnits } from "@ethersproject/units";
 import { signERC2612Permit } from "eth-permit";
@@ -14,7 +14,7 @@ import {
   BytesLike,
   ContractReceipt,
   ethers,
-  Signer,
+  Signer
 } from "ethers";
 import { EventEmitter2 } from "eventemitter2";
 import { JsonConvert } from "json2typescript";
@@ -23,17 +23,17 @@ import type { C } from "ts-toolbelt";
 import {
   DuplicateLeafsError,
   getContractMetadata,
-  uploadMetadata,
+  uploadMetadata
 } from "../common";
 import {
   FORWARDER_ADDRESS,
-  getContractAddressByChainId,
+  getContractAddressByChainId
 } from "../common/address";
 import { SUPPORTED_CHAIN_ID } from "../common/chain";
 import {
   BiconomyForwarderAbi,
   ForwardRequest,
-  getAndIncrementNonce,
+  getAndIncrementNonce
 } from "../common/forwarder";
 import { getGasPriceForChain } from "../common/gas-price";
 import { invariant } from "../common/invariant";
@@ -62,7 +62,7 @@ import {
   MetadataURIOrObject,
   PermitRequestMessage,
   ProviderOrSigner,
-  ValidProviderInput,
+  ValidProviderInput
 } from "./types";
 
 /**
@@ -103,10 +103,10 @@ export class ThirdwebSDK implements IThirdwebSdk {
       biconomy: {
         apiId: "",
         apiKey: "",
-        deadlineSeconds: 3600,
-      },
+        deadlineSeconds: 3600
+      }
     },
-    gaslessSendFunction: this.defaultGaslessSendFunction.bind(this),
+    gaslessSendFunction: this.defaultGaslessSendFunction.bind(this)
   };
 
   private modules = new Map<string, C.Instance<AnyContract>>();
@@ -140,12 +140,12 @@ export class ThirdwebSDK implements IThirdwebSdk {
 
   constructor(
     providerOrNetwork: ValidProviderInput,
-    opts?: Partial<ISDKOptions>,
+    opts?: Partial<ISDKOptions>
   ) {
     this.providerOrSigner = this.setProviderOrSigner(providerOrNetwork);
     this.options = {
       ...this.defaultOptions,
-      ...opts,
+      ...opts
     };
     this.storage = new IpfsStorage(this.options.ipfsGatewayUrl);
   }
@@ -185,7 +185,7 @@ export class ThirdwebSDK implements IThirdwebSdk {
       return this.options.registryContractAddress;
     }
     return getContractAddressByChainId(
-      (await this.getChainID()) as SUPPORTED_CHAIN_ID,
+      (await this.getChainID()) as SUPPORTED_CHAIN_ID
     );
   }
   /**
@@ -202,7 +202,7 @@ export class ThirdwebSDK implements IThirdwebSdk {
 
   private getOrCreateModule<T extends AnyContract>(
     address: string,
-    _Module: T,
+    _Module: T
   ): C.Instance<T> {
     if (this.modules.has(address)) {
       return this.modules.get(address) as C.Instance<T>;
@@ -211,7 +211,7 @@ export class ThirdwebSDK implements IThirdwebSdk {
       this.providerOrSigner,
       address,
       this.options,
-      this,
+      this
     );
     this.modules.set(address, _newModule);
     return _newModule as C.Instance<T>;
@@ -244,7 +244,7 @@ export class ThirdwebSDK implements IThirdwebSdk {
    * @returns The transaction receipt
    */
   public async createApp(
-    metadata: MetadataURIOrObject,
+    metadata: MetadataURIOrObject
   ): Promise<ContractReceipt> {
     const registryContract = (this.registry || (await this.getRegistryModule()))
       .contract;
@@ -258,7 +258,7 @@ export class ThirdwebSDK implements IThirdwebSdk {
     const uri = await uploadMetadata(
       metadata,
       registryContract.address,
-      (await this.signer?.getAddress()) || undefined,
+      (await this.signer?.getAddress()) || undefined
     );
 
     const txn = await registryContract.deployProtocol(uri, txOpts);
@@ -273,7 +273,7 @@ export class ThirdwebSDK implements IThirdwebSdk {
    */
   public async getGasPrice(
     speed?: string,
-    maxGasGwei?: number,
+    maxGasGwei?: number
   ): Promise<number | null> {
     const _speed = speed ? speed : this.options.gasSpeed;
     const _maxGas = maxGasGwei ? maxGasGwei : this.options.maxGasPriceInGwei;
@@ -295,7 +295,7 @@ export class ThirdwebSDK implements IThirdwebSdk {
     } else {
       // sdk instantiated with a network name / network url
       this.providerOrSigner = ethers.getDefaultProvider(
-        providerOrSignerOrNetwork,
+        providerOrSignerOrNetwork
       );
     }
     // if we're setting a signer then also update that
@@ -322,16 +322,16 @@ export class ThirdwebSDK implements IThirdwebSdk {
    * @returns The contract metadata for the given contract address.
    */
   public async getContractMetadata(
-    address: string,
+    address: string
   ): Promise<ModuleMetadataNoType> {
     return {
       ...(await getContractMetadata(
         this.providerOrSigner,
         address,
         this.options.ipfsGatewayUrl,
-        true,
+        true
       )),
-      address,
+      address
     };
   }
 
@@ -529,7 +529,7 @@ export class ThirdwebSDK implements IThirdwebSdk {
 
   private async defaultGaslessSendFunction(
     contract: BaseContract,
-    transaction: GaslessTransaction,
+    transaction: GaslessTransaction
   ): Promise<string> {
     if (
       this.options.gasless.biconomy.apiId &&
@@ -542,7 +542,7 @@ export class ThirdwebSDK implements IThirdwebSdk {
 
   private async biconomySendFunction(
     _contract: BaseContract,
-    transaction: GaslessTransaction,
+    transaction: GaslessTransaction
   ): Promise<string> {
     const signer = this.getSigner();
     const provider = this.getProvider();
@@ -551,15 +551,15 @@ export class ThirdwebSDK implements IThirdwebSdk {
     const forwarder = new ethers.Contract(
       getContractAddressByChainId(
         transaction.chainId,
-        "biconomyForwarder",
+        "biconomyForwarder"
       ) as string,
       BiconomyForwarderAbi,
-      provider,
+      provider
     );
     const batchId = 0;
     const batchNonce = await getAndIncrementNonce(forwarder, "getNonce", [
       transaction.from,
-      batchId,
+      batchId
     ]);
 
     const request = {
@@ -572,9 +572,9 @@ export class ThirdwebSDK implements IThirdwebSdk {
       batchNonce: batchNonce.toNumber(),
       deadline: Math.floor(
         Date.now() / 1000 +
-          (this.options.gasless.biconomy.deadlineSeconds ?? 3600),
+          (this.options.gasless.biconomy.deadlineSeconds ?? 3600)
       ),
-      data: transaction.data,
+      data: transaction.data
     };
 
     const hashToSign = ethers.utils.arrayify(
@@ -588,7 +588,7 @@ export class ThirdwebSDK implements IThirdwebSdk {
           "uint256",
           "uint256",
           "uint256",
-          "bytes32",
+          "bytes32"
         ],
         [
           request.from,
@@ -599,9 +599,9 @@ export class ThirdwebSDK implements IThirdwebSdk {
           request.batchId,
           request.batchNonce,
           request.deadline,
-          ethers.utils.keccak256(request.data),
-        ],
-      ),
+          ethers.utils.keccak256(request.data)
+        ]
+      )
     );
 
     const signature = await signer.signMessage(hashToSign);
@@ -614,13 +614,13 @@ export class ThirdwebSDK implements IThirdwebSdk {
           apiId: this.options.gasless.biconomy.apiId,
           params: [request, signature],
           to: transaction.to,
-          gasLimit: transaction.gasLimit.toHexString(),
+          gasLimit: transaction.gasLimit.toHexString()
         }),
         headers: {
           "x-api-key": this.options.gasless.biconomy.apiKey,
-          "Content-Type": "application/json;charset=utf-8",
-        },
-      },
+          "Content-Type": "application/json;charset=utf-8"
+        }
+      }
     );
 
     if (response.ok) {
@@ -635,7 +635,7 @@ export class ThirdwebSDK implements IThirdwebSdk {
 
   private async defenderSendFunction(
     contract: BaseContract,
-    transaction: GaslessTransaction,
+    transaction: GaslessTransaction
   ): Promise<string> {
     const signer = this.getSigner();
     const provider = this.getProvider();
@@ -644,17 +644,17 @@ export class ThirdwebSDK implements IThirdwebSdk {
     const forwarderAddress = this.options.transactionRelayerForwarderAddress;
     const forwarder = Forwarder__factory.connect(forwarderAddress, provider);
     const nonce = await getAndIncrementNonce(forwarder, "getNonce", [
-      transaction.from,
+      transaction.from
     ]);
     const domain = {
       name: "GSNv2 Forwarder",
       version: "0.0.1",
       chainId: transaction.chainId,
-      verifyingContract: forwarderAddress,
+      verifyingContract: forwarderAddress
     };
 
     const types = {
-      ForwardRequest,
+      ForwardRequest
     };
 
     let message: ForwardRequestMessage | PermitRequestMessage = {
@@ -663,7 +663,7 @@ export class ThirdwebSDK implements IThirdwebSdk {
       value: BigNumber.from(0).toString(),
       gas: BigNumber.from(transaction.gasLimit).toString(),
       nonce: BigNumber.from(nonce).toString(),
-      data: transaction.data,
+      data: transaction.data
     };
 
     let signature: BytesLike;
@@ -685,7 +685,7 @@ export class ThirdwebSDK implements IThirdwebSdk {
         contract.address,
         transaction.from,
         spender,
-        amount,
+        amount
       );
       message = { to: contract.address, ...permit };
       signature = `${permit.r}${permit.s.substring(2)}${permit.v.toString(16)}`;
@@ -701,17 +701,17 @@ export class ThirdwebSDK implements IThirdwebSdk {
         const payload = ethers.utils._TypedDataEncoder.getPayload(
           domain,
           types,
-          message,
+          message
         );
         signature = await (signer?.provider as JsonRpcProvider).send(
           "eth_signTypedData",
-          [transaction.from.toLowerCase(), JSON.stringify(payload)],
+          [transaction.from.toLowerCase(), JSON.stringify(payload)]
         );
       } else {
         signature = await (signer as JsonRpcSigner)._signTypedData(
           domain,
           types,
-          message,
+          message
         );
       }
     }
@@ -719,7 +719,7 @@ export class ThirdwebSDK implements IThirdwebSdk {
     // TODO: isolate http request logic in here. `transactionRelayerSendFunction` is deprecated using it for backward compatibility reasons.
     const txHash = await this.options.transactionRelayerSendFunction(
       message,
-      signature,
+      signature
     );
 
     return txHash;
@@ -727,7 +727,7 @@ export class ThirdwebSDK implements IThirdwebSdk {
 
   private async defaultRelayerSendFunction(
     message: ForwardRequestMessage | PermitRequestMessage,
-    signature: BytesLike,
+    signature: BytesLike
   ): Promise<string> {
     let messageType = "forward";
 
@@ -739,13 +739,13 @@ export class ThirdwebSDK implements IThirdwebSdk {
     const body = JSON.stringify({
       request: message,
       signature,
-      type: messageType,
+      type: messageType
     });
 
     // console.log("POST", this.options.transactionRelayerUrl, body);
     const response = await fetch(this.options.transactionRelayerUrl, {
       method: "POST",
-      body,
+      body
     });
     if (response.ok) {
       const resp = await response.json();
@@ -763,9 +763,9 @@ export class ThirdwebSDK implements IThirdwebSdk {
 
     const { default: keccak256 } = await import("keccak256");
 
-    const hashedLeafs = leafs.map((l) => keccak256(l));
+    const hashedLeafs = leafs.map(l => keccak256(l));
     const tree = new MerkleTree(hashedLeafs, keccak256, {
-      sort: true,
+      sort: true
     });
 
     const snapshot: Snapshot = {
@@ -774,20 +774,20 @@ export class ThirdwebSDK implements IThirdwebSdk {
         const proof = tree.getHexProof(keccak256(l));
         return {
           address: l,
-          proof,
+          proof
         };
-      }),
+      })
     };
 
     const serializedSnapshot = JSON.stringify(
-      this._jsonConvert.serializeObject(snapshot, Snapshot),
+      this._jsonConvert.serializeObject(snapshot, Snapshot)
     );
     const uri = await this.storage.upload(serializedSnapshot);
 
     return {
       merkleRoot: tree.getHexRoot(),
       snapshotUri: uri,
-      snapshot,
+      snapshot
     };
   }
 

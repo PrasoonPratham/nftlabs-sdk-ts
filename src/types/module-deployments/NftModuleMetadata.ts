@@ -1,7 +1,7 @@
 import {
   JsonObject,
   JsonProperty,
-  PropertyConvertingMode,
+  PropertyConvertingMode
 } from "json2typescript";
 import CommonModuleMetadata from "./CommonModuleMetadata";
 
@@ -18,7 +18,7 @@ export class NftModuleMetadata extends CommonModuleMetadata {
   @JsonProperty(
     "seller_fee_basis_points",
     Number,
-    PropertyConvertingMode.IGNORE_NULLABLE,
+    PropertyConvertingMode.IGNORE_NULLABLE
   )
   sellerFeeBasisPoints = 0;
 
@@ -54,7 +54,7 @@ export class NftModuleMetadata extends CommonModuleMetadata {
   @JsonProperty(
     "default_sale_recipient_address",
     String,
-    PropertyConvertingMode.IGNORE_NULLABLE,
+    PropertyConvertingMode.IGNORE_NULLABLE
   )
   defaultSaleRecipientAddress? = "";
 
@@ -74,7 +74,7 @@ export class NftModuleMetadata extends CommonModuleMetadata {
   @JsonProperty(
     "sale_fee_basis_points",
     Number,
-    PropertyConvertingMode.IGNORE_NULLABLE,
+    PropertyConvertingMode.IGNORE_NULLABLE
   )
   primarySaleFeeBasisPoints? = 0;
 }

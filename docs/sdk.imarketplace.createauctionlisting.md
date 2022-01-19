@@ -14,13 +14,12 @@ createAuctionListing(listing: NewAuctionListing): Promise<BigNumber>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  listing | [NewAuctionListing](./sdk.newauctionlisting.md) | The new auction listing to create. |
+| Parameter | Type                                            | Description                        |
+| --------- | ----------------------------------------------- | ---------------------------------- |
+| listing   | [NewAuctionListing](./sdk.newauctionlisting.md) | The new auction listing to create. |
 
 <b>Returns:</b>
 
 Promise&lt;BigNumber&gt;
 
 - The ID of the newly created listing.
-

@@ -2,7 +2,7 @@ enum ClaimConditionType {
   StartTime,
   LimitPerWallet,
   MerkleRoot,
-  WaitTimeBetweenClaims,
+  WaitTimeBetweenClaims
 }
 
 /**

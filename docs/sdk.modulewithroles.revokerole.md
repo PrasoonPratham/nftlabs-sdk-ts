@@ -14,10 +14,10 @@ revokeRole(role: Role, address: string): Promise<TransactionReceipt>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  role | [Role](./sdk.role.md) | The [role](./sdk.iroles.md) to revoke |
-|  address | string | The address to revoke the role from |
+| Parameter | Type                  | Description                           |
+| --------- | --------------------- | ------------------------------------- |
+| role      | [Role](./sdk.role.md) | The [role](./sdk.iroles.md) to revoke |
+| address   | string                | The address to revoke the role from   |
 
 <b>Returns:</b>
 
@@ -34,4 +34,3 @@ If you are trying to revoke does not exist on the module this will throw an [Inv
 -- Caution --
 
 This will let you remove yourself from the role, too. If you remove yourself from the [admin](./sdk.iroles.admin.md) role, you will no longer be able to administer the module. There is no way to recover from this.
-

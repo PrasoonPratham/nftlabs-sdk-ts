@@ -5,9 +5,8 @@
 ## MarketModule.getAllListings() method
 
 > Warning: This API is now obsolete.
-> 
+>
 > Use [MarketModule.getAll()](./sdk.marketmodule.getall.md) instead.
-> 
 
 <b>Signature:</b>
 
@@ -17,11 +16,10 @@ getAllListings(filter?: ListingFilter): Promise<ListingMetadata[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  filter | [ListingFilter](./sdk.listingfilter.md) |  |
+| Parameter | Type                                    | Description |
+| --------- | --------------------------------------- | ----------- |
+| filter    | [ListingFilter](./sdk.listingfilter.md) |             |
 
 <b>Returns:</b>
 
 Promise&lt;[ListingMetadata](./sdk.listingmetadata.md)<!-- -->\[\]&gt;
-

@@ -9,7 +9,7 @@
 ```typescript
 protected getModuleRoles(): readonly Role[];
 ```
+
 <b>Returns:</b>
 
 readonly [Role](./sdk.role.md)<!-- -->\[\]
-

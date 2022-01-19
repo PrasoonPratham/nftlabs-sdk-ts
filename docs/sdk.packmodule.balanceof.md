@@ -14,10 +14,10 @@ balanceOf(address: string, tokenId: string): Promise<BigNumber>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string |  |
-|  tokenId | string |  |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| address   | string |             |
+| tokenId   | string |             |
 
 <b>Returns:</b>
 
@@ -29,7 +29,6 @@ Get a wallets pack balance (number of a specific packs in this module owned by t
 
 ## Example
 
-
 ```javascript
 // Address of the wallet to check pack balance
 const address = "{{wallet_address}}"";
@@ -39,4 +38,3 @@ const tokenId = "0"
 const balance = await module.balanceOf(address, tokenId);
 console.log(balance);
 ```
-

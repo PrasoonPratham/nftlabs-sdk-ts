@@ -12,13 +12,12 @@ getBundleModule(address: string): BundleModule;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  address | string | The contract address of the given Bundle module. |
+| Parameter | Type   | Description                                      |
+| --------- | ------ | ------------------------------------------------ |
+| address   | string | The contract address of the given Bundle module. |
 
 <b>Returns:</b>
 
 [BundleModule](./sdk.bundlemodule.md)
 
 The Bundle Module.
-
