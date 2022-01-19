@@ -1,3 +1,12 @@
+---
+id: "index"
+title: "@3rdweb/sdk"
+slug: "/api/"
+sidebar_label: "Readme"
+sidebar_position: 0
+custom_edit_url: null
+---
+
 # Thirdweb TypeScript SDK
 
 ### Thirdweb Docs
