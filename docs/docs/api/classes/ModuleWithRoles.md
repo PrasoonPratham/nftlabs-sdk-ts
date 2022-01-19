@@ -10,8 +10,8 @@ Extends the [Module](Module) class to add [Role](../modules#role) functionality.
 
 ## Type parameters
 
-| Name        | Type                                                          |
-| :---------- | :------------------------------------------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `TContract` | extends `AccessControlEnumerable` = `AccessControlEnumerable` |
 
 ## Hierarchy
@@ -50,18 +50,18 @@ Extends the [Module](Module) class to add [Role](../modules#role) functionality.
 
 #### Type parameters
 
-| Name        | Type                                                                        |
-| :---------- | :-------------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `TContract` | extends `AccessControlEnumerable`<`TContract`\> = `AccessControlEnumerable` |
 
 #### Parameters
 
-| Name               | Type                                              |
-| :----------------- | :------------------------------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `providerOrSigner` | [`ProviderOrSigner`](../modules#providerorsigner) |
-| `address`          | `string`                                          |
-| `options`          | [`ISDKOptions`](../interfaces/ISDKOptions)        |
-| `sdk`              | [`ThirdwebSDK`](ThirdwebSDK)                      |
+| `address` | `string` |
+| `options` | [`ISDKOptions`](../interfaces/ISDKOptions) |
+| `sdk` | [`ThirdwebSDK`](ThirdwebSDK) |
 
 #### Overrides
 
@@ -69,7 +69,7 @@ Extends the [Module](Module) class to add [Role](../modules#role) functionality.
 
 #### Defined in
 
-[src/core/module.ts:509](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L509)
+[src/core/module.ts:509](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L509)
 
 ## Properties
 
@@ -85,9 +85,9 @@ Extends the [Module](Module) class to add [Role](../modules#role) functionality.
 
 #### Defined in
 
-[src/core/module.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L45)
+[src/core/module.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L45)
 
----
+___
 
 ### contract
 
@@ -103,9 +103,9 @@ Contract connects to the SDK signer or provider
 
 #### Defined in
 
-[src/core/module.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L93)
+[src/core/module.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L93)
 
----
+___
 
 ### ipfsGatewayUrl
 
@@ -121,9 +121,9 @@ Contract connects to the SDK signer or provider
 
 #### Defined in
 
-[src/core/module.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L50)
+[src/core/module.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L50)
 
----
+___
 
 ### options
 
@@ -139,9 +139,9 @@ Contract connects to the SDK signer or provider
 
 #### Defined in
 
-[src/core/module.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L55)
+[src/core/module.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L55)
 
----
+___
 
 ### readOnlyContract
 
@@ -157,9 +157,9 @@ Contract connects to the [ISDKOptions.readOnlyRpcUrl](../interfaces/ISDKOptions#
 
 #### Defined in
 
-[src/core/module.ts:98](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L98)
+[src/core/module.ts:98](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L98)
 
----
+___
 
 ### sdk
 
@@ -171,7 +171,7 @@ Contract connects to the [ISDKOptions.readOnlyRpcUrl](../interfaces/ISDKOptions#
 
 #### Defined in
 
-[src/core/module.ts:57](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L57)
+[src/core/module.ts:57](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L57)
 
 ## Accessors
 
@@ -191,7 +191,7 @@ Module.providerOrSigner
 
 #### Defined in
 
-[src/core/module.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L66)
+[src/core/module.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L66)
 
 • `Protected` `set` **providerOrSigner**(`value`): `void`
 
@@ -199,8 +199,8 @@ Module.providerOrSigner
 
 #### Parameters
 
-| Name    | Type                                              |
-| :------ | :------------------------------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `value` | [`ProviderOrSigner`](../modules#providerorsigner) |
 
 #### Returns
@@ -213,9 +213,9 @@ Module.providerOrSigner
 
 #### Defined in
 
-[src/core/module.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L70)
+[src/core/module.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L70)
 
----
+___
 
 ### roles
 
@@ -229,19 +229,19 @@ readonly keyof [`IRoles`](../interfaces/IRoles)[]
 
 #### Defined in
 
-[src/core/module.ts:504](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L504)
+[src/core/module.ts:504](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L504)
 
----
+___
 
 ### signer
 
-• `Protected` `get` **signer**(): `null` \| `Signer`
+• `Protected` `get` **signer**(): ``null`` \| `Signer`
 
 **`internal`**
 
 #### Returns
 
-`null` \| `Signer`
+``null`` \| `Signer`
 
 #### Inherited from
 
@@ -249,7 +249,7 @@ Module.signer
 
 #### Defined in
 
-[src/core/module.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L81)
+[src/core/module.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L81)
 
 • `Protected` `set` **signer**(`value`): `void`
 
@@ -257,9 +257,9 @@ Module.signer
 
 #### Parameters
 
-| Name    | Type               |
-| :------ | :----------------- |
-| `value` | `null` \| `Signer` |
+| Name | Type |
+| :------ | :------ |
+| `value` | ``null`` \| `Signer` |
 
 #### Returns
 
@@ -271,7 +271,7 @@ Module.signer
 
 #### Defined in
 
-[src/core/module.ts:85](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L85)
+[src/core/module.ts:85](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L85)
 
 ## Methods
 
@@ -291,9 +291,9 @@ Module.signer
 
 #### Defined in
 
-[src/core/module.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L188)
+[src/core/module.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L188)
 
----
+___
 
 ### connectContract
 
@@ -313,9 +313,9 @@ Module.signer
 
 #### Defined in
 
-[src/core/module.ts:246](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L246)
+[src/core/module.ts:246](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L246)
 
----
+___
 
 ### exists
 
@@ -333,9 +333,9 @@ whether the given contract exists on-chain
 
 #### Defined in
 
-[src/core/module.ts:126](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L126)
+[src/core/module.ts:126](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L126)
 
----
+___
 
 ### getAllRoleMembers
 
@@ -355,9 +355,9 @@ A record of [Role](../modules#role)s to lists of addresses that are members of t
 
 #### Defined in
 
-[src/core/module.ts:556](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L556)
+[src/core/module.ts:556](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L556)
 
----
+___
 
 ### getCallOverrides
 
@@ -375,9 +375,9 @@ A record of [Role](../modules#role)s to lists of addresses that are members of t
 
 #### Defined in
 
-[src/core/module.ts:261](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L261)
+[src/core/module.ts:261](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L261)
 
----
+___
 
 ### getChainID
 
@@ -395,9 +395,9 @@ A record of [Role](../modules#role)s to lists of addresses that are members of t
 
 #### Defined in
 
-[src/core/module.ts:235](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L235)
+[src/core/module.ts:235](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L235)
 
----
+___
 
 ### getMetadata
 
@@ -405,9 +405,9 @@ A record of [Role](../modules#role)s to lists of addresses that are members of t
 
 #### Parameters
 
-| Name          | Type      | Default value | Description                                               |
-| :------------ | :-------- | :------------ | :-------------------------------------------------------- |
-| `resolveUrls` | `boolean` | `true`        | Whether to resolve the urls in the metadata to a gateway. |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `resolveUrls` | `boolean` | `true` | Whether to resolve the urls in the metadata to a gateway. |
 
 #### Returns
 
@@ -419,9 +419,9 @@ A record of [Role](../modules#role)s to lists of addresses that are members of t
 
 #### Defined in
 
-[src/core/module.ts:138](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L138)
+[src/core/module.ts:138](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L138)
 
----
+___
 
 ### getModuleRoles
 
@@ -437,9 +437,9 @@ readonly keyof [`IRoles`](../interfaces/IRoles)[]
 
 #### Defined in
 
-[src/core/module.ts:497](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L497)
+[src/core/module.ts:497](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L497)
 
----
+___
 
 ### getModuleType
 
@@ -459,9 +459,9 @@ readonly keyof [`IRoles`](../interfaces/IRoles)[]
 
 #### Defined in
 
-[src/core/module.ts:254](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L254)
+[src/core/module.ts:254](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L254)
 
----
+___
 
 ### getProvider
 
@@ -479,9 +479,9 @@ readonly keyof [`IRoles`](../interfaces/IRoles)[]
 
 #### Defined in
 
-[src/core/module.ts:228](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L228)
+[src/core/module.ts:228](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L228)
 
----
+___
 
 ### getRevokeRoleFunctionName
 
@@ -489,8 +489,8 @@ readonly keyof [`IRoles`](../interfaces/IRoles)[]
 
 #### Parameters
 
-| Name      | Type     |
-| :-------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `address` | `string` |
 
 #### Returns
@@ -499,9 +499,9 @@ readonly keyof [`IRoles`](../interfaces/IRoles)[]
 
 #### Defined in
 
-[src/core/module.ts:727](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L727)
+[src/core/module.ts:727](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L727)
 
----
+___
 
 ### getRoleMembers
 
@@ -514,15 +514,14 @@ Call this to get a list of addresses that are members of a specific role.
 **`see`** [getAllRoleMembers](ModuleWithRoles#getallrolemembers) to get get a list of addresses for all supported roles on the module.
 
 **`example`** Say you want to get the list of addresses that are members of the [minter](../interfaces/IRoles#minter) role.
-
 ```typescript
 const minterAddresses: string[] = await module.getRoleMemberList("minter");
 ```
 
 #### Parameters
 
-| Name   | Type                                   | Description                                                  |
-| :----- | :------------------------------------- | :----------------------------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `role` | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to to get a memberlist for. |
 
 #### Returns
@@ -533,19 +532,19 @@ The list of addresses that are members of the specific role.
 
 #### Defined in
 
-[src/core/module.ts:532](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L532)
+[src/core/module.ts:532](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L532)
 
----
+___
 
 ### getSigner
 
-▸ `Protected` **getSigner**(): `null` \| `Signer`
+▸ `Protected` **getSigner**(): ``null`` \| `Signer`
 
 **`internal`**
 
 #### Returns
 
-`null` \| `Signer`
+``null`` \| `Signer`
 
 #### Inherited from
 
@@ -553,9 +552,9 @@ The list of addresses that are members of the specific role.
 
 #### Defined in
 
-[src/core/module.ts:202](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L202)
+[src/core/module.ts:202](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L202)
 
----
+___
 
 ### getSignerAddress
 
@@ -573,9 +572,9 @@ The list of addresses that are members of the specific role.
 
 #### Defined in
 
-[src/core/module.ts:219](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L219)
+[src/core/module.ts:219](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L219)
 
----
+___
 
 ### grantRole
 
@@ -591,10 +590,10 @@ Make sure you are sure you want to grant the role to the address.
 
 #### Parameters
 
-| Name      | Type                                   | Description                                              |
-| :-------- | :------------------------------------- | :------------------------------------------------------- |
-| `role`    | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to grant to the address |
-| `address` | `string`                               | The address to grant the role to                         |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `role` | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to grant to the address |
+| `address` | `string` | The address to grant the role to |
 
 #### Returns
 
@@ -604,9 +603,9 @@ The transaction receipt
 
 #### Defined in
 
-[src/core/module.ts:680](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L680)
+[src/core/module.ts:680](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L680)
 
----
+___
 
 ### hasValidSigner
 
@@ -624,9 +623,9 @@ The transaction receipt
 
 #### Defined in
 
-[src/core/module.ts:212](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L212)
+[src/core/module.ts:212](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L212)
 
----
+___
 
 ### onlyRoles
 
@@ -636,10 +635,10 @@ Throws an error if an address is missing the roles specified.
 
 #### Parameters
 
-| Name      | Type                                     | Description          |
-| :-------- | :--------------------------------------- | :------------------- |
-| `roles`   | keyof [`IRoles`](../interfaces/IRoles)[] | The roles to check   |
-| `address` | `string`                                 | The address to check |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `roles` | keyof [`IRoles`](../interfaces/IRoles)[] | The roles to check |
+| `address` | `string` | The address to check |
 
 #### Returns
 
@@ -647,9 +646,9 @@ Throws an error if an address is missing the roles specified.
 
 #### Defined in
 
-[src/core/module.ts:793](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L793)
+[src/core/module.ts:793](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L793)
 
----
+___
 
 ### parseEventLogs
 
@@ -657,10 +656,10 @@ Throws an error if an address is missing the roles specified.
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `eventName` | `string` |
-| `logs?`     | `Log`[]  |
+| `logs?` | `Log`[] |
 
 #### Returns
 
@@ -672,9 +671,9 @@ Throws an error if an address is missing the roles specified.
 
 #### Defined in
 
-[src/core/module.ts:452](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L452)
+[src/core/module.ts:452](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L452)
 
----
+___
 
 ### parseLogs
 
@@ -682,17 +681,17 @@ Throws an error if an address is missing the roles specified.
 
 #### Type parameters
 
-| Name | Type  |
-| :--- | :---- |
-| `T`  | `any` |
+| Name | Type |
+| :------ | :------ |
+| `T` | `any` |
 
 #### Parameters
 
-| Name        | Type           |
-| :---------- | :------------- |
-| `eventName` | `string`       |
-| `logs?`     | `Log`[]        |
-| `contract`  | `BaseContract` |
+| Name | Type |
+| :------ | :------ |
+| `eventName` | `string` |
+| `logs?` | `Log`[] |
+| `contract` | `BaseContract` |
 
 #### Returns
 
@@ -704,9 +703,9 @@ Throws an error if an address is missing the roles specified.
 
 #### Defined in
 
-[src/core/module.ts:471](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L471)
+[src/core/module.ts:471](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L471)
 
----
+___
 
 ### prepareBatchMetadata
 
@@ -716,8 +715,8 @@ Prepares a list of metadata for uploading.
 
 #### Parameters
 
-| Name       | Type                                                      | Description                             |
-| :--------- | :-------------------------------------------------------- | :-------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject)[] | List of metadata to prepare for upload. |
 
 #### Returns
@@ -728,9 +727,9 @@ Prepares a list of metadata for uploading.
 
 #### Defined in
 
-[src/core/module.ts:779](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L779)
+[src/core/module.ts:779](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L779)
 
----
+___
 
 ### prepareMetadata
 
@@ -742,8 +741,8 @@ any File|Buffer|Blob, the metadata is serialized to a string.
 
 #### Parameters
 
-| Name       | Type                                                    | Description                                 |
-| :--------- | :------------------------------------------------------ | :------------------------------------------ |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) | The list of metadata to prepare for upload. |
 
 #### Returns
@@ -754,9 +753,9 @@ any File|Buffer|Blob, the metadata is serialized to a string.
 
 #### Defined in
 
-[src/core/module.ts:743](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L743)
+[src/core/module.ts:743](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L743)
 
----
+___
 
 ### revokeAllRolesFromAddress
 
@@ -766,8 +765,8 @@ Call this to revoke all roles given to a specific address.
 
 #### Parameters
 
-| Name      | Type     | Description                          |
-| :-------- | :------- | :----------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `address` | `string` | The address to revoke all roles for. |
 
 #### Returns
@@ -778,9 +777,9 @@ A list of roles that were revoked.
 
 #### Defined in
 
-[src/core/module.ts:641](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L641)
+[src/core/module.ts:641](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L641)
 
----
+___
 
 ### revokeRole
 
@@ -800,10 +799,10 @@ There is no way to recover from this.
 
 #### Parameters
 
-| Name      | Type                                   | Description                                |
-| :-------- | :------------------------------------- | :----------------------------------------- |
-| `role`    | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to revoke |
-| `address` | `string`                               | The address to revoke the role from        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `role` | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to revoke |
+| `address` | `string` | The address to revoke the role from |
 
 #### Returns
 
@@ -813,9 +812,9 @@ The transaction receipt
 
 #### Defined in
 
-[src/core/module.ts:712](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L712)
+[src/core/module.ts:712](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L712)
 
----
+___
 
 ### sendContractTransaction
 
@@ -825,11 +824,11 @@ The transaction receipt
 
 #### Parameters
 
-| Name             | Type            |
-| :--------------- | :-------------- |
-| `contract`       | `BaseContract`  |
-| `fn`             | `string`        |
-| `args`           | `any`[]         |
+| Name | Type |
+| :------ | :------ |
+| `contract` | `BaseContract` |
+| `fn` | `string` |
+| `args` | `any`[] |
 | `callOverrides?` | `CallOverrides` |
 
 #### Returns
@@ -842,9 +841,9 @@ The transaction receipt
 
 #### Defined in
 
-[src/core/module.ts:306](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L306)
+[src/core/module.ts:306](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L306)
 
----
+___
 
 ### sendTransaction
 
@@ -854,10 +853,10 @@ The transaction receipt
 
 #### Parameters
 
-| Name             | Type            |
-| :--------------- | :-------------- |
-| `fn`             | `string`        |
-| `args`           | `any`[]         |
+| Name | Type |
+| :------ | :------ |
+| `fn` | `string` |
+| `args` | `any`[] |
 | `callOverrides?` | `CallOverrides` |
 
 #### Returns
@@ -870,9 +869,9 @@ The transaction receipt
 
 #### Defined in
 
-[src/core/module.ts:295](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L295)
+[src/core/module.ts:295](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L295)
 
----
+___
 
 ### setAllRoleMembers
 
@@ -886,19 +885,18 @@ If you want to add or remove addresses for a single address use [grantRole](Modu
 **`throws`** If you are requestiong a role that does not exist on the module this will throw an [InvariantError](InvariantError).
 
 **`example`** Say you want to overwrite the list of addresses that are members of the [minter](../interfaces/IRoles#minter) role.
-
 ```typescript
 const minterAddresses: string[] = await module.getRoleMemberList("minter");
 await module.setAllRoleMembers({
-  minter: []
+ minter: []
 });
 console.log(await module.getRoleMemberList("minter")); // No matter what members had the role before, the new list will be set to []
 ```
 
 #### Parameters
 
-| Name                 | Type                                    | Description                                                                                          |
-| :------------------- | :-------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `rolesWithAddresses` | [`SetAllRoles`](../modules#setallroles) | A record of [Role](../modules#role)s to lists of addresses that should be members of the given role. |
 
 #### Returns
@@ -907,9 +905,9 @@ console.log(await module.getRoleMemberList("minter")); // No matter what members
 
 #### Defined in
 
-[src/core/module.ts:582](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L582)
+[src/core/module.ts:582](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L582)
 
----
+___
 
 ### setMetadata
 
@@ -917,8 +915,8 @@ console.log(await module.getRoleMemberList("minter")); // No matter what members
 
 #### Parameters
 
-| Name       | Type                                                    | Description          |
-| :--------- | :------------------------------------------------------ | :------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) | The metadata to set. |
 
 #### Returns
@@ -931,9 +929,9 @@ console.log(await module.getRoleMemberList("minter")); // No matter what members
 
 #### Defined in
 
-[src/core/module.ts:160](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L160)
+[src/core/module.ts:160](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L160)
 
----
+___
 
 ### setProviderOrSigner
 
@@ -943,8 +941,8 @@ console.log(await module.getRoleMemberList("minter")); // No matter what members
 
 #### Parameters
 
-| Name               | Type                                              |
-| :----------------- | :------------------------------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `providerOrSigner` | [`ProviderOrSigner`](../modules#providerorsigner) |
 
 #### Returns
@@ -957,9 +955,9 @@ console.log(await module.getRoleMemberList("minter")); // No matter what members
 
 #### Defined in
 
-[src/core/module.ts:172](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L172)
+[src/core/module.ts:172](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L172)
 
----
+___
 
 ### signTypedData
 
@@ -967,17 +965,17 @@ console.log(await module.getRoleMemberList("minter")); // No matter what members
 
 #### Parameters
 
-| Name                       | Type     |
-| :------------------------- | :------- |
-| `signer`                   | `Signer` |
-| `from`                     | `string` |
-| `domain`                   | `Object` |
-| `domain.chainId`           | `number` |
-| `domain.name`              | `string` |
+| Name | Type |
+| :------ | :------ |
+| `signer` | `Signer` |
+| `from` | `string` |
+| `domain` | `Object` |
+| `domain.chainId` | `number` |
+| `domain.name` | `string` |
 | `domain.verifyingContract` | `string` |
-| `domain.version`           | `string` |
-| `types`                    | `any`    |
-| `message`                  | `any`    |
+| `domain.version` | `string` |
+| `types` | `any` |
+| `message` | `any` |
 
 #### Returns
 
@@ -989,4 +987,4 @@ console.log(await module.getRoleMemberList("minter")); // No matter what members
 
 #### Defined in
 
-[src/core/module.ts:415](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L415)
+[src/core/module.ts:415](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L415)

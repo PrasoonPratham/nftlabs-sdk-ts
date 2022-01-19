@@ -14,9 +14,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/bundle.ts:30](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundle.ts#L30)
+[src/modules/bundle.ts:30](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/bundle.ts#L30)
 
----
+___
 
 ### metadata
 
@@ -24,9 +24,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/bundle.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundle.ts#L32)
+[src/modules/bundle.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/bundle.ts#L32)
 
----
+___
 
 ### ownedByAddress
 
@@ -34,9 +34,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/bundle.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundle.ts#L33)
+[src/modules/bundle.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/bundle.ts#L33)
 
----
+___
 
 ### supply
 
@@ -44,4 +44,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/bundle.ts:31](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundle.ts#L31)
+[src/modules/bundle.ts:31](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/bundle.ts#L31)

@@ -22,8 +22,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name      | Type     |
-| :-------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `message` | `string` |
 
 #### Overrides
@@ -32,7 +32,7 @@ Error.constructor
 
 #### Defined in
 
-[src/common/error.ts:44](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/error.ts#L44)
+[src/common/error.ts:44](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/common/error.ts#L44)
 
 ## Properties
 
@@ -48,7 +48,7 @@ Error.message
 
 docs/node_modules/typescript/lib/lib.es5.d.ts:1023
 
----
+___
 
 ### name
 
@@ -62,7 +62,7 @@ Error.name
 
 docs/node_modules/typescript/lib/lib.es5.d.ts:1022
 
----
+___
 
 ### stack
 
@@ -76,7 +76,7 @@ Error.stack
 
 docs/node_modules/typescript/lib/lib.es5.d.ts:1024
 
----
+___
 
 ### prepareStackTrace
 
@@ -92,9 +92,9 @@ Optional override for formatting stack traces
 
 ##### Parameters
 
-| Name          | Type         |
-| :------------ | :----------- |
-| `err`         | `Error`      |
+| Name | Type |
+| :------ | :------ |
+| `err` | `Error` |
 | `stackTraces` | `CallSite`[] |
 
 ##### Returns
@@ -109,7 +109,7 @@ Error.prepareStackTrace
 
 node_modules/@types/node/globals.d.ts:11
 
----
+___
 
 ### stackTraceLimit
 
@@ -133,9 +133,9 @@ Create .stack property on a target object
 
 #### Parameters
 
-| Name              | Type       |
-| :---------------- | :--------- |
-| `targetObject`    | `object`   |
+| Name | Type |
+| :------ | :------ |
+| `targetObject` | `object` |
 | `constructorOpt?` | `Function` |
 
 #### Returns

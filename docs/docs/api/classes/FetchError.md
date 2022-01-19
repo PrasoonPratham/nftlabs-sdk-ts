@@ -24,10 +24,10 @@ Thrown when data fails to fetch from storage.
 
 #### Parameters
 
-| Name          | Type     |
-| :------------ | :------- |
-| `message`     | `string` |
-| `innerError?` | `Error`  |
+| Name | Type |
+| :------ | :------ |
+| `message` | `string` |
+| `innerError?` | `Error` |
 
 #### Overrides
 
@@ -35,7 +35,7 @@ Error.constructor
 
 #### Defined in
 
-[src/common/error.ts:95](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/error.ts#L95)
+[src/common/error.ts:95](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/common/error.ts#L95)
 
 ## Properties
 
@@ -45,9 +45,9 @@ Error.constructor
 
 #### Defined in
 
-[src/common/error.ts:92](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/error.ts#L92)
+[src/common/error.ts:92](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/common/error.ts#L92)
 
----
+___
 
 ### message
 
@@ -61,7 +61,7 @@ Error.message
 
 docs/node_modules/typescript/lib/lib.es5.d.ts:1023
 
----
+___
 
 ### name
 
@@ -75,7 +75,7 @@ Error.name
 
 docs/node_modules/typescript/lib/lib.es5.d.ts:1022
 
----
+___
 
 ### stack
 
@@ -89,7 +89,7 @@ Error.stack
 
 docs/node_modules/typescript/lib/lib.es5.d.ts:1024
 
----
+___
 
 ### prepareStackTrace
 
@@ -105,9 +105,9 @@ Optional override for formatting stack traces
 
 ##### Parameters
 
-| Name          | Type         |
-| :------------ | :----------- |
-| `err`         | `Error`      |
+| Name | Type |
+| :------ | :------ |
+| `err` | `Error` |
 | `stackTraces` | `CallSite`[] |
 
 ##### Returns
@@ -122,7 +122,7 @@ Error.prepareStackTrace
 
 node_modules/@types/node/globals.d.ts:11
 
----
+___
 
 ### stackTraceLimit
 
@@ -146,9 +146,9 @@ Create .stack property on a target object
 
 #### Parameters
 
-| Name              | Type       |
-| :---------------- | :--------- |
-| `targetObject`    | `object`   |
+| Name | Type |
+| :------ | :------ |
+| `targetObject` | `object` |
 | `constructorOpt?` | `Function` |
 
 #### Returns

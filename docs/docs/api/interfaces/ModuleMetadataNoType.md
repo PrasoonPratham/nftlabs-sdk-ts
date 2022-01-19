@@ -24,9 +24,9 @@ The module metadata, but missing the ModuleType.
 
 #### Defined in
 
-[src/types/ModuleMetadata.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/ModuleMetadata.ts#L10)
+[src/types/ModuleMetadata.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/ModuleMetadata.ts#L10)
 
----
+___
 
 ### metadata
 
@@ -34,4 +34,4 @@ The module metadata, but missing the ModuleType.
 
 #### Defined in
 
-[src/types/ModuleMetadata.ts:11](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/ModuleMetadata.ts#L11)
+[src/types/ModuleMetadata.ts:11](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/ModuleMetadata.ts#L11)

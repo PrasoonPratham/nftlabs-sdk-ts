@@ -35,12 +35,12 @@ const module = sdk.getVoteModule("{{module_address}}");
 
 #### Parameters
 
-| Name               | Type                                              |
-| :----------------- | :------------------------------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `providerOrSigner` | [`ProviderOrSigner`](../modules#providerorsigner) |
-| `address`          | `string`                                          |
-| `options`          | [`ISDKOptions`](../interfaces/ISDKOptions)        |
-| `sdk`              | [`ThirdwebSDK`](ThirdwebSDK)                      |
+| `address` | `string` |
+| `options` | [`ISDKOptions`](../interfaces/ISDKOptions) |
+| `sdk` | [`ThirdwebSDK`](ThirdwebSDK) |
 
 #### Inherited from
 
@@ -48,7 +48,7 @@ const module = sdk.getVoteModule("{{module_address}}");
 
 #### Defined in
 
-[src/core/module.ts:103](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L103)
+[src/core/module.ts:103](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L103)
 
 ## Properties
 
@@ -64,9 +64,9 @@ const module = sdk.getVoteModule("{{module_address}}");
 
 #### Defined in
 
-[src/core/module.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L45)
+[src/core/module.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L45)
 
----
+___
 
 ### contract
 
@@ -82,9 +82,9 @@ Contract connects to the SDK signer or provider
 
 #### Defined in
 
-[src/core/module.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L93)
+[src/core/module.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L93)
 
----
+___
 
 ### ipfsGatewayUrl
 
@@ -100,9 +100,9 @@ Contract connects to the SDK signer or provider
 
 #### Defined in
 
-[src/core/module.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L50)
+[src/core/module.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L50)
 
----
+___
 
 ### options
 
@@ -118,9 +118,9 @@ Contract connects to the SDK signer or provider
 
 #### Defined in
 
-[src/core/module.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L55)
+[src/core/module.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L55)
 
----
+___
 
 ### readOnlyContract
 
@@ -136,9 +136,9 @@ Contract connects to the [ISDKOptions.readOnlyRpcUrl](../interfaces/ISDKOptions#
 
 #### Defined in
 
-[src/core/module.ts:98](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L98)
+[src/core/module.ts:98](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L98)
 
----
+___
 
 ### sdk
 
@@ -150,9 +150,9 @@ Contract connects to the [ISDKOptions.readOnlyRpcUrl](../interfaces/ISDKOptions#
 
 #### Defined in
 
-[src/core/module.ts:57](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L57)
+[src/core/module.ts:57](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L57)
 
----
+___
 
 ### moduleType
 
@@ -160,7 +160,7 @@ Contract connects to the [ISDKOptions.readOnlyRpcUrl](../interfaces/ISDKOptions#
 
 #### Defined in
 
-[src/modules/vote.ts:46](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/vote.ts#L46)
+[src/modules/vote.ts:46](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/vote.ts#L46)
 
 ## Accessors
 
@@ -180,7 +180,7 @@ Module.providerOrSigner
 
 #### Defined in
 
-[src/core/module.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L66)
+[src/core/module.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L66)
 
 • `Protected` `set` **providerOrSigner**(`value`): `void`
 
@@ -188,8 +188,8 @@ Module.providerOrSigner
 
 #### Parameters
 
-| Name    | Type                                              |
-| :------ | :------------------------------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `value` | [`ProviderOrSigner`](../modules#providerorsigner) |
 
 #### Returns
@@ -202,19 +202,19 @@ Module.providerOrSigner
 
 #### Defined in
 
-[src/core/module.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L70)
+[src/core/module.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L70)
 
----
+___
 
 ### signer
 
-• `Protected` `get` **signer**(): `null` \| `Signer`
+• `Protected` `get` **signer**(): ``null`` \| `Signer`
 
 **`internal`**
 
 #### Returns
 
-`null` \| `Signer`
+``null`` \| `Signer`
 
 #### Inherited from
 
@@ -222,7 +222,7 @@ Module.signer
 
 #### Defined in
 
-[src/core/module.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L81)
+[src/core/module.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L81)
 
 • `Protected` `set` **signer**(`value`): `void`
 
@@ -230,9 +230,9 @@ Module.signer
 
 #### Parameters
 
-| Name    | Type               |
-| :------ | :----------------- |
-| `value` | `null` \| `Signer` |
+| Name | Type |
+| :------ | :------ |
+| `value` | ``null`` \| `Signer` |
 
 #### Returns
 
@@ -244,7 +244,7 @@ Module.signer
 
 #### Defined in
 
-[src/core/module.ts:85](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L85)
+[src/core/module.ts:85](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L85)
 
 ## Methods
 
@@ -262,9 +262,9 @@ Check the balance of the project wallet in the native token of the chain
 
 #### Defined in
 
-[src/modules/vote.ts:370](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/vote.ts#L370)
+[src/modules/vote.ts:370](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/vote.ts#L370)
 
----
+___
 
 ### balanceOfToken
 
@@ -275,8 +275,8 @@ ERC20 token contract
 
 #### Parameters
 
-| Name           | Type     |
-| :------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `tokenAddress` | `string` |
 
 #### Returns
@@ -287,9 +287,9 @@ ERC20 token contract
 
 #### Defined in
 
-[src/modules/vote.ts:389](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/vote.ts#L389)
+[src/modules/vote.ts:389](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/vote.ts#L389)
 
----
+___
 
 ### canExecute
 
@@ -300,7 +300,6 @@ Can Execute
 **`remarks`** Check if a proposal can be executed (if the proposal has succeeded).
 
 **`example`**
-
 ```javascript
 // The proposal ID of the proposal you want to check
 const proposalId = "0";
@@ -310,8 +309,8 @@ console.log(canExecute);
 
 #### Parameters
 
-| Name         | Type     | Description               |
-| :----------- | :------- | :------------------------ |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `proposalId` | `string` | The proposal ID to check. |
 
 #### Returns
@@ -322,9 +321,9 @@ console.log(canExecute);
 
 #### Defined in
 
-[src/modules/vote.ts:344](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/vote.ts#L344)
+[src/modules/vote.ts:344](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/vote.ts#L344)
 
----
+___
 
 ### clearSigner
 
@@ -342,9 +341,9 @@ console.log(canExecute);
 
 #### Defined in
 
-[src/core/module.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L188)
+[src/core/module.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L188)
 
----
+___
 
 ### connectContract
 
@@ -362,9 +361,9 @@ console.log(canExecute);
 
 #### Defined in
 
-[src/modules/vote.ts:51](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/vote.ts#L51)
+[src/modules/vote.ts:51](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/vote.ts#L51)
 
----
+___
 
 ### ensureExists
 
@@ -376,8 +375,8 @@ Find a proposal by its id.
 
 #### Parameters
 
-| Name         | Type     | Description           |
-| :----------- | :------- | :-------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `proposalId` | `string` | Proposal to check for |
 
 #### Returns
@@ -386,9 +385,9 @@ Find a proposal by its id.
 
 #### Defined in
 
-[src/modules/vote.ts:414](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/vote.ts#L414)
+[src/modules/vote.ts:414](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/vote.ts#L414)
 
----
+___
 
 ### execute
 
@@ -399,17 +398,16 @@ Execute Proposal
 **`remarks`** Execute the related transactions for a proposal if the proposal succeeded.
 
 **`example`**
-
 ```javascript
 // The proposal ID ofthe proposal you want to execute
-const proposalId = "0";
+const proposalId = "0"
 await module.execute(proposalId);
 ```
 
 #### Parameters
 
-| Name         | Type     | Description                 |
-| :----------- | :------- | :-------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `proposalId` | `string` | The proposal id to execute. |
 
 #### Returns
@@ -418,9 +416,9 @@ await module.execute(proposalId);
 
 #### Defined in
 
-[src/modules/vote.ts:312](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/vote.ts#L312)
+[src/modules/vote.ts:312](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/vote.ts#L312)
 
----
+___
 
 ### exists
 
@@ -438,9 +436,9 @@ whether the given contract exists on-chain
 
 #### Defined in
 
-[src/core/module.ts:126](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L126)
+[src/core/module.ts:126](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L126)
 
----
+___
 
 ### get
 
@@ -450,8 +448,8 @@ Get a proposal by id.
 
 #### Parameters
 
-| Name         | Type     | Description             |
-| :----------- | :------- | :---------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `proposalId` | `string` | The proposal id to get. |
 
 #### Returns
@@ -462,9 +460,9 @@ Get a proposal by id.
 
 #### Defined in
 
-[src/modules/vote.ts:96](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/vote.ts#L96)
+[src/modules/vote.ts:96](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/vote.ts#L96)
 
----
+___
 
 ### getAll
 
@@ -475,7 +473,6 @@ Get All Proposals
 **`remarks`** Get all the proposals in this module.
 
 **`example`**
-
 ```javascript
 const proposals = await module.getAll();
 console.log(proposals);
@@ -489,9 +486,9 @@ console.log(proposals);
 
 #### Defined in
 
-[src/modules/vote.ts:122](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/vote.ts#L122)
+[src/modules/vote.ts:122](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/vote.ts#L122)
 
----
+___
 
 ### getCallOverrides
 
@@ -509,9 +506,9 @@ console.log(proposals);
 
 #### Defined in
 
-[src/core/module.ts:261](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L261)
+[src/core/module.ts:261](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L261)
 
----
+___
 
 ### getChainID
 
@@ -529,9 +526,9 @@ console.log(proposals);
 
 #### Defined in
 
-[src/core/module.ts:235](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L235)
+[src/core/module.ts:235](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L235)
 
----
+___
 
 ### getMetadata
 
@@ -539,9 +536,9 @@ console.log(proposals);
 
 #### Parameters
 
-| Name          | Type      | Default value | Description                                               |
-| :------------ | :-------- | :------------ | :-------------------------------------------------------- |
-| `resolveUrls` | `boolean` | `true`        | Whether to resolve the urls in the metadata to a gateway. |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `resolveUrls` | `boolean` | `true` | Whether to resolve the urls in the metadata to a gateway. |
 
 #### Returns
 
@@ -553,9 +550,9 @@ console.log(proposals);
 
 #### Defined in
 
-[src/core/module.ts:138](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L138)
+[src/core/module.ts:138](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L138)
 
----
+___
 
 ### getModuleType
 
@@ -573,9 +570,9 @@ console.log(proposals);
 
 #### Defined in
 
-[src/modules/vote.ts:58](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/vote.ts#L58)
+[src/modules/vote.ts:58](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/vote.ts#L58)
 
----
+___
 
 ### getProvider
 
@@ -593,19 +590,19 @@ console.log(proposals);
 
 #### Defined in
 
-[src/core/module.ts:228](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L228)
+[src/core/module.ts:228](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L228)
 
----
+___
 
 ### getSigner
 
-▸ `Protected` **getSigner**(): `null` \| `Signer`
+▸ `Protected` **getSigner**(): ``null`` \| `Signer`
 
 **`internal`**
 
 #### Returns
 
-`null` \| `Signer`
+``null`` \| `Signer`
 
 #### Inherited from
 
@@ -613,9 +610,9 @@ console.log(proposals);
 
 #### Defined in
 
-[src/core/module.ts:202](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L202)
+[src/core/module.ts:202](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L202)
 
----
+___
 
 ### getSignerAddress
 
@@ -633,9 +630,9 @@ console.log(proposals);
 
 #### Defined in
 
-[src/core/module.ts:219](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L219)
+[src/core/module.ts:219](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L219)
 
----
+___
 
 ### hasValidSigner
 
@@ -653,9 +650,9 @@ console.log(proposals);
 
 #### Defined in
 
-[src/core/module.ts:212](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L212)
+[src/core/module.ts:212](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L212)
 
----
+___
 
 ### hasVoted
 
@@ -666,7 +663,6 @@ Check If Wallet Voted
 **`remarks`** Check if a specified wallet has voted a specific proposal
 
 **`example`**
-
 ```javascript
 // The proposal ID of the proposal you want to check
 const proposalId = "0";
@@ -678,10 +674,10 @@ await module.hasVoted(proposalId, address);
 
 #### Parameters
 
-| Name         | Type     | Description                                                      |
-| :----------- | :------- | :--------------------------------------------------------------- |
-| `proposalId` | `string` | The unique identifier of a proposal .                            |
-| `account?`   | `string` | (optional) wallet account address. Defaults to connected signer. |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `proposalId` | `string` | The unique identifier of a proposal . |
+| `account?` | `string` | (optional) wallet account address. Defaults to connected signer. |
 
 #### Returns
 
@@ -691,9 +687,9 @@ await module.hasVoted(proposalId, address);
 
 #### Defined in
 
-[src/modules/vote.ts:288](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/vote.ts#L288)
+[src/modules/vote.ts:288](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/vote.ts#L288)
 
----
+___
 
 ### parseEventLogs
 
@@ -701,10 +697,10 @@ await module.hasVoted(proposalId, address);
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `eventName` | `string` |
-| `logs?`     | `Log`[]  |
+| `logs?` | `Log`[] |
 
 #### Returns
 
@@ -716,9 +712,9 @@ await module.hasVoted(proposalId, address);
 
 #### Defined in
 
-[src/core/module.ts:452](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L452)
+[src/core/module.ts:452](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L452)
 
----
+___
 
 ### parseLogs
 
@@ -726,17 +722,17 @@ await module.hasVoted(proposalId, address);
 
 #### Type parameters
 
-| Name | Type  |
-| :--- | :---- |
-| `T`  | `any` |
+| Name | Type |
+| :------ | :------ |
+| `T` | `any` |
 
 #### Parameters
 
-| Name        | Type           |
-| :---------- | :------------- |
-| `eventName` | `string`       |
-| `logs?`     | `Log`[]        |
-| `contract`  | `BaseContract` |
+| Name | Type |
+| :------ | :------ |
+| `eventName` | `string` |
+| `logs?` | `Log`[] |
+| `contract` | `BaseContract` |
 
 #### Returns
 
@@ -748,9 +744,9 @@ await module.hasVoted(proposalId, address);
 
 #### Defined in
 
-[src/core/module.ts:471](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L471)
+[src/core/module.ts:471](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L471)
 
----
+___
 
 ### propose
 
@@ -761,10 +757,9 @@ Create Proposal
 **`remarks`** Create a new proposal for token holders to vote on.
 
 **`example`**
-
 ```javascript
 // The description of the proposal you want to pass
-const description = "This is a great proposal - vote for it!";
+const description = "This is a great proposal - vote for it!"
 // You can (optionally) pass in contract calls that will executed when the proposal is executed.
 const executions = [
   {
@@ -775,20 +770,22 @@ const executions = [
     // Transaction data that will be executed when the proposal is executed
     // This is an example transfer transaction with a token module (which you would need to setup in code)
     transactionData: tokenModule.contract.interface.encodeFunctionData(
-      "transfer",
-      [fromAddress, amount]
-    )
+      "transfer", [
+        fromAddress,
+        amount,
+      ]
+    ),
   }
-];
+]
 
 const proposal = await module.propose(description, executions);
 ```
 
 #### Parameters
 
-| Name          | Type                                                       | Description                                                                               |
-| :------------ | :--------------------------------------------------------- | :---------------------------------------------------------------------------------------- |
-| `description` | `string`                                                   | The description of the proposal.                                                          |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `description` | `string` | The description of the proposal. |
 | `executions?` | [`ProposalExecutable`](../interfaces/ProposalExecutable)[] | A set of executable transactions that will be run if the proposal is passed and executed. |
 
 #### Returns
@@ -799,9 +796,9 @@ const proposal = await module.propose(description, executions);
 
 #### Defined in
 
-[src/modules/vote.ts:216](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/vote.ts#L216)
+[src/modules/vote.ts:216](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/vote.ts#L216)
 
----
+___
 
 ### sendContractTransaction
 
@@ -811,11 +808,11 @@ const proposal = await module.propose(description, executions);
 
 #### Parameters
 
-| Name             | Type            |
-| :--------------- | :-------------- |
-| `contract`       | `BaseContract`  |
-| `fn`             | `string`        |
-| `args`           | `any`[]         |
+| Name | Type |
+| :------ | :------ |
+| `contract` | `BaseContract` |
+| `fn` | `string` |
+| `args` | `any`[] |
 | `callOverrides?` | `CallOverrides` |
 
 #### Returns
@@ -828,9 +825,9 @@ const proposal = await module.propose(description, executions);
 
 #### Defined in
 
-[src/core/module.ts:306](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L306)
+[src/core/module.ts:306](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L306)
 
----
+___
 
 ### sendTransaction
 
@@ -840,10 +837,10 @@ const proposal = await module.propose(description, executions);
 
 #### Parameters
 
-| Name             | Type            |
-| :--------------- | :-------------- |
-| `fn`             | `string`        |
-| `args`           | `any`[]         |
+| Name | Type |
+| :------ | :------ |
+| `fn` | `string` |
+| `args` | `any`[] |
 | `callOverrides?` | `CallOverrides` |
 
 #### Returns
@@ -856,9 +853,9 @@ const proposal = await module.propose(description, executions);
 
 #### Defined in
 
-[src/core/module.ts:295](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L295)
+[src/core/module.ts:295](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L295)
 
----
+___
 
 ### setMetadata
 
@@ -866,8 +863,8 @@ const proposal = await module.propose(description, executions);
 
 #### Parameters
 
-| Name       | Type                                                    | Description          |
-| :--------- | :------------------------------------------------------ | :------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) | The metadata to set. |
 
 #### Returns
@@ -880,9 +877,9 @@ const proposal = await module.propose(description, executions);
 
 #### Defined in
 
-[src/core/module.ts:160](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L160)
+[src/core/module.ts:160](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L160)
 
----
+___
 
 ### setModuleMetadata
 
@@ -890,8 +887,8 @@ const proposal = await module.propose(description, executions);
 
 #### Parameters
 
-| Name       | Type                                                    |
-| :--------- | :------------------------------------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) |
 
 #### Returns
@@ -900,9 +897,9 @@ const proposal = await module.propose(description, executions);
 
 #### Defined in
 
-[src/modules/vote.ts:401](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/vote.ts#L401)
+[src/modules/vote.ts:401](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/vote.ts#L401)
 
----
+___
 
 ### setProviderOrSigner
 
@@ -912,8 +909,8 @@ const proposal = await module.propose(description, executions);
 
 #### Parameters
 
-| Name               | Type                                              |
-| :----------------- | :------------------------------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `providerOrSigner` | [`ProviderOrSigner`](../modules#providerorsigner) |
 
 #### Returns
@@ -926,9 +923,9 @@ const proposal = await module.propose(description, executions);
 
 #### Defined in
 
-[src/core/module.ts:172](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L172)
+[src/core/module.ts:172](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L172)
 
----
+___
 
 ### settings
 
@@ -940,9 +937,9 @@ const proposal = await module.propose(description, executions);
 
 #### Defined in
 
-[src/modules/vote.ts:62](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/vote.ts#L62)
+[src/modules/vote.ts:62](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/vote.ts#L62)
 
----
+___
 
 ### signTypedData
 
@@ -950,17 +947,17 @@ const proposal = await module.propose(description, executions);
 
 #### Parameters
 
-| Name                       | Type     |
-| :------------------------- | :------- |
-| `signer`                   | `Signer` |
-| `from`                     | `string` |
-| `domain`                   | `Object` |
-| `domain.chainId`           | `number` |
-| `domain.name`              | `string` |
+| Name | Type |
+| :------ | :------ |
+| `signer` | `Signer` |
+| `from` | `string` |
+| `domain` | `Object` |
+| `domain.chainId` | `number` |
+| `domain.name` | `string` |
 | `domain.verifyingContract` | `string` |
-| `domain.version`           | `string` |
-| `types`                    | `any`    |
-| `message`                  | `any`    |
+| `domain.version` | `string` |
+| `types` | `any` |
+| `message` | `any` |
 
 #### Returns
 
@@ -972,9 +969,9 @@ const proposal = await module.propose(description, executions);
 
 #### Defined in
 
-[src/core/module.ts:415](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L415)
+[src/core/module.ts:415](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/core/module.ts#L415)
 
----
+___
 
 ### vote
 
@@ -985,7 +982,6 @@ Vote
 **`remarks`** Vote on an active proposal
 
 **`example`**
-
 ```javascript
 // The proposal ID of the proposal you want to vote on
 const proposalId = "0";
@@ -999,11 +995,11 @@ await module.vote(proposalId, voteType, reason);
 
 #### Parameters
 
-| Name         | Type                            | Default value | Description                                     |
-| :----------- | :------------------------------ | :------------ | :---------------------------------------------- |
-| `proposalId` | `string`                        | `undefined`   | The proposal to cast a vote on.                 |
-| `voteType`   | [`VoteType`](../enums/VoteType) | `undefined`   | The position the voter is taking on their vote. |
-| `reason`     | `string`                        | `""`          | (optional) The reason for the vote.             |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `proposalId` | `string` | `undefined` | The proposal to cast a vote on. |
+| `voteType` | [`VoteType`](../enums/VoteType) | `undefined` | The position the voter is taking on their vote. |
+| `reason` | `string` | `""` | (optional) The reason for the vote. |
 
 #### Returns
 
@@ -1011,4 +1007,4 @@ await module.vote(proposalId, voteType, reason);
 
 #### Defined in
 
-[src/modules/vote.ts:259](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/vote.ts#L259)
+[src/modules/vote.ts:259](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/vote.ts#L259)

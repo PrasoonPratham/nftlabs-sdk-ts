@@ -25,9 +25,9 @@ The address of the account that owns the claim.
 
 #### Defined in
 
-[src/types/snapshots/ClaimProof.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/snapshots/ClaimProof.ts#L13)
+[src/types/snapshots/ClaimProof.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/snapshots/ClaimProof.ts#L13)
 
----
+___
 
 ### proof
 
@@ -37,4 +37,4 @@ The proof of the claim (an array of hashes, depending on tree depth)
 
 #### Defined in
 
-[src/types/snapshots/ClaimProof.ts:19](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/snapshots/ClaimProof.ts#L19)
+[src/types/snapshots/ClaimProof.ts:19](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/snapshots/ClaimProof.ts#L19)

@@ -45,9 +45,9 @@ All secondary sales will use the `sellerFeeBasisPoints` and royalty recipient ad
 
 #### Defined in
 
-[src/types/module-deployments/NftModuleMetadata.ts:59](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/NftModuleMetadata.ts#L59)
+[src/types/module-deployments/NftModuleMetadata.ts:59](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/module-deployments/NftModuleMetadata.ts#L59)
 
----
+___
 
 ### description
 
@@ -61,9 +61,9 @@ The description of the module.
 
 #### Defined in
 
-[src/types/module-deployments/CommonModuleMetadata.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/CommonModuleMetadata.ts#L23)
+[src/types/module-deployments/CommonModuleMetadata.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/module-deployments/CommonModuleMetadata.ts#L23)
 
----
+___
 
 ### externalLink
 
@@ -77,9 +77,9 @@ An external link for the module.
 
 #### Defined in
 
-[src/types/module-deployments/CommonModuleMetadata.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/CommonModuleMetadata.ts#L39)
+[src/types/module-deployments/CommonModuleMetadata.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/module-deployments/CommonModuleMetadata.ts#L39)
 
----
+___
 
 ### feeRecipient
 
@@ -90,9 +90,9 @@ to this address.
 
 #### Defined in
 
-[src/types/module-deployments/NftModuleMetadata.ts:30](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/NftModuleMetadata.ts#L30)
+[src/types/module-deployments/NftModuleMetadata.ts:30](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/module-deployments/NftModuleMetadata.ts#L30)
 
----
+___
 
 ### image
 
@@ -110,9 +110,9 @@ and the property is the IPFS hash uri).
 
 #### Defined in
 
-[src/types/module-deployments/CommonModuleMetadata.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/CommonModuleMetadata.ts#L33)
+[src/types/module-deployments/CommonModuleMetadata.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/module-deployments/CommonModuleMetadata.ts#L33)
 
----
+___
 
 ### name
 
@@ -126,9 +126,9 @@ The name of the module.
 
 #### Defined in
 
-[src/types/module-deployments/CommonModuleMetadata.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/CommonModuleMetadata.ts#L17)
+[src/types/module-deployments/CommonModuleMetadata.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/module-deployments/CommonModuleMetadata.ts#L17)
 
----
+___
 
 ### primarySaleFeeBasisPoints
 
@@ -148,9 +148,9 @@ For example: if this value is 100, then the royalty is 1% of the total sales.
 
 #### Defined in
 
-[src/types/module-deployments/NftModuleMetadata.ts:79](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/NftModuleMetadata.ts#L79)
+[src/types/module-deployments/NftModuleMetadata.ts:79](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/module-deployments/NftModuleMetadata.ts#L79)
 
----
+___
 
 ### sellerFeeBasisPoints
 
@@ -165,9 +165,9 @@ For example: if this value is 100, then the royalty is 1% of the total sales.
 
 #### Defined in
 
-[src/types/module-deployments/NftModuleMetadata.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/NftModuleMetadata.ts#L23)
+[src/types/module-deployments/NftModuleMetadata.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/module-deployments/NftModuleMetadata.ts#L23)
 
----
+___
 
 ### symbol
 
@@ -177,4 +177,4 @@ The symbol for the NFT Collection
 
 #### Defined in
 
-[src/types/module-deployments/NftModuleMetadata.ts:36](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/NftModuleMetadata.ts#L36)
+[src/types/module-deployments/NftModuleMetadata.ts:36](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/module-deployments/NftModuleMetadata.ts#L36)

@@ -24,9 +24,9 @@ Currency metadata.
 
 #### Defined in
 
-[src/common/currency.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L16)
+[src/common/currency.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/common/currency.ts#L16)
 
----
+___
 
 ### name
 
@@ -34,9 +34,9 @@ Currency metadata.
 
 #### Defined in
 
-[src/common/currency.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L14)
+[src/common/currency.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/common/currency.ts#L14)
 
----
+___
 
 ### symbol
 
@@ -44,4 +44,4 @@ Currency metadata.
 
 #### Defined in
 
-[src/common/currency.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L15)
+[src/common/currency.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/common/currency.ts#L15)

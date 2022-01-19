@@ -20,10 +20,10 @@ Accepts the offer of the specified wallet in `addressofOfferor`.
 
 #### Parameters
 
-| Name               | Type           | Description                             |
-| :----------------- | :------------- | :-------------------------------------- |
-| `listingId`        | `BigNumberish` | The listing Id to accept the offer for. |
-| `addressOfOfferor` | `string`       | The address of the offeror.             |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `listingId` | `BigNumberish` | The listing Id to accept the offer for. |
+| `addressOfOfferor` | `string` | The address of the offeror. |
 
 #### Returns
 
@@ -31,9 +31,9 @@ Accepts the offer of the specified wallet in `addressofOfferor`.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:203](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L203)
+[src/interfaces/modules/IMarketplace.ts:203](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L203)
 
----
+___
 
 ### buyoutAuctionListing
 
@@ -55,8 +55,8 @@ to call `closeAuctionListing`.
 
 #### Parameters
 
-| Name        | Type           | Description                  |
-| :---------- | :------------- | :--------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `listingId` | `BigNumberish` | Id of the listing to buyout. |
 
 #### Returns
@@ -65,9 +65,9 @@ to call `closeAuctionListing`.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:129](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L129)
+[src/interfaces/modules/IMarketplace.ts:129](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L129)
 
----
+___
 
 ### buyoutDirectListing
 
@@ -81,10 +81,10 @@ method will throw an error.
 
 #### Parameters
 
-| Name                     | Type           |
-| :----------------------- | :------------- |
-| `buyout`                 | `Object`       |
-| `buyout.listingId`       | `BigNumberish` |
+| Name | Type |
+| :------ | :------ |
+| `buyout` | `Object` |
+| `buyout.listingId` | `BigNumberish` |
 | `buyout.quantityDesired` | `BigNumberish` |
 
 #### Returns
@@ -93,9 +93,9 @@ method will throw an error.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:140](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L140)
+[src/interfaces/modules/IMarketplace.ts:140](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L140)
 
----
+___
 
 ### buyoutListing
 
@@ -110,9 +110,9 @@ if the listing ID passed in is an auction listing.
 
 #### Parameters
 
-| Name               | Type           | Description                                                                |
-| :----------------- | :------------- | :------------------------------------------------------------------------- |
-| `listingId`        | `BigNumberish` | Id of the listing to buyout.                                               |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `listingId` | `BigNumberish` | Id of the listing to buyout. |
 | `quantityDesired?` | `BigNumberish` | The quantity of tokens to buyout. Required if listing is a direct listing. |
 
 #### Returns
@@ -121,9 +121,9 @@ if the listing ID passed in is an auction listing.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:156](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L156)
+[src/interfaces/modules/IMarketplace.ts:156](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L156)
 
----
+___
 
 ### cancelAuctionListing
 
@@ -134,8 +134,8 @@ if it has not started yet.
 
 #### Parameters
 
-| Name        | Type           | Description                  |
-| :---------- | :------------- | :--------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `listingId` | `BigNumberish` | Id of the listing to remove. |
 
 #### Returns
@@ -144,9 +144,9 @@ if it has not started yet.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:87](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L87)
+[src/interfaces/modules/IMarketplace.ts:87](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L87)
 
----
+___
 
 ### cancelDirectListing
 
@@ -156,8 +156,8 @@ Cancels a direct listing by updating the quantity to be sold to 0.
 
 #### Parameters
 
-| Name        | Type           | Description                  |
-| :---------- | :------------- | :--------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `listingId` | `BigNumberish` | Id of the listing to remove. |
 
 #### Returns
@@ -166,9 +166,9 @@ Cancels a direct listing by updating the quantity to be sold to 0.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:79](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L79)
+[src/interfaces/modules/IMarketplace.ts:79](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L79)
 
----
+___
 
 ### closeAuctionListing
 
@@ -187,10 +187,10 @@ distributed to the sellers wallet.
 
 #### Parameters
 
-| Name        | Type           | Description                                                        |
-| :---------- | :------------- | :----------------------------------------------------------------- |
-| `listingId` | `BigNumberish` | Id of the listing to remove.                                       |
-| `closeFor?` | `string`       | The address of the wallet to close the sale for (buyer or seller). |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `listingId` | `BigNumberish` | Id of the listing to remove. |
+| `closeFor?` | `string` | The address of the wallet to close the sale for (buyer or seller). |
 
 #### Returns
 
@@ -198,9 +198,9 @@ distributed to the sellers wallet.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:107](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L107)
+[src/interfaces/modules/IMarketplace.ts:107](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L107)
 
----
+___
 
 ### createAuctionListing
 
@@ -210,8 +210,8 @@ Creates a new auction listing on a marketplace.
 
 #### Parameters
 
-| Name      | Type                                     | Description                        |
-| :-------- | :--------------------------------------- | :--------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `listing` | [`NewAuctionListing`](NewAuctionListing) | The new auction listing to create. |
 
 #### Returns
@@ -222,9 +222,9 @@ Creates a new auction listing on a marketplace.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:25](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L25)
+[src/interfaces/modules/IMarketplace.ts:25](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L25)
 
----
+___
 
 ### createDirectListing
 
@@ -234,8 +234,8 @@ Creates a new direct listing on a marketplace.
 
 #### Parameters
 
-| Name      | Type                                   | Description                       |
-| :-------- | :------------------------------------- | :-------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `listing` | [`NewDirectListing`](NewDirectListing) | The new direct listing to create. |
 
 #### Returns
@@ -246,9 +246,9 @@ Creates a new direct listing on a marketplace.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L17)
+[src/interfaces/modules/IMarketplace.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L17)
 
----
+___
 
 ### getActiveOffer
 
@@ -260,10 +260,10 @@ offer has been made, this method will return `undefined`.
 
 #### Parameters
 
-| Name        | Type           | Description                          |
-| :---------- | :------------- | :----------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `listingId` | `BigNumberish` | Id of the listing to get offers for. |
-| `address`   | `string`       | Address of the buyer.                |
+| `address` | `string` | Address of the buyer. |
 
 #### Returns
 
@@ -271,9 +271,9 @@ offer has been made, this method will return `undefined`.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:184](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L184)
+[src/interfaces/modules/IMarketplace.ts:184](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L184)
 
----
+___
 
 ### getAllListings
 
@@ -289,9 +289,9 @@ Fetch all the listings in the marketplace.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:234](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L234)
+[src/interfaces/modules/IMarketplace.ts:234](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L234)
 
----
+___
 
 ### getAuctionListing
 
@@ -301,8 +301,8 @@ Fetch an auction listing by Id.
 
 #### Parameters
 
-| Name        | Type           | Description                 |
-| :---------- | :------------- | :-------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `listingId` | `BigNumberish` | Id of the listing to fetch. |
 
 #### Returns
@@ -311,9 +311,9 @@ Fetch an auction listing by Id.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:220](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L220)
+[src/interfaces/modules/IMarketplace.ts:220](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L220)
 
----
+___
 
 ### getBidBufferBps
 
@@ -335,9 +335,9 @@ slightly higher bids to win the auctioned items.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:247](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L247)
+[src/interfaces/modules/IMarketplace.ts:247](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L247)
 
----
+___
 
 ### getDirectListing
 
@@ -347,8 +347,8 @@ Fetch a direct listing by Id.
 
 #### Parameters
 
-| Name        | Type           | Description                 |
-| :---------- | :------------- | :-------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `listingId` | `BigNumberish` | Id of the listing to fetch. |
 
 #### Returns
@@ -357,9 +357,9 @@ Fetch a direct listing by Id.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:213](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L213)
+[src/interfaces/modules/IMarketplace.ts:213](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L213)
 
----
+___
 
 ### getListing
 
@@ -369,8 +369,8 @@ Helper method to fetch a listing without knowing the type.
 
 #### Parameters
 
-| Name        | Type           | Description                     |
-| :---------- | :------------- | :------------------------------ |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `listingId` | `BigNumberish` | The ID of the listing to fetch. |
 
 #### Returns
@@ -379,9 +379,9 @@ Helper method to fetch a listing without knowing the type.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:227](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L227)
+[src/interfaces/modules/IMarketplace.ts:227](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L227)
 
----
+___
 
 ### getTimeBufferInSeconds
 
@@ -406,9 +406,9 @@ This value is formatter as basis points (e.g. 5% = 500).
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:263](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L263)
+[src/interfaces/modules/IMarketplace.ts:263](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L263)
 
----
+___
 
 ### getWinningBid
 
@@ -419,8 +419,8 @@ this method will return it.
 
 #### Parameters
 
-| Name        | Type           | Description                           |
-| :---------- | :------------- | :------------------------------------ |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `listingId` | `BigNumberish` | Id of the listing to get the bid for. |
 
 #### Returns
@@ -429,9 +429,9 @@ this method will return it.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:195](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L195)
+[src/interfaces/modules/IMarketplace.ts:195](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L195)
 
----
+___
 
 ### makeAuctionListingBid
 
@@ -444,14 +444,14 @@ Bid buffer is configured on the Marketplace contract.
 Note: If you make a bid above the buyout price, you will automatically be awarded the
 the listing and the sale will be executed.
 
-// TODO: come back to `currencyContractAddress`
+// TODO:  come back to `currencyContractAddress`
 
 #### Parameters
 
-| Name                | Type           |
-| :------------------ | :------------- |
-| `bid`               | `Object`       |
-| `bid.listingId`     | `BigNumberish` |
+| Name | Type |
+| :------ | :------ |
+| `bid` | `Object` |
+| `bid.listingId` | `BigNumberish` |
 | `bid.pricePerToken` | `BigNumberish` |
 
 #### Returns
@@ -460,9 +460,9 @@ the listing and the sale will be executed.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:69](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L69)
+[src/interfaces/modules/IMarketplace.ts:69](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L69)
 
----
+___
 
 ### makeDirectListingOffer
 
@@ -472,13 +472,13 @@ Make an offer on a direct listing.
 
 #### Parameters
 
-| Name                            | Type           |
-| :------------------------------ | :------------- |
-| `offer`                         | `Object`       |
-| `offer.currencyContractAddress` | `string`       |
-| `offer.listingId`               | `BigNumberish` |
-| `offer.pricePerToken`           | `BigNumberish` |
-| `offer.quantityDesired`         | `BigNumberish` |
+| Name | Type |
+| :------ | :------ |
+| `offer` | `Object` |
+| `offer.currencyContractAddress` | `string` |
+| `offer.listingId` | `BigNumberish` |
+| `offer.pricePerToken` | `BigNumberish` |
+| `offer.quantityDesired` | `BigNumberish` |
 
 #### Returns
 
@@ -486,9 +486,9 @@ Make an offer on a direct listing.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:49](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L49)
+[src/interfaces/modules/IMarketplace.ts:49](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L49)
 
----
+___
 
 ### setBidBufferBps
 
@@ -499,8 +499,8 @@ The bid buffer is represented in basis points.
 
 #### Parameters
 
-| Name     | Type           | Description                     |
-| :------- | :------------- | :------------------------------ |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `buffer` | `BigNumberish` | The bid buffer in basis points. |
 
 #### Returns
@@ -509,9 +509,9 @@ The bid buffer is represented in basis points.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:271](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L271)
+[src/interfaces/modules/IMarketplace.ts:271](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L271)
 
----
+___
 
 ### setTimeBufferInSeconds
 
@@ -521,8 +521,8 @@ Sets the current time buffer on the marketplace contract.
 
 #### Parameters
 
-| Name     | Type           | Description                 |
-| :------- | :------------- | :-------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `buffer` | `BigNumberish` | The time buffer in seconds. |
 
 #### Returns
@@ -531,9 +531,9 @@ Sets the current time buffer on the marketplace contract.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:278](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L278)
+[src/interfaces/modules/IMarketplace.ts:278](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L278)
 
----
+___
 
 ### updateAuctionListing
 
@@ -543,8 +543,8 @@ Updates an auction listing.
 
 #### Parameters
 
-| Name      | Type                               | Description            |
-| :-------- | :--------------------------------- | :--------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `listing` | [`AuctionListing`](AuctionListing) | The listing to update. |
 
 #### Returns
@@ -553,9 +553,9 @@ Updates an auction listing.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L39)
+[src/interfaces/modules/IMarketplace.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L39)
 
----
+___
 
 ### updateDirectListing
 
@@ -565,8 +565,8 @@ Updates a direct listing.
 
 #### Parameters
 
-| Name      | Type                             | Description            |
-| :-------- | :------------------------------- | :--------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `listing` | [`DirectListing`](DirectListing) | The listing to update. |
 
 #### Returns
@@ -575,4 +575,4 @@ Updates a direct listing.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L32)
+[src/interfaces/modules/IMarketplace.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/modules/IMarketplace.ts#L32)

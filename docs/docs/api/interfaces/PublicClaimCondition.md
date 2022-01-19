@@ -22,9 +22,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/claim-conditions/PublicMintCondition.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/claim-conditions/PublicMintCondition.ts#L14)
+[src/types/claim-conditions/PublicMintCondition.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/claim-conditions/PublicMintCondition.ts#L14)
 
----
+___
 
 ### currentMintSupply
 
@@ -32,9 +32,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/claim-conditions/PublicMintCondition.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/claim-conditions/PublicMintCondition.ts#L10)
+[src/types/claim-conditions/PublicMintCondition.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/claim-conditions/PublicMintCondition.ts#L10)
 
----
+___
 
 ### maxMintSupply
 
@@ -42,9 +42,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/claim-conditions/PublicMintCondition.ts:9](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/claim-conditions/PublicMintCondition.ts#L9)
+[src/types/claim-conditions/PublicMintCondition.ts:9](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/claim-conditions/PublicMintCondition.ts#L9)
 
----
+___
 
 ### merkleRoot
 
@@ -52,9 +52,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/claim-conditions/PublicMintCondition.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/claim-conditions/PublicMintCondition.ts#L15)
+[src/types/claim-conditions/PublicMintCondition.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/claim-conditions/PublicMintCondition.ts#L15)
 
----
+___
 
 ### pricePerToken
 
@@ -62,9 +62,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/claim-conditions/PublicMintCondition.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/claim-conditions/PublicMintCondition.ts#L13)
+[src/types/claim-conditions/PublicMintCondition.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/claim-conditions/PublicMintCondition.ts#L13)
 
----
+___
 
 ### quantityLimitPerTransaction
 
@@ -72,9 +72,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/claim-conditions/PublicMintCondition.ts:11](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/claim-conditions/PublicMintCondition.ts#L11)
+[src/types/claim-conditions/PublicMintCondition.ts:11](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/claim-conditions/PublicMintCondition.ts#L11)
 
----
+___
 
 ### startTimestamp
 
@@ -82,9 +82,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/claim-conditions/PublicMintCondition.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/claim-conditions/PublicMintCondition.ts#L8)
+[src/types/claim-conditions/PublicMintCondition.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/claim-conditions/PublicMintCondition.ts#L8)
 
----
+___
 
 ### waitTimeSecondsLimitPerTransaction
 
@@ -92,4 +92,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/claim-conditions/PublicMintCondition.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/claim-conditions/PublicMintCondition.ts#L12)
+[src/types/claim-conditions/PublicMintCondition.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/claim-conditions/PublicMintCondition.ts#L12)

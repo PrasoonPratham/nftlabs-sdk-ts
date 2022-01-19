@@ -11,7 +11,7 @@ const config = {
   // URL Config.
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
-  onBrokenLinks: "warn",
+  onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
   // Favicon.

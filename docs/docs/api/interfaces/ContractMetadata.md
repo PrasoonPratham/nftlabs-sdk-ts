@@ -20,29 +20,29 @@ The typical contract metadata found on the modules.
 
 #### Defined in
 
-[src/common/contract.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L14)
+[src/common/contract.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/common/contract.ts#L14)
 
----
+___
 
-### external_link
+### external\_link
 
-• `Optional` **external_link**: `string`
-
-#### Defined in
-
-[src/common/contract.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L16)
-
----
-
-### fee_recipient
-
-• `Optional` **fee_recipient**: `string`
+• `Optional` **external\_link**: `string`
 
 #### Defined in
 
-[src/common/contract.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L18)
+[src/common/contract.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/common/contract.ts#L16)
 
----
+___
+
+### fee\_recipient
+
+• `Optional` **fee\_recipient**: `string`
+
+#### Defined in
+
+[src/common/contract.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/common/contract.ts#L18)
+
+___
 
 ### image
 
@@ -50,9 +50,9 @@ The typical contract metadata found on the modules.
 
 #### Defined in
 
-[src/common/contract.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L15)
+[src/common/contract.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/common/contract.ts#L15)
 
----
+___
 
 ### name
 
@@ -60,19 +60,19 @@ The typical contract metadata found on the modules.
 
 #### Defined in
 
-[src/common/contract.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L13)
+[src/common/contract.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/common/contract.ts#L13)
 
----
+___
 
-### seller_fee_basis_points
+### seller\_fee\_basis\_points
 
-• `Optional` **seller_fee_basis_points**: `number`
+• `Optional` **seller\_fee\_basis\_points**: `number`
 
 #### Defined in
 
-[src/common/contract.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L17)
+[src/common/contract.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/common/contract.ts#L17)
 
----
+___
 
 ### uri
 
@@ -80,4 +80,4 @@ The typical contract metadata found on the modules.
 
 #### Defined in
 
-[src/common/contract.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L12)
+[src/common/contract.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/common/contract.ts#L12)

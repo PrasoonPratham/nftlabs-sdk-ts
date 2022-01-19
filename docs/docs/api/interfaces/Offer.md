@@ -16,9 +16,9 @@ The address of the buyer who made the offer.
 
 #### Defined in
 
-[src/types/marketplace/Offer.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/Offer.ts#L13)
+[src/types/marketplace/Offer.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/marketplace/Offer.ts#L13)
 
----
+___
 
 ### currencyContractAddress
 
@@ -28,9 +28,9 @@ The currency contract address of the offer token.
 
 #### Defined in
 
-[src/types/marketplace/Offer.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/Offer.ts#L33)
+[src/types/marketplace/Offer.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/marketplace/Offer.ts#L33)
 
----
+___
 
 ### currencyValue
 
@@ -40,9 +40,9 @@ The `CurrencyValue` of the listing. Useful for displaying the price information.
 
 #### Defined in
 
-[src/types/marketplace/Offer.ts:28](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/Offer.ts#L28)
+[src/types/marketplace/Offer.ts:28](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/marketplace/Offer.ts#L28)
 
----
+___
 
 ### listingId
 
@@ -52,9 +52,9 @@ The id of the listing.
 
 #### Defined in
 
-[src/types/marketplace/Offer.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/Offer.ts#L8)
+[src/types/marketplace/Offer.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/marketplace/Offer.ts#L8)
 
----
+___
 
 ### pricePerToken
 
@@ -64,9 +64,9 @@ The amount of coins offered per token.
 
 #### Defined in
 
-[src/types/marketplace/Offer.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/Offer.ts#L23)
+[src/types/marketplace/Offer.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/marketplace/Offer.ts#L23)
 
----
+___
 
 ### quantityDesired
 
@@ -76,4 +76,4 @@ The quantity of tokens to be bought.
 
 #### Defined in
 
-[src/types/marketplace/Offer.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/Offer.ts#L18)
+[src/types/marketplace/Offer.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/types/marketplace/Offer.ts#L18)

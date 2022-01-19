@@ -16,19 +16,19 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/pack.ts:63](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/pack.ts#L63)
+[src/modules/pack.ts:63](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/pack.ts#L63)
 
----
+___
 
 ### assets
 
-• **assets**: { `amount`: `BigNumberish` ; `tokenId`: `BigNumberish` }[]
+• **assets**: { `amount`: `BigNumberish` ; `tokenId`: `BigNumberish`  }[]
 
 #### Defined in
 
-[src/modules/pack.ts:65](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/pack.ts#L65)
+[src/modules/pack.ts:65](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/pack.ts#L65)
 
----
+___
 
 ### metadata
 
@@ -36,9 +36,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/pack.ts:64](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/pack.ts#L64)
+[src/modules/pack.ts:64](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/pack.ts#L64)
 
----
+___
 
 ### rewardsPerOpen
 
@@ -46,9 +46,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/pack.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/pack.ts#L70)
+[src/modules/pack.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/pack.ts#L70)
 
----
+___
 
 ### secondsUntilOpenStart
 
@@ -56,4 +56,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/pack.ts:69](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/pack.ts#L69)
+[src/modules/pack.ts:69](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/pack.ts#L69)

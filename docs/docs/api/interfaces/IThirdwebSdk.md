@@ -14,7 +14,7 @@ custom_edit_url: null
 
 ### createSnapshot
 
-▸ **createSnapshot**(`leafs`): `Promise`<{ `merkleRoot`: `string` ; `snapshot`: [`Snapshot`](../classes/Snapshot) ; `snapshotUri`: `string` }\>
+▸ **createSnapshot**(`leafs`): `Promise`<{ `merkleRoot`: `string` ; `snapshot`: [`Snapshot`](../classes/Snapshot) ; `snapshotUri`: `string`  }\>
 
 Creates a snapshot from a list of leafs. The leafs could be addresses,
 hashes, etc.
@@ -23,16 +23,16 @@ hashes, etc.
 
 #### Parameters
 
-| Name    | Type       | Description                                                  |
-| :------ | :--------- | :----------------------------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `leafs` | `string`[] | The list of leafs to create a snapshot from (e.g. addresses) |
 
 #### Returns
 
-`Promise`<{ `merkleRoot`: `string` ; `snapshot`: [`Snapshot`](../classes/Snapshot) ; `snapshotUri`: `string` }\>
+`Promise`<{ `merkleRoot`: `string` ; `snapshot`: [`Snapshot`](../classes/Snapshot) ; `snapshotUri`: `string`  }\>
 
 - An object containing the snapshot URI (which is uploaded to storage) and the merkle root (which can be used in a Claim Condition)
 
 #### Defined in
 
-[src/interfaces/IThirdwebSdk.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/IThirdwebSdk.ts#L14)
+[src/interfaces/IThirdwebSdk.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/interfaces/IThirdwebSdk.ts#L14)

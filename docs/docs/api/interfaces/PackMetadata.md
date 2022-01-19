@@ -22,9 +22,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/pack.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/pack.ts#L33)
+[src/modules/pack.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/pack.ts#L33)
 
----
+___
 
 ### currentSupply
 
@@ -32,9 +32,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/pack.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/pack.ts#L34)
+[src/modules/pack.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/pack.ts#L34)
 
----
+___
 
 ### id
 
@@ -42,9 +42,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/pack.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/pack.ts#L32)
+[src/modules/pack.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/pack.ts#L32)
 
----
+___
 
 ### metadata
 
@@ -52,14 +52,14 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/pack.ts:36](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/pack.ts#L36)
+[src/modules/pack.ts:36](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/pack.ts#L36)
 
----
+___
 
 ### openStart
 
-• **openStart**: `null` \| `Date`
+• **openStart**: ``null`` \| `Date`
 
 #### Defined in
 
-[src/modules/pack.ts:35](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/pack.ts#L35)
+[src/modules/pack.ts:35](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/modules/pack.ts#L35)

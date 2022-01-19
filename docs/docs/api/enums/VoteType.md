@@ -14,9 +14,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/enums/vote/Vote.ts:4](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/enums/vote/Vote.ts#L4)
+[src/enums/vote/Vote.ts:4](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/enums/vote/Vote.ts#L4)
 
----
+___
 
 ### Against
 
@@ -24,9 +24,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/enums/vote/Vote.ts:2](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/enums/vote/Vote.ts#L2)
+[src/enums/vote/Vote.ts:2](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/enums/vote/Vote.ts#L2)
 
----
+___
 
 ### For
 
@@ -34,4 +34,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/enums/vote/Vote.ts:3](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/enums/vote/Vote.ts#L3)
+[src/enums/vote/Vote.ts:3](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/bd3e5c6/src/enums/vote/Vote.ts#L3)
