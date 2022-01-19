@@ -33,7 +33,7 @@ Returns true if transfers are restricted. Otherwise returns false.
 
 [src/interfaces/contracts/ITransferable.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/contracts/ITransferable.ts#L16)
 
-___
+---
 
 ### setRestrictedTransfer
 
@@ -43,8 +43,8 @@ Setter for transfer restriction.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type      | Description                                                      |
+| :--------- | :-------- | :--------------------------------------------------------------- |
 | `restrict` | `boolean` | Boolean indicating whether to restrict transfer. (default: true) |
 
 #### Returns

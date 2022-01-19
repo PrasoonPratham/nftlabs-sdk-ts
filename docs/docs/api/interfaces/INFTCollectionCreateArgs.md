@@ -16,7 +16,7 @@ custom_edit_url: null
 
 [src/modules/bundle.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundle.ts#L45)
 
-___
+---
 
 ### supply
 

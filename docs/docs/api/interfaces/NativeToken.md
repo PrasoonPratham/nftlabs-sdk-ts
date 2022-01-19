@@ -26,7 +26,7 @@ custom_edit_url: null
 
 [src/common/currency.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L16)
 
-___
+---
 
 ### name
 
@@ -40,7 +40,7 @@ ___
 
 [src/common/currency.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L14)
 
-___
+---
 
 ### symbol
 
@@ -54,7 +54,7 @@ ___
 
 [src/common/currency.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L15)
 
-___
+---
 
 ### wrapped
 
@@ -62,11 +62,11 @@ ___
 
 #### Type declaration
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type     |
+| :-------- | :------- |
 | `address` | `string` |
-| `name` | `string` |
-| `symbol` | `string` |
+| `name`    | `string` |
+| `symbol`  | `string` |
 
 #### Defined in
 

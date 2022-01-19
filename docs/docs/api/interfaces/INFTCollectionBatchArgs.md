@@ -18,7 +18,7 @@ custom_edit_url: null
 
 [src/modules/bundle.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundle.ts#L55)
 
-___
+---
 
 ### tokenId
 

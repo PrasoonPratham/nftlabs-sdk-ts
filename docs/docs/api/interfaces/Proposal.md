@@ -18,7 +18,7 @@ The description of the proposal.
 
 [src/types/vote/Proposal.ts:20](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/vote/Proposal.ts#L20)
 
-___
+---
 
 ### endBlock
 
@@ -28,7 +28,7 @@ ___
 
 [src/types/vote/Proposal.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/vote/Proposal.ts#L23)
 
-___
+---
 
 ### executions
 
@@ -40,7 +40,7 @@ All executions that have been proposed for the proposal.
 
 [src/types/vote/Proposal.ts:38](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/vote/Proposal.ts#L38)
 
-___
+---
 
 ### proposalId
 
@@ -52,7 +52,7 @@ The unique identifier of the proposal.
 
 [src/types/vote/Proposal.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/vote/Proposal.ts#L10)
 
-___
+---
 
 ### proposer
 
@@ -64,7 +64,7 @@ The address of the wallet that created the proposal.
 
 [src/types/vote/Proposal.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/vote/Proposal.ts#L15)
 
-___
+---
 
 ### startBlock
 
@@ -74,7 +74,7 @@ ___
 
 [src/types/vote/Proposal.ts:22](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/vote/Proposal.ts#L22)
 
-___
+---
 
 ### state
 
@@ -86,7 +86,7 @@ The current state of the proposal.
 
 [src/types/vote/Proposal.ts:28](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/vote/Proposal.ts#L28)
 
-___
+---
 
 ### votes
 

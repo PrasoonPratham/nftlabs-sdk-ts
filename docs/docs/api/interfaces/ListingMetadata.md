@@ -18,17 +18,17 @@ Metadata for items listed on a Market module.
 
 [src/modules/market.ts:49](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L49)
 
-___
+---
 
 ### currencyMetadata
 
-• **currencyMetadata**: ``null`` \| [`CurrencyValue`](CurrencyValue)
+• **currencyMetadata**: `null` \| [`CurrencyValue`](CurrencyValue)
 
 #### Defined in
 
 [src/modules/market.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L50)
 
-___
+---
 
 ### id
 
@@ -38,7 +38,7 @@ ___
 
 [src/modules/market.ts:42](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L42)
 
-___
+---
 
 ### price
 
@@ -48,7 +48,7 @@ ___
 
 [src/modules/market.ts:51](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L51)
 
-___
+---
 
 ### quantity
 
@@ -58,27 +58,27 @@ ___
 
 [src/modules/market.ts:47](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L47)
 
-___
+---
 
 ### saleEnd
 
-• **saleEnd**: ``null`` \| `Date`
+• **saleEnd**: `null` \| `Date`
 
 #### Defined in
 
 [src/modules/market.ts:53](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L53)
 
-___
+---
 
 ### saleStart
 
-• **saleStart**: ``null`` \| `Date`
+• **saleStart**: `null` \| `Date`
 
 #### Defined in
 
 [src/modules/market.ts:52](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L52)
 
-___
+---
 
 ### seller
 
@@ -88,7 +88,7 @@ ___
 
 [src/modules/market.ts:43](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L43)
 
-___
+---
 
 ### tokenContract
 
@@ -98,7 +98,7 @@ ___
 
 [src/modules/market.ts:44](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L44)
 
-___
+---
 
 ### tokenId
 
@@ -108,7 +108,7 @@ ___
 
 [src/modules/market.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L45)
 
-___
+---
 
 ### tokenMetadata
 
@@ -118,7 +118,7 @@ ___
 
 [src/modules/market.ts:46](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L46)
 
-___
+---
 
 ### tokensPerBuyer
 

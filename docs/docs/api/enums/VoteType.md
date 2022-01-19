@@ -16,7 +16,7 @@ custom_edit_url: null
 
 [src/enums/vote/Vote.ts:4](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/enums/vote/Vote.ts#L4)
 
-___
+---
 
 ### Against
 
@@ -26,7 +26,7 @@ ___
 
 [src/enums/vote/Vote.ts:2](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/enums/vote/Vote.ts#L2)
 
-___
+---
 
 ### For
 

@@ -18,7 +18,7 @@ Filter options for the Market module.
 
 [src/modules/market.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L32)
 
-___
+---
 
 ### tokenContract
 
@@ -28,7 +28,7 @@ ___
 
 [src/modules/market.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L33)
 
-___
+---
 
 ### tokenId
 

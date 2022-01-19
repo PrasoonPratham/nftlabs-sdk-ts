@@ -18,7 +18,7 @@ transaction message contains information that's needed to execute a gasless tran
 
 [src/core/types.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/types.ts#L70)
 
-___
+---
 
 ### chainId
 
@@ -28,7 +28,7 @@ ___
 
 [src/core/types.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/types.ts#L66)
 
-___
+---
 
 ### data
 
@@ -38,7 +38,7 @@ ___
 
 [src/core/types.ts:65](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/types.ts#L65)
 
-___
+---
 
 ### from
 
@@ -48,7 +48,7 @@ ___
 
 [src/core/types.ts:63](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/types.ts#L63)
 
-___
+---
 
 ### functionArgs
 
@@ -58,7 +58,7 @@ ___
 
 [src/core/types.ts:69](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/types.ts#L69)
 
-___
+---
 
 ### functionName
 
@@ -68,7 +68,7 @@ ___
 
 [src/core/types.ts:68](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/types.ts#L68)
 
-___
+---
 
 ### gasLimit
 
@@ -78,7 +78,7 @@ ___
 
 [src/core/types.ts:67](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/types.ts#L67)
 
-___
+---
 
 ### to
 

@@ -18,7 +18,7 @@ custom_edit_url: null
 
 [src/modules/bundleDrop.ts:40](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundleDrop.ts#L40)
 
-___
+---
 
 ### maxClaimableSupply
 
@@ -28,7 +28,7 @@ ___
 
 [src/modules/bundleDrop.ts:36](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundleDrop.ts#L36)
 
-___
+---
 
 ### merkleRoot
 
@@ -38,7 +38,7 @@ ___
 
 [src/modules/bundleDrop.ts:41](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundleDrop.ts#L41)
 
-___
+---
 
 ### pricePerToken
 
@@ -48,7 +48,7 @@ ___
 
 [src/modules/bundleDrop.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundleDrop.ts#L39)
 
-___
+---
 
 ### quantityLimitPerTransaction
 
@@ -58,7 +58,7 @@ ___
 
 [src/modules/bundleDrop.ts:37](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundleDrop.ts#L37)
 
-___
+---
 
 ### startTimestamp
 
@@ -68,7 +68,7 @@ ___
 
 [src/modules/bundleDrop.ts:35](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundleDrop.ts#L35)
 
-___
+---
 
 ### waitTimeInSecondsBetweenClaims
 

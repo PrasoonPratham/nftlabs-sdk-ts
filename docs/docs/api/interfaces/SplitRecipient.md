@@ -20,7 +20,7 @@ The address of the recipient
 
 [src/types/SplitRecipient.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/SplitRecipient.ts#L8)
 
-___
+---
 
 ### splitPercentage
 

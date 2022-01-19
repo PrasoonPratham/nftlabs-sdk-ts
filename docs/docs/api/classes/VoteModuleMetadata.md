@@ -38,7 +38,7 @@ The description of the module.
 
 [src/types/module-deployments/CommonModuleMetadata.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/CommonModuleMetadata.ts#L23)
 
-___
+---
 
 ### externalLink
 
@@ -54,7 +54,7 @@ An external link for the module.
 
 [src/types/module-deployments/CommonModuleMetadata.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/CommonModuleMetadata.ts#L39)
 
-___
+---
 
 ### image
 
@@ -74,7 +74,7 @@ and the property is the IPFS hash uri).
 
 [src/types/module-deployments/CommonModuleMetadata.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/CommonModuleMetadata.ts#L33)
 
-___
+---
 
 ### minimumNumberOfTokensNeededToPropose
 
@@ -86,7 +86,7 @@ The minimum number of tokens required to propose a proposal.
 
 [src/types/module-deployments/VoteModuleMetadata.ts:53](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/VoteModuleMetadata.ts#L53)
 
-___
+---
 
 ### name
 
@@ -102,7 +102,7 @@ The name of the module.
 
 [src/types/module-deployments/CommonModuleMetadata.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/CommonModuleMetadata.ts#L17)
 
-___
+---
 
 ### proposalStartWaitTimeInSeconds
 
@@ -114,7 +114,7 @@ The wait time before a proposal can begin being voted on (seconds).
 
 [src/types/module-deployments/VoteModuleMetadata.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/VoteModuleMetadata.ts#L10)
 
-___
+---
 
 ### proposalVotingTimeInSeconds
 
@@ -126,7 +126,7 @@ How long a proposal is open for voting (seconds).
 
 [src/types/module-deployments/VoteModuleMetadata.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/VoteModuleMetadata.ts#L16)
 
-___
+---
 
 ### votingDelay
 
@@ -140,7 +140,7 @@ Every proposal will wait `votingDelay` number of blocks before it can be voted o
 
 [src/types/module-deployments/VoteModuleMetadata.ts:24](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/VoteModuleMetadata.ts#L24)
 
-___
+---
 
 ### votingPeriod
 
@@ -155,7 +155,7 @@ This varies by chain.
 
 [src/types/module-deployments/VoteModuleMetadata.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/VoteModuleMetadata.ts#L33)
 
-___
+---
 
 ### votingQuorumFraction
 
@@ -169,7 +169,7 @@ By default it is set to 0.
 
 [src/types/module-deployments/VoteModuleMetadata.ts:47](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/VoteModuleMetadata.ts#L47)
 
-___
+---
 
 ### votingTokenAddress
 

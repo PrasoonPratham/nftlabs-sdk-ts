@@ -28,7 +28,7 @@ Currency metadata & value.
 
 [src/common/currency.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L16)
 
-___
+---
 
 ### displayValue
 
@@ -38,7 +38,7 @@ ___
 
 [src/common/currency.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L33)
 
-___
+---
 
 ### name
 
@@ -52,7 +52,7 @@ ___
 
 [src/common/currency.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L14)
 
-___
+---
 
 ### symbol
 
@@ -66,7 +66,7 @@ ___
 
 [src/common/currency.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L15)
 
-___
+---
 
 ### value
 

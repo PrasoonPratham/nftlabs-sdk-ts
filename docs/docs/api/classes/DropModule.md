@@ -39,12 +39,12 @@ const module = sdk.getDropModule("{{module_address}}");
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name               | Type                                              |
+| :----------------- | :------------------------------------------------ |
 | `providerOrSigner` | [`ProviderOrSigner`](../modules#providerorsigner) |
-| `address` | `string` |
-| `options` | [`ISDKOptions`](../interfaces/ISDKOptions) |
-| `sdk` | [`ThirdwebSDK`](ThirdwebSDK) |
+| `address`          | `string`                                          |
+| `options`          | [`ISDKOptions`](../interfaces/ISDKOptions)        |
+| `sdk`              | [`ThirdwebSDK`](ThirdwebSDK)                      |
 
 #### Overrides
 
@@ -64,7 +64,7 @@ const module = sdk.getDropModule("{{module_address}}");
 
 [src/modules/drop.ts:74](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L74)
 
-___
+---
 
 ### \_shouldCheckVersion
 
@@ -74,7 +74,7 @@ ___
 
 [src/modules/drop.ts:73](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L73)
 
-___
+---
 
 ### address
 
@@ -90,7 +90,7 @@ ___
 
 [src/core/module.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L45)
 
-___
+---
 
 ### contract
 
@@ -108,7 +108,7 @@ Contract connects to the SDK signer or provider
 
 [src/core/module.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L93)
 
-___
+---
 
 ### ipfsGatewayUrl
 
@@ -126,7 +126,7 @@ ___
 
 [src/core/module.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L50)
 
-___
+---
 
 ### options
 
@@ -144,7 +144,7 @@ ___
 
 [src/core/module.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L55)
 
-___
+---
 
 ### readOnlyContract
 
@@ -162,7 +162,7 @@ Contract connects to the [ISDKOptions.readOnlyRpcUrl](../interfaces/ISDKOptions#
 
 [src/core/module.ts:98](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L98)
 
-___
+---
 
 ### sdk
 
@@ -176,7 +176,7 @@ ___
 
 [src/core/module.ts:57](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L57)
 
-___
+---
 
 ### v1Module
 
@@ -186,7 +186,7 @@ ___
 
 [src/modules/drop.ts:75](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L75)
 
-___
+---
 
 ### moduleType
 
@@ -196,7 +196,7 @@ ___
 
 [src/modules/drop.ts:77](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L77)
 
-___
+---
 
 ### roles
 
@@ -232,8 +232,8 @@ ModuleWithRoles.providerOrSigner
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                              |
+| :------ | :------------------------------------------------ |
 | `value` | [`ProviderOrSigner`](../modules#providerorsigner) |
 
 #### Returns
@@ -248,7 +248,7 @@ ModuleWithRoles.providerOrSigner
 
 [src/core/module.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L70)
 
-___
+---
 
 ### roles
 
@@ -268,17 +268,17 @@ ModuleWithRoles.roles
 
 [src/core/module.ts:504](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L504)
 
-___
+---
 
 ### signer
 
-• `Protected` `get` **signer**(): ``null`` \| `Signer`
+• `Protected` `get` **signer**(): `null` \| `Signer`
 
 **`internal`**
 
 #### Returns
 
-``null`` \| `Signer`
+`null` \| `Signer`
 
 #### Inherited from
 
@@ -294,9 +294,9 @@ ModuleWithRoles.signer
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | ``null`` \| `Signer` |
+| Name    | Type               |
+| :------ | :----------------- |
+| `value` | `null` \| `Signer` |
 
 #### Returns
 
@@ -324,7 +324,7 @@ ModuleWithRoles.signer
 
 [src/modules/drop.ts:424](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L424)
 
-___
+---
 
 ### balanceOf
 
@@ -335,6 +335,7 @@ Get NFT Balance
 **`remarks`** Get a wallets NFT balance (number of NFTs in this module owned by the wallet).
 
 **`example`**
+
 ```javascript
 // Address of the wallet to check NFT balance
 const address = "{{wallet_address}}";
@@ -345,8 +346,8 @@ console.log(balance);
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type     |
+| :-------- | :------- |
 | `address` | `string` |
 
 #### Returns
@@ -357,7 +358,7 @@ console.log(balance);
 
 [src/modules/drop.ts:420](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L420)
 
-___
+---
 
 ### burn
 
@@ -365,8 +366,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type           |
+| :-------- | :------------- |
 | `tokenId` | `BigNumberish` |
 
 #### Returns
@@ -377,7 +378,7 @@ ___
 
 [src/modules/drop.ts:925](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L925)
 
-___
+---
 
 ### canClaim
 
@@ -388,6 +389,7 @@ Can Claim
 **`remarks`** Check if the drop can currently be claimed.
 
 **`example`**
+
 ```javascript
 // Quantity of tokens to check if they are claimable
 const quantity = 1;
@@ -397,10 +399,10 @@ await module.canClaim(quantity);
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `quantity` | `BigNumberish` |
-| `addressToCheck?` | `string` |
+| Name              | Type           |
+| :---------------- | :------------- |
+| `quantity`        | `BigNumberish` |
+| `addressToCheck?` | `string`       |
 
 #### Returns
 
@@ -410,7 +412,7 @@ await module.canClaim(quantity);
 
 [src/modules/drop.ts:761](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L761)
 
-___
+---
 
 ### canCreateBatch
 
@@ -428,7 +430,7 @@ ___
 
 [src/modules/drop.ts:1031](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L1031)
 
-___
+---
 
 ### claim
 
@@ -438,10 +440,10 @@ Claim NFTs
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type           | Description                              |
+| :--------- | :------------- | :--------------------------------------- |
 | `quantity` | `BigNumberish` | Quantity of the tokens you want to claim |
-| `proofs` | `BytesLike`[] | Array of proofs |
+| `proofs`   | `BytesLike`[]  | Array of proofs                          |
 
 #### Returns
 
@@ -453,7 +455,7 @@ Claim NFTs
 
 [src/modules/drop.ts:901](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L901)
 
-___
+---
 
 ### claimTo
 
@@ -464,6 +466,7 @@ Claim NFTs to Wallet
 **`remarks`** Let the a specified wallet claim NFTs.
 
 **`example`**
+
 ```javascript
 // Address of the wallet you want to claim the NFTs
 const address = "{{wallet_address}}";
@@ -476,11 +479,11 @@ await module.claimTo(quantity, address);
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `quantity` | `BigNumberish` | Quantity of the tokens you want to claim |
-| `addressToClaim` | `string` | Address you want to send the token to |
-| `proofs` | `BytesLike`[] | Array of proofs |
+| Name             | Type           | Description                              |
+| :--------------- | :------------- | :--------------------------------------- |
+| `quantity`       | `BigNumberish` | Quantity of the tokens you want to claim |
+| `addressToClaim` | `string`       | Address you want to send the token to    |
+| `proofs`         | `BytesLike`[]  | Array of proofs                          |
 
 #### Returns
 
@@ -492,7 +495,7 @@ await module.claimTo(quantity, address);
 
 [src/modules/drop.ts:867](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L867)
 
-___
+---
 
 ### clearSigner
 
@@ -512,7 +515,7 @@ ___
 
 [src/core/module.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L188)
 
-___
+---
 
 ### connectContract
 
@@ -532,7 +535,7 @@ ___
 
 [src/modules/drop.ts:117](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L117)
 
-___
+---
 
 ### createBatch
 
@@ -546,8 +549,8 @@ once per module at the moment.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type                                                      | Description                           |
+| :---------- | :-------------------------------------------------------- | :------------------------------------ |
 | `metadatas` | [`MetadataURIOrObject`](../modules#metadatauriorobject)[] | The metadata to include in the batch. |
 
 #### Returns
@@ -558,7 +561,7 @@ once per module at the moment.
 
 [src/modules/drop.ts:1003](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L1003)
 
-___
+---
 
 ### exists
 
@@ -578,7 +581,7 @@ whether the given contract exists on-chain
 
 [src/core/module.ts:126](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L126)
 
-___
+---
 
 ### get
 
@@ -586,8 +589,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type     |
+| :-------- | :------- |
 | `tokenId` | `string` |
 
 #### Returns
@@ -598,7 +601,7 @@ ___
 
 [src/modules/drop.ts:136](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L136)
 
-___
+---
 
 ### getActiveClaimCondition
 
@@ -612,7 +615,7 @@ ___
 
 [src/modules/drop.ts:326](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L326)
 
-___
+---
 
 ### getActiveMintCondition
 
@@ -628,7 +631,7 @@ ___
 
 [src/modules/drop.ts:316](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L316)
 
-___
+---
 
 ### getAll
 
@@ -639,6 +642,7 @@ Get All NFTs
 **`remarks`** Get all the data associated with every NFT in this module.
 
 **`example`**
+
 ```javascript
 const nfts = await module.getAll();
 console.log(nfts);
@@ -646,8 +650,8 @@ console.log(nfts);
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name           | Type             |
+| :------------- | :--------------- |
 | `queryParams?` | `QueryAllParams` |
 
 #### Returns
@@ -660,7 +664,7 @@ The NFT metadata for all NFTs in the module.
 
 [src/modules/drop.ts:158](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L158)
 
-___
+---
 
 ### getAllClaimConditions
 
@@ -674,7 +678,7 @@ ___
 
 [src/modules/drop.ts:358](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L358)
 
-___
+---
 
 ### getAllClaimed
 
@@ -682,8 +686,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name           | Type             |
+| :------------- | :--------------- |
 | `queryParams?` | `QueryAllParams` |
 
 #### Returns
@@ -694,7 +698,7 @@ ___
 
 [src/modules/drop.ts:206](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L206)
 
-___
+---
 
 ### getAllMintConditions
 
@@ -710,7 +714,7 @@ ___
 
 [src/modules/drop.ts:338](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L338)
 
-___
+---
 
 ### getAllRoleMembers
 
@@ -736,7 +740,7 @@ A record of [Role](../modules#role)s to lists of addresses that are members of t
 
 [src/core/module.ts:556](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L556)
 
-___
+---
 
 ### getAllUnclaimed
 
@@ -744,8 +748,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name           | Type             |
+| :------------- | :--------------- |
 | `queryParams?` | `QueryAllParams` |
 
 #### Returns
@@ -756,7 +760,7 @@ ___
 
 [src/modules/drop.ts:180](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L180)
 
-___
+---
 
 ### getCallOverrides
 
@@ -776,7 +780,7 @@ ___
 
 [src/core/module.ts:261](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L261)
 
-___
+---
 
 ### getChainID
 
@@ -796,7 +800,7 @@ ___
 
 [src/core/module.ts:235](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L235)
 
-___
+---
 
 ### getClaimConditionsFactory
 
@@ -814,7 +818,7 @@ Creates a claim condition factory
 
 [src/modules/drop.ts:609](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L609)
 
-___
+---
 
 ### getClaimIneligibilityReasons
 
@@ -826,10 +830,10 @@ breaks in the condition that can be used to inform the user.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `quantity` | `BigNumberish` | The desired quantity that would be claimed. |
-| `addressToCheck?` | `string` | - |
+| Name              | Type           | Description                                 |
+| :---------------- | :------------- | :------------------------------------------ |
+| `quantity`        | `BigNumberish` | The desired quantity that would be claimed. |
+| `addressToCheck?` | `string`       | -                                           |
 
 #### Returns
 
@@ -839,7 +843,7 @@ breaks in the condition that can be used to inform the user.
 
 [src/modules/drop.ts:654](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L654)
 
-___
+---
 
 ### getClaimerProofs
 
@@ -849,10 +853,10 @@ Fetches the proof for the current signer for a particular wallet.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `merkleRoot` | `string` | The merkle root of the condition to check. |
-| `addressToClaim?` | `string` | - |
+| Name              | Type     | Description                                |
+| :---------------- | :------- | :----------------------------------------- |
+| `merkleRoot`      | `string` | The merkle root of the condition to check. |
+| `addressToClaim?` | `string` | -                                          |
 
 #### Returns
 
@@ -864,7 +868,7 @@ Fetches the proof for the current signer for a particular wallet.
 
 [src/modules/drop.ts:1060](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L1060)
 
-___
+---
 
 ### getDefaultSaleRecipient
 
@@ -878,7 +882,7 @@ ___
 
 [src/modules/drop.ts:229](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L229)
 
-___
+---
 
 ### getMetadata
 
@@ -886,9 +890,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `resolveUrls` | `boolean` | `true` | Whether to resolve the urls in the metadata to a gateway. |
+| Name          | Type      | Default value | Description                                               |
+| :------------ | :-------- | :------------ | :-------------------------------------------------------- |
+| `resolveUrls` | `boolean` | `true`        | Whether to resolve the urls in the metadata to a gateway. |
 
 #### Returns
 
@@ -902,7 +906,7 @@ ___
 
 [src/core/module.ts:138](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L138)
 
-___
+---
 
 ### getMintConditionsFactory
 
@@ -918,7 +922,7 @@ ___
 
 [src/modules/drop.ts:618](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L618)
 
-___
+---
 
 ### getModuleRoles
 
@@ -940,7 +944,7 @@ readonly keyof [`IRoles`](../interfaces/IRoles)[]
 
 [src/modules/drop.ts:110](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L110)
 
-___
+---
 
 ### getModuleType
 
@@ -960,7 +964,7 @@ ___
 
 [src/modules/drop.ts:124](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L124)
 
-___
+---
 
 ### getOwned
 
@@ -971,6 +975,7 @@ Get Owned NFTs
 **`remarks`** Get all the data associated with the NFTs owned by a specific wallet.
 
 **`example`**
+
 ```javascript
 // Address of the wallet to get the NFTs of
 const address = "{{wallet_address}}";
@@ -980,8 +985,8 @@ console.log(nfts);
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type     |
+| :---------- | :------- |
 | `_address?` | `string` |
 
 #### Returns
@@ -994,7 +999,7 @@ The NFT metadata for all NFTs in the module.
 
 [src/modules/drop.ts:254](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L254)
 
-___
+---
 
 ### getProvider
 
@@ -1014,7 +1019,7 @@ ___
 
 [src/core/module.ts:228](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L228)
 
-___
+---
 
 ### getRoleMembers
 
@@ -1027,14 +1032,15 @@ Call this to get a list of addresses that are members of a specific role.
 **`see`** [getAllRoleMembers](ModuleWithRoles#getallrolemembers) to get get a list of addresses for all supported roles on the module.
 
 **`example`** Say you want to get the list of addresses that are members of the [minter](../interfaces/IRoles#minter) role.
+
 ```typescript
 const minterAddresses: string[] = await module.getRoleMemberList("minter");
 ```
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                                   | Description                                                  |
+| :----- | :------------------------------------- | :----------------------------------------------------------- |
 | `role` | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to to get a memberlist for. |
 
 #### Returns
@@ -1051,7 +1057,7 @@ The list of addresses that are members of the specific role.
 
 [src/core/module.ts:532](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L532)
 
-___
+---
 
 ### getRoyaltyBps
 
@@ -1069,7 +1075,7 @@ Gets the royalty BPS (basis points) of the contract
 
 [src/modules/drop.ts:977](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L977)
 
-___
+---
 
 ### getRoyaltyRecipientAddress
 
@@ -1087,17 +1093,17 @@ Gets the address of the royalty recipient
 
 [src/modules/drop.ts:986](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L986)
 
-___
+---
 
 ### getSigner
 
-▸ `Protected` **getSigner**(): ``null`` \| `Signer`
+▸ `Protected` **getSigner**(): `null` \| `Signer`
 
 **`internal`**
 
 #### Returns
 
-``null`` \| `Signer`
+`null` \| `Signer`
 
 #### Inherited from
 
@@ -1107,7 +1113,7 @@ ___
 
 [src/core/module.ts:202](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L202)
 
-___
+---
 
 ### getSignerAddress
 
@@ -1127,7 +1133,7 @@ ___
 
 [src/core/module.ts:219](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L219)
 
-___
+---
 
 ### getTokenMetadata
 
@@ -1135,8 +1141,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type     |
+| :-------- | :------- |
 | `tokenId` | `string` |
 
 #### Returns
@@ -1147,7 +1153,7 @@ ___
 
 [src/modules/drop.ts:128](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L128)
 
-___
+---
 
 ### grantRole
 
@@ -1163,10 +1169,10 @@ Make sure you are sure you want to grant the role to the address.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `role` | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to grant to the address |
-| `address` | `string` | The address to grant the role to |
+| Name      | Type                                   | Description                                              |
+| :-------- | :------------------------------------- | :------------------------------------------------------- |
+| `role`    | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to grant to the address |
+| `address` | `string`                               | The address to grant the role to                         |
 
 #### Returns
 
@@ -1182,7 +1188,7 @@ The transaction receipt
 
 [src/core/module.ts:680](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L680)
 
-___
+---
 
 ### hasValidSigner
 
@@ -1202,7 +1208,7 @@ ___
 
 [src/core/module.ts:212](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L212)
 
-___
+---
 
 ### isApproved
 
@@ -1210,9 +1216,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `address` | `string` |
+| Name       | Type     |
+| :--------- | :------- |
+| `address`  | `string` |
 | `operator` | `string` |
 
 #### Returns
@@ -1223,7 +1229,7 @@ ___
 
 [src/modules/drop.ts:428](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L428)
 
-___
+---
 
 ### isTransferRestricted
 
@@ -1245,7 +1251,7 @@ Returns true if transfers are restricted. Otherwise returns false.
 
 [src/modules/drop.ts:1086](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L1086)
 
-___
+---
 
 ### isV1
 
@@ -1261,7 +1267,7 @@ Check if contract is v1 or v2. If the contract doesn't have nextTokenIdToMint = 
 
 [src/modules/drop.ts:1041](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L1041)
 
-___
+---
 
 ### lazyMint
 
@@ -1271,8 +1277,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                    |
+| :--------- | :------------------------------------------------------ |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) |
 
 #### Returns
@@ -1283,7 +1289,7 @@ ___
 
 [src/modules/drop.ts:473](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L473)
 
-___
+---
 
 ### lazyMintBatch
 
@@ -1293,8 +1299,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type                                                      |
+| :---------- | :-------------------------------------------------------- |
 | `metadatas` | [`MetadataURIOrObject`](../modules#metadatauriorobject)[] |
 
 #### Returns
@@ -1305,7 +1311,7 @@ ___
 
 [src/modules/drop.ts:484](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L484)
 
-___
+---
 
 ### maxTotalSupply
 
@@ -1321,7 +1327,7 @@ ___
 
 [src/modules/drop.ts:383](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L383)
 
-___
+---
 
 ### onlyRoles
 
@@ -1331,10 +1337,10 @@ Throws an error if an address is missing the roles specified.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `roles` | keyof [`IRoles`](../interfaces/IRoles)[] | The roles to check |
-| `address` | `string` | The address to check |
+| Name      | Type                                     | Description          |
+| :-------- | :--------------------------------------- | :------------------- |
+| `roles`   | keyof [`IRoles`](../interfaces/IRoles)[] | The roles to check   |
+| `address` | `string`                                 | The address to check |
 
 #### Returns
 
@@ -1348,7 +1354,7 @@ Throws an error if an address is missing the roles specified.
 
 [src/core/module.ts:793](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L793)
 
-___
+---
 
 ### ownerOf
 
@@ -1356,8 +1362,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type     |
+| :-------- | :------- |
 | `tokenId` | `string` |
 
 #### Returns
@@ -1368,7 +1374,7 @@ ___
 
 [src/modules/drop.ts:225](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L225)
 
-___
+---
 
 ### parseEventLogs
 
@@ -1376,10 +1382,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type     |
+| :---------- | :------- |
 | `eventName` | `string` |
-| `logs?` | `Log`[] |
+| `logs?`     | `Log`[]  |
 
 #### Returns
 
@@ -1393,7 +1399,7 @@ ___
 
 [src/core/module.ts:452](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L452)
 
-___
+---
 
 ### parseLogs
 
@@ -1401,17 +1407,17 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | `any` |
+| Name | Type  |
+| :--- | :---- |
+| `T`  | `any` |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `eventName` | `string` |
-| `logs?` | `Log`[] |
-| `contract` | `BaseContract` |
+| Name        | Type           |
+| :---------- | :------------- |
+| `eventName` | `string`       |
+| `logs?`     | `Log`[]        |
+| `contract`  | `BaseContract` |
 
 #### Returns
 
@@ -1425,7 +1431,7 @@ ___
 
 [src/core/module.ts:471](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L471)
 
-___
+---
 
 ### prepareBatchMetadata
 
@@ -1435,8 +1441,8 @@ Prepares a list of metadata for uploading.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                                      | Description                             |
+| :--------- | :-------------------------------------------------------- | :-------------------------------------- |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject)[] | List of metadata to prepare for upload. |
 
 #### Returns
@@ -1453,24 +1459,24 @@ Prepares a list of metadata for uploading.
 
 [src/core/module.ts:779](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L779)
 
-___
+---
 
 ### prepareClaim
 
-▸ `Private` **prepareClaim**(`quantity`, `proofs?`): `Promise`<{ `overrides`: `CallOverrides` ; `proofs`: `BytesLike`[]  }\>
+▸ `Private` **prepareClaim**(`quantity`, `proofs?`): `Promise`<{ `overrides`: `CallOverrides` ; `proofs`: `BytesLike`[] }\>
 
 Returns proofs and the overrides required for the transaction.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type           |
+| :--------- | :------------- |
 | `quantity` | `BigNumberish` |
-| `proofs` | `BytesLike`[] |
+| `proofs`   | `BytesLike`[]  |
 
 #### Returns
 
-`Promise`<{ `overrides`: `CallOverrides` ; `proofs`: `BytesLike`[]  }\>
+`Promise`<{ `overrides`: `CallOverrides` ; `proofs`: `BytesLike`[] }\>
 
 - `overrides` and `proofs` as an object.
 
@@ -1478,7 +1484,7 @@ Returns proofs and the overrides required for the transaction.
 
 [src/modules/drop.ts:783](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L783)
 
-___
+---
 
 ### prepareMetadata
 
@@ -1490,8 +1496,8 @@ any File|Buffer|Blob, the metadata is serialized to a string.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                                    | Description                                 |
+| :--------- | :------------------------------------------------------ | :------------------------------------------ |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) | The list of metadata to prepare for upload. |
 
 #### Returns
@@ -1508,7 +1514,7 @@ any File|Buffer|Blob, the metadata is serialized to a string.
 
 [src/core/module.ts:743](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L743)
 
-___
+---
 
 ### revokeAllRolesFromAddress
 
@@ -1518,8 +1524,8 @@ Call this to revoke all roles given to a specific address.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description                          |
+| :-------- | :------- | :----------------------------------- |
 | `address` | `string` | The address to revoke all roles for. |
 
 #### Returns
@@ -1536,7 +1542,7 @@ A list of roles that were revoked.
 
 [src/core/module.ts:641](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L641)
 
-___
+---
 
 ### revokeRole
 
@@ -1556,10 +1562,10 @@ There is no way to recover from this.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `role` | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to revoke |
-| `address` | `string` | The address to revoke the role from |
+| Name      | Type                                   | Description                                |
+| :-------- | :------------------------------------- | :----------------------------------------- |
+| `role`    | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to revoke |
+| `address` | `string`                               | The address to revoke the role from        |
 
 #### Returns
 
@@ -1575,7 +1581,7 @@ The transaction receipt
 
 [src/core/module.ts:712](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L712)
 
-___
+---
 
 ### sendContractTransaction
 
@@ -1585,11 +1591,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `contract` | `BaseContract` |
-| `fn` | `string` |
-| `args` | `any`[] |
+| Name             | Type            |
+| :--------------- | :-------------- |
+| `contract`       | `BaseContract`  |
+| `fn`             | `string`        |
+| `args`           | `any`[]         |
 | `callOverrides?` | `CallOverrides` |
 
 #### Returns
@@ -1604,7 +1610,7 @@ ___
 
 [src/core/module.ts:306](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L306)
 
-___
+---
 
 ### sendTransaction
 
@@ -1614,10 +1620,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `fn` | `string` |
-| `args` | `any`[] |
+| Name             | Type            |
+| :--------------- | :-------------- |
+| `fn`             | `string`        |
+| `args`           | `any`[]         |
 | `callOverrides?` | `CallOverrides` |
 
 #### Returns
@@ -1632,7 +1638,7 @@ ___
 
 [src/core/module.ts:295](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L295)
 
-___
+---
 
 ### setAllRoleMembers
 
@@ -1646,18 +1652,19 @@ If you want to add or remove addresses for a single address use [grantRole](Modu
 **`throws`** If you are requestiong a role that does not exist on the module this will throw an [InvariantError](InvariantError).
 
 **`example`** Say you want to overwrite the list of addresses that are members of the [minter](../interfaces/IRoles#minter) role.
+
 ```typescript
 const minterAddresses: string[] = await module.getRoleMemberList("minter");
 await module.setAllRoleMembers({
- minter: []
+  minter: []
 });
 console.log(await module.getRoleMemberList("minter")); // No matter what members had the role before, the new list will be set to []
 ```
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name                 | Type                                    | Description                                                                                          |
+| :------------------- | :-------------------------------------- | :--------------------------------------------------------------------------------------------------- |
 | `rolesWithAddresses` | [`SetAllRoles`](../modules#setallroles) | A record of [Role](../modules#role)s to lists of addresses that should be members of the given role. |
 
 #### Returns
@@ -1672,7 +1679,7 @@ console.log(await module.getRoleMemberList("minter")); // No matter what members
 
 [src/core/module.ts:582](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L582)
 
-___
+---
 
 ### setApproval
 
@@ -1680,10 +1687,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `operator` | `string` | `undefined` |
-| `approved` | `boolean` | `true` |
+| Name       | Type      | Default value |
+| :--------- | :-------- | :------------ |
+| `operator` | `string`  | `undefined`   |
+| `approved` | `boolean` | `true`        |
 
 #### Returns
 
@@ -1693,7 +1700,7 @@ ___
 
 [src/modules/drop.ts:433](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L433)
 
-___
+---
 
 ### setClaimConditions
 
@@ -1704,8 +1711,8 @@ claim condition factory.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                                             | Description                  |
+| :-------- | :----------------------------------------------- | :--------------------------- |
 | `factory` | [`ClaimConditionFactory`](ClaimConditionFactory) | The claim condition factory. |
 
 #### Returns
@@ -1716,7 +1723,7 @@ claim condition factory.
 
 [src/modules/drop.ts:508](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L508)
 
-___
+---
 
 ### setDefaultSaleRecipient
 
@@ -1724,8 +1731,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type     |
+| :---------- | :------- |
 | `recipient` | `string` |
 
 #### Returns
@@ -1736,7 +1743,7 @@ ___
 
 [src/modules/drop.ts:233](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L233)
 
-___
+---
 
 ### setMetadata
 
@@ -1744,8 +1751,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                                    | Description          |
+| :--------- | :------------------------------------------------------ | :------------------- |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) | The metadata to set. |
 
 #### Returns
@@ -1760,7 +1767,7 @@ ___
 
 [src/core/module.ts:160](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L160)
 
-___
+---
 
 ### setMintConditions
 
@@ -1770,8 +1777,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type                                             |
+| :-------- | :----------------------------------------------- |
 | `factory` | [`ClaimConditionFactory`](ClaimConditionFactory) |
 
 #### Returns
@@ -1782,7 +1789,7 @@ ___
 
 [src/modules/drop.ts:495](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L495)
 
-___
+---
 
 ### setModuleMetadata
 
@@ -1790,8 +1797,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                    |
+| :--------- | :------------------------------------------------------ |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) |
 
 #### Returns
@@ -1802,7 +1809,7 @@ ___
 
 [src/modules/drop.ts:938](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L938)
 
-___
+---
 
 ### setProviderOrSigner
 
@@ -1812,8 +1819,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name               | Type                                              |
+| :----------------- | :------------------------------------------------ |
 | `providerOrSigner` | [`ProviderOrSigner`](../modules#providerorsigner) |
 
 #### Returns
@@ -1828,7 +1835,7 @@ ___
 
 [src/modules/drop.ts:101](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L101)
 
-___
+---
 
 ### setPublicMintConditions
 
@@ -1838,8 +1845,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type                                                                     |
+| :----------- | :----------------------------------------------------------------------- |
 | `conditions` | [`CreatePublicMintCondition`](../interfaces/CreatePublicMintCondition)[] |
 
 #### Returns
@@ -1850,7 +1857,7 @@ ___
 
 [src/modules/drop.ts:625](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L625)
 
-___
+---
 
 ### setRestrictedTransfer
 
@@ -1860,9 +1867,9 @@ Setter for transfer restriction.
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `restricted` | `boolean` | `false` |
+| Name         | Type      | Default value |
+| :----------- | :-------- | :------------ |
+| `restricted` | `boolean` | `false`       |
 
 #### Returns
 
@@ -1876,7 +1883,7 @@ Setter for transfer restriction.
 
 [src/modules/drop.ts:1090](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L1090)
 
-___
+---
 
 ### setRoyaltyBps
 
@@ -1884,8 +1891,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type     |
+| :------- | :------- |
 | `amount` | `number` |
 
 #### Returns
@@ -1896,7 +1903,7 @@ ___
 
 [src/modules/drop.ts:945](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L945)
 
-___
+---
 
 ### signTypedData
 
@@ -1904,17 +1911,17 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `signer` | `Signer` |
-| `from` | `string` |
-| `domain` | `Object` |
-| `domain.chainId` | `number` |
-| `domain.name` | `string` |
+| Name                       | Type     |
+| :------------------------- | :------- |
+| `signer`                   | `Signer` |
+| `from`                     | `string` |
+| `domain`                   | `Object` |
+| `domain.chainId`           | `number` |
+| `domain.name`              | `string` |
 | `domain.verifyingContract` | `string` |
-| `domain.version` | `string` |
-| `types` | `any` |
-| `message` | `any` |
+| `domain.version`           | `string` |
+| `types`                    | `any`    |
+| `message`                  | `any`    |
 
 #### Returns
 
@@ -1928,7 +1935,7 @@ ___
 
 [src/core/module.ts:415](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L415)
 
-___
+---
 
 ### totalClaimedSupply
 
@@ -1942,7 +1949,7 @@ ___
 
 [src/modules/drop.ts:399](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L399)
 
-___
+---
 
 ### totalSupply
 
@@ -1956,7 +1963,7 @@ ___
 
 [src/modules/drop.ts:373](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L373)
 
-___
+---
 
 ### totalUnclaimedSupply
 
@@ -1970,7 +1977,7 @@ ___
 
 [src/modules/drop.ts:390](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L390)
 
-___
+---
 
 ### transfer
 
@@ -1981,6 +1988,7 @@ Transfer NFT
 **`remarks`** Transfer an NFT from the connected wallet to another wallet.
 
 **`example`**
+
 ```javascript
 // Address of the wallet you want to send the NFT to
 const toAddress = "{{wallet_address}}";
@@ -1993,9 +2001,9 @@ await module.transfer(toAddress, tokenId);
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `to` | `string` |
+| Name      | Type     |
+| :-------- | :------- |
+| `to`      | `string` |
 | `tokenId` | `string` |
 
 #### Returns
@@ -2006,7 +2014,7 @@ await module.transfer(toAddress, tokenId);
 
 [src/modules/drop.ts:459](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L459)
 
-___
+---
 
 ### transferFrom
 
@@ -2014,10 +2022,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `from` | `string` |
-| `to` | `string` |
+| Name      | Type           |
+| :-------- | :------------- |
+| `from`    | `string`       |
+| `to`      | `string`       |
 | `tokenId` | `BigNumberish` |
 
 #### Returns
@@ -2028,7 +2036,7 @@ ___
 
 [src/modules/drop.ts:929](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L929)
 
-___
+---
 
 ### transformResultToClaimCondition
 
@@ -2036,8 +2044,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                         |
+| :--- | :--------------------------- |
 | `pm` | `ClaimConditionStructOutput` |
 
 #### Returns
@@ -2048,7 +2056,7 @@ ___
 
 [src/modules/drop.ts:284](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L284)
 
-___
+---
 
 ### transformResultToMintCondition
 
@@ -2058,8 +2066,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                         |
+| :--- | :--------------------------- |
 | `pm` | `ClaimConditionStructOutput` |
 
 #### Returns
@@ -2070,7 +2078,7 @@ ___
 
 [src/modules/drop.ts:269](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/drop.ts#L269)
 
-___
+---
 
 ### updateClaimConditions
 
@@ -2078,8 +2086,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type                                             |
+| :-------- | :----------------------------------------------- |
 | `factory` | [`ClaimConditionFactory`](ClaimConditionFactory) |
 
 #### Returns

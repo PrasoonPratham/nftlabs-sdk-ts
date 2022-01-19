@@ -16,7 +16,7 @@ custom_edit_url: null
 
 [src/modules/pack.ts:56](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/pack.ts#L56)
 
-___
+---
 
 ### ERC721
 
@@ -26,7 +26,7 @@ ___
 
 [src/modules/pack.ts:57](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/pack.ts#L57)
 
-___
+---
 
 ### None
 

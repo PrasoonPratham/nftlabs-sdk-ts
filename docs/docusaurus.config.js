@@ -1,3 +1,4 @@
+// Code theme imports.
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
@@ -134,14 +135,12 @@ const config = {
   plugins: [
     [
       "docusaurus-plugin-typedoc",
-
-      // Plugin / TypeDoc options
       {
         entryPoints: ["../src/index.ts"],
-        tsconfig: "../tsconfig.json",
-      },
-    ],
-  ],
+        tsconfig: "../tsconfig.json"
+      }
+    ]
+  ]
 };
 
 module.exports = config;

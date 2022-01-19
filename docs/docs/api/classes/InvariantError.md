@@ -24,8 +24,8 @@ Error that may get thrown when an invariant assummption fails.
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
+| Name      | Type     | Default value    |
+| :-------- | :------- | :--------------- |
 | `message` | `string` | `genericMessage` |
 
 #### Overrides
@@ -48,7 +48,7 @@ Error.constructor
 
 [src/common/invariant.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/invariant.ts#L18)
 
-___
+---
 
 ### message
 
@@ -62,7 +62,7 @@ Error.message
 
 docs/node_modules/typescript/lib/lib.es5.d.ts:1023
 
-___
+---
 
 ### name
 
@@ -78,7 +78,7 @@ Error.name
 
 [src/common/invariant.ts:22](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/invariant.ts#L22)
 
-___
+---
 
 ### stack
 
@@ -92,7 +92,7 @@ Error.stack
 
 docs/node_modules/typescript/lib/lib.es5.d.ts:1024
 
-___
+---
 
 ### prepareStackTrace
 
@@ -108,9 +108,9 @@ Optional override for formatting stack traces
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `err` | `Error` |
+| Name          | Type         |
+| :------------ | :----------- |
+| `err`         | `Error`      |
 | `stackTraces` | `CallSite`[] |
 
 ##### Returns
@@ -125,7 +125,7 @@ Error.prepareStackTrace
 
 node_modules/@types/node/globals.d.ts:11
 
-___
+---
 
 ### stackTraceLimit
 
@@ -149,9 +149,9 @@ Create .stack property on a target object
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `targetObject` | `object` |
+| Name              | Type       |
+| :---------------- | :--------- |
+| `targetObject`    | `object`   |
 | `constructorOpt?` | `Function` |
 
 #### Returns

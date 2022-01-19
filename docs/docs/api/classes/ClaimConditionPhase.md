@@ -14,8 +14,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name                 | Type                                                                              |
+| :------------------- | :-------------------------------------------------------------------------------- |
 | `createSnapshotFunc` | (`leafs`: `string`[]) => `Promise`<[`SnapshotInfo`](../interfaces/SnapshotInfo)\> |
 
 #### Defined in
@@ -32,7 +32,7 @@ custom_edit_url: null
 
 [src/factories/ClaimConditionPhase.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L12)
 
-___
+---
 
 ### \_currencyAddress
 
@@ -42,7 +42,7 @@ ___
 
 [src/factories/ClaimConditionPhase.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L14)
 
-___
+---
 
 ### \_maxQuantity
 
@@ -52,7 +52,7 @@ ___
 
 [src/factories/ClaimConditionPhase.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L18)
 
-___
+---
 
 ### \_merkleCondition
 
@@ -62,7 +62,7 @@ ___
 
 [src/factories/ClaimConditionPhase.ts:25](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L25)
 
-___
+---
 
 ### \_merkleRootHash
 
@@ -72,7 +72,7 @@ ___
 
 [src/factories/ClaimConditionPhase.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L23)
 
-___
+---
 
 ### \_price
 
@@ -82,7 +82,7 @@ ___
 
 [src/factories/ClaimConditionPhase.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L16)
 
-___
+---
 
 ### \_quantityLimitPerTransaction
 
@@ -92,7 +92,7 @@ ___
 
 [src/factories/ClaimConditionPhase.ts:20](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L20)
 
-___
+---
 
 ### \_snapshot
 
@@ -102,7 +102,7 @@ ___
 
 [src/factories/ClaimConditionPhase.ts:27](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L27)
 
-___
+---
 
 ### \_waitInSeconds
 
@@ -112,7 +112,7 @@ ___
 
 [src/factories/ClaimConditionPhase.ts:31](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L31)
 
-___
+---
 
 ### createSnapshot
 
@@ -124,8 +124,8 @@ ___
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type       |
+| :------ | :--------- |
 | `leafs` | `string`[] |
 
 ##### Returns
@@ -154,7 +154,7 @@ Helper method that provides defaults for each claim condition.
 
 [src/factories/ClaimConditionPhase.ts:127](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L127)
 
-___
+---
 
 ### getSnapshot
 
@@ -170,7 +170,7 @@ ___
 
 [src/factories/ClaimConditionPhase.ts:119](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L119)
 
-___
+---
 
 ### setConditionStartTime
 
@@ -180,8 +180,8 @@ Set the start time for the claim condition.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type               |
+| :----- | :----------------- |
 | `when` | `number` \| `Date` |
 
 #### Returns
@@ -192,7 +192,7 @@ Set the start time for the claim condition.
 
 [src/factories/ClaimConditionPhase.ts:63](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L63)
 
-___
+---
 
 ### setMaxQuantity
 
@@ -202,8 +202,8 @@ Override the maxQuantity for the claim condition after creating the phase.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type           | Description                                              |
+| :------------ | :------------- | :------------------------------------------------------- |
 | `maxQuantity` | `BigNumberish` | The max quantity NFTs that can be claimed in this phase. |
 
 #### Returns
@@ -214,7 +214,7 @@ Override the maxQuantity for the claim condition after creating the phase.
 
 [src/factories/ClaimConditionPhase.ts:78](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L78)
 
-___
+---
 
 ### setMaxQuantityPerTransaction
 
@@ -224,8 +224,8 @@ The max quantity of NFTs that can be claimed in a single transaction.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type           | Description                                                        |
+| :---- | :------------- | :----------------------------------------------------------------- |
 | `max` | `BigNumberish` | The max quantity NFTs that can be claimed in a single transaction. |
 
 #### Returns
@@ -236,7 +236,7 @@ The max quantity of NFTs that can be claimed in a single transaction.
 
 [src/factories/ClaimConditionPhase.ts:88](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L88)
 
-___
+---
 
 ### setMerkleRoot
 
@@ -246,8 +246,8 @@ Sets a merkle root hash for the claim condition.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description          |
+| :----- | :------- | :------------------- |
 | `root` | `string` | The merkle root hash |
 
 #### Returns
@@ -258,7 +258,7 @@ Sets a merkle root hash for the claim condition.
 
 [src/factories/ClaimConditionPhase.ts:100](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L100)
 
-___
+---
 
 ### setPrice
 
@@ -268,10 +268,10 @@ Set the price claim condition for the drop.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `price` | `BigNumberish` | `undefined` | The price of the currency in wei. Must be >= 0. |
-| `tokenAddress` | `string` | `AddressZero` | The address of an ERC20 contract to use as the currency for the claim. By default this is the native currency address which is 0x0000000000000000000000000000000000000000 address. |
+| Name           | Type           | Default value | Description                                                                                                                                                                        |
+| :------------- | :------------- | :------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `price`        | `BigNumberish` | `undefined`   | The price of the currency in wei. Must be >= 0.                                                                                                                                    |
+| `tokenAddress` | `string`       | `AddressZero` | The address of an ERC20 contract to use as the currency for the claim. By default this is the native currency address which is 0x0000000000000000000000000000000000000000 address. |
 
 #### Returns
 
@@ -281,7 +281,7 @@ Set the price claim condition for the drop.
 
 [src/factories/ClaimConditionPhase.ts:44](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L44)
 
-___
+---
 
 ### setSnapshot
 
@@ -292,8 +292,8 @@ to verify a merkle tree condition.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type       |
+| :---------- | :--------- |
 | `addresses` | `string`[] |
 
 #### Returns
@@ -304,7 +304,7 @@ to verify a merkle tree condition.
 
 [src/factories/ClaimConditionPhase.ts:111](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L111)
 
-___
+---
 
 ### setWaitTimeBetweenClaims
 
@@ -314,8 +314,8 @@ Wait time enforced after calling `claim` before the next `claim` can be called.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name            | Type           | Description               |
+| :-------------- | :------------- | :------------------------ |
 | `waitInSeconds` | `BigNumberish` | The wait time in seconds. |
 
 #### Returns

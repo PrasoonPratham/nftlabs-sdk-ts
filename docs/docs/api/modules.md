@@ -17,6 +17,7 @@ Should you find bugs or in the case you need help please reach out to us in [Dis
 To get you started here's how you would instantiate the SDK and fetch some NFTs
 
 1. Install the sdk
+
 ```shell
 npm install @3rdweb/sdk
 ```
@@ -24,6 +25,7 @@ npm install @3rdweb/sdk
 2. Get your NFT contract address from the [Admin Dashboard](https://thirdweb.com/dashboard).
 
 3. Write the tiniest amount of code!
+
 ```typescript
  1 | import { ThirdwebSDK } from "@3rdweb/sdk";
  2 | import type { NFTModule, NFTMetadataOwner } from "@3rdweb/sdk";
@@ -38,6 +40,7 @@ npm install @3rdweb/sdk
 12 |
 13 | console.log(nftListWithOwnerAddress);
 ```
+
 ```
 Output
 => [
@@ -195,7 +198,7 @@ Output
 
 [src/types/module-deployments/MetadataMap.ts:5](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/MetadataMap.ts#L5)
 
-___
+---
 
 ### AnyContract
 
@@ -207,7 +210,7 @@ ___
 
 [src/core/index.ts:71](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/index.ts#L71)
 
-___
+---
 
 ### ChainlinkInfo
 
@@ -217,18 +220,18 @@ ___
 
 #### Type declaration
 
-| Name | Type |
-| :------ | :------ |
-| `fees` | `BigNumber` |
-| `keyHash` | `string` |
-| `linkTokenAddress` | `string` |
-| `vrfCoordinator` | `string` |
+| Name               | Type        |
+| :----------------- | :---------- |
+| `fees`             | `BigNumber` |
+| `keyHash`          | `string`    |
+| `linkTokenAddress` | `string`    |
+| `vrfCoordinator`   | `string`    |
 
 #### Defined in
 
 [src/common/chainlink.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/chainlink.ts#L8)
 
-___
+---
 
 ### CollectionModule
 
@@ -238,7 +241,7 @@ ___
 
 [src/modules/collection.ts:3](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/collection.ts#L3)
 
-___
+---
 
 ### CollectionModuleMetadata
 
@@ -248,7 +251,7 @@ ___
 
 [src/types/module-deployments/BundleModuleMetadata.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/BundleModuleMetadata.ts#L33)
 
-___
+---
 
 ### ForwardRequestMessage
 
@@ -258,24 +261,24 @@ Forward Request Message that's used for gasless transaction
 
 #### Type declaration
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `BytesLike` |
-| `from` | `string` |
-| `gas` | `string` |
-| `nonce` | `string` |
-| `to` | `string` |
-| `value` | `string` |
+| Name    | Type        |
+| :------ | :---------- |
+| `data`  | `BytesLike` |
+| `from`  | `string`    |
+| `gas`   | `string`    |
+| `nonce` | `string`    |
+| `to`    | `string`    |
+| `value` | `string`    |
 
 #### Defined in
 
 [src/core/types.ts:37](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/types.ts#L37)
 
-___
+---
 
 ### JSONValue
 
-Ƭ **JSONValue**: `string` \| `number` \| ``null`` \| `boolean` \| [`JSONValue`](modules#jsonvalue)[] \| { [key: string]: [`JSONValue`](modules#jsonvalue);  }
+Ƭ **JSONValue**: `string` \| `number` \| `null` \| `boolean` \| [`JSONValue`](modules#jsonvalue)[] \| { [key: string]: [`JSONValue`](modules#jsonvalue); }
 
 A JSON value
 
@@ -283,7 +286,7 @@ A JSON value
 
 [src/core/types.ts:20](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/types.ts#L20)
 
-___
+---
 
 ### MetadataURIOrObject
 
@@ -295,7 +298,7 @@ A valid URI string or metadata object
 
 [src/core/types.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/types.ts#L32)
 
-___
+---
 
 ### ModuleMetadataMap
 
@@ -303,24 +306,24 @@ ___
 
 #### Type declaration
 
-| Name | Type |
-| :------ | :------ |
-| `0` | [`CommonModuleMetadata`](classes/CommonModuleMetadata) |
-| `1` | [`CollectionModuleMetadata`](modules#collectionmodulemetadata) |
-| `2` | [`CommonModuleMetadata`](classes/CommonModuleMetadata) |
-| `3` | [`CommonModuleMetadata`](classes/CommonModuleMetadata) |
-| `4` | [`CommonModuleMetadata`](classes/CommonModuleMetadata) |
-| `5` | [`CommonModuleMetadata`](classes/CommonModuleMetadata) |
-| `6` | [`CommonModuleMetadata`](classes/CommonModuleMetadata) |
-| `7` | [`CommonModuleMetadata`](classes/CommonModuleMetadata) |
-| `8` | [`CommonModuleMetadata`](classes/CommonModuleMetadata) |
-| `9` | [`CommonModuleMetadata`](classes/CommonModuleMetadata) |
+| Name | Type                                                           |
+| :--- | :------------------------------------------------------------- |
+| `0`  | [`CommonModuleMetadata`](classes/CommonModuleMetadata)         |
+| `1`  | [`CollectionModuleMetadata`](modules#collectionmodulemetadata) |
+| `2`  | [`CommonModuleMetadata`](classes/CommonModuleMetadata)         |
+| `3`  | [`CommonModuleMetadata`](classes/CommonModuleMetadata)         |
+| `4`  | [`CommonModuleMetadata`](classes/CommonModuleMetadata)         |
+| `5`  | [`CommonModuleMetadata`](classes/CommonModuleMetadata)         |
+| `6`  | [`CommonModuleMetadata`](classes/CommonModuleMetadata)         |
+| `7`  | [`CommonModuleMetadata`](classes/CommonModuleMetadata)         |
+| `8`  | [`CommonModuleMetadata`](classes/CommonModuleMetadata)         |
+| `9`  | [`CommonModuleMetadata`](classes/CommonModuleMetadata)         |
 
 #### Defined in
 
 [src/types/module-deployments/MetadataMap.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/MetadataMap.ts#L8)
 
-___
+---
 
 ### NFTContractTypes
 
@@ -332,7 +335,7 @@ ___
 
 [src/common/nft.ts:83](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L83)
 
-___
+---
 
 ### PermitRequestMessage
 
@@ -342,20 +345,20 @@ EIP-2612 token permit message for gasless transaction
 
 #### Type declaration
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                 |
+| :--------- | :------------------- |
 | `deadline` | `number` \| `string` |
-| `nonce` | `number` \| `string` |
-| `owner` | `string` |
-| `spender` | `string` |
-| `to` | `string` |
-| `value` | `number` \| `string` |
+| `nonce`    | `number` \| `string` |
+| `owner`    | `string`             |
+| `spender`  | `string`             |
+| `to`       | `string`             |
+| `value`    | `number` \| `string` |
 
 #### Defined in
 
 [src/core/types.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/types.ts#L50)
 
-___
+---
 
 ### ProviderOrSigner
 
@@ -367,7 +370,7 @@ A valid "ethers" Provider or Signer.
 
 [src/core/types.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/types.ts#L8)
 
-___
+---
 
 ### Role
 
@@ -379,7 +382,7 @@ ___
 
 [src/common/role.ts:46](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/role.ts#L46)
 
-___
+---
 
 ### SetAllRoles
 
@@ -389,7 +392,7 @@ ___
 
 [src/common/role.ts:48](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/role.ts#L48)
 
-___
+---
 
 ### ValidProviderInput
 
@@ -413,11 +416,11 @@ A valid "ethers" Provider, Signer or a Network object or url address to create a
 
 [src/common/chainlink.ts:19](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/chainlink.ts#L19)
 
-___
+---
 
-### DEFAULT\_BLOCK\_TIMES\_FALLBACK
+### DEFAULT_BLOCK_TIMES_FALLBACK
 
-• **DEFAULT\_BLOCK\_TIMES\_FALLBACK**: `Record`<`SUPPORTED_CHAIN_ID` \| `ChainId.Hardhat`, { `secondsBetweenBlocks`: `number` ; `synced`: `boolean`  }\>
+• **DEFAULT_BLOCK_TIMES_FALLBACK**: `Record`<`SUPPORTED_CHAIN_ID` \| `ChainId.Hardhat`, { `secondsBetweenBlocks`: `number` ; `synced`: `boolean` }\>
 
 Fallback map of default block mining times in seconds.
 
@@ -425,11 +428,11 @@ Fallback map of default block mining times in seconds.
 
 [src/utils/blockTimeEstimator.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/utils/blockTimeEstimator.ts#L13)
 
-___
+---
 
-### InterfaceId\_IERC1155
+### InterfaceId_IERC1155
 
-• **InterfaceId\_IERC1155**: `Uint8Array`
+• **InterfaceId_IERC1155**: `Uint8Array`
 
 **`internal`**
 
@@ -437,11 +440,11 @@ ___
 
 [src/common/contract.ts:30](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L30)
 
-___
+---
 
-### InterfaceId\_IERC721
+### InterfaceId_IERC721
 
-• **InterfaceId\_IERC721**: `Uint8Array`
+• **InterfaceId_IERC721**: `Uint8Array`
 
 **`internal`**
 
@@ -449,11 +452,11 @@ ___
 
 [src/common/contract.ts:25](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L25)
 
-___
+---
 
-### NATIVE\_TOKEN\_ADDRESS
+### NATIVE_TOKEN_ADDRESS
 
-• **NATIVE\_TOKEN\_ADDRESS**: ``"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"``
+• **NATIVE_TOKEN_ADDRESS**: `"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"`
 
 **`internal`**
 
@@ -461,7 +464,7 @@ ___
 
 [src/common/currency.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L39)
 
-___
+---
 
 ### NFTLabsSDK
 
@@ -475,7 +478,7 @@ Deprecated, please use ThirdwebSDK instead.
 
 [src/core/index.ts:818](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/index.ts#L818)
 
-___
+---
 
 ### RolesMap
 
@@ -495,8 +498,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                             | Description                      |
+| :----------- | :------------------------------- | :------------------------------- |
 | `moduleType` | [`ModuleType`](enums/ModuleType) | A [ModuleType](enums/ModuleType) |
 
 #### Returns
@@ -509,7 +512,7 @@ The name of the given [ModuleType](enums/ModuleType) or undefined
 
 [src/common/module-type.ts:46](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/module-type.ts#L46)
 
-___
+---
 
 ### convertNameToModuleType
 
@@ -517,8 +520,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type     | Description             |
+| :------------ | :------- | :---------------------- |
 | `moduleName?` | `string` | a supported module name |
 
 #### Returns
@@ -531,7 +534,7 @@ The [ModuleType](enums/ModuleType) or undefined
 
 [src/common/module-type.ts:31](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/module-type.ts#L31)
 
-___
+---
 
 ### estimateBlockAtTime
 
@@ -541,10 +544,10 @@ Given a time in second, return the block number that the time is in.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `timeInEpochSeconds` | `number` | The time in seconds. |
-| `provider` | `Provider` | - |
+| Name                 | Type       | Description          |
+| :------------------- | :--------- | :------------------- |
+| `timeInEpochSeconds` | `number`   | The time in seconds. |
+| `provider`           | `Provider` | -                    |
 
 #### Returns
 
@@ -556,7 +559,7 @@ Given a time in second, return the block number that the time is in.
 
 [src/utils/blockTimeEstimator.ts:62](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/utils/blockTimeEstimator.ts#L62)
 
-___
+---
 
 ### generateRoot
 
@@ -566,8 +569,8 @@ Convenience function to generate a merkle root from a list of strings.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                    |
+| :------ | :--------- | :------------------------------------------------------------- |
 | `items` | `string`[] | Any list of strings that will be hashed and added to the tree. |
 
 #### Returns
@@ -580,7 +583,7 @@ Convenience function to generate a merkle root from a list of strings.
 
 [src/utils/merkle/generateRoot.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/utils/merkle/generateRoot.ts#L10)
 
-___
+---
 
 ### getContractMetadata
 
@@ -590,12 +593,12 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `provider` | [`ProviderOrSigner`](modules#providerorsigner) | `undefined` |
-| `address` | `string` | `undefined` |
-| `ipfsGatewayUrl` | `string` | `undefined` |
-| `resolveGateway` | `boolean` | `false` |
+| Name             | Type                                           | Default value |
+| :--------------- | :--------------------------------------------- | :------------ |
+| `provider`       | [`ProviderOrSigner`](modules#providerorsigner) | `undefined`   |
+| `address`        | `string`                                       | `undefined`   |
+| `ipfsGatewayUrl` | `string`                                       | `undefined`   |
+| `resolveGateway` | `boolean`                                      | `false`       |
 
 #### Returns
 
@@ -605,7 +608,7 @@ ___
 
 [src/common/contract.ts:51](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L51)
 
-___
+---
 
 ### getCurrencyBalance
 
@@ -615,11 +618,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name               | Type                                           |
+| :----------------- | :--------------------------------------------- |
 | `providerOrSigner` | [`ProviderOrSigner`](modules#providerorsigner) |
-| `tokenAddress` | `string` |
-| `walletAddress` | `string` |
+| `tokenAddress`     | `string`                                       |
+| `walletAddress`    | `string`                                       |
 
 #### Returns
 
@@ -629,7 +632,7 @@ ___
 
 [src/common/currency.ts:209](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L209)
 
-___
+---
 
 ### getCurrencyMetadata
 
@@ -639,10 +642,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name               | Type                                           |
+| :----------------- | :--------------------------------------------- |
 | `providerOrSigner` | [`ProviderOrSigner`](modules#providerorsigner) |
-| `asset` | `string` |
+| `asset`            | `string`                                       |
 
 #### Returns
 
@@ -652,7 +655,7 @@ ___
 
 [src/common/currency.ts:139](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L139)
 
-___
+---
 
 ### getCurrencyValue
 
@@ -662,11 +665,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name               | Type                                           |
+| :----------------- | :--------------------------------------------- |
 | `providerOrSigner` | [`ProviderOrSigner`](modules#providerorsigner) |
-| `asset` | `string` |
-| `price` | `BigNumberish` |
+| `asset`            | `string`                                       |
+| `price`            | `BigNumberish`                                 |
 
 #### Returns
 
@@ -676,25 +679,25 @@ ___
 
 [src/common/currency.ts:183](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L183)
 
-___
+---
 
 ### getGasPriceForChain
 
-▸ **getGasPriceForChain**(`chainId`, `speed`, `maxGasPrice`): `Promise`<`number` \| ``null``\>
+▸ **getGasPriceForChain**(`chainId`, `speed`, `maxGasPrice`): `Promise`<`number` \| `null`\>
 
 **`internal`**
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `chainId` | `number` |
-| `speed` | `string` |
+| Name          | Type     |
+| :------------ | :------- |
+| `chainId`     | `number` |
+| `speed`       | `string` |
 | `maxGasPrice` | `number` |
 
 #### Returns
 
-`Promise`<`number` \| ``null``\>
+`Promise`<`number` \| `null`\>
 
 the gas price
 
@@ -702,7 +705,7 @@ the gas price
 
 [src/common/gas-price.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/gas-price.ts#L23)
 
-___
+---
 
 ### getMetadataWithoutContract
 
@@ -710,12 +713,12 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `provider` | [`ProviderOrSigner`](modules#providerorsigner) |
-| `contractAddress` | `string` |
-| `tokenId` | `string` |
-| `ipfsGatewayUrl` | `string` |
+| Name              | Type                                           |
+| :---------------- | :--------------------------------------------- |
+| `provider`        | [`ProviderOrSigner`](modules#providerorsigner) |
+| `contractAddress` | `string`                                       |
+| `tokenId`         | `string`                                       |
+| `ipfsGatewayUrl`  | `string`                                       |
 
 #### Returns
 
@@ -725,7 +728,7 @@ ___
 
 [src/common/nft.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L93)
 
-___
+---
 
 ### getNativeTokenByChainId
 
@@ -733,8 +736,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `chainId` | `ChainId` |
 
 #### Returns
@@ -745,7 +748,7 @@ ___
 
 [src/common/currency.ts:239](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L239)
 
-___
+---
 
 ### getRoleHash
 
@@ -755,8 +758,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type                                |
+| :----- | :---------------------------------- |
 | `role` | keyof [`IRoles`](interfaces/IRoles) |
 
 #### Returns
@@ -767,7 +770,7 @@ ___
 
 [src/common/role.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/role.ts#L81)
 
-___
+---
 
 ### getTokenMetadata
 
@@ -775,11 +778,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `contract` | [`NFTContractTypes`](modules#nftcontracttypes) |
-| `tokenId` | `string` |
-| `ipfsGatewayUrl` | `string` |
+| Name             | Type                                           |
+| :--------------- | :--------------------------------------------- |
+| `contract`       | [`NFTContractTypes`](modules#nftcontracttypes) |
+| `tokenId`        | `string`                                       |
+| `ipfsGatewayUrl` | `string`                                       |
 
 #### Returns
 
@@ -789,7 +792,7 @@ ___
 
 [src/common/nft.ts:106](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L106)
 
-___
+---
 
 ### getTokenMetadataUsingStorage
 
@@ -797,12 +800,12 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `contractAddress` | `string` |
-| `provider` | [`ProviderOrSigner`](modules#providerorsigner) |
-| `tokenId` | `string` |
-| `storage` | [`IStorage`](interfaces/IStorage) |
+| Name              | Type                                           |
+| :---------------- | :--------------------------------------------- |
+| `contractAddress` | `string`                                       |
+| `provider`        | [`ProviderOrSigner`](modules#providerorsigner) |
+| `tokenId`         | `string`                                       |
+| `storage`         | [`IStorage`](interfaces/IStorage)              |
 
 #### Returns
 
@@ -812,7 +815,7 @@ ___
 
 [src/common/nft.ts:135](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L135)
 
-___
+---
 
 ### getTokenUri
 
@@ -820,10 +823,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                           |
+| :--------- | :--------------------------------------------- |
 | `contract` | [`NFTContractTypes`](modules#nftcontracttypes) |
-| `tokenId` | `string` |
+| `tokenId`  | `string`                                       |
 
 #### Returns
 
@@ -833,7 +836,7 @@ ___
 
 [src/common/nft.ts:166](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L166)
 
-___
+---
 
 ### isContract
 
@@ -843,10 +846,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type       |
+| :--------- | :--------- |
 | `provider` | `Provider` |
-| `address` | `string` |
+| `address`  | `string`   |
 
 #### Returns
 
@@ -856,7 +859,7 @@ ___
 
 [src/common/contract.ts:87](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L87)
 
-___
+---
 
 ### isNativeToken
 
@@ -866,8 +869,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name           | Type     |
+| :------------- | :------- |
 | `tokenAddress` | `string` |
 
 #### Returns
@@ -878,7 +881,7 @@ ___
 
 [src/common/currency.ts:199](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L199)
 
-___
+---
 
 ### recursiveResolveGatewayUrl
 
@@ -886,9 +889,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `json` | `any` |
+| Name             | Type     |
+| :--------------- | :------- |
+| `json`           | `any`    |
 | `ipfsGatewayUrl` | `string` |
 
 #### Returns
@@ -899,7 +902,7 @@ ___
 
 [src/common/ipfs.ts:31](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/ipfs.ts#L31)
 
-___
+---
 
 ### replaceIpfsWithGateway
 
@@ -909,9 +912,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `ipfsUrl` | `string` | the ipfs:// uri |
+| Name         | Type     | Description     |
+| :----------- | :------- | :-------------- |
+| `ipfsUrl`    | `string` | the ipfs:// uri |
 | `gatewayUrl` | `string` | the gateway url |
 
 #### Returns
@@ -924,7 +927,7 @@ the fully formed IPFS url
 
 [src/common/ipfs.ts:22](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/ipfs.ts#L22)
 
-___
+---
 
 ### uploadMetadata
 
@@ -934,11 +937,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `metadata` | [`MetadataURIOrObject`](modules#metadatauriorobject) |
-| `contractAddress?` | `string` |
-| `signerAddress?` | `string` |
+| Name               | Type                                                 |
+| :----------------- | :--------------------------------------------------- |
+| `metadata`         | [`MetadataURIOrObject`](modules#metadatauriorobject) |
+| `contractAddress?` | `string`                                             |
+| `signerAddress?`   | `string`                                             |
 
 #### Returns
 
@@ -948,7 +951,7 @@ ___
 
 [src/common/ipfs.ts:83](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/ipfs.ts#L83)
 
-___
+---
 
 ### uploadToIPFS
 
@@ -958,11 +961,11 @@ A helper function to upload arbitrary data to IPFS and return the resulting IPFS
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | `string` \| `FileOrBuffer` | stringified JSON \|\| File |
-| `contractAddress?` | `string` | (Optional) the contract address to associate the data with |
-| `signerAddress?` | `string` | (Optional) the wallet address of the actor that is uploading the file |
+| Name               | Type                       | Description                                                           |
+| :----------------- | :------------------------- | :-------------------------------------------------------------------- |
+| `data`             | `string` \| `FileOrBuffer` | stringified JSON \|\| File                                            |
+| `contractAddress?` | `string`                   | (Optional) the contract address to associate the data with            |
+| `signerAddress?`   | `string`                   | (Optional) the wallet address of the actor that is uploading the file |
 
 #### Returns
 

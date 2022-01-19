@@ -16,7 +16,7 @@ custom_edit_url: null
 
 [src/enums/marketplace/ListingType.ts:3](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/enums/marketplace/ListingType.ts#L3)
 
-___
+---
 
 ### Direct
 

@@ -16,7 +16,7 @@ custom_edit_url: null
 
 [src/types/vote/ProposalVote.ts:7](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/vote/ProposalVote.ts#L7)
 
-___
+---
 
 ### label
 
@@ -26,7 +26,7 @@ ___
 
 [src/types/vote/ProposalVote.ts:6](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/vote/ProposalVote.ts#L6)
 
-___
+---
 
 ### type
 

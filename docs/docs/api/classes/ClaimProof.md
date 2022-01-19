@@ -27,7 +27,7 @@ The address of the account that owns the claim.
 
 [src/types/snapshots/ClaimProof.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/snapshots/ClaimProof.ts#L13)
 
-___
+---
 
 ### proof
 

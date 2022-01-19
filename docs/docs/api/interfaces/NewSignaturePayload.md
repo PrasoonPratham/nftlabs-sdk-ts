@@ -27,7 +27,7 @@ on the token. If this is set to the 0x0 address, then its free to mint.
 
 [src/types/signature-minting/NewSignaturePayload.ts:27](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/signature-minting/NewSignaturePayload.ts#L27)
 
-___
+---
 
 ### id
 
@@ -41,7 +41,7 @@ If this value is an empty string, then a uuid-v4 will be generated.
 
 [src/types/signature-minting/NewSignaturePayload.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/signature-minting/NewSignaturePayload.ts#L45)
 
-___
+---
 
 ### metadata
 
@@ -53,7 +53,7 @@ The metadata of the token to generate a signature for.
 
 [src/types/signature-minting/NewSignaturePayload.ts:11](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/signature-minting/NewSignaturePayload.ts#L11)
 
-___
+---
 
 ### mintEndTimeEpochSeconds
 
@@ -66,7 +66,7 @@ such that it can no longer be claimed.
 
 [src/types/signature-minting/NewSignaturePayload.ts:38](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/signature-minting/NewSignaturePayload.ts#L38)
 
-___
+---
 
 ### mintStartTimeEpochSeconds
 
@@ -78,7 +78,7 @@ The epoch start time (in seconds) when the signature can be claimed.
 
 [src/types/signature-minting/NewSignaturePayload.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/signature-minting/NewSignaturePayload.ts#L32)
 
-___
+---
 
 ### price
 
@@ -90,7 +90,7 @@ The price per the NFT being minted for this particular signature.
 
 [src/types/signature-minting/NewSignaturePayload.ts:21](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/signature-minting/NewSignaturePayload.ts#L21)
 
-___
+---
 
 ### to
 

@@ -20,7 +20,7 @@ The asset being listed.
 
 [src/types/marketplace/DirectListing.ts:28](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/DirectListing.ts#L28)
 
-___
+---
 
 ### assetContractAddress
 
@@ -32,7 +32,7 @@ The address of the asset being listed.
 
 [src/types/marketplace/DirectListing.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/DirectListing.ts#L18)
 
-___
+---
 
 ### buyoutCurrencyValuePerToken
 
@@ -44,7 +44,7 @@ The `CurrencyValue` of the listing. Useful for displaying the price information.
 
 [src/types/marketplace/DirectListing.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/DirectListing.ts#L55)
 
-___
+---
 
 ### buyoutPrice
 
@@ -56,7 +56,7 @@ The buyout price of the listing.
 
 [src/types/marketplace/DirectListing.ts:60](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/DirectListing.ts#L60)
 
-___
+---
 
 ### currencyContractAddress
 
@@ -68,7 +68,7 @@ The address of the currency to accept for the listing.
 
 [src/types/marketplace/DirectListing.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/DirectListing.ts#L50)
 
-___
+---
 
 ### id
 
@@ -80,7 +80,7 @@ The id of the listing.
 
 [src/types/marketplace/DirectListing.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/DirectListing.ts#L13)
 
-___
+---
 
 ### quantity
 
@@ -94,7 +94,7 @@ For ERC721s, this value should always be 1 (and will be forced internally regard
 
 [src/types/marketplace/DirectListing.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/DirectListing.ts#L45)
 
-___
+---
 
 ### secondsUntilEnd
 
@@ -106,7 +106,7 @@ Number of seconds until the listing expires.
 
 [src/types/marketplace/DirectListing.ts:38](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/DirectListing.ts#L38)
 
-___
+---
 
 ### sellerAddress
 
@@ -118,7 +118,7 @@ The address of the seller.
 
 [src/types/marketplace/DirectListing.ts:65](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/DirectListing.ts#L65)
 
-___
+---
 
 ### startTimeInSeconds
 
@@ -130,7 +130,7 @@ The start time of the listing.
 
 [src/types/marketplace/DirectListing.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/DirectListing.ts#L33)
 
-___
+---
 
 ### tokenId
 
@@ -142,7 +142,7 @@ The ID of the token to list.
 
 [src/types/marketplace/DirectListing.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/DirectListing.ts#L23)
 
-___
+---
 
 ### type
 

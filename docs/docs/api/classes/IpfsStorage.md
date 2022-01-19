@@ -18,8 +18,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type     |
+| :----------- | :------- |
 | `gatewayUrl` | `string` |
 
 #### Defined in
@@ -43,7 +43,7 @@ custom_edit_url: null
 ▸ **batchUploadProperties**(`metadatas`): `Promise`<`any`\>
 
 Pre-processes metadata and uploads all file properties
-to storage in *bulk*, then performs a string replacement of
+to storage in _bulk_, then performs a string replacement of
 all file properties -> the resulting ipfs uri. This is
 called internally by `uploadMetadataBatch`.
 
@@ -51,8 +51,8 @@ called internally by `uploadMetadataBatch`.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type                                                      |
+| :---------- | :-------------------------------------------------------- |
 | `metadatas` | [`MetadataURIOrObject`](../modules#metadatauriorobject)[] |
 
 #### Returns
@@ -65,7 +65,7 @@ called internally by `uploadMetadataBatch`.
 
 [src/storage/IpfsStorage.ts:239](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L239)
 
-___
+---
 
 ### buildFilePropertiesMap
 
@@ -76,10 +76,10 @@ This function recurisely traverses an object and hashes any
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `object` | `Record`<`string`, `any`\> | The object to recurse over |
-| `files` | (`File` \| `Buffer`)[] | The running array of files or buffer to upload |
+| Name     | Type                       | Description                                    |
+| :------- | :------------------------- | :--------------------------------------------- |
+| `object` | `Record`<`string`, `any`\> | The object to recurse over                     |
+| `files`  | (`File` \| `Buffer`)[]     | The running array of files or buffer to upload |
 
 #### Returns
 
@@ -91,7 +91,7 @@ This function recurisely traverses an object and hashes any
 
 [src/storage/IpfsStorage.ts:209](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L209)
 
-___
+---
 
 ### get
 
@@ -102,8 +102,8 @@ Its up to the caller to determine what the type of the data is.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type     |
+| :----- | :------- |
 | `hash` | `string` |
 
 #### Returns
@@ -120,7 +120,7 @@ Its up to the caller to determine what the type of the data is.
 
 [src/storage/IpfsStorage.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L188)
 
-___
+---
 
 ### getUploadToken
 
@@ -131,8 +131,8 @@ a file to storage.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type     |
+| :---------------- | :------- |
 | `contractAddress` | `string` |
 
 #### Returns
@@ -149,7 +149,7 @@ a file to storage.
 
 [src/storage/IpfsStorage.ts:173](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L173)
 
-___
+---
 
 ### replaceFilePropertiesWithHashes
 
@@ -164,10 +164,10 @@ will throw an error.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `object` | `Record`<`string`, `any`\> | The object to recursively process |
-| `cids` | `string`[] | The array of file hashes to ipfs uris in the recurse order |
+| Name     | Type                       | Description                                                |
+| :------- | :------------------------- | :--------------------------------------------------------- |
+| `object` | `Record`<`string`, `any`\> | The object to recursively process                          |
+| `cids`   | `string`[]                 | The array of file hashes to ipfs uris in the recurse order |
 
 #### Returns
 
@@ -179,7 +179,7 @@ will throw an error.
 
 [src/storage/IpfsStorage.ts:280](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L280)
 
-___
+---
 
 ### resolveFullUrl
 
@@ -191,8 +191,8 @@ Resolves the full url for a file using the configured gateway
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type     | Description     |
+| :--------- | :------- | :-------------- |
 | `ipfsHash` | `string` | the ipfs:// uri |
 
 #### Returns
@@ -209,7 +209,7 @@ Resolves the full url for a file using the configured gateway
 
 [src/storage/IpfsStorage.ts:371](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L371)
 
-___
+---
 
 ### upload
 
@@ -219,11 +219,11 @@ Uploads a file to the storage.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `string` \| `FileOrBuffer` |
-| `contractAddress?` | `string` |
-| `signerAddress?` | `string` |
+| Name               | Type                       |
+| :----------------- | :------------------------- |
+| `data`             | `string` \| `FileOrBuffer` |
+| `contractAddress?` | `string`                   |
+| `signerAddress?`   | `string`                   |
 
 #### Returns
 
@@ -239,7 +239,7 @@ Uploads a file to the storage.
 
 [src/storage/IpfsStorage.ts:38](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L38)
 
-___
+---
 
 ### uploadBatch
 
@@ -249,11 +249,11 @@ Uploads a folder to storage.
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `files` | `string`[] \| `Buffer`[] \| `FileOrBuffer`[] \| `File`[] \| `BufferOrStringWithName`[] | `undefined` |
-| `contractAddress?` | `string` | `undefined` |
-| `fileStartNumber` | `number` | `0` |
+| Name               | Type                                                                                   | Default value |
+| :----------------- | :------------------------------------------------------------------------------------- | :------------ |
+| `files`            | `string`[] \| `Buffer`[] \| `FileOrBuffer`[] \| `File`[] \| `BufferOrStringWithName`[] | `undefined`   |
+| `contractAddress?` | `string`                                                                               | `undefined`   |
+| `fileStartNumber`  | `number`                                                                               | `0`           |
 
 #### Returns
 
@@ -269,7 +269,7 @@ Uploads a folder to storage.
 
 [src/storage/IpfsStorage.ts:80](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L80)
 
-___
+---
 
 ### uploadBatchWithCid
 
@@ -277,11 +277,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `files` | `string`[] \| `Buffer`[] \| `FileOrBuffer`[] \| `File`[] \| `BufferOrStringWithName`[] | `undefined` |
-| `contractAddress?` | `string` | `undefined` |
-| `fileStartNumber` | `number` | `0` |
+| Name               | Type                                                                                   | Default value |
+| :----------------- | :------------------------------------------------------------------------------------- | :------------ |
+| `files`            | `string`[] \| `Buffer`[] \| `FileOrBuffer`[] \| `File`[] \| `BufferOrStringWithName`[] | `undefined`   |
+| `contractAddress?` | `string`                                                                               | `undefined`   |
+| `fileStartNumber`  | `number`                                                                               | `0`           |
 
 #### Returns
 
@@ -291,7 +291,7 @@ ___
 
 [src/storage/IpfsStorage.ts:99](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L99)
 
-___
+---
 
 ### uploadMetadata
 
@@ -301,11 +301,11 @@ Uploads metadata to IPFS
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) |
-| `contractAddress?` | `string` |
-| `_signerAddress?` | `string` |
+| Name               | Type                                                    |
+| :----------------- | :------------------------------------------------------ |
+| `metadata`         | [`MetadataURIOrObject`](../modules#metadatauriorobject) |
+| `contractAddress?` | `string`                                                |
+| `_signerAddress?`  | `string`                                                |
 
 #### Returns
 
@@ -319,7 +319,7 @@ Uploads metadata to IPFS
 
 [src/storage/IpfsStorage.ts:302](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L302)
 
-___
+---
 
 ### uploadMetadataBatch
 
@@ -329,11 +329,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `metadatas` | [`MetadataURIOrObject`](../modules#metadatauriorobject)[] |
-| `contractAddress?` | `string` |
-| `startFileNumber?` | `number` |
+| Name               | Type                                                      |
+| :----------------- | :-------------------------------------------------------- |
+| `metadatas`        | [`MetadataURIOrObject`](../modules#metadatauriorobject)[] |
+| `contractAddress?` | `string`                                                  |
+| `startFileNumber?` | `number`                                                  |
 
 #### Returns
 

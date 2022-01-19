@@ -20,7 +20,7 @@ The address of the asset being listed.
 
 [src/types/marketplace/NewAuctionListing.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewAuctionListing.ts#L12)
 
-___
+---
 
 ### buyoutPricePerToken
 
@@ -35,7 +35,7 @@ is 10 coins (of the configured currency).
 
 [src/types/marketplace/NewAuctionListing.ts:56](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewAuctionListing.ts#L56)
 
-___
+---
 
 ### currencyContractAddress
 
@@ -47,7 +47,7 @@ The address of the currency to accept for the listing.
 
 [src/types/marketplace/NewAuctionListing.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewAuctionListing.ts#L39)
 
-___
+---
 
 ### listingDurationInSeconds
 
@@ -59,7 +59,7 @@ The duration of the listing in seconds.
 
 [src/types/marketplace/NewAuctionListing.ts:27](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewAuctionListing.ts#L27)
 
-___
+---
 
 ### quantity
 
@@ -73,7 +73,7 @@ For ERC721s, this value should always be 1 (and will be forced internally regard
 
 [src/types/marketplace/NewAuctionListing.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewAuctionListing.ts#L34)
 
-___
+---
 
 ### reservePricePerToken
 
@@ -89,7 +89,7 @@ is 10 coins (of the configured currency).
 
 [src/types/marketplace/NewAuctionListing.ts:48](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewAuctionListing.ts#L48)
 
-___
+---
 
 ### startTimeInSeconds
 
@@ -101,7 +101,7 @@ The start time of the listing.
 
 [src/types/marketplace/NewAuctionListing.ts:22](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewAuctionListing.ts#L22)
 
-___
+---
 
 ### tokenId
 
@@ -113,11 +113,11 @@ The ID of the token to list.
 
 [src/types/marketplace/NewAuctionListing.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewAuctionListing.ts#L17)
 
-___
+---
 
 ### type
 
-• `Optional` **type**: ``"NewAuctionListing"``
+• `Optional` **type**: `"NewAuctionListing"`
 
 #### Defined in
 

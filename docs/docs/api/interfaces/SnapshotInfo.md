@@ -16,7 +16,7 @@ custom_edit_url: null
 
 [src/types/snapshots/SnapshotInfo.ts:4](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/snapshots/SnapshotInfo.ts#L4)
 
-___
+---
 
 ### snapshot
 
@@ -26,7 +26,7 @@ ___
 
 [src/types/snapshots/SnapshotInfo.ts:6](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/snapshots/SnapshotInfo.ts#L6)
 
-___
+---
 
 ### snapshotUri
 

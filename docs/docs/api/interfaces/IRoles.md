@@ -12,7 +12,7 @@ Roles are used to handle permissions on modules that extend [ModuleWithRoles](..
 
 ### admin
 
-• **admin**: ``"admin"``
+• **admin**: `"admin"`
 
 This admin role allows the wallet to modify contract metadata and [grant](../classes/ModuleWithRoles#grantrole) and [revoke](../classes/ModuleWithRoles#revokerole) Roles.
 
@@ -20,11 +20,11 @@ This admin role allows the wallet to modify contract metadata and [grant](../cla
 
 [src/common/role.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/role.ts#L12)
 
-___
+---
 
 ### editor
 
-• **editor**: ``"editor"``
+• **editor**: `"editor"`
 
 The editor role allows the wallet to edit data in the [DatastoreModule](../classes/DatastoreModule).
 
@@ -34,11 +34,11 @@ The editor role allows the wallet to edit data in the [DatastoreModule](../class
 
 [src/common/role.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/role.ts#L34)
 
-___
+---
 
 ### lister
 
-• **lister**: ``"lister"``
+• **lister**: `"lister"`
 
 The lister role allows the wallet to list assets on the [MarketModule](../classes/MarketModule).
 
@@ -46,11 +46,11 @@ The lister role allows the wallet to list assets on the [MarketModule](../classe
 
 [src/common/role.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/role.ts#L39)
 
-___
+---
 
 ### minter
 
-• **minter**: ``"minter"``
+• **minter**: `"minter"`
 
 The minter role allows the wallet to mint new assets.
 ([NFTs](../classes/NFTModule#mint), [Tokens](../classes/TokenModule#mint), [Packs](../classes/PackModule#create), etc)
@@ -59,11 +59,11 @@ The minter role allows the wallet to mint new assets.
 
 [src/common/role.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/role.ts#L18)
 
-___
+---
 
 ### pauser
 
-• **pauser**: ``"pauser"``
+• **pauser**: `"pauser"`
 
 The pauser role allows the wallet to pause all external contract interactions.
 
@@ -71,11 +71,11 @@ The pauser role allows the wallet to pause all external contract interactions.
 
 [src/common/role.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/role.ts#L23)
 
-___
+---
 
 ### transfer
 
-• **transfer**: ``"transfer"``
+• **transfer**: `"transfer"`
 
 The transfer role allows the wallet to transfer and receive assets
 **even** when the module is set to be non-transferrable.

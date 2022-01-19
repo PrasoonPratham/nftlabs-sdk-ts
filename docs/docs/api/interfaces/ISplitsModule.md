@@ -21,8 +21,8 @@ to withdraw in the native currency.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description                                           |
+| :-------- | :------- | :---------------------------------------------------- |
 | `address` | `string` | The address of the recipient to check the balance of. |
 
 #### Returns
@@ -33,7 +33,7 @@ to withdraw in the native currency.
 
 [src/modules/royalty.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L34)
 
-___
+---
 
 ### balanceOfToken
 
@@ -44,10 +44,10 @@ to withdraw in the native currency in a specific currency.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name            | Type     | Description                                           |
+| :-------------- | :------- | :---------------------------------------------------- |
 | `walletAddress` | `string` | The address of the recipient to check the balance of. |
-| `tokenAddress` | `string` | The address of the currency to check the balance in. |
+| `tokenAddress`  | `string` | The address of the currency to check the balance in.  |
 
 #### Returns
 
@@ -57,7 +57,7 @@ to withdraw in the native currency in a specific currency.
 
 [src/modules/royalty.ts:43](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L43)
 
-___
+---
 
 ### distribute
 
@@ -73,7 +73,7 @@ Distributes all funds to the recipients.
 
 [src/modules/royalty.ts:72](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L72)
 
-___
+---
 
 ### distributeToken
 
@@ -83,8 +83,8 @@ Distributes all funds to the recipients in the specified currency.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name           | Type     | Description                                             |
+| :------------- | :------- | :------------------------------------------------------ |
 | `tokenAddress` | `string` | The address of the currency to distribute the funds in. |
 
 #### Returns
@@ -95,7 +95,7 @@ Distributes all funds to the recipients in the specified currency.
 
 [src/modules/royalty.ts:79](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L79)
 
-___
+---
 
 ### getAllRecipients
 
@@ -112,7 +112,7 @@ respective split percentages.
 
 [src/modules/royalty.ts:19](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L19)
 
-___
+---
 
 ### getRecipientSplitPercentage
 
@@ -122,8 +122,8 @@ Get the split percentage of a recipient.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description                   |
+| :-------- | :------- | :---------------------------- |
 | `address` | `string` | The address of the recipient. |
 
 #### Returns
@@ -134,7 +134,7 @@ Get the split percentage of a recipient.
 
 [src/modules/royalty.ts:26](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L26)
 
-___
+---
 
 ### withdraw
 
@@ -145,8 +145,8 @@ the `address` is owed and transfer it to the wallet.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description                            |
+| :-------- | :------- | :------------------------------------- |
 | `address` | `string` | The address to withdraw royalties for. |
 
 #### Returns
@@ -157,7 +157,7 @@ the `address` is owed and transfer it to the wallet.
 
 [src/modules/royalty.ts:54](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L54)
 
-___
+---
 
 ### withdrawToken
 
@@ -173,10 +173,10 @@ the address of the $MATIC token as the `tokenAddress` parameter.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name            | Type     | Description                            |
+| :-------------- | :------- | :------------------------------------- |
 | `walletAddress` | `string` | The address to withdraw royalties for. |
-| `tokenAddress` | `string` | - |
+| `tokenAddress`  | `string` | -                                      |
 
 #### Returns
 

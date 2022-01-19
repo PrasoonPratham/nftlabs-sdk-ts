@@ -22,7 +22,7 @@ custom_edit_url: null
 
 [src/modules/token.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/token.ts#L18)
 
-___
+---
 
 ### amount
 

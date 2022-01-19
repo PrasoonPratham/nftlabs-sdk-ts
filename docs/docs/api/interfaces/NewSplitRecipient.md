@@ -30,7 +30,7 @@ The address of the recipient
 
 [src/types/module-deployments/NewSplitRecipient.ts:20](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/NewSplitRecipient.ts#L20)
 
-___
+---
 
 ### shares
 

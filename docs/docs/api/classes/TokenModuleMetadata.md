@@ -38,7 +38,7 @@ The description of the module.
 
 [src/types/module-deployments/CommonModuleMetadata.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/CommonModuleMetadata.ts#L23)
 
-___
+---
 
 ### externalLink
 
@@ -54,7 +54,7 @@ An external link for the module.
 
 [src/types/module-deployments/CommonModuleMetadata.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/CommonModuleMetadata.ts#L39)
 
-___
+---
 
 ### image
 
@@ -74,7 +74,7 @@ and the property is the IPFS hash uri).
 
 [src/types/module-deployments/CommonModuleMetadata.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/CommonModuleMetadata.ts#L33)
 
-___
+---
 
 ### name
 
@@ -90,7 +90,7 @@ The name of the module.
 
 [src/types/module-deployments/CommonModuleMetadata.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/CommonModuleMetadata.ts#L17)
 
-___
+---
 
 ### symbol
 

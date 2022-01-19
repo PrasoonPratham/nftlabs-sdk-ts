@@ -16,7 +16,7 @@ custom_edit_url: null
 
 [src/enums/vote/ProposalState.ts:3](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/enums/vote/ProposalState.ts#L3)
 
-___
+---
 
 ### Canceled
 
@@ -26,7 +26,7 @@ ___
 
 [src/enums/vote/ProposalState.ts:4](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/enums/vote/ProposalState.ts#L4)
 
-___
+---
 
 ### Defeated
 
@@ -36,7 +36,7 @@ ___
 
 [src/enums/vote/ProposalState.ts:5](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/enums/vote/ProposalState.ts#L5)
 
-___
+---
 
 ### Executed
 
@@ -46,7 +46,7 @@ ___
 
 [src/enums/vote/ProposalState.ts:9](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/enums/vote/ProposalState.ts#L9)
 
-___
+---
 
 ### Expired
 
@@ -56,7 +56,7 @@ ___
 
 [src/enums/vote/ProposalState.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/enums/vote/ProposalState.ts#L8)
 
-___
+---
 
 ### Pending
 
@@ -66,7 +66,7 @@ ___
 
 [src/enums/vote/ProposalState.ts:2](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/enums/vote/ProposalState.ts#L2)
 
-___
+---
 
 ### Queued
 
@@ -76,7 +76,7 @@ ___
 
 [src/enums/vote/ProposalState.ts:7](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/enums/vote/ProposalState.ts#L7)
 
-___
+---
 
 ### Succeeded
 

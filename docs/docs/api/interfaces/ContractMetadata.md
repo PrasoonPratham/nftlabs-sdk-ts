@@ -22,27 +22,27 @@ The typical contract metadata found on the modules.
 
 [src/common/contract.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L14)
 
-___
+---
 
-### external\_link
+### external_link
 
-• `Optional` **external\_link**: `string`
+• `Optional` **external_link**: `string`
 
 #### Defined in
 
 [src/common/contract.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L16)
 
-___
+---
 
-### fee\_recipient
+### fee_recipient
 
-• `Optional` **fee\_recipient**: `string`
+• `Optional` **fee_recipient**: `string`
 
 #### Defined in
 
 [src/common/contract.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L18)
 
-___
+---
 
 ### image
 
@@ -52,7 +52,7 @@ ___
 
 [src/common/contract.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L15)
 
-___
+---
 
 ### name
 
@@ -62,17 +62,17 @@ ___
 
 [src/common/contract.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L13)
 
-___
+---
 
-### seller\_fee\_basis\_points
+### seller_fee_basis_points
 
-• `Optional` **seller\_fee\_basis\_points**: `number`
+• `Optional` **seller_fee_basis_points**: `number`
 
 #### Defined in
 
 [src/common/contract.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L17)
 
-___
+---
 
 ### uri
 

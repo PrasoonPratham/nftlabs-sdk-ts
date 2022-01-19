@@ -40,12 +40,12 @@ const module = sdk.getNFTModule("{{module_address}}");
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name               | Type                                              |
+| :----------------- | :------------------------------------------------ |
 | `providerOrSigner` | [`ProviderOrSigner`](../modules#providerorsigner) |
-| `address` | `string` |
-| `options` | [`ISDKOptions`](../interfaces/ISDKOptions) |
-| `sdk` | [`ThirdwebSDK`](ThirdwebSDK) |
+| `address`          | `string`                                          |
+| `options`          | [`ISDKOptions`](../interfaces/ISDKOptions)        |
+| `sdk`              | [`ThirdwebSDK`](ThirdwebSDK)                      |
 
 #### Inherited from
 
@@ -65,7 +65,7 @@ const module = sdk.getNFTModule("{{module_address}}");
 
 [src/modules/nft.ts:95](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L95)
 
-___
+---
 
 ### \_shouldCheckVersion
 
@@ -75,7 +75,7 @@ ___
 
 [src/modules/nft.ts:94](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L94)
 
-___
+---
 
 ### address
 
@@ -91,7 +91,7 @@ ___
 
 [src/core/module.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L45)
 
-___
+---
 
 ### contract
 
@@ -109,7 +109,7 @@ Contract connects to the SDK signer or provider
 
 [src/core/module.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L93)
 
-___
+---
 
 ### ipfsGatewayUrl
 
@@ -127,7 +127,7 @@ ___
 
 [src/core/module.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L50)
 
-___
+---
 
 ### options
 
@@ -145,7 +145,7 @@ ___
 
 [src/core/module.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L55)
 
-___
+---
 
 ### readOnlyContract
 
@@ -163,7 +163,7 @@ Contract connects to the [ISDKOptions.readOnlyRpcUrl](../interfaces/ISDKOptions#
 
 [src/core/module.ts:98](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L98)
 
-___
+---
 
 ### sdk
 
@@ -177,7 +177,7 @@ ___
 
 [src/core/module.ts:57](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L57)
 
-___
+---
 
 ### v1Contract
 
@@ -187,7 +187,7 @@ ___
 
 [src/modules/nft.ts:96](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L96)
 
-___
+---
 
 ### moduleType
 
@@ -197,7 +197,7 @@ ___
 
 [src/modules/nft.ts:65](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L65)
 
-___
+---
 
 ### roles
 
@@ -233,8 +233,8 @@ ModuleWithRoles.providerOrSigner
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                              |
+| :------ | :------------------------------------------------ |
 | `value` | [`ProviderOrSigner`](../modules#providerorsigner) |
 
 #### Returns
@@ -249,7 +249,7 @@ ModuleWithRoles.providerOrSigner
 
 [src/core/module.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L70)
 
-___
+---
 
 ### roles
 
@@ -269,17 +269,17 @@ ModuleWithRoles.roles
 
 [src/core/module.ts:504](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L504)
 
-___
+---
 
 ### signer
 
-• `Protected` `get` **signer**(): ``null`` \| `Signer`
+• `Protected` `get` **signer**(): `null` \| `Signer`
 
 **`internal`**
 
 #### Returns
 
-``null`` \| `Signer`
+`null` \| `Signer`
 
 #### Inherited from
 
@@ -295,9 +295,9 @@ ModuleWithRoles.signer
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | ``null`` \| `Signer` |
+| Name    | Type               |
+| :------ | :----------------- |
+| `value` | `null` \| `Signer` |
 
 #### Returns
 
@@ -315,13 +315,13 @@ ModuleWithRoles.signer
 
 ### \_v1MintBatchTo
 
-▸ `Private` **_v1MintBatchTo**(`to`, `metadatas`): `Promise`<[`NFTMetadata`](../interfaces/NFTMetadata)[]\>
+▸ `Private` **\_v1MintBatchTo**(`to`, `metadatas`): `Promise`<[`NFTMetadata`](../interfaces/NFTMetadata)[]\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `to` | `string` |
+| Name        | Type                                                      |
+| :---------- | :-------------------------------------------------------- |
+| `to`        | `string`                                                  |
 | `metadatas` | [`MetadataURIOrObject`](../modules#metadatauriorobject)[] |
 
 #### Returns
@@ -332,17 +332,17 @@ ModuleWithRoles.signer
 
 [src/modules/nft.ts:370](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L370)
 
-___
+---
 
 ### \_v1MintTo
 
-▸ `Private` **_v1MintTo**(`to`, `metadata`): `Promise`<[`NFTMetadata`](../interfaces/NFTMetadata)\>
+▸ `Private` **\_v1MintTo**(`to`, `metadata`): `Promise`<[`NFTMetadata`](../interfaces/NFTMetadata)\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `to` | `string` |
+| Name       | Type                                                    |
+| :--------- | :------------------------------------------------------ |
+| `to`       | `string`                                                |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) |
 
 #### Returns
@@ -353,7 +353,7 @@ ___
 
 [src/modules/nft.ts:300](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L300)
 
-___
+---
 
 ### balance
 
@@ -367,7 +367,7 @@ ___
 
 [src/modules/nft.ts:246](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L246)
 
-___
+---
 
 ### balanceOf
 
@@ -378,6 +378,7 @@ Get NFT Balance
 **`remarks`** Get a wallets NFT balance (number of NFTs in this module owned by the wallet).
 
 **`example`**
+
 ```javascript
 // Address of the wallet to check NFT balance
 const address = "{{wallet_address}}";
@@ -388,8 +389,8 @@ console.log(balance);
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type     |
+| :-------- | :------- |
 | `address` | `string` |
 
 #### Returns
@@ -402,7 +403,7 @@ The balance of the NFTs in the wallet
 
 [src/modules/nft.ts:242](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L242)
 
-___
+---
 
 ### burn
 
@@ -413,6 +414,7 @@ Burn NFT
 **`remarks`** Burn an NFT, permanently taking it out of circulation and reducing the supply.
 
 **`example`**
+
 ```javascript
 // The token ID of the NFT you want to burn
 const tokenId = 0;
@@ -422,8 +424,8 @@ await module.burn(tokenId);
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type           |
+| :-------- | :------------- |
 | `tokenId` | `BigNumberish` |
 
 #### Returns
@@ -434,7 +436,7 @@ await module.burn(tokenId);
 
 [src/modules/nft.ts:466](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L466)
 
-___
+---
 
 ### clearSigner
 
@@ -454,7 +456,7 @@ ___
 
 [src/core/module.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L188)
 
-___
+---
 
 ### connectContract
 
@@ -474,7 +476,7 @@ ___
 
 [src/modules/nft.ts:80](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L80)
 
-___
+---
 
 ### exists
 
@@ -494,11 +496,11 @@ whether the given contract exists on-chain
 
 [src/core/module.ts:126](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L126)
 
-___
+---
 
 ### generateSignature
 
-▸ **generateSignature**(`mintRequest`): `Promise`<{ `payload`: [`SignaturePayload`](../interfaces/SignaturePayload) ; `signature`: `string`  }\>
+▸ **generateSignature**(`mintRequest`): `Promise`<{ `payload`: [`SignaturePayload`](../interfaces/SignaturePayload) ; `signature`: `string` }\>
 
 Generates a signature. This should only be called
 by wallets that have the `MINTER` role on the contract. Otherwise
@@ -506,13 +508,13 @@ their signature won't be valid.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name          | Type                                                       |
+| :------------ | :--------------------------------------------------------- |
 | `mintRequest` | [`NewSignaturePayload`](../interfaces/NewSignaturePayload) |
 
 #### Returns
 
-`Promise`<{ `payload`: [`SignaturePayload`](../interfaces/SignaturePayload) ; `signature`: `string`  }\>
+`Promise`<{ `payload`: [`SignaturePayload`](../interfaces/SignaturePayload) ; `signature`: `string` }\>
 
 - The payload (with the uri pre-populated) and signature.
 
@@ -524,23 +526,23 @@ their signature won't be valid.
 
 [src/modules/nft.ts:643](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L643)
 
-___
+---
 
 ### generateSignatureBatch
 
-▸ **generateSignatureBatch**(`payloads`): `Promise`<{ `payload`: [`SignaturePayload`](../interfaces/SignaturePayload) ; `signature`: `string`  }[]\>
+▸ **generateSignatureBatch**(`payloads`): `Promise`<{ `payload`: [`SignaturePayload`](../interfaces/SignaturePayload) ; `signature`: `string` }[]\>
 
 Batch generation of signatures.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                         |
+| :--------- | :----------------------------------------------------------- |
 | `payloads` | [`NewSignaturePayload`](../interfaces/NewSignaturePayload)[] |
 
 #### Returns
 
-`Promise`<{ `payload`: [`SignaturePayload`](../interfaces/SignaturePayload) ; `signature`: `string`  }[]\>
+`Promise`<{ `payload`: [`SignaturePayload`](../interfaces/SignaturePayload) ; `signature`: `string` }[]\>
 
 - The batch of payloads + signatures.
 
@@ -552,7 +554,7 @@ Batch generation of signatures.
 
 [src/modules/nft.ts:586](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L586)
 
-___
+---
 
 ### get
 
@@ -562,8 +564,8 @@ Fetches an NFT from storage with the resolved metadata.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description                   |
+| :-------- | :------- | :---------------------------- |
 | `tokenId` | `string` | The id of the token to fetch. |
 
 #### Returns
@@ -576,7 +578,7 @@ Fetches an NFT from storage with the resolved metadata.
 
 [src/modules/nft.ts:124](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L124)
 
-___
+---
 
 ### getAll
 
@@ -587,6 +589,7 @@ Get All NFTs
 **`remarks`** Get all the data associated with every NFT in this module.
 
 **`example`**
+
 ```javascript
 const nfts = await module.getAll();
 console.log(nfts);
@@ -602,7 +605,7 @@ The NFT metadata for all NFTs in the module.
 
 [src/modules/nft.ts:149](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L149)
 
-___
+---
 
 ### getAllRoleMembers
 
@@ -628,7 +631,7 @@ A record of [Role](../modules#role)s to lists of addresses that are members of t
 
 [src/core/module.ts:556](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L556)
 
-___
+---
 
 ### getAllWithOwner
 
@@ -642,7 +645,7 @@ ___
 
 [src/modules/nft.ts:170](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L170)
 
-___
+---
 
 ### getCallOverrides
 
@@ -662,7 +665,7 @@ ___
 
 [src/core/module.ts:261](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L261)
 
-___
+---
 
 ### getChainID
 
@@ -682,7 +685,7 @@ ___
 
 [src/core/module.ts:235](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L235)
 
-___
+---
 
 ### getMetadata
 
@@ -690,9 +693,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `resolveUrls` | `boolean` | `true` | Whether to resolve the urls in the metadata to a gateway. |
+| Name          | Type      | Default value | Description                                               |
+| :------------ | :-------- | :------------ | :-------------------------------------------------------- |
+| `resolveUrls` | `boolean` | `true`        | Whether to resolve the urls in the metadata to a gateway. |
 
 #### Returns
 
@@ -706,7 +709,7 @@ ___
 
 [src/core/module.ts:138](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L138)
 
-___
+---
 
 ### getModuleRoles
 
@@ -724,7 +727,7 @@ readonly keyof [`IRoles`](../interfaces/IRoles)[]
 
 [src/modules/nft.ts:73](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L73)
 
-___
+---
 
 ### getModuleType
 
@@ -744,7 +747,7 @@ ___
 
 [src/modules/nft.ts:90](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L90)
 
-___
+---
 
 ### getOwned
 
@@ -755,6 +758,7 @@ Get Owned NFTs
 **`remarks`** Get all the data associated with the NFTs owned by a specific wallet.
 
 **`example`**
+
 ```javascript
 // Address of the wallet to get the NFTs of
 const address = "{{wallet_address}}";
@@ -764,8 +768,8 @@ console.log(nfts);
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type     |
+| :---------- | :------- |
 | `_address?` | `string` |
 
 #### Returns
@@ -776,7 +780,7 @@ console.log(nfts);
 
 [src/modules/nft.ts:210](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L210)
 
-___
+---
 
 ### getProvider
 
@@ -796,7 +800,7 @@ ___
 
 [src/core/module.ts:228](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L228)
 
-___
+---
 
 ### getRoleMembers
 
@@ -809,14 +813,15 @@ Call this to get a list of addresses that are members of a specific role.
 **`see`** [getAllRoleMembers](ModuleWithRoles#getallrolemembers) to get get a list of addresses for all supported roles on the module.
 
 **`example`** Say you want to get the list of addresses that are members of the [minter](../interfaces/IRoles#minter) role.
+
 ```typescript
 const minterAddresses: string[] = await module.getRoleMemberList("minter");
 ```
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                                   | Description                                                  |
+| :----- | :------------------------------------- | :----------------------------------------------------------- |
 | `role` | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to to get a memberlist for. |
 
 #### Returns
@@ -833,7 +838,7 @@ The list of addresses that are members of the specific role.
 
 [src/core/module.ts:532](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L532)
 
-___
+---
 
 ### getRoyaltyBps
 
@@ -851,7 +856,7 @@ Gets the royalty BPS (basis points) of the contract
 
 [src/modules/nft.ts:517](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L517)
 
-___
+---
 
 ### getRoyaltyRecipientAddress
 
@@ -869,17 +874,17 @@ Gets the address of the royalty recipient
 
 [src/modules/nft.ts:526](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L526)
 
-___
+---
 
 ### getSigner
 
-▸ `Protected` **getSigner**(): ``null`` \| `Signer`
+▸ `Protected` **getSigner**(): `null` \| `Signer`
 
 **`internal`**
 
 #### Returns
 
-``null`` \| `Signer`
+`null` \| `Signer`
 
 #### Inherited from
 
@@ -889,7 +894,7 @@ ___
 
 [src/core/module.ts:202](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L202)
 
-___
+---
 
 ### getSignerAddress
 
@@ -909,7 +914,7 @@ ___
 
 [src/core/module.ts:219](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L219)
 
-___
+---
 
 ### getWithOwner
 
@@ -917,8 +922,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type     |
+| :-------- | :------- |
 | `tokenId` | `string` |
 
 #### Returns
@@ -929,7 +934,7 @@ ___
 
 [src/modules/nft.ts:161](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L161)
 
-___
+---
 
 ### grantRole
 
@@ -945,10 +950,10 @@ Make sure you are sure you want to grant the role to the address.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `role` | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to grant to the address |
-| `address` | `string` | The address to grant the role to |
+| Name      | Type                                   | Description                                              |
+| :-------- | :------------------------------------- | :------------------------------------------------------- |
+| `role`    | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to grant to the address |
+| `address` | `string`                               | The address to grant the role to                         |
 
 #### Returns
 
@@ -964,7 +969,7 @@ The transaction receipt
 
 [src/core/module.ts:680](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L680)
 
-___
+---
 
 ### hasValidSigner
 
@@ -984,7 +989,7 @@ ___
 
 [src/core/module.ts:212](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L212)
 
-___
+---
 
 ### isApproved
 
@@ -992,9 +997,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `address` | `string` |
+| Name       | Type     |
+| :--------- | :------- |
+| `address`  | `string` |
 | `operator` | `string` |
 
 #### Returns
@@ -1005,7 +1010,7 @@ ___
 
 [src/modules/nft.ts:250](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L250)
 
-___
+---
 
 ### isTransferRestricted
 
@@ -1027,7 +1032,7 @@ Returns true if transfers are restricted. Otherwise returns false.
 
 [src/modules/nft.ts:534](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L534)
 
-___
+---
 
 ### isV1
 
@@ -1043,7 +1048,7 @@ Check if contract is v1 or v2. If the contract doesn't have nextTokenIdToMint = 
 
 [src/modules/nft.ts:101](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L101)
 
-___
+---
 
 ### mapPayload
 
@@ -1055,8 +1060,8 @@ Maps a payload to the format expected by the contract
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type                                                                                                               | Description         |
+| :------------ | :----------------------------------------------------------------------------------------------------------------- | :------------------ |
 | `mintRequest` | [`SignaturePayload`](../interfaces/SignaturePayload) \| [`NewSignaturePayload`](../interfaces/NewSignaturePayload) | The payload to map. |
 
 #### Returns
@@ -1069,7 +1074,7 @@ Maps a payload to the format expected by the contract
 
 [src/modules/nft.ts:657](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L657)
 
-___
+---
 
 ### mint
 
@@ -1077,8 +1082,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                    |
+| :--------- | :------------------------------------------------------ |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) |
 
 #### Returns
@@ -1089,7 +1094,7 @@ ___
 
 [src/modules/nft.ts:296](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L296)
 
-___
+---
 
 ### mintBatch
 
@@ -1097,8 +1102,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type                                                      |
+| :---------- | :-------------------------------------------------------- |
 | `metadatas` | [`MetadataURIOrObject`](../modules#metadatauriorobject)[] |
 
 #### Returns
@@ -1109,7 +1114,7 @@ ___
 
 [src/modules/nft.ts:364](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L364)
 
-___
+---
 
 ### mintBatchTo
 
@@ -1120,29 +1125,33 @@ Mint Many NFTs
 **`remarks`** Mint many NFTs at once to a specified wallet.
 
 **`example`**
+
 ```javascript
 // Address of the wallet you want to mint the NFT to
-const toAddress = "{{wallet_address}}"
+const toAddress = "{{wallet_address}}";
 
 // Custom metadata of the NFTs you want to mint.
-const metadatas = [{
-  name: "Cool NFT #1",
-  description: "This is a cool NFT",
-  image: fs.readFileSync("path/to/image.png"), // This can be an image url or file
-}, {
-  name: "Cool NFT #2",
-  description: "This is a cool NFT",
-  image: fs.readFileSync("path/to/other/image.png"),
-}];
+const metadatas = [
+  {
+    name: "Cool NFT #1",
+    description: "This is a cool NFT",
+    image: fs.readFileSync("path/to/image.png") // This can be an image url or file
+  },
+  {
+    name: "Cool NFT #2",
+    description: "This is a cool NFT",
+    image: fs.readFileSync("path/to/other/image.png")
+  }
+];
 
 await module.mintBatchTo(toAddress, metadatas);
 ```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `to` | `string` |
+| Name        | Type                                                      |
+| :---------- | :-------------------------------------------------------- |
+| `to`        | `string`                                                  |
 | `metadatas` | [`MetadataURIOrObject`](../modules#metadatauriorobject)[] |
 
 #### Returns
@@ -1153,7 +1162,7 @@ await module.mintBatchTo(toAddress, metadatas);
 
 [src/modules/nft.ts:423](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L423)
 
-___
+---
 
 ### mintTo
 
@@ -1164,25 +1173,26 @@ Mint NFT
 **`remarks`** Mint an NFT to a specified wallet.
 
 **`example`**
+
 ```javascript
 // Address of the wallet you want to mint the NFT to
-const toAddress = "{{wallet_address}}"
+const toAddress = "{{wallet_address}}";
 
 // Custom metadata of the NFT, note that you can fully customize this metadata with other properties.
 const metadata = {
   name: "Cool NFT",
   description: "This is a cool NFT",
-  image: fs.readFileSync("path/to/image.png"), // This can be an image url or file
-}
+  image: fs.readFileSync("path/to/image.png") // This can be an image url or file
+};
 
 await module.mintTo(toAddress, metadata);
 ```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `to` | `string` |
+| Name       | Type                                                    |
+| :--------- | :------------------------------------------------------ |
+| `to`       | `string`                                                |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) |
 
 #### Returns
@@ -1193,7 +1203,7 @@ await module.mintTo(toAddress, metadata);
 
 [src/modules/nft.ts:342](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L342)
 
-___
+---
 
 ### mintWithSignature
 
@@ -1203,10 +1213,10 @@ Mints an NFT given a payload and signature.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `req` | [`SignaturePayload`](../interfaces/SignaturePayload) |
-| `signature` | `string` |
+| Name        | Type                                                 |
+| :---------- | :--------------------------------------------------- |
+| `req`       | [`SignaturePayload`](../interfaces/SignaturePayload) |
+| `signature` | `string`                                             |
 
 #### Returns
 
@@ -1222,7 +1232,7 @@ Mints an NFT given a payload and signature.
 
 [src/modules/nft.ts:545](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L545)
 
-___
+---
 
 ### onlyRoles
 
@@ -1232,10 +1242,10 @@ Throws an error if an address is missing the roles specified.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `roles` | keyof [`IRoles`](../interfaces/IRoles)[] | The roles to check |
-| `address` | `string` | The address to check |
+| Name      | Type                                     | Description          |
+| :-------- | :--------------------------------------- | :------------------- |
+| `roles`   | keyof [`IRoles`](../interfaces/IRoles)[] | The roles to check   |
+| `address` | `string`                                 | The address to check |
 
 #### Returns
 
@@ -1249,7 +1259,7 @@ Throws an error if an address is missing the roles specified.
 
 [src/core/module.ts:793](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L793)
 
-___
+---
 
 ### ownerOf
 
@@ -1259,8 +1269,8 @@ Checks the owner of a particular NFT
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
 | `tokenId` | `string` | ID of the NFT to get the owner of |
 
 #### Returns
@@ -1274,7 +1284,7 @@ token has been burned
 
 [src/modules/nft.ts:189](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L189)
 
-___
+---
 
 ### parseEventLogs
 
@@ -1282,10 +1292,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type     |
+| :---------- | :------- |
 | `eventName` | `string` |
-| `logs?` | `Log`[] |
+| `logs?`     | `Log`[]  |
 
 #### Returns
 
@@ -1299,7 +1309,7 @@ ___
 
 [src/core/module.ts:452](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L452)
 
-___
+---
 
 ### parseLogs
 
@@ -1307,17 +1317,17 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | `any` |
+| Name | Type  |
+| :--- | :---- |
+| `T`  | `any` |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `eventName` | `string` |
-| `logs?` | `Log`[] |
-| `contract` | `BaseContract` |
+| Name        | Type           |
+| :---------- | :------------- |
+| `eventName` | `string`       |
+| `logs?`     | `Log`[]        |
+| `contract`  | `BaseContract` |
 
 #### Returns
 
@@ -1331,7 +1341,7 @@ ___
 
 [src/core/module.ts:471](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L471)
 
-___
+---
 
 ### prepareBatchMetadata
 
@@ -1341,8 +1351,8 @@ Prepares a list of metadata for uploading.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                                      | Description                             |
+| :--------- | :-------------------------------------------------------- | :-------------------------------------- |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject)[] | List of metadata to prepare for upload. |
 
 #### Returns
@@ -1359,7 +1369,7 @@ Prepares a list of metadata for uploading.
 
 [src/core/module.ts:779](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L779)
 
-___
+---
 
 ### prepareMetadata
 
@@ -1371,8 +1381,8 @@ any File|Buffer|Blob, the metadata is serialized to a string.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                                    | Description                                 |
+| :--------- | :------------------------------------------------------ | :------------------------------------------ |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) | The list of metadata to prepare for upload. |
 
 #### Returns
@@ -1389,7 +1399,7 @@ any File|Buffer|Blob, the metadata is serialized to a string.
 
 [src/core/module.ts:743](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L743)
 
-___
+---
 
 ### revokeAllRolesFromAddress
 
@@ -1399,8 +1409,8 @@ Call this to revoke all roles given to a specific address.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description                          |
+| :-------- | :------- | :----------------------------------- |
 | `address` | `string` | The address to revoke all roles for. |
 
 #### Returns
@@ -1417,7 +1427,7 @@ A list of roles that were revoked.
 
 [src/core/module.ts:641](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L641)
 
-___
+---
 
 ### revokeRole
 
@@ -1437,10 +1447,10 @@ There is no way to recover from this.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `role` | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to revoke |
-| `address` | `string` | The address to revoke the role from |
+| Name      | Type                                   | Description                                |
+| :-------- | :------------------------------------- | :----------------------------------------- |
+| `role`    | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to revoke |
+| `address` | `string`                               | The address to revoke the role from        |
 
 #### Returns
 
@@ -1456,7 +1466,7 @@ The transaction receipt
 
 [src/core/module.ts:712](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L712)
 
-___
+---
 
 ### sendContractTransaction
 
@@ -1466,11 +1476,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `contract` | `BaseContract` |
-| `fn` | `string` |
-| `args` | `any`[] |
+| Name             | Type            |
+| :--------------- | :-------------- |
+| `contract`       | `BaseContract`  |
+| `fn`             | `string`        |
+| `args`           | `any`[]         |
 | `callOverrides?` | `CallOverrides` |
 
 #### Returns
@@ -1485,7 +1495,7 @@ ___
 
 [src/core/module.ts:306](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L306)
 
-___
+---
 
 ### sendTransaction
 
@@ -1495,10 +1505,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `fn` | `string` |
-| `args` | `any`[] |
+| Name             | Type            |
+| :--------------- | :-------------- |
+| `fn`             | `string`        |
+| `args`           | `any`[]         |
 | `callOverrides?` | `CallOverrides` |
 
 #### Returns
@@ -1513,7 +1523,7 @@ ___
 
 [src/core/module.ts:295](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L295)
 
-___
+---
 
 ### setAllRoleMembers
 
@@ -1527,18 +1537,19 @@ If you want to add or remove addresses for a single address use [grantRole](Modu
 **`throws`** If you are requestiong a role that does not exist on the module this will throw an [InvariantError](InvariantError).
 
 **`example`** Say you want to overwrite the list of addresses that are members of the [minter](../interfaces/IRoles#minter) role.
+
 ```typescript
 const minterAddresses: string[] = await module.getRoleMemberList("minter");
 await module.setAllRoleMembers({
- minter: []
+  minter: []
 });
 console.log(await module.getRoleMemberList("minter")); // No matter what members had the role before, the new list will be set to []
 ```
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name                 | Type                                    | Description                                                                                          |
+| :------------------- | :-------------------------------------- | :--------------------------------------------------------------------------------------------------- |
 | `rolesWithAddresses` | [`SetAllRoles`](../modules#setallroles) | A record of [Role](../modules#role)s to lists of addresses that should be members of the given role. |
 
 #### Returns
@@ -1553,7 +1564,7 @@ console.log(await module.getRoleMemberList("minter")); // No matter what members
 
 [src/core/module.ts:582](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L582)
 
-___
+---
 
 ### setAllowance
 
@@ -1561,11 +1572,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `BigNumber` |
-| `currencyAddress` | `string` |
-| `overrides` | `any` |
+| Name              | Type        |
+| :---------------- | :---------- |
+| `value`           | `BigNumber` |
+| `currencyAddress` | `string`    |
+| `overrides`       | `any`       |
 
 #### Returns
 
@@ -1575,7 +1586,7 @@ ___
 
 [src/modules/nft.ts:671](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L671)
 
-___
+---
 
 ### setApproval
 
@@ -1583,10 +1594,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `operator` | `string` | `undefined` |
-| `approved` | `boolean` | `true` |
+| Name       | Type      | Default value |
+| :--------- | :-------- | :------------ |
+| `operator` | `string`  | `undefined`   |
+| `approved` | `boolean` | `true`        |
 
 #### Returns
 
@@ -1596,7 +1607,7 @@ ___
 
 [src/modules/nft.ts:254](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L254)
 
-___
+---
 
 ### setMetadata
 
@@ -1604,8 +1615,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                                    | Description          |
+| :--------- | :------------------------------------------------------ | :------------------- |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) | The metadata to set. |
 
 #### Returns
@@ -1620,7 +1631,7 @@ ___
 
 [src/core/module.ts:160](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L160)
 
-___
+---
 
 ### setModuleMetadata
 
@@ -1628,8 +1639,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                    |
+| :--------- | :------------------------------------------------------ |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) |
 
 #### Returns
@@ -1640,7 +1651,7 @@ ___
 
 [src/modules/nft.ts:505](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L505)
 
-___
+---
 
 ### setProviderOrSigner
 
@@ -1650,8 +1661,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name               | Type                                              |
+| :----------------- | :------------------------------------------------ |
 | `providerOrSigner` | [`ProviderOrSigner`](../modules#providerorsigner) |
 
 #### Returns
@@ -1666,7 +1677,7 @@ ___
 
 [src/core/module.ts:172](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L172)
 
-___
+---
 
 ### setRestrictedTransfer
 
@@ -1676,9 +1687,9 @@ Setter for transfer restriction.
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `restricted` | `boolean` | `false` |
+| Name         | Type      | Default value |
+| :----------- | :-------- | :------------ |
+| `restricted` | `boolean` | `false`       |
 
 #### Returns
 
@@ -1692,7 +1703,7 @@ Setter for transfer restriction.
 
 [src/modules/nft.ts:538](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L538)
 
-___
+---
 
 ### setRoyaltyBps
 
@@ -1700,8 +1711,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type     |
+| :------- | :------- |
 | `amount` | `number` |
 
 #### Returns
@@ -1712,7 +1723,7 @@ ___
 
 [src/modules/nft.ts:478](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L478)
 
-___
+---
 
 ### signTypedData
 
@@ -1720,17 +1731,17 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `signer` | `Signer` |
-| `from` | `string` |
-| `domain` | `Object` |
-| `domain.chainId` | `number` |
-| `domain.name` | `string` |
+| Name                       | Type     |
+| :------------------------- | :------- |
+| `signer`                   | `Signer` |
+| `from`                     | `string` |
+| `domain`                   | `Object` |
+| `domain.chainId`           | `number` |
+| `domain.name`              | `string` |
 | `domain.verifyingContract` | `string` |
-| `domain.version` | `string` |
-| `types` | `any` |
-| `message` | `any` |
+| `domain.version`           | `string` |
+| `types`                    | `any`    |
+| `message`                  | `any`    |
 
 #### Returns
 
@@ -1744,7 +1755,7 @@ ___
 
 [src/core/module.ts:415](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L415)
 
-___
+---
 
 ### totalSupply
 
@@ -1758,7 +1769,7 @@ ___
 
 [src/modules/nft.ts:222](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L222)
 
-___
+---
 
 ### transfer
 
@@ -1769,6 +1780,7 @@ Transfer NFT
 **`remarks`** Transfer an NFT from the connected wallet to another wallet.
 
 **`example`**
+
 ```javascript
 // Address of the wallet you want to send the NFT to
 const toAddress = "{{wallet_address}}";
@@ -1781,9 +1793,9 @@ await module.transfer(toAddress, tokenId);
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `to` | `string` |
+| Name      | Type     |
+| :-------- | :------- |
+| `to`      | `string` |
 | `tokenId` | `string` |
 
 #### Returns
@@ -1794,7 +1806,7 @@ await module.transfer(toAddress, tokenId);
 
 [src/modules/nft.ts:280](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L280)
 
-___
+---
 
 ### transferFrom
 
@@ -1802,10 +1814,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `from` | `string` |
-| `to` | `string` |
+| Name      | Type           |
+| :-------- | :------------- |
+| `from`    | `string`       |
+| `to`      | `string`       |
 | `tokenId` | `BigNumberish` |
 
 #### Returns
@@ -1816,7 +1828,7 @@ ___
 
 [src/modules/nft.ts:470](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/nft.ts#L470)
 
-___
+---
 
 ### verify
 
@@ -1826,10 +1838,10 @@ Verifies the signature.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name          | Type                                                 |
+| :------------ | :--------------------------------------------------- |
 | `mintRequest` | [`SignaturePayload`](../interfaces/SignaturePayload) |
-| `signature` | `string` |
+| `signature`   | `string`                                             |
 
 #### Returns
 

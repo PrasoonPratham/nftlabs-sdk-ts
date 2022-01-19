@@ -18,7 +18,7 @@ The amount of a native token that may be sent if a proposal is executing a token
 
 [src/types/vote/ProposalExecutable.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/vote/ProposalExecutable.ts#L14)
 
-___
+---
 
 ### toAddress
 
@@ -32,7 +32,7 @@ of the wallet that will be receiving the tokens.
 
 [src/types/vote/ProposalExecutable.ts:9](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/vote/ProposalExecutable.ts#L9)
 
-___
+---
 
 ### transactionData
 

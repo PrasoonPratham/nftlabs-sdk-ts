@@ -26,7 +26,7 @@ The module metadata, but missing the ModuleType.
 
 [src/types/ModuleMetadata.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/ModuleMetadata.ts#L10)
 
-___
+---
 
 ### metadata
 

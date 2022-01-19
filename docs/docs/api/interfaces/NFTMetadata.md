@@ -10,15 +10,15 @@ The shared NFT metadata.
 
 ## Properties
 
-### animation\_url
+### animation_url
 
-• `Optional` **animation\_url**: `string`
+• `Optional` **animation_url**: `string`
 
 #### Defined in
 
 [src/common/nft.ts:67](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L67)
 
-___
+---
 
 ### description
 
@@ -28,17 +28,17 @@ ___
 
 [src/common/nft.ts:64](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L64)
 
-___
+---
 
-### external\_url
+### external_url
 
-• `Optional` **external\_url**: `string`
+• `Optional` **external_url**: `string`
 
 #### Defined in
 
 [src/common/nft.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L66)
 
-___
+---
 
 ### id
 
@@ -48,7 +48,7 @@ ___
 
 [src/common/nft.ts:61](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L61)
 
-___
+---
 
 ### image
 
@@ -58,7 +58,7 @@ ___
 
 [src/common/nft.ts:65](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L65)
 
-___
+---
 
 ### name
 
@@ -68,7 +68,7 @@ ___
 
 [src/common/nft.ts:63](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L63)
 
-___
+---
 
 ### properties
 
@@ -78,7 +78,7 @@ ___
 
 [src/common/nft.ts:68](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L68)
 
-___
+---
 
 ### uri
 

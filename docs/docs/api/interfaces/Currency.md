@@ -26,7 +26,7 @@ Currency metadata.
 
 [src/common/currency.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L16)
 
-___
+---
 
 ### name
 
@@ -36,7 +36,7 @@ ___
 
 [src/common/currency.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L14)
 
-___
+---
 
 ### symbol
 

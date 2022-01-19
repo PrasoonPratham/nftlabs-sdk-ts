@@ -14,8 +14,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name                 | Type                                                                              |
+| :------------------- | :-------------------------------------------------------------------------------- |
 | `createSnapshotFunc` | (`leafs`: `string`[]) => `Promise`<[`SnapshotInfo`](../interfaces/SnapshotInfo)\> |
 
 #### Defined in
@@ -34,8 +34,8 @@ custom_edit_url: null
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type       |
+| :------ | :--------- |
 | `leafs` | `string`[] |
 
 ##### Returns
@@ -46,7 +46,7 @@ custom_edit_url: null
 
 [src/factories/ClaimConditionFactory.ts:9](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionFactory.ts#L9)
 
-___
+---
 
 ### phases
 
@@ -74,7 +74,7 @@ Helper method fetches all snapshots from a factory.
 
 [src/factories/ClaimConditionFactory.ts:170](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionFactory.ts#L170)
 
-___
+---
 
 ### buildConditions
 
@@ -95,7 +95,7 @@ the claim conditions of a drop module.
 
 [src/factories/ClaimConditionFactory.ts:24](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionFactory.ts#L24)
 
-___
+---
 
 ### buildConditionsForDropV1
 
@@ -116,7 +116,7 @@ the claim conditions of a drop module.
 
 [src/factories/ClaimConditionFactory.ts:52](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionFactory.ts#L52)
 
-___
+---
 
 ### deleteClaimPhase
 
@@ -126,8 +126,8 @@ Removes a claim condition phase from the factory.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `index` | `number` |
 
 #### Returns
@@ -138,7 +138,7 @@ Removes a claim condition phase from the factory.
 
 [src/factories/ClaimConditionFactory.ts:148](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionFactory.ts#L148)
 
-___
+---
 
 ### fromPublicClaimConditions
 
@@ -148,8 +148,8 @@ Converts a set of generic `PublicClaimCondition`s into a `ClaimConditionFactory`
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                                                           | Description                                                            |
+| :----------- | :------------------------------------------------------------- | :--------------------------------------------------------------------- |
 | `conditions` | [`PublicClaimCondition`](../interfaces/PublicClaimCondition)[] | The conditions to load, should be returned directly from the contract. |
 
 #### Returns
@@ -162,7 +162,7 @@ Converts a set of generic `PublicClaimCondition`s into a `ClaimConditionFactory`
 
 [src/factories/ClaimConditionFactory.ts:89](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionFactory.ts#L89)
 
-___
+---
 
 ### newClaimPhase
 
@@ -172,12 +172,12 @@ Creates a new claim 'phase' with its own set of claim conditions
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `__namedParameters` | `Object` |
-| `__namedParameters.maxQuantity?` | `BigNumberish` |
-| `__namedParameters.maxQuantityPerTransaction?` | `BigNumberish` |
-| `__namedParameters.startTime` | `number` \| `Date` |
+| Name                                           | Type               |
+| :--------------------------------------------- | :----------------- |
+| `__namedParameters`                            | `Object`           |
+| `__namedParameters.maxQuantity?`               | `BigNumberish`     |
+| `__namedParameters.maxQuantityPerTransaction?` | `BigNumberish`     |
+| `__namedParameters.startTime`                  | `number` \| `Date` |
 
 #### Returns
 
@@ -189,7 +189,7 @@ Creates a new claim 'phase' with its own set of claim conditions
 
 [src/factories/ClaimConditionFactory.ts:122](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionFactory.ts#L122)
 
-___
+---
 
 ### removeClaimPhase
 
@@ -199,8 +199,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type     |
+| :------- | :------- |
 | `_index` | `number` |
 
 #### Returns

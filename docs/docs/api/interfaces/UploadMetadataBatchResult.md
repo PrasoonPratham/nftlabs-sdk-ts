@@ -18,7 +18,7 @@ custom_edit_url: null
 
 [src/interfaces/IStorage.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/IStorage.ts#L10)
 
-___
+---
 
 ### metadataUris
 

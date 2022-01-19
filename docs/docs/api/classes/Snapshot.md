@@ -22,7 +22,7 @@ custom_edit_url: null
 
 [src/types/snapshots/Snapshot.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/snapshots/Snapshot.ts#L10)
 
-___
+---
 
 ### merkleRoot
 

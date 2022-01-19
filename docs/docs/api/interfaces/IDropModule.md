@@ -22,8 +22,8 @@ each token that will be minted.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name            | Type                                                      | Description                              |
+| :-------------- | :-------------------------------------------------------- | :--------------------------------------- |
 | `tokenMetadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject)[] | All token metadata objects to be minted. |
 
 #### Returns

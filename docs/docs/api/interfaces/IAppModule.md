@@ -16,7 +16,7 @@ custom_edit_url: null
 
 [src/core/registry.ts:9](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/registry.ts#L9)
 
-___
+---
 
 ### metadata
 
@@ -26,7 +26,7 @@ ___
 
 [src/core/registry.ts:11](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/registry.ts#L11)
 
-___
+---
 
 ### version
 

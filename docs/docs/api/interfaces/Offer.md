@@ -18,7 +18,7 @@ The address of the buyer who made the offer.
 
 [src/types/marketplace/Offer.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/Offer.ts#L13)
 
-___
+---
 
 ### currencyContractAddress
 
@@ -30,7 +30,7 @@ The currency contract address of the offer token.
 
 [src/types/marketplace/Offer.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/Offer.ts#L33)
 
-___
+---
 
 ### currencyValue
 
@@ -42,7 +42,7 @@ The `CurrencyValue` of the listing. Useful for displaying the price information.
 
 [src/types/marketplace/Offer.ts:28](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/Offer.ts#L28)
 
-___
+---
 
 ### listingId
 
@@ -54,7 +54,7 @@ The id of the listing.
 
 [src/types/marketplace/Offer.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/Offer.ts#L8)
 
-___
+---
 
 ### pricePerToken
 
@@ -66,7 +66,7 @@ The amount of coins offered per token.
 
 [src/types/marketplace/Offer.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/Offer.ts#L23)
 
-___
+---
 
 ### quantityDesired
 
