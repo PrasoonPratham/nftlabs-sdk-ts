@@ -21,8 +21,8 @@ Its up to the caller to determine what the type of the data is.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description                   |
+| :----- | :------- | :---------------------------- |
 | `hash` | `string` | The Hash of the file to fetch |
 
 #### Returns
@@ -33,9 +33,9 @@ Its up to the caller to determine what the type of the data is.
 
 #### Defined in
 
-[src/interfaces/IStorage.ts:69](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/interfaces/IStorage.ts#L69)
+[src/interfaces/IStorage.ts:69](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/interfaces/IStorage.ts#L69)
 
-___
+---
 
 ### getUploadToken
 
@@ -46,8 +46,8 @@ a file to storage.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type     |
+| :---------------- | :------- |
 | `contractAddress` | `string` |
 
 #### Returns
@@ -58,9 +58,9 @@ a file to storage.
 
 #### Defined in
 
-[src/interfaces/IStorage.ts:60](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/interfaces/IStorage.ts#L60)
+[src/interfaces/IStorage.ts:60](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/interfaces/IStorage.ts#L60)
 
-___
+---
 
 ### resolveFullUrl
 
@@ -74,8 +74,8 @@ if the gateway is `cloudflare-ipfs.com`.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description         |
+| :----- | :------- | :------------------ |
 | `hash` | `string` | The hash of a file. |
 
 #### Returns
@@ -84,9 +84,9 @@ if the gateway is `cloudflare-ipfs.com`.
 
 #### Defined in
 
-[src/interfaces/IStorage.ts:80](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/interfaces/IStorage.ts#L80)
+[src/interfaces/IStorage.ts:80](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/interfaces/IStorage.ts#L80)
 
-___
+---
 
 ### upload
 
@@ -96,11 +96,11 @@ Uploads a file to the storage.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | `string` \| `FileOrBuffer` | The data to be uploaded. Can be a file/buffer (which will be loaded), or a string. |
-| `contractAddress?` | `string` | Optional. The contract address the data belongs to. |
-| `signerAddress?` | `string` | Optional. The address of the signer. |
+| Name               | Type                       | Description                                                                        |
+| :----------------- | :------------------------- | :--------------------------------------------------------------------------------- |
+| `data`             | `string` \| `FileOrBuffer` | The data to be uploaded. Can be a file/buffer (which will be loaded), or a string. |
+| `contractAddress?` | `string`                   | Optional. The contract address the data belongs to.                                |
+| `signerAddress?`   | `string`                   | Optional. The address of the signer.                                               |
 
 #### Returns
 
@@ -110,9 +110,9 @@ Uploads a file to the storage.
 
 #### Defined in
 
-[src/interfaces/IStorage.ts:27](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/interfaces/IStorage.ts#L27)
+[src/interfaces/IStorage.ts:27](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/interfaces/IStorage.ts#L27)
 
-___
+---
 
 ### uploadBatch
 
@@ -122,11 +122,11 @@ Uploads a folder to storage.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `files` | `string`[] \| `Buffer`[] \| `FileOrBuffer`[] \| `File`[] \| `BufferOrStringWithName`[] | - |
-| `contractAddress?` | `string` | Optional. The contract address the data belongs to. |
-| `uploadFileStartNumber?` | `number` | Optional. The first file file name begins with. |
+| Name                     | Type                                                                                   | Description                                         |
+| :----------------------- | :------------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| `files`                  | `string`[] \| `Buffer`[] \| `FileOrBuffer`[] \| `File`[] \| `BufferOrStringWithName`[] | -                                                   |
+| `contractAddress?`       | `string`                                                                               | Optional. The contract address the data belongs to. |
+| `uploadFileStartNumber?` | `number`                                                                               | Optional. The first file file name begins with.     |
 
 #### Returns
 
@@ -136,9 +136,9 @@ Uploads a folder to storage.
 
 #### Defined in
 
-[src/interfaces/IStorage.ts:43](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/interfaces/IStorage.ts#L43)
+[src/interfaces/IStorage.ts:43](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/interfaces/IStorage.ts#L43)
 
-___
+---
 
 ### uploadMetadata
 
@@ -148,11 +148,11 @@ Uploads metadata to IPFS
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) | The metadata to be uploaded. |
-| `contractAddress?` | `string` | Optional. The contract address the data belongs to. |
-| `signerAddress?` | `string` | Optional. The address of the signer. |
+| Name               | Type                                                    | Description                                         |
+| :----------------- | :------------------------------------------------------ | :-------------------------------------------------- |
+| `metadata`         | [`MetadataURIOrObject`](../modules#metadatauriorobject) | The metadata to be uploaded.                        |
+| `contractAddress?` | `string`                                                | Optional. The contract address the data belongs to. |
+| `signerAddress?`   | `string`                                                | Optional. The address of the signer.                |
 
 #### Returns
 
@@ -160,9 +160,9 @@ Uploads metadata to IPFS
 
 #### Defined in
 
-[src/interfaces/IStorage.ts:91](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/interfaces/IStorage.ts#L91)
+[src/interfaces/IStorage.ts:91](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/interfaces/IStorage.ts#L91)
 
-___
+---
 
 ### uploadMetadataBatch
 
@@ -172,11 +172,11 @@ Uploads metadata to IPFS
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `metadatas` | [`MetadataURIOrObject`](../modules#metadatauriorobject)[] | - |
-| `contractAddress?` | `string` | Optional. The contract address the data belongs to. |
-| `fileStartNumber?` | `number` | - |
+| Name               | Type                                                      | Description                                         |
+| :----------------- | :-------------------------------------------------------- | :-------------------------------------------------- |
+| `metadatas`        | [`MetadataURIOrObject`](../modules#metadatauriorobject)[] | -                                                   |
+| `contractAddress?` | `string`                                                  | Optional. The contract address the data belongs to. |
+| `fileStartNumber?` | `number`                                                  | -                                                   |
 
 #### Returns
 
@@ -184,4 +184,4 @@ Uploads metadata to IPFS
 
 #### Defined in
 
-[src/interfaces/IStorage.ts:105](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/interfaces/IStorage.ts#L105)
+[src/interfaces/IStorage.ts:105](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/interfaces/IStorage.ts#L105)

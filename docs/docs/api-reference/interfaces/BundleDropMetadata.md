@@ -16,9 +16,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/bundleDrop.ts:49](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/bundleDrop.ts#L49)
+[src/modules/bundleDrop.ts:49](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/bundleDrop.ts#L49)
 
-___
+---
 
 ### supply
 
@@ -26,4 +26,4 @@ ___
 
 #### Defined in
 
-[src/modules/bundleDrop.ts:48](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/bundleDrop.ts#L48)
+[src/modules/bundleDrop.ts:48](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/bundleDrop.ts#L48)

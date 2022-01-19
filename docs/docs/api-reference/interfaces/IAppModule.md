@@ -14,9 +14,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/core/registry.ts:9](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/registry.ts#L9)
+[src/core/registry.ts:9](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/registry.ts#L9)
 
-___
+---
 
 ### metadata
 
@@ -24,9 +24,9 @@ ___
 
 #### Defined in
 
-[src/core/registry.ts:11](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/registry.ts#L11)
+[src/core/registry.ts:11](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/registry.ts#L11)
 
-___
+---
 
 ### version
 
@@ -34,4 +34,4 @@ ___
 
 #### Defined in
 
-[src/core/registry.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/registry.ts#L10)
+[src/core/registry.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/registry.ts#L10)

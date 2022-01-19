@@ -28,7 +28,7 @@ Error.constructor
 
 #### Defined in
 
-[src/common/error.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/error.ts#L8)
+[src/common/error.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/error.ts#L8)
 
 ## Properties
 
@@ -44,7 +44,7 @@ Error.message
 
 docs/node_modules/typescript/lib/lib.es5.d.ts:1023
 
-___
+---
 
 ### name
 
@@ -58,7 +58,7 @@ Error.name
 
 docs/node_modules/typescript/lib/lib.es5.d.ts:1022
 
-___
+---
 
 ### stack
 
@@ -72,7 +72,7 @@ Error.stack
 
 docs/node_modules/typescript/lib/lib.es5.d.ts:1024
 
-___
+---
 
 ### prepareStackTrace
 
@@ -88,9 +88,9 @@ Optional override for formatting stack traces
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `err` | `Error` |
+| Name          | Type         |
+| :------------ | :----------- |
+| `err`         | `Error`      |
 | `stackTraces` | `CallSite`[] |
 
 ##### Returns
@@ -105,7 +105,7 @@ Error.prepareStackTrace
 
 node_modules/@types/node/globals.d.ts:11
 
-___
+---
 
 ### stackTraceLimit
 
@@ -129,9 +129,9 @@ Create .stack property on a target object
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `targetObject` | `object` |
+| Name              | Type       |
+| :---------------- | :--------- |
+| `targetObject`    | `object`   |
 | `constructorOpt?` | `Function` |
 
 #### Returns

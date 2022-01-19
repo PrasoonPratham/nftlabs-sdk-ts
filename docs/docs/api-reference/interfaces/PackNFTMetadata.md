@@ -14,9 +14,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/pack.ts:44](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/pack.ts#L44)
+[src/modules/pack.ts:44](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/pack.ts#L44)
 
-___
+---
 
 ### supply
 
@@ -24,4 +24,4 @@ ___
 
 #### Defined in
 
-[src/modules/pack.ts:43](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/pack.ts#L43)
+[src/modules/pack.ts:43](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/pack.ts#L43)

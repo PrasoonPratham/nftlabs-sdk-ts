@@ -14,9 +14,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/enums/marketplace/ListingType.ts:3](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/enums/marketplace/ListingType.ts#L3)
+[src/enums/marketplace/ListingType.ts:3](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/enums/marketplace/ListingType.ts#L3)
 
-___
+---
 
 ### Direct
 
@@ -24,4 +24,4 @@ ___
 
 #### Defined in
 
-[src/enums/marketplace/ListingType.ts:2](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/enums/marketplace/ListingType.ts#L2)
+[src/enums/marketplace/ListingType.ts:2](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/enums/marketplace/ListingType.ts#L2)

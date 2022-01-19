@@ -26,9 +26,9 @@ Currency metadata & value.
 
 #### Defined in
 
-[src/common/currency.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/currency.ts#L16)
+[src/common/currency.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/currency.ts#L16)
 
-___
+---
 
 ### displayValue
 
@@ -36,9 +36,9 @@ ___
 
 #### Defined in
 
-[src/common/currency.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/currency.ts#L33)
+[src/common/currency.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/currency.ts#L33)
 
-___
+---
 
 ### name
 
@@ -50,9 +50,9 @@ ___
 
 #### Defined in
 
-[src/common/currency.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/currency.ts#L14)
+[src/common/currency.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/currency.ts#L14)
 
-___
+---
 
 ### symbol
 
@@ -64,9 +64,9 @@ ___
 
 #### Defined in
 
-[src/common/currency.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/currency.ts#L15)
+[src/common/currency.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/currency.ts#L15)
 
-___
+---
 
 ### value
 
@@ -74,4 +74,4 @@ ___
 
 #### Defined in
 
-[src/common/currency.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/currency.ts#L32)
+[src/common/currency.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/currency.ts#L32)

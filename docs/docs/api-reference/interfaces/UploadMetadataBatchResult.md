@@ -16,9 +16,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/interfaces/IStorage.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/interfaces/IStorage.ts#L10)
+[src/interfaces/IStorage.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/interfaces/IStorage.ts#L10)
 
-___
+---
 
 ### metadataUris
 
@@ -26,4 +26,4 @@ ___
 
 #### Defined in
 
-[src/interfaces/IStorage.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/interfaces/IStorage.ts#L13)
+[src/interfaces/IStorage.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/interfaces/IStorage.ts#L13)

@@ -100,8 +100,7 @@ const config = {
               },
               {
                 label: "Discord",
-                // TODO: Change this.
-                href: "https://discordapp.com/invite/docusaurus"
+                href: "https://discord.gg/thirdweb"
               },
               {
                 label: "Twitter",
@@ -123,7 +122,7 @@ const config = {
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Thirdweb, Inc. Built with Docusaurus.`
+        copyright: `Copyright © ${new Date().getFullYear()} Thirdweb, Inc.`
       },
       prism: {
         theme: lightCodeTheme,

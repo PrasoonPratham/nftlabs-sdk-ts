@@ -28,9 +28,9 @@ The address of the recipient
 
 #### Defined in
 
-[src/types/module-deployments/NewSplitRecipient.ts:20](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/module-deployments/NewSplitRecipient.ts#L20)
+[src/types/module-deployments/NewSplitRecipient.ts:20](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/module-deployments/NewSplitRecipient.ts#L20)
 
-___
+---
 
 ### shares
 
@@ -40,4 +40,4 @@ The number of shares for the recipient
 
 #### Defined in
 
-[src/types/module-deployments/NewSplitRecipient.ts:25](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/module-deployments/NewSplitRecipient.ts#L25)
+[src/types/module-deployments/NewSplitRecipient.ts:25](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/module-deployments/NewSplitRecipient.ts#L25)

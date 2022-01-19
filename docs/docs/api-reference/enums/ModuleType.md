@@ -10,15 +10,15 @@ The type of Modules that are available.
 
 ## Enumeration members
 
-### ACCESS\_NFT
+### ACCESS_NFT
 
-• **ACCESS\_NFT** = `4`
+• **ACCESS_NFT** = `4`
 
 #### Defined in
 
-[src/common/module-type.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/module-type.ts#L14)
+[src/common/module-type.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/module-type.ts#L14)
 
-___
+---
 
 ### BUNDLE
 
@@ -26,19 +26,19 @@ ___
 
 #### Defined in
 
-[src/common/module-type.ts:11](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/module-type.ts#L11)
+[src/common/module-type.ts:11](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/module-type.ts#L11)
 
-___
+---
 
-### BUNDLE\_DROP
+### BUNDLE_DROP
 
-• **BUNDLE\_DROP** = `11`
+• **BUNDLE_DROP** = `11`
 
 #### Defined in
 
-[src/common/module-type.ts:21](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/module-type.ts#L21)
+[src/common/module-type.ts:21](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/module-type.ts#L21)
 
-___
+---
 
 ### COLLECTION
 
@@ -46,9 +46,9 @@ ___
 
 #### Defined in
 
-[src/common/module-type.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/module-type.ts#L10)
+[src/common/module-type.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/module-type.ts#L10)
 
-___
+---
 
 ### CURRENCY
 
@@ -56,9 +56,9 @@ ___
 
 #### Defined in
 
-[src/common/module-type.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/module-type.ts#L8)
+[src/common/module-type.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/module-type.ts#L8)
 
-___
+---
 
 ### DATASTORE
 
@@ -66,9 +66,9 @@ ___
 
 #### Defined in
 
-[src/common/module-type.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/module-type.ts#L18)
+[src/common/module-type.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/module-type.ts#L18)
 
-___
+---
 
 ### DROP
 
@@ -76,19 +76,19 @@ ___
 
 #### Defined in
 
-[src/common/module-type.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/module-type.ts#L17)
+[src/common/module-type.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/module-type.ts#L17)
 
-___
+---
 
-### DYNAMIC\_NFT
+### DYNAMIC_NFT
 
-• **DYNAMIC\_NFT** = `3`
+• **DYNAMIC_NFT** = `3`
 
 #### Defined in
 
-[src/common/module-type.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/module-type.ts#L13)
+[src/common/module-type.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/module-type.ts#L13)
 
-___
+---
 
 ### MARKET
 
@@ -96,9 +96,9 @@ ___
 
 #### Defined in
 
-[src/common/module-type.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/module-type.ts#L16)
+[src/common/module-type.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/module-type.ts#L16)
 
-___
+---
 
 ### MARKETPLACE
 
@@ -106,9 +106,9 @@ ___
 
 #### Defined in
 
-[src/common/module-type.ts:22](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/module-type.ts#L22)
+[src/common/module-type.ts:22](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/module-type.ts#L22)
 
-___
+---
 
 ### NFT
 
@@ -116,9 +116,9 @@ ___
 
 #### Defined in
 
-[src/common/module-type.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/module-type.ts#L12)
+[src/common/module-type.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/module-type.ts#L12)
 
-___
+---
 
 ### PACK
 
@@ -126,9 +126,9 @@ ___
 
 #### Defined in
 
-[src/common/module-type.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/module-type.ts#L15)
+[src/common/module-type.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/module-type.ts#L15)
 
-___
+---
 
 ### SPLITS
 
@@ -136,9 +136,9 @@ ___
 
 #### Defined in
 
-[src/common/module-type.ts:19](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/module-type.ts#L19)
+[src/common/module-type.ts:19](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/module-type.ts#L19)
 
-___
+---
 
 ### TOKEN
 
@@ -146,9 +146,9 @@ ___
 
 #### Defined in
 
-[src/common/module-type.ts:9](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/module-type.ts#L9)
+[src/common/module-type.ts:9](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/module-type.ts#L9)
 
-___
+---
 
 ### VOTE
 
@@ -156,4 +156,4 @@ ___
 
 #### Defined in
 
-[src/common/module-type.ts:20](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/module-type.ts#L20)
+[src/common/module-type.ts:20](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/module-type.ts#L20)

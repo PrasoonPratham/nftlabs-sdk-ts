@@ -12,8 +12,8 @@ The root Module class. All other Modules extend this.
 
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type                                    |
+| :---------- | :-------------------------------------- |
 | `TContract` | extends `BaseContract` = `BaseContract` |
 
 ## Hierarchy
@@ -36,48 +36,48 @@ The root Module class. All other Modules extend this.
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type                                                  |
+| :---------- | :---------------------------------------------------- |
 | `TContract` | extends `BaseContract`<`TContract`\> = `BaseContract` |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name               | Type                                              |
+| :----------------- | :------------------------------------------------ |
 | `providerOrSigner` | [`ProviderOrSigner`](../modules#providerorsigner) |
-| `address` | `string` |
-| `options` | [`ISDKOptions`](../interfaces/ISDKOptions) |
-| `sdk` | [`ThirdwebSDK`](ThirdwebSDK) |
+| `address`          | `string`                                          |
+| `options`          | [`ISDKOptions`](../interfaces/ISDKOptions)        |
+| `sdk`              | [`ThirdwebSDK`](ThirdwebSDK)                      |
 
 #### Defined in
 
-[src/core/module.ts:103](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L103)
+[src/core/module.ts:103](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L103)
 
 ## Properties
 
 ### \_providerOrSigner
 
-• `Private` **\_providerOrSigner**: ``null`` \| [`ProviderOrSigner`](../modules#providerorsigner) = `null`
+• `Private` **\_providerOrSigner**: `null` \| [`ProviderOrSigner`](../modules#providerorsigner) = `null`
 
 **`internal`**
 
 #### Defined in
 
-[src/core/module.ts:62](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L62)
+[src/core/module.ts:62](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L62)
 
-___
+---
 
 ### \_signer
 
-• `Private` **\_signer**: ``null`` \| `Signer` = `null`
+• `Private` **\_signer**: `null` \| `Signer` = `null`
 
 **`internal`**
 
 #### Defined in
 
-[src/core/module.ts:77](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L77)
+[src/core/module.ts:77](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L77)
 
-___
+---
 
 ### address
 
@@ -87,9 +87,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L45)
+[src/core/module.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L45)
 
-___
+---
 
 ### contract
 
@@ -101,9 +101,9 @@ Contract connects to the SDK signer or provider
 
 #### Defined in
 
-[src/core/module.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L93)
+[src/core/module.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L93)
 
-___
+---
 
 ### ipfsGatewayUrl
 
@@ -115,9 +115,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L50)
+[src/core/module.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L50)
 
-___
+---
 
 ### options
 
@@ -129,9 +129,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L55)
+[src/core/module.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L55)
 
-___
+---
 
 ### readOnlyContract
 
@@ -143,9 +143,9 @@ Contract connects to the [ISDKOptions.readOnlyRpcUrl](../interfaces/ISDKOptions#
 
 #### Defined in
 
-[src/core/module.ts:98](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L98)
+[src/core/module.ts:98](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L98)
 
-___
+---
 
 ### sdk
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:57](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L57)
+[src/core/module.ts:57](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L57)
 
 ## Accessors
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L66)
+[src/core/module.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L66)
 
 • `Protected` `set` **providerOrSigner**(`value`): `void`
 
@@ -177,8 +177,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                              |
+| :------ | :------------------------------------------------ |
 | `value` | [`ProviderOrSigner`](../modules#providerorsigner) |
 
 #### Returns
@@ -187,23 +187,23 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L70)
+[src/core/module.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L70)
 
-___
+---
 
 ### signer
 
-• `Protected` `get` **signer**(): ``null`` \| `Signer`
+• `Protected` `get` **signer**(): `null` \| `Signer`
 
 **`internal`**
 
 #### Returns
 
-``null`` \| `Signer`
+`null` \| `Signer`
 
 #### Defined in
 
-[src/core/module.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L81)
+[src/core/module.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L81)
 
 • `Protected` `set` **signer**(`value`): `void`
 
@@ -211,9 +211,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | ``null`` \| `Signer` |
+| Name    | Type               |
+| :------ | :----------------- |
+| `value` | `null` \| `Signer` |
 
 #### Returns
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:85](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L85)
+[src/core/module.ts:85](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L85)
 
 ## Methods
 
@@ -237,9 +237,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L188)
+[src/core/module.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L188)
 
-___
+---
 
 ### connectContract
 
@@ -255,9 +255,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:246](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L246)
+[src/core/module.ts:246](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L246)
 
-___
+---
 
 ### emitTransactionEvent
 
@@ -267,10 +267,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `status` | ``"submitted"`` \| ``"completed"`` |
-| `transactionHash` | `string` |
+| Name              | Type                           |
+| :---------------- | :----------------------------- |
+| `status`          | `"submitted"` \| `"completed"` |
+| `transactionHash` | `string`                       |
 
 #### Returns
 
@@ -278,9 +278,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:282](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L282)
+[src/core/module.ts:282](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L282)
 
-___
+---
 
 ### exists
 
@@ -294,9 +294,9 @@ whether the given contract exists on-chain
 
 #### Defined in
 
-[src/core/module.ts:126](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L126)
+[src/core/module.ts:126](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L126)
 
-___
+---
 
 ### getCallOverrides
 
@@ -310,9 +310,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:261](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L261)
+[src/core/module.ts:261](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L261)
 
-___
+---
 
 ### getChainID
 
@@ -326,9 +326,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:235](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L235)
+[src/core/module.ts:235](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L235)
 
-___
+---
 
 ### getMetadata
 
@@ -336,9 +336,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `resolveUrls` | `boolean` | `true` | Whether to resolve the urls in the metadata to a gateway. |
+| Name          | Type      | Default value | Description                                               |
+| :------------ | :-------- | :------------ | :-------------------------------------------------------- |
+| `resolveUrls` | `boolean` | `true`        | Whether to resolve the urls in the metadata to a gateway. |
 
 #### Returns
 
@@ -346,9 +346,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:138](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L138)
+[src/core/module.ts:138](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L138)
 
-___
+---
 
 ### getModuleType
 
@@ -364,9 +364,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:254](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L254)
+[src/core/module.ts:254](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L254)
 
-___
+---
 
 ### getProvider
 
@@ -380,9 +380,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:228](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L228)
+[src/core/module.ts:228](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L228)
 
-___
+---
 
 ### getProviderOrSigner
 
@@ -396,25 +396,25 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:195](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L195)
+[src/core/module.ts:195](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L195)
 
-___
+---
 
 ### getSigner
 
-▸ `Protected` **getSigner**(): ``null`` \| `Signer`
+▸ `Protected` **getSigner**(): `null` \| `Signer`
 
 **`internal`**
 
 #### Returns
 
-``null`` \| `Signer`
+`null` \| `Signer`
 
 #### Defined in
 
-[src/core/module.ts:202](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L202)
+[src/core/module.ts:202](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L202)
 
-___
+---
 
 ### getSignerAddress
 
@@ -428,9 +428,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:219](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L219)
+[src/core/module.ts:219](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L219)
 
-___
+---
 
 ### hasValidSigner
 
@@ -444,9 +444,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:212](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L212)
+[src/core/module.ts:212](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L212)
 
-___
+---
 
 ### parseEventLogs
 
@@ -454,10 +454,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type     |
+| :---------- | :------- |
 | `eventName` | `string` |
-| `logs?` | `Log`[] |
+| `logs?`     | `Log`[]  |
 
 #### Returns
 
@@ -465,9 +465,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:452](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L452)
+[src/core/module.ts:452](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L452)
 
-___
+---
 
 ### parseLogs
 
@@ -475,17 +475,17 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | `any` |
+| Name | Type  |
+| :--- | :---- |
+| `T`  | `any` |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `eventName` | `string` |
-| `logs?` | `Log`[] |
-| `contract` | `BaseContract` |
+| Name        | Type           |
+| :---------- | :------------- |
+| `eventName` | `string`       |
+| `logs?`     | `Log`[]        |
+| `contract`  | `BaseContract` |
 
 #### Returns
 
@@ -493,9 +493,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:471](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L471)
+[src/core/module.ts:471](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L471)
 
-___
+---
 
 ### sendContractTransaction
 
@@ -505,11 +505,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `contract` | `BaseContract` |
-| `fn` | `string` |
-| `args` | `any`[] |
+| Name             | Type            |
+| :--------------- | :-------------- |
+| `contract`       | `BaseContract`  |
+| `fn`             | `string`        |
+| `args`           | `any`[]         |
 | `callOverrides?` | `CallOverrides` |
 
 #### Returns
@@ -518,9 +518,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:306](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L306)
+[src/core/module.ts:306](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L306)
 
-___
+---
 
 ### sendGaslessTransaction
 
@@ -530,11 +530,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `contract` | `BaseContract` |
-| `fn` | `string` |
-| `args` | `any`[] |
+| Name            | Type            |
+| :-------------- | :-------------- |
+| `contract`      | `BaseContract`  |
+| `fn`            | `string`        |
+| `args`          | `any`[]         |
 | `callOverrides` | `CallOverrides` |
 
 #### Returns
@@ -543,9 +543,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:364](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L364)
+[src/core/module.ts:364](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L364)
 
-___
+---
 
 ### sendTransaction
 
@@ -555,10 +555,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `fn` | `string` |
-| `args` | `any`[] |
+| Name             | Type            |
+| :--------------- | :-------------- |
+| `fn`             | `string`        |
+| `args`           | `any`[]         |
 | `callOverrides?` | `CallOverrides` |
 
 #### Returns
@@ -567,9 +567,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:295](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L295)
+[src/core/module.ts:295](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L295)
 
-___
+---
 
 ### sendTransactionByFunction
 
@@ -579,11 +579,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `contract` | `BaseContract` |
-| `fn` | `string` |
-| `args` | `any`[] |
+| Name            | Type            |
+| :-------------- | :-------------- |
+| `contract`      | `BaseContract`  |
+| `fn`            | `string`        |
+| `args`          | `any`[]         |
 | `callOverrides` | `CallOverrides` |
 
 #### Returns
@@ -592,9 +592,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:348](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L348)
+[src/core/module.ts:348](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L348)
 
-___
+---
 
 ### setMetadata
 
@@ -602,8 +602,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                                    | Description          |
+| :--------- | :------------------------------------------------------ | :------------------- |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) | The metadata to set. |
 
 #### Returns
@@ -612,9 +612,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:160](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L160)
+[src/core/module.ts:160](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L160)
 
-___
+---
 
 ### setProviderOrSigner
 
@@ -624,8 +624,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name               | Type                                              |
+| :----------------- | :------------------------------------------------ |
 | `providerOrSigner` | [`ProviderOrSigner`](../modules#providerorsigner) |
 
 #### Returns
@@ -634,9 +634,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:172](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L172)
+[src/core/module.ts:172](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L172)
 
-___
+---
 
 ### signTypedData
 
@@ -644,17 +644,17 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `signer` | `Signer` |
-| `from` | `string` |
-| `domain` | `Object` |
-| `domain.chainId` | `number` |
-| `domain.name` | `string` |
+| Name                       | Type     |
+| :------------------------- | :------- |
+| `signer`                   | `Signer` |
+| `from`                     | `string` |
+| `domain`                   | `Object` |
+| `domain.chainId`           | `number` |
+| `domain.name`              | `string` |
 | `domain.verifyingContract` | `string` |
-| `domain.version` | `string` |
-| `types` | `any` |
-| `message` | `any` |
+| `domain.version`           | `string` |
+| `types`                    | `any`    |
+| `message`                  | `any`    |
 
 #### Returns
 
@@ -662,4 +662,4 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:415](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L415)
+[src/core/module.ts:415](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L415)

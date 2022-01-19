@@ -36,9 +36,9 @@ The description of the module.
 
 #### Defined in
 
-[src/types/module-deployments/CommonModuleMetadata.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/module-deployments/CommonModuleMetadata.ts#L23)
+[src/types/module-deployments/CommonModuleMetadata.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/module-deployments/CommonModuleMetadata.ts#L23)
 
-___
+---
 
 ### externalLink
 
@@ -52,9 +52,9 @@ An external link for the module.
 
 #### Defined in
 
-[src/types/module-deployments/CommonModuleMetadata.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/module-deployments/CommonModuleMetadata.ts#L39)
+[src/types/module-deployments/CommonModuleMetadata.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/module-deployments/CommonModuleMetadata.ts#L39)
 
-___
+---
 
 ### image
 
@@ -72,9 +72,9 @@ and the property is the IPFS hash uri).
 
 #### Defined in
 
-[src/types/module-deployments/CommonModuleMetadata.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/module-deployments/CommonModuleMetadata.ts#L33)
+[src/types/module-deployments/CommonModuleMetadata.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/module-deployments/CommonModuleMetadata.ts#L33)
 
-___
+---
 
 ### name
 
@@ -88,4 +88,4 @@ The name of the module.
 
 #### Defined in
 
-[src/types/module-deployments/CommonModuleMetadata.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/module-deployments/CommonModuleMetadata.ts#L17)
+[src/types/module-deployments/CommonModuleMetadata.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/module-deployments/CommonModuleMetadata.ts#L17)

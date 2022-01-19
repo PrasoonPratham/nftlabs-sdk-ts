@@ -18,9 +18,9 @@ The address of the recipient
 
 #### Defined in
 
-[src/types/SplitRecipient.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/SplitRecipient.ts#L8)
+[src/types/SplitRecipient.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/SplitRecipient.ts#L8)
 
-___
+---
 
 ### splitPercentage
 
@@ -33,4 +33,4 @@ the recipient will receive 50 ETH.
 
 #### Defined in
 
-[src/types/SplitRecipient.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/SplitRecipient.ts#L16)
+[src/types/SplitRecipient.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/SplitRecipient.ts#L16)

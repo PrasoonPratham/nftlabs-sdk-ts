@@ -16,9 +16,9 @@ Filter options for the Market module.
 
 #### Defined in
 
-[src/modules/market.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/market.ts#L32)
+[src/modules/market.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/market.ts#L32)
 
-___
+---
 
 ### tokenContract
 
@@ -26,9 +26,9 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/market.ts#L33)
+[src/modules/market.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/market.ts#L33)
 
-___
+---
 
 ### tokenId
 
@@ -36,4 +36,4 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/market.ts#L34)
+[src/modules/market.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/market.ts#L34)

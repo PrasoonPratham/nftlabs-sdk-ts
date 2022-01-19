@@ -20,29 +20,29 @@ The typical contract metadata found on the modules.
 
 #### Defined in
 
-[src/common/contract.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/contract.ts#L14)
+[src/common/contract.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/contract.ts#L14)
 
-___
+---
 
-### external\_link
+### external_link
 
-• `Optional` **external\_link**: `string`
-
-#### Defined in
-
-[src/common/contract.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/contract.ts#L16)
-
-___
-
-### fee\_recipient
-
-• `Optional` **fee\_recipient**: `string`
+• `Optional` **external_link**: `string`
 
 #### Defined in
 
-[src/common/contract.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/contract.ts#L18)
+[src/common/contract.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/contract.ts#L16)
 
-___
+---
+
+### fee_recipient
+
+• `Optional` **fee_recipient**: `string`
+
+#### Defined in
+
+[src/common/contract.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/contract.ts#L18)
+
+---
 
 ### image
 
@@ -50,9 +50,9 @@ ___
 
 #### Defined in
 
-[src/common/contract.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/contract.ts#L15)
+[src/common/contract.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/contract.ts#L15)
 
-___
+---
 
 ### name
 
@@ -60,19 +60,19 @@ ___
 
 #### Defined in
 
-[src/common/contract.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/contract.ts#L13)
+[src/common/contract.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/contract.ts#L13)
 
-___
+---
 
-### seller\_fee\_basis\_points
+### seller_fee_basis_points
 
-• `Optional` **seller\_fee\_basis\_points**: `number`
+• `Optional` **seller_fee_basis_points**: `number`
 
 #### Defined in
 
-[src/common/contract.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/contract.ts#L17)
+[src/common/contract.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/contract.ts#L17)
 
-___
+---
 
 ### uri
 
@@ -80,4 +80,4 @@ ___
 
 #### Defined in
 
-[src/common/contract.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/contract.ts#L12)
+[src/common/contract.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/contract.ts#L12)

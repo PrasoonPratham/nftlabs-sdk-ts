@@ -22,8 +22,8 @@ each token that will be minted.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name            | Type                                                      | Description                              |
+| :-------------- | :-------------------------------------------------------- | :--------------------------------------- |
 | `tokenMetadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject)[] | All token metadata objects to be minted. |
 
 #### Returns
@@ -32,4 +32,4 @@ each token that will be minted.
 
 #### Defined in
 
-[src/interfaces/IDropModule.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/interfaces/IDropModule.ts#L16)
+[src/interfaces/IDropModule.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/interfaces/IDropModule.ts#L16)

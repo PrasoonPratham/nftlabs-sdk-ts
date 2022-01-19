@@ -16,19 +16,19 @@ Metadata for items listed on a Market module.
 
 #### Defined in
 
-[src/modules/market.ts:49](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/market.ts#L49)
+[src/modules/market.ts:49](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/market.ts#L49)
 
-___
+---
 
 ### currencyMetadata
 
-• **currencyMetadata**: ``null`` \| [`CurrencyValue`](CurrencyValue)
+• **currencyMetadata**: `null` \| [`CurrencyValue`](CurrencyValue)
 
 #### Defined in
 
-[src/modules/market.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/market.ts#L50)
+[src/modules/market.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/market.ts#L50)
 
-___
+---
 
 ### id
 
@@ -36,9 +36,9 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:42](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/market.ts#L42)
+[src/modules/market.ts:42](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/market.ts#L42)
 
-___
+---
 
 ### price
 
@@ -46,9 +46,9 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:51](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/market.ts#L51)
+[src/modules/market.ts:51](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/market.ts#L51)
 
-___
+---
 
 ### quantity
 
@@ -56,29 +56,29 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:47](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/market.ts#L47)
+[src/modules/market.ts:47](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/market.ts#L47)
 
-___
+---
 
 ### saleEnd
 
-• **saleEnd**: ``null`` \| `Date`
+• **saleEnd**: `null` \| `Date`
 
 #### Defined in
 
-[src/modules/market.ts:53](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/market.ts#L53)
+[src/modules/market.ts:53](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/market.ts#L53)
 
-___
+---
 
 ### saleStart
 
-• **saleStart**: ``null`` \| `Date`
+• **saleStart**: `null` \| `Date`
 
 #### Defined in
 
-[src/modules/market.ts:52](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/market.ts#L52)
+[src/modules/market.ts:52](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/market.ts#L52)
 
-___
+---
 
 ### seller
 
@@ -86,9 +86,9 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:43](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/market.ts#L43)
+[src/modules/market.ts:43](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/market.ts#L43)
 
-___
+---
 
 ### tokenContract
 
@@ -96,9 +96,9 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:44](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/market.ts#L44)
+[src/modules/market.ts:44](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/market.ts#L44)
 
-___
+---
 
 ### tokenId
 
@@ -106,9 +106,9 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/market.ts#L45)
+[src/modules/market.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/market.ts#L45)
 
-___
+---
 
 ### tokenMetadata
 
@@ -116,9 +116,9 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:46](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/market.ts#L46)
+[src/modules/market.ts:46](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/market.ts#L46)
 
-___
+---
 
 ### tokensPerBuyer
 
@@ -126,4 +126,4 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:48](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/market.ts#L48)
+[src/modules/market.ts:48](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/market.ts#L48)

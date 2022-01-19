@@ -19,7 +19,7 @@
   "scripts": {
     "dev": "tsdx watch",
     "build:tsdx": "tsdx build",
-    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "format": "prettier --write \"**/*.{js,ts,tsx,json,md}\"",
     "prepublishOnly": "yarn lint",
     "lint": "eslint src/",
     "fix": "eslint src/ --fix",

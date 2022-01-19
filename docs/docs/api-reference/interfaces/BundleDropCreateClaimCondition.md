@@ -16,9 +16,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/bundleDrop.ts:40](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/bundleDrop.ts#L40)
+[src/modules/bundleDrop.ts:40](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/bundleDrop.ts#L40)
 
-___
+---
 
 ### maxClaimableSupply
 
@@ -26,9 +26,9 @@ ___
 
 #### Defined in
 
-[src/modules/bundleDrop.ts:36](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/bundleDrop.ts#L36)
+[src/modules/bundleDrop.ts:36](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/bundleDrop.ts#L36)
 
-___
+---
 
 ### merkleRoot
 
@@ -36,9 +36,9 @@ ___
 
 #### Defined in
 
-[src/modules/bundleDrop.ts:41](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/bundleDrop.ts#L41)
+[src/modules/bundleDrop.ts:41](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/bundleDrop.ts#L41)
 
-___
+---
 
 ### pricePerToken
 
@@ -46,9 +46,9 @@ ___
 
 #### Defined in
 
-[src/modules/bundleDrop.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/bundleDrop.ts#L39)
+[src/modules/bundleDrop.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/bundleDrop.ts#L39)
 
-___
+---
 
 ### quantityLimitPerTransaction
 
@@ -56,9 +56,9 @@ ___
 
 #### Defined in
 
-[src/modules/bundleDrop.ts:37](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/bundleDrop.ts#L37)
+[src/modules/bundleDrop.ts:37](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/bundleDrop.ts#L37)
 
-___
+---
 
 ### startTimestamp
 
@@ -66,9 +66,9 @@ ___
 
 #### Defined in
 
-[src/modules/bundleDrop.ts:35](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/bundleDrop.ts#L35)
+[src/modules/bundleDrop.ts:35](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/bundleDrop.ts#L35)
 
-___
+---
 
 ### waitTimeInSecondsBetweenClaims
 
@@ -76,4 +76,4 @@ ___
 
 #### Defined in
 
-[src/modules/bundleDrop.ts:38](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/bundleDrop.ts#L38)
+[src/modules/bundleDrop.ts:38](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/bundleDrop.ts#L38)

@@ -39,12 +39,12 @@ const module = sdk.getSplitsModule("{{module_address}}");
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name               | Type                                              |
+| :----------------- | :------------------------------------------------ |
 | `providerOrSigner` | [`ProviderOrSigner`](../modules#providerorsigner) |
-| `address` | `string` |
-| `options` | [`ISDKOptions`](../interfaces/ISDKOptions) |
-| `sdk` | [`ThirdwebSDK`](ThirdwebSDK) |
+| `address`          | `string`                                          |
+| `options`          | [`ISDKOptions`](../interfaces/ISDKOptions)        |
+| `sdk`              | [`ThirdwebSDK`](ThirdwebSDK)                      |
 
 #### Inherited from
 
@@ -52,7 +52,7 @@ const module = sdk.getSplitsModule("{{module_address}}");
 
 #### Defined in
 
-[src/core/module.ts:103](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L103)
+[src/core/module.ts:103](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L103)
 
 ## Properties
 
@@ -68,9 +68,9 @@ const module = sdk.getSplitsModule("{{module_address}}");
 
 #### Defined in
 
-[src/core/module.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L45)
+[src/core/module.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L45)
 
-___
+---
 
 ### contract
 
@@ -86,9 +86,9 @@ Contract connects to the SDK signer or provider
 
 #### Defined in
 
-[src/core/module.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L93)
+[src/core/module.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L93)
 
-___
+---
 
 ### ipfsGatewayUrl
 
@@ -104,9 +104,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L50)
+[src/core/module.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L50)
 
-___
+---
 
 ### options
 
@@ -122,9 +122,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L55)
+[src/core/module.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L55)
 
-___
+---
 
 ### readOnlyContract
 
@@ -140,9 +140,9 @@ Contract connects to the [ISDKOptions.readOnlyRpcUrl](../interfaces/ISDKOptions#
 
 #### Defined in
 
-[src/core/module.ts:98](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L98)
+[src/core/module.ts:98](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L98)
 
-___
+---
 
 ### sdk
 
@@ -154,9 +154,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:57](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L57)
+[src/core/module.ts:57](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L57)
 
-___
+---
 
 ### moduleType
 
@@ -164,7 +164,7 @@ ___
 
 #### Defined in
 
-[src/modules/royalty.ts:99](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/royalty.ts#L99)
+[src/modules/royalty.ts:99](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/royalty.ts#L99)
 
 ## Accessors
 
@@ -184,7 +184,7 @@ Module.providerOrSigner
 
 #### Defined in
 
-[src/core/module.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L66)
+[src/core/module.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L66)
 
 • `Protected` `set` **providerOrSigner**(`value`): `void`
 
@@ -192,8 +192,8 @@ Module.providerOrSigner
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                              |
+| :------ | :------------------------------------------------ |
 | `value` | [`ProviderOrSigner`](../modules#providerorsigner) |
 
 #### Returns
@@ -206,19 +206,19 @@ Module.providerOrSigner
 
 #### Defined in
 
-[src/core/module.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L70)
+[src/core/module.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L70)
 
-___
+---
 
 ### signer
 
-• `Protected` `get` **signer**(): ``null`` \| `Signer`
+• `Protected` `get` **signer**(): `null` \| `Signer`
 
 **`internal`**
 
 #### Returns
 
-``null`` \| `Signer`
+`null` \| `Signer`
 
 #### Inherited from
 
@@ -226,7 +226,7 @@ Module.signer
 
 #### Defined in
 
-[src/core/module.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L81)
+[src/core/module.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L81)
 
 • `Protected` `set` **signer**(`value`): `void`
 
@@ -234,9 +234,9 @@ Module.signer
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | ``null`` \| `Signer` |
+| Name    | Type               |
+| :------ | :----------------- |
+| `value` | `null` \| `Signer` |
 
 #### Returns
 
@@ -248,20 +248,20 @@ Module.signer
 
 #### Defined in
 
-[src/core/module.ts:85](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L85)
+[src/core/module.ts:85](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L85)
 
 ## Methods
 
 ### \_pendingPayment
 
-▸ `Private` **_pendingPayment**(`address`, `totalReceived`, `alreadyReleased`): `Promise`<`BigNumber`\>
+▸ `Private` **\_pendingPayment**(`address`, `totalReceived`, `alreadyReleased`): `Promise`<`BigNumber`\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `address` | `string` |
-| `totalReceived` | `BigNumber` |
+| Name              | Type        |
+| :---------------- | :---------- |
+| `address`         | `string`    |
+| `totalReceived`   | `BigNumber` |
 | `alreadyReleased` | `BigNumber` |
 
 #### Returns
@@ -270,9 +270,9 @@ Module.signer
 
 #### Defined in
 
-[src/modules/royalty.ts:274](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/royalty.ts#L274)
+[src/modules/royalty.ts:274](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/royalty.ts#L274)
 
-___
+---
 
 ### balanceOf
 
@@ -283,6 +283,7 @@ Get Funds
 **`remarks`** Get the amount of funds in the native currency held by the module thats owed to a specific recipient.
 
 **`example`**
+
 ```javascript
 // The address to check the funds of
 const address = "{{wallet_address}}";
@@ -292,8 +293,8 @@ console.log(funds);
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type     |
+| :-------- | :------- |
 | `address` | `string` |
 
 #### Returns
@@ -306,27 +307,27 @@ console.log(funds);
 
 #### Defined in
 
-[src/modules/royalty.ts:220](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/royalty.ts#L220)
+[src/modules/royalty.ts:220](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/royalty.ts#L220)
 
-___
+---
 
 ### balanceOfAllRecipients
 
-▸ **balanceOfAllRecipients**(): `Promise`<{ [key: string]: `BigNumber`;  }\>
+▸ **balanceOfAllRecipients**(): `Promise`<{ [key: string]: `BigNumber`; }\>
 
 Returns all the recipients and their balances in the native currency.
 
 #### Returns
 
-`Promise`<{ [key: string]: `BigNumber`;  }\>
+`Promise`<{ [key: string]: `BigNumber`; }\>
 
 A map of recipient addresses to their balances in the native currency.
 
 #### Defined in
 
-[src/modules/royalty.ts:165](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/royalty.ts#L165)
+[src/modules/royalty.ts:165](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/royalty.ts#L165)
 
-___
+---
 
 ### balanceOfToken
 
@@ -337,21 +338,22 @@ Get Token Funds
 **`remarks`** Get the amount of funds in the non-native tokens held by the module thats owed to a specific recipient.
 
 **`example`**
+
 ```javascript
 // The address to check the funds of
 const address = "{{wallet_address}}";
 // The address of the currency to check the contracts funds of
-const tokenAddress = "0x..."
+const tokenAddress = "0x...";
 const funds = await module.balanceOfToken(address, tokenAddress);
 console.log(funds);
 ```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name            | Type     |
+| :-------------- | :------- |
 | `walletAddress` | `string` |
-| `tokenAddress` | `string` |
+| `tokenAddress`  | `string` |
 
 #### Returns
 
@@ -363,33 +365,33 @@ console.log(funds);
 
 #### Defined in
 
-[src/modules/royalty.ts:249](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/royalty.ts#L249)
+[src/modules/royalty.ts:249](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/royalty.ts#L249)
 
-___
+---
 
 ### balanceOfTokenAllRecipients
 
-▸ **balanceOfTokenAllRecipients**(`tokenAddress`): `Promise`<{ [key: string]: [`CurrencyValue`](../interfaces/CurrencyValue);  }\>
+▸ **balanceOfTokenAllRecipients**(`tokenAddress`): `Promise`<{ [key: string]: [`CurrencyValue`](../interfaces/CurrencyValue); }\>
 
 Returns all the recipients and their balances in a non-native currency.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name           | Type     | Description                                           |
+| :------------- | :------- | :---------------------------------------------------- |
 | `tokenAddress` | `string` | The address of the currency to check the balances in. |
 
 #### Returns
 
-`Promise`<{ [key: string]: [`CurrencyValue`](../interfaces/CurrencyValue);  }\>
+`Promise`<{ [key: string]: [`CurrencyValue`](../interfaces/CurrencyValue); }\>
 
 A map of recipient addresses to their balances in the specified currency.
 
 #### Defined in
 
-[src/modules/royalty.ts:180](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/royalty.ts#L180)
+[src/modules/royalty.ts:180](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/royalty.ts#L180)
 
-___
+---
 
 ### clearSigner
 
@@ -407,9 +409,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L188)
+[src/core/module.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L188)
 
-___
+---
 
 ### connectContract
 
@@ -427,9 +429,9 @@ ___
 
 #### Defined in
 
-[src/modules/royalty.ts:104](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/royalty.ts#L104)
+[src/modules/royalty.ts:104](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/royalty.ts#L104)
 
-___
+---
 
 ### distribute
 
@@ -440,6 +442,7 @@ Distribute Funds
 **`remarks`** Distribute funds held by the contract in the native currency to all recipients.
 
 **`example`**
+
 ```javascript
 await module.distribute();
 ```
@@ -454,9 +457,9 @@ await module.distribute();
 
 #### Defined in
 
-[src/modules/royalty.ts:308](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/royalty.ts#L308)
+[src/modules/royalty.ts:308](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/royalty.ts#L308)
 
-___
+---
 
 ### distributeToken
 
@@ -467,16 +470,17 @@ Distribute Funds
 **`remarks`** Distribute funds held by the contract in the native currency to all recipients.
 
 **`example`**
+
 ```javascript
 // The address of the currency to distribute funds
-const tokenAddress = "0x..."
+const tokenAddress = "0x...";
 await module.distributeToken(tokenAddress);
 ```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name           | Type     |
+| :------------- | :------- |
 | `tokenAddress` | `string` |
 
 #### Returns
@@ -489,9 +493,9 @@ await module.distributeToken(tokenAddress);
 
 #### Defined in
 
-[src/modules/royalty.ts:324](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/royalty.ts#L324)
+[src/modules/royalty.ts:324](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/royalty.ts#L324)
 
-___
+---
 
 ### exists
 
@@ -509,9 +513,9 @@ whether the given contract exists on-chain
 
 #### Defined in
 
-[src/core/module.ts:126](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L126)
+[src/core/module.ts:126](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L126)
 
-___
+---
 
 ### get
 
@@ -523,9 +527,9 @@ ___
 
 #### Defined in
 
-[src/modules/royalty.ts:115](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/royalty.ts#L115)
+[src/modules/royalty.ts:115](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/royalty.ts#L115)
 
-___
+---
 
 ### getAllRecipients
 
@@ -536,6 +540,7 @@ Get Recipients
 **`remarks`** Get the data about the shares of every split recipient on the module
 
 **`example`**
+
 ```javascript
 const recipients = await module.getAllRecepients();
 console.log(recipients);
@@ -551,9 +556,9 @@ console.log(recipients);
 
 #### Defined in
 
-[src/modules/royalty.ts:130](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/royalty.ts#L130)
+[src/modules/royalty.ts:130](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/royalty.ts#L130)
 
-___
+---
 
 ### getCallOverrides
 
@@ -571,9 +576,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:261](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L261)
+[src/core/module.ts:261](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L261)
 
-___
+---
 
 ### getChainID
 
@@ -591,9 +596,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:235](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L235)
+[src/core/module.ts:235](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L235)
 
-___
+---
 
 ### getMetadata
 
@@ -601,9 +606,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `resolveUrls` | `boolean` | `true` | Whether to resolve the urls in the metadata to a gateway. |
+| Name          | Type      | Default value | Description                                               |
+| :------------ | :-------- | :------------ | :-------------------------------------------------------- |
+| `resolveUrls` | `boolean` | `true`        | Whether to resolve the urls in the metadata to a gateway. |
 
 #### Returns
 
@@ -615,9 +620,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:138](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L138)
+[src/core/module.ts:138](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L138)
 
-___
+---
 
 ### getModuleType
 
@@ -635,9 +640,9 @@ ___
 
 #### Defined in
 
-[src/modules/royalty.ts:111](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/royalty.ts#L111)
+[src/modules/royalty.ts:111](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/royalty.ts#L111)
 
-___
+---
 
 ### getProvider
 
@@ -655,9 +660,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:228](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L228)
+[src/core/module.ts:228](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L228)
 
-___
+---
 
 ### getRecipientSplitPercentage
 
@@ -667,8 +672,8 @@ Get the split percentage of a recipient.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type     |
+| :-------- | :------- |
 | `address` | `string` |
 
 #### Returns
@@ -681,19 +686,19 @@ Get the split percentage of a recipient.
 
 #### Defined in
 
-[src/modules/royalty.ts:191](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/royalty.ts#L191)
+[src/modules/royalty.ts:191](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/royalty.ts#L191)
 
-___
+---
 
 ### getSigner
 
-▸ `Protected` **getSigner**(): ``null`` \| `Signer`
+▸ `Protected` **getSigner**(): `null` \| `Signer`
 
 **`internal`**
 
 #### Returns
 
-``null`` \| `Signer`
+`null` \| `Signer`
 
 #### Inherited from
 
@@ -701,9 +706,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:202](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L202)
+[src/core/module.ts:202](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L202)
 
-___
+---
 
 ### getSignerAddress
 
@@ -721,9 +726,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:219](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L219)
+[src/core/module.ts:219](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L219)
 
-___
+---
 
 ### hasValidSigner
 
@@ -741,9 +746,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:212](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L212)
+[src/core/module.ts:212](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L212)
 
-___
+---
 
 ### parseEventLogs
 
@@ -751,10 +756,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type     |
+| :---------- | :------- |
 | `eventName` | `string` |
-| `logs?` | `Log`[] |
+| `logs?`     | `Log`[]  |
 
 #### Returns
 
@@ -766,9 +771,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:452](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L452)
+[src/core/module.ts:452](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L452)
 
-___
+---
 
 ### parseLogs
 
@@ -776,17 +781,17 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | `any` |
+| Name | Type  |
+| :--- | :---- |
+| `T`  | `any` |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `eventName` | `string` |
-| `logs?` | `Log`[] |
-| `contract` | `BaseContract` |
+| Name        | Type           |
+| :---------- | :------------- |
+| `eventName` | `string`       |
+| `logs?`     | `Log`[]        |
+| `contract`  | `BaseContract` |
 
 #### Returns
 
@@ -798,9 +803,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:471](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L471)
+[src/core/module.ts:471](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L471)
 
-___
+---
 
 ### sendContractTransaction
 
@@ -810,11 +815,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `contract` | `BaseContract` |
-| `fn` | `string` |
-| `args` | `any`[] |
+| Name             | Type            |
+| :--------------- | :-------------- |
+| `contract`       | `BaseContract`  |
+| `fn`             | `string`        |
+| `args`           | `any`[]         |
 | `callOverrides?` | `CallOverrides` |
 
 #### Returns
@@ -827,9 +832,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:306](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L306)
+[src/core/module.ts:306](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L306)
 
-___
+---
 
 ### sendTransaction
 
@@ -839,10 +844,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `fn` | `string` |
-| `args` | `any`[] |
+| Name             | Type            |
+| :--------------- | :-------------- |
+| `fn`             | `string`        |
+| `args`           | `any`[]         |
 | `callOverrides?` | `CallOverrides` |
 
 #### Returns
@@ -855,9 +860,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:295](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L295)
+[src/core/module.ts:295](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L295)
 
-___
+---
 
 ### setMetadata
 
@@ -865,8 +870,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                                    | Description          |
+| :--------- | :------------------------------------------------------ | :------------------- |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) | The metadata to set. |
 
 #### Returns
@@ -879,9 +884,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:160](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L160)
+[src/core/module.ts:160](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L160)
 
-___
+---
 
 ### setProviderOrSigner
 
@@ -891,8 +896,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name               | Type                                              |
+| :----------------- | :------------------------------------------------ |
 | `providerOrSigner` | [`ProviderOrSigner`](../modules#providerorsigner) |
 
 #### Returns
@@ -905,9 +910,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:172](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L172)
+[src/core/module.ts:172](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L172)
 
-___
+---
 
 ### signTypedData
 
@@ -915,17 +920,17 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `signer` | `Signer` |
-| `from` | `string` |
-| `domain` | `Object` |
-| `domain.chainId` | `number` |
-| `domain.name` | `string` |
+| Name                       | Type     |
+| :------------------------- | :------- |
+| `signer`                   | `Signer` |
+| `from`                     | `string` |
+| `domain`                   | `Object` |
+| `domain.chainId`           | `number` |
+| `domain.name`              | `string` |
 | `domain.verifyingContract` | `string` |
-| `domain.version` | `string` |
-| `types` | `any` |
-| `message` | `any` |
+| `domain.version`           | `string` |
+| `types`                    | `any`    |
+| `message`                  | `any`    |
 
 #### Returns
 
@@ -937,9 +942,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:415](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L415)
+[src/core/module.ts:415](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L415)
 
-___
+---
 
 ### withdraw
 
@@ -950,8 +955,8 @@ the `address` is owed and transfer it to the wallet.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type     |
+| :-------- | :------- |
 | `address` | `string` |
 
 #### Returns
@@ -964,9 +969,9 @@ the `address` is owed and transfer it to the wallet.
 
 #### Defined in
 
-[src/modules/royalty.ts:270](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/royalty.ts#L270)
+[src/modules/royalty.ts:270](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/royalty.ts#L270)
 
-___
+---
 
 ### withdrawToken
 
@@ -982,10 +987,10 @@ the address of the $MATIC token as the `tokenAddress` parameter.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name            | Type     |
+| :-------------- | :------- |
 | `walletAddress` | `string` |
-| `tokenAddress` | `string` |
+| `tokenAddress`  | `string` |
 
 #### Returns
 
@@ -997,4 +1002,4 @@ the address of the $MATIC token as the `tokenAddress` parameter.
 
 #### Defined in
 
-[src/modules/royalty.ts:288](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/royalty.ts#L288)
+[src/modules/royalty.ts:288](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/royalty.ts#L288)

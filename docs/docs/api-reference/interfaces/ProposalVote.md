@@ -14,9 +14,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/vote/ProposalVote.ts:7](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/vote/ProposalVote.ts#L7)
+[src/types/vote/ProposalVote.ts:7](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/vote/ProposalVote.ts#L7)
 
-___
+---
 
 ### label
 
@@ -24,9 +24,9 @@ ___
 
 #### Defined in
 
-[src/types/vote/ProposalVote.ts:6](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/vote/ProposalVote.ts#L6)
+[src/types/vote/ProposalVote.ts:6](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/vote/ProposalVote.ts#L6)
 
-___
+---
 
 ### type
 
@@ -34,4 +34,4 @@ ___
 
 #### Defined in
 
-[src/types/vote/ProposalVote.ts:5](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/vote/ProposalVote.ts#L5)
+[src/types/vote/ProposalVote.ts:5](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/vote/ProposalVote.ts#L5)

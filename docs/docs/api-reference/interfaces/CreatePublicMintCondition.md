@@ -16,9 +16,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/drop.ts:49](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/drop.ts#L49)
+[src/modules/drop.ts:49](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/drop.ts#L49)
 
-___
+---
 
 ### maxMintSupply
 
@@ -26,9 +26,9 @@ ___
 
 #### Defined in
 
-[src/modules/drop.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/drop.ts#L45)
+[src/modules/drop.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/drop.ts#L45)
 
-___
+---
 
 ### merkleRoot
 
@@ -36,9 +36,9 @@ ___
 
 #### Defined in
 
-[src/modules/drop.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/drop.ts#L50)
+[src/modules/drop.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/drop.ts#L50)
 
-___
+---
 
 ### pricePerToken
 
@@ -46,9 +46,9 @@ ___
 
 #### Defined in
 
-[src/modules/drop.ts:48](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/drop.ts#L48)
+[src/modules/drop.ts:48](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/drop.ts#L48)
 
-___
+---
 
 ### quantityLimitPerTransaction
 
@@ -56,9 +56,9 @@ ___
 
 #### Defined in
 
-[src/modules/drop.ts:46](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/drop.ts#L46)
+[src/modules/drop.ts:46](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/drop.ts#L46)
 
-___
+---
 
 ### startTimestampInSeconds
 
@@ -66,9 +66,9 @@ ___
 
 #### Defined in
 
-[src/modules/drop.ts:44](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/drop.ts#L44)
+[src/modules/drop.ts:44](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/drop.ts#L44)
 
-___
+---
 
 ### waitTimeSecondsLimitPerTransaction
 
@@ -76,4 +76,4 @@ ___
 
 #### Defined in
 
-[src/modules/drop.ts:47](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/drop.ts#L47)
+[src/modules/drop.ts:47](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/drop.ts#L47)

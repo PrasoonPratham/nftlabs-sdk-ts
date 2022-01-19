@@ -20,9 +20,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/snapshots/Snapshot.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/snapshots/Snapshot.ts#L10)
+[src/types/snapshots/Snapshot.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/snapshots/Snapshot.ts#L10)
 
-___
+---
 
 ### merkleRoot
 
@@ -30,4 +30,4 @@ ___
 
 #### Defined in
 
-[src/types/snapshots/Snapshot.ts:7](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/snapshots/Snapshot.ts#L7)
+[src/types/snapshots/Snapshot.ts:7](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/snapshots/Snapshot.ts#L7)

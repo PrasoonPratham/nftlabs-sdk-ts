@@ -39,12 +39,12 @@ const module = sdk.getMarketplaceModule("{{module_address}}");
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name               | Type                                              |
+| :----------------- | :------------------------------------------------ |
 | `providerOrSigner` | [`ProviderOrSigner`](../modules#providerorsigner) |
-| `address` | `string` |
-| `options` | [`ISDKOptions`](../interfaces/ISDKOptions) |
-| `sdk` | [`ThirdwebSDK`](ThirdwebSDK) |
+| `address`          | `string`                                          |
+| `options`          | [`ISDKOptions`](../interfaces/ISDKOptions)        |
+| `sdk`              | [`ThirdwebSDK`](ThirdwebSDK)                      |
 
 #### Inherited from
 
@@ -52,7 +52,7 @@ const module = sdk.getMarketplaceModule("{{module_address}}");
 
 #### Defined in
 
-[src/core/module.ts:509](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L509)
+[src/core/module.ts:509](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L509)
 
 ## Properties
 
@@ -68,9 +68,9 @@ const module = sdk.getMarketplaceModule("{{module_address}}");
 
 #### Defined in
 
-[src/core/module.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L45)
+[src/core/module.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L45)
 
-___
+---
 
 ### contract
 
@@ -86,9 +86,9 @@ Contract connects to the SDK signer or provider
 
 #### Defined in
 
-[src/core/module.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L93)
+[src/core/module.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L93)
 
-___
+---
 
 ### ipfsGatewayUrl
 
@@ -104,9 +104,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L50)
+[src/core/module.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L50)
 
-___
+---
 
 ### options
 
@@ -122,9 +122,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L55)
+[src/core/module.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L55)
 
-___
+---
 
 ### readOnlyContract
 
@@ -140,9 +140,9 @@ Contract connects to the [ISDKOptions.readOnlyRpcUrl](../interfaces/ISDKOptions#
 
 #### Defined in
 
-[src/core/module.ts:98](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L98)
+[src/core/module.ts:98](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L98)
 
-___
+---
 
 ### sdk
 
@@ -154,9 +154,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:57](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L57)
+[src/core/module.ts:57](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L57)
 
-___
+---
 
 ### moduleType
 
@@ -164,9 +164,9 @@ ___
 
 #### Defined in
 
-[src/modules/marketplace.ts:65](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L65)
+[src/modules/marketplace.ts:65](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L65)
 
-___
+---
 
 ### roles
 
@@ -174,7 +174,7 @@ ___
 
 #### Defined in
 
-[src/modules/marketplace.ts:67](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L67)
+[src/modules/marketplace.ts:67](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L67)
 
 ## Accessors
 
@@ -194,7 +194,7 @@ ModuleWithRoles.providerOrSigner
 
 #### Defined in
 
-[src/core/module.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L66)
+[src/core/module.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L66)
 
 • `Protected` `set` **providerOrSigner**(`value`): `void`
 
@@ -202,8 +202,8 @@ ModuleWithRoles.providerOrSigner
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                              |
+| :------ | :------------------------------------------------ |
 | `value` | [`ProviderOrSigner`](../modules#providerorsigner) |
 
 #### Returns
@@ -216,9 +216,9 @@ ModuleWithRoles.providerOrSigner
 
 #### Defined in
 
-[src/core/module.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L70)
+[src/core/module.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L70)
 
-___
+---
 
 ### roles
 
@@ -236,19 +236,19 @@ ModuleWithRoles.roles
 
 #### Defined in
 
-[src/core/module.ts:504](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L504)
+[src/core/module.ts:504](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L504)
 
-___
+---
 
 ### signer
 
-• `Protected` `get` **signer**(): ``null`` \| `Signer`
+• `Protected` `get` **signer**(): `null` \| `Signer`
 
 **`internal`**
 
 #### Returns
 
-``null`` \| `Signer`
+`null` \| `Signer`
 
 #### Inherited from
 
@@ -256,7 +256,7 @@ ModuleWithRoles.signer
 
 #### Defined in
 
-[src/core/module.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L81)
+[src/core/module.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L81)
 
 • `Protected` `set` **signer**(`value`): `void`
 
@@ -264,9 +264,9 @@ ModuleWithRoles.signer
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | ``null`` \| `Signer` |
+| Name    | Type               |
+| :------ | :----------------- |
+| `value` | `null` \| `Signer` |
 
 #### Returns
 
@@ -278,7 +278,7 @@ ModuleWithRoles.signer
 
 #### Defined in
 
-[src/core/module.ts:85](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L85)
+[src/core/module.ts:85](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L85)
 
 ## Methods
 
@@ -290,10 +290,10 @@ Accepts the offer of the specified wallet in `addressofOfferor`.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `listingId` | `BigNumberish` |
-| `addressOfOfferor` | `string` |
+| Name               | Type           |
+| :----------------- | :------------- |
+| `listingId`        | `BigNumberish` |
+| `addressOfOfferor` | `string`       |
 
 #### Returns
 
@@ -305,9 +305,9 @@ Accepts the offer of the specified wallet in `addressofOfferor`.
 
 #### Defined in
 
-[src/modules/marketplace.ts:824](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L824)
+[src/modules/marketplace.ts:824](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L824)
 
-___
+---
 
 ### buyoutAuctionListing
 
@@ -318,6 +318,7 @@ Buyout Auction
 **`remarks`** Buy a specific direct listing from the marketplace.
 
 **`example`**
+
 ```javascript
 // The listing ID of the asset you want to buy
 const listingId = 0;
@@ -328,8 +329,8 @@ console.log(balance);
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type           |
+| :---------- | :------------- |
 | `listingId` | `BigNumberish` |
 
 #### Returns
@@ -342,9 +343,9 @@ console.log(balance);
 
 #### Defined in
 
-[src/modules/marketplace.ts:851](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L851)
+[src/modules/marketplace.ts:851](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L851)
 
-___
+---
 
 ### buyoutDirectListing
 
@@ -355,6 +356,7 @@ Buy Listing
 **`remarks`** Buy a specific direct listing from the marketplace.
 
 **`example`**
+
 ```javascript
 // The listing ID of the asset you want to buy
 const listingId = 0;
@@ -366,10 +368,10 @@ await module.buyoutDirectListing({ listingId, quantityDesired });
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_buyout` | `Object` |
-| `_buyout.listingId` | `BigNumberish` |
+| Name                      | Type           |
+| :------------------------ | :------------- |
+| `_buyout`                 | `Object`       |
+| `_buyout.listingId`       | `BigNumberish` |
 | `_buyout.quantityDesired` | `BigNumberish` |
 
 #### Returns
@@ -382,9 +384,9 @@ await module.buyoutDirectListing({ listingId, quantityDesired });
 
 #### Defined in
 
-[src/modules/marketplace.ts:877](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L877)
+[src/modules/marketplace.ts:877](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L877)
 
-___
+---
 
 ### buyoutListing
 
@@ -399,9 +401,9 @@ if the listing ID passed in is an auction listing.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `listingId` | `BigNumberish` |
+| Name               | Type           |
+| :----------------- | :------------- |
+| `listingId`        | `BigNumberish` |
 | `quantityDesired?` | `BigNumberish` |
 
 #### Returns
@@ -414,9 +416,9 @@ if the listing ID passed in is an auction listing.
 
 #### Defined in
 
-[src/modules/marketplace.ts:1038](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L1038)
+[src/modules/marketplace.ts:1038](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L1038)
 
-___
+---
 
 ### cancelAuctionListing
 
@@ -427,17 +429,18 @@ Cancel Auction Listing
 **`remarks`** Cancel an auction listing on the marketplace
 
 **`example`**
+
 ```javascript
 // The listing ID of the auction listing you want to cancel
-const listingId = "0"
+const listingId = "0";
 
 await module.cancelAuctionListing(listingId);
 ```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type           |
+| :---------- | :------------- |
 | `listingId` | `BigNumberish` |
 
 #### Returns
@@ -450,9 +453,9 @@ await module.cancelAuctionListing(listingId);
 
 #### Defined in
 
-[src/modules/marketplace.ts:970](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L970)
+[src/modules/marketplace.ts:970](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L970)
 
-___
+---
 
 ### cancelDirectListing
 
@@ -463,17 +466,18 @@ Cancel Direct Listing
 **`remarks`** Cancel a direct listing on the marketplace
 
 **`example`**
+
 ```javascript
 // The listing ID of the direct listing you want to cancel
-const listingId = "0"
+const listingId = "0";
 
 await module.cancelDirectListing(listingId);
 ```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type           |
+| :---------- | :------------- |
 | `listingId` | `BigNumberish` |
 
 #### Returns
@@ -486,9 +490,9 @@ await module.cancelDirectListing(listingId);
 
 #### Defined in
 
-[src/modules/marketplace.ts:951](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L951)
+[src/modules/marketplace.ts:951](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L951)
 
-___
+---
 
 ### clearSigner
 
@@ -506,9 +510,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L188)
+[src/core/module.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L188)
 
-___
+---
 
 ### closeAuctionListing
 
@@ -527,10 +531,10 @@ distributed to the sellers wallet.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type           |
+| :---------- | :------------- |
 | `listingId` | `BigNumberish` |
-| `closeFor?` | `string` |
+| `closeFor?` | `string`       |
 
 #### Returns
 
@@ -542,9 +546,9 @@ distributed to the sellers wallet.
 
 #### Defined in
 
-[src/modules/marketplace.ts:989](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L989)
+[src/modules/marketplace.ts:989](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L989)
 
-___
+---
 
 ### connectContract
 
@@ -562,9 +566,9 @@ ___
 
 #### Defined in
 
-[src/modules/marketplace.ts:80](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L80)
+[src/modules/marketplace.ts:80](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L80)
 
-___
+---
 
 ### createAuctionListing
 
@@ -575,6 +579,7 @@ Create Auction
 **`remarks`** Create a new auction where people can bid on an asset.
 
 **`example`**
+
 ```javascript
 // Data of the auction you want to create
 const auction = {
@@ -593,16 +598,16 @@ const auction = {
   // how much people would have to bid to instantly buy the asset
   buyoutPricePerToken: "10",
   // the minimum bid that will be accepted for the token
-  reservePricePerToken: "1",
-}
+  reservePricePerToken: "1"
+};
 
 await module.createAuctionListing(auction);
 ```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type                                                   |
+| :-------- | :----------------------------------------------------- |
 | `listing` | [`NewAuctionListing`](../interfaces/NewAuctionListing) |
 
 #### Returns
@@ -615,9 +620,9 @@ await module.createAuctionListing(auction);
 
 #### Defined in
 
-[src/modules/marketplace.ts:178](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L178)
+[src/modules/marketplace.ts:178](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L178)
 
-___
+---
 
 ### createDirectListing
 
@@ -628,6 +633,7 @@ Create Direct Listing
 **`remarks`** Create a new listing on the marketplace where people can buy an asset directly.
 
 **`example`**
+
 ```javascript
 // Data of the listing you want to create
 const listing = {
@@ -644,16 +650,16 @@ const listing = {
   // address of the currency contract that will be used to pay for the listing
   currencyContractAddress: "0x0000000000000000000000000000000000000000",
   // how much the asset will be sold for
-  buyoutPricePerToken: "1",
-}
+  buyoutPricePerToken: "1"
+};
 
 await module.createDirectListing(listing);
 ```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type                                                 |
+| :-------- | :--------------------------------------------------- |
 | `listing` | [`NewDirectListing`](../interfaces/NewDirectListing) |
 
 #### Returns
@@ -666,9 +672,9 @@ await module.createDirectListing(listing);
 
 #### Defined in
 
-[src/modules/marketplace.ts:119](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L119)
+[src/modules/marketplace.ts:119](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L119)
 
-___
+---
 
 ### exists
 
@@ -686,9 +692,9 @@ whether the given contract exists on-chain
 
 #### Defined in
 
-[src/core/module.ts:126](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L126)
+[src/core/module.ts:126](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L126)
 
-___
+---
 
 ### getActiveOffer
 
@@ -700,10 +706,10 @@ offer has been made, this method will return `undefined`.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type           |
+| :---------- | :------------- |
 | `listingId` | `BigNumberish` |
-| `address` | `string` |
+| `address`   | `string`       |
 
 #### Returns
 
@@ -715,9 +721,9 @@ offer has been made, this method will return `undefined`.
 
 #### Defined in
 
-[src/modules/marketplace.ts:776](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L776)
+[src/modules/marketplace.ts:776](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L776)
 
-___
+---
 
 ### getAllListings
 
@@ -728,13 +734,14 @@ Get Listings
 **`remarks`** Get all listings in the marketplace.
 
 **`example`**
+
 ```javascript
 // Get all listings
 const listings = await module.getAllListings();
 console.log(listings);
 
 // Get only the active listings
-const activeListings = listings.filter((listing) => listing.quantity > 0);
+const activeListings = listings.filter(listing => listing.quantity > 0);
 ```
 
 #### Returns
@@ -747,9 +754,9 @@ const activeListings = listings.filter((listing) => listing.quantity > 0);
 
 #### Defined in
 
-[src/modules/marketplace.ts:1097](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L1097)
+[src/modules/marketplace.ts:1097](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L1097)
 
-___
+---
 
 ### getAllRoleMembers
 
@@ -773,9 +780,9 @@ A record of [Role](../modules#role)s to lists of addresses that are members of t
 
 #### Defined in
 
-[src/core/module.ts:556](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L556)
+[src/core/module.ts:556](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L556)
 
-___
+---
 
 ### getAuctionListing
 
@@ -785,8 +792,8 @@ Fetch an auction listing by Id.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type           |
+| :---------- | :------------- |
 | `listingId` | `BigNumberish` |
 
 #### Returns
@@ -799,9 +806,9 @@ Fetch an auction listing by Id.
 
 #### Defined in
 
-[src/modules/marketplace.ts:399](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L399)
+[src/modules/marketplace.ts:399](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L399)
 
-___
+---
 
 ### getAuctionWinner
 
@@ -812,20 +819,21 @@ Get Auction Winner
 **`remarks`** Get the winner of the auction after an auction ends.
 
 **`example`**
+
 ```javascript
 // The listing ID of the auction that closed
 const listingId = 0;
 
 module
   .getAuctionWinner(listingId)
-  .then((auctionWinner) => console.log(auctionWinner))
-  .catch((err) => console.error(err));
+  .then(auctionWinner => console.log(auctionWinner))
+  .catch(err => console.error(err));
 ```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type           |
+| :---------- | :------------- |
 | `listingId` | `BigNumberish` |
 
 #### Returns
@@ -834,9 +842,9 @@ module
 
 #### Defined in
 
-[src/modules/marketplace.ts:360](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L360)
+[src/modules/marketplace.ts:360](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L360)
 
-___
+---
 
 ### getBidBufferBps
 
@@ -862,9 +870,9 @@ slightly higher bids to win the auctioned items.
 
 #### Defined in
 
-[src/modules/marketplace.ts:816](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L816)
+[src/modules/marketplace.ts:816](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L816)
 
-___
+---
 
 ### getCallOverrides
 
@@ -882,9 +890,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:261](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L261)
+[src/core/module.ts:261](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L261)
 
-___
+---
 
 ### getChainID
 
@@ -902,9 +910,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:235](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L235)
+[src/core/module.ts:235](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L235)
 
-___
+---
 
 ### getDirectListing
 
@@ -914,8 +922,8 @@ Fetch a direct listing by Id.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type           |
+| :---------- | :------------- |
 | `listingId` | `BigNumberish` |
 
 #### Returns
@@ -928,9 +936,9 @@ Fetch a direct listing by Id.
 
 #### Defined in
 
-[src/modules/marketplace.ts:378](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L378)
+[src/modules/marketplace.ts:378](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L378)
 
-___
+---
 
 ### getListing
 
@@ -940,8 +948,8 @@ Helper method to fetch a listing without knowing the type.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type           |
+| :---------- | :------------- |
 | `listingId` | `BigNumberish` |
 
 #### Returns
@@ -954,9 +962,9 @@ Helper method to fetch a listing without knowing the type.
 
 #### Defined in
 
-[src/modules/marketplace.ts:1061](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L1061)
+[src/modules/marketplace.ts:1061](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L1061)
 
-___
+---
 
 ### getMetadata
 
@@ -964,9 +972,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `resolveUrls` | `boolean` | `true` | Whether to resolve the urls in the metadata to a gateway. |
+| Name          | Type      | Default value | Description                                               |
+| :------------ | :-------- | :------------ | :-------------------------------------------------------- |
+| `resolveUrls` | `boolean` | `true`        | Whether to resolve the urls in the metadata to a gateway. |
 
 #### Returns
 
@@ -978,9 +986,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:138](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L138)
+[src/core/module.ts:138](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L138)
 
-___
+---
 
 ### getModuleRoles
 
@@ -1000,9 +1008,9 @@ readonly keyof [`IRoles`](../interfaces/IRoles)[]
 
 #### Defined in
 
-[src/modules/marketplace.ts:73](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L73)
+[src/modules/marketplace.ts:73](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L73)
 
-___
+---
 
 ### getModuleType
 
@@ -1020,9 +1028,9 @@ ___
 
 #### Defined in
 
-[src/modules/marketplace.ts:87](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L87)
+[src/modules/marketplace.ts:87](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L87)
 
-___
+---
 
 ### getProvider
 
@@ -1040,9 +1048,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:228](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L228)
+[src/core/module.ts:228](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L228)
 
-___
+---
 
 ### getRoleMembers
 
@@ -1055,14 +1063,15 @@ Call this to get a list of addresses that are members of a specific role.
 **`see`** [getAllRoleMembers](ModuleWithRoles#getallrolemembers) to get get a list of addresses for all supported roles on the module.
 
 **`example`** Say you want to get the list of addresses that are members of the [minter](../interfaces/IRoles#minter) role.
+
 ```typescript
 const minterAddresses: string[] = await module.getRoleMemberList("minter");
 ```
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                                   | Description                                                  |
+| :----- | :------------------------------------- | :----------------------------------------------------------- |
 | `role` | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to to get a memberlist for. |
 
 #### Returns
@@ -1077,19 +1086,19 @@ The list of addresses that are members of the specific role.
 
 #### Defined in
 
-[src/core/module.ts:532](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L532)
+[src/core/module.ts:532](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L532)
 
-___
+---
 
 ### getSigner
 
-▸ `Protected` **getSigner**(): ``null`` \| `Signer`
+▸ `Protected` **getSigner**(): `null` \| `Signer`
 
 **`internal`**
 
 #### Returns
 
-``null`` \| `Signer`
+`null` \| `Signer`
 
 #### Inherited from
 
@@ -1097,9 +1106,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:202](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L202)
+[src/core/module.ts:202](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L202)
 
-___
+---
 
 ### getSignerAddress
 
@@ -1117,9 +1126,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:219](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L219)
+[src/core/module.ts:219](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L219)
 
-___
+---
 
 ### getTimeBufferInSeconds
 
@@ -1148,9 +1157,9 @@ This value is formatter as basis points (e.g. 5% = 500).
 
 #### Defined in
 
-[src/modules/marketplace.ts:820](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L820)
+[src/modules/marketplace.ts:820](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L820)
 
-___
+---
 
 ### getWinningBid
 
@@ -1161,20 +1170,21 @@ Get Highest Bid
 **`remarks`** Get the current highest bid of an active auction.
 
 **`example`**
+
 ```javascript
 // The listing ID of the auction that closed
 const listingId = 0;
 
 module
   .getWinningBid(listingId)
-  .then((offer) => console.log(offer))
-  .catch((err) => console.error(err));
+  .then(offer => console.log(offer))
+  .catch(err => console.error(err));
 ```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type           |
+| :---------- | :------------- |
 | `listingId` | `BigNumberish` |
 
 #### Returns
@@ -1187,9 +1197,9 @@ module
 
 #### Defined in
 
-[src/modules/marketplace.ts:805](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L805)
+[src/modules/marketplace.ts:805](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L805)
 
-___
+---
 
 ### grantRole
 
@@ -1205,10 +1215,10 @@ Make sure you are sure you want to grant the role to the address.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `role` | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to grant to the address |
-| `address` | `string` | The address to grant the role to |
+| Name      | Type                                   | Description                                              |
+| :-------- | :------------------------------------- | :------------------------------------------------------- |
+| `role`    | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to grant to the address |
+| `address` | `string`                               | The address to grant the role to                         |
 
 #### Returns
 
@@ -1222,9 +1232,9 @@ The transaction receipt
 
 #### Defined in
 
-[src/core/module.ts:680](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L680)
+[src/core/module.ts:680](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L680)
 
-___
+---
 
 ### handleTokenApproval
 
@@ -1232,11 +1242,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `assetContract` | `string` |
-| `tokenId` | `BigNumberish` |
-| `from` | `string` |
+| Name            | Type           |
+| :-------------- | :------------- |
+| `assetContract` | `string`       |
+| `tokenId`       | `BigNumberish` |
+| `from`          | `string`       |
 
 #### Returns
 
@@ -1244,9 +1254,9 @@ ___
 
 #### Defined in
 
-[src/modules/marketplace.ts:496](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L496)
+[src/modules/marketplace.ts:496](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L496)
 
-___
+---
 
 ### hasValidSigner
 
@@ -1264,9 +1274,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:212](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L212)
+[src/core/module.ts:212](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L212)
 
-___
+---
 
 ### isRestrictedListerRoleOnly
 
@@ -1278,9 +1288,9 @@ ___
 
 #### Defined in
 
-[src/modules/marketplace.ts:1128](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L1128)
+[src/modules/marketplace.ts:1128](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L1128)
 
-___
+---
 
 ### isStillValidDirectListing
 
@@ -1289,6 +1299,7 @@ ___
 Use this method to check if a direct listing is still valid.
 
 Ways a direct listing can become invalid:
+
 1. The asset holder transferred the asset to another wallet
 2. The asset holder burned the asset
 3. The asset holder removed the approval on the marketplace
@@ -1297,10 +1308,10 @@ Ways a direct listing can become invalid:
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `listing` | [`DirectListing`](../interfaces/DirectListing) | The listing to check. |
-| `quantity?` | `BigNumberish` | - |
+| Name        | Type                                           | Description           |
+| :---------- | :--------------------------------------------- | :-------------------- |
+| `listing`   | [`DirectListing`](../interfaces/DirectListing) | The listing to check. |
+| `quantity?` | `BigNumberish`                                 | -                     |
 
 #### Returns
 
@@ -1310,9 +1321,9 @@ Ways a direct listing can become invalid:
 
 #### Defined in
 
-[src/modules/marketplace.ts:612](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L612)
+[src/modules/marketplace.ts:612](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L612)
 
-___
+---
 
 ### isTokenApprovedForMarketplace
 
@@ -1330,11 +1341,11 @@ the seller holds enough of the token
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `assetContract` | `string` | The address of the asset contract. |
-| `tokenId` | `BigNumberish` | The token id of the token. |
-| `from` | `string` | The address of the account that owns the token. |
+| Name            | Type           | Description                                     |
+| :-------------- | :------------- | :---------------------------------------------- |
+| `assetContract` | `string`       | The address of the asset contract.              |
+| `tokenId`       | `BigNumberish` | The token id of the token.                      |
+| `from`          | `string`       | The address of the account that owns the token. |
 
 #### Returns
 
@@ -1344,9 +1355,9 @@ the seller holds enough of the token
 
 #### Defined in
 
-[src/modules/marketplace.ts:558](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L558)
+[src/modules/marketplace.ts:558](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L558)
 
-___
+---
 
 ### isWinningBid
 
@@ -1354,11 +1365,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name           | Type           |
+| :------------- | :------------- |
 | `winningPrice` | `BigNumberish` |
-| `newBidPrice` | `BigNumberish` |
-| `bidBuffer` | `BigNumberish` |
+| `newBidPrice`  | `BigNumberish` |
+| `bidBuffer`    | `BigNumberish` |
 
 #### Returns
 
@@ -1366,9 +1377,9 @@ ___
 
 #### Defined in
 
-[src/modules/marketplace.ts:332](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L332)
+[src/modules/marketplace.ts:332](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L332)
 
-___
+---
 
 ### makeAuctionListingBid
 
@@ -1379,6 +1390,7 @@ Bid On Auction
 **`remarks`** Make a bid on an auction listings
 
 **`example`**
+
 ```javascript
 // The listing ID of the asset you want to bid on
 const listingId = 0;
@@ -1390,10 +1402,10 @@ await module.buyoutDirectListing(listingId, bidPricePerToken);
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `bid` | `Object` |
-| `bid.listingId` | `BigNumberish` |
+| Name                | Type           |
+| :------------------ | :------------- |
+| `bid`               | `Object`       |
+| `bid.listingId`     | `BigNumberish` |
 | `bid.pricePerToken` | `BigNumberish` |
 
 #### Returns
@@ -1406,9 +1418,9 @@ await module.buyoutDirectListing(listingId, bidPricePerToken);
 
 #### Defined in
 
-[src/modules/marketplace.ts:284](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L284)
+[src/modules/marketplace.ts:284](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L284)
 
-___
+---
 
 ### makeDirectListingOffer
 
@@ -1418,13 +1430,13 @@ Make an offer on a direct listing.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `offer` | `Object` |
-| `offer.currencyContractAddress` | `string` |
-| `offer.listingId` | `BigNumberish` |
-| `offer.pricePerToken` | `BigNumberish` |
-| `offer.quantityDesired` | `BigNumberish` |
+| Name                            | Type           |
+| :------------------------------ | :------------- |
+| `offer`                         | `Object`       |
+| `offer.currencyContractAddress` | `string`       |
+| `offer.listingId`               | `BigNumberish` |
+| `offer.pricePerToken`           | `BigNumberish` |
+| `offer.quantityDesired`         | `BigNumberish` |
 
 #### Returns
 
@@ -1436,9 +1448,9 @@ Make an offer on a direct listing.
 
 #### Defined in
 
-[src/modules/marketplace.ts:207](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L207)
+[src/modules/marketplace.ts:207](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L207)
 
-___
+---
 
 ### mapAuctionListing
 
@@ -1450,8 +1462,8 @@ Helper method maps the auction listing to the auction listing interface.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type            | Description                                        |
+| :-------- | :-------------- | :------------------------------------------------- |
 | `listing` | `ListingStruct` | The listing to map, as returned from the contract. |
 
 #### Returns
@@ -1462,9 +1474,9 @@ Helper method maps the auction listing to the auction listing interface.
 
 #### Defined in
 
-[src/modules/marketplace.ts:462](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L462)
+[src/modules/marketplace.ts:462](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L462)
 
-___
+---
 
 ### mapDirectListing
 
@@ -1476,8 +1488,8 @@ Helper method maps the auction listing to the direct listing interface.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type            | Description                                        |
+| :-------- | :-------------- | :------------------------------------------------- |
 | `listing` | `ListingStruct` | The listing to map, as returned from the contract. |
 
 #### Returns
@@ -1488,9 +1500,9 @@ Helper method maps the auction listing to the direct listing interface.
 
 #### Defined in
 
-[src/modules/marketplace.ts:426](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L426)
+[src/modules/marketplace.ts:426](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L426)
 
-___
+---
 
 ### mapOffer
 
@@ -1502,10 +1514,10 @@ Maps a contract offer to the strict interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type        |
+| :---------- | :---------- |
 | `listingId` | `BigNumber` |
-| `offer` | `any` |
+| `offer`     | `any`       |
 
 #### Returns
 
@@ -1515,9 +1527,9 @@ Maps a contract offer to the strict interface
 
 #### Defined in
 
-[src/modules/marketplace.ts:758](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L758)
+[src/modules/marketplace.ts:758](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L758)
 
-___
+---
 
 ### onlyRoles
 
@@ -1527,10 +1539,10 @@ Throws an error if an address is missing the roles specified.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `roles` | keyof [`IRoles`](../interfaces/IRoles)[] | The roles to check |
-| `address` | `string` | The address to check |
+| Name      | Type                                     | Description          |
+| :-------- | :--------------------------------------- | :------------------- |
+| `roles`   | keyof [`IRoles`](../interfaces/IRoles)[] | The roles to check   |
+| `address` | `string`                                 | The address to check |
 
 #### Returns
 
@@ -1542,9 +1554,9 @@ Throws an error if an address is missing the roles specified.
 
 #### Defined in
 
-[src/core/module.ts:793](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L793)
+[src/core/module.ts:793](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L793)
 
-___
+---
 
 ### parseEventLogs
 
@@ -1552,10 +1564,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type     |
+| :---------- | :------- |
 | `eventName` | `string` |
-| `logs?` | `Log`[] |
+| `logs?`     | `Log`[]  |
 
 #### Returns
 
@@ -1567,9 +1579,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:452](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L452)
+[src/core/module.ts:452](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L452)
 
-___
+---
 
 ### parseLogs
 
@@ -1577,17 +1589,17 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | `any` |
+| Name | Type  |
+| :--- | :---- |
+| `T`  | `any` |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `eventName` | `string` |
-| `logs?` | `Log`[] |
-| `contract` | `BaseContract` |
+| Name        | Type           |
+| :---------- | :------------- |
+| `eventName` | `string`       |
+| `logs?`     | `Log`[]        |
+| `contract`  | `BaseContract` |
 
 #### Returns
 
@@ -1599,9 +1611,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:471](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L471)
+[src/core/module.ts:471](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L471)
 
-___
+---
 
 ### prepareBatchMetadata
 
@@ -1611,8 +1623,8 @@ Prepares a list of metadata for uploading.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                                      | Description                             |
+| :--------- | :-------------------------------------------------------- | :-------------------------------------- |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject)[] | List of metadata to prepare for upload. |
 
 #### Returns
@@ -1627,9 +1639,9 @@ Prepares a list of metadata for uploading.
 
 #### Defined in
 
-[src/core/module.ts:779](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L779)
+[src/core/module.ts:779](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L779)
 
-___
+---
 
 ### prepareMetadata
 
@@ -1641,8 +1653,8 @@ any File|Buffer|Blob, the metadata is serialized to a string.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                                    | Description                                 |
+| :--------- | :------------------------------------------------------ | :------------------------------------------ |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) | The list of metadata to prepare for upload. |
 
 #### Returns
@@ -1657,9 +1669,9 @@ any File|Buffer|Blob, the metadata is serialized to a string.
 
 #### Defined in
 
-[src/core/module.ts:743](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L743)
+[src/core/module.ts:743](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L743)
 
-___
+---
 
 ### revokeAllRolesFromAddress
 
@@ -1669,8 +1681,8 @@ Call this to revoke all roles given to a specific address.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description                          |
+| :-------- | :------- | :----------------------------------- |
 | `address` | `string` | The address to revoke all roles for. |
 
 #### Returns
@@ -1685,9 +1697,9 @@ A list of roles that were revoked.
 
 #### Defined in
 
-[src/core/module.ts:641](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L641)
+[src/core/module.ts:641](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L641)
 
-___
+---
 
 ### revokeRole
 
@@ -1707,10 +1719,10 @@ There is no way to recover from this.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `role` | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to revoke |
-| `address` | `string` | The address to revoke the role from |
+| Name      | Type                                   | Description                                |
+| :-------- | :------------------------------------- | :----------------------------------------- |
+| `role`    | keyof [`IRoles`](../interfaces/IRoles) | The [role](../interfaces/IRoles) to revoke |
+| `address` | `string`                               | The address to revoke the role from        |
 
 #### Returns
 
@@ -1724,9 +1736,9 @@ The transaction receipt
 
 #### Defined in
 
-[src/core/module.ts:712](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L712)
+[src/core/module.ts:712](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L712)
 
-___
+---
 
 ### sendContractTransaction
 
@@ -1736,11 +1748,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `contract` | `BaseContract` |
-| `fn` | `string` |
-| `args` | `any`[] |
+| Name             | Type            |
+| :--------------- | :-------------- |
+| `contract`       | `BaseContract`  |
+| `fn`             | `string`        |
+| `args`           | `any`[]         |
 | `callOverrides?` | `CallOverrides` |
 
 #### Returns
@@ -1753,9 +1765,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:306](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L306)
+[src/core/module.ts:306](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L306)
 
-___
+---
 
 ### sendTransaction
 
@@ -1765,10 +1777,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `fn` | `string` |
-| `args` | `any`[] |
+| Name             | Type            |
+| :--------------- | :-------------- |
+| `fn`             | `string`        |
+| `args`           | `any`[]         |
 | `callOverrides?` | `CallOverrides` |
 
 #### Returns
@@ -1781,9 +1793,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:295](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L295)
+[src/core/module.ts:295](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L295)
 
-___
+---
 
 ### setAllRoleMembers
 
@@ -1797,18 +1809,19 @@ If you want to add or remove addresses for a single address use [grantRole](Modu
 **`throws`** If you are requestiong a role that does not exist on the module this will throw an [InvariantError](InvariantError).
 
 **`example`** Say you want to overwrite the list of addresses that are members of the [minter](../interfaces/IRoles#minter) role.
+
 ```typescript
 const minterAddresses: string[] = await module.getRoleMemberList("minter");
 await module.setAllRoleMembers({
- minter: []
+  minter: []
 });
 console.log(await module.getRoleMemberList("minter")); // No matter what members had the role before, the new list will be set to []
 ```
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name                 | Type                                    | Description                                                                                          |
+| :------------------- | :-------------------------------------- | :--------------------------------------------------------------------------------------------------- |
 | `rolesWithAddresses` | [`SetAllRoles`](../modules#setallroles) | A record of [Role](../modules#role)s to lists of addresses that should be members of the given role. |
 
 #### Returns
@@ -1821,9 +1834,9 @@ console.log(await module.getRoleMemberList("minter")); // No matter what members
 
 #### Defined in
 
-[src/core/module.ts:582](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L582)
+[src/core/module.ts:582](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L582)
 
-___
+---
 
 ### setAllowance
 
@@ -1831,11 +1844,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `BigNumber` |
-| `currencyAddress` | `string` |
-| `overrides` | `any` |
+| Name              | Type        |
+| :---------------- | :---------- |
+| `value`           | `BigNumber` |
+| `currencyAddress` | `string`    |
+| `overrides`       | `any`       |
 
 #### Returns
 
@@ -1843,9 +1856,9 @@ ___
 
 #### Defined in
 
-[src/modules/marketplace.ts:243](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L243)
+[src/modules/marketplace.ts:243](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L243)
 
-___
+---
 
 ### setBidBufferBps
 
@@ -1856,8 +1869,8 @@ The bid buffer is represented in basis points.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type           |
+| :------- | :------------- |
 | `buffer` | `BigNumberish` |
 
 #### Returns
@@ -1870,9 +1883,9 @@ The bid buffer is represented in basis points.
 
 #### Defined in
 
-[src/modules/marketplace.ts:1018](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L1018)
+[src/modules/marketplace.ts:1018](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L1018)
 
-___
+---
 
 ### setMetadata
 
@@ -1880,8 +1893,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                                    | Description          |
+| :--------- | :------------------------------------------------------ | :------------------- |
 | `metadata` | [`MetadataURIOrObject`](../modules#metadatauriorobject) | The metadata to set. |
 
 #### Returns
@@ -1894,9 +1907,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:160](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L160)
+[src/core/module.ts:160](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L160)
 
-___
+---
 
 ### setProviderOrSigner
 
@@ -1906,8 +1919,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name               | Type                                              |
+| :----------------- | :------------------------------------------------ |
 | `providerOrSigner` | [`ProviderOrSigner`](../modules#providerorsigner) |
 
 #### Returns
@@ -1920,9 +1933,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:172](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L172)
+[src/core/module.ts:172](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L172)
 
-___
+---
 
 ### setRestrictedListerRoleOnly
 
@@ -1930,8 +1943,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name           | Type      |
+| :------------- | :-------- |
 | `isRestricted` | `boolean` |
 
 #### Returns
@@ -1940,9 +1953,9 @@ ___
 
 #### Defined in
 
-[src/modules/marketplace.ts:1132](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L1132)
+[src/modules/marketplace.ts:1132](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L1132)
 
-___
+---
 
 ### setTimeBufferInSeconds
 
@@ -1952,8 +1965,8 @@ Sets the current time buffer on the marketplace contract.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type           |
+| :------- | :------------- |
 | `buffer` | `BigNumberish` |
 
 #### Returns
@@ -1966,9 +1979,9 @@ Sets the current time buffer on the marketplace contract.
 
 #### Defined in
 
-[src/modules/marketplace.ts:1028](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L1028)
+[src/modules/marketplace.ts:1028](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L1028)
 
-___
+---
 
 ### signTypedData
 
@@ -1976,17 +1989,17 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `signer` | `Signer` |
-| `from` | `string` |
-| `domain` | `Object` |
-| `domain.chainId` | `number` |
-| `domain.name` | `string` |
+| Name                       | Type     |
+| :------------------------- | :------- |
+| `signer`                   | `Signer` |
+| `from`                     | `string` |
+| `domain`                   | `Object` |
+| `domain.chainId`           | `number` |
+| `domain.name`              | `string` |
 | `domain.verifyingContract` | `string` |
-| `domain.version` | `string` |
-| `types` | `any` |
-| `message` | `any` |
+| `domain.version`           | `string` |
+| `types`                    | `any`    |
+| `message`                  | `any`    |
 
 #### Returns
 
@@ -1998,9 +2011,9 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:415](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/core/module.ts#L415)
+[src/core/module.ts:415](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/core/module.ts#L415)
 
-___
+---
 
 ### updateAuctionListing
 
@@ -2010,8 +2023,8 @@ Updates an auction listing.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type                                             |
+| :-------- | :----------------------------------------------- |
 | `listing` | [`AuctionListing`](../interfaces/AuctionListing) |
 
 #### Returns
@@ -2024,9 +2037,9 @@ Updates an auction listing.
 
 #### Defined in
 
-[src/modules/marketplace.ts:926](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L926)
+[src/modules/marketplace.ts:926](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L926)
 
-___
+---
 
 ### updateDirectListing
 
@@ -2036,8 +2049,8 @@ Updates a direct listing.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type                                           |
+| :-------- | :--------------------------------------------- |
 | `listing` | [`DirectListing`](../interfaces/DirectListing) |
 
 #### Returns
@@ -2050,9 +2063,9 @@ Updates a direct listing.
 
 #### Defined in
 
-[src/modules/marketplace.ts:913](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L913)
+[src/modules/marketplace.ts:913](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L913)
 
-___
+---
 
 ### validateAuctionListing
 
@@ -2062,8 +2075,8 @@ Throws error if listing could not be found
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type        | Description          |
+| :---------- | :---------- | :------------------- |
 | `listingId` | `BigNumber` | Listing to check for |
 
 #### Returns
@@ -2072,9 +2085,9 @@ Throws error if listing could not be found
 
 #### Defined in
 
-[src/modules/marketplace.ts:740](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L740)
+[src/modules/marketplace.ts:740](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L740)
 
-___
+---
 
 ### validateDirectListing
 
@@ -2084,8 +2097,8 @@ Throws error if listing could not be found
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type        | Description          |
+| :---------- | :---------- | :------------------- |
 | `listingId` | `BigNumber` | Listing to check for |
 
 #### Returns
@@ -2094,9 +2107,9 @@ Throws error if listing could not be found
 
 #### Defined in
 
-[src/modules/marketplace.ts:724](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L724)
+[src/modules/marketplace.ts:724](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L724)
 
-___
+---
 
 ### validateNewListingParam
 
@@ -2108,8 +2121,8 @@ Used to verify fields in new listing.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                                                                                           |
+| :------ | :------------------------------------------------------------------------------------------------------------- |
 | `param` | [`NewDirectListing`](../interfaces/NewDirectListing) \| [`NewAuctionListing`](../interfaces/NewAuctionListing) |
 
 #### Returns
@@ -2118,4 +2131,4 @@ Used to verify fields in new listing.
 
 #### Defined in
 
-[src/modules/marketplace.ts:678](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/marketplace.ts#L678)
+[src/modules/marketplace.ts:678](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/marketplace.ts#L678)

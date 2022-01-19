@@ -20,9 +20,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/token.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/token.ts#L18)
+[src/modules/token.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/token.ts#L18)
 
-___
+---
 
 ### amount
 
@@ -30,4 +30,4 @@ ___
 
 #### Defined in
 
-[src/modules/token.ts:19](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/token.ts#L19)
+[src/modules/token.ts:19](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/token.ts#L19)

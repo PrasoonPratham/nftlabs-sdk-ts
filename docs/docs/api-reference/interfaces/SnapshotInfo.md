@@ -14,9 +14,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/snapshots/SnapshotInfo.ts:4](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/snapshots/SnapshotInfo.ts#L4)
+[src/types/snapshots/SnapshotInfo.ts:4](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/snapshots/SnapshotInfo.ts#L4)
 
-___
+---
 
 ### snapshot
 
@@ -24,9 +24,9 @@ ___
 
 #### Defined in
 
-[src/types/snapshots/SnapshotInfo.ts:6](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/snapshots/SnapshotInfo.ts#L6)
+[src/types/snapshots/SnapshotInfo.ts:6](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/snapshots/SnapshotInfo.ts#L6)
 
-___
+---
 
 ### snapshotUri
 
@@ -34,4 +34,4 @@ ___
 
 #### Defined in
 
-[src/types/snapshots/SnapshotInfo.ts:5](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/snapshots/SnapshotInfo.ts#L5)
+[src/types/snapshots/SnapshotInfo.ts:5](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/snapshots/SnapshotInfo.ts#L5)

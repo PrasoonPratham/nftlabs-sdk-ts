@@ -10,15 +10,15 @@ The shared NFT metadata.
 
 ## Properties
 
-### animation\_url
+### animation_url
 
-• `Optional` **animation\_url**: `string`
+• `Optional` **animation_url**: `string`
 
 #### Defined in
 
-[src/common/nft.ts:67](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/nft.ts#L67)
+[src/common/nft.ts:67](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/nft.ts#L67)
 
-___
+---
 
 ### description
 
@@ -26,19 +26,19 @@ ___
 
 #### Defined in
 
-[src/common/nft.ts:64](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/nft.ts#L64)
+[src/common/nft.ts:64](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/nft.ts#L64)
 
-___
+---
 
-### external\_url
+### external_url
 
-• `Optional` **external\_url**: `string`
+• `Optional` **external_url**: `string`
 
 #### Defined in
 
-[src/common/nft.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/nft.ts#L66)
+[src/common/nft.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/nft.ts#L66)
 
-___
+---
 
 ### id
 
@@ -46,9 +46,9 @@ ___
 
 #### Defined in
 
-[src/common/nft.ts:61](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/nft.ts#L61)
+[src/common/nft.ts:61](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/nft.ts#L61)
 
-___
+---
 
 ### image
 
@@ -56,9 +56,9 @@ ___
 
 #### Defined in
 
-[src/common/nft.ts:65](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/nft.ts#L65)
+[src/common/nft.ts:65](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/nft.ts#L65)
 
-___
+---
 
 ### name
 
@@ -66,9 +66,9 @@ ___
 
 #### Defined in
 
-[src/common/nft.ts:63](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/nft.ts#L63)
+[src/common/nft.ts:63](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/nft.ts#L63)
 
-___
+---
 
 ### properties
 
@@ -76,9 +76,9 @@ ___
 
 #### Defined in
 
-[src/common/nft.ts:68](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/nft.ts#L68)
+[src/common/nft.ts:68](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/nft.ts#L68)
 
-___
+---
 
 ### uri
 
@@ -86,4 +86,4 @@ ___
 
 #### Defined in
 
-[src/common/nft.ts:62](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/common/nft.ts#L62)
+[src/common/nft.ts:62](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/common/nft.ts#L62)

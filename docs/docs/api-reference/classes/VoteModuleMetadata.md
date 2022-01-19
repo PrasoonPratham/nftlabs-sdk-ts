@@ -36,9 +36,9 @@ The description of the module.
 
 #### Defined in
 
-[src/types/module-deployments/CommonModuleMetadata.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/module-deployments/CommonModuleMetadata.ts#L23)
+[src/types/module-deployments/CommonModuleMetadata.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/module-deployments/CommonModuleMetadata.ts#L23)
 
-___
+---
 
 ### externalLink
 
@@ -52,9 +52,9 @@ An external link for the module.
 
 #### Defined in
 
-[src/types/module-deployments/CommonModuleMetadata.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/module-deployments/CommonModuleMetadata.ts#L39)
+[src/types/module-deployments/CommonModuleMetadata.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/module-deployments/CommonModuleMetadata.ts#L39)
 
-___
+---
 
 ### image
 
@@ -72,9 +72,9 @@ and the property is the IPFS hash uri).
 
 #### Defined in
 
-[src/types/module-deployments/CommonModuleMetadata.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/module-deployments/CommonModuleMetadata.ts#L33)
+[src/types/module-deployments/CommonModuleMetadata.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/module-deployments/CommonModuleMetadata.ts#L33)
 
-___
+---
 
 ### minimumNumberOfTokensNeededToPropose
 
@@ -84,9 +84,9 @@ The minimum number of tokens required to propose a proposal.
 
 #### Defined in
 
-[src/types/module-deployments/VoteModuleMetadata.ts:53](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/module-deployments/VoteModuleMetadata.ts#L53)
+[src/types/module-deployments/VoteModuleMetadata.ts:53](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/module-deployments/VoteModuleMetadata.ts#L53)
 
-___
+---
 
 ### name
 
@@ -100,9 +100,9 @@ The name of the module.
 
 #### Defined in
 
-[src/types/module-deployments/CommonModuleMetadata.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/module-deployments/CommonModuleMetadata.ts#L17)
+[src/types/module-deployments/CommonModuleMetadata.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/module-deployments/CommonModuleMetadata.ts#L17)
 
-___
+---
 
 ### proposalStartWaitTimeInSeconds
 
@@ -112,9 +112,9 @@ The wait time before a proposal can begin being voted on (seconds).
 
 #### Defined in
 
-[src/types/module-deployments/VoteModuleMetadata.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/module-deployments/VoteModuleMetadata.ts#L10)
+[src/types/module-deployments/VoteModuleMetadata.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/module-deployments/VoteModuleMetadata.ts#L10)
 
-___
+---
 
 ### proposalVotingTimeInSeconds
 
@@ -124,9 +124,9 @@ How long a proposal is open for voting (seconds).
 
 #### Defined in
 
-[src/types/module-deployments/VoteModuleMetadata.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/module-deployments/VoteModuleMetadata.ts#L16)
+[src/types/module-deployments/VoteModuleMetadata.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/module-deployments/VoteModuleMetadata.ts#L16)
 
-___
+---
 
 ### votingDelay
 
@@ -138,9 +138,9 @@ Every proposal will wait `votingDelay` number of blocks before it can be voted o
 
 #### Defined in
 
-[src/types/module-deployments/VoteModuleMetadata.ts:24](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/module-deployments/VoteModuleMetadata.ts#L24)
+[src/types/module-deployments/VoteModuleMetadata.ts:24](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/module-deployments/VoteModuleMetadata.ts#L24)
 
-___
+---
 
 ### votingPeriod
 
@@ -153,9 +153,9 @@ This varies by chain.
 
 #### Defined in
 
-[src/types/module-deployments/VoteModuleMetadata.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/module-deployments/VoteModuleMetadata.ts#L33)
+[src/types/module-deployments/VoteModuleMetadata.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/module-deployments/VoteModuleMetadata.ts#L33)
 
-___
+---
 
 ### votingQuorumFraction
 
@@ -167,9 +167,9 @@ By default it is set to 0.
 
 #### Defined in
 
-[src/types/module-deployments/VoteModuleMetadata.ts:47](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/module-deployments/VoteModuleMetadata.ts#L47)
+[src/types/module-deployments/VoteModuleMetadata.ts:47](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/module-deployments/VoteModuleMetadata.ts#L47)
 
-___
+---
 
 ### votingTokenAddress
 
@@ -179,4 +179,4 @@ The ERC20 token address that is used in the voting process.
 
 #### Defined in
 
-[src/types/module-deployments/VoteModuleMetadata.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/types/module-deployments/VoteModuleMetadata.ts#L39)
+[src/types/module-deployments/VoteModuleMetadata.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/types/module-deployments/VoteModuleMetadata.ts#L39)

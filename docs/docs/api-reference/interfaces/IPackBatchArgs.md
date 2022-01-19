@@ -16,9 +16,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/pack.ts:78](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/pack.ts#L78)
+[src/modules/pack.ts:78](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/pack.ts#L78)
 
-___
+---
 
 ### tokenId
 
@@ -26,4 +26,4 @@ ___
 
 #### Defined in
 
-[src/modules/pack.ts:77](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/modules/pack.ts#L77)
+[src/modules/pack.ts:77](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/modules/pack.ts#L77)

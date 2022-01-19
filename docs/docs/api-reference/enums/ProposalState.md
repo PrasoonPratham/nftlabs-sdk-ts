@@ -14,9 +14,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/enums/vote/ProposalState.ts:3](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/enums/vote/ProposalState.ts#L3)
+[src/enums/vote/ProposalState.ts:3](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/enums/vote/ProposalState.ts#L3)
 
-___
+---
 
 ### Canceled
 
@@ -24,9 +24,9 @@ ___
 
 #### Defined in
 
-[src/enums/vote/ProposalState.ts:4](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/enums/vote/ProposalState.ts#L4)
+[src/enums/vote/ProposalState.ts:4](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/enums/vote/ProposalState.ts#L4)
 
-___
+---
 
 ### Defeated
 
@@ -34,9 +34,9 @@ ___
 
 #### Defined in
 
-[src/enums/vote/ProposalState.ts:5](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/enums/vote/ProposalState.ts#L5)
+[src/enums/vote/ProposalState.ts:5](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/enums/vote/ProposalState.ts#L5)
 
-___
+---
 
 ### Executed
 
@@ -44,9 +44,9 @@ ___
 
 #### Defined in
 
-[src/enums/vote/ProposalState.ts:9](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/enums/vote/ProposalState.ts#L9)
+[src/enums/vote/ProposalState.ts:9](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/enums/vote/ProposalState.ts#L9)
 
-___
+---
 
 ### Expired
 
@@ -54,9 +54,9 @@ ___
 
 #### Defined in
 
-[src/enums/vote/ProposalState.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/enums/vote/ProposalState.ts#L8)
+[src/enums/vote/ProposalState.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/enums/vote/ProposalState.ts#L8)
 
-___
+---
 
 ### Pending
 
@@ -64,9 +64,9 @@ ___
 
 #### Defined in
 
-[src/enums/vote/ProposalState.ts:2](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/enums/vote/ProposalState.ts#L2)
+[src/enums/vote/ProposalState.ts:2](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/enums/vote/ProposalState.ts#L2)
 
-___
+---
 
 ### Queued
 
@@ -74,9 +74,9 @@ ___
 
 #### Defined in
 
-[src/enums/vote/ProposalState.ts:7](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/enums/vote/ProposalState.ts#L7)
+[src/enums/vote/ProposalState.ts:7](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/enums/vote/ProposalState.ts#L7)
 
-___
+---
 
 ### Succeeded
 
@@ -84,4 +84,4 @@ ___
 
 #### Defined in
 
-[src/enums/vote/ProposalState.ts:6](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/e7d1d7f/src/enums/vote/ProposalState.ts#L6)
+[src/enums/vote/ProposalState.ts:6](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/68c3596/src/enums/vote/ProposalState.ts#L6)
