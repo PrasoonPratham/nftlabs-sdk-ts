@@ -66,9 +66,9 @@ const config = {
             label: "Tutorial"
           },
           {
-            to: "docs/api/",
+            to: "docs/api-reference/",
             activeBasePath: "docs",
-            label: "API",
+            label: "API Reference",
             position: "left"
           },
           { to: "/blog", label: "Blog", position: "left" },
@@ -137,7 +137,15 @@ const config = {
       "docusaurus-plugin-typedoc",
       {
         entryPoints: ["../src/index.ts"],
-        tsconfig: "../tsconfig.json"
+        tsconfig: "../tsconfig.json",
+
+        // Plugin options
+        out: "api-reference",
+        sidebar: {
+          categoryLabel: "API Reference",
+          position: 0,
+          fullNames: true
+        }
       }
     ]
   ]
