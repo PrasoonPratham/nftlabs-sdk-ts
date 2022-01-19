@@ -10,7 +10,7 @@ const config = {
   // URL Config.
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
   // Favicon.
@@ -138,10 +138,10 @@ const config = {
       // Plugin / TypeDoc options
       {
         entryPoints: ["../src/index.ts"],
-        tsconfig: "../tsconfig.json"
-      }
-    ]
-  ]
+        tsconfig: "../tsconfig.json",
+      },
+    ],
+  ],
 };
 
 module.exports = config;
