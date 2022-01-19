@@ -32,7 +32,7 @@ Error.constructor
 
 #### Defined in
 
-[src/common/error.ts:168](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/error.ts#L168)
+[src/common/error.ts:168](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/error.ts#L168)
 
 ## Properties
 

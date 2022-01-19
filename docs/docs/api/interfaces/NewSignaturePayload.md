@@ -25,7 +25,7 @@ on the token. If this is set to the 0x0 address, then its free to mint.
 
 #### Defined in
 
-[src/types/signature-minting/NewSignaturePayload.ts:27](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/signature-minting/NewSignaturePayload.ts#L27)
+[src/types/signature-minting/NewSignaturePayload.ts:27](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/signature-minting/NewSignaturePayload.ts#L27)
 
 ___
 
@@ -39,7 +39,7 @@ If this value is an empty string, then a uuid-v4 will be generated.
 
 #### Defined in
 
-[src/types/signature-minting/NewSignaturePayload.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/signature-minting/NewSignaturePayload.ts#L45)
+[src/types/signature-minting/NewSignaturePayload.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/signature-minting/NewSignaturePayload.ts#L45)
 
 ___
 
@@ -51,7 +51,7 @@ The metadata of the token to generate a signature for.
 
 #### Defined in
 
-[src/types/signature-minting/NewSignaturePayload.ts:11](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/signature-minting/NewSignaturePayload.ts#L11)
+[src/types/signature-minting/NewSignaturePayload.ts:11](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/signature-minting/NewSignaturePayload.ts#L11)
 
 ___
 
@@ -64,7 +64,7 @@ such that it can no longer be claimed.
 
 #### Defined in
 
-[src/types/signature-minting/NewSignaturePayload.ts:38](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/signature-minting/NewSignaturePayload.ts#L38)
+[src/types/signature-minting/NewSignaturePayload.ts:38](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/signature-minting/NewSignaturePayload.ts#L38)
 
 ___
 
@@ -76,7 +76,7 @@ The epoch start time (in seconds) when the signature can be claimed.
 
 #### Defined in
 
-[src/types/signature-minting/NewSignaturePayload.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/signature-minting/NewSignaturePayload.ts#L32)
+[src/types/signature-minting/NewSignaturePayload.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/signature-minting/NewSignaturePayload.ts#L32)
 
 ___
 
@@ -88,7 +88,7 @@ The price per the NFT being minted for this particular signature.
 
 #### Defined in
 
-[src/types/signature-minting/NewSignaturePayload.ts:21](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/signature-minting/NewSignaturePayload.ts#L21)
+[src/types/signature-minting/NewSignaturePayload.ts:21](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/signature-minting/NewSignaturePayload.ts#L21)
 
 ___
 
@@ -100,4 +100,4 @@ The receiver of the NFTs being minted when the signature is claimed.
 
 #### Defined in
 
-[src/types/signature-minting/NewSignaturePayload.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/signature-minting/NewSignaturePayload.ts#L16)
+[src/types/signature-minting/NewSignaturePayload.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/signature-minting/NewSignaturePayload.ts#L16)

@@ -41,7 +41,7 @@ Access this module by calling [ThirdwebSDK.getAppModule](ThirdwebSDK#getappmodul
 
 #### Defined in
 
-[src/core/module.ts:509](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L509)
+[src/core/module.ts:509](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L509)
 
 ## Properties
 
@@ -51,7 +51,7 @@ Access this module by calling [ThirdwebSDK.getAppModule](ThirdwebSDK#getappmodul
 
 #### Defined in
 
-[src/modules/app.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L81)
+[src/modules/app.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L81)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:80](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L80)
+[src/modules/app.ts:80](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L80)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L45)
+[src/core/module.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L45)
 
 ___
 
@@ -95,7 +95,7 @@ Contract connects to the SDK signer or provider
 
 #### Defined in
 
-[src/core/module.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L93)
+[src/core/module.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L93)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L50)
+[src/core/module.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L50)
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:82](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L82)
+[src/modules/app.ts:82](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L82)
 
 ___
 
@@ -140,7 +140,7 @@ We do not treat it as a fully fledged module on the contract level, so it does n
 
 #### Defined in
 
-[src/modules/app.ts:100](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L100)
+[src/modules/app.ts:100](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L100)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L55)
+[src/core/module.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L55)
 
 ___
 
@@ -176,7 +176,7 @@ Contract connects to the [ISDKOptions.readOnlyRpcUrl](../interfaces/ISDKOptions#
 
 #### Defined in
 
-[src/core/module.ts:98](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L98)
+[src/core/module.ts:98](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L98)
 
 ___
 
@@ -190,7 +190,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:57](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L57)
+[src/core/module.ts:57](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L57)
 
 ___
 
@@ -200,7 +200,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:84](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L84)
+[src/modules/app.ts:84](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L84)
 
 ## Accessors
 
@@ -220,7 +220,7 @@ ModuleWithRoles.providerOrSigner
 
 #### Defined in
 
-[src/core/module.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L66)
+[src/core/module.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L66)
 
 • `Protected` `set` **providerOrSigner**(`value`): `void`
 
@@ -242,7 +242,7 @@ ModuleWithRoles.providerOrSigner
 
 #### Defined in
 
-[src/core/module.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L70)
+[src/core/module.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L70)
 
 ___
 
@@ -262,7 +262,7 @@ ModuleWithRoles.roles
 
 #### Defined in
 
-[src/core/module.ts:504](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L504)
+[src/core/module.ts:504](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L504)
 
 ___
 
@@ -282,7 +282,7 @@ ModuleWithRoles.signer
 
 #### Defined in
 
-[src/core/module.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L81)
+[src/core/module.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L81)
 
 • `Protected` `set` **signer**(`value`): `void`
 
@@ -304,7 +304,7 @@ ModuleWithRoles.signer
 
 #### Defined in
 
-[src/core/module.ts:85](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L85)
+[src/core/module.ts:85](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L85)
 
 ## Methods
 
@@ -338,7 +338,7 @@ The address of the deployed module
 
 #### Defined in
 
-[src/modules/app.ts:469](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L469)
+[src/modules/app.ts:469](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L469)
 
 ___
 
@@ -362,7 +362,7 @@ Helper method that handles `image` property uploads if its a file
 
 #### Defined in
 
-[src/modules/app.ts:441](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L441)
+[src/modules/app.ts:441](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L441)
 
 ___
 
@@ -380,7 +380,7 @@ Check the balance of the project wallet in the native token of the chain
 
 #### Defined in
 
-[src/modules/app.ts:1124](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L1124)
+[src/modules/app.ts:1124](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L1124)
 
 ___
 
@@ -405,7 +405,7 @@ ERC20 token contract
 
 #### Defined in
 
-[src/modules/app.ts:1146](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L1146)
+[src/modules/app.ts:1146](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L1146)
 
 ___
 
@@ -425,7 +425,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L188)
+[src/core/module.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L188)
 
 ___
 
@@ -445,7 +445,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:105](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L105)
+[src/modules/app.ts:105](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L105)
 
 ___
 
@@ -473,7 +473,7 @@ IAppModule.deployBundleDropModule
 
 #### Defined in
 
-[src/modules/app.ts:842](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L842)
+[src/modules/app.ts:842](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L842)
 
 ___
 
@@ -501,7 +501,7 @@ IAppModule.deployBundleModule
 
 #### Defined in
 
-[src/modules/app.ts:502](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L502)
+[src/modules/app.ts:502](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L502)
 
 ___
 
@@ -529,7 +529,7 @@ IAppModule.deployCurrencyModule
 
 #### Defined in
 
-[src/modules/app.ts:631](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L631)
+[src/modules/app.ts:631](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L631)
 
 ___
 
@@ -559,7 +559,7 @@ IAppModule.deployDatastoreModule
 
 #### Defined in
 
-[src/modules/app.ts:896](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L896)
+[src/modules/app.ts:896](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L896)
 
 ___
 
@@ -587,7 +587,7 @@ IAppModule.deployDropModule
 
 #### Defined in
 
-[src/modules/app.ts:787](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L787)
+[src/modules/app.ts:787](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L787)
 
 ___
 
@@ -615,7 +615,7 @@ IAppModule.deployMarketModule
 
 #### Defined in
 
-[src/modules/app.ts:705](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L705)
+[src/modules/app.ts:705](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L705)
 
 ___
 
@@ -639,7 +639,7 @@ IAppModule.deployMarketplaceModule
 
 #### Defined in
 
-[src/modules/app.ts:1201](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L1201)
+[src/modules/app.ts:1201](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L1201)
 
 ___
 
@@ -667,7 +667,7 @@ IAppModule.deployNftModule
 
 #### Defined in
 
-[src/modules/app.ts:580](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L580)
+[src/modules/app.ts:580](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L580)
 
 ___
 
@@ -695,7 +695,7 @@ IAppModule.deployPackModule
 
 #### Defined in
 
-[src/modules/app.ts:741](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L741)
+[src/modules/app.ts:741](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L741)
 
 ___
 
@@ -723,7 +723,7 @@ IAppModule.deploySplitsModule
 
 #### Defined in
 
-[src/modules/app.ts:543](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L543)
+[src/modules/app.ts:543](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L543)
 
 ___
 
@@ -751,7 +751,7 @@ IAppModule.deployTokenModule
 
 #### Defined in
 
-[src/modules/app.ts:668](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L668)
+[src/modules/app.ts:668](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L668)
 
 ___
 
@@ -779,7 +779,7 @@ IAppModule.deployVoteModule
 
 #### Defined in
 
-[src/modules/app.ts:927](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L927)
+[src/modules/app.ts:927](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L927)
 
 ___
 
@@ -799,7 +799,7 @@ whether the given contract exists on-chain
 
 #### Defined in
 
-[src/core/module.ts:126](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L126)
+[src/core/module.ts:126](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L126)
 
 ___
 
@@ -821,7 +821,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:165](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L165)
+[src/modules/app.ts:165](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L165)
 
 ___
 
@@ -845,7 +845,7 @@ Array of module metadata
 
 #### Defined in
 
-[src/modules/app.ts:297](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L297)
+[src/modules/app.ts:297](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L297)
 
 ___
 
@@ -871,7 +871,7 @@ A record of [Role](../modules#role)s to lists of addresses that are members of t
 
 #### Defined in
 
-[src/core/module.ts:556](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L556)
+[src/core/module.ts:556](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L556)
 
 ___
 
@@ -885,7 +885,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:131](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L131)
+[src/modules/app.ts:131](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L131)
 
 ___
 
@@ -899,7 +899,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:225](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L225)
+[src/modules/app.ts:225](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L225)
 
 ___
 
@@ -919,7 +919,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:261](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L261)
+[src/core/module.ts:261](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L261)
 
 ___
 
@@ -939,7 +939,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:235](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L235)
+[src/core/module.ts:235](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L235)
 
 ___
 
@@ -959,7 +959,7 @@ A promise of an array of Bundle modules.
 
 #### Defined in
 
-[src/modules/app.ts:221](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L221)
+[src/modules/app.ts:221](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L221)
 
 ___
 
@@ -973,7 +973,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:139](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L139)
+[src/modules/app.ts:139](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L139)
 
 ___
 
@@ -993,7 +993,7 @@ A promise of an array of Currency modules.
 
 #### Defined in
 
-[src/modules/app.ts:239](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L239)
+[src/modules/app.ts:239](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L239)
 
 ___
 
@@ -1007,7 +1007,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:151](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L151)
+[src/modules/app.ts:151](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L151)
 
 ___
 
@@ -1029,7 +1029,7 @@ A promise of an array of Datastore modules.
 
 #### Defined in
 
-[src/modules/app.ts:254](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L254)
+[src/modules/app.ts:254](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L254)
 
 ___
 
@@ -1043,7 +1043,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:147](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L147)
+[src/modules/app.ts:147](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L147)
 
 ___
 
@@ -1063,7 +1063,7 @@ A promise of an array of Drop modules.
 
 #### Defined in
 
-[src/modules/app.ts:282](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L282)
+[src/modules/app.ts:282](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L282)
 
 ___
 
@@ -1081,7 +1081,7 @@ The address of the trusted forwarder contract
 
 #### Defined in
 
-[src/modules/app.ts:331](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L331)
+[src/modules/app.ts:331](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L331)
 
 ___
 
@@ -1095,7 +1095,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:143](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L143)
+[src/modules/app.ts:143](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L143)
 
 ___
 
@@ -1115,7 +1115,7 @@ A promise of an array of Market modules.
 
 #### Defined in
 
-[src/modules/app.ts:268](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L268)
+[src/modules/app.ts:268](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L268)
 
 ___
 
@@ -1139,7 +1139,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:138](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L138)
+[src/core/module.ts:138](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L138)
 
 ___
 
@@ -1161,7 +1161,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:123](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L123)
+[src/modules/app.ts:123](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L123)
 
 ___
 
@@ -1183,7 +1183,7 @@ readonly keyof [`IRoles`](../interfaces/IRoles)[]
 
 #### Defined in
 
-[src/modules/app.ts:90](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L90)
+[src/modules/app.ts:90](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L90)
 
 ___
 
@@ -1203,7 +1203,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:115](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L115)
+[src/modules/app.ts:115](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L115)
 
 ___
 
@@ -1217,7 +1217,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:127](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L127)
+[src/modules/app.ts:127](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L127)
 
 ___
 
@@ -1237,7 +1237,7 @@ A promise of an array of NFT modules.
 
 #### Defined in
 
-[src/modules/app.ts:207](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L207)
+[src/modules/app.ts:207](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L207)
 
 ___
 
@@ -1251,7 +1251,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:135](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L135)
+[src/modules/app.ts:135](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L135)
 
 ___
 
@@ -1271,7 +1271,7 @@ A promise of an array of Pack modules.
 
 #### Defined in
 
-[src/modules/app.ts:193](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L193)
+[src/modules/app.ts:193](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L193)
 
 ___
 
@@ -1291,7 +1291,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:228](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L228)
+[src/core/module.ts:228](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L228)
 
 ___
 
@@ -1328,7 +1328,7 @@ The list of addresses that are members of the specific role.
 
 #### Defined in
 
-[src/core/module.ts:532](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L532)
+[src/core/module.ts:532](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L532)
 
 ___
 
@@ -1348,7 +1348,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:155](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L155)
+[src/modules/app.ts:155](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L155)
 
 ___
 
@@ -1368,7 +1368,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:202](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L202)
+[src/core/module.ts:202](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L202)
 
 ___
 
@@ -1388,7 +1388,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:219](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L219)
+[src/core/module.ts:219](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L219)
 
 ___
 
@@ -1423,7 +1423,7 @@ The transaction receipt
 
 #### Defined in
 
-[src/core/module.ts:680](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L680)
+[src/core/module.ts:680](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L680)
 
 ___
 
@@ -1443,7 +1443,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:212](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L212)
+[src/core/module.ts:212](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L212)
 
 ___
 
@@ -1460,7 +1460,7 @@ Check if contract is v1 or v2. If the contract doesn't have version = v1 contrac
 
 #### Defined in
 
-[src/modules/app.ts:1181](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L1181)
+[src/modules/app.ts:1181](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L1181)
 
 ___
 
@@ -1476,7 +1476,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:1197](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L1197)
+[src/modules/app.ts:1197](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L1197)
 
 ___
 
@@ -1503,7 +1503,7 @@ Throws an error if an address is missing the roles specified.
 
 #### Defined in
 
-[src/core/module.ts:793](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L793)
+[src/core/module.ts:793](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L793)
 
 ___
 
@@ -1528,7 +1528,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:452](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L452)
+[src/core/module.ts:452](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L452)
 
 ___
 
@@ -1560,7 +1560,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:471](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L471)
+[src/core/module.ts:471](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L471)
 
 ___
 
@@ -1588,7 +1588,7 @@ Prepares a list of metadata for uploading.
 
 #### Defined in
 
-[src/core/module.ts:779](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L779)
+[src/core/module.ts:779](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L779)
 
 ___
 
@@ -1618,7 +1618,7 @@ any File|Buffer|Blob, the metadata is serialized to a string.
 
 #### Defined in
 
-[src/core/module.ts:743](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L743)
+[src/core/module.ts:743](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L743)
 
 ___
 
@@ -1646,7 +1646,7 @@ A list of roles that were revoked.
 
 #### Defined in
 
-[src/core/module.ts:641](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L641)
+[src/core/module.ts:641](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L641)
 
 ___
 
@@ -1685,7 +1685,7 @@ The transaction receipt
 
 #### Defined in
 
-[src/core/module.ts:712](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L712)
+[src/core/module.ts:712](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L712)
 
 ___
 
@@ -1714,7 +1714,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:306](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L306)
+[src/core/module.ts:306](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L306)
 
 ___
 
@@ -1742,7 +1742,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:295](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L295)
+[src/core/module.ts:295](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L295)
 
 ___
 
@@ -1782,7 +1782,7 @@ console.log(await module.getRoleMemberList("minter")); // No matter what members
 
 #### Defined in
 
-[src/core/module.ts:582](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L582)
+[src/core/module.ts:582](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L582)
 
 ___
 
@@ -1805,7 +1805,7 @@ Trusted forwarder is used to forward gasless transactions. Trusted Forwarder of 
 
 #### Defined in
 
-[src/modules/app.ts:342](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L342)
+[src/modules/app.ts:342](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L342)
 
 ___
 
@@ -1829,7 +1829,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:160](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L160)
+[src/core/module.ts:160](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L160)
 
 ___
 
@@ -1851,7 +1851,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:349](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L349)
+[src/modules/app.ts:349](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L349)
 
 ___
 
@@ -1872,7 +1872,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:362](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L362)
+[src/modules/app.ts:362](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L362)
 
 ___
 
@@ -1898,7 +1898,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:172](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L172)
+[src/core/module.ts:172](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L172)
 
 ___
 
@@ -1918,7 +1918,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:356](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L356)
+[src/modules/app.ts:356](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L356)
 
 ___
 
@@ -1932,7 +1932,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:1009](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L1009)
+[src/modules/app.ts:1009](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L1009)
 
 ___
 
@@ -1946,7 +1946,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:996](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L996)
+[src/modules/app.ts:996](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L996)
 
 ___
 
@@ -1978,7 +1978,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:415](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L415)
+[src/core/module.ts:415](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L415)
 
 ___
 
@@ -1998,7 +1998,7 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:1035](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L1035)
+[src/modules/app.ts:1035](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L1035)
 
 ___
 
@@ -2022,7 +2022,7 @@ Upgrades the protocol control to v2. In v2, the royalty treasury needs to be set
 
 #### Defined in
 
-[src/modules/app.ts:1084](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L1084)
+[src/modules/app.ts:1084](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L1084)
 
 ___
 
@@ -2043,4 +2043,4 @@ ___
 
 #### Defined in
 
-[src/modules/app.ts:372](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/app.ts#L372)
+[src/modules/app.ts:372](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/app.ts#L372)

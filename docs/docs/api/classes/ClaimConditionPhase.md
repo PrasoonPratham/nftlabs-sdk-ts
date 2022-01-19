@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L34)
+[src/factories/ClaimConditionPhase.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L34)
 
 ## Properties
 
@@ -30,7 +30,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L12)
+[src/factories/ClaimConditionPhase.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L12)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L14)
+[src/factories/ClaimConditionPhase.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L14)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L18)
+[src/factories/ClaimConditionPhase.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L18)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:25](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L25)
+[src/factories/ClaimConditionPhase.ts:25](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L25)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L23)
+[src/factories/ClaimConditionPhase.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L23)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L16)
+[src/factories/ClaimConditionPhase.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L16)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:20](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L20)
+[src/factories/ClaimConditionPhase.ts:20](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L20)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:27](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L27)
+[src/factories/ClaimConditionPhase.ts:27](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L27)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:31](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L31)
+[src/factories/ClaimConditionPhase.ts:31](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L31)
 
 ___
 
@@ -134,7 +134,7 @@ ___
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:29](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L29)
+[src/factories/ClaimConditionPhase.ts:29](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L29)
 
 ## Methods
 
@@ -152,7 +152,7 @@ Helper method that provides defaults for each claim condition.
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:127](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L127)
+[src/factories/ClaimConditionPhase.ts:127](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L127)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:119](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L119)
+[src/factories/ClaimConditionPhase.ts:119](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L119)
 
 ___
 
@@ -190,7 +190,7 @@ Set the start time for the claim condition.
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:63](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L63)
+[src/factories/ClaimConditionPhase.ts:63](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L63)
 
 ___
 
@@ -212,7 +212,7 @@ Override the maxQuantity for the claim condition after creating the phase.
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:78](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L78)
+[src/factories/ClaimConditionPhase.ts:78](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L78)
 
 ___
 
@@ -234,7 +234,7 @@ The max quantity of NFTs that can be claimed in a single transaction.
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:88](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L88)
+[src/factories/ClaimConditionPhase.ts:88](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L88)
 
 ___
 
@@ -256,7 +256,7 @@ Sets a merkle root hash for the claim condition.
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:100](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L100)
+[src/factories/ClaimConditionPhase.ts:100](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L100)
 
 ___
 
@@ -279,7 +279,7 @@ Set the price claim condition for the drop.
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:44](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L44)
+[src/factories/ClaimConditionPhase.ts:44](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L44)
 
 ___
 
@@ -302,7 +302,7 @@ to verify a merkle tree condition.
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:111](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L111)
+[src/factories/ClaimConditionPhase.ts:111](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L111)
 
 ___
 
@@ -324,4 +324,4 @@ Wait time enforced after calling `claim` before the next `claim` can be called.
 
 #### Defined in
 
-[src/factories/ClaimConditionPhase.ts:151](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/factories/ClaimConditionPhase.ts#L151)
+[src/factories/ClaimConditionPhase.ts:151](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/factories/ClaimConditionPhase.ts#L151)

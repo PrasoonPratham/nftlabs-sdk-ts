@@ -52,7 +52,7 @@ const module = sdk.getSplitsModule("{{module_address}}");
 
 #### Defined in
 
-[src/core/module.ts:103](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L103)
+[src/core/module.ts:103](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L103)
 
 ## Properties
 
@@ -68,7 +68,7 @@ const module = sdk.getSplitsModule("{{module_address}}");
 
 #### Defined in
 
-[src/core/module.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L45)
+[src/core/module.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L45)
 
 ___
 
@@ -86,7 +86,7 @@ Contract connects to the SDK signer or provider
 
 #### Defined in
 
-[src/core/module.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L93)
+[src/core/module.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L93)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L50)
+[src/core/module.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L50)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L55)
+[src/core/module.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L55)
 
 ___
 
@@ -140,7 +140,7 @@ Contract connects to the [ISDKOptions.readOnlyRpcUrl](../interfaces/ISDKOptions#
 
 #### Defined in
 
-[src/core/module.ts:98](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L98)
+[src/core/module.ts:98](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L98)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:57](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L57)
+[src/core/module.ts:57](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L57)
 
 ___
 
@@ -164,7 +164,7 @@ ___
 
 #### Defined in
 
-[src/modules/royalty.ts:99](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L99)
+[src/modules/royalty.ts:99](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L99)
 
 ## Accessors
 
@@ -184,7 +184,7 @@ Module.providerOrSigner
 
 #### Defined in
 
-[src/core/module.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L66)
+[src/core/module.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L66)
 
 • `Protected` `set` **providerOrSigner**(`value`): `void`
 
@@ -206,7 +206,7 @@ Module.providerOrSigner
 
 #### Defined in
 
-[src/core/module.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L70)
+[src/core/module.ts:70](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L70)
 
 ___
 
@@ -226,7 +226,7 @@ Module.signer
 
 #### Defined in
 
-[src/core/module.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L81)
+[src/core/module.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L81)
 
 • `Protected` `set` **signer**(`value`): `void`
 
@@ -248,7 +248,7 @@ Module.signer
 
 #### Defined in
 
-[src/core/module.ts:85](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L85)
+[src/core/module.ts:85](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L85)
 
 ## Methods
 
@@ -270,7 +270,7 @@ Module.signer
 
 #### Defined in
 
-[src/modules/royalty.ts:274](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L274)
+[src/modules/royalty.ts:274](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L274)
 
 ___
 
@@ -306,7 +306,7 @@ console.log(funds);
 
 #### Defined in
 
-[src/modules/royalty.ts:220](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L220)
+[src/modules/royalty.ts:220](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L220)
 
 ___
 
@@ -324,7 +324,7 @@ A map of recipient addresses to their balances in the native currency.
 
 #### Defined in
 
-[src/modules/royalty.ts:165](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L165)
+[src/modules/royalty.ts:165](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L165)
 
 ___
 
@@ -363,7 +363,7 @@ console.log(funds);
 
 #### Defined in
 
-[src/modules/royalty.ts:249](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L249)
+[src/modules/royalty.ts:249](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L249)
 
 ___
 
@@ -387,7 +387,7 @@ A map of recipient addresses to their balances in the specified currency.
 
 #### Defined in
 
-[src/modules/royalty.ts:180](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L180)
+[src/modules/royalty.ts:180](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L180)
 
 ___
 
@@ -407,7 +407,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L188)
+[src/core/module.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L188)
 
 ___
 
@@ -427,7 +427,7 @@ ___
 
 #### Defined in
 
-[src/modules/royalty.ts:104](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L104)
+[src/modules/royalty.ts:104](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L104)
 
 ___
 
@@ -454,7 +454,7 @@ await module.distribute();
 
 #### Defined in
 
-[src/modules/royalty.ts:308](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L308)
+[src/modules/royalty.ts:308](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L308)
 
 ___
 
@@ -489,7 +489,7 @@ await module.distributeToken(tokenAddress);
 
 #### Defined in
 
-[src/modules/royalty.ts:324](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L324)
+[src/modules/royalty.ts:324](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L324)
 
 ___
 
@@ -509,7 +509,7 @@ whether the given contract exists on-chain
 
 #### Defined in
 
-[src/core/module.ts:126](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L126)
+[src/core/module.ts:126](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L126)
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-[src/modules/royalty.ts:115](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L115)
+[src/modules/royalty.ts:115](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L115)
 
 ___
 
@@ -551,7 +551,7 @@ console.log(recipients);
 
 #### Defined in
 
-[src/modules/royalty.ts:130](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L130)
+[src/modules/royalty.ts:130](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L130)
 
 ___
 
@@ -571,7 +571,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:261](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L261)
+[src/core/module.ts:261](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L261)
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:235](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L235)
+[src/core/module.ts:235](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L235)
 
 ___
 
@@ -615,7 +615,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:138](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L138)
+[src/core/module.ts:138](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L138)
 
 ___
 
@@ -635,7 +635,7 @@ ___
 
 #### Defined in
 
-[src/modules/royalty.ts:111](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L111)
+[src/modules/royalty.ts:111](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L111)
 
 ___
 
@@ -655,7 +655,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:228](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L228)
+[src/core/module.ts:228](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L228)
 
 ___
 
@@ -681,7 +681,7 @@ Get the split percentage of a recipient.
 
 #### Defined in
 
-[src/modules/royalty.ts:191](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L191)
+[src/modules/royalty.ts:191](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L191)
 
 ___
 
@@ -701,7 +701,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:202](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L202)
+[src/core/module.ts:202](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L202)
 
 ___
 
@@ -721,7 +721,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:219](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L219)
+[src/core/module.ts:219](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L219)
 
 ___
 
@@ -741,7 +741,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:212](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L212)
+[src/core/module.ts:212](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L212)
 
 ___
 
@@ -766,7 +766,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:452](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L452)
+[src/core/module.ts:452](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L452)
 
 ___
 
@@ -798,7 +798,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:471](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L471)
+[src/core/module.ts:471](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L471)
 
 ___
 
@@ -827,7 +827,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:306](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L306)
+[src/core/module.ts:306](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L306)
 
 ___
 
@@ -855,7 +855,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:295](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L295)
+[src/core/module.ts:295](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L295)
 
 ___
 
@@ -879,7 +879,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:160](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L160)
+[src/core/module.ts:160](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L160)
 
 ___
 
@@ -905,7 +905,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:172](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L172)
+[src/core/module.ts:172](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L172)
 
 ___
 
@@ -937,7 +937,7 @@ ___
 
 #### Defined in
 
-[src/core/module.ts:415](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/module.ts#L415)
+[src/core/module.ts:415](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/module.ts#L415)
 
 ___
 
@@ -964,7 +964,7 @@ the `address` is owed and transfer it to the wallet.
 
 #### Defined in
 
-[src/modules/royalty.ts:270](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L270)
+[src/modules/royalty.ts:270](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L270)
 
 ___
 
@@ -997,4 +997,4 @@ the address of the $MATIC token as the `tokenAddress` parameter.
 
 #### Defined in
 
-[src/modules/royalty.ts:288](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L288)
+[src/modules/royalty.ts:288](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L288)

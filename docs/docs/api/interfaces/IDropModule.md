@@ -32,4 +32,4 @@ each token that will be minted.
 
 #### Defined in
 
-[src/interfaces/IDropModule.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/IDropModule.ts#L16)
+[src/interfaces/IDropModule.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/IDropModule.ts#L16)

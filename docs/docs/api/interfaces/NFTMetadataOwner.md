@@ -16,7 +16,7 @@ The shared NFT metadata, including the current owner address.
 
 #### Defined in
 
-[src/common/nft.ts:77](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/nft.ts#L77)
+[src/common/nft.ts:77](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L77)
 
 ___
 
@@ -26,4 +26,4 @@ ___
 
 #### Defined in
 
-[src/common/nft.ts:76](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/nft.ts#L76)
+[src/common/nft.ts:76](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L76)

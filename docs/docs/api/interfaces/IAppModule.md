@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/core/registry.ts:9](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/registry.ts#L9)
+[src/core/registry.ts:9](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/registry.ts#L9)
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 #### Defined in
 
-[src/core/registry.ts:11](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/registry.ts#L11)
+[src/core/registry.ts:11](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/registry.ts#L11)
 
 ___
 
@@ -34,4 +34,4 @@ ___
 
 #### Defined in
 
-[src/core/registry.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/registry.ts#L10)
+[src/core/registry.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/registry.ts#L10)

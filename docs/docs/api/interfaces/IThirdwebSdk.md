@@ -35,4 +35,4 @@ hashes, etc.
 
 #### Defined in
 
-[src/interfaces/IThirdwebSdk.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/IThirdwebSdk.ts#L14)
+[src/interfaces/IThirdwebSdk.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/IThirdwebSdk.ts#L14)

@@ -20,7 +20,7 @@ The typical contract metadata found on the modules.
 
 #### Defined in
 
-[src/common/contract.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/contract.ts#L14)
+[src/common/contract.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L14)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[src/common/contract.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/contract.ts#L16)
+[src/common/contract.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L16)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[src/common/contract.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/contract.ts#L18)
+[src/common/contract.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L18)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[src/common/contract.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/contract.ts#L15)
+[src/common/contract.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L15)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[src/common/contract.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/contract.ts#L13)
+[src/common/contract.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L13)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[src/common/contract.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/contract.ts#L17)
+[src/common/contract.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L17)
 
 ___
 
@@ -80,4 +80,4 @@ ___
 
 #### Defined in
 
-[src/common/contract.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/contract.ts#L12)
+[src/common/contract.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L12)

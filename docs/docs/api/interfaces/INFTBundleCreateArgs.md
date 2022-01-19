@@ -16,7 +16,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/bundle.ts:41](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/bundle.ts#L41)
+[src/modules/bundle.ts:41](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundle.ts#L41)
 
 ___
 
@@ -26,4 +26,4 @@ ___
 
 #### Defined in
 
-[src/modules/bundle.ts:42](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/bundle.ts#L42)
+[src/modules/bundle.ts:42](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundle.ts#L42)

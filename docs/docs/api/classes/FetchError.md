@@ -35,7 +35,7 @@ Error.constructor
 
 #### Defined in
 
-[src/common/error.ts:95](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/error.ts#L95)
+[src/common/error.ts:95](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/error.ts#L95)
 
 ## Properties
 
@@ -45,7 +45,7 @@ Error.constructor
 
 #### Defined in
 
-[src/common/error.ts:92](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/error.ts#L92)
+[src/common/error.ts:92](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/error.ts#L92)
 
 ___
 

@@ -26,7 +26,7 @@ The module metadata, includes the `address` and the [ModuleType](../enums/Module
 
 #### Defined in
 
-[src/types/ModuleMetadata.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/ModuleMetadata.ts#L10)
+[src/types/ModuleMetadata.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/ModuleMetadata.ts#L10)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[src/types/ModuleMetadata.ts:11](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/ModuleMetadata.ts#L11)
+[src/types/ModuleMetadata.ts:11](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/ModuleMetadata.ts#L11)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[src/types/ModuleMetadata.ts:19](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/ModuleMetadata.ts#L19)
+[src/types/ModuleMetadata.ts:19](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/ModuleMetadata.ts#L19)

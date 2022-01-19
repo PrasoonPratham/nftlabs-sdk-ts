@@ -31,7 +31,7 @@ to withdraw in the native currency.
 
 #### Defined in
 
-[src/modules/royalty.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L34)
+[src/modules/royalty.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L34)
 
 ___
 
@@ -55,7 +55,7 @@ to withdraw in the native currency in a specific currency.
 
 #### Defined in
 
-[src/modules/royalty.ts:43](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L43)
+[src/modules/royalty.ts:43](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L43)
 
 ___
 
@@ -71,7 +71,7 @@ Distributes all funds to the recipients.
 
 #### Defined in
 
-[src/modules/royalty.ts:72](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L72)
+[src/modules/royalty.ts:72](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L72)
 
 ___
 
@@ -93,7 +93,7 @@ Distributes all funds to the recipients in the specified currency.
 
 #### Defined in
 
-[src/modules/royalty.ts:79](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L79)
+[src/modules/royalty.ts:79](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L79)
 
 ___
 
@@ -110,7 +110,7 @@ respective split percentages.
 
 #### Defined in
 
-[src/modules/royalty.ts:19](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L19)
+[src/modules/royalty.ts:19](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L19)
 
 ___
 
@@ -132,7 +132,7 @@ Get the split percentage of a recipient.
 
 #### Defined in
 
-[src/modules/royalty.ts:26](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L26)
+[src/modules/royalty.ts:26](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L26)
 
 ___
 
@@ -155,7 +155,7 @@ the `address` is owed and transfer it to the wallet.
 
 #### Defined in
 
-[src/modules/royalty.ts:54](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L54)
+[src/modules/royalty.ts:54](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L54)
 
 ___
 
@@ -184,4 +184,4 @@ the address of the $MATIC token as the `tokenAddress` parameter.
 
 #### Defined in
 
-[src/modules/royalty.ts:67](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/royalty.ts#L67)
+[src/modules/royalty.ts:67](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/royalty.ts#L67)

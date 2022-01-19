@@ -16,7 +16,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/interfaces/IStorage.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/IStorage.ts#L10)
+[src/interfaces/IStorage.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/IStorage.ts#L10)
 
 ___
 
@@ -26,4 +26,4 @@ ___
 
 #### Defined in
 
-[src/interfaces/IStorage.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/IStorage.ts#L13)
+[src/interfaces/IStorage.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/IStorage.ts#L13)

@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/snapshots/Snapshot.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/snapshots/Snapshot.ts#L10)
+[src/types/snapshots/Snapshot.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/snapshots/Snapshot.ts#L10)
 
 ___
 
@@ -30,4 +30,4 @@ ___
 
 #### Defined in
 
-[src/types/snapshots/Snapshot.ts:7](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/snapshots/Snapshot.ts#L7)
+[src/types/snapshots/Snapshot.ts:7](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/snapshots/Snapshot.ts#L7)

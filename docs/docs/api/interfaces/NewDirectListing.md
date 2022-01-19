@@ -18,7 +18,7 @@ The address of the asset being listed.
 
 #### Defined in
 
-[src/types/marketplace/NewDirectListing.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/NewDirectListing.ts#L12)
+[src/types/marketplace/NewDirectListing.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewDirectListing.ts#L12)
 
 ___
 
@@ -33,7 +33,7 @@ is 10 coins (of the configured currency).
 
 #### Defined in
 
-[src/types/marketplace/NewDirectListing.ts:47](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/NewDirectListing.ts#L47)
+[src/types/marketplace/NewDirectListing.ts:47](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewDirectListing.ts#L47)
 
 ___
 
@@ -45,7 +45,7 @@ The address of the currency to accept for the listing.
 
 #### Defined in
 
-[src/types/marketplace/NewDirectListing.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/NewDirectListing.ts#L39)
+[src/types/marketplace/NewDirectListing.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewDirectListing.ts#L39)
 
 ___
 
@@ -57,7 +57,7 @@ The duration of the listing in seconds.
 
 #### Defined in
 
-[src/types/marketplace/NewDirectListing.ts:27](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/NewDirectListing.ts#L27)
+[src/types/marketplace/NewDirectListing.ts:27](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewDirectListing.ts#L27)
 
 ___
 
@@ -71,7 +71,7 @@ For ERC721s, this value should always be 1 (and will be forced internally regard
 
 #### Defined in
 
-[src/types/marketplace/NewDirectListing.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/NewDirectListing.ts#L34)
+[src/types/marketplace/NewDirectListing.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewDirectListing.ts#L34)
 
 ___
 
@@ -83,7 +83,7 @@ The start time of the listing.
 
 #### Defined in
 
-[src/types/marketplace/NewDirectListing.ts:22](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/NewDirectListing.ts#L22)
+[src/types/marketplace/NewDirectListing.ts:22](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewDirectListing.ts#L22)
 
 ___
 
@@ -95,7 +95,7 @@ The ID of the token to list.
 
 #### Defined in
 
-[src/types/marketplace/NewDirectListing.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/NewDirectListing.ts#L17)
+[src/types/marketplace/NewDirectListing.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewDirectListing.ts#L17)
 
 ___
 
@@ -105,4 +105,4 @@ ___
 
 #### Defined in
 
-[src/types/marketplace/NewDirectListing.ts:7](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/NewDirectListing.ts#L7)
+[src/types/marketplace/NewDirectListing.ts:7](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewDirectListing.ts#L7)

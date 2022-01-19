@@ -16,7 +16,7 @@ Metadata for items listed on a Market module.
 
 #### Defined in
 
-[src/modules/market.ts:49](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/market.ts#L49)
+[src/modules/market.ts:49](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L49)
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/market.ts#L50)
+[src/modules/market.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L50)
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:42](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/market.ts#L42)
+[src/modules/market.ts:42](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L42)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:51](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/market.ts#L51)
+[src/modules/market.ts:51](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L51)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:47](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/market.ts#L47)
+[src/modules/market.ts:47](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L47)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:53](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/market.ts#L53)
+[src/modules/market.ts:53](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L53)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:52](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/market.ts#L52)
+[src/modules/market.ts:52](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L52)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:43](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/market.ts#L43)
+[src/modules/market.ts:43](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L43)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:44](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/market.ts#L44)
+[src/modules/market.ts:44](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L44)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/market.ts#L45)
+[src/modules/market.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L45)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:46](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/market.ts#L46)
+[src/modules/market.ts:46](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L46)
 
 ___
 
@@ -126,4 +126,4 @@ ___
 
 #### Defined in
 
-[src/modules/market.ts:48](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/market.ts#L48)
+[src/modules/market.ts:48](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/market.ts#L48)

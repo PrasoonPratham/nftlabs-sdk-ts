@@ -33,7 +33,7 @@ Its up to the caller to determine what the type of the data is.
 
 #### Defined in
 
-[src/interfaces/IStorage.ts:69](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/IStorage.ts#L69)
+[src/interfaces/IStorage.ts:69](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/IStorage.ts#L69)
 
 ___
 
@@ -58,7 +58,7 @@ a file to storage.
 
 #### Defined in
 
-[src/interfaces/IStorage.ts:60](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/IStorage.ts#L60)
+[src/interfaces/IStorage.ts:60](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/IStorage.ts#L60)
 
 ___
 
@@ -84,7 +84,7 @@ if the gateway is `cloudflare-ipfs.com`.
 
 #### Defined in
 
-[src/interfaces/IStorage.ts:80](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/IStorage.ts#L80)
+[src/interfaces/IStorage.ts:80](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/IStorage.ts#L80)
 
 ___
 
@@ -110,7 +110,7 @@ Uploads a file to the storage.
 
 #### Defined in
 
-[src/interfaces/IStorage.ts:27](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/IStorage.ts#L27)
+[src/interfaces/IStorage.ts:27](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/IStorage.ts#L27)
 
 ___
 
@@ -136,7 +136,7 @@ Uploads a folder to storage.
 
 #### Defined in
 
-[src/interfaces/IStorage.ts:43](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/IStorage.ts#L43)
+[src/interfaces/IStorage.ts:43](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/IStorage.ts#L43)
 
 ___
 
@@ -160,7 +160,7 @@ Uploads metadata to IPFS
 
 #### Defined in
 
-[src/interfaces/IStorage.ts:91](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/IStorage.ts#L91)
+[src/interfaces/IStorage.ts:91](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/IStorage.ts#L91)
 
 ___
 
@@ -184,4 +184,4 @@ Uploads metadata to IPFS
 
 #### Defined in
 
-[src/interfaces/IStorage.ts:105](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/IStorage.ts#L105)
+[src/interfaces/IStorage.ts:105](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/IStorage.ts#L105)

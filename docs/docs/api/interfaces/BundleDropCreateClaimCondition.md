@@ -16,7 +16,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/modules/bundleDrop.ts:40](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/bundleDrop.ts#L40)
+[src/modules/bundleDrop.ts:40](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundleDrop.ts#L40)
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 #### Defined in
 
-[src/modules/bundleDrop.ts:36](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/bundleDrop.ts#L36)
+[src/modules/bundleDrop.ts:36](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundleDrop.ts#L36)
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 #### Defined in
 
-[src/modules/bundleDrop.ts:41](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/bundleDrop.ts#L41)
+[src/modules/bundleDrop.ts:41](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundleDrop.ts#L41)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[src/modules/bundleDrop.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/bundleDrop.ts#L39)
+[src/modules/bundleDrop.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundleDrop.ts#L39)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[src/modules/bundleDrop.ts:37](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/bundleDrop.ts#L37)
+[src/modules/bundleDrop.ts:37](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundleDrop.ts#L37)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[src/modules/bundleDrop.ts:35](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/bundleDrop.ts#L35)
+[src/modules/bundleDrop.ts:35](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundleDrop.ts#L35)
 
 ___
 
@@ -76,4 +76,4 @@ ___
 
 #### Defined in
 
-[src/modules/bundleDrop.ts:38](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/bundleDrop.ts#L38)
+[src/modules/bundleDrop.ts:38](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/bundleDrop.ts#L38)

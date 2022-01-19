@@ -18,7 +18,7 @@ The address of the asset being listed.
 
 #### Defined in
 
-[src/types/marketplace/NewAuctionListing.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/NewAuctionListing.ts#L12)
+[src/types/marketplace/NewAuctionListing.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewAuctionListing.ts#L12)
 
 ___
 
@@ -33,7 +33,7 @@ is 10 coins (of the configured currency).
 
 #### Defined in
 
-[src/types/marketplace/NewAuctionListing.ts:56](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/NewAuctionListing.ts#L56)
+[src/types/marketplace/NewAuctionListing.ts:56](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewAuctionListing.ts#L56)
 
 ___
 
@@ -45,7 +45,7 @@ The address of the currency to accept for the listing.
 
 #### Defined in
 
-[src/types/marketplace/NewAuctionListing.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/NewAuctionListing.ts#L39)
+[src/types/marketplace/NewAuctionListing.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewAuctionListing.ts#L39)
 
 ___
 
@@ -57,7 +57,7 @@ The duration of the listing in seconds.
 
 #### Defined in
 
-[src/types/marketplace/NewAuctionListing.ts:27](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/NewAuctionListing.ts#L27)
+[src/types/marketplace/NewAuctionListing.ts:27](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewAuctionListing.ts#L27)
 
 ___
 
@@ -71,7 +71,7 @@ For ERC721s, this value should always be 1 (and will be forced internally regard
 
 #### Defined in
 
-[src/types/marketplace/NewAuctionListing.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/NewAuctionListing.ts#L34)
+[src/types/marketplace/NewAuctionListing.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewAuctionListing.ts#L34)
 
 ___
 
@@ -87,7 +87,7 @@ is 10 coins (of the configured currency).
 
 #### Defined in
 
-[src/types/marketplace/NewAuctionListing.ts:48](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/NewAuctionListing.ts#L48)
+[src/types/marketplace/NewAuctionListing.ts:48](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewAuctionListing.ts#L48)
 
 ___
 
@@ -99,7 +99,7 @@ The start time of the listing.
 
 #### Defined in
 
-[src/types/marketplace/NewAuctionListing.ts:22](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/NewAuctionListing.ts#L22)
+[src/types/marketplace/NewAuctionListing.ts:22](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewAuctionListing.ts#L22)
 
 ___
 
@@ -111,7 +111,7 @@ The ID of the token to list.
 
 #### Defined in
 
-[src/types/marketplace/NewAuctionListing.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/NewAuctionListing.ts#L17)
+[src/types/marketplace/NewAuctionListing.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewAuctionListing.ts#L17)
 
 ___
 
@@ -121,4 +121,4 @@ ___
 
 #### Defined in
 
-[src/types/marketplace/NewAuctionListing.ts:7](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/NewAuctionListing.ts#L7)
+[src/types/marketplace/NewAuctionListing.ts:7](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/NewAuctionListing.ts#L7)

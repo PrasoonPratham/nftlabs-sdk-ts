@@ -38,7 +38,7 @@ e.g. if a Drop Collection has a token URI of /ipfs/BOREDAPES/TOKEN1, then the IP
 
 #### Defined in
 
-[src/types/module-deployments/DropModuleMetadata.ts:99](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/module-deployments/DropModuleMetadata.ts#L99)
+[src/types/module-deployments/DropModuleMetadata.ts:99](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/DropModuleMetadata.ts#L99)
 
 ___
 
@@ -54,7 +54,7 @@ The description of the module.
 
 #### Defined in
 
-[src/types/module-deployments/CommonModuleMetadata.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/module-deployments/CommonModuleMetadata.ts#L23)
+[src/types/module-deployments/CommonModuleMetadata.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/CommonModuleMetadata.ts#L23)
 
 ___
 
@@ -70,7 +70,7 @@ An external link for the module.
 
 #### Defined in
 
-[src/types/module-deployments/CommonModuleMetadata.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/module-deployments/CommonModuleMetadata.ts#L39)
+[src/types/module-deployments/CommonModuleMetadata.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/CommonModuleMetadata.ts#L39)
 
 ___
 
@@ -83,7 +83,7 @@ to this address.
 
 #### Defined in
 
-[src/types/module-deployments/DropModuleMetadata.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/module-deployments/DropModuleMetadata.ts#L50)
+[src/types/module-deployments/DropModuleMetadata.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/DropModuleMetadata.ts#L50)
 
 ___
 
@@ -103,7 +103,7 @@ and the property is the IPFS hash uri).
 
 #### Defined in
 
-[src/types/module-deployments/CommonModuleMetadata.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/module-deployments/CommonModuleMetadata.ts#L33)
+[src/types/module-deployments/CommonModuleMetadata.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/CommonModuleMetadata.ts#L33)
 
 ___
 
@@ -117,7 +117,7 @@ The max supply
 
 #### Defined in
 
-[src/types/module-deployments/DropModuleMetadata.ts:64](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/module-deployments/DropModuleMetadata.ts#L64)
+[src/types/module-deployments/DropModuleMetadata.ts:64](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/DropModuleMetadata.ts#L64)
 
 ___
 
@@ -133,7 +133,7 @@ The name of the module.
 
 #### Defined in
 
-[src/types/module-deployments/CommonModuleMetadata.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/module-deployments/CommonModuleMetadata.ts#L17)
+[src/types/module-deployments/CommonModuleMetadata.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/CommonModuleMetadata.ts#L17)
 
 ___
 
@@ -155,7 +155,7 @@ For example: if this value is 100, then the royalty is 1% of the total sales.
 
 #### Defined in
 
-[src/types/module-deployments/DropModuleMetadata.ts:43](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/module-deployments/DropModuleMetadata.ts#L43)
+[src/types/module-deployments/DropModuleMetadata.ts:43](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/DropModuleMetadata.ts#L43)
 
 ___
 
@@ -180,7 +180,7 @@ All secondary sales will use the `sellerFeeBasisPoints` and royalty recipient ad
 
 #### Defined in
 
-[src/types/module-deployments/DropModuleMetadata.ts:83](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/module-deployments/DropModuleMetadata.ts#L83)
+[src/types/module-deployments/DropModuleMetadata.ts:83](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/DropModuleMetadata.ts#L83)
 
 ___
 
@@ -197,7 +197,7 @@ For example: if this value is 100, then the royalty is 1% of the total sales.
 
 #### Defined in
 
-[src/types/module-deployments/DropModuleMetadata.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/module-deployments/DropModuleMetadata.ts#L23)
+[src/types/module-deployments/DropModuleMetadata.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/DropModuleMetadata.ts#L23)
 
 ___
 
@@ -209,4 +209,4 @@ The symbol for the Drop Collection
 
 #### Defined in
 
-[src/types/module-deployments/DropModuleMetadata.ts:56](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/module-deployments/DropModuleMetadata.ts#L56)
+[src/types/module-deployments/DropModuleMetadata.ts:56](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/DropModuleMetadata.ts#L56)

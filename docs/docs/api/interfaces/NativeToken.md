@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/common/currency.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/currency.ts#L16)
+[src/common/currency.ts:16](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L16)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[src/common/currency.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/currency.ts#L14)
+[src/common/currency.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L14)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[src/common/currency.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/currency.ts#L15)
+[src/common/currency.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L15)
 
 ___
 
@@ -70,4 +70,4 @@ ___
 
 #### Defined in
 
-[src/common/currency.ts:20](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/currency.ts#L20)
+[src/common/currency.ts:20](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L20)

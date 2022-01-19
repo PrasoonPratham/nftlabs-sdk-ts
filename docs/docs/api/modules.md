@@ -193,7 +193,7 @@ Output
 
 #### Defined in
 
-[src/types/module-deployments/MetadataMap.ts:5](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/module-deployments/MetadataMap.ts#L5)
+[src/types/module-deployments/MetadataMap.ts:5](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/MetadataMap.ts#L5)
 
 ___
 
@@ -205,7 +205,7 @@ ___
 
 #### Defined in
 
-[src/core/index.ts:71](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/index.ts#L71)
+[src/core/index.ts:71](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/index.ts#L71)
 
 ___
 
@@ -226,7 +226,7 @@ ___
 
 #### Defined in
 
-[src/common/chainlink.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/chainlink.ts#L8)
+[src/common/chainlink.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/chainlink.ts#L8)
 
 ___
 
@@ -236,7 +236,7 @@ ___
 
 #### Defined in
 
-[src/modules/collection.ts:3](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/modules/collection.ts#L3)
+[src/modules/collection.ts:3](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/modules/collection.ts#L3)
 
 ___
 
@@ -246,7 +246,7 @@ ___
 
 #### Defined in
 
-[src/types/module-deployments/BundleModuleMetadata.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/module-deployments/BundleModuleMetadata.ts#L33)
+[src/types/module-deployments/BundleModuleMetadata.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/BundleModuleMetadata.ts#L33)
 
 ___
 
@@ -269,7 +269,7 @@ Forward Request Message that's used for gasless transaction
 
 #### Defined in
 
-[src/core/types.ts:37](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/types.ts#L37)
+[src/core/types.ts:37](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/types.ts#L37)
 
 ___
 
@@ -281,7 +281,7 @@ A JSON value
 
 #### Defined in
 
-[src/core/types.ts:20](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/types.ts#L20)
+[src/core/types.ts:20](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/types.ts#L20)
 
 ___
 
@@ -293,7 +293,7 @@ A valid URI string or metadata object
 
 #### Defined in
 
-[src/core/types.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/types.ts#L32)
+[src/core/types.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/types.ts#L32)
 
 ___
 
@@ -318,7 +318,7 @@ ___
 
 #### Defined in
 
-[src/types/module-deployments/MetadataMap.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/module-deployments/MetadataMap.ts#L8)
+[src/types/module-deployments/MetadataMap.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/module-deployments/MetadataMap.ts#L8)
 
 ___
 
@@ -330,7 +330,7 @@ ___
 
 #### Defined in
 
-[src/common/nft.ts:83](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/nft.ts#L83)
+[src/common/nft.ts:83](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L83)
 
 ___
 
@@ -353,7 +353,7 @@ EIP-2612 token permit message for gasless transaction
 
 #### Defined in
 
-[src/core/types.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/types.ts#L50)
+[src/core/types.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/types.ts#L50)
 
 ___
 
@@ -365,7 +365,7 @@ A valid "ethers" Provider or Signer.
 
 #### Defined in
 
-[src/core/types.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/types.ts#L8)
+[src/core/types.ts:8](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/types.ts#L8)
 
 ___
 
@@ -377,7 +377,7 @@ ___
 
 #### Defined in
 
-[src/common/role.ts:46](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/role.ts#L46)
+[src/common/role.ts:46](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/role.ts#L46)
 
 ___
 
@@ -387,7 +387,7 @@ ___
 
 #### Defined in
 
-[src/common/role.ts:48](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/role.ts#L48)
+[src/common/role.ts:48](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/role.ts#L48)
 
 ___
 
@@ -399,7 +399,7 @@ A valid "ethers" Provider, Signer or a Network object or url address to create a
 
 #### Defined in
 
-[src/core/types.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/types.ts#L14)
+[src/core/types.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/types.ts#L14)
 
 ## Variables
 
@@ -411,7 +411,7 @@ A valid "ethers" Provider, Signer or a Network object or url address to create a
 
 #### Defined in
 
-[src/common/chainlink.ts:19](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/chainlink.ts#L19)
+[src/common/chainlink.ts:19](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/chainlink.ts#L19)
 
 ___
 
@@ -423,7 +423,7 @@ Fallback map of default block mining times in seconds.
 
 #### Defined in
 
-[src/utils/blockTimeEstimator.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/utils/blockTimeEstimator.ts#L13)
+[src/utils/blockTimeEstimator.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/utils/blockTimeEstimator.ts#L13)
 
 ___
 
@@ -435,7 +435,7 @@ ___
 
 #### Defined in
 
-[src/common/contract.ts:30](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/contract.ts#L30)
+[src/common/contract.ts:30](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L30)
 
 ___
 
@@ -447,7 +447,7 @@ ___
 
 #### Defined in
 
-[src/common/contract.ts:25](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/contract.ts#L25)
+[src/common/contract.ts:25](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L25)
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-[src/common/currency.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/currency.ts#L39)
+[src/common/currency.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L39)
 
 ___
 
@@ -473,7 +473,7 @@ Deprecated, please use ThirdwebSDK instead.
 
 #### Defined in
 
-[src/core/index.ts:818](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/core/index.ts#L818)
+[src/core/index.ts:818](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/core/index.ts#L818)
 
 ___
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-[src/common/role.ts:56](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/role.ts#L56)
+[src/common/role.ts:56](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/role.ts#L56)
 
 ## Functions
 
@@ -507,7 +507,7 @@ The name of the given [ModuleType](enums/ModuleType) or undefined
 
 #### Defined in
 
-[src/common/module-type.ts:46](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/module-type.ts#L46)
+[src/common/module-type.ts:46](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/module-type.ts#L46)
 
 ___
 
@@ -529,7 +529,7 @@ The [ModuleType](enums/ModuleType) or undefined
 
 #### Defined in
 
-[src/common/module-type.ts:31](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/module-type.ts#L31)
+[src/common/module-type.ts:31](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/module-type.ts#L31)
 
 ___
 
@@ -554,7 +554,7 @@ Given a time in second, return the block number that the time is in.
 
 #### Defined in
 
-[src/utils/blockTimeEstimator.ts:62](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/utils/blockTimeEstimator.ts#L62)
+[src/utils/blockTimeEstimator.ts:62](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/utils/blockTimeEstimator.ts#L62)
 
 ___
 
@@ -578,7 +578,7 @@ Convenience function to generate a merkle root from a list of strings.
 
 #### Defined in
 
-[src/utils/merkle/generateRoot.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/utils/merkle/generateRoot.ts#L10)
+[src/utils/merkle/generateRoot.ts:10](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/utils/merkle/generateRoot.ts#L10)
 
 ___
 
@@ -603,7 +603,7 @@ ___
 
 #### Defined in
 
-[src/common/contract.ts:51](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/contract.ts#L51)
+[src/common/contract.ts:51](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L51)
 
 ___
 
@@ -627,7 +627,7 @@ ___
 
 #### Defined in
 
-[src/common/currency.ts:209](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/currency.ts#L209)
+[src/common/currency.ts:209](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L209)
 
 ___
 
@@ -650,7 +650,7 @@ ___
 
 #### Defined in
 
-[src/common/currency.ts:139](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/currency.ts#L139)
+[src/common/currency.ts:139](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L139)
 
 ___
 
@@ -674,7 +674,7 @@ ___
 
 #### Defined in
 
-[src/common/currency.ts:183](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/currency.ts#L183)
+[src/common/currency.ts:183](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L183)
 
 ___
 
@@ -700,7 +700,7 @@ the gas price
 
 #### Defined in
 
-[src/common/gas-price.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/gas-price.ts#L23)
+[src/common/gas-price.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/gas-price.ts#L23)
 
 ___
 
@@ -723,7 +723,7 @@ ___
 
 #### Defined in
 
-[src/common/nft.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/nft.ts#L93)
+[src/common/nft.ts:93](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L93)
 
 ___
 
@@ -743,7 +743,7 @@ ___
 
 #### Defined in
 
-[src/common/currency.ts:239](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/currency.ts#L239)
+[src/common/currency.ts:239](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L239)
 
 ___
 
@@ -765,7 +765,7 @@ ___
 
 #### Defined in
 
-[src/common/role.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/role.ts#L81)
+[src/common/role.ts:81](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/role.ts#L81)
 
 ___
 
@@ -787,7 +787,7 @@ ___
 
 #### Defined in
 
-[src/common/nft.ts:106](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/nft.ts#L106)
+[src/common/nft.ts:106](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L106)
 
 ___
 
@@ -810,7 +810,7 @@ ___
 
 #### Defined in
 
-[src/common/nft.ts:135](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/nft.ts#L135)
+[src/common/nft.ts:135](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L135)
 
 ___
 
@@ -831,7 +831,7 @@ ___
 
 #### Defined in
 
-[src/common/nft.ts:166](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/nft.ts#L166)
+[src/common/nft.ts:166](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/nft.ts#L166)
 
 ___
 
@@ -854,7 +854,7 @@ ___
 
 #### Defined in
 
-[src/common/contract.ts:87](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/contract.ts#L87)
+[src/common/contract.ts:87](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/contract.ts#L87)
 
 ___
 
@@ -876,7 +876,7 @@ ___
 
 #### Defined in
 
-[src/common/currency.ts:199](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/currency.ts#L199)
+[src/common/currency.ts:199](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/currency.ts#L199)
 
 ___
 
@@ -897,7 +897,7 @@ ___
 
 #### Defined in
 
-[src/common/ipfs.ts:31](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/ipfs.ts#L31)
+[src/common/ipfs.ts:31](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/ipfs.ts#L31)
 
 ___
 
@@ -922,7 +922,7 @@ the fully formed IPFS url
 
 #### Defined in
 
-[src/common/ipfs.ts:22](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/ipfs.ts#L22)
+[src/common/ipfs.ts:22](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/ipfs.ts#L22)
 
 ___
 
@@ -946,7 +946,7 @@ ___
 
 #### Defined in
 
-[src/common/ipfs.ts:83](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/ipfs.ts#L83)
+[src/common/ipfs.ts:83](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/ipfs.ts#L83)
 
 ___
 
@@ -972,4 +972,4 @@ The `ipfs://<hash>` uri of the uploaded file
 
 #### Defined in
 
-[src/common/ipfs.ts:56](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/ipfs.ts#L56)
+[src/common/ipfs.ts:56](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/ipfs.ts#L56)

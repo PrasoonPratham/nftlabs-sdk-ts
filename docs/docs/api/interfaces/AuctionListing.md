@@ -18,7 +18,7 @@ The asset being listed.
 
 #### Defined in
 
-[src/types/marketplace/AuctionListing.ts:28](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/AuctionListing.ts#L28)
+[src/types/marketplace/AuctionListing.ts:28](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/AuctionListing.ts#L28)
 
 ___
 
@@ -30,7 +30,7 @@ The address of the asset being listed.
 
 #### Defined in
 
-[src/types/marketplace/AuctionListing.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/AuctionListing.ts#L18)
+[src/types/marketplace/AuctionListing.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/AuctionListing.ts#L18)
 
 ___
 
@@ -43,7 +43,7 @@ Useful for displaying the price information.
 
 #### Defined in
 
-[src/types/marketplace/AuctionListing.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/AuctionListing.ts#L66)
+[src/types/marketplace/AuctionListing.ts:66](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/AuctionListing.ts#L66)
 
 ___
 
@@ -55,7 +55,7 @@ The buyout price of the listing.
 
 #### Defined in
 
-[src/types/marketplace/AuctionListing.ts:60](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/AuctionListing.ts#L60)
+[src/types/marketplace/AuctionListing.ts:60](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/AuctionListing.ts#L60)
 
 ___
 
@@ -67,7 +67,7 @@ The address of the currency to accept for the listing.
 
 #### Defined in
 
-[src/types/marketplace/AuctionListing.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/AuctionListing.ts#L50)
+[src/types/marketplace/AuctionListing.ts:50](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/AuctionListing.ts#L50)
 
 ___
 
@@ -79,7 +79,7 @@ Number of seconds until the auction expires.
 
 #### Defined in
 
-[src/types/marketplace/AuctionListing.ts:38](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/AuctionListing.ts#L38)
+[src/types/marketplace/AuctionListing.ts:38](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/AuctionListing.ts#L38)
 
 ___
 
@@ -91,7 +91,7 @@ The id of the listing
 
 #### Defined in
 
-[src/types/marketplace/AuctionListing.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/AuctionListing.ts#L13)
+[src/types/marketplace/AuctionListing.ts:13](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/AuctionListing.ts#L13)
 
 ___
 
@@ -105,7 +105,7 @@ For ERC721s, this value should always be 1 (and will be forced internally regard
 
 #### Defined in
 
-[src/types/marketplace/AuctionListing.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/AuctionListing.ts#L45)
+[src/types/marketplace/AuctionListing.ts:45](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/AuctionListing.ts#L45)
 
 ___
 
@@ -117,7 +117,7 @@ The reserve price is the minimum price that a bid must be in order to be accepte
 
 #### Defined in
 
-[src/types/marketplace/AuctionListing.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/AuctionListing.ts#L55)
+[src/types/marketplace/AuctionListing.ts:55](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/AuctionListing.ts#L55)
 
 ___
 
@@ -130,7 +130,7 @@ Useful for displaying the price information.
 
 #### Defined in
 
-[src/types/marketplace/AuctionListing.ts:72](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/AuctionListing.ts#L72)
+[src/types/marketplace/AuctionListing.ts:72](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/AuctionListing.ts#L72)
 
 ___
 
@@ -142,7 +142,7 @@ The address of the seller.
 
 #### Defined in
 
-[src/types/marketplace/AuctionListing.ts:77](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/AuctionListing.ts#L77)
+[src/types/marketplace/AuctionListing.ts:77](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/AuctionListing.ts#L77)
 
 ___
 
@@ -154,7 +154,7 @@ The start time of the listing.
 
 #### Defined in
 
-[src/types/marketplace/AuctionListing.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/AuctionListing.ts#L33)
+[src/types/marketplace/AuctionListing.ts:33](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/AuctionListing.ts#L33)
 
 ___
 
@@ -166,7 +166,7 @@ The ID of the token to list.
 
 #### Defined in
 
-[src/types/marketplace/AuctionListing.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/AuctionListing.ts#L23)
+[src/types/marketplace/AuctionListing.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/AuctionListing.ts#L23)
 
 ___
 
@@ -176,4 +176,4 @@ ___
 
 #### Defined in
 
-[src/types/marketplace/AuctionListing.ts:79](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/marketplace/AuctionListing.ts#L79)
+[src/types/marketplace/AuctionListing.ts:79](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/marketplace/AuctionListing.ts#L79)

@@ -18,7 +18,7 @@ This admin role allows the wallet to modify contract metadata and [grant](../cla
 
 #### Defined in
 
-[src/common/role.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/role.ts#L12)
+[src/common/role.ts:12](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/role.ts#L12)
 
 ___
 
@@ -32,7 +32,7 @@ The editor role allows the wallet to edit data in the [DatastoreModule](../class
 
 #### Defined in
 
-[src/common/role.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/role.ts#L34)
+[src/common/role.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/role.ts#L34)
 
 ___
 
@@ -44,7 +44,7 @@ The lister role allows the wallet to list assets on the [MarketModule](../classe
 
 #### Defined in
 
-[src/common/role.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/role.ts#L39)
+[src/common/role.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/role.ts#L39)
 
 ___
 
@@ -57,7 +57,7 @@ The minter role allows the wallet to mint new assets.
 
 #### Defined in
 
-[src/common/role.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/role.ts#L18)
+[src/common/role.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/role.ts#L18)
 
 ___
 
@@ -69,7 +69,7 @@ The pauser role allows the wallet to pause all external contract interactions.
 
 #### Defined in
 
-[src/common/role.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/role.ts#L23)
+[src/common/role.ts:23](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/role.ts#L23)
 
 ___
 
@@ -82,4 +82,4 @@ The transfer role allows the wallet to transfer and receive assets
 
 #### Defined in
 
-[src/common/role.ts:29](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/role.ts#L29)
+[src/common/role.ts:29](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/role.ts#L29)

@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/storage/IpfsStorage.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/storage/IpfsStorage.ts#L34)
+[src/storage/IpfsStorage.ts:34](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L34)
 
 ## Properties
 
@@ -34,7 +34,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/storage/IpfsStorage.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/storage/IpfsStorage.ts#L32)
+[src/storage/IpfsStorage.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L32)
 
 ## Methods
 
@@ -63,7 +63,7 @@ called internally by `uploadMetadataBatch`.
 
 #### Defined in
 
-[src/storage/IpfsStorage.ts:239](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/storage/IpfsStorage.ts#L239)
+[src/storage/IpfsStorage.ts:239](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L239)
 
 ___
 
@@ -89,7 +89,7 @@ This function recurisely traverses an object and hashes any
 
 #### Defined in
 
-[src/storage/IpfsStorage.ts:209](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/storage/IpfsStorage.ts#L209)
+[src/storage/IpfsStorage.ts:209](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L209)
 
 ___
 
@@ -118,7 +118,7 @@ Its up to the caller to determine what the type of the data is.
 
 #### Defined in
 
-[src/storage/IpfsStorage.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/storage/IpfsStorage.ts#L188)
+[src/storage/IpfsStorage.ts:188](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L188)
 
 ___
 
@@ -147,7 +147,7 @@ a file to storage.
 
 #### Defined in
 
-[src/storage/IpfsStorage.ts:173](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/storage/IpfsStorage.ts#L173)
+[src/storage/IpfsStorage.ts:173](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L173)
 
 ___
 
@@ -177,7 +177,7 @@ will throw an error.
 
 #### Defined in
 
-[src/storage/IpfsStorage.ts:280](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/storage/IpfsStorage.ts#L280)
+[src/storage/IpfsStorage.ts:280](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L280)
 
 ___
 
@@ -207,7 +207,7 @@ Resolves the full url for a file using the configured gateway
 
 #### Defined in
 
-[src/storage/IpfsStorage.ts:371](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/storage/IpfsStorage.ts#L371)
+[src/storage/IpfsStorage.ts:371](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L371)
 
 ___
 
@@ -237,7 +237,7 @@ Uploads a file to the storage.
 
 #### Defined in
 
-[src/storage/IpfsStorage.ts:38](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/storage/IpfsStorage.ts#L38)
+[src/storage/IpfsStorage.ts:38](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L38)
 
 ___
 
@@ -267,7 +267,7 @@ Uploads a folder to storage.
 
 #### Defined in
 
-[src/storage/IpfsStorage.ts:80](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/storage/IpfsStorage.ts#L80)
+[src/storage/IpfsStorage.ts:80](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L80)
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-[src/storage/IpfsStorage.ts:99](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/storage/IpfsStorage.ts#L99)
+[src/storage/IpfsStorage.ts:99](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L99)
 
 ___
 
@@ -317,7 +317,7 @@ Uploads metadata to IPFS
 
 #### Defined in
 
-[src/storage/IpfsStorage.ts:302](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/storage/IpfsStorage.ts#L302)
+[src/storage/IpfsStorage.ts:302](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L302)
 
 ___
 
@@ -345,4 +345,4 @@ ___
 
 #### Defined in
 
-[src/storage/IpfsStorage.ts:323](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/storage/IpfsStorage.ts#L323)
+[src/storage/IpfsStorage.ts:323](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/storage/IpfsStorage.ts#L323)

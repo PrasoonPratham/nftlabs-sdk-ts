@@ -31,7 +31,7 @@ Accepts the offer of the specified wallet in `addressofOfferor`.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:203](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L203)
+[src/interfaces/modules/IMarketplace.ts:203](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L203)
 
 ___
 
@@ -65,7 +65,7 @@ to call `closeAuctionListing`.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:129](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L129)
+[src/interfaces/modules/IMarketplace.ts:129](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L129)
 
 ___
 
@@ -93,7 +93,7 @@ method will throw an error.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:140](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L140)
+[src/interfaces/modules/IMarketplace.ts:140](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L140)
 
 ___
 
@@ -121,7 +121,7 @@ if the listing ID passed in is an auction listing.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:156](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L156)
+[src/interfaces/modules/IMarketplace.ts:156](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L156)
 
 ___
 
@@ -144,7 +144,7 @@ if it has not started yet.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:87](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L87)
+[src/interfaces/modules/IMarketplace.ts:87](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L87)
 
 ___
 
@@ -166,7 +166,7 @@ Cancels a direct listing by updating the quantity to be sold to 0.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:79](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L79)
+[src/interfaces/modules/IMarketplace.ts:79](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L79)
 
 ___
 
@@ -198,7 +198,7 @@ distributed to the sellers wallet.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:107](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L107)
+[src/interfaces/modules/IMarketplace.ts:107](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L107)
 
 ___
 
@@ -222,7 +222,7 @@ Creates a new auction listing on a marketplace.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:25](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L25)
+[src/interfaces/modules/IMarketplace.ts:25](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L25)
 
 ___
 
@@ -246,7 +246,7 @@ Creates a new direct listing on a marketplace.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L17)
+[src/interfaces/modules/IMarketplace.ts:17](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L17)
 
 ___
 
@@ -271,7 +271,7 @@ offer has been made, this method will return `undefined`.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:184](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L184)
+[src/interfaces/modules/IMarketplace.ts:184](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L184)
 
 ___
 
@@ -289,7 +289,7 @@ Fetch all the listings in the marketplace.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:234](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L234)
+[src/interfaces/modules/IMarketplace.ts:234](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L234)
 
 ___
 
@@ -311,7 +311,7 @@ Fetch an auction listing by Id.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:220](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L220)
+[src/interfaces/modules/IMarketplace.ts:220](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L220)
 
 ___
 
@@ -335,7 +335,7 @@ slightly higher bids to win the auctioned items.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:247](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L247)
+[src/interfaces/modules/IMarketplace.ts:247](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L247)
 
 ___
 
@@ -357,7 +357,7 @@ Fetch a direct listing by Id.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:213](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L213)
+[src/interfaces/modules/IMarketplace.ts:213](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L213)
 
 ___
 
@@ -379,7 +379,7 @@ Helper method to fetch a listing without knowing the type.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:227](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L227)
+[src/interfaces/modules/IMarketplace.ts:227](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L227)
 
 ___
 
@@ -406,7 +406,7 @@ This value is formatter as basis points (e.g. 5% = 500).
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:263](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L263)
+[src/interfaces/modules/IMarketplace.ts:263](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L263)
 
 ___
 
@@ -429,7 +429,7 @@ this method will return it.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:195](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L195)
+[src/interfaces/modules/IMarketplace.ts:195](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L195)
 
 ___
 
@@ -460,7 +460,7 @@ the listing and the sale will be executed.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:69](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L69)
+[src/interfaces/modules/IMarketplace.ts:69](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L69)
 
 ___
 
@@ -486,7 +486,7 @@ Make an offer on a direct listing.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:49](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L49)
+[src/interfaces/modules/IMarketplace.ts:49](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L49)
 
 ___
 
@@ -509,7 +509,7 @@ The bid buffer is represented in basis points.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:271](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L271)
+[src/interfaces/modules/IMarketplace.ts:271](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L271)
 
 ___
 
@@ -531,7 +531,7 @@ Sets the current time buffer on the marketplace contract.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:278](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L278)
+[src/interfaces/modules/IMarketplace.ts:278](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L278)
 
 ___
 
@@ -553,7 +553,7 @@ Updates an auction listing.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L39)
+[src/interfaces/modules/IMarketplace.ts:39](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L39)
 
 ___
 
@@ -575,4 +575,4 @@ Updates a direct listing.
 
 #### Defined in
 
-[src/interfaces/modules/IMarketplace.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/IMarketplace.ts#L32)
+[src/interfaces/modules/IMarketplace.ts:32](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/IMarketplace.ts#L32)

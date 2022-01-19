@@ -34,7 +34,7 @@ Error.constructor
 
 #### Defined in
 
-[src/common/error.ts:19](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/error.ts#L19)
+[src/common/error.ts:19](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/error.ts#L19)
 
 ## Properties
 

@@ -34,7 +34,7 @@ their signature won't be valid.
 
 #### Defined in
 
-[src/interfaces/modules/ISignatureMinter.ts:36](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/ISignatureMinter.ts#L36)
+[src/interfaces/modules/ISignatureMinter.ts:36](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/ISignatureMinter.ts#L36)
 
 ___
 
@@ -58,7 +58,7 @@ Batch generation of signatures.
 
 #### Defined in
 
-[src/interfaces/modules/ISignatureMinter.ts:46](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/ISignatureMinter.ts#L46)
+[src/interfaces/modules/ISignatureMinter.ts:46](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/ISignatureMinter.ts#L46)
 
 ___
 
@@ -83,7 +83,7 @@ Mints an NFT given a payload and signature.
 
 #### Defined in
 
-[src/interfaces/modules/ISignatureMinter.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/ISignatureMinter.ts#L15)
+[src/interfaces/modules/ISignatureMinter.ts:15](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/ISignatureMinter.ts#L15)
 
 ___
 
@@ -108,4 +108,4 @@ Verifies the signature.
 
 #### Defined in
 
-[src/interfaces/modules/ISignatureMinter.ts:26](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/interfaces/modules/ISignatureMinter.ts#L26)
+[src/interfaces/modules/ISignatureMinter.ts:26](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/interfaces/modules/ISignatureMinter.ts#L26)

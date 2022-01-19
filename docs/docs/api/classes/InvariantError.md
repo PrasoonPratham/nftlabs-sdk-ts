@@ -34,7 +34,7 @@ Error.constructor
 
 #### Defined in
 
-[src/common/invariant.ts:26](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/invariant.ts#L26)
+[src/common/invariant.ts:26](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/invariant.ts#L26)
 
 ## Properties
 
@@ -46,7 +46,7 @@ Error.constructor
 
 #### Defined in
 
-[src/common/invariant.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/invariant.ts#L18)
+[src/common/invariant.ts:18](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/invariant.ts#L18)
 
 ___
 
@@ -76,7 +76,7 @@ Error.name
 
 #### Defined in
 
-[src/common/invariant.ts:22](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/common/invariant.ts#L22)
+[src/common/invariant.ts:22](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/common/invariant.ts#L22)
 
 ___
 

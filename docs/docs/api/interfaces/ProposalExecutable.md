@@ -16,7 +16,7 @@ The amount of a native token that may be sent if a proposal is executing a token
 
 #### Defined in
 
-[src/types/vote/ProposalExecutable.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/vote/ProposalExecutable.ts#L14)
+[src/types/vote/ProposalExecutable.ts:14](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/vote/ProposalExecutable.ts#L14)
 
 ___
 
@@ -30,7 +30,7 @@ of the wallet that will be receiving the tokens.
 
 #### Defined in
 
-[src/types/vote/ProposalExecutable.ts:9](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/vote/ProposalExecutable.ts#L9)
+[src/types/vote/ProposalExecutable.ts:9](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/vote/ProposalExecutable.ts#L9)
 
 ___
 
@@ -42,4 +42,4 @@ The transaction payload that will be executed if the proposal is approved.
 
 #### Defined in
 
-[src/types/vote/ProposalExecutable.ts:19](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/ff1ad69/src/types/vote/ProposalExecutable.ts#L19)
+[src/types/vote/ProposalExecutable.ts:19](https://github.com/PrasoonPratham/nftlabs-sdk-ts/blob/3077f6d/src/types/vote/ProposalExecutable.ts#L19)
