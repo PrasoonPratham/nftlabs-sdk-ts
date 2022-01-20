@@ -25,8 +25,7 @@ describe("Pack Module", async () => {
     sdk.setProviderOrSigner(adminWallet);
     packModule = await appModule.deployPackModule({
       name: "Pack Module",
-      sellerFeeBasisPoints: 1000,
-      feeRecipient: samWallet.address
+      sellerFeeBasisPoints: 1000
     });
 
     bundleModule = await appModule.deployBundleModule({

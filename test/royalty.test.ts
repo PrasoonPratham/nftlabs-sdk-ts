@@ -36,7 +36,7 @@ describe("Splits Module", async () => {
     packModule = await appModule.deployPackModule({
       name: "Pack Module",
       sellerFeeBasisPoints: 1000,
-      feeRecipient: samWallet.address
+      feeRecipient: splitsModule.address,
     });
   });
 
@@ -96,8 +96,8 @@ describe("Splits Module", async () => {
     const recipient = await packModule.getRoyaltyRecipientAddress();
     assert.equal(
       recipient,
-      samWallet.address,
-      "The default royalty recipient should be the project address"
+      splitsModule.address,
+      "The default royalty recipient should be the project address",
     );
   });
 
